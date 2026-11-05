@@ -8,3 +8,4 @@ Append-only. Main detailed journal: ball.md.
 | J002 | 2026-11-05 | user | Three contributors, no match assets. |
 | J003 | 2026-11-06 | proposal | CatBoost + Viterbi candidate; direct versus factorised remains open. |
 | J004 | 2026-11-06 | bootstrap | Created three-phase plan, append-only memory, state and scheduled continuity. No new model experiment. |
+| J005 | 2026-11-06 | protocol | Initial plan committed; H1 synthetic decoder contracts preregistered, not run. Planning HTML created. |
