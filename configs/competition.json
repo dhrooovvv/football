@@ -1,0 +1,13 @@
+{
+  "game": "BAR-ATH",
+  "fps": 25,
+  "pitch_metres": [105.3, 68.0],
+  "home_team": "Barcelona",
+  "away_team": "Atletic Club",
+  "sources": {
+    "tactical": {"frames": 199319, "slots": 46},
+    "broadcast": {"frames": 164488, "slots": 51}
+  },
+  "tactical_half_open_blocks": [[11185, 90652], [110808, 190198]],
+  "broadcast_aligned_to_tactical": false
+}

@@ -11,3 +11,5 @@ Append-only. Main detailed journal: ball.md.
 | J005 | 2026-11-06 | protocol | Initial plan committed; H1 synthetic decoder contracts preregistered, not run. Planning HTML created. |
 | J006 | 2026-11-06 | inner-loop | H1 synthetic contracts: 6 confirmatory + 3 exploratory tests pass; decoder retained; external performance untested. |
 | J007 | 2026-11-06 | user/pivot | Removed fallback; partial archive supplied; Phase 1 ingestion protocol preregistered. |
+
+2026-11-06 J008-J010: input contracts and tactical feature preparation complete; 18 tests pass. Tactical metadata discovered locally and tags supplied by user. Optional broadcast homography fails numeric gate. Recent-method review retains main candidate, defers PathCRF. External labels/splits and training remain outstanding.

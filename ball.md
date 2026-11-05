@@ -4,7 +4,9 @@ Created 2026-11-06, India time. This is the primary human-readable project memor
 
 ## Objective and current truth
 
-Produce a reproducible algorithmic `frame,label` CSV for 199,319 tactical-video frames, plus a public source repository and technical document. Rank objective: spellF1; macroF1 is the first tie-break. Three contributors are confirmed. A partial competition bundle was supplied on November 6 as /Users/dhruv/Downloads/Archive.zip. Archive inventory contains tactical video, tactical/broadcast raw ATD and homography; metadata and Smart Tagging XML are absent from this supplied archive. Existing reference files are starter material, not our implemented model.
+Produce a reproducible algorithmic `frame,label` CSV for 199,319 tactical-video frames, source code and a technical document. Rank objective: spellF1; macroF1 is the first tie-break. Three contributors are confirmed. Publication/submission requires user instruction. Existing reference files are starter material, not our implemented model.
+
+- Inputs: tactical video, tracking, homography, ATD metadata and Smart Tagging now available and locally validated. Optional broadcast has a homography numeric failure and missing team metadata. Real tactical feature arrays materialised; no fitted candidate.
 
 The November 5/6 checkpoints in the earlier plan were planned, not completed. Reset the remaining work from November 6. Target submission November 16; published deadline November 17, exact cutoff/timezone unconfirmed. Registration status must be checked before the published November 10 close.
 
@@ -142,3 +144,15 @@ Implemented deterministic H/A/D Viterbi decoding with independent half-open bloc
 ### J007 — 2026-11-06 — user scope change and input inventory
 
 User removed the separate fallback track, requested Phase 1 work and a last30days search for better available methods, and supplied Archive.zip. Inventory: five nested dataset zips and one tactical video (excluding macOS metadata); nested zips hold tactical/broadcast raw ATD and homographies plus a README. No ATD metadata XML or Smart Tagging XML is present. Do not infer missing teams or read restricted contents into hosted context. Updated current plan; earlier journal entries remain historical. New Phase 1 contract protocol committed before execution.
+
+### J008 — 2026-11-06 — executed Phase 1 foundation
+
+After protocol commit 736dc98, implemented strict adapters, safe nested extraction/provenance, missingness-aware metre-scaled team features, deterministic CSV export and local preparation commands. Final run: 7 new confirmatory methods, 2 new exploratory methods, 9 existing decoder tests, all 18 passed in 0.228 s. Evidence: experiments/phase1-ingestion-contracts/results/run.json and test-output.txt. Real tactical ATD/homography/video-header checks pass; full video decode not tested. Initial validation incorrectly used tactical length for broadcast; corrected to published 164488-frame broadcast timeline and reran only changed broadcast checks. Raw broadcast then passed, but its valid-row homography numeric contract still fails. Keep optional broadcast excluded; do not infer corruption of passing raw data. No scorer modifications, training, predictions or target-label tuning.
+
+### J009 — 2026-11-06 — executed recent-method research and decision
+
+Ran last30days v3.31.0 for October 7-November 6 plus primary paper/code inspection. Most returned social/code matches concerned other tasks; do not treat counts as supporting evidence. PathCRF has pretrained variants but assumes known in-play episodes, rejects incomplete selected-player features, and requires player-trajectory adaptation; pretrained Sportec evaluation risks overlap unless exact split provenance is audited. New October 8 GNN-LSTM paper takes possession/ball-status inputs, so it does not solve our missing-label problem. Decision: retain CatBoost plus decoding as first main candidate, not a proven best model and not a fallback; PathCRF deferred behind an explicit compatibility experiment. Evidence/URLs: literature/recent-methods-2026-11-06.md, last30days-engine-output.txt. No external checkpoint executed.
+
+### J010 — 2026-11-06 — new user input and completed tactical preparation
+
+User supplied BAR-ATH_tactical_smart_tagging.xml; local interval validation passed. A filename-only search located tactical ATD metadata in Downloads/More Than A Hack 2027 - Initial Challenge - Dataset/tactical. Copied both into ignored data/competition with private source hashes. Metadata team/slot checks passed; generated data/competition/derived/tactical_features.npz locally. Shape, no-infinity and half-reset checks passed; no raw/derived rows exposed to hosted context. All required tactical assets are now available. Optional broadcast metadata is still absent. Updated three-phase report and current memory; no separate fallback. Phase 1 remains partial until external-label loading/splits and learned inference are established. Next: external label adapter and split provenance, preregister before model experiments. Automation remains paused as found; not re-enabled.

@@ -1,0 +1,68 @@
+/last30days · researching: soccer ball possession inference from player tracking under occlusion
+⏳ [95mProcessing[0m Crunching the data...
+[Planner] Plan: intent=factual, freshness=strict_recent, cluster_mode=none, subqueries=2, source=external
+[Planner]   sq1 label=primary search="soccer ball possession tracking" sources=[reddit,youtube,hackernews,polymarket,github]
+[Planner]   sq2 label=ball-free search="PathCRF soccer possession" sources=[reddit,youtube,hackernews,github]
+[HN] Searching for 'soccer ball possession tracking' (raw: 'soccer ball possession tracking', since 2026-10-07, count=30)
+[PM] Searching for 'soccer ball possession tracking' with queries: ['soccer ball possession tracking', 'soccer', 'ball', 'possession', 'tracking'] (pages=3)
+[YouTube] Searching YouTube for 'soccer ball possession inference from player tracking under occlusion' (since 2026-10-07, count=8)
+[HN] Searching for 'pathcrf soccer possession' (raw: 'PathCRF soccer possession', since 2026-10-07, count=30)
+[RedditSearch] r/sportsanalytics page 1 failed: HTTP 403: Blocked
+[GitHub] Searching for 'pathcrf soccer possession' (raw: 'PathCRF soccer possession', since 2026-10-07, count=30)
+[GitHub] Searching for 'soccer ball possession tracking' (raw: 'soccer ball possession tracking', since 2026-10-07, count=30)
+[RedditSearch] r/sportsanalytics page 1 failed: HTTP 403: Blocked
+[RedditSearch] r/computervision page 1 failed: HTTP 403: Blocked
+[RedditSearch] r/computervision page 1 failed: HTTP 403: Blocked
+[PM] Search failed for 'soccer' page 3: URL Error: [Errno 8] nodename nor servname provided, or not known
+[PM] Search failed for 'soccer' page 1: URL Error: [Errno 8] nodename nor servname provided, or not known
+[PM] Search failed for 'soccer ball possession tracking' page 1: URL Error: [Errno 8] nodename nor servname provided, or not known
+[PM] Search failed for 'ball' page 1: URL Error: [Errno 8] nodename nor servname provided, or not known
+[PM] Search failed for 'soccer ball possession tracking' page 2: URL Error: [Errno 8] nodename nor servname provided, or not known
+[PM] Search failed for 'soccer ball possession tracking' page 3: URL Error: [Errno 8] nodename nor servname provided, or not known
+[PM] Search failed for 'ball' page 2: URL Error: [Errno 8] nodename nor servname provided, or not known
+[PM] Search failed for 'soccer' page 2: URL Error: [Errno 8] nodename nor servname provided, or not known
+[GitHub] Found 8 issues/PRs
+[GitHub] Enriching top 5 items with comments
+[RedditSearch] global page 1 failed: HTTP 403: Blocked
+[HN] Filtered 4/7 low-engagement stories
+[HN] Found 3 stories
+[HN] Enriching top 3 stories with comments
+[RedditSearch] r/FootballDataAnalysis page 1 failed: HTTP 403: Blocked
+[RedditSearch] 0 posts (t=month, 3 targeted subs)
+[HN] Found 0 stories
+[RedditSearch] r/FootballDataAnalysis page 1 failed: HTTP 403: Blocked
+[PM] Search failed for 'ball' page 3: URL Error: [Errno 8] nodename nor servname provided, or not known
+[PM] Search failed for 'tracking' page 2: URL Error: [Errno 8] nodename nor servname provided, or not known
+[PM] Search failed for 'tracking' page 1: URL Error: [Errno 8] nodename nor servname provided, or not known
+[PM] Search failed for 'possession' page 1: URL Error: [Errno 8] nodename nor servname provided, or not known
+[PM] Search failed for 'possession' page 3: URL Error: [Errno 8] nodename nor servname provided, or not known
+[PM] Search failed for 'possession' page 2: URL Error: [Errno 8] nodename nor servname provided, or not known
+[PM] Search failed for 'tracking' page 3: URL Error: [Errno 8] nodename nor servname provided, or not known
+[PM] Found 0 unique events across 5 queries
+[RedditSearch] global page 1 failed: HTTP 403: Blocked
+[RedditSearch] 0 posts (t=month, 3 targeted subs)
+[YouTube] Found 6 videos (0 within date range, keeping only in-range for strict_recent)
+[YouTube] Searching YouTube for 'soccer ball possession inference from player tracking under occlusion review reaction breakdown' (since 2026-10-07, count=8)
+[YouTube] YouTube search returned 0 results
+[ArcticShift] listing search failed r/computervision: Request deadline exceeded
+[ArcticShift] listing search failed r/computervision: Request deadline exceeded
+[ArcticShift] listing search failed r/computervision: Request deadline exceeded
+[ArcticShift] listing deadline reached after 10 requests; keeping partial results
+[RedditKeyless] arctic-shift supplement: 75 new posts from 75 arctic results
+[RedditKeyless] Tier 1 (site search) 0 posts; listing discovery 75
+[RedditKeyless] Relevance floor dropped 68 off-topic posts
+[ArcticShift] listing deadline reached after 10 requests; keeping partial results
+[RedditKeyless] arctic-shift supplement: 75 new posts from 75 arctic results
+[RedditKeyless] Tier 1 (site search) 0 posts; listing discovery 75
+[RedditKeyless] Relevance floor dropped 69 off-topic posts
+[GitHub] relevance prune dropped 7 of 8 items below the relevance/engagement floor
+[GitHub] Searching for 'soccer ball possession' (raw: 'soccer ball possession', since 2026-10-07, count=30)
+[GitHub] Found 30 issues/PRs
+[GitHub] Enriching top 5 items with comments
+[GitHub] relevance prune dropped 20 of 30 items below the relevance/engagement floor
+[GitHub] Star enrichment: fetching 9 repos
+[GitHub] Star enrichment: annotated 8 candidates
+✓ Research complete (84.4s) - Reddit: 7 threads, YouTube: 0 videos, HN: 3 stories, Polymarket: 0 markets, Github: 10 results
+[last30days] Saved output to /Users/dhruv/Documents/Last30Days/soccer-ball-possession-inference-from-player-tracking-under-occlusion-raw-v3.md
+
+Optional source omitted: X/Twitter was not enabled; research continued with the available sources.

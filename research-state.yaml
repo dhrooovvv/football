@@ -5,7 +5,7 @@ project:
   started: '2026-11-06'
   phase: 1
   contributors: 3
-  match_assets_available: partial
+  match_assets_available: tactical_complete_broadcast_partial
   separate_fallback: false
   input_archive: /Users/dhruv/Downloads/Archive.zip
   target_submission: '2026-11-16'
@@ -14,11 +14,12 @@ project:
 continuity:
   automation_id: ball-possession-research
   interval_minutes: 20
+  automation_status: paused
   no_research_after: '2026-11-12'
   no_action_after: '2026-11-17'
 literature:
-  key_papers: [borghesi2023, vidalcodina2022, kim2023, bassek2025]
-  evidence_gaps: [external_label_adapter_unverified, target_metadata_and_tags_missing, no_trained_candidate]
+  key_papers: [borghesi2023, vidalcodina2022, kim2023, bassek2025, kim2026pathcrf, renner2026]
+  evidence_gaps: [external_label_adapter_unverified, no_trained_candidate]
 hypotheses:
   - {id: H1, status: pending, priority: high, statement: Temporal decoding improves external spellF1 over matched emissions}
   - {id: H2, status: pending, priority: medium, statement: Factorised CatBoost improves over direct three-class prediction}
@@ -28,11 +29,12 @@ experiments:
   proxy_metric: external match-level spellF1
   baseline_value: null
   best_value: null
-  total_runs: 1
-  synthetic_contract_runs: 1
+  total_runs: 2
+  synthetic_contract_runs: 2
   external_performance_runs: 0
   trajectory:
     - {run_id: h1-contracts-001, scope: synthetic_correctness, tests_passed: 9, tests_total: 9, spellF1: null}
+    - {run_id: phase1-ingestion-001, scope: input_feature_correctness, tests_passed: 18, tests_total: 18, spellF1: null}
   target_public_labels_for_tuning: false
   split_status: not_instantiated
 outer_loop:
@@ -47,4 +49,4 @@ workspace:
   experiments_dir: experiments/
   to_human_dir: to_human/
   paper_dir: paper/
-next_action: Execute Phase 1 ingestion protocol and last30days method research.
+next_action: Verify external labels and match splits; then preregister learned-model training. No separate fallback.
