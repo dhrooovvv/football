@@ -1,0 +1,12 @@
+audit/.venv/
+__pycache__/
+*.pyc
+.DS_Store
+data/
+checkpoints/
+models/
+.cache/
+*.mp4
+*.mov
+*.npz
+*.parquet

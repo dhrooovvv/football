@@ -1,0 +1,45 @@
+project:
+  title: Ball possession Phase 1
+  question: Which local inference and temporal decoding approach best recovers possession spells under missing tracking?
+  status: active
+  started: '2026-11-06'
+  phase: 1
+  contributors: 3
+  match_assets_available: false
+  target_submission: '2026-11-16'
+  architecture_freeze: '2026-11-12'
+  deadline: '2026-11-17'
+continuity:
+  automation_id: ball-possession-research
+  interval_minutes: 20
+  no_research_after: '2026-11-12'
+  no_action_after: '2026-11-17'
+literature:
+  key_papers: [borghesi2023, vidalcodina2022, kim2023, bassek2025]
+  evidence_gaps: [external_label_adapter_unverified, target_data_unavailable, no_trained_candidate]
+hypotheses:
+  - {id: H1, status: pending, priority: high, statement: Temporal decoding improves external spellF1 over matched emissions}
+  - {id: H2, status: pending, priority: medium, statement: Factorised CatBoost improves over direct three-class prediction}
+  - {id: H3, status: pending, priority: high, statement: Structured gap augmentation improves occlusion robustness}
+  - {id: H4, status: pending, priority: medium, statement: Soft tag semantics preserve correct restart and ownership evidence}
+experiments:
+  proxy_metric: external match-level spellF1
+  baseline_value: null
+  best_value: null
+  total_runs: 0
+  trajectory: []
+  target_public_labels_for_tuning: false
+  split_status: not_instantiated
+outer_loop:
+  cycle: 0
+  last_direction: deepen
+  last_reflection: Prioritise input correctness and fallback before learned candidates; no model superiority established.
+workspace:
+  primary_memory: ball.md
+  findings: findings.md
+  log: research-log.md
+  literature_dir: literature/
+  experiments_dir: experiments/
+  to_human_dir: to_human/
+  paper_dir: paper/
+next_action: Preregister synthetic decoder checks and verify one external match label adapter.
