@@ -1,0 +1,14 @@
+test_ambiguous_flicker (test_decode.ConfirmatoryContracts.test_ambiguous_flicker) ... ok
+test_half_isolation (test_decode.ConfirmatoryContracts.test_half_isolation) ... ok
+test_invalid_emissions (test_decode.ConfirmatoryContracts.test_invalid_emissions) ... ok
+test_repeatability_and_team_swap (test_decode.ConfirmatoryContracts.test_repeatability_and_team_swap) ... ok
+test_short_supported_possession (test_decode.ConfirmatoryContracts.test_short_supported_possession) ... ok
+test_stoppage_and_restart (test_decode.ConfirmatoryContracts.test_stoppage_and_restart) ... ok
+test_empty_zero_and_bad_cost (test_decode.ExploratoryContracts.test_empty_zero_and_bad_cost) ... ok
+test_small_sequence_against_exhaustive_oracle (test_decode.ExploratoryContracts.test_small_sequence_against_exhaustive_oracle) ... ok
+test_uncovered_frames_and_invalid_blocks (test_decode.ExploratoryContracts.test_uncovered_frames_and_invalid_blocks) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.228s
+
+OK

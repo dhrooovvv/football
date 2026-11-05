@@ -1,0 +1,1 @@
+"""Local possession inference components."""

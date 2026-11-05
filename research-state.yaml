@@ -26,8 +26,11 @@ experiments:
   proxy_metric: external match-level spellF1
   baseline_value: null
   best_value: null
-  total_runs: 0
-  trajectory: []
+  total_runs: 1
+  synthetic_contract_runs: 1
+  external_performance_runs: 0
+  trajectory:
+    - {run_id: h1-contracts-001, scope: synthetic_correctness, tests_passed: 9, tests_total: 9, spellF1: null}
   target_public_labels_for_tuning: false
   split_status: not_instantiated
 outer_loop:
@@ -42,4 +45,4 @@ workspace:
   experiments_dir: experiments/
   to_human_dir: to_human/
   paper_dir: paper/
-next_action: Preregister synthetic decoder checks and verify one external match label adapter.
+next_action: Verify one external match label adapter and implement strict input/export contracts.

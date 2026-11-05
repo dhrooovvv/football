@@ -1,0 +1,21 @@
+{
+  "experiment_id": "h1-contracts-001",
+  "date_local": "2026-11-06",
+  "protocol_commit": "14385bb",
+  "source_base_commit": "14385bb1ace21923f3c006994b9825dbdeeae6f5",
+  "source_sha256": {
+    "src/possession/decode.py": "c987dd44e17c9e35650a4a4c9c59d62b5dde2f02c06a83e6a71bf2345da13710",
+    "tests/test_decode.py": "367e188019bdf5594bba058869c30e5ac806d7899796e42b03142960aab4a9ce",
+    "experiments/h1-decoder-contracts/protocol.md": "ab397f20a14e7d3a7187f3f7e471dc8e28a7f23715ea4a24549526a2c4678343"
+  },
+  "command": "PYTHONPATH=src audit/.venv/bin/python -m unittest discover -s tests -v",
+  "python": "3.13.15 (v3.13.15:4061bc4c35f, Aug  5 2026, 09:08:51) [Clang 21.0.0 (clang-2100.1.1.101)]",
+  "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+  "numpy": "2.5.4",
+  "confirmatory_tests_passed": 6,
+  "exploratory_tests_passed": 3,
+  "tests_total": 9,
+  "unittest_runtime_seconds": 0.228,
+  "external_spellF1": null,
+  "scope": "synthetic correctness only"
+}
