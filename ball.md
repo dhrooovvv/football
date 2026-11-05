@@ -4,7 +4,7 @@ Created 2026-11-06, India time. This is the primary human-readable project memor
 
 ## Objective and current truth
 
-Produce a reproducible algorithmic `frame,label` CSV for 199,319 tactical-video frames, plus a public source repository and technical document. Rank objective: spellF1; macroF1 is the first tie-break. Three contributors are confirmed. Match assets are not yet available (last user confirmation November 5); no new access has been reported. Existing reference files are starter material, not our implemented model.
+Produce a reproducible algorithmic `frame,label` CSV for 199,319 tactical-video frames, plus a public source repository and technical document. Rank objective: spellF1; macroF1 is the first tie-break. Three contributors are confirmed. A partial competition bundle was supplied on November 6 as /Users/dhruv/Downloads/Archive.zip. Archive inventory contains tactical video, tactical/broadcast raw ATD and homography; metadata and Smart Tagging XML are absent from this supplied archive. Existing reference files are starter material, not our implemented model.
 
 The November 5/6 checkpoints in the earlier plan were planned, not completed. Reset the remaining work from November 6. Target submission November 16; published deadline November 17, exact cutoff/timezone unconfirmed. Registration status must be checked before the published November 10 close.
 
@@ -12,9 +12,9 @@ The November 5/6 checkpoints in the earlier plan were planned, not completed. Re
 
 Use a local CPU-first pipeline:
 
-`strict tactical adapter → masked geometric/context features → rules or CatBoost probabilities → soft Smart Tagging evidence → H/A/D Viterbi decoder → deterministic CSV → official validator`
+`strict tactical adapter → masked geometric/context features → learned probabilities → soft Smart Tagging evidence → H/A/D Viterbi decoder → deterministic CSV → official validator`
 
-Start with rules plus decoding as the fallback. Compare direct three-class CatBoost against a two-stage alternative (dead/live, then home/away while live). The previous recommendation of two classifiers was an engineering hypothesis, not established superiority. Missing-value support helps implementation but does not establish that CatBoost beats another model. Neither learned candidate has been trained here.
+User instruction November 6: do not build a separate fallback. Build the main learned-model pipeline directly; use supplied baselines only as evaluation comparators. Compare direct three-class CatBoost against a two-stage alternative (dead/live, then home/away while live). The previous recommendation of two classifiers was an engineering hypothesis, not established superiority. Missing-value support helps implementation but does not establish that CatBoost beats another model. Neither learned candidate has been trained here.
 
 Make these decisions explicit:
 
@@ -27,12 +27,12 @@ Make these decisions explicit:
 
 ## Three phases
 
-### Phase 1 — establish trust and build a valid fallback (November 6–8)
+### Phase 1 — validate inputs and build the main pipeline foundation (November 6–8)
 
 Goal: prove the data/evaluation contracts and obtain one complete inference path.
 
 1. Contributor A: resolve enrolment/data access; create strict frame, slot/team, coordinate and missingness contracts. Keep private assets outside public source.
-2. Contributor B: build features, rule emissions, three-state decoder and exact CSV exporter using synthetic sequences while assets are pending.
+2. Contributor B: build features, learned-emission interface, three-state decoder and exact CSV exporter using synthetic sequences while assets are pending.
 3. Contributor C: verify IDSSE label semantics and load external matches; fix whole-match development/test splits before modelling; create the experiment harness using the unchanged scorer.
 4. Test malformed IDs, partial NaNs, unknown teams, team-swap symmetry, short turnovers, live-ball gaps, moving dead balls, restarts and half boundaries.
 5. When assets arrive, validate ATD frame_id−1, tag round(seconds×25), homography frame indexing and full-match output length. Regenerate a reference baseline for the first time; existing audit only rescored supplied CSVs.
@@ -43,7 +43,7 @@ Exit gate: synthetic contracts pass; full inference command and exporter exist; 
 
 Goal: select a defensible candidate on other matches, using a small set of hypothesis-driven comparisons.
 
-1. Establish the rules fallback and raw/smoothed baselines on the same external matches.
+1. Establish supplied raw/smoothed baselines on the same external matches.
 2. Test sequence decoding independently of model changes (H1).
 3. Train direct H/A/D CatBoost, then compare the dead/live + team factorisation (H2). Use identical features, splits and constrained search budgets.
 4. Test burst-gap augmentation and missingness/context features (H3); report clean and corrupted settings separately.
@@ -51,13 +51,13 @@ Goal: select a defensible candidate on other matches, using a small set of hypot
 6. Inspect missed/spurious spells, dead/live errors, short-spell recall and boundary shifts. Log refutations as well as successes.
 7. Freeze architecture/config/model choices November 12. Drop unfinished optional work.
 
-Exit gate: selected candidate beats or offers a documented robustness advantage over fallback in development evidence; all contracts pass; model/config/input provenance recorded. If evidence is mixed or external labels unusable, retain fallback and say why. No promised hidden score.
+Exit gate: selected candidate beats or offers a documented robustness advantage over supplied baselines in development evidence; all contracts pass; model/config/input provenance recorded. If evidence is mixed or external labels unusable, retain the best validated main candidate, or report that selection remains blocked. No promised hidden score.
 
 ### Phase 3 — verify, reproduce and deliver (November 13–16; November 17 buffer)
 
 Goal: turn the frozen candidate into a verifiable submission.
 
-1. Evaluate frozen candidate and fallback once on sealed external matches; do not reopen tuning based on those results.
+1. Evaluate frozen candidate and supplied baselines once on sealed external matches; do not reopen tuning based on those results.
 2. Run full target inference locally when assets are available; validate the exact final CSV.
 3. Reproduce in a clean supported environment, twice, requiring byte-identical CSV hashes.
 4. Prepare source, dependency lock, model/config hashes, one regeneration command, licence attribution, and a short technical document with training sources and limitations.
@@ -70,7 +70,7 @@ gantt
     title Three phases — November 2026
     dateFormat YYYY-MM-DD
     axisFormat %d %b
-    Phase 1 - trusted foundation and fallback :crit, 2026-11-06, 3d
+    Phase 1 - main pipeline foundation :crit, 2026-11-06, 3d
     Phase 2 - experiments and selection :2026-11-09, 4d
     Architecture freeze :milestone, 2026-11-12, 0d
     Phase 3 - verification and delivery :crit, 2026-11-13, 4d
@@ -101,11 +101,11 @@ gantt
 
 - [ ] A: establish data access and registration status.
 - [ ] C: download and decode one external match, then audit target-label availability.
-- [ ] B: preregister and implement synthetic decoder contract experiment.
+- [x] B: preregister and implement synthetic decoder contract experiment (J006).
 - [ ] A/B: strict loader and exporter tests.
 - [ ] C: instantiate match splits and save hashes before learned experiments.
 
-If external labels are unusable by the end of November 8, drop supervised training from the critical path. If competition assets remain absent November 9, report the delivery risk and prioritise a ready-to-run fallback. New research stops November 12; there is no value in an unverified late model.
+If external labels are unusable by the end of November 8, report the main-model training dependency and investigate compatible external labels; do not silently build a fallback. If competition assets remain absent November 9, report the delivery risk and prioritise the main pipeline input contracts. New research stops November 12; there is no value in an unverified late model.
 
 ## Append-only journal rules
 
@@ -138,3 +138,7 @@ Initialised local git history (initial plan commit e35f1bf). Wrote the H1 synthe
 ### J006 — 2026-11-06 — executed evidence, Phase 1
 
 Implemented deterministic H/A/D Viterbi decoding with independent half-open blocks, strict input validation and X outside blocks. Ran the preregistered H1 contract experiment after protocol commit 14385bb: 6/6 confirmatory and 3/3 exploratory tests passed (9 total, 0.228 s unittest runtime). Exploratory tests include an exhaustive small-sequence optimum oracle. Evidence: experiments/h1-decoder-contracts/results/run.json, results/test-output.txt and analysis.md; code: src/possession/decode.py; fixtures: tests/test_decode.py. No training or target data used. H1 external-performance claim remains pending; this is one tested component, not a full inference pipeline. Next: strict adapters/exporter or external label loading.
+
+### J007 — 2026-11-06 — user scope change and input inventory
+
+User removed the separate fallback track, requested Phase 1 work and a last30days search for better available methods, and supplied Archive.zip. Inventory: five nested dataset zips and one tactical video (excluding macOS metadata); nested zips hold tactical/broadcast raw ATD and homographies plus a README. No ATD metadata XML or Smart Tagging XML is present. Do not infer missing teams or read restricted contents into hosted context. Updated current plan; earlier journal entries remain historical. New Phase 1 contract protocol committed before execution.

@@ -5,7 +5,9 @@ project:
   started: '2026-11-06'
   phase: 1
   contributors: 3
-  match_assets_available: false
+  match_assets_available: partial
+  separate_fallback: false
+  input_archive: /Users/dhruv/Downloads/Archive.zip
   target_submission: '2026-11-16'
   architecture_freeze: '2026-11-12'
   deadline: '2026-11-17'
@@ -16,7 +18,7 @@ continuity:
   no_action_after: '2026-11-17'
 literature:
   key_papers: [borghesi2023, vidalcodina2022, kim2023, bassek2025]
-  evidence_gaps: [external_label_adapter_unverified, target_data_unavailable, no_trained_candidate]
+  evidence_gaps: [external_label_adapter_unverified, target_metadata_and_tags_missing, no_trained_candidate]
 hypotheses:
   - {id: H1, status: pending, priority: high, statement: Temporal decoding improves external spellF1 over matched emissions}
   - {id: H2, status: pending, priority: medium, statement: Factorised CatBoost improves over direct three-class prediction}
@@ -36,7 +38,7 @@ experiments:
 outer_loop:
   cycle: 0
   last_direction: deepen
-  last_reflection: Prioritise input correctness and fallback before learned candidates; no model superiority established.
+  last_reflection: Prioritise main-pipeline input correctness and recent-method evidence; no model superiority established.
 workspace:
   primary_memory: ball.md
   findings: findings.md
@@ -45,4 +47,4 @@ workspace:
   experiments_dir: experiments/
   to_human_dir: to_human/
   paper_dir: paper/
-next_action: Verify one external match label adapter and implement strict input/export contracts.
+next_action: Execute Phase 1 ingestion protocol and last30days method research.
