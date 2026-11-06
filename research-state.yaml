@@ -53,4 +53,4 @@ workspace:
   experiments_dir: experiments/
   to_human_dir: to_human/
   paper_dir: paper/
-next_action: Review completed Phase 1 candidate; preserve sealed matches and current architecture.
+next_action: Focused correctness review and clean-environment reproduction; preserve sealed matches and current architecture.

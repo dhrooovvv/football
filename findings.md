@@ -33,3 +33,7 @@ J012: separately supplied tactical ATD and homography match the validated archiv
 ## Completed core development experiment
 
 Five development matches, leave-one-match-out; two sealed matches never downloaded. Core plus switching penalty8 promoted on all five paired development matches. Mean-player-speed and reduced H/A switching penalty both rejected. Final production uses only the nine core columns. 23 tests pass and target CSV passes the official schema validator with identical saved-model regeneration. See experiments/core-development/completion.json and per-match summaries. Development corruption still materially hurts quality; no sealed or target performance measurement exists.
+
+
+## Status clarification — November 6 (J019)
+Earlier zero-external-run and no-prediction statements describe earlier work and are superseded by the completed core experiment: four external performance runs and a validated target export. Clean-environment reproduction remains pending; current checks do not establish sealed or target accuracy. Current scope is the nine-feature pipeline and error-driven promotion gate, not the older broad architecture queue.

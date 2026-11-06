@@ -246,3 +246,15 @@ Completed strict adapters → nine masked core features → CatBoost H/A/D proba
 
 ### J018 — 2026-11-06 — Authorized GitHub delivery
 User explicitly requested direct delivery to dhrooovvv/football main, using Git author name dhroovvv. Checked tracked history: competition assets, local models, audit environment and reference starter remain excluded. Publishing implementation and research records only; no competition submission.
+
+
+### J019 — 2026-11-06 — Status review and ongoing journal maintenance
+
+User reaffirmed that important decisions, actions, evidence, failures and next steps must be appended here. Preserve earlier journal entries; later dated corrections take precedence over stale summaries.
+
+- GitHub delivery completed: origin/main at 9ae2ab7 after implementation commit 6056397; author name configured as dhroovvv. Private assets and model files excluded.
+- Phase 1 exit gate passed according to recorded evidence in experiments/core-development/completion.json: 23 tests, official CSV validation, identical saved-model regeneration, 199319 output frames. This status review inspected code and records; it did not rerun tests or inference.
+- Selected candidate remains nine core features + CatBoost + uniform Viterbi penalty8. Mean development clean spellF1/macroF1: 0.508566/0.889775; fixed-corruption: 0.273572/0.750858. Penalty8 improved all five paired matches; median paired spellF1 gain 0.136625. Mean-speed and asymmetric short-turnover changes rejected. Two consecutive rejections, not three; additions stopped because supported candidate categories were exhausted.
+- Correctness checks establish tested contracts and export validity, not competition accuracy. Corruption robustness remains weak; sealed generalisation and target quality remain unmeasured. No target public-label tuning, sealed evaluation or competition submission occurred.
+- Documentation review found stale zero-external-run statements and a null baseline mirror. Older broad feature/model queues are superseded by the user's core-only error-driven scope. Reconcile current summaries without rewriting historical journal entries.
+- Next: focused correctness review and clean-environment reproduction (not yet executed); any subsequent experimental change requires a committed protocol and the existing paired promotion gate. Freeze architecture November 12; November 13–16 reserved for frozen evaluation, reproducibility and packaging. Keep sealed matches closed during development. Automation remains paused.
