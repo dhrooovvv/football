@@ -37,7 +37,7 @@ experiments:
     - {run_id: h1-contracts-001, scope: synthetic_correctness, tests_passed: 9, tests_total: 9, spellF1: null}
     - {run_id: phase1-ingestion-001, scope: input_feature_correctness, tests_passed: 18, tests_total: 18, spellF1: null}
   target_public_labels_for_tuning: false
-  split_status: not_instantiated
+  split_status: locked_five_development_two_sealed
 outer_loop:
   cycle: 0
   last_direction: deepen
@@ -50,4 +50,4 @@ workspace:
   experiments_dir: experiments/
   to_human_dir: to_human/
   paper_dir: paper/
-next_action: Verify external labels and match splits; then preregister learned-model training. No separate fallback.
+next_action: Complete development acquisition and run locked core baseline; inspect errors before changes.

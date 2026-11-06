@@ -1,0 +1,32 @@
+"""Train on development matches only; generate deterministic target CSV locally."""
+import argparse,json,hashlib
+from pathlib import Path
+import numpy as np
+from catboost import CatBoostClassifier
+from possession.inputs import load_atd,load_teams,export_labels
+from possession.core import features
+from possession.decode import decode
+from run_core import PARAMS,CACHE,ROOT
+
+def main():
+ p=argparse.ArgumentParser();p.add_argument('--penalty',type=float,default=2);a=p.parse_args()
+ ids=json.loads((ROOT/'split.json').read_text())['development'];xs=[];ys=[]
+ for m in ids:
+  d=np.load(CACHE/(m+'.npz'));idx=np.arange(0,len(d['y']),5);idx=idx[d['y'][idx]!='X'];xs.append(d['x'][idx]);ys.append(d['y'][idx])
+ model=CatBoostClassifier(**PARAMS);model.fit(np.concatenate(xs),np.concatenate(ys))
+ Path('models').mkdir(exist_ok=True);model.save_model('models/core-final.cbm')
+ cfg=json.loads(Path('configs/competition.json').read_text());root=Path('data/competition');base=root/'tactical/BAR-ATH_tactical'
+ team=load_teams(str(base)+'_atd.xml',46,cfg['home_team'],cfg['away_team']);track=load_atd(str(base)+'_atd.txt',199319,46)
+ x,names=features(track,team,cfg['tactical_half_open_blocks'],cfg['pitch_metres'])
+ probs=model.predict_proba(x)[:,[list(model.classes_).index(c) for c in ['H','A','D']]]
+ pred=decode(probs,(np.ones((3,3))-np.eye(3))*a.penalty,cfg['tactical_half_open_blocks'])
+ out=root/'predictions';out.mkdir(exist_ok=True)
+ export_labels(out/'candidate.csv',pred,199319)
+ reloaded=CatBoostClassifier();reloaded.load_model('models/core-final.cbm')
+ again=reloaded.predict_proba(x)[:,[list(reloaded.classes_).index(c) for c in ['H','A','D']]]
+ repeat=decode(again,(np.ones((3,3))-np.eye(3))*a.penalty,cfg['tactical_half_open_blocks'])
+ export_labels(out/'candidate-repeat.csv',repeat,199319)
+ assert (out/'candidate.csv').read_bytes()==(out/'candidate-repeat.csv').read_bytes()
+ (out/'provenance.json').write_text(json.dumps({'training_matches':ids,'features':names,'parameters':PARAMS,'penalty':a.penalty,'sha256':hashlib.sha256((out/'candidate.csv').read_bytes()).hexdigest()},indent=2))
+ print('Local target CSV generated; identical export bytes verified.')
+if __name__=='__main__':main()

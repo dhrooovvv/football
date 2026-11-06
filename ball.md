@@ -164,3 +164,20 @@ Executed another last30days run plus primary-paper/code searches. Additional ser
 ### J012 — 2026-11-06 — separately supplied tracking and homography confirmed
 
 User supplied Downloads/BAR-ATH_tactical_atd.txt and Downloads/BAR-ATH_tactical_homography.csv. Local SHA256 comparison confirms both are byte-identical to the archive inputs already validated and used for feature preparation. Private comparison record: data/competition/additional-file-comparison.json. No replacement or redundant schema run needed; no asset contents exposed. Tactical readiness and next action (external labels/splits) unchanged.
+
+### J013 — 2026-11-06 — user-directed core implementation and preregistration
+
+User fixed the architecture to strict adapters, masked core features, CatBoost, Viterbi and deterministic CSV. No optional change before error evidence; same splits/seeds/budget; promotion gate mandatory; stop after three consecutive rejections. Protocol commit 6b71d10 fixes five leave-one-match-out development folds (J03WMX, J03WN1, J03WOH, J03WOY, J03WPY); sealed J03WQQ/J03WR9 will not be downloaded or opened. Development acquisition running. Implemented core/DFL adapter, training and export commands; 21 synthetic tests passed after correcting floating-point comparison at the exact -0.01 gate boundary with 1e-12 tolerance. No measured model score yet. Capsule advisor failed twice; ordinary local tools used. Next: complete acquisition, validate external adapter and run baseline.
+| Match | Condition | spellF1 | macroF1 | Missed@.5 | Spurious@.5 | Short recall@.5 | Dead/live errors |
+|---|---|---:|---:|---:|---:|---:|---:|
+| J03WMX | clean | 0.322746 | 0.875081 | 277 | 741 | 0.28865979381443296 | 181 |
+| J03WMX | corrupted | 0.192753 | 0.729203 | 373 | 924 | 0.211340206185567 | 23363 |
+| J03WN1 | clean | 0.352838 | 0.854724 | 254 | 628 | 0.36627906976744184 | 294 |
+| J03WN1 | corrupted | 0.218022 | 0.719923 | 369 | 734 | 0.2441860465116279 | 19520 |
+| J03WOH | clean | 0.298719 | 0.865841 | 211 | 734 | 0.3063063063063063 | 264 |
+| J03WOH | corrupted | 0.190335 | 0.736050 | 278 | 819 | 0.25225225225225223 | 19175 |
+| J03WOY | clean | 0.272973 | 0.845957 | 263 | 831 | 0.2748091603053435 | 364 |
+| J03WOY | corrupted | 0.161771 | 0.715872 | 348 | 927 | 0.22900763358778625 | 20642 |
+| J03WPY | clean | 0.340826 | 0.883962 | 211 | 579 | 0.24193548387096775 | 240 |
+| J03WPY | corrupted | 0.189080 | 0.754324 | 312 | 752 | 0.18548387096774194 | 20570 |
+
