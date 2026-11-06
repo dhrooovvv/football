@@ -39,3 +39,6 @@ Boundary quantiles: min/p10/median/p90/p99/max in frames; only typed boundaries 
 | J03WOY | targetlike | 0.294293 | 0.654699 | 341 | 235 | 0.1374 | 33706 | [-49.0, -32.0, 0.0, 1.5999999999999943, 45.43999999999994, 50.0] | 0.394341 | 0.329748 |
 | J03WPY | clean | 0.536352 | 0.903977 | 199 | 152 | 0.1935 | 119 | [-50.0, -32.0, 0.0, 6.0, 40.89999999999998, 49.0] | -0.002352 | 0.460804 |
 | J03WPY | targetlike | 0.329596 | 0.709985 | 296 | 221 | 0.1371 | 27895 | [-50.0, -31.0, 0.0, 14.0, 41.0, 49.0] | 0.331713 | 0.349828 |
+
+## Interpretation
+Clean wrong-team oracle repair dominates all5; target-like wrong-team dominates3/5 and dead/live2/5. Oracle gains overlap and are not additive causal attribution. Grid computations ran alongside Step2, before Step3 and final taxonomy; primary four diagnostics ran in order. Penalty16 passes gate,32 fails; production remains8 pending review. Proposed training augmentation has not run.

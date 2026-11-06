@@ -37,3 +37,7 @@ Five development matches, leave-one-match-out; two sealed matches never download
 
 ## Status clarification — November 6 (J019)
 Earlier zero-external-run and no-prediction statements describe earlier work and are superseded by the completed core experiment: four external performance runs and a validated target export. Clean-environment reproduction remains pending; current checks do not establish sealed or target accuracy. Current scope is the nine-feature pipeline and error-driven promotion gate, not the older broad architecture queue.
+
+
+## J020 frozen diagnostics
+Target contracts pass; public score private and excluded from selection. Empirical target gaps greatly exceed original corruption. Same-match baselines trail frozen CatBoost. Ownership and dead/live errors dominate oracle repairs; categories overlap. Penalty16 passes expanded-grid gate; production remains8 pending review. One training-gap augmentation protocol is proposed, not approved or executed. Full per-match evidence: experiments/diagnostics-review/summary.md.
