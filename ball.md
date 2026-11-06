@@ -392,3 +392,77 @@ Gate per-match deltas (negative values record regressions):
   }
 }
 ```
+
+
+### J022 — 2026-11-06 — Combined augmentation rejected; label-free aggregates; pending whole-pitch bundle
+Protocol e1fc684 committed before execution. Reused fixed augmentation fold models, same folds/seeds/budget/masks; only decoded at16 against unaugmented16 parent.23 tests passed. Reject augmentation on current parent; historical augmentation8 result remains archived, not retained as an active branch. No new training or targetCSV export required. No public labels loaded, no sealed assets, no target class tuning. Consecutive rejected changes1.
+
+# Combined augmentation16 decision and label-free diagnostic
+
+**Reject augmentation; keep unaugmented penalty16.** Gate:2/5 matches improve, median paired spellF1 delta-.001331, macroF1-.000708. Primary corrupted median delta+.000119 does not override the unchanged gate.23 tests pass.
+
+| Match | Condition | Parent spellF1 | Combined spellF1 | Parent macroF1 | Combined macroF1 |
+|---|---|---:|---:|---:|---:|
+| J03WMX | clean | 0.501360 | 0.488557 | 0.907574 | 0.905297 |
+| J03WMX | targetlike | 0.323426 | 0.323544 | 0.692742 | 0.697768 |
+| J03WN1 | clean | 0.484682 | 0.478500 | 0.875014 | 0.872922 |
+| J03WN1 | targetlike | 0.313253 | 0.320537 | 0.680025 | 0.690129 |
+| J03WOH | clean | 0.568452 | 0.568915 | 0.903698 | 0.905187 |
+| J03WOH | targetlike | 0.343671 | 0.352305 | 0.646450 | 0.643546 |
+| J03WOY | clean | 0.516129 | 0.511568 | 0.885072 | 0.883676 |
+| J03WOY | targetlike | 0.312291 | 0.310799 | 0.663388 | 0.658861 |
+| J03WPY | clean | 0.517647 | 0.517088 | 0.904135 | 0.903661 |
+| J03WPY | targetlike | 0.324741 | 0.322639 | 0.714401 | 0.708315 |
+
+## Label-free target output vs external ground truth
+
+Target diagnostic uses frozen unaugmented model with penalty16, configured graded halves only; no public labels loaded. H/A spells are maximal runs, reset at half boundaries. External unknown-label gaps also split spells. Durations/coverage differ, so counts are descriptive, not matched quality comparisons.
+
+| Aggregate | Target prediction | External ground-truth min–max |
+|---|---:|---:|
+| H share (%) | 36.564 | 25.728–35.012 |
+| A share (%) | 21.481 | 20.702–31.691 |
+| D share (%) | 41.955 | 41.515–51.698 |
+| H/A possession spells | 467.000 | 402.000–511.000 |
+| Mean possession duration (s) | 7.898 | 5.470–7.740 |
+
+Target graded frames:158857; all H/A/D segments:625, mean duration:10.167s. These are not possession-spell counts.
+
+No public-window comparison, label scoring, rebalancing or calibration. Target share/duration differences do not establish correctness or error. Existing candidate.csv remains the earlier penalty8 export; this round calculated aggregates only.
+
+## Next experiment — not run
+
+Whole-pitch bundle preregistered in proposed-whole-pitch.md against unaugmented penalty16. Longitudinal centroid separation uses absolute attack-axis projection, giving one nonredundant direction-invariant scalar. New bundle awaits approval. Consecutive failures1; existing stop rule and November12 freeze unchanged. Stop after this report.
+
+Gate per-match deltas:
+```json
+{
+  "promoted": false,
+  "paired_spell_deltas": {
+    "J03WMX": -0.006341939152425591,
+    "J03WN1": 0.0005507299283303846,
+    "J03WOH": 0.004548898410885571,
+    "J03WOY": -0.00302598633393103,
+    "J03WPY": -0.001330725871319216
+  },
+  "paired_macro_deltas": {
+    "J03WMX": 0.0013744000856413807,
+    "J03WN1": 0.00400596868665648,
+    "J03WOH": -0.0007079634766201659,
+    "J03WOY": -0.002961773057585937,
+    "J03WPY": -0.0032798135226800307
+  },
+  "median_spell_delta": -0.001330725871319216,
+  "median_macro_delta": -0.0007079634766201659,
+  "matches_improved": 2,
+  "primary_corrupted_spell_deltas": {
+    "J03WMX": 0.00011861110225425131,
+    "J03WN1": 0.007283900703485113,
+    "J03WOH": 0.008634360346944092,
+    "J03WOY": -0.0014910638031137569,
+    "J03WPY": -0.0021020600810705004
+  },
+  "primary_median_delta": 0.00011861110225425131,
+  "tests_passed": true
+}
+```

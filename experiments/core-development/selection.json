@@ -2,8 +2,8 @@
   "selected": "penalty16",
   "penalty": 16,
   "mean_player_speed": false,
-  "consecutive_rejections": 0,
-  "stop_reason": "User requested stop after approved augmentation and prerequisite report.",
+  "consecutive_rejections": 1,
+  "stop_reason": "User requested stop after combined16 test, label-free diagnostic and pending whole-pitch protocol.",
   "history": [
     {
       "change": "penalty8",
@@ -32,7 +32,16 @@
       "kept": true,
       "separate_branch": true,
       "combined_with_penalty16": false
+    },
+    {
+      "change": "gap-augmentation-penalty16",
+      "parent": "penalty16",
+      "kept": false,
+      "reason": "2/5 improve and negative median paired spellF1",
+      "evidence": "experiments/combined16/gate.json"
     }
   ],
-  "target_artifact_status": "Existing candidate.csv and completion.json describe penalty8; not regenerated in this round."
+  "target_artifact_status": "Existing candidate.csv and completion.json describe penalty8; not regenerated in this round.",
+  "augmentation": false,
+  "retained_augmentation_branch": false
 }

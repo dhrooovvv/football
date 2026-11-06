@@ -1,0 +1,67 @@
+{
+  "target": {
+    "pipeline": "frozen unaugmented core-final model, penalty16 (promoted before round; not tuned on aggregates)",
+    "graded_frames": 158857,
+    "shares": {
+      "H": 0.365643314427441,
+      "A": 0.2148095456920375,
+      "D": 0.4195471398805215
+    },
+    "possession_spell_count": 467,
+    "mean_possession_spell_seconds": 7.897987152034261,
+    "all_state_segment_count": 625,
+    "mean_all_state_segment_seconds": 10.166848
+  },
+  "external_ground_truth": [
+    {
+      "match": "J03WMX",
+      "shares": {
+        "H": 0.2679441243568752,
+        "A": 0.3169072461583783,
+        "D": 0.41514862948474657
+      },
+      "possession_spell_count": 511,
+      "mean_possession_spell_seconds": 6.682504892367906
+    },
+    {
+      "match": "J03WN1",
+      "shares": {
+        "H": 0.25728131335607973,
+        "A": 0.22574014029287728,
+        "D": 0.516978546351043
+      },
+      "possession_spell_count": 500,
+      "mean_possession_spell_seconds": 5.47016
+    },
+    {
+      "match": "J03WOH",
+      "shares": {
+        "H": 0.28514583060037607,
+        "A": 0.23918113312052705,
+        "D": 0.4756730362790969
+      },
+      "possession_spell_count": 402,
+      "mean_possession_spell_seconds": 7.158706467661691
+    },
+    {
+      "match": "J03WOY",
+      "shares": {
+        "H": 0.265280350227311,
+        "A": 0.26992479093001065,
+        "D": 0.46479485884267835
+      },
+      "possession_spell_count": 456,
+      "mean_possession_spell_seconds": 6.691754385964912
+    },
+    {
+      "match": "J03WPY",
+      "shares": {
+        "H": 0.35012413566694706,
+        "A": 0.20701588799748308,
+        "D": 0.44285997633556984
+      },
+      "possession_spell_count": 421,
+      "mean_possession_spell_seconds": 7.739667458432304
+    }
+  ]
+}

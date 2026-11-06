@@ -45,3 +45,7 @@ Target contracts pass; public score private and excluded from selection. Empiric
 
 ## J021 approved augmentation completed
 Both isolated changes pass the unchanged paired gate: augmentation at8 (4/5, median spell+.003268, macro-.001228) and decoder16 without augmentation (3/5,+.010056,+.006132). Selected config now16; augmentation8 retained separately, no combined test. TargetCSV remains previous8 artifact. Corruption fidelity35.7–47.5% missing vs target40.7%; independent training/evaluation seeds and raw-mask feature consistency audited. Label shares/durations suggest convention or domain differences requiring caution, not a proven mapping error. See experiments/gap-augmentation/report.md. Stopped as requested.
+
+
+## J022 combined16 rejected
+Augmentation16 fails gate:2/5 improve, median spell-.001331, macro-.000708. Drop augmentation; simpler penalty16 stays selected. Target label-free output36.56%H/21.48%A/41.95%D,467 H/A spells averaging7.90s, not accuracy evidence. Whole-pitch bundle preregistered but unapproved/unrun; see experiments/combined16/report.md. Stop; freeze November12 unchanged.
