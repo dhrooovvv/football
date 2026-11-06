@@ -200,3 +200,22 @@ Core baseline completed five leave-one-match-out folds, clean/corrupted. Per-mat
 
 Gate (tests must separately pass): {"promoted": true, "paired_spell_deltas": {"J03WMX": 0.12553288293933146, "J03WN1": 0.10369072930457524, "J03WOH": 0.16755102997323384, "J03WOY": 0.15191491027949028, "J03WPY": 0.13662494584578377}, "paired_macro_deltas": {"J03WMX": 0.02477731425591223, "J03WN1": 0.015155335353252974, "J03WOH": 0.026401588704415002, "J03WOY": 0.025906507197535178, "J03WPY": 0.018873754075304228}}
 
+
+### J015 — 2026-11-06 — rejected mean-player-speed feature
+
+Change 2, protocol 967acb0: mean observed player speed failed promotion. Only 2/5 paired match spellF1 improvements, median delta -0.001331; macroF1 median +0.000564. Reject from production, retain experiment code/results for reproducibility. Consecutive rejection count: 1. Per-match table follows. Current best remains core features + penalty8. Error review also shows short-spell recall fell in all clean matches after penalty8 (e.g. J03WMX .289 to .149), supporting one targeted over-merging test.
+| Match | Condition | spellF1 | macroF1 | Missed@.5 | Spurious@.5 | Short recall@.5 | Dead/live errors |
+|---|---|---:|---:|---:|---:|---:|---:|
+| J03WMX | clean | 0.504044 | 0.905028 | 279 | 172 | 0.17010309278350516 | 125 |
+| J03WMX | corrupted | 0.259859 | 0.752777 | 374 | 488 | 0.12886597938144329 | 23241 |
+| J03WN1 | clean | 0.503784 | 0.872646 | 263 | 188 | 0.19767441860465115 | 248 |
+| J03WN1 | corrupted | 0.296799 | 0.741701 | 352 | 383 | 0.13372093023255813 | 18360 |
+| J03WOH | clean | 0.529514 | 0.895636 | 187 | 186 | 0.1981981981981982 | 233 |
+| J03WOH | corrupted | 0.296109 | 0.759357 | 264 | 411 | 0.15315315315315314 | 18985 |
+| J03WOY | clean | 0.479023 | 0.874517 | 236 | 225 | 0.16030534351145037 | 329 |
+| J03WOY | corrupted | 0.247328 | 0.740253 | 337 | 473 | 0.11450381679389313 | 20538 |
+| J03WPY | clean | 0.518217 | 0.900732 | 217 | 160 | 0.1693548387096774 | 131 |
+| J03WPY | corrupted | 0.254735 | 0.770340 | 306 | 425 | 0.11290322580645161 | 20414 |
+
+Gate: {"tests_passed": true, "promoted": false, "paired_spell_deltas": {"J03WMX": -0.001330611393443093, "J03WN1": 0.011170571629686599, "J03WOH": 0.0007340662911897722, "J03WOY": -0.006110932781708545, "J03WPY": -0.01510234462037291}, "paired_macro_deltas": {"J03WMX": 0.0019830228775348235, "J03WN1": 0.004694436125618484, "J03WOH": 0.0001489851308605905, "J03WOY": 0.0005638503486049551, "J03WPY": -0.0024805172517867735}}
+

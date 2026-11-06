@@ -46,3 +46,10 @@ class ModelSmoke(unittest.TestCase):
    p=a[:,[list(model.classes_).index(c) for c in ['H','A','D']]]
    labels=decode(p,np.ones((3,3))-np.eye(3));export_labels(path/'out.csv',labels,len(x))
    self.assertEqual(len((path/'out.csv').read_text().splitlines()),len(x)+1)
+
+class SpeedContract(unittest.TestCase):
+ def test_mean_speed_excludes_missing_and_resets(self):
+  from possession.core import mean_player_speed
+  p=np.array([[[0,0,0],[np.nan,0,0]],[[.01,0,0],[.9,0,0]],[[.9,0,0],[.9,0,0]]])
+  t=Tracking(p,np.full((3,3),np.nan));s=mean_player_speed(t,[(0,2),(2,3)],(100,60))
+  self.assertTrue(np.isnan(s[0]));self.assertAlmostEqual(s[1],25);self.assertTrue(np.isnan(s[2]))

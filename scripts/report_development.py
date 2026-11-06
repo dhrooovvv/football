@@ -1,4 +1,4 @@
-import json,csv
+import json,csv,subprocess,sys
 from pathlib import Path
 import numpy as np
 from possession.core import promote
@@ -14,8 +14,10 @@ def report(tag,before=None):
   lines.append(f"| {r['match']} | {r['condition']} | {r['spell_f1_mean']:.6f} | {r['macro_f1']:.6f} | {s['n_missed']} | {s['n_spurious']} | {short if short is not None else 'N/A'} | {e['dead_live_wrong_frames']} |")
  if before:
   b=paired(json.loads((root/before/'results.json').read_text()));a=paired(rows)
-  result={'promoted':promote(b,a,True),'paired_spell_deltas':{m:a[m][0]-b[m][0] for m in a},'paired_macro_deltas':{m:a[m][1]-b[m][1] for m in a}}
-  (root/tag/'gate.json').write_text(json.dumps(result,indent=2));lines.append('\nGate (tests must separately pass): '+json.dumps(result))
+  check=subprocess.run([sys.executable,'-m','unittest','discover','-s','tests','-q'],capture_output=True,text=True)
+  (root/tag/'test-output.txt').write_text(check.stdout+check.stderr)
+  result={'tests_passed':check.returncode==0,'promoted':promote(b,a,check.returncode==0),'paired_spell_deltas':{m:a[m][0]-b[m][0] for m in a},'paired_macro_deltas':{m:a[m][1]-b[m][1] for m in a}}
+  (root/tag/'gate.json').write_text(json.dumps(result,indent=2));lines.append('\nGate: '+json.dumps(result))
  text='\n'.join(lines)+'\n';(root/tag/'summary.md').write_text(text);print(text)
 if __name__=='__main__':
  import sys
