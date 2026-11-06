@@ -41,3 +41,7 @@ Earlier zero-external-run and no-prediction statements describe earlier work and
 
 ## J020 frozen diagnostics
 Target contracts pass; public score private and excluded from selection. Empirical target gaps greatly exceed original corruption. Same-match baselines trail frozen CatBoost. Ownership and dead/live errors dominate oracle repairs; categories overlap. Penalty16 passes expanded-grid gate; production remains8 pending review. One training-gap augmentation protocol is proposed, not approved or executed. Full per-match evidence: experiments/diagnostics-review/summary.md.
+
+
+## J021 approved augmentation completed
+Both isolated changes pass the unchanged paired gate: augmentation at8 (4/5, median spell+.003268, macro-.001228) and decoder16 without augmentation (3/5,+.010056,+.006132). Selected config now16; augmentation8 retained separately, no combined test. TargetCSV remains previous8 artifact. Corruption fidelity35.7–47.5% missing vs target40.7%; independent training/evaluation seeds and raw-mask feature consistency audited. Label shares/durations suggest convention or domain differences requiring caution, not a proven mapping error. See experiments/gap-augmentation/report.md. Stopped as requested.

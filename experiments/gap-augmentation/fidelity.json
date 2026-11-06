@@ -1,0 +1,77 @@
+[
+  {
+    "match": "J03WMX",
+    "target_observed_missing_fraction": 0.40692572565263097,
+    "clean_missing_fraction": 0.0,
+    "original_corrupted_missing_fraction": 0.2683072201250968,
+    "targetlike_missing_fraction": 0.35723827988517953,
+    "original_corrupted": {
+      "spellF1": 0.2667829119442023,
+      "macroF1": 0.7515943116548455
+    },
+    "targetlike": {
+      "spellF1": 0.304891922639363,
+      "macroF1": 0.6858068368409566
+    }
+  },
+  {
+    "match": "J03WN1",
+    "target_observed_missing_fraction": 0.40692572565263097,
+    "clean_missing_fraction": 0.0,
+    "original_corrupted_missing_fraction": 0.2807623568638255,
+    "targetlike_missing_fraction": 0.4006753272440856,
+    "original_corrupted": {
+      "spellF1": 0.28180943214629445,
+      "macroF1": 0.7316189499564206
+    },
+    "targetlike": {
+      "spellF1": 0.3102137767220903,
+      "macroF1": 0.6758758596401068
+    }
+  },
+  {
+    "match": "J03WOH",
+    "target_observed_missing_fraction": 0.40692572565263097,
+    "clean_missing_fraction": 0.0,
+    "original_corrupted_missing_fraction": 0.26184645881615576,
+    "targetlike_missing_fraction": 0.4751628842537933,
+    "original_corrupted": {
+      "spellF1": 0.29695057833859095,
+      "macroF1": 0.7600695054530376
+    },
+    "targetlike": {
+      "spellF1": 0.3253256150506513,
+      "macroF1": 0.6379605805360975
+    }
+  },
+  {
+    "match": "J03WOY",
+    "target_observed_missing_fraction": 0.40692572565263097,
+    "clean_missing_fraction": 0.0,
+    "original_corrupted_missing_fraction": 0.2624880731885278,
+    "targetlike_missing_fraction": 0.42367542234944155,
+    "original_corrupted": {
+      "spellF1": 0.2555133079847908,
+      "macroF1": 0.7389530808043481
+    },
+    "targetlike": {
+      "spellF1": 0.29429280397022334,
+      "macroF1": 0.6546990134200991
+    }
+  },
+  {
+    "match": "J03WPY",
+    "target_observed_missing_fraction": 0.40692572565263097,
+    "clean_missing_fraction": 0.0,
+    "original_corrupted_missing_fraction": 0.25976841687697916,
+    "targetlike_missing_fraction": 0.3590017166971021,
+    "original_corrupted": {
+      "spellF1": 0.266803699897225,
+      "macroF1": 0.7720558246317949
+    },
+    "targetlike": {
+      "spellF1": 0.3295958279009127,
+      "macroF1": 0.7099848734821447
+    }
+  }
+]

@@ -30,9 +30,9 @@ hypotheses:
 experiments:
   proxy_metric: external match-level spellF1
   baseline_value: null
-  best_value: 0.39106908238543703
-  selected_candidate: core_penalty8
-  consecutive_rejections: 2
+  best_value: 0.420564936202867
+  selected_candidate: core_penalty16
+  consecutive_rejections: 0
   total_runs: 6
   synthetic_contract_runs: 2
   external_performance_runs: 4
@@ -53,4 +53,11 @@ workspace:
   experiments_dir: experiments/
   to_human_dir: to_human/
   paper_dir: paper/
-next_action: Await approval of proposed gap-training experiment and confirm parent; production remains core_penalty8.
+next_action: Stopped after approved report; await user direction. Existing target CSV remains penalty8 artifact; no combined augmentation16 tested.
+
+approved_gap_review:
+  status: complete_stopped
+  report: experiments/gap-augmentation/report.md
+  retained_separate_branch: gap_augmentation_penalty8
+  target_export_regenerated: false
+  combined_augmentation16_tested: false

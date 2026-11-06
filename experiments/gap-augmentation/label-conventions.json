@@ -1,0 +1,45 @@
+{
+  "external": [
+    {
+      "match": "J03WMX",
+      "dead_share": 0.41514862948474657,
+      "mean_possession_spell_seconds": 6.682504892367906,
+      "possession_spells": 511,
+      "graded_frames": 145967
+    },
+    {
+      "match": "J03WN1",
+      "dead_share": 0.516978546351043,
+      "mean_possession_spell_seconds": 5.47016,
+      "possession_spells": 500,
+      "graded_frames": 141561
+    },
+    {
+      "match": "J03WOH",
+      "dead_share": 0.4756730362790969,
+      "mean_possession_spell_seconds": 7.158706467661691,
+      "possession_spells": 402,
+      "graded_frames": 137214
+    },
+    {
+      "match": "J03WOY",
+      "dead_share": 0.46479485884267835,
+      "mean_possession_spell_seconds": 6.691754385964912,
+      "possession_spells": 456,
+      "graded_frames": 142536
+    },
+    {
+      "match": "J03WPY",
+      "dead_share": 0.44285997633556984,
+      "mean_possession_spell_seconds": 7.739667458432304,
+      "possession_spells": 421,
+      "graded_frames": 146211
+    }
+  ],
+  "public_window_semantics_only": {
+    "dead_share": 0.19586666666666666,
+    "mean_possession_spell_seconds": 14.190588235294117,
+    "possession_spells": 17,
+    "graded_frames": 7500
+  }
+}

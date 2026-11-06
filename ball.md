@@ -267,3 +267,128 @@ Frozen penalty8 mean clean spellF1/macroF1 .508566/.889775; target-like .312864/
 Penalty8 was upper grid edge;16 and32 evaluated.16 passes gate (3/5 improve, median paired spell +.010056, macro +.006132);32 fails. Production remains8 pending review; no combined change applied.23 tests pass. Execution-order deviation: grid computations ran alongside Step2, before Step3 baselines and final taxonomy; primary four diagnostic steps themselves ran in order. Scorer unchanged; sealed matches untouched.
 Clean wrong-team/ownership oracle repair dominates all5; target-like wrong-team dominates3/5, dead/live2/5, with27k–34k dead/live wrong frames. Categories overlap; unique causal spellF1 attribution is not proven. Boundary medians zero describe matched typed boundaries only. One proposal preregistered: seeded half of training feature samples replaced by target-pattern corrupted features, same total samples/features/CatBoost/decoder budget. See proposed-gap-training.md. NOT approved or executed; wait for user approval and confirm parent, avoiding combined grid/augmentation changes.
 Documentation append initially failed under system Python missing numpy; no diagnostic failed. Corrected using project environment.
+
+
+### J021 — 2026-11-06 — Approved augmentation, fidelity, decoder isolation and semantic review
+Protocol577294b committed before execution; user explicitly approved augmentation against frozen penalty8 and separate decoder16 promotion. All three prerequisite diagnostics completed before fitting. No public performance rescore, target training, sealed access or competition rows exposed. Full report: experiments/gap-augmentation/report.md; detailed decoder and augmented per-match taxonomy JSON alongside.
+Fidelity graded-frame missing fractions: target .406926; target-like matches .357238/.400675/.475163/.423675/.359002; original .268307/.280762/.261846/.262488/.259768. Empirical bootstrap is approximate, not exact rate matching. Raw ball positions are masked BEFORE computing nine features; ten train/evaluation cache audits verify masks, gap age and speed consistency. Evaluation seeds20261106+i; training20271106+i; exact half-row replacement20281106+i. Total sampled rows, model iterations and folds unchanged.
+Original corruption mean spurious/missed @IoU.5:440.6/324.2; target-like217.0/336.0. Longer gaps suppress fragmentation while erasing more frames, consistent with spellF1 rising and macroF1 falling; multiple corruption properties changed, so not isolated causal proof.
+Decoder comparison uses identical CatBoost probabilities: argmax, supplied centered H/A smoothing50, Viterbi8/16. Smoothing ignores D votes, explicitly documented; nearest-player decoder's .98/.01 emissions were near-hard and not decoder-isolation evidence.
+External dead shares41.5–51.7%, mean possession spells5.47–7.74s; public documented/computed aggregate19.59%,14.19s,17 spells. Nominal H/A/D semantics agree but loose-ball ownership continuation and external unknown-as-X fragmentation are not proven equivalent. Baseline macroF1 gap suggests potential convention/domain mismatch, not proof: external clean ball is continuously observed, so missing=>D baseline misses dead play; target missingness is40.7%. No label convention changed or tuned.
+Augmentation passes existing paired gate4/5, median spell delta+.003268, macro-.001228; primary corrupted median spell delta+.001957,4/5 improve. Penalty16 separately passes3/5, median spell+.010056, macro+.006132. Selected unaugmented production config promoted to16; augmentation+8 retained as a separate passing branch. NO untested augmentation+16 combination. Existing targetCSV/completion record still describe penalty8; no new export or augmented final full-development model.23 tests plus10 cache audits pass. Reporting failed initially on numpy int64 JSON serialization; fixed and reran report only, no model rerun. Per-match failures/regressions retained below. Stop now per user; no further experiment.
+
+| Match | Setting | Method | spellF1 | macroF1 |
+|---|---|---|---:|---:|
+| J03WMX | clean | argmax | 0.083883 | 0.852236 |
+| J03WMX | clean | smooth50 | 0.342353 | 0.836020 |
+| J03WMX | clean | penalty8 | 0.499781 | 0.902245 |
+| J03WMX | clean | penalty16 | 0.501360 | 0.907574 |
+| J03WMX | targetlike | argmax | 0.074322 | 0.648709 |
+| J03WMX | targetlike | smooth50 | 0.208907 | 0.684237 |
+| J03WMX | targetlike | penalty8 | 0.304892 | 0.685807 |
+| J03WMX | targetlike | penalty16 | 0.323426 | 0.692742 |
+| J03WN1 | clean | argmax | 0.089149 | 0.831715 |
+| J03WN1 | clean | smooth50 | 0.318708 | 0.805028 |
+| J03WN1 | clean | penalty8 | 0.496432 | 0.873339 |
+| J03WN1 | clean | penalty16 | 0.484682 | 0.875014 |
+| J03WN1 | targetlike | argmax | 0.076368 | 0.647077 |
+| J03WN1 | targetlike | smooth50 | 0.230103 | 0.672068 |
+| J03WN1 | targetlike | penalty8 | 0.310214 | 0.675876 |
+| J03WN1 | targetlike | penalty16 | 0.313253 | 0.680025 |
+| J03WOH | clean | argmax | 0.072041 | 0.842809 |
+| J03WOH | clean | smooth50 | 0.352104 | 0.827188 |
+| J03WOH | clean | penalty8 | 0.527205 | 0.894625 |
+| J03WOH | clean | penalty16 | 0.568452 | 0.903698 |
+| J03WOH | targetlike | argmax | 0.057446 | 0.604913 |
+| J03WOH | targetlike | smooth50 | 0.256101 | 0.641767 |
+| J03WOH | targetlike | penalty8 | 0.325326 | 0.637961 |
+| J03WOH | targetlike | penalty16 | 0.343671 | 0.646450 |
+| J03WOY | clean | argmax | 0.084798 | 0.827114 |
+| J03WOY | clean | smooth50 | 0.316787 | 0.798138 |
+| J03WOY | clean | penalty8 | 0.483060 | 0.874689 |
+| J03WOY | clean | penalty16 | 0.516129 | 0.885072 |
+| J03WOY | targetlike | argmax | 0.072080 | 0.623098 |
+| J03WOY | targetlike | smooth50 | 0.227797 | 0.654792 |
+| J03WOY | targetlike | penalty8 | 0.294293 | 0.654699 |
+| J03WOY | targetlike | penalty16 | 0.312291 | 0.663388 |
+| J03WPY | clean | argmax | 0.053460 | 0.847426 |
+| J03WPY | clean | smooth50 | 0.361435 | 0.840343 |
+| J03WPY | clean | penalty8 | 0.536352 | 0.903977 |
+| J03WPY | clean | penalty16 | 0.517647 | 0.904135 |
+| J03WPY | targetlike | argmax | 0.040472 | 0.668697 |
+| J03WPY | targetlike | smooth50 | 0.244268 | 0.711043 |
+| J03WPY | targetlike | penalty8 | 0.329596 | 0.709985 |
+| J03WPY | targetlike | penalty16 | 0.324741 | 0.714401 |
+| J03WMX | clean | augmentation_penalty8 | 0.497380 | 0.901670 |
+| J03WMX | targetlike | augmentation_penalty8 | 0.306849 | 0.691008 |
+| J03WN1 | clean | augmentation_penalty8 | 0.496104 | 0.870904 |
+| J03WN1 | targetlike | augmentation_penalty8 | 0.317900 | 0.683337 |
+| J03WOH | clean | augmentation_penalty8 | 0.532497 | 0.896916 |
+| J03WOH | targetlike | augmentation_penalty8 | 0.323209 | 0.632202 |
+| J03WOY | clean | augmentation_penalty8 | 0.494537 | 0.875849 |
+| J03WOY | targetlike | augmentation_penalty8 | 0.302133 | 0.651082 |
+| J03WPY | clean | augmentation_penalty8 | 0.542234 | 0.903090 |
+| J03WPY | targetlike | augmentation_penalty8 | 0.330251 | 0.702075 |
+
+Gate per-match deltas (negative values record regressions):
+
+```json
+{
+  "augmentation_penalty8": {
+    "promoted": true,
+    "paired_spell_deltas": {
+      "J03WMX": -0.00022193826318522847,
+      "J03WN1": 0.0036787241429445117,
+      "J03WOH": 0.001587724148415015,
+      "J03WOY": 0.00965871609835689,
+      "J03WPY": 0.003268297228421202
+    },
+    "paired_macro_deltas": {
+      "J03WMX": 0.0023127285947391885,
+      "J03WN1": 0.0025130177800606335,
+      "J03WOH": -0.0017340576715769718,
+      "J03WOY": -0.0012284997026200672,
+      "J03WPY": -0.004398661314549468
+    },
+    "median_paired_spell_delta": 0.003268297228421202,
+    "median_paired_macro_delta": -0.0012284997026200672,
+    "matches_improved": 4,
+    "primary_corrupted_spell_deltas": {
+      "J03WMX": 0.0019573924291301226,
+      "J03WN1": 0.0076859846144252675,
+      "J03WOH": -0.0021164459962100257,
+      "J03WOY": 0.00784019477507153,
+      "J03WPY": 0.000655162852059521
+    },
+    "primary_median_delta": 0.0019573924291301226
+  },
+  "penalty16": {
+    "promoted": true,
+    "paired_spell_deltas": {
+      "J03WMX": 0.010056145887024415,
+      "J03WN1": -0.004355378129752785,
+      "J03WOH": 0.029795910809050974,
+      "J03WOY": 0.02553331089575983,
+      "J03WPY": -0.011780114797252161
+    },
+    "paired_macro_deltas": {
+      "J03WMX": 0.006132432243620589,
+      "J03WN1": 0.002911878637101184,
+      "J03WOH": 0.00878120529098314,
+      "J03WOY": 0.009536229165395538,
+      "J03WPY": 0.002286797387688666
+    },
+    "median_paired_spell_delta": 0.010056145887024415,
+    "median_paired_macro_delta": 0.006132432243620589,
+    "matches_improved": 3,
+    "primary_corrupted_spell_deltas": {
+      "J03WMX": 0.01853377005585105,
+      "J03WN1": 0.003039235326102452,
+      "J03WOH": 0.018345271025298093,
+      "J03WOY": 0.017997698823072783,
+      "J03WPY": -0.0048550871601720225
+    },
+    "primary_median_delta": 0.017997698823072783
+  }
+}
+```

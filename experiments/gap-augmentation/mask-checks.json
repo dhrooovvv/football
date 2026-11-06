@@ -1,0 +1,52 @@
+[
+  {
+    "match": "J03WMX",
+    "setting": "evaluation",
+    "mask_gap_speed_consistent": true
+  },
+  {
+    "match": "J03WMX",
+    "setting": "training",
+    "mask_gap_speed_consistent": true
+  },
+  {
+    "match": "J03WN1",
+    "setting": "evaluation",
+    "mask_gap_speed_consistent": true
+  },
+  {
+    "match": "J03WN1",
+    "setting": "training",
+    "mask_gap_speed_consistent": true
+  },
+  {
+    "match": "J03WOH",
+    "setting": "evaluation",
+    "mask_gap_speed_consistent": true
+  },
+  {
+    "match": "J03WOH",
+    "setting": "training",
+    "mask_gap_speed_consistent": true
+  },
+  {
+    "match": "J03WOY",
+    "setting": "evaluation",
+    "mask_gap_speed_consistent": true
+  },
+  {
+    "match": "J03WOY",
+    "setting": "training",
+    "mask_gap_speed_consistent": true
+  },
+  {
+    "match": "J03WPY",
+    "setting": "evaluation",
+    "mask_gap_speed_consistent": true
+  },
+  {
+    "match": "J03WPY",
+    "setting": "training",
+    "mask_gap_speed_consistent": true
+  }
+]

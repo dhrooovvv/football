@@ -1,0 +1,1362 @@
+[
+  {
+    "match": "J03WMX",
+    "condition": "clean",
+    "method": "argmax",
+    "spellF1": 0.08388250319284803,
+    "macroF1": 0.8522364097038695,
+    "errors": {
+      "short_spells": 194,
+      "short_spell_recall_iou_05": 0.28350515463917525,
+      "dead_live_wrong_frames": 334,
+      "late_boundaries": 44,
+      "early_boundaries": 347,
+      "matched_boundary_median_frames": -8.0,
+      "boundary_pairs_within_2s": 545,
+      "precision": 0.041421856639247946,
+      "recall": 0.2759295499021526,
+      "f1": 0.07203065134099618,
+      "n_matched": 141,
+      "n_spurious": 3263,
+      "n_missed": 370,
+      "boundary_shift_quantiles_frames": [
+        -50.0,
+        -45.0,
+        -8.0,
+        0.0,
+        29.11999999999989,
+        47.0
+      ]
+    },
+    "oracle_repair_spellF1_gain": {
+      "dead_live": 0.010882454072109221,
+      "wrong_team": 0.7200262915954255
+    }
+  },
+  {
+    "match": "J03WMX",
+    "condition": "clean",
+    "method": "smooth50",
+    "spellF1": 0.34235294117647064,
+    "macroF1": 0.8360198127139459,
+    "errors": {
+      "short_spells": 194,
+      "short_spell_recall_iou_05": 0.010309278350515464,
+      "dead_live_wrong_frames": 10188,
+      "late_boundaries": 124,
+      "early_boundaries": 198,
+      "matched_boundary_median_frames": -11.5,
+      "boundary_pairs_within_2s": 326,
+      "precision": 0.33398821218074654,
+      "recall": 0.33268101761252444,
+      "f1": 0.33333333333333326,
+      "n_matched": 170,
+      "n_spurious": 339,
+      "n_missed": 341,
+      "boundary_shift_quantiles_frames": [
+        -50.0,
+        -50.0,
+        -11.5,
+        50.0,
+        50.0,
+        50.0
+      ]
+    },
+    "oracle_repair_spellF1_gain": {
+      "dead_live": 0.11065374033800601,
+      "wrong_team": 0.44909442724458204
+    }
+  },
+  {
+    "match": "J03WMX",
+    "condition": "clean",
+    "method": "penalty8",
+    "spellF1": 0.49978118161925594,
+    "macroF1": 0.9022448524281916,
+    "errors": {
+      "short_spells": 194,
+      "short_spell_recall_iou_05": 0.14948453608247422,
+      "dead_live_wrong_frames": 127,
+      "late_boundaries": 42,
+      "early_boundaries": 148,
+      "matched_boundary_median_frames": 0.0,
+      "boundary_pairs_within_2s": 339,
+      "precision": 0.5707196029776674,
+      "recall": 0.4500978473581213,
+      "f1": 0.5032822757111597,
+      "n_matched": 230,
+      "n_spurious": 173,
+      "n_missed": 281,
+      "boundary_shift_quantiles_frames": [
+        -50.0,
+        -25.0,
+        0.0,
+        6.199999999999989,
+        45.860000000000014,
+        48.0
+      ]
+    },
+    "oracle_repair_spellF1_gain": {
+      "dead_live": 0.004604783293024772,
+      "wrong_team": 0.49282582227179467
+    }
+  },
+  {
+    "match": "J03WMX",
+    "condition": "clean",
+    "method": "penalty16",
+    "spellF1": 0.5013597033374537,
+    "macroF1": 0.9075741186711924,
+    "errors": {
+      "short_spells": 194,
+      "short_spell_recall_iou_05": 0.09278350515463918,
+      "dead_live_wrong_frames": 106,
+      "late_boundaries": 35,
+      "early_boundaries": 110,
+      "matched_boundary_median_frames": 0.0,
+      "boundary_pairs_within_2s": 287,
+      "precision": 0.6778523489932886,
+      "recall": 0.3953033268101761,
+      "f1": 0.4993819530284302,
+      "n_matched": 202,
+      "n_spurious": 96,
+      "n_missed": 309,
+      "boundary_shift_quantiles_frames": [
+        -48.0,
+        -20.0,
+        0.0,
+        6.0,
+        38.83999999999992,
+        47.0
+      ]
+    },
+    "oracle_repair_spellF1_gain": {
+      "dead_live": -0.0013597033374537215,
+      "wrong_team": 0.4966871716625465
+    }
+  },
+  {
+    "match": "J03WMX",
+    "condition": "targetlike",
+    "method": "argmax",
+    "spellF1": 0.07432181345224823,
+    "macroF1": 0.6487092949671429,
+    "errors": {
+      "short_spells": 194,
+      "short_spell_recall_iou_05": 0.18556701030927836,
+      "dead_live_wrong_frames": 33391,
+      "late_boundaries": 43,
+      "early_boundaries": 215,
+      "matched_boundary_median_frames": -4.0,
+      "boundary_pairs_within_2s": 366,
+      "precision": 0.03761467889908257,
+      "recall": 0.16046966731898238,
+      "f1": 0.06094388703084356,
+      "n_matched": 82,
+      "n_spurious": 2098,
+      "n_missed": 429,
+      "boundary_shift_quantiles_frames": [
+        -50.0,
+        -44.0,
+        -4.0,
+        3.5,
+        42.700000000000045,
+        50.0
+      ]
+    },
+    "oracle_repair_spellF1_gain": {
+      "dead_live": 0.14093864142669532,
+      "wrong_team": 0.5199420488804478
+    }
+  },
+  {
+    "match": "J03WMX",
+    "condition": "targetlike",
+    "method": "smooth50",
+    "spellF1": 0.20890688259109308,
+    "macroF1": 0.6842368916152141,
+    "errors": {
+      "short_spells": 194,
+      "short_spell_recall_iou_05": 0.015463917525773196,
+      "dead_live_wrong_frames": 32813,
+      "late_boundaries": 84,
+      "early_boundaries": 124,
+      "matched_boundary_median_frames": -11.5,
+      "boundary_pairs_within_2s": 210,
+      "precision": 0.19916142557651992,
+      "recall": 0.18590998043052837,
+      "f1": 0.1923076923076923,
+      "n_matched": 95,
+      "n_spurious": 382,
+      "n_missed": 416,
+      "boundary_shift_quantiles_frames": [
+        -50.0,
+        -50.0,
+        -11.5,
+        50.0,
+        50.0,
+        50.0
+      ]
+    },
+    "oracle_repair_spellF1_gain": {
+      "dead_live": 0.3458175268577259,
+      "wrong_team": 0.3997727111300519
+    }
+  },
+  {
+    "match": "J03WMX",
+    "condition": "targetlike",
+    "method": "penalty8",
+    "spellF1": 0.304891922639363,
+    "macroF1": 0.6858068368409566,
+    "errors": {
+      "short_spells": 194,
+      "short_spell_recall_iou_05": 0.1134020618556701,
+      "dead_live_wrong_frames": 33243,
+      "late_boundaries": 30,
+      "early_boundaries": 90,
+      "matched_boundary_median_frames": 0.0,
+      "boundary_pairs_within_2s": 221,
+      "precision": 0.35597826086956524,
+      "recall": 0.2563600782778865,
+      "f1": 0.29806598407281004,
+      "n_matched": 131,
+      "n_spurious": 237,
+      "n_missed": 380,
+      "boundary_shift_quantiles_frames": [
+        -50.0,
+        -22.0,
+        0.0,
+        8.0,
+        48.60000000000002,
+        50.0
+      ]
+    },
+    "oracle_repair_spellF1_gain": {
+      "dead_live": 0.34287814673625666,
+      "wrong_team": 0.3910819620178732
+    }
+  },
+  {
+    "match": "J03WMX",
+    "condition": "targetlike",
+    "method": "penalty16",
+    "spellF1": 0.32342569269521404,
+    "macroF1": 0.6927424350851968,
+    "errors": {
+      "short_spells": 194,
+      "short_spell_recall_iou_05": 0.07216494845360824,
+      "dead_live_wrong_frames": 33218,
+      "late_boundaries": 27,
+      "early_boundaries": 67,
+      "matched_boundary_median_frames": 0.0,
+      "boundary_pairs_within_2s": 188,
+      "precision": 0.4416961130742049,
+      "recall": 0.2446183953033268,
+      "f1": 0.3148614609571788,
+      "n_matched": 125,
+      "n_spurious": 158,
+      "n_missed": 386,
+      "boundary_shift_quantiles_frames": [
+        -47.0,
+        -18.0,
+        0.0,
+        8.600000000000023,
+        47.25999999999999,
+        50.0
+      ]
+    },
+    "oracle_repair_spellF1_gain": {
+      "dead_live": 0.3663482577891777,
+      "wrong_team": 0.37559070074740886
+    }
+  },
+  {
+    "match": "J03WN1",
+    "condition": "clean",
+    "method": "argmax",
+    "spellF1": 0.08914893617021276,
+    "macroF1": 0.8317152941553649,
+    "errors": {
+      "short_spells": 172,
+      "short_spell_recall_iou_05": 0.3313953488372093,
+      "dead_live_wrong_frames": 480,
+      "late_boundaries": 23,
+      "early_boundaries": 352,
+      "matched_boundary_median_frames": -12.0,
+      "boundary_pairs_within_2s": 550,
+      "precision": 0.045092024539877304,
+      "recall": 0.294,
+      "f1": 0.07819148936170213,
+      "n_matched": 147,
+      "n_spurious": 3113,
+      "n_missed": 353,
+      "boundary_shift_quantiles_frames": [
+        -50.0,
+        -45.0,
+        -12.0,
+        0.0,
+        23.50999999999999,
+        40.0
+      ]
+    },
+    "oracle_repair_spellF1_gain": {
+      "dead_live": 0.010319595298318718,
+      "wrong_team": 0.7201533894111826
+    }
+  },
+  {
+    "match": "J03WN1",
+    "condition": "clean",
+    "method": "smooth50",
+    "spellF1": 0.31870845204178533,
+    "macroF1": 0.8050277432677481,
+    "errors": {
+      "short_spells": 172,
+      "short_spell_recall_iou_05": 0.046511627906976744,
+      "dead_live_wrong_frames": 10494,
+      "late_boundaries": 146,
+      "early_boundaries": 208,
+      "matched_boundary_median_frames": -14.0,
+      "boundary_pairs_within_2s": 354,
+      "precision": 0.30018083182640143,
+      "recall": 0.332,
+      "f1": 0.3152896486229819,
+      "n_matched": 166,
+      "n_spurious": 387,
+      "n_missed": 334,
+      "boundary_shift_quantiles_frames": [
+        -50.0,
+        -50.0,
+        -14.0,
+        50.0,
+        50.0,
+        50.0
+      ]
+    },
+    "oracle_repair_spellF1_gain": {
+      "dead_live": 0.14174609341276023,
+      "wrong_team": 0.43770801284925587
+    }
+  },
+  {
+    "match": "J03WN1",
+    "condition": "clean",
+    "method": "penalty8",
+    "spellF1": 0.4964324324324324,
+    "macroF1": 0.873339069017696,
+    "errors": {
+      "short_spells": 172,
+      "short_spell_recall_iou_05": 0.20930232558139536,
+      "dead_live_wrong_frames": 228,
+      "late_boundaries": 47,
+      "early_boundaries": 166,
+      "matched_boundary_median_frames": 0.0,
+      "boundary_pairs_within_2s": 367,
+      "precision": 0.548235294117647,
+      "recall": 0.466,
+      "f1": 0.5037837837837837,
+      "n_matched": 233,
+      "n_spurious": 192,
+      "n_missed": 267,
+      "boundary_shift_quantiles_frames": [
+        -50.0,
+        -34.4,
+        0.0,
+        10.400000000000034,
+        46.0,
+        49.0
+      ]
+    },
+    "oracle_repair_spellF1_gain": {
+      "dead_live": 0.005401440275226821,
+      "wrong_team": 0.49419568322060836
+    }
+  },
+  {
+    "match": "J03WN1",
+    "condition": "clean",
+    "method": "penalty16",
+    "spellF1": 0.4846824408468244,
+    "macroF1": 0.8750140264778077,
+    "errors": {
+      "short_spells": 172,
+      "short_spell_recall_iou_05": 0.12209302325581395,
+      "dead_live_wrong_frames": 169,
+      "late_boundaries": 40,
+      "early_boundaries": 109,
+      "matched_boundary_median_frames": 0.0,
+      "boundary_pairs_within_2s": 290,
+      "precision": 0.6534653465346535,
+      "recall": 0.396,
+      "f1": 0.4931506849315068,
+      "n_matched": 198,
+      "n_spurious": 105,
+      "n_missed": 302,
+      "boundary_shift_quantiles_frames": [
+        -49.0,
+        -30.0,
+        0.0,
+        13.100000000000023,
+        46.110000000000014,
+        49.0
+      ]
+    },
+    "oracle_repair_spellF1_gain": {
+      "dead_live": 0.002833010327464913,
+      "wrong_team": 0.5101175591531757
+    }
+  },
+  {
+    "match": "J03WN1",
+    "condition": "targetlike",
+    "method": "argmax",
+    "spellF1": 0.07636786961583236,
+    "macroF1": 0.6470774772320357,
+    "errors": {
+      "short_spells": 172,
+      "short_spell_recall_iou_05": 0.20930232558139536,
+      "dead_live_wrong_frames": 27238,
+      "late_boundaries": 21,
+      "early_boundaries": 236,
+      "matched_boundary_median_frames": -11.0,
+      "boundary_pairs_within_2s": 365,
+      "precision": 0.03948001925854598,
+      "recall": 0.164,
+      "f1": 0.06363989134652698,
+      "n_matched": 82,
+      "n_spurious": 1995,
+      "n_missed": 418,
+      "boundary_shift_quantiles_frames": [
+        -50.0,
+        -44.0,
+        -11.0,
+        0.0,
+        41.72000000000003,
+        50.0
+      ]
+    },
+    "oracle_repair_spellF1_gain": {
+      "dead_live": 0.14025452127600824,
+      "wrong_team": 0.5494385819970709
+    }
+  },
+  {
+    "match": "J03WN1",
+    "condition": "targetlike",
+    "method": "smooth50",
+    "spellF1": 0.2301030927835052,
+    "macroF1": 0.672067807202955,
+    "errors": {
+      "short_spells": 172,
+      "short_spell_recall_iou_05": 0.029069767441860465,
+      "dead_live_wrong_frames": 28407,
+      "late_boundaries": 113,
+      "early_boundaries": 129,
+      "matched_boundary_median_frames": -4.5,
+      "boundary_pairs_within_2s": 242,
+      "precision": 0.225531914893617,
+      "recall": 0.212,
+      "f1": 0.21855670103092784,
+      "n_matched": 106,
+      "n_spurious": 364,
+      "n_missed": 394,
+      "boundary_shift_quantiles_frames": [
+        -50.0,
+        -50.0,
+        -4.5,
+        50.0,
+        50.0,
+        50.0
+      ]
+    },
+    "oracle_repair_spellF1_gain": {
+      "dead_live": 0.3418595240389247,
+      "wrong_team": 0.38753850424527847
+    }
+  },
+  {
+    "match": "J03WN1",
+    "condition": "targetlike",
+    "method": "penalty8",
+    "spellF1": 0.3102137767220903,
+    "macroF1": 0.6758758596401068,
+    "errors": {
+      "short_spells": 172,
+      "short_spell_recall_iou_05": 0.14534883720930233,
+      "dead_live_wrong_frames": 27110,
+      "late_boundaries": 40,
+      "early_boundaries": 97,
+      "matched_boundary_median_frames": 0.0,
+      "boundary_pairs_within_2s": 235,
+      "precision": 0.37719298245614036,
+      "recall": 0.258,
+      "f1": 0.3064133016627078,
+      "n_matched": 129,
+      "n_spurious": 213,
+      "n_missed": 371,
+      "boundary_shift_quantiles_frames": [
+        -48.0,
+        -33.599999999999994,
+        0.0,
+        19.799999999999983,
+        46.0,
+        49.0
+      ]
+    },
+    "oracle_repair_spellF1_gain": {
+      "dead_live": 0.32264626384586104,
+      "wrong_team": 0.4156953141870008
+    }
+  },
+  {
+    "match": "J03WN1",
+    "condition": "targetlike",
+    "method": "penalty16",
+    "spellF1": 0.3132530120481927,
+    "macroF1": 0.6800246594541974,
+    "errors": {
+      "short_spells": 172,
+      "short_spell_recall_iou_05": 0.0872093023255814,
+      "dead_live_wrong_frames": 27111,
+      "late_boundaries": 29,
+      "early_boundaries": 72,
+      "matched_boundary_median_frames": 0.0,
+      "boundary_pairs_within_2s": 185,
+      "precision": 0.4777327935222672,
+      "recall": 0.236,
+      "f1": 0.31593038821954483,
+      "n_matched": 118,
+      "n_spurious": 129,
+      "n_missed": 382,
+      "boundary_shift_quantiles_frames": [
+        -46.0,
+        -34.599999999999994,
+        0.0,
+        14.599999999999994,
+        46.0,
+        49.0
+      ]
+    },
+    "oracle_repair_spellF1_gain": {
+      "dead_live": 0.3481995019182877,
+      "wrong_team": 0.41513923424599203
+    }
+  },
+  {
+    "match": "J03WOH",
+    "condition": "clean",
+    "method": "argmax",
+    "spellF1": 0.07204098139660287,
+    "macroF1": 0.8428085595322693,
+    "errors": {
+      "short_spells": 111,
+      "short_spell_recall_iou_05": 0.3153153153153153,
+      "dead_live_wrong_frames": 421,
+      "late_boundaries": 15,
+      "early_boundaries": 276,
+      "matched_boundary_median_frames": -10.0,
+      "boundary_pairs_within_2s": 438,
+      "precision": 0.033867553674024796,
+      "recall": 0.27860696517412936,
+      "f1": 0.06039363709894851,
+      "n_matched": 112,
+      "n_spurious": 3195,
+      "n_missed": 290,
+      "boundary_shift_quantiles_frames": [
+        -50.0,
+        -45.0,
+        -10.0,
+        0.0,
+        8.0,
+        43.0
+      ]
+    },
+    "oracle_repair_spellF1_gain": {
+      "dead_live": 0.007374091719257653,
+      "wrong_team": 0.7340939879285504
+    }
+  },
+  {
+    "match": "J03WOH",
+    "condition": "clean",
+    "method": "smooth50",
+    "spellF1": 0.35210355987055014,
+    "macroF1": 0.8271879018640332,
+    "errors": {
+      "short_spells": 111,
+      "short_spell_recall_iou_05": 0.0,
+      "dead_live_wrong_frames": 10161,
+      "late_boundaries": 118,
+      "early_boundaries": 169,
+      "matched_boundary_median_frames": -18.0,
+      "boundary_pairs_within_2s": 288,
+      "precision": 0.3238095238095238,
+      "recall": 0.4228855721393035,
+      "f1": 0.3667745415318231,
+      "n_matched": 170,
+      "n_spurious": 355,
+      "n_missed": 232,
+      "boundary_shift_quantiles_frames": [
+        -50.0,
+        -50.0,
+        -18.0,
+        50.0,
+        50.0,
+        50.0
+      ]
+    },
+    "oracle_repair_spellF1_gain": {
+      "dead_live": 0.1456972163260863,
+      "wrong_team": 0.3889449069939404
+    }
+  },
+  {
+    "match": "J03WOH",
+    "condition": "clean",
+    "method": "penalty8",
+    "spellF1": 0.5272049689440993,
+    "macroF1": 0.894625469329731,
+    "errors": {
+      "short_spells": 111,
+      "short_spell_recall_iou_05": 0.17117117117117117,
+      "dead_live_wrong_frames": 152,
+      "late_boundaries": 36,
+      "early_boundaries": 135,
+      "matched_boundary_median_frames": 0.0,
+      "boundary_pairs_within_2s": 324,
+      "precision": 0.5285359801488834,
+      "recall": 0.5298507462686567,
+      "f1": 0.529192546583851,
+      "n_matched": 213,
+      "n_spurious": 190,
+      "n_missed": 189,
+      "boundary_shift_quantiles_frames": [
+        -50.0,
+        -33.0,
+        0.0,
+        5.099999999999966,
+        40.07999999999993,
+        48.0
+      ]
+    },
+    "oracle_repair_spellF1_gain": {
+      "dead_live": 0.0033161228673150855,
+      "wrong_team": 0.4648742389766928
+    }
+  },
+  {
+    "match": "J03WOH",
+    "condition": "clean",
+    "method": "penalty16",
+    "spellF1": 0.5684515195369031,
+    "macroF1": 0.9036980689811337,
+    "errors": {
+      "short_spells": 111,
+      "short_spell_recall_iou_05": 0.11711711711711711,
+      "dead_live_wrong_frames": 158,
+      "late_boundaries": 32,
+      "early_boundaries": 101,
+      "matched_boundary_median_frames": 0.0,
+      "boundary_pairs_within_2s": 286,
+      "precision": 0.6955017301038062,
+      "recall": 0.5,
+      "f1": 0.5817655571635311,
+      "n_matched": 201,
+      "n_spurious": 88,
+      "n_missed": 201,
+      "boundary_shift_quantiles_frames": [
+        -50.0,
+        -32.5,
+        0.0,
+        4.5,
+        35.19999999999982,
+        48.0
+      ]
+    },
+    "oracle_repair_spellF1_gain": {
+      "dead_live": 0.002977051891668303,
+      "wrong_team": 0.4248570306489705
+    }
+  },
+  {
+    "match": "J03WOH",
+    "condition": "targetlike",
+    "method": "argmax",
+    "spellF1": 0.05744586831639418,
+    "macroF1": 0.6049131131025126,
+    "errors": {
+      "short_spells": 111,
+      "short_spell_recall_iou_05": 0.16216216216216217,
+      "dead_live_wrong_frames": 34246,
+      "late_boundaries": 10,
+      "early_boundaries": 153,
+      "matched_boundary_median_frames": -14.0,
+      "boundary_pairs_within_2s": 243,
+      "precision": 0.030091348737238045,
+      "recall": 0.13930348258706468,
+      "f1": 0.04949182501104729,
+      "n_matched": 56,
+      "n_spurious": 1805,
+      "n_missed": 346,
+      "boundary_shift_quantiles_frames": [
+        -50.0,
+        -45.0,
+        -14.0,
+        0.0,
+        19.379999999999825,
+        49.0
+      ]
+    },
+    "oracle_repair_spellF1_gain": {
+      "dead_live": 0.16445809124552666,
+      "wrong_team": 0.48124221735964323
+    }
+  },
+  {
+    "match": "J03WOH",
+    "condition": "targetlike",
+    "method": "smooth50",
+    "spellF1": 0.2561006289308176,
+    "macroF1": 0.6417666620401721,
+    "errors": {
+      "short_spells": 111,
+      "short_spell_recall_iou_05": 0.0,
+      "dead_live_wrong_frames": 34987,
+      "late_boundaries": 76,
+      "early_boundaries": 104,
+      "matched_boundary_median_frames": -16.0,
+      "boundary_pairs_within_2s": 180,
+      "precision": 0.25699745547073793,
+      "recall": 0.2512437810945274,
+      "f1": 0.25408805031446546,
+      "n_matched": 101,
+      "n_spurious": 292,
+      "n_missed": 301,
+      "boundary_shift_quantiles_frames": [
+        -50.0,
+        -50.0,
+        -16.0,
+        50.0,
+        50.0,
+        50.0
+      ]
+    },
+    "oracle_repair_spellF1_gain": {
+      "dead_live": 0.4017082288780401,
+      "wrong_team": 0.2924564601532476
+    }
+  },
+  {
+    "match": "J03WOH",
+    "condition": "targetlike",
+    "method": "penalty8",
+    "spellF1": 0.3253256150506513,
+    "macroF1": 0.6379605805360975,
+    "errors": {
+      "short_spells": 111,
+      "short_spell_recall_iou_05": 0.10810810810810811,
+      "dead_live_wrong_frames": 34159,
+      "late_boundaries": 21,
+      "early_boundaries": 78,
+      "matched_boundary_median_frames": 0.0,
+      "boundary_pairs_within_2s": 180,
+      "precision": 0.3806228373702422,
+      "recall": 0.2736318407960199,
+      "f1": 0.31837916063675825,
+      "n_matched": 110,
+      "n_spurious": 179,
+      "n_missed": 292,
+      "boundary_shift_quantiles_frames": [
+        -50.0,
+        -36.099999999999994,
+        0.0,
+        6.0,
+        43.26000000000005,
+        49.0
+      ]
+    },
+    "oracle_repair_spellF1_gain": {
+      "dead_live": 0.4010894792889713,
+      "wrong_team": 0.29079378793442334
+    }
+  },
+  {
+    "match": "J03WOH",
+    "condition": "targetlike",
+    "method": "penalty16",
+    "spellF1": 0.34367088607594937,
+    "macroF1": 0.6464503914666612,
+    "errors": {
+      "short_spells": 111,
+      "short_spell_recall_iou_05": 0.09009009009009009,
+      "dead_live_wrong_frames": 34159,
+      "late_boundaries": 23,
+      "early_boundaries": 57,
+      "matched_boundary_median_frames": 0.0,
+      "boundary_pairs_within_2s": 166,
+      "precision": 0.46956521739130436,
+      "recall": 0.26865671641791045,
+      "f1": 0.34177215189873417,
+      "n_matched": 108,
+      "n_spurious": 122,
+      "n_missed": 294,
+      "boundary_shift_quantiles_frames": [
+        -50.0,
+        -31.5,
+        0.0,
+        14.5,
+        45.39999999999998,
+        49.0
+      ]
+    },
+    "oracle_repair_spellF1_gain": {
+      "dead_live": 0.420242709857977,
+      "wrong_team": 0.27244851690912525
+    }
+  },
+  {
+    "match": "J03WOY",
+    "condition": "clean",
+    "method": "argmax",
+    "spellF1": 0.0847976011994003,
+    "macroF1": 0.8271142533007435,
+    "errors": {
+      "short_spells": 131,
+      "short_spell_recall_iou_05": 0.3053435114503817,
+      "dead_live_wrong_frames": 487,
+      "late_boundaries": 34,
+      "early_boundaries": 281,
+      "matched_boundary_median_frames": -3.0,
+      "boundary_pairs_within_2s": 487,
+      "precision": 0.04272316776658562,
+      "recall": 0.26973684210526316,
+      "f1": 0.07376311844077961,
+      "n_matched": 123,
+      "n_spurious": 2756,
+      "n_missed": 333,
+      "boundary_shift_quantiles_frames": [
+        -50.0,
+        -42.0,
+        -3.0,
+        0.0,
+        41.559999999999945,
+        50.0
+      ]
+    },
+    "oracle_repair_spellF1_gain": {
+      "dead_live": 0.01081338711761895,
+      "wrong_team": 0.7277138983406183
+    }
+  },
+  {
+    "match": "J03WOY",
+    "condition": "clean",
+    "method": "smooth50",
+    "spellF1": 0.31678681771369727,
+    "macroF1": 0.7981379857463708,
+    "errors": {
+      "short_spells": 131,
+      "short_spell_recall_iou_05": 0.022900763358778626,
+      "dead_live_wrong_frames": 11240,
+      "late_boundaries": 101,
+      "early_boundaries": 191,
+      "matched_boundary_median_frames": -22.0,
+      "boundary_pairs_within_2s": 296,
+      "precision": 0.3048543689320388,
+      "recall": 0.3442982456140351,
+      "f1": 0.3233779608650875,
+      "n_matched": 157,
+      "n_spurious": 358,
+      "n_missed": 299,
+      "boundary_shift_quantiles_frames": [
+        -50.0,
+        -50.0,
+        -22.0,
+        50.0,
+        50.0,
+        50.0
+      ]
+    },
+    "oracle_repair_spellF1_gain": {
+      "dead_live": 0.10774148417309509,
+      "wrong_team": 0.4461294739154656
+    }
+  },
+  {
+    "match": "J03WOY",
+    "condition": "clean",
+    "method": "penalty8",
+    "spellF1": 0.4830601092896175,
+    "macroF1": 0.8746889512195587,
+    "errors": {
+      "short_spells": 131,
+      "short_spell_recall_iou_05": 0.183206106870229,
+      "dead_live_wrong_frames": 281,
+      "late_boundaries": 40,
+      "early_boundaries": 152,
+      "matched_boundary_median_frames": 0.0,
+      "boundary_pairs_within_2s": 350,
+      "precision": 0.49019607843137253,
+      "recall": 0.4934210526315789,
+      "f1": 0.4918032786885246,
+      "n_matched": 225,
+      "n_spurious": 234,
+      "n_missed": 231,
+      "boundary_shift_quantiles_frames": [
+        -49.0,
+        -31.0,
+        0.0,
+        4.100000000000023,
+        47.01999999999998,
+        50.0
+      ]
+    },
+    "oracle_repair_spellF1_gain": {
+      "dead_live": 0.005342516530951413,
+      "wrong_team": 0.5075614828586921
+    }
+  },
+  {
+    "match": "J03WOY",
+    "condition": "clean",
+    "method": "penalty16",
+    "spellF1": 0.5161290322580645,
+    "macroF1": 0.885072164931943,
+    "errors": {
+      "short_spells": 131,
+      "short_spell_recall_iou_05": 0.0916030534351145,
+      "dead_live_wrong_frames": 215,
+      "late_boundaries": 31,
+      "early_boundaries": 107,
+      "matched_boundary_median_frames": 0.0,
+      "boundary_pairs_within_2s": 292,
+      "precision": 0.6394984326018809,
+      "recall": 0.4473684210526316,
+      "f1": 0.5264516129032257,
+      "n_matched": 204,
+      "n_spurious": 115,
+      "n_missed": 252,
+      "boundary_shift_quantiles_frames": [
+        -49.0,
+        -26.9,
+        0.0,
+        2.0,
+        42.0,
+        48.0
+      ]
+    },
+    "oracle_repair_spellF1_gain": {
+      "dead_live": -0.00023159636062852762,
+      "wrong_team": 0.4801469808854185
+    }
+  },
+  {
+    "match": "J03WOY",
+    "condition": "targetlike",
+    "method": "argmax",
+    "spellF1": 0.07208029197080293,
+    "macroF1": 0.6230982193732575,
+    "errors": {
+      "short_spells": 131,
+      "short_spell_recall_iou_05": 0.1984732824427481,
+      "dead_live_wrong_frames": 33792,
+      "late_boundaries": 20,
+      "early_boundaries": 175,
+      "matched_boundary_median_frames": -4.0,
+      "boundary_pairs_within_2s": 299,
+      "precision": 0.03917050691244239,
+      "recall": 0.14912280701754385,
+      "f1": 0.06204379562043795,
+      "n_matched": 68,
+      "n_spurious": 1668,
+      "n_missed": 388,
+      "boundary_shift_quantiles_frames": [
+        -50.0,
+        -42.0,
+        -4.0,
+        0.0,
+        44.09999999999991,
+        50.0
+      ]
+    },
+    "oracle_repair_spellF1_gain": {
+      "dead_live": 0.18759357316802475,
+      "wrong_team": 0.467783033769516
+    }
+  },
+  {
+    "match": "J03WOY",
+    "condition": "targetlike",
+    "method": "smooth50",
+    "spellF1": 0.22779661016949154,
+    "macroF1": 0.6547920263399835,
+    "errors": {
+      "short_spells": 131,
+      "short_spell_recall_iou_05": 0.030534351145038167,
+      "dead_live_wrong_frames": 33553,
+      "late_boundaries": 79,
+      "early_boundaries": 130,
+      "matched_boundary_median_frames": -18.0,
+      "boundary_pairs_within_2s": 213,
+      "precision": 0.22144522144522144,
+      "recall": 0.20833333333333334,
+      "f1": 0.21468926553672318,
+      "n_matched": 95,
+      "n_spurious": 334,
+      "n_missed": 361,
+      "boundary_shift_quantiles_frames": [
+        -50.0,
+        -50.0,
+        -18.0,
+        50.0,
+        50.0,
+        50.0
+      ]
+    },
+    "oracle_repair_spellF1_gain": {
+      "dead_live": 0.37515075825156113,
+      "wrong_team": 0.35992268807612254
+    }
+  },
+  {
+    "match": "J03WOY",
+    "condition": "targetlike",
+    "method": "penalty8",
+    "spellF1": 0.29429280397022334,
+    "macroF1": 0.6546990134200991,
+    "errors": {
+      "short_spells": 131,
+      "short_spell_recall_iou_05": 0.13740458015267176,
+      "dead_live_wrong_frames": 33706,
+      "late_boundaries": 23,
+      "early_boundaries": 96,
+      "matched_boundary_median_frames": 0.0,
+      "boundary_pairs_within_2s": 215,
+      "precision": 0.32857142857142857,
+      "recall": 0.25219298245614036,
+      "f1": 0.2853598014888338,
+      "n_matched": 115,
+      "n_spurious": 235,
+      "n_missed": 341,
+      "boundary_shift_quantiles_frames": [
+        -49.0,
+        -32.0,
+        0.0,
+        1.5999999999999943,
+        45.43999999999994,
+        50.0
+      ]
+    },
+    "oracle_repair_spellF1_gain": {
+      "dead_live": 0.39434118977325955,
+      "wrong_team": 0.32974811674588916
+    }
+  },
+  {
+    "match": "J03WOY",
+    "condition": "targetlike",
+    "method": "penalty16",
+    "spellF1": 0.3122905027932961,
+    "macroF1": 0.6633882580385059,
+    "errors": {
+      "short_spells": 131,
+      "short_spell_recall_iou_05": 0.06870229007633588,
+      "dead_live_wrong_frames": 33639,
+      "late_boundaries": 17,
+      "early_boundaries": 67,
+      "matched_boundary_median_frames": 0.0,
+      "boundary_pairs_within_2s": 176,
+      "precision": 0.41923076923076924,
+      "recall": 0.23903508771929824,
+      "f1": 0.3044692737430168,
+      "n_matched": 109,
+      "n_spurious": 151,
+      "n_missed": 347,
+      "boundary_shift_quantiles_frames": [
+        -49.0,
+        -30.0,
+        0.0,
+        0.0,
+        42.0,
+        48.0
+      ]
+    },
+    "oracle_repair_spellF1_gain": {
+      "dead_live": 0.42241269355373573,
+      "wrong_team": 0.317015409803105
+    }
+  },
+  {
+    "match": "J03WPY",
+    "condition": "clean",
+    "method": "argmax",
+    "spellF1": 0.053459972862957936,
+    "macroF1": 0.8474258840493677,
+    "errors": {
+      "short_spells": 124,
+      "short_spell_recall_iou_05": 0.27419354838709675,
+      "dead_live_wrong_frames": 445,
+      "late_boundaries": 31,
+      "early_boundaries": 283,
+      "matched_boundary_median_frames": -8.0,
+      "boundary_pairs_within_2s": 459,
+      "precision": 0.02599350162459385,
+      "recall": 0.24703087885985747,
+      "f1": 0.04703753957485301,
+      "n_matched": 104,
+      "n_spurious": 3897,
+      "n_missed": 317,
+      "boundary_shift_quantiles_frames": [
+        -50.0,
+        -46.0,
+        -8.0,
+        0.0,
+        40.420000000000016,
+        49.0
+      ]
+    },
+    "oracle_repair_spellF1_gain": {
+      "dead_live": 0.005599795622749593,
+      "wrong_team": 0.7213971699941849
+    }
+  },
+  {
+    "match": "J03WPY",
+    "condition": "clean",
+    "method": "smooth50",
+    "spellF1": 0.3614349775784753,
+    "macroF1": 0.8403434683908818,
+    "errors": {
+      "short_spells": 124,
+      "short_spell_recall_iou_05": 0.008064516129032258,
+      "dead_live_wrong_frames": 9622,
+      "late_boundaries": 105,
+      "early_boundaries": 179,
+      "matched_boundary_median_frames": -18.5,
+      "boundary_pairs_within_2s": 284,
+      "precision": 0.34394904458598724,
+      "recall": 0.3847980997624703,
+      "f1": 0.3632286995515695,
+      "n_matched": 162,
+      "n_spurious": 309,
+      "n_missed": 259,
+      "boundary_shift_quantiles_frames": [
+        -50.0,
+        -50.0,
+        -18.5,
+        50.0,
+        50.0,
+        50.0
+      ]
+    },
+    "oracle_repair_spellF1_gain": {
+      "dead_live": 0.11460668908819138,
+      "wrong_team": 0.41446395342249653
+    }
+  },
+  {
+    "match": "J03WPY",
+    "condition": "clean",
+    "method": "penalty8",
+    "spellF1": 0.5363522012578616,
+    "macroF1": 0.9039773427603773,
+    "errors": {
+      "short_spells": 124,
+      "short_spell_recall_iou_05": 0.1935483870967742,
+      "dead_live_wrong_frames": 119,
+      "late_boundaries": 38,
+      "early_boundaries": 144,
+      "matched_boundary_median_frames": 0.0,
+      "boundary_pairs_within_2s": 311,
+      "precision": 0.5935828877005348,
+      "recall": 0.5273159144893111,
+      "f1": 0.5584905660377358,
+      "n_matched": 222,
+      "n_spurious": 152,
+      "n_missed": 199,
+      "boundary_shift_quantiles_frames": [
+        -50.0,
+        -32.0,
+        0.0,
+        6.0,
+        40.89999999999998,
+        49.0
+      ]
+    },
+    "oracle_repair_spellF1_gain": {
+      "dead_live": -0.002352201257861619,
+      "wrong_team": 0.46080419684640384
+    }
+  },
+  {
+    "match": "J03WPY",
+    "condition": "clean",
+    "method": "penalty16",
+    "spellF1": 0.5176470588235293,
+    "macroF1": 0.9041345260833803,
+    "errors": {
+      "short_spells": 124,
+      "short_spell_recall_iou_05": 0.08064516129032258,
+      "dead_live_wrong_frames": 119,
+      "late_boundaries": 29,
+      "early_boundaries": 93,
+      "matched_boundary_median_frames": 0.0,
+      "boundary_pairs_within_2s": 247,
+      "precision": 0.7065637065637066,
+      "recall": 0.4346793349168646,
+      "f1": 0.538235294117647,
+      "n_matched": 183,
+      "n_spurious": 76,
+      "n_missed": 238,
+      "boundary_shift_quantiles_frames": [
+        -50.0,
+        -32.4,
+        0.0,
+        2.4000000000000057,
+        38.15999999999997,
+        43.0
+      ]
+    },
+    "oracle_repair_spellF1_gain": {
+      "dead_live": -0.003361344537815003,
+      "wrong_team": 0.47950933928073614
+    }
+  },
+  {
+    "match": "J03WPY",
+    "condition": "targetlike",
+    "method": "argmax",
+    "spellF1": 0.04047175667287399,
+    "macroF1": 0.6686966125991521,
+    "errors": {
+      "short_spells": 124,
+      "short_spell_recall_iou_05": 0.1693548387096774,
+      "dead_live_wrong_frames": 28067,
+      "late_boundaries": 31,
+      "early_boundaries": 181,
+      "matched_boundary_median_frames": -8.0,
+      "boundary_pairs_within_2s": 304,
+      "precision": 0.021420921099607283,
+      "recall": 0.14251781472684086,
+      "f1": 0.037243947858473,
+      "n_matched": 60,
+      "n_spurious": 2741,
+      "n_missed": 361,
+      "boundary_shift_quantiles_frames": [
+        -50.0,
+        -46.0,
+        -8.0,
+        0.6999999999999886,
+        42.96999999999997,
+        49.0
+      ]
+    },
+    "oracle_repair_spellF1_gain": {
+      "dead_live": 0.10111240174296758,
+      "wrong_team": 0.5131676610202952
+    }
+  },
+  {
+    "match": "J03WPY",
+    "condition": "targetlike",
+    "method": "smooth50",
+    "spellF1": 0.2442678774120318,
+    "macroF1": 0.7110427738709103,
+    "errors": {
+      "short_spells": 124,
+      "short_spell_recall_iou_05": 0.0,
+      "dead_live_wrong_frames": 27771,
+      "late_boundaries": 69,
+      "early_boundaries": 121,
+      "matched_boundary_median_frames": -29.0,
+      "boundary_pairs_within_2s": 190,
+      "precision": 0.22826086956521738,
+      "recall": 0.2494061757719715,
+      "f1": 0.2383654937570942,
+      "n_matched": 105,
+      "n_spurious": 355,
+      "n_missed": 316,
+      "boundary_shift_quantiles_frames": [
+        -50.0,
+        -50.0,
+        -29.0,
+        50.0,
+        50.0,
+        50.0
+      ]
+    },
+    "oracle_repair_spellF1_gain": {
+      "dead_live": 0.3168059480913239,
+      "wrong_team": 0.36874204541045985
+    }
+  },
+  {
+    "match": "J03WPY",
+    "condition": "targetlike",
+    "method": "penalty8",
+    "spellF1": 0.3295958279009127,
+    "macroF1": 0.7099848734821447,
+    "errors": {
+      "short_spells": 124,
+      "short_spell_recall_iou_05": 0.13709677419354838,
+      "dead_live_wrong_frames": 27895,
+      "late_boundaries": 28,
+      "early_boundaries": 82,
+      "matched_boundary_median_frames": 0.0,
+      "boundary_pairs_within_2s": 201,
+      "precision": 0.36127167630057805,
+      "recall": 0.29691211401425177,
+      "f1": 0.3259452411994785,
+      "n_matched": 125,
+      "n_spurious": 221,
+      "n_missed": 296,
+      "boundary_shift_quantiles_frames": [
+        -50.0,
+        -31.0,
+        0.0,
+        14.0,
+        41.0,
+        49.0
+      ]
+    },
+    "oracle_repair_spellF1_gain": {
+      "dead_live": 0.33171301251240537,
+      "wrong_team": 0.34982750106370064
+    }
+  },
+  {
+    "match": "J03WPY",
+    "condition": "targetlike",
+    "method": "penalty16",
+    "spellF1": 0.32474074074074066,
+    "macroF1": 0.714401284934519,
+    "errors": {
+      "short_spells": 124,
+      "short_spell_recall_iou_05": 0.06451612903225806,
+      "dead_live_wrong_frames": 27889,
+      "late_boundaries": 17,
+      "early_boundaries": 55,
+      "matched_boundary_median_frames": 0.0,
+      "boundary_pairs_within_2s": 157,
+      "precision": 0.42913385826771655,
+      "recall": 0.2589073634204275,
+      "f1": 0.32296296296296295,
+      "n_matched": 109,
+      "n_spurious": 145,
+      "n_missed": 312,
+      "boundary_shift_quantiles_frames": [
+        -50.0,
+        -32.4,
+        0.0,
+        2.0,
+        40.44,
+        45.0
+      ]
+    },
+    "oracle_repair_spellF1_gain": {
+      "dead_live": 0.37023995423995437,
+      "wrong_team": 0.3560991542723828
+    }
+  }
+]
