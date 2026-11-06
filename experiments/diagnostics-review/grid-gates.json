@@ -1,0 +1,26 @@
+{
+  "catboost_penalty16": {
+    "passes_gate": true,
+    "median_spell_delta": 0.010056145887024415,
+    "median_macro_delta": 0.006132432243620589,
+    "matches_improved": 3
+  },
+  "catboost_penalty2": {
+    "passes_gate": false,
+    "median_spell_delta": -0.1567650232696181,
+    "median_macro_delta": -0.023977142232027626,
+    "matches_improved": 0
+  },
+  "catboost_penalty32": {
+    "passes_gate": false,
+    "median_spell_delta": -0.026990056872705948,
+    "median_macro_delta": 0.004336516465964113,
+    "matches_improved": 1
+  },
+  "catboost_penalty8": {
+    "passes_gate": false,
+    "median_spell_delta": 0.0,
+    "median_macro_delta": 0.0,
+    "matches_improved": 0
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "frame_offset": "PASS: strict 1..N to 0..N-1 contract and sequential CSV",
+  "home_away": "PASS: explicit named metadata mapping",
+  "attacking_direction": "PASS: core invariant under 180-degree pitch reflection",
+  "coordinate_scaling": "PASS: normalized coordinates scaled by configured metric pitch; no direction-dependent feature",
+  "X_outside_graded_blocks": "PASS",
+  "public_score_used_for_selection": false,
+  "limitations": "Contracts checked; public score alone cannot prove semantic correctness. No alternate offsets, mappings or versions scored."
+}
