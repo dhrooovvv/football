@@ -1,0 +1,16 @@
+{
+  "catboost": {
+    "iterations": 300,
+    "depth": 6,
+    "learning_rate": 0.05,
+    "l2_leaf_reg": 3,
+    "random_seed": 20261106,
+    "thread_count": 4,
+    "loss_function": "MultiClass",
+    "verbose": false,
+    "allow_writing_files": false
+  },
+  "penalty": 8.0,
+  "mean_player_speed": false,
+  "team_penalty": 4.0
+}

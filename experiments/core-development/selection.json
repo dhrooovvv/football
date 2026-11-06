@@ -1,0 +1,24 @@
+{
+  "selected": "penalty8",
+  "penalty": 8,
+  "mean_player_speed": false,
+  "consecutive_rejections": 2,
+  "stop_reason": "One targeted change per supported frequent error category tested; lookahead not supported by early-boundary evidence. Three-rejection ceiling not reached.",
+  "history": [
+    {
+      "change": "penalty8",
+      "parent": "core",
+      "kept": true
+    },
+    {
+      "change": "mean-speed",
+      "parent": "penalty8",
+      "kept": false
+    },
+    {
+      "change": "short-turnover",
+      "parent": "penalty8",
+      "kept": false
+    }
+  ]
+}

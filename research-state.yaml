@@ -4,6 +4,7 @@ project:
   status: active
   started: '2026-11-06'
   phase: 1
+  phase_one_status: complete
   contributors: 3
   match_assets_available: tactical_complete_broadcast_partial
   separate_fallback: false
@@ -20,7 +21,7 @@ continuity:
   no_action_after: '2026-11-17'
 literature:
   key_papers: [borghesi2023, vidalcodina2022, kim2023, bassek2025, kim2026pathcrf, renner2026, capellera2024transportmer, peral2026multimodal]
-  evidence_gaps: [external_label_adapter_unverified, no_trained_candidate]
+  evidence_gaps: [sealed_generalisation_unmeasured, competition_quality_unmeasured, corruption_robustness_limited]
 hypotheses:
   - {id: H1, status: pending, priority: high, statement: Temporal decoding improves external spellF1 over matched emissions}
   - {id: H2, status: pending, priority: medium, statement: Factorised CatBoost improves over direct three-class prediction}
@@ -29,10 +30,12 @@ hypotheses:
 experiments:
   proxy_metric: external match-level spellF1
   baseline_value: null
-  best_value: null
-  total_runs: 2
+  best_value: 0.39106908238543703
+  selected_candidate: core_penalty8
+  consecutive_rejections: 2
+  total_runs: 6
   synthetic_contract_runs: 2
-  external_performance_runs: 0
+  external_performance_runs: 4
   trajectory:
     - {run_id: h1-contracts-001, scope: synthetic_correctness, tests_passed: 9, tests_total: 9, spellF1: null}
     - {run_id: phase1-ingestion-001, scope: input_feature_correctness, tests_passed: 18, tests_total: 18, spellF1: null}
@@ -50,4 +53,4 @@ workspace:
   experiments_dir: experiments/
   to_human_dir: to_human/
   paper_dir: paper/
-next_action: Complete development acquisition and run locked core baseline; inspect errors before changes.
+next_action: Review completed Phase 1 candidate; preserve sealed matches and current architecture.

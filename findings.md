@@ -1,7 +1,7 @@
 # Research findings
 
 ## Current understanding
-Possession ranking depends on whole H/A spells; stoppage mistakes and flickering can damage it even when frame scores appear reasonable. Missing observations are not dead-ball labels. The supplied baselines score reproducibly, but a complete pipeline has not been implemented or trained. The input/feature/export foundation and decoder pass 18 synthetic tests. Tactical inputs validate and real label-free features are materialised locally.
+Possession ranking depends on whole H/A spells; stoppage mistakes and flickering can damage it even when frame scores appear reasonable. Missing observations are not dead-ball labels. The supplied baselines score reproducibly, and the complete CatBoost inference pipeline is now implemented and trained on external development matches. The input/feature/export foundation and decoder pass 18 synthetic tests. Tactical inputs validate and real label-free features are materialised locally.
 
 ## Evidence
 See ball.md J001 and audit/evaluation/scoreboard.csv. Prior supplied-file public spellF1 values: raw 0.0378, smooth25 0.2868, smooth50 0.3256, smooth125 0.4242. These are pipeline-check measurements, not a tuning leaderboard. Synthetic audit faults are retained in audit/probe-results.json.
@@ -24,8 +24,12 @@ All main tactical assets now available. Archive supplied tracking, homographies 
 
 Recent-method review: retain CatBoost plus temporal decoding as the first candidate, not a measured winner. PathCRF assumes known live episodes and needs stable, complete player trajectories; its pretrained Sportec split must be audited before independent scoring. October 8 GNN-LSTM paper consumes possession/ball status, so it solves a different task. See literature/recent-methods-2026-11-06.md. No newer method has been demonstrated better for this project.
 
-Phase 1 remains partial: external-label adapter, sealed match IDs and learned inference are outstanding. Existing paused automation remains paused.
+Phase 1 is complete: external adapter, locked splits, core training, development evaluation and deterministic target export are executed. Existing paused automation remains paused.
 
 Expanded review (J011): TranSPORTmer and multimodal CropDrop are serious additional neural leads. CropDrop reports higher related-task accuracy on proprietary data but excludes out-of-play sequences; usable checkpoints/code unverified. CatBoost is practical, not established state of the art. See literature/expanded-model-review-2026-11-06.md.
 
 J012: separately supplied tactical ATD and homography match the validated archive copies byte-for-byte; existing tactical feature preparation remains applicable.
+
+## Completed core development experiment
+
+Five development matches, leave-one-match-out; two sealed matches never downloaded. Core plus switching penalty8 promoted on all five paired development matches. Mean-player-speed and reduced H/A switching penalty both rejected. Final production uses only the nine core columns. 23 tests pass and target CSV passes the official schema validator with identical saved-model regeneration. See experiments/core-development/completion.json and per-match summaries. Development corruption still materially hurts quality; no sealed or target performance measurement exists.

@@ -15,3 +15,5 @@ Append-only. Main detailed journal: ball.md.
 2026-11-06 J008-J010: input contracts and tactical feature preparation complete; 18 tests pass. Tactical metadata discovered locally and tags supplied by user. Optional broadcast homography fails numeric gate. Recent-method review retains main candidate, defers PathCRF. External labels/splits and training remain outstanding.
 
 2026-11-06 J011: expanded model search executed; added masked/multimodal neural shortlist with data, stoppage and availability limitations. No candidate promoted or trained.
+
+2026-11-06 J013-J017: committed protocol6b71d10; five-match core development completed; penalty8 kept, mean speed and short-turnover adjustment rejected. 23 tests, deterministic target CSV, official validator pass. Sealed matches untouched. Phase1 complete.

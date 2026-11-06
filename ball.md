@@ -219,3 +219,26 @@ Change 2, protocol 967acb0: mean observed player speed failed promotion. Only 2/
 
 Gate: {"tests_passed": true, "promoted": false, "paired_spell_deltas": {"J03WMX": -0.001330611393443093, "J03WN1": 0.011170571629686599, "J03WOH": 0.0007340662911897722, "J03WOY": -0.006110932781708545, "J03WPY": -0.01510234462037291}, "paired_macro_deltas": {"J03WMX": 0.0019830228775348235, "J03WN1": 0.004694436125618484, "J03WOH": 0.0001489851308605905, "J03WOY": 0.0005638503486049551, "J03WPY": -0.0024805172517867735}}
 
+
+### J016 — 2026-11-06 — rejected short-turnover adjustment and stopped additions
+
+Change 3, protocol f765bf3: H/A switching cost4 with D transitions8 failed on all five matches, median paired spellF1 delta -0.054448 and median macroF1 delta -0.008120. Tests passed. Reject; current best remains uniform penalty8. Consecutive rejected changes: 2. Stopping because each supported frequent error category has received its one targeted test; lookahead lacks matching late-boundary evidence. The three-consecutive-rejection ceiling was not reached. Rejected mean-speed code moved out of production into experiment archive; production predictor rejects that feature configuration. Table follows.
+| Match | Condition | spellF1 | macroF1 | Missed@.5 | Spurious@.5 | Short recall@.5 | Dead/live errors |
+|---|---|---:|---:|---:|---:|---:|---:|
+| J03WMX | clean | 0.440181 | 0.894418 | 270 | 353 | 0.21649484536082475 | 127 |
+| J03WMX | corrupted | 0.234334 | 0.743181 | 372 | 649 | 0.16494845360824742 | 23320 |
+| J03WN1 | clean | 0.456526 | 0.867015 | 242 | 353 | 0.31976744186046513 | 227 |
+| J03WN1 | corrupted | 0.260708 | 0.726571 | 358 | 544 | 0.21511627906976744 | 19487 |
+| J03WOH | clean | 0.431496 | 0.883597 | 185 | 397 | 0.26126126126126126 | 152 |
+| J03WOH | corrupted | 0.259567 | 0.749261 | 261 | 565 | 0.21621621621621623 | 19131 |
+| J03WOY | clean | 0.373559 | 0.857557 | 238 | 506 | 0.2748091603053435 | 281 |
+| J03WOY | corrupted | 0.210510 | 0.725432 | 335 | 679 | 0.22900763358778625 | 20580 |
+| J03WPY | clean | 0.459227 | 0.895341 | 201 | 291 | 0.23387096774193547 | 119 |
+| J03WPY | corrupted | 0.235032 | 0.766138 | 305 | 542 | 0.16129032258064516 | 20477 |
+
+Gate: {"tests_passed": true, "promoted": false, "paired_spell_deltas": {"J03WMX": -0.0460244974660356, "J03WN1": -0.030503974472165185, "J03WOH": -0.06654634864347708, "J03WOY": -0.0772522705501913, "J03WPY": -0.05444799795092592}, "paired_macro_deltas": {"J03WMX": -0.008119984056398577, "J03WN1": -0.005686018730243103, "J03WOH": -0.010918228696249366, "J03WOY": -0.015326543095595335, "J03WPY": -0.007277203495620221}}
+
+
+### J017 — 2026-11-06 — Phase 1 complete, selected candidate generated
+
+Completed strict adapters → nine masked core features → CatBoost H/A/D probabilities → Viterbi (uniform switch cost8) → deterministic CSV. Final model trained on five development matches only. Local target candidate: data/competition/predictions/candidate.csv, 199319 frames; official schema validator passed. Saved-model reload and fresh probability/decoder execution produced byte-identical candidate-repeat.csv. 23 tests passed; all 34 reference files unchanged; sealed match assets absent. Evidence: experiments/core-development/completion.json; private target hashes/validation in predictions/provenance.json and official-validation.txt. Mean development clean spellF1/macroF1 and corrupted metrics are recorded in completion.json; per-match tables above. No target quality score or sealed generalisation claim. Kept only penalty8; rejected mean speed and short-turnover cost4. Earlier broader architectural/feature queues are superseded by the user's core-only, error-driven scope. Phase 1 implementation complete; next is review of this development-selected candidate and future phase work without opening sealed matches unless explicitly authorised.

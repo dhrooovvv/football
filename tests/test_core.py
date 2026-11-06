@@ -49,7 +49,9 @@ class ModelSmoke(unittest.TestCase):
 
 class SpeedContract(unittest.TestCase):
  def test_mean_speed_excludes_missing_and_resets(self):
-  from possession.core import mean_player_speed
+  import sys
+  sys.path.insert(0,str(Path('experiments/core-development').resolve()))
+  from rejected_mean_speed import mean_player_speed
   p=np.array([[[0,0,0],[np.nan,0,0]],[[.01,0,0],[.9,0,0]],[[.9,0,0],[.9,0,0]]])
   t=Tracking(p,np.full((3,3),np.nan));s=mean_player_speed(t,[(0,2),(2,3)],(100,60))
   self.assertTrue(np.isnan(s[0]));self.assertAlmostEqual(s[1],25);self.assertTrue(np.isnan(s[2]))

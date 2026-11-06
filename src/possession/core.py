@@ -25,13 +25,3 @@ def promote(before,after,tests_pass):
     if ids!=sorted(after) or len(ids)!=5: raise ValueError('Five paired development matches required')
     d=np.array([after[i][0]-before[i][0] for i in ids]);m=np.array([after[i][1]-before[i][1] for i in ids])
     return bool(tests_pass and np.median(d)>0 and (d>0).sum()>len(ids)/2 and np.median(m)>=-.01-1e-12)
-
-def mean_player_speed(track,blocks,pitch,fps=25):
-    out=np.full(len(track.ball),np.nan)
-    for a,b in blocks:
-        xy=track.players[a:b,:,:2]*pitch
-        good=np.isfinite(xy[1:]).all(axis=2)&np.isfinite(xy[:-1]).all(axis=2)
-        speed=np.linalg.norm(np.diff(xy,axis=0),axis=2)*fps
-        count=good.sum(axis=1)
-        out[a+1:b]=np.divide(np.where(good,speed,0).sum(axis=1),count,out=np.full(len(count),np.nan),where=count>0)
-    return out

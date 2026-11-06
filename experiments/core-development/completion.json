@@ -1,0 +1,26 @@
+{
+  "phase_one_complete": true,
+  "tests_passed": 23,
+  "official_validator_pass": true,
+  "identical_regeneration": true,
+  "sealed_assets_absent": true,
+  "reference_34_files_unchanged": true,
+  "development_means": {
+    "clean": {
+      "spell_f1_mean": 0.5085661787086533,
+      "macro_f1": 0.8897751369511109
+    },
+    "corrupted": {
+      "spell_f1_mean": 0.27357198606222066,
+      "macro_f1": 0.7508583345000893
+    }
+  },
+  "selected": "core features + uniform penalty8",
+  "rejected": [
+    "mean-player-speed",
+    "short-turnover cost4"
+  ],
+  "consecutive_rejections": 2,
+  "target_performance": "not measured",
+  "model_sha256": "da54c297bdef5157338a8267ad2e32f390280bf7c0afbbc0eceaac912c09b5bb"
+}
