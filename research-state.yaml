@@ -7,6 +7,7 @@ project:
   contributors: 3
   match_assets_available: tactical_complete_broadcast_partial
   separate_fallback: false
+  tactical_duplicate_inputs_verified: '2026-11-06'
   input_archive: /Users/dhruv/Downloads/Archive.zip
   target_submission: '2026-11-16'
   architecture_freeze: '2026-11-12'

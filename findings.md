@@ -27,3 +27,5 @@ Recent-method review: retain CatBoost plus temporal decoding as the first candid
 Phase 1 remains partial: external-label adapter, sealed match IDs and learned inference are outstanding. Existing paused automation remains paused.
 
 Expanded review (J011): TranSPORTmer and multimodal CropDrop are serious additional neural leads. CropDrop reports higher related-task accuracy on proprietary data but excludes out-of-play sequences; usable checkpoints/code unverified. CatBoost is practical, not established state of the art. See literature/expanded-model-review-2026-11-06.md.
+
+J012: separately supplied tactical ATD and homography match the validated archive copies byte-for-byte; existing tactical feature preparation remains applicable.
