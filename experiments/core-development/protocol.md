@@ -1,0 +1,13 @@
+# Core development protocol — 2026-11-06
+
+User-authorized core only: nearest H/A ball distance, signed margin (away minus home), instantaneous observed displacement speed, pitch-edge distance, observation masks and gap age. No tags, temporal lookahead, whole-pitch aggregates or additional architecture initially.
+
+Dataset: IDSSE figshare article 28196177. Sort seven match IDs lexicographically; first five development, last two sealed. Record IDs in split.json before acquisition. Never download/open sealed match assets. Five leave-one-match-out folds, fit other four. Evaluate each held-out development match clean and with fixed corruption: seed 20261106 plus sorted match index, ball burst starts Bernoulli 0.005/frame with lengths uniformly 25..100 frames; player xy independent burst starts 0.001/frame per slot with lengths 10..50. Mask inputs only; never labels. This synthetic corruption is a stress test, not an asserted model of competition noise.
+
+CatBoost CPU MultiClass, 300 iterations, depth 6, learning_rate .05, l2_leaf_reg 3, random_seed 20261106, thread_count 4, no early stopping, no validation-driven training. Deterministic every fifth training frame to bound runtime; all 25Hz frames evaluated. Fixed H/A/D class order. Missing numerics remain NaN. Fit clean development training inputs only. Initial Viterbi off-diagonal penalty 2, diagonal zero; reset each half and unsupported-label gap. No hard minimum duration.
+
+Use unchanged official scorer for H/A spellF1 averaged IoU .3/.4/.5/.6/.7 and H/A/D macroF1. Report each match, clean and corrupted. Promotion uses per-match arithmetic mean of clean/corrupted metrics: positive median paired spellF1 delta; strictly positive on at least 3/5 matches; median macroF1 delta >= -.01; correctness tests pass. Also report each condition separately. Same splits/seeds/budget throughout.
+
+Inspect baseline missed/spurious spells, boundaries, dead/live errors, short-spell recall. Preregister one targeted change per frequent error before execution. Compare against current best only. Keep only gate passes; reject/log otherwise. Stop after three consecutive rejected changes, or when no supported error-matched candidate remains. No sealed evaluation. No competition public label scoring/tuning. Final target inference is local, schema-only verification and deterministic regeneration.
+
+Data adapter must first verify provider home/away possession and alive/dead codes from primary implementation/documentation; unsupported labels excluded without joining spells across gaps. No label-derived input features. Record dependency failures honestly.
