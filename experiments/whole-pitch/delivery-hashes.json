@@ -1,0 +1,9 @@
+{
+  "docs/technical-report.md": "9c7017c7f9e5c93daf651fd2345aba21848d088c3181320a4ecc5079a03688bb",
+  "scripts/predict_core.py": "08cfeb7bd06d2a856e14785a1931730611df52c87d3e3e5f43286f04d71a665f",
+  "scripts/rebuild_clean_inputs.py": "3fdf3cb429af270c83d8e52559d27f72237d9c78eb4edd8971f7bed124e3b791",
+  "requirements-pipeline.txt": "49596d8d3e34cd81e7f12ae1a7193b46a747de3524aeecc4b8fd60337a2a9881",
+  "experiments/whole-pitch/clean-environment-lock.txt": "caca1d773abb6a6f74ef36c3bf549d015726f2ea8db8890a7ab193630222b4a0",
+  "configs/competition.json": "252091ff6779e8bf809399cbdb844ceefa673125574c6ea52f3ae8b5a27f017c",
+  "experiments/core-development/selection.json": "4f5c4aba419f0fe1097085eed75e03d81d0a5791552da838d42ff4b8b2d2f8c4"
+}

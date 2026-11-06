@@ -34,3 +34,7 @@ The rejected mean-speed experiment is archived in experiments/core-development/r
 ## Input checks
 
 prepare_data.py validates extracted files; prepare_features.py is the earlier ingestion-feature utility, not the selected nine-column model input. predict_core.py computes selected core features directly. Optional broadcast homography failed validation and is excluded.
+
+
+## November7 finalization
+Selected production is unaugmented nine-core CatBoost+penalty16. Rolling whole-pitch bundle rejected, archived under experiments/whole-pitch; do not add it to production. Final CSV regenerated and identical across two full runs plus clean-venv raw-input rebuild. See docs/technical-report.md for fresh-environment commands and experiments/whole-pitch/reproduction.json for hashes. predict_core.py accepts --cache, --outdir and --model-path for isolated runs. Full transitive dependency pins: experiments/whole-pitch/clean-environment-lock.txt. Default production paths remain unchanged. No target labels or sealed matches required.

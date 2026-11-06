@@ -2,8 +2,8 @@
   "selected": "penalty16",
   "penalty": 16,
   "mean_player_speed": false,
-  "consecutive_rejections": 1,
-  "stop_reason": "User requested stop after combined16 test, label-free diagnostic and pending whole-pitch protocol.",
+  "consecutive_rejections": 2,
+  "stop_reason": "Whole-pitch bundle failed both gates; user instructed stop feature additions.",
   "history": [
     {
       "change": "penalty8",
@@ -39,9 +39,15 @@
       "kept": false,
       "reason": "2/5 improve and negative median paired spellF1",
       "evidence": "experiments/combined16/gate.json"
+    },
+    {
+      "change": "rolling-whole-pitch-bundle",
+      "parent": "penalty16",
+      "kept": false,
+      "evidence": "experiments/whole-pitch/gate.json"
     }
   ],
-  "target_artifact_status": "Existing candidate.csv and completion.json describe penalty8; not regenerated in this round.",
+  "target_artifact_status": "Regenerated penalty16 target CSV; two independent runs and clean-environment reproduction byte-identical, official validator passes.",
   "augmentation": false,
   "retained_augmentation_branch": false
 }

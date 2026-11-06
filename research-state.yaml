@@ -32,7 +32,7 @@ experiments:
   baseline_value: null
   best_value: 0.420564936202867
   selected_candidate: core_penalty16
-  consecutive_rejections: 1
+  consecutive_rejections: 2
   total_runs: 6
   synthetic_contract_runs: 2
   external_performance_runs: 4
@@ -53,13 +53,13 @@ workspace:
   experiments_dir: experiments/
   to_human_dir: to_human/
   paper_dir: paper/
-next_action: Await approval of whole-pitch bundle; stopped. Unaugmented penalty16 selected; existing CSV remains penalty8 artifact.
+next_action: Feature additions stopped; review technical draft and frozen candidate. No further experiments.
 
 approved_gap_review:
   status: complete_stopped
   report: experiments/gap-augmentation/report.md
   retained_separate_branch: null
-  target_export_regenerated: false
+  target_export_regenerated: true
   combined_augmentation16_tested: true
 
 combined16_review:
@@ -67,4 +67,18 @@ combined16_review:
   augmentation_retained: false
   report: experiments/combined16/report.md
   next_protocol: experiments/combined16/proposed-whole-pitch.md
-  next_protocol_approved: false
+  next_protocol_approved: true
+
+whole_pitch_review:
+  status: rejected_feature_additions_stopped
+  report: experiments/whole-pitch/report.md
+  both_gates_passed: false
+finalization:
+  date: 2026-11-07
+  selected: core_penalty16
+  csv_sha256: ab253e43f46fc9a7885b689498a220595e78d67ad2a6099a07316e081ca3f815
+  two_full_runs_identical: true
+  clean_environment_reproduction: true
+  official_validator_pass: true
+  evidence: experiments/whole-pitch/reproduction.json
+  technical_draft: docs/technical-report.md

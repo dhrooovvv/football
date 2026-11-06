@@ -49,3 +49,7 @@ Both isolated changes pass the unchanged paired gate: augmentation at8 (4/5, med
 
 ## J022 combined16 rejected
 Augmentation16 fails gate:2/5 improve, median spell-.001331, macro-.000708. Drop augmentation; simpler penalty16 stays selected. Target label-free output36.56%H/21.48%A/41.95%D,467 H/A spells averaging7.90s, not accuracy evidence. Whole-pitch bundle preregistered but unapproved/unrun; see experiments/combined16/report.md. Stop; freeze November12 unchanged.
+
+
+## J023 — November7 finalization
+Rolling whole-pitch bundle failed both gates (median corrupted spell-.005208; paired-.006600;1/5 improve), dropped and feature additions stopped. Final unaugmented nine-core penalty16 targetCSV regenerated, officially validated, identical across two full runs plus clean-venv rebuild/retrain/inference. CSVsha256 ab253e43f46fc9a7885b689498a220595e78d67ad2a6099a07316e081ca3f815. Technical draft docs/technical-report.md started.25 experiment tests/23 final production tests pass. Sealed and target quality unmeasured; no public labels this round.

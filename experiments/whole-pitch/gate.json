@@ -1,0 +1,31 @@
+{
+  "promoted": false,
+  "existing_gate_pass": false,
+  "minimum_primary_gate_pass": false,
+  "median_corrupted_spell_delta": -0.005208349818791869,
+  "paired_spell_deltas": {
+    "J03WMX": -0.050945292686740584,
+    "J03WN1": -0.004687638519316584,
+    "J03WOH": -0.02784816954888264,
+    "J03WOY": -0.006600449568611888,
+    "J03WPY": 0.001514936366966646
+  },
+  "paired_macro_deltas": {
+    "J03WMX": -0.00886034428796989,
+    "J03WN1": -0.0018775914393026616,
+    "J03WOH": 0.004450776901587461,
+    "J03WOY": 0.0004757059075157777,
+    "J03WPY": 0.0013328647204170485
+  },
+  "median_paired_spell_delta": -0.006600449568611888,
+  "median_paired_macro_delta": 0.0004757059075157777,
+  "matches_improved": 1,
+  "primary_corrupted_deltas": {
+    "J03WMX": -0.045748273340375345,
+    "J03WN1": -0.0038190497840417947,
+    "J03WOH": -0.018995561400624694,
+    "J03WOY": -0.005208349818791869,
+    "J03WPY": 0.012722386102917205
+  },
+  "tests_passed": true
+}

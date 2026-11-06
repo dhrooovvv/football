@@ -1,0 +1,28 @@
+test_external_mapping_and_gaps (test_core.CoreContracts.test_external_mapping_and_gaps) ... ok
+test_features_and_masks (test_core.CoreContracts.test_features_and_masks) ... ok
+test_gate (test_core.CoreContracts.test_gate) ... ok
+test_probability_order_serialization_and_export (test_core.ModelSmoke.test_probability_order_serialization_and_export) ... ok
+test_mean_speed_excludes_missing_and_resets (test_core.SpeedContract.test_mean_speed_excludes_missing_and_resets) ... ok
+test_ambiguous_flicker (test_decode.ConfirmatoryContracts.test_ambiguous_flicker) ... ok
+test_half_isolation (test_decode.ConfirmatoryContracts.test_half_isolation) ... ok
+test_invalid_emissions (test_decode.ConfirmatoryContracts.test_invalid_emissions) ... ok
+test_repeatability_and_team_swap (test_decode.ConfirmatoryContracts.test_repeatability_and_team_swap) ... ok
+test_short_supported_possession (test_decode.ConfirmatoryContracts.test_short_supported_possession) ... ok
+test_stoppage_and_restart (test_decode.ConfirmatoryContracts.test_stoppage_and_restart) ... ok
+test_empty_zero_and_bad_cost (test_decode.ExploratoryContracts.test_empty_zero_and_bad_cost) ... ok
+test_small_sequence_against_exhaustive_oracle (test_decode.ExploratoryContracts.test_small_sequence_against_exhaustive_oracle) ... ok
+test_uncovered_frames_and_invalid_blocks (test_decode.ExploratoryContracts.test_uncovered_frames_and_invalid_blocks) ... ok
+test_nested_zip (test_inputs.ExploratoryInputContracts.test_nested_zip) ... ok
+test_partial_player_and_valid_velocity (test_inputs.ExploratoryInputContracts.test_partial_player_and_valid_velocity) ... ok
+test_archive_safety_and_provenance (test_inputs.InputContracts.test_archive_safety_and_provenance) ... ok
+test_atd_valid_and_invalid (test_inputs.InputContracts.test_atd_valid_and_invalid) ... ok
+test_export_and_integration (test_inputs.InputContracts.test_export_and_integration) ... ok
+test_features (test_inputs.InputContracts.test_features) ... ok
+test_homography (test_inputs.InputContracts.test_homography) ... ok
+test_metadata_explicit_names (test_inputs.InputContracts.test_metadata_explicit_names) ... ok
+test_tags (test_inputs.InputContracts.test_tags) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 0.253s
+
+OK
