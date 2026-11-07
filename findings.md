@@ -57,3 +57,7 @@ Rolling whole-pitch bundle failed both gates (median corrupted spell-.005208; pa
 
 ## November7 authorized extension
 Freeze moved toNovember13, delivery14–16. Production9core unaugmented16 remains. Track1 audit:0new verified compatible matches; train-more/transfer unavailable, PFF access requested from user. Decoder track3consecutive failures stops before calibration. CPUthread1 matches old CSV across clean environment. Nested grouped settings search now executing; no promotion yet. Independent generalization still unmeasured, sealed untilfreeze. Current docs/audit evidence in experiments/extension-2026-11-07.
+
+
+## Extension checkpoint — J029
+Track1 additional labelled data/transfer unavailable; Track2 threefails→stop (joint calibration notrun); Track3 nested4-setting policy fails (1/5, corrupted median-.000035). Track4 deferred because prerequisite1 incomplete. Production original9core unaugmented16 remains; CPUthread1 verified and fresh-clone raw external rebuild/cleanenvCSV identical. New freezeNovember13,delivery14–16. No sealed evaluation/finalpublicscore yet; no independent transfer evidence.

@@ -3,7 +3,7 @@ project:
   question: Which local inference and temporal decoding approach best recovers possession spells under missing tracking?
   status: active
   started: '2026-11-06'
-  phase: 1
+  phase: 2
   phase_one_status: complete
   contributors: 3
   match_assets_available: tactical_complete_broadcast_partial
@@ -53,7 +53,7 @@ workspace:
   experiments_dir: experiments/
   to_human_dir: to_human/
   paper_dir: paper/
-next_action: Extension Track1 compatibility audit first; then preregister decoder changes. Sealed closed untilNovember13.
+next_action: Await compatible external-data access; do not repeat blocked tests. Sealed/final-score gates November13 only.
 
 approved_gap_review:
   status: complete_stopped
@@ -88,4 +88,15 @@ extension:
   freeze: 2026-11-13
   delivery_only: November14–16
   minimum_median_corrupted_spell_gain: 0.01
-  track: 1
+  track: data_access_pending
+
+extension_checkpoint:
+  track1: audit_complete_evaluations_unavailable
+  track2: stopped_three_consecutive_failures
+  track3: bounded_nested_search_rejected
+  track4: deferred_prerequisite1_unavailable
+  track2_failures: 3
+  track3_failures: 1
+  fresh_clone_raw_reproduction: true
+  thread_count: 1
+  independent_transfer_evidence: unavailable

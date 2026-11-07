@@ -1,0 +1,882 @@
+[
+  {
+    "outer": "J03WMX",
+    "inner_valid": "J03WN1",
+    "fit": [
+      "J03WOH",
+      "J03WOY",
+      "J03WPY"
+    ],
+    "config_index": 0,
+    "corrupted_spellF1": 0.31274638633377133
+  },
+  {
+    "outer": "J03WMX",
+    "inner_valid": "J03WOH",
+    "fit": [
+      "J03WN1",
+      "J03WOY",
+      "J03WPY"
+    ],
+    "config_index": 0,
+    "corrupted_spellF1": 0.32590266875981155
+  },
+  {
+    "outer": "J03WMX",
+    "inner_valid": "J03WOY",
+    "fit": [
+      "J03WN1",
+      "J03WOH",
+      "J03WPY"
+    ],
+    "config_index": 0,
+    "corrupted_spellF1": 0.3019390581717451
+  },
+  {
+    "outer": "J03WMX",
+    "inner_valid": "J03WPY",
+    "fit": [
+      "J03WN1",
+      "J03WOH",
+      "J03WOY"
+    ],
+    "config_index": 0,
+    "corrupted_spellF1": 0.31659324522760646
+  },
+  {
+    "outer": "J03WMX",
+    "inner_valid": "J03WN1",
+    "fit": [
+      "J03WOH",
+      "J03WOY",
+      "J03WPY"
+    ],
+    "config_index": 1,
+    "corrupted_spellF1": 0.31075697211155384
+  },
+  {
+    "outer": "J03WMX",
+    "inner_valid": "J03WOH",
+    "fit": [
+      "J03WN1",
+      "J03WOY",
+      "J03WPY"
+    ],
+    "config_index": 1,
+    "corrupted_spellF1": 0.33763779527559057
+  },
+  {
+    "outer": "J03WMX",
+    "inner_valid": "J03WOY",
+    "fit": [
+      "J03WN1",
+      "J03WOH",
+      "J03WPY"
+    ],
+    "config_index": 1,
+    "corrupted_spellF1": 0.30096818810511755
+  },
+  {
+    "outer": "J03WMX",
+    "inner_valid": "J03WPY",
+    "fit": [
+      "J03WN1",
+      "J03WOH",
+      "J03WOY"
+    ],
+    "config_index": 1,
+    "corrupted_spellF1": 0.32237037037037036
+  },
+  {
+    "outer": "J03WMX",
+    "inner_valid": "J03WN1",
+    "fit": [
+      "J03WOH",
+      "J03WOY",
+      "J03WPY"
+    ],
+    "config_index": 2,
+    "corrupted_spellF1": 0.30981432360742706
+  },
+  {
+    "outer": "J03WMX",
+    "inner_valid": "J03WOH",
+    "fit": [
+      "J03WN1",
+      "J03WOY",
+      "J03WPY"
+    ],
+    "config_index": 2,
+    "corrupted_spellF1": 0.3296703296703297
+  },
+  {
+    "outer": "J03WMX",
+    "inner_valid": "J03WOY",
+    "fit": [
+      "J03WN1",
+      "J03WOH",
+      "J03WPY"
+    ],
+    "config_index": 2,
+    "corrupted_spellF1": 0.3049723756906077
+  },
+  {
+    "outer": "J03WMX",
+    "inner_valid": "J03WPY",
+    "fit": [
+      "J03WN1",
+      "J03WOH",
+      "J03WOY"
+    ],
+    "config_index": 2,
+    "corrupted_spellF1": 0.3247058823529412
+  },
+  {
+    "outer": "J03WMX",
+    "inner_valid": "J03WN1",
+    "fit": [
+      "J03WOH",
+      "J03WOY",
+      "J03WPY"
+    ],
+    "config_index": 3,
+    "corrupted_spellF1": 0.31164658634538156
+  },
+  {
+    "outer": "J03WMX",
+    "inner_valid": "J03WOH",
+    "fit": [
+      "J03WN1",
+      "J03WOY",
+      "J03WPY"
+    ],
+    "config_index": 3,
+    "corrupted_spellF1": 0.3353407290015848
+  },
+  {
+    "outer": "J03WMX",
+    "inner_valid": "J03WOY",
+    "fit": [
+      "J03WN1",
+      "J03WOH",
+      "J03WPY"
+    ],
+    "config_index": 3,
+    "corrupted_spellF1": 0.3006934812760055
+  },
+  {
+    "outer": "J03WMX",
+    "inner_valid": "J03WPY",
+    "fit": [
+      "J03WN1",
+      "J03WOH",
+      "J03WOY"
+    ],
+    "config_index": 3,
+    "corrupted_spellF1": 0.3252225519287834
+  },
+  {
+    "outer": "J03WN1",
+    "inner_valid": "J03WMX",
+    "fit": [
+      "J03WOH",
+      "J03WOY",
+      "J03WPY"
+    ],
+    "config_index": 0,
+    "corrupted_spellF1": 0.30886699507389165
+  },
+  {
+    "outer": "J03WN1",
+    "inner_valid": "J03WOH",
+    "fit": [
+      "J03WMX",
+      "J03WOY",
+      "J03WPY"
+    ],
+    "config_index": 0,
+    "corrupted_spellF1": 0.3372670807453416
+  },
+  {
+    "outer": "J03WN1",
+    "inner_valid": "J03WOY",
+    "fit": [
+      "J03WMX",
+      "J03WOH",
+      "J03WPY"
+    ],
+    "config_index": 0,
+    "corrupted_spellF1": 0.3112343966712898
+  },
+  {
+    "outer": "J03WN1",
+    "inner_valid": "J03WPY",
+    "fit": [
+      "J03WMX",
+      "J03WOH",
+      "J03WOY"
+    ],
+    "config_index": 0,
+    "corrupted_spellF1": 0.32626995645863566
+  },
+  {
+    "outer": "J03WN1",
+    "inner_valid": "J03WMX",
+    "fit": [
+      "J03WOH",
+      "J03WOY",
+      "J03WPY"
+    ],
+    "config_index": 1,
+    "corrupted_spellF1": 0.3132832080200501
+  },
+  {
+    "outer": "J03WN1",
+    "inner_valid": "J03WOH",
+    "fit": [
+      "J03WMX",
+      "J03WOY",
+      "J03WPY"
+    ],
+    "config_index": 1,
+    "corrupted_spellF1": 0.3396578538102644
+  },
+  {
+    "outer": "J03WN1",
+    "inner_valid": "J03WOY",
+    "fit": [
+      "J03WMX",
+      "J03WOH",
+      "J03WPY"
+    ],
+    "config_index": 1,
+    "corrupted_spellF1": 0.30568654646324545
+  },
+  {
+    "outer": "J03WN1",
+    "inner_valid": "J03WPY",
+    "fit": [
+      "J03WMX",
+      "J03WOH",
+      "J03WOY"
+    ],
+    "config_index": 1,
+    "corrupted_spellF1": 0.3233038348082596
+  },
+  {
+    "outer": "J03WN1",
+    "inner_valid": "J03WMX",
+    "fit": [
+      "J03WOH",
+      "J03WOY",
+      "J03WPY"
+    ],
+    "config_index": 2,
+    "corrupted_spellF1": 0.31610486891385775
+  },
+  {
+    "outer": "J03WN1",
+    "inner_valid": "J03WOH",
+    "fit": [
+      "J03WMX",
+      "J03WOY",
+      "J03WPY"
+    ],
+    "config_index": 2,
+    "corrupted_spellF1": 0.3459968602825746
+  },
+  {
+    "outer": "J03WN1",
+    "inner_valid": "J03WOY",
+    "fit": [
+      "J03WMX",
+      "J03WOH",
+      "J03WPY"
+    ],
+    "config_index": 2,
+    "corrupted_spellF1": 0.30944444444444447
+  },
+  {
+    "outer": "J03WN1",
+    "inner_valid": "J03WPY",
+    "fit": [
+      "J03WMX",
+      "J03WOH",
+      "J03WOY"
+    ],
+    "config_index": 2,
+    "corrupted_spellF1": 0.3305882352941177
+  },
+  {
+    "outer": "J03WN1",
+    "inner_valid": "J03WMX",
+    "fit": [
+      "J03WOH",
+      "J03WOY",
+      "J03WPY"
+    ],
+    "config_index": 3,
+    "corrupted_spellF1": 0.31670822942643395
+  },
+  {
+    "outer": "J03WN1",
+    "inner_valid": "J03WOH",
+    "fit": [
+      "J03WMX",
+      "J03WOY",
+      "J03WPY"
+    ],
+    "config_index": 3,
+    "corrupted_spellF1": 0.3505546751188589
+  },
+  {
+    "outer": "J03WN1",
+    "inner_valid": "J03WOY",
+    "fit": [
+      "J03WMX",
+      "J03WOH",
+      "J03WPY"
+    ],
+    "config_index": 3,
+    "corrupted_spellF1": 0.3126564673157163
+  },
+  {
+    "outer": "J03WN1",
+    "inner_valid": "J03WPY",
+    "fit": [
+      "J03WMX",
+      "J03WOH",
+      "J03WOY"
+    ],
+    "config_index": 3,
+    "corrupted_spellF1": 0.3344165435745938
+  },
+  {
+    "outer": "J03WOH",
+    "inner_valid": "J03WMX",
+    "fit": [
+      "J03WN1",
+      "J03WOY",
+      "J03WPY"
+    ],
+    "config_index": 0,
+    "corrupted_spellF1": 0.31116687578419067
+  },
+  {
+    "outer": "J03WOH",
+    "inner_valid": "J03WN1",
+    "fit": [
+      "J03WMX",
+      "J03WOY",
+      "J03WPY"
+    ],
+    "config_index": 0,
+    "corrupted_spellF1": 0.3118193891102258
+  },
+  {
+    "outer": "J03WOH",
+    "inner_valid": "J03WOY",
+    "fit": [
+      "J03WMX",
+      "J03WN1",
+      "J03WPY"
+    ],
+    "config_index": 0,
+    "corrupted_spellF1": 0.3139240506329114
+  },
+  {
+    "outer": "J03WOH",
+    "inner_valid": "J03WPY",
+    "fit": [
+      "J03WMX",
+      "J03WN1",
+      "J03WOY"
+    ],
+    "config_index": 0,
+    "corrupted_spellF1": 0.33333333333333337
+  },
+  {
+    "outer": "J03WOH",
+    "inner_valid": "J03WMX",
+    "fit": [
+      "J03WN1",
+      "J03WOY",
+      "J03WPY"
+    ],
+    "config_index": 1,
+    "corrupted_spellF1": 0.3185750636132315
+  },
+  {
+    "outer": "J03WOH",
+    "inner_valid": "J03WN1",
+    "fit": [
+      "J03WMX",
+      "J03WOY",
+      "J03WPY"
+    ],
+    "config_index": 1,
+    "corrupted_spellF1": 0.31382978723404253
+  },
+  {
+    "outer": "J03WOH",
+    "inner_valid": "J03WOY",
+    "fit": [
+      "J03WMX",
+      "J03WN1",
+      "J03WPY"
+    ],
+    "config_index": 1,
+    "corrupted_spellF1": 0.3151685393258427
+  },
+  {
+    "outer": "J03WOH",
+    "inner_valid": "J03WPY",
+    "fit": [
+      "J03WMX",
+      "J03WN1",
+      "J03WOY"
+    ],
+    "config_index": 1,
+    "corrupted_spellF1": 0.3342143906020559
+  },
+  {
+    "outer": "J03WOH",
+    "inner_valid": "J03WMX",
+    "fit": [
+      "J03WN1",
+      "J03WOY",
+      "J03WPY"
+    ],
+    "config_index": 2,
+    "corrupted_spellF1": 0.3228426395939087
+  },
+  {
+    "outer": "J03WOH",
+    "inner_valid": "J03WN1",
+    "fit": [
+      "J03WMX",
+      "J03WOY",
+      "J03WPY"
+    ],
+    "config_index": 2,
+    "corrupted_spellF1": 0.32158940397350994
+  },
+  {
+    "outer": "J03WOH",
+    "inner_valid": "J03WOY",
+    "fit": [
+      "J03WMX",
+      "J03WN1",
+      "J03WPY"
+    ],
+    "config_index": 2,
+    "corrupted_spellF1": 0.31241283124128316
+  },
+  {
+    "outer": "J03WOH",
+    "inner_valid": "J03WPY",
+    "fit": [
+      "J03WMX",
+      "J03WN1",
+      "J03WOY"
+    ],
+    "config_index": 2,
+    "corrupted_spellF1": 0.3391432791728213
+  },
+  {
+    "outer": "J03WOH",
+    "inner_valid": "J03WMX",
+    "fit": [
+      "J03WN1",
+      "J03WOY",
+      "J03WPY"
+    ],
+    "config_index": 3,
+    "corrupted_spellF1": 0.3256997455470738
+  },
+  {
+    "outer": "J03WOH",
+    "inner_valid": "J03WN1",
+    "fit": [
+      "J03WMX",
+      "J03WOY",
+      "J03WPY"
+    ],
+    "config_index": 3,
+    "corrupted_spellF1": 0.30896921017402945
+  },
+  {
+    "outer": "J03WOH",
+    "inner_valid": "J03WOY",
+    "fit": [
+      "J03WMX",
+      "J03WN1",
+      "J03WPY"
+    ],
+    "config_index": 3,
+    "corrupted_spellF1": 0.30944444444444447
+  },
+  {
+    "outer": "J03WOH",
+    "inner_valid": "J03WPY",
+    "fit": [
+      "J03WMX",
+      "J03WN1",
+      "J03WOY"
+    ],
+    "config_index": 3,
+    "corrupted_spellF1": 0.33677991137370755
+  },
+  {
+    "outer": "J03WOY",
+    "inner_valid": "J03WMX",
+    "fit": [
+      "J03WN1",
+      "J03WOH",
+      "J03WPY"
+    ],
+    "config_index": 0,
+    "corrupted_spellF1": 0.31990111248454883
+  },
+  {
+    "outer": "J03WOY",
+    "inner_valid": "J03WN1",
+    "fit": [
+      "J03WMX",
+      "J03WOH",
+      "J03WPY"
+    ],
+    "config_index": 0,
+    "corrupted_spellF1": 0.32313725490196077
+  },
+  {
+    "outer": "J03WOY",
+    "inner_valid": "J03WOH",
+    "fit": [
+      "J03WMX",
+      "J03WN1",
+      "J03WPY"
+    ],
+    "config_index": 0,
+    "corrupted_spellF1": 0.3386541471048513
+  },
+  {
+    "outer": "J03WOY",
+    "inner_valid": "J03WPY",
+    "fit": [
+      "J03WMX",
+      "J03WN1",
+      "J03WOH"
+    ],
+    "config_index": 0,
+    "corrupted_spellF1": 0.317037037037037
+  },
+  {
+    "outer": "J03WOY",
+    "inner_valid": "J03WMX",
+    "fit": [
+      "J03WN1",
+      "J03WOH",
+      "J03WPY"
+    ],
+    "config_index": 1,
+    "corrupted_spellF1": 0.3176178660049628
+  },
+  {
+    "outer": "J03WOY",
+    "inner_valid": "J03WN1",
+    "fit": [
+      "J03WMX",
+      "J03WOH",
+      "J03WPY"
+    ],
+    "config_index": 1,
+    "corrupted_spellF1": 0.3211563731931669
+  },
+  {
+    "outer": "J03WOY",
+    "inner_valid": "J03WOH",
+    "fit": [
+      "J03WMX",
+      "J03WN1",
+      "J03WPY"
+    ],
+    "config_index": 1,
+    "corrupted_spellF1": 0.3424100156494523
+  },
+  {
+    "outer": "J03WOY",
+    "inner_valid": "J03WPY",
+    "fit": [
+      "J03WMX",
+      "J03WN1",
+      "J03WOH"
+    ],
+    "config_index": 1,
+    "corrupted_spellF1": 0.32094395280235993
+  },
+  {
+    "outer": "J03WOY",
+    "inner_valid": "J03WMX",
+    "fit": [
+      "J03WN1",
+      "J03WOH",
+      "J03WPY"
+    ],
+    "config_index": 2,
+    "corrupted_spellF1": 0.3189122373300371
+  },
+  {
+    "outer": "J03WOY",
+    "inner_valid": "J03WN1",
+    "fit": [
+      "J03WMX",
+      "J03WOH",
+      "J03WPY"
+    ],
+    "config_index": 2,
+    "corrupted_spellF1": 0.32765399737876805
+  },
+  {
+    "outer": "J03WOY",
+    "inner_valid": "J03WOH",
+    "fit": [
+      "J03WMX",
+      "J03WN1",
+      "J03WPY"
+    ],
+    "config_index": 2,
+    "corrupted_spellF1": 0.3412322274881517
+  },
+  {
+    "outer": "J03WOY",
+    "inner_valid": "J03WPY",
+    "fit": [
+      "J03WMX",
+      "J03WN1",
+      "J03WOH"
+    ],
+    "config_index": 2,
+    "corrupted_spellF1": 0.31255539143279176
+  },
+  {
+    "outer": "J03WOY",
+    "inner_valid": "J03WMX",
+    "fit": [
+      "J03WN1",
+      "J03WOH",
+      "J03WPY"
+    ],
+    "config_index": 3,
+    "corrupted_spellF1": 0.3209937888198758
+  },
+  {
+    "outer": "J03WOY",
+    "inner_valid": "J03WN1",
+    "fit": [
+      "J03WMX",
+      "J03WOH",
+      "J03WPY"
+    ],
+    "config_index": 3,
+    "corrupted_spellF1": 0.32149532710280376
+  },
+  {
+    "outer": "J03WOY",
+    "inner_valid": "J03WOH",
+    "fit": [
+      "J03WMX",
+      "J03WN1",
+      "J03WPY"
+    ],
+    "config_index": 3,
+    "corrupted_spellF1": 0.3444794952681388
+  },
+  {
+    "outer": "J03WOY",
+    "inner_valid": "J03WPY",
+    "fit": [
+      "J03WMX",
+      "J03WN1",
+      "J03WOH"
+    ],
+    "config_index": 3,
+    "corrupted_spellF1": 0.3159763313609467
+  },
+  {
+    "outer": "J03WPY",
+    "inner_valid": "J03WMX",
+    "fit": [
+      "J03WN1",
+      "J03WOH",
+      "J03WOY"
+    ],
+    "config_index": 0,
+    "corrupted_spellF1": 0.31605562579013907
+  },
+  {
+    "outer": "J03WPY",
+    "inner_valid": "J03WN1",
+    "fit": [
+      "J03WMX",
+      "J03WOH",
+      "J03WOY"
+    ],
+    "config_index": 0,
+    "corrupted_spellF1": 0.3131367292225201
+  },
+  {
+    "outer": "J03WPY",
+    "inner_valid": "J03WOH",
+    "fit": [
+      "J03WMX",
+      "J03WN1",
+      "J03WOY"
+    ],
+    "config_index": 0,
+    "corrupted_spellF1": 0.3452229299363057
+  },
+  {
+    "outer": "J03WPY",
+    "inner_valid": "J03WOY",
+    "fit": [
+      "J03WMX",
+      "J03WN1",
+      "J03WOH"
+    ],
+    "config_index": 0,
+    "corrupted_spellF1": 0.31797752808988766
+  },
+  {
+    "outer": "J03WPY",
+    "inner_valid": "J03WMX",
+    "fit": [
+      "J03WN1",
+      "J03WOH",
+      "J03WOY"
+    ],
+    "config_index": 1,
+    "corrupted_spellF1": 0.31949367088607594
+  },
+  {
+    "outer": "J03WPY",
+    "inner_valid": "J03WN1",
+    "fit": [
+      "J03WMX",
+      "J03WOH",
+      "J03WOY"
+    ],
+    "config_index": 1,
+    "corrupted_spellF1": 0.30673854447439347
+  },
+  {
+    "outer": "J03WPY",
+    "inner_valid": "J03WOH",
+    "fit": [
+      "J03WMX",
+      "J03WN1",
+      "J03WOY"
+    ],
+    "config_index": 1,
+    "corrupted_spellF1": 0.35215311004784683
+  },
+  {
+    "outer": "J03WPY",
+    "inner_valid": "J03WOY",
+    "fit": [
+      "J03WMX",
+      "J03WN1",
+      "J03WOH"
+    ],
+    "config_index": 1,
+    "corrupted_spellF1": 0.31440559440559435
+  },
+  {
+    "outer": "J03WPY",
+    "inner_valid": "J03WMX",
+    "fit": [
+      "J03WN1",
+      "J03WOH",
+      "J03WOY"
+    ],
+    "config_index": 2,
+    "corrupted_spellF1": 0.3155216284987278
+  },
+  {
+    "outer": "J03WPY",
+    "inner_valid": "J03WN1",
+    "fit": [
+      "J03WMX",
+      "J03WOH",
+      "J03WOY"
+    ],
+    "config_index": 2,
+    "corrupted_spellF1": 0.31348464619492655
+  },
+  {
+    "outer": "J03WPY",
+    "inner_valid": "J03WOH",
+    "fit": [
+      "J03WMX",
+      "J03WN1",
+      "J03WOY"
+    ],
+    "config_index": 2,
+    "corrupted_spellF1": 0.3471337579617835
+  },
+  {
+    "outer": "J03WPY",
+    "inner_valid": "J03WOY",
+    "fit": [
+      "J03WMX",
+      "J03WN1",
+      "J03WOH"
+    ],
+    "config_index": 2,
+    "corrupted_spellF1": 0.31352859135285915
+  },
+  {
+    "outer": "J03WPY",
+    "inner_valid": "J03WMX",
+    "fit": [
+      "J03WN1",
+      "J03WOH",
+      "J03WOY"
+    ],
+    "config_index": 3,
+    "corrupted_spellF1": 0.3143949044585987
+  },
+  {
+    "outer": "J03WPY",
+    "inner_valid": "J03WN1",
+    "fit": [
+      "J03WMX",
+      "J03WOH",
+      "J03WOY"
+    ],
+    "config_index": 3,
+    "corrupted_spellF1": 0.3061058344640434
+  },
+  {
+    "outer": "J03WPY",
+    "inner_valid": "J03WOH",
+    "fit": [
+      "J03WMX",
+      "J03WN1",
+      "J03WOY"
+    ],
+    "config_index": 3,
+    "corrupted_spellF1": 0.35184590690208667
+  },
+  {
+    "outer": "J03WPY",
+    "inner_valid": "J03WOY",
+    "fit": [
+      "J03WMX",
+      "J03WN1",
+      "J03WOH"
+    ],
+    "config_index": 3,
+    "corrupted_spellF1": 0.3167369901547117
+  }
+]

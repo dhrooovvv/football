@@ -1,0 +1,14 @@
+{
+  "fresh_local_clone": true,
+  "fresh_venv_pinned_install": true,
+  "private_inputs_explicitly_symlinked": true,
+  "no_reference_tree_needed_for_prediction": true,
+  "csv_identical": true,
+  "csv_sha256": "ab253e43f46fc9a7885b689498a220595e78d67ad2a6099a07316e081ca3f815",
+  "clone_commit": "1f7435a3b73b848e72d688dfb9458fa762bbc6a4",
+  "raw_external_input_rebuild": true,
+  "raw_rebuild_csv_identical": true,
+  "raw_rebuild_clone_commit": "9ea3b95c8a062cd35ff8e23cb209d9741f0dcf4e",
+  "official_validator_pass": true,
+  "pip_check_pass": true
+}

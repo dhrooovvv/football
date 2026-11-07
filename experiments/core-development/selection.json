@@ -49,5 +49,13 @@
   ],
   "target_artifact_status": "Regenerated penalty16 target CSV; two independent runs and clean-environment reproduction byte-identical, official validator passes.",
   "augmentation": false,
-  "retained_augmentation_branch": false
+  "retained_augmentation_branch": false,
+  "execution_thread_count": 1,
+  "extension_gate": "original paired gate + median corrupted spell gain>=.01",
+  "extension_rejections": [
+    "gap-age",
+    "asymmetric-live-D",
+    "semi-Markov-duration",
+    "nested-CatBoost-policy"
+  ]
 }

@@ -1,0 +1,97 @@
+[
+  {
+    "name": "kiwisolver",
+    "version": "1.5.1",
+    "license": "BSD License"
+  },
+  {
+    "name": "pandas",
+    "version": "3.1.1",
+    "license": "BSD-3-Clause"
+  },
+  {
+    "name": "packaging",
+    "version": "26.3",
+    "license": "Apache-2.0 OR BSD-2-Clause"
+  },
+  {
+    "name": "narwhals",
+    "version": "2.28.0",
+    "license": "MIT"
+  },
+  {
+    "name": "plotly",
+    "version": "7.1.0",
+    "license": "MIT"
+  },
+  {
+    "name": "numpy",
+    "version": "2.5.4",
+    "license": "BSD-3-Clause AND 0BSD AND MIT AND Zlib AND CC0-1.0"
+  },
+  {
+    "name": "pillow",
+    "version": "13.0.0",
+    "license": "MIT-CMU"
+  },
+  {
+    "name": "contourpy",
+    "version": "1.4.0",
+    "license": "BSD-3-Clause"
+  },
+  {
+    "name": "pip",
+    "version": "26.2.1",
+    "license": "MIT"
+  },
+  {
+    "name": "matplotlib",
+    "version": "3.11.2",
+    "license": "Python Software Foundation License"
+  },
+  {
+    "name": "cycler",
+    "version": "0.12.1",
+    "license": "BSD License"
+  },
+  {
+    "name": "fonttools",
+    "version": "4.68.0",
+    "license": "MIT"
+  },
+  {
+    "name": "tzdata",
+    "version": "2026.6",
+    "license": "Apache-2.0"
+  },
+  {
+    "name": "graphviz",
+    "version": "0.21",
+    "license": "MIT"
+  },
+  {
+    "name": "python-dateutil",
+    "version": "4.0.0",
+    "license": "BSD-3-Clause"
+  },
+  {
+    "name": "catboost",
+    "version": "1.2.10",
+    "license": "Apache License, Version 2.0"
+  },
+  {
+    "name": "pyparsing",
+    "version": "3.3.3",
+    "license": "MIT"
+  },
+  {
+    "name": "six",
+    "version": "1.17.0",
+    "license": "MIT License"
+  },
+  {
+    "name": "scipy",
+    "version": "1.18.1",
+    "license": "BSD License"
+  }
+]

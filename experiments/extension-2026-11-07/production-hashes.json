@@ -1,0 +1,11 @@
+{
+  "models/core-final.cbm": "5dbb1d86cd98d4f18a8d589fc072cbd353d99912c1caba613ece9a339dac3b49",
+  "data/competition/predictions/candidate.csv": "ab253e43f46fc9a7885b689498a220595e78d67ad2a6099a07316e081ca3f815",
+  "src/possession/config.py": "33fea8f14b4415d4f10cfa1d32eedaef3ed62e655706178f07aeceeac4511e45",
+  "scripts/predict_core.py": "7ddcd263fe47c0275b3b908f4c7341529fe4373f0a7bb8fb829862a7aa935192",
+  "scripts/prepare_training_inputs.py": "66c41083a793e0539251720e24631b16fd10c541537c840e45b2edcc713a0215",
+  "configs/competition.json": "252091ff6779e8bf809399cbdb844ceefa673125574c6ea52f3ae8b5a27f017c",
+  "experiments/core-development/selection.json": "22ab4cac4e4c4dd5a258c59780cb9b9ea1a0d1ba43e74e4f74f61de2dd54297f",
+  "docs/technical-report.md": "ef869379d8a5274bef7c0432f569fd9eaedebf1005c2019c730e3b744e125131",
+  "experiments/whole-pitch/clean-environment-lock.txt": "caca1d773abb6a6f74ef36c3bf549d015726f2ea8db8890a7ab193630222b4a0"
+}
