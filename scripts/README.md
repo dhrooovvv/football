@@ -54,3 +54,7 @@ Only five external development matches are fetched. Preparation and target predi
 
 ## PFF studies completed (November7)
 Production still trains only IDSSE5: the expanded48PFFcandidate failed both gates. No PFF inputs are required by predict_core.py. Raw-observation admission and the two study evaluations are documented under experiments/pff-admission and experiments/pff-evaluation. Do not use ballsSmoothed for possession-distance features; it is event-conditioned. Study masks need the frozen private empirical-gap distribution and exact release hashes. No public-label score is part of preparation or regeneration.
+
+
+## Optional sequence study (November8)
+The fixedGRUblend was rejected; production predict_core.py does not import Torch or the sequence candidate. Reproduction-only source and isolated environment lock live under experiments/gru-2026-11-08; checkpoints/external predictionCSV files remain ignored. Do not add the blend to production. No window/blend/budget rescue search authorized by these results.

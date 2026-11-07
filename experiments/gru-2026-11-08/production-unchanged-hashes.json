@@ -1,0 +1,8 @@
+{
+  "src/possession/config.py": "33fea8f14b4415d4f10cfa1d32eedaef3ed62e655706178f07aeceeac4511e45",
+  "scripts/predict_core.py": "7ddcd263fe47c0275b3b908f4c7341529fe4373f0a7bb8fb829862a7aa935192",
+  "experiments/core-development/selection.json": "f7608b46a61f23e78c420c80d58135d4a7cfabb50819aedde2fad6df9a9013fa",
+  "docs/technical-report.md": "564cc9fa94669d3511f248b649b0f69f1c5f4cc2f98056a3034f6316d01e9222",
+  "data/competition/predictions/candidate.csv": "ab253e43f46fc9a7885b689498a220595e78d67ad2a6099a07316e081ca3f815",
+  "models/core-final.cbm": "5dbb1d86cd98d4f18a8d589fc072cbd353d99912c1caba613ece9a339dac3b49"
+}

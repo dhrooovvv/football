@@ -3,7 +3,7 @@
   "penalty": 16,
   "mean_player_speed": false,
   "consecutive_rejections": 2,
-  "stop_reason": "PFF data sequence completed; expanded mixture rejected; preserve current candidate pending optional preregistered work or freeze.",
+  "stop_reason": "All authorized bounded tracks completed; fixed GRU blend rejected; retain original CatBoost16 for freeze and delivery.",
   "history": [
     {
       "change": "penalty8",
@@ -57,7 +57,8 @@
     "asymmetric-live-D",
     "semi-Markov-duration",
     "nested-CatBoost-policy",
-    "unweighted_IDSSE_plus_PFF48"
+    "unweighted_IDSSE_plus_PFF48",
+    "fixed_BiGRU25percent_blend"
   ],
   "current_training_sources": "IDSSE5_only"
 }

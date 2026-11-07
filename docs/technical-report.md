@@ -56,7 +56,7 @@ Current gate: per-match mean(clean,corrupted) spellF1 positive median gain and m
 | Gap-age switching / separate live-D switching / learned duration prior | Threefailures stopped decoder track; joint calibration not run |
 | Nested4-setting CatBoost policy | Rejected; extension settings |
 | Add48raw PFFtraining matches | Rejected0/5; paired medspell−.056268,medmacro−.099643,corrupted medspell−.034930 |
-| Sequence model | Not run in this sequence; conditional optional track beforeNov11 |
+| Fixed25% bidirectional GRU blend | Executed November8 and rejected both spell gates; gru-2026-11-08/report.md |
 
 The rejected duration implementation mishandled boundary censoring, so its failure is not evidence against all duration priors. Previous deterministic error-repair gains are counterfactuals, NOT upper bounds or additive causal loss attribution. These corrections do not reopen stopped tracks.
 
@@ -94,3 +94,11 @@ Target-match accuracy remains unknown. Missing-ball live recovery, short spells,
 Architecture freezeNovember13; November14–16delivery only. At freeze, evaluate candidate+supplied baselines once on sealed2, with interpretation committed first: large decline or below preregistered smoothing baseline triggers bug/transfer investigation, NOT tuning. Final frozen public score once for correctness only. Any all-compatible-labelled retrain variant must exclude sealed2, remain separate and await the user's decision before switching.
 
 Three deliverables: team-named possessionCSV, public reproducible source, short PDF/Markdown technical document. Final review, team naming/packaging and freeze checks remain pending. No external submission has been made or authorized automatically. Paused automation remains paused.
+
+
+## November8 optional sequence result — current status
+The previously pending sequence model was executed as one preregistered fixedcandidate and rejected. Fold-onlycleanIDSSE4scaling/windows, nineinputs, one-layerbidirectionalGRU(hidden16perdirection),200Adamupdates/batch8/window250/losscentral200, fixed75%CatBoost+25%GRU, Viterbi16. CPUtorch2.15thread1, deterministicalgorithms, no pretrainedweights/augmentation/PFFdata. No model/window/blendsearch.
+
+Gatefails1/5pairedimprovements; medianpairedspell−.008148,macro+.000052,corruptedspell−.007520. Meanblendclean spell/macro .504499/.895223 andcorrupt .317274/.680278 versusparent .517654/.895099 and .323476/.679401. Bothparent/candidatehalf-only inference; parent exactlymatcheslegacy metrics inallcases. Repeatedtraining states/scaler/lossesmatch, save/reloadprobabilitiesmatch, decodedCSVbytesmatch batch1/4 on10externalcases. TwoGRUcontracttests and29productiontests pass. No crosshardware/versionguarantee, targetneuralCSV orcleanenvironmentneuralreproduction claimed. Production unchanged andexistingbyteproofs remain applicable.
+
+The10scontext is shorter than median10.72sgaps, andclean-only training leaves missingmask/gap featuresOOD. Failureconcerns thisfixedsmallbudgetcandidate, notallsequence methods. ResearchTorchdependency/licences remainisolated; no productionintegration. No rescuetrials. Fullper-match/missingball/variance/source/determinism evidence experiments/gru-2026-11-08/report.md; independentreviewdocs/gru-design-review-2026-11-08.md and gru-results-review-2026-11-08.md. Target-match accuracy remainsunknown; currentCSV unchanged. Allauthorizedboundedtracks exercised; freezeNov13/delivery14–16unchanged.

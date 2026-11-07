@@ -25,3 +25,7 @@ Immediate next action: commit the strict adapter-validation protocol, then imple
 
 ## Completed checkpoint — November7
 Adapter admission64/64(rawVISIBLEonly, no label-conditioned smoothedball), 48/16split unchanged. Train-more failed0/5 and bothgates; keeporiginalIDSSE5ninecore16. Descriptive providertransfer completed and poor, no tuning fromscores. See experiments/pff-evaluation/report.md. OptionalGRUprerequisitesnowfinished; stillrequires owncommittedprotocol/startbeforeNov11 and deterministicreproduction. Not started in this sequence. Freeze/delivery gates unchanged.
+
+
+## November8 checkpoint
+OptionalGRUtrack executed as onefixedcandidate and rejected bothgates. DeterministicexternalCSVchecks passed, performancefailed. Allauthorizedboundedtracks nowexercised; no rescuevariants. Preserveproduction9coreunaugmentedCatBoost16. Nextwork is freeze/deliveryreadiness and scheduledNov13sealed/finalcorrectness checks, not automaticfeature/modelsearch.

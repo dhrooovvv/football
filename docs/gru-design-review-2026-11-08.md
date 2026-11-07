@@ -38,3 +38,17 @@ A positive result would support this fixed neural blend on these reused developm
 Proceed with one bounded preregistered candidate after the above ambiguities are resolved. Confidence is high in the isolation/reproducibility requirements, moderate that temporal context is a reasonable remaining hypothesis, and low in any predicted gain. The highest-value evidence is the fixed clean/corrupted paired comparison with honest missing-frame diagnostics; sealed matches must remain closed until the freeze evaluation.
 
 Sources: AGENTS.md; research-state.yaml; src/possession/core.py/config.py/decode.py; experiments/diagnostics-review/input-shift.md; experiments/whole-pitch/parent-results.json; docs/review-data-analyst-2026-11-07.md; experiments/pff-evaluation/report.md. PyTorch runtime/version-specific determinism settings require verification in the implementation environment; this review does not certify them.
+
+## Pre-fit code review follow-up
+
+Reviewed the committed-protocol implementation in experiments/gru-2026-11-08/gru_candidate.py and scripts/run_gru_candidate.py after the parent's clarification. No training, scoring, raw observations or private assets were read during this review.
+
+The main design questions are now locked: valid starts are sampled uniformly; loss uses the same central200positions; the10second support and clean-training missingness shift are disclosed; class order is H,A,D; blended probabilities are normalized in float64; inference blocks use halves only; fixed batch1 is the deployed contract with an additional batch4decoded-CSV check. No new performance result was used to choose these rules.
+
+**No substantive fold leak or sequence alignment bug was found in the reviewed implementation.** The outer match is excluded from scaler/training inputs. The cumulative valid-start sampler handles interval offsets correctly and never samples a window crossing a half or unknown-label run. The retained inference slices cover each half/frame exactly once, with same-half endpoint padding and zero hidden state per window. Serialized scaler values are reloaded with the model, repeated training resets the RNG, and repeated state tensors/losses, reload probabilities and decoded CSV bytes are checked explicitly.
+
+This is a code review, not runtime certification. The independent repeated-fit checks still have to execute on all five actual folds. If a strict batch4CSV gate fails, the preregistered rule is to drop the candidate, not search batching/kernel settings after scores.
+
+One reporting requirement remains: save the new half-block parent metrics versus the historical label-supported parent metrics, as promised in the protocol. That comparison can use the new parent aggregates and existing historical aggregate files after completion; no new model or performance trial is needed. Prior aggregate results report full known-label support for the IDSSE matches, but equality should be shown rather than assumed.
+
+Recommendation: proceed with the single fixed fit/evaluation budget, keep production unchanged until the strengthened gate and actual determinism/reproduction checks pass, and interpret either outcome only as evidence about this bounded candidate.

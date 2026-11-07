@@ -1,0 +1,62 @@
+[
+  {
+    "match": "J03WMX",
+    "condition": "clean",
+    "spell_delta": 0.0,
+    "macro_delta": 0.0
+  },
+  {
+    "match": "J03WMX",
+    "condition": "targetlike",
+    "spell_delta": 0.0,
+    "macro_delta": 0.0
+  },
+  {
+    "match": "J03WN1",
+    "condition": "clean",
+    "spell_delta": 0.0,
+    "macro_delta": 0.0
+  },
+  {
+    "match": "J03WN1",
+    "condition": "targetlike",
+    "spell_delta": 0.0,
+    "macro_delta": 0.0
+  },
+  {
+    "match": "J03WOH",
+    "condition": "clean",
+    "spell_delta": 0.0,
+    "macro_delta": 0.0
+  },
+  {
+    "match": "J03WOH",
+    "condition": "targetlike",
+    "spell_delta": 0.0,
+    "macro_delta": 0.0
+  },
+  {
+    "match": "J03WOY",
+    "condition": "clean",
+    "spell_delta": 0.0,
+    "macro_delta": 0.0
+  },
+  {
+    "match": "J03WOY",
+    "condition": "targetlike",
+    "spell_delta": 0.0,
+    "macro_delta": 0.0
+  },
+  {
+    "match": "J03WPY",
+    "condition": "clean",
+    "spell_delta": 0.0,
+    "macro_delta": 0.0
+  },
+  {
+    "match": "J03WPY",
+    "condition": "targetlike",
+    "spell_delta": 0.0,
+    "macro_delta": 0.0
+  }
+]

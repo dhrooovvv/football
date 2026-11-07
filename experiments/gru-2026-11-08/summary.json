@@ -1,0 +1,13 @@
+{
+  "candidate": "fixed_0.75_CatBoost_0.25_BiGRU_penalty16",
+  "promoted": false,
+  "production_changed": false,
+  "production_csv_sha256": "ab253e43f46fc9a7885b689498a220595e78d67ad2a6099a07316e081ca3f815",
+  "paired_median_spell_delta": -0.008147537653247827,
+  "paired_median_macro_delta": 5.244173730278856e-05,
+  "median_corrupted_spell_delta": -0.007520196934094114,
+  "determinism_verified_external_only": true,
+  "new_target_inference_run": false,
+  "new_clean_environment_target_reproduction": false,
+  "features_added_to_production": false
+}

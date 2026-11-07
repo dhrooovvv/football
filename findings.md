@@ -85,3 +85,7 @@ Independent review excluded annotation-conditioned ballsSmoothed before modellin
 
 ## J037 PFF sequence complete
 All64rawVISIBLEadmitted48/16 afterexcluding label-conditioned smoothing;29tests. Expandeddatareject0/5, corrupted medspell-.034930, macrodegrades; keep IDSSE5ninecore16. Missinglive recallimproves .0638%→8.9503% without passingglobalgate. Forwardtransfer spell .177631/.111395 clean/corrupt; reverse .390468/.271346. Descriptiveonly, providertransfer risk remains substantial, targetaccuracyunknown. No productionchange; originalCSVhashmatches. OptionalGRUeligiblebutnotstarted;freezeNov13unchanged.
+
+
+## J038 — November8 sequence model rejected
+FixedCPU BiGRU16blend25% failsoriginaland+.01gates:1/5pairedimprove,medianspell-.008148,corrupt-.007520;macro+.000052. Reload/retraining/batchCSVdeterminism passed allcases. Parenthalf-vslegacy metricsidentical. Keeporiginal9coreunaugmentedCatBoost16;no productionTorchrequirement ornewtargetCSV. Singlemodelbudgetclosed, no rescuevariants. Five-matchreuse/OOD/contextlimitations remain; no general claim against allsequence models. Report experiments/gru-2026-11-08/report.md.

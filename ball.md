@@ -830,3 +830,59 @@ BforwardIDSSE5→PFF16 mean spell/macro clean .177631/.698513, corrupted .111395
 
 Fullnatural/newlymasked/allmissing/observedconfusion, live/Drecalls, per-matchvariance andfitcosts: experiments/pff-evaluation/report.md (validatedcomplete).11fits,663.163recordedfitseconds excludingpreparation/inference.29tests pass; no model/publictarget/sealed score added. Currentproduction9coreunaugmentedIDSSE5CatBoost+penalty16 remains; canonicalCSVhashunchanged ab253e43f46fc9a7885b689498a220595e78d67ad2a6099a07316e081ca3f815. Existingcleanenvironment/freshclonebyteproofs remain applicable because productiontraining/inference did notchange. Research-onlyPFFloader/source/tests added, no productionfeature integration.
 Sequenceadmission→trainmore→transfer finished. Track1candidatefailures1; decodertrackclosed3; settingsfixedsearchclosed1. OptionalGRU prerequisitesnowcomplete anddatebeforeNov11, but NOT started in this scopedsequence. Nov13freeze and14–16delivery only unchanged. Next optionalresearch requires itsowncommittedprotocol; sealedandfinalpubliccorrectness gatesstaycloseduntilfreeze. No submission.
+
+
+### J038 — 2026-11-08 — Optional sequence track executed and rejected
+User authorized nextphase and agents; prerequisitesTracks1–3done/datebeforeNov11. Protocol5dc5b22/ded6592 committed beforefitting. Singlecandidate .75CatBoost+.25scratchBiGRU(hidden16×2,1layer,9inputs),Viterbi16; cleanIDSSE4LOMO, fold-onlystats,200Adamsteps/batch8/windows250/losscentral200; no PFF,augmentation,calibration or hyper/blend/windowsearch. Isolatedtorch2.15CPUenv,one intra/inter-opthread,deterministic algorithms,mkldnnOFF; mainproductiondependencies unchanged. Independent scientist found no fold/window leak; known10scontext/longgap andcleanonlyOODlimitations locked beforeoutcomes. OfficialPyTorch reproducibilitydoc reviewed; no crossversion/hardwareguarantee assumed.
+
+All5folds finished. Independent fullrepeattraining matches state tensors/scaler/losses;10casesreloadprobabilities exact andCSVbytes identical fixedbatch1/batch4.2syntheticGRUcontracts plus29productiontests pass. These prove testedproperties, notcompetitionquality. Parenthalf-only versuslegacyparent metricsmaxdifference0. Recordedtrainingcost onlyinitialfits;1000candidateupdates+1000repeatverificationupdates=2000total.
+
+REJECT bothgates:1/5pairedimprove,medianpairedspell-.008148,medianmacro+.000052,mediancorruptedspell-.007520 versus required+.01. Corruptedimprovement2/5. Meanparentclean spell/macro.517654/.895099→blend.504499/.895223;corrupt.323476/.679401→.317274/.680278. SlightframeF1gains do not override spellgate. This refutes thisfixedsmallbudgetcandidate, notallGRUs; no rescuedcontext,trainingaugmentation orblend. Experimentalcode/checkpoints archived, nothing wiredinto production.
+
+| Match | Setting | Parent spellF1 | Blend spellF1 | Parent macroF1 | Blend macroF1 |
+|---|---|---:|---:|---:|---:|
+| J03WMX | clean | 0.501360 | 0.477962 | 0.907574 | 0.906915 |
+| J03WMX | targetlike | 0.323426 | 0.310594 | 0.692742 | 0.692531 |
+| J03WN1 | clean | 0.484682 | 0.466752 | 0.875014 | 0.874405 |
+| J03WN1 | targetlike | 0.313253 | 0.315034 | 0.680025 | 0.681750 |
+| J03WOH | clean | 0.568452 | 0.568107 | 0.903698 | 0.905198 |
+| J03WOH | targetlike | 0.343671 | 0.346230 | 0.646450 | 0.650435 |
+| J03WOY | clean | 0.516129 | 0.500800 | 0.885072 | 0.886473 |
+| J03WOY | targetlike | 0.312291 | 0.297290 | 0.663388 | 0.661155 |
+| J03WPY | clean | 0.517647 | 0.508872 | 0.904135 | 0.903125 |
+| J03WPY | targetlike | 0.324741 | 0.317221 | 0.714401 | 0.715516 |
+
+Gatepermatchdeltas:
+```json
+{
+  "promoted": false,
+  "existing_gate": false,
+  "primary_median_delta": -0.007520196934094114,
+  "paired_spell_deltas": {
+    "J03WMX": -0.018114648673849654,
+    "J03WN1": -0.008074361833281696,
+    "J03WOH": 0.0011072025587004486,
+    "J03WOY": -0.015164974373041207,
+    "J03WPY": -0.008147537653247827
+  },
+  "paired_macro_deltas": {
+    "J03WMX": -0.00043528721528940384,
+    "J03WN1": 0.000558576875230421,
+    "J03WOH": 0.0027422604129928585,
+    "J03WOY": -0.00041600870724656236,
+    "J03WPY": 5.244173730278856e-05
+  },
+  "primary_deltas": {
+    "J03WMX": -0.012831377449736003,
+    "J03WN1": 0.001781470710427946,
+    "J03WOH": 0.0025586221207719584,
+    "J03WOY": -0.015000916488017935,
+    "J03WPY": -0.007520196934094114
+  },
+  "matches_improved": 1,
+  "tests_pass": true,
+  "determinism_pass": true
+}
+```
+
+Fullmissing-ballquality,variance,environment/licences,sourcehashesanddeterminism: experiments/gru-2026-11-08/report.md and companions. Independent analyst recomputedallcells/gate: no decision-changingissue. Currentproduction9coreunaugmentedCatBoostIDSSE5+16 retained;targetCSVhash ab253e43f46fc9a7885b689498a220595e78d67ad2a6099a07316e081ca3f815 unchanged. No newtargetinference/cleanenvtargetrun needed because no promotion; existingproductionrepro proofs remain. No publiclabels/sealed/PFFholdoutscore used. Boundedone-sequence-model trackcompletefailure1;3failureceilingdoesnotauthorizeexpanding fixedone-modelbudget. Nov13freeze,14–16deliveryonly unchanged. No newresearchvariant automaticallyopened, no submission/automation.

@@ -42,9 +42,12 @@ tracks:
     status: bounded_nested_search_rejected_budget_closed
     consecutive_failures: 1
   optional_gru:
-    status: eligible_not_started
+    status: fixed_single_candidate_rejected_budget_closed
     start_before: '2026-11-11'
     protocol_required: true
+    report: experiments/gru-2026-11-08/report.md
+    consecutive_failures: 1
+    determinism_checks: passed_external_cases_only
 pff:
   input_archive: /Users/dhruv/Downloads/Archive 2.zip
   admitted: 64
@@ -73,4 +76,4 @@ workspace:
   findings: findings.md
   technical_document: docs/technical-report.md
   next_step_plan: docs/next-steps-2026-11-07.md
-next_action: Sequence complete; optional GRU decision/protocol beforeNov11, otherwise preserve candidate forNov13freeze.
+next_action: All authorized bounded tracks complete; preserve current candidate and review freeze/delivery readiness. Sealed evaluation November13 only.
