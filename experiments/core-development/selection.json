@@ -3,7 +3,7 @@
   "penalty": 16,
   "mean_player_speed": false,
   "consecutive_rejections": 2,
-  "stop_reason": "Whole-pitch bundle failed both gates; user instructed stop feature additions.",
+  "stop_reason": "PFF data sequence completed; expanded mixture rejected; preserve current candidate pending optional preregistered work or freeze.",
   "history": [
     {
       "change": "penalty8",
@@ -56,6 +56,8 @@
     "gap-age",
     "asymmetric-live-D",
     "semi-Markov-duration",
-    "nested-CatBoost-policy"
-  ]
+    "nested-CatBoost-policy",
+    "unweighted_IDSSE_plus_PFF48"
+  ],
+  "current_training_sources": "IDSSE5_only"
 }

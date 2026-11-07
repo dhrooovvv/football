@@ -777,3 +777,56 @@ Gate:
   "tests_pass": true
 }
 ```
+
+
+### J037 — 2026-11-07 — Cross-provider transfer completed, production retained
+Bothauthorizedevaluations complete. Independent analyst verified20A+42Bcells,48/16cohort,0excluded, gatearithmetic. Aexpanded mixture rejected0/5, pairedmedspell-.056268, medmacro-.099643, primarycorrupted-.034930. Missing-ball pooledlive recall improves.0638%→8.9503% but overallspell/macro decline: do NOT promote a submetric-onlygain. This does not refute every PFFtrainingstrategy. No rescueweights/calibration/feature/grid change attempted.
+BforwardIDSSE5→PFF16 mean spell/macro clean .177631/.698513, corrupted .111395/.546575. ReversePFF48→IDSSE5 clean .390468/.732170, corrupted .271346/.602691. Descriptive risk only, no choice depends on B. Knownlabelfraction1.0 in allcompletedA/Bcells, so differentXresetpolicies are a general caveat, NOT demonstrated cause here. RawVISIBLE/PFFbroadcastmissingness, labelconventions, mixtureproportions and covariates vary jointly; cannot isolatecausalprovider effects.
+
+| Direction | Match | Setting | spellF1 | macroF1 |
+|---|---|---|---:|---:|
+| IDSSE5_to_PFF_holdout | 3846 | clean | 0.131302 | 0.713932 |
+| IDSSE5_to_PFF_holdout | 3846 | targetlike | 0.102894 | 0.597345 |
+| IDSSE5_to_PFF_holdout | 3831 | clean | 0.185940 | 0.773547 |
+| IDSSE5_to_PFF_holdout | 3831 | targetlike | 0.121295 | 0.616346 |
+| IDSSE5_to_PFF_holdout | 3841 | clean | 0.120704 | 0.673531 |
+| IDSSE5_to_PFF_holdout | 3841 | targetlike | 0.061074 | 0.511345 |
+| IDSSE5_to_PFF_holdout | 10512 | clean | 0.081784 | 0.538797 |
+| IDSSE5_to_PFF_holdout | 10512 | targetlike | 0.058114 | 0.438542 |
+| IDSSE5_to_PFF_holdout | 3847 | clean | 0.157392 | 0.668715 |
+| IDSSE5_to_PFF_holdout | 3847 | targetlike | 0.100000 | 0.517389 |
+| IDSSE5_to_PFF_holdout | 10506 | clean | 0.219839 | 0.686992 |
+| IDSSE5_to_PFF_holdout | 10506 | targetlike | 0.139623 | 0.540844 |
+| IDSSE5_to_PFF_holdout | 3833 | clean | 0.203709 | 0.710141 |
+| IDSSE5_to_PFF_holdout | 3833 | targetlike | 0.133977 | 0.590056 |
+| IDSSE5_to_PFF_holdout | 3819 | clean | 0.240929 | 0.785796 |
+| IDSSE5_to_PFF_holdout | 3819 | targetlike | 0.133333 | 0.579157 |
+| IDSSE5_to_PFF_holdout | 10505 | clean | 0.246293 | 0.755185 |
+| IDSSE5_to_PFF_holdout | 10505 | targetlike | 0.142963 | 0.561834 |
+| IDSSE5_to_PFF_holdout | 3849 | clean | 0.222564 | 0.727656 |
+| IDSSE5_to_PFF_holdout | 3849 | targetlike | 0.122675 | 0.531884 |
+| IDSSE5_to_PFF_holdout | 3858 | clean | 0.172549 | 0.696096 |
+| IDSSE5_to_PFF_holdout | 3858 | targetlike | 0.120177 | 0.579271 |
+| IDSSE5_to_PFF_holdout | 3834 | clean | 0.180609 | 0.750449 |
+| IDSSE5_to_PFF_holdout | 3834 | targetlike | 0.128736 | 0.611314 |
+| IDSSE5_to_PFF_holdout | 3812 | clean | 0.122222 | 0.667586 |
+| IDSSE5_to_PFF_holdout | 3812 | targetlike | 0.067712 | 0.493431 |
+| IDSSE5_to_PFF_holdout | 3820 | clean | 0.262360 | 0.762179 |
+| IDSSE5_to_PFF_holdout | 3820 | targetlike | 0.160912 | 0.588559 |
+| IDSSE5_to_PFF_holdout | 3851 | clean | 0.155450 | 0.598350 |
+| IDSSE5_to_PFF_holdout | 3851 | targetlike | 0.090342 | 0.470135 |
+| IDSSE5_to_PFF_holdout | 3845 | clean | 0.138442 | 0.667250 |
+| IDSSE5_to_PFF_holdout | 3845 | targetlike | 0.098489 | 0.517743 |
+| PFF_training_to_IDSSE5 | J03WMX | clean | 0.396656 | 0.798319 |
+| PFF_training_to_IDSSE5 | J03WMX | targetlike | 0.262793 | 0.641731 |
+| PFF_training_to_IDSSE5 | J03WN1 | clean | 0.379747 | 0.682956 |
+| PFF_training_to_IDSSE5 | J03WN1 | targetlike | 0.253953 | 0.579190 |
+| PFF_training_to_IDSSE5 | J03WOH | clean | 0.392102 | 0.725935 |
+| PFF_training_to_IDSSE5 | J03WOH | targetlike | 0.273598 | 0.576207 |
+| PFF_training_to_IDSSE5 | J03WOY | clean | 0.367447 | 0.707753 |
+| PFF_training_to_IDSSE5 | J03WOY | targetlike | 0.280299 | 0.584215 |
+| PFF_training_to_IDSSE5 | J03WPY | clean | 0.416386 | 0.745889 |
+| PFF_training_to_IDSSE5 | J03WPY | targetlike | 0.286086 | 0.632112 |
+
+Fullnatural/newlymasked/allmissing/observedconfusion, live/Drecalls, per-matchvariance andfitcosts: experiments/pff-evaluation/report.md (validatedcomplete).11fits,663.163recordedfitseconds excludingpreparation/inference.29tests pass; no model/publictarget/sealed score added. Currentproduction9coreunaugmentedIDSSE5CatBoost+penalty16 remains; canonicalCSVhashunchanged ab253e43f46fc9a7885b689498a220595e78d67ad2a6099a07316e081ca3f815. Existingcleanenvironment/freshclonebyteproofs remain applicable because productiontraining/inference did notchange. Research-onlyPFFloader/source/tests added, no productionfeature integration.
+Sequenceadmission→trainmore→transfer finished. Track1candidatefailures1; decodertrackclosed3; settingsfixedsearchclosed1. OptionalGRU prerequisitesnowcomplete anddatebeforeNov11, but NOT started in this scopedsequence. Nov13freeze and14–16delivery only unchanged. Next optionalresearch requires itsowncommittedprotocol; sealedandfinalpubliccorrectness gatesstaycloseduntilfreeze. No submission.

@@ -50,3 +50,7 @@ PYTHONPATH=src python scripts/predict_core.py
 ```
 
 Only five external development matches are fetched. Preparation and target prediction need no organizer evaluation tree. The last line is the regeneration command once inputs are prepared. Official validation/research scoring additionally require the unchanged organizer starter evaluation code, kept outside public source. No sealed matches downloaded. New freezeNovember13; November14–16 delivery only.
+
+
+## PFF studies completed (November7)
+Production still trains only IDSSE5: the expanded48PFFcandidate failed both gates. No PFF inputs are required by predict_core.py. Raw-observation admission and the two study evaluations are documented under experiments/pff-admission and experiments/pff-evaluation. Do not use ballsSmoothed for possession-distance features; it is event-conditioned. Study masks need the frozen private empirical-gap distribution and exact release hashes. No public-label score is part of preparation or regeneration.

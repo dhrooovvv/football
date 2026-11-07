@@ -1,0 +1,9 @@
+{
+  "evaluation_seed_base": 20261106,
+  "PFF_seed_order": "sorted all64 IDs",
+  "IDSSE_masks": "existing fixed data/diagnostics-review caches",
+  "private_empirical_gap_model_sha256": "c3e28e89c20585429a07deeca70172b0c96d683e883a225aa0ca6b66a3fcfc1e",
+  "source_dataset_manifest_sha256": "b1e5127897f007870056028d3f256393f3ad26889658674bf01873e4ca94a3de",
+  "prepared_feature_admission_sha256": "b8ef869ce83254f89e4061d39b5aaa6b51f3280b9a15a0497afee110513d5787",
+  "public_labels_used": false
+}

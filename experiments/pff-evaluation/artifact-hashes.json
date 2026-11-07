@@ -1,0 +1,13 @@
+{
+  "src/possession/pff.py": "1a304f77614c909e74a20733c3021b82d9379edc3f8b3ea7d6736514653e9930",
+  "src/possession/config.py": "33fea8f14b4415d4f10cfa1d32eedaef3ed62e655706178f07aeceeac4511e45",
+  "scripts/evaluate_pff.py": "4be515d3d7c4d92478c373d8338c18ebedf50811e4e5dbe4cbff9b27d5ad3d58",
+  "scripts/prepare_pff_admission.py": "f71e65ede470fee91523467ef6f0addcf50e7597006f1e7b5393f90fe55f41fb",
+  "scripts/report_pff_evaluation.py": "012379576ffd50af47f64ddf98681a6f9dafae0717348c0c9445e12e31b64552",
+  "experiments/pff-evaluation/protocol.md": "db2ea377020086e3442eb699988dc2807d90819b64bdcadb3b21a5bbbe42e682",
+  "experiments/pff-evaluation/cohort-lock.json": "0eafab0b07671391ede73fee498dec6c03907d246575ee429ff93f13936efb41",
+  "experiments/core-development/selection.json": "9c075b84bf8e92c3afc87d6db0f60a1d374fbb7dc6fe5628142d4ef5689938dd",
+  "docs/technical-report.md": "e03812bf49953c02bd6fa7a022fa7af85fa2130299ccf43cb98c1ebe80608788",
+  "data/competition/predictions/candidate.csv": "ab253e43f46fc9a7885b689498a220595e78d67ad2a6099a07316e081ca3f815",
+  "models/core-final.cbm": "5dbb1d86cd98d4f18a8d589fc072cbd353d99912c1caba613ece9a339dac3b49"
+}

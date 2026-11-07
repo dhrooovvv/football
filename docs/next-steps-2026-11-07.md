@@ -21,3 +21,7 @@ Main downside: more labels can worsen the model if PFFownership/dead conventions
 Primary implementation references: https://kloppy.pysport.org/user-guide/loading-data/pff/ and pinned PySport/kloppy PFFparser a9651eba7c4dbbe2d2fc6d4cffb4aea63fadac11. Local specifications/manifest in pff-intake/report.md. Generic loader support does not resolve this release's duplicate conflicts or CLKsemantics.
 
 Immediate next action: commit the strict adapter-validation protocol, then implement/test it. No new performance experiment until its contracts pass. Plan/gates/freeze unchanged except the already-authorizedNov13extension.
+
+
+## Completed checkpoint — November7
+Adapter admission64/64(rawVISIBLEonly, no label-conditioned smoothedball), 48/16split unchanged. Train-more failed0/5 and bothgates; keeporiginalIDSSE5ninecore16. Descriptive providertransfer completed and poor, no tuning fromscores. See experiments/pff-evaluation/report.md. OptionalGRUprerequisitesnowfinished; stillrequires owncommittedprotocol/startbeforeNov11 and deterministicreproduction. Not started in this sequence. Freeze/delivery gates unchanged.

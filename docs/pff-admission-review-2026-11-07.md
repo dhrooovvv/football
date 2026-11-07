@@ -104,3 +104,46 @@ The current state machine preserves provider assertions through ordinary raw-coo
 ### Updated recommendation
 
 The main raw-observation leakage blocker is resolved in the source. Full64 preparation may continue under the locked raw policy; it should be treated as **admission evidence pending report/provenance/test completion**, not automatic model admission. Do not choose different duplicate or visibility policies from downstream scores. Once the all64 matrix and these checks are complete, there is no basis in this review for withholding the two authorized evaluations merely because PFF is a different provider. Preserve failures and fixed 48/16 membership, report provider/convention/missingness caveats, and keep production unchanged unless the train-more comparison passes both gates.
+
+## Final admission assessment — November 7, after cohort lock d4b72ac
+
+Reviewed only the published admission aggregates, snapshot/protocol, verification/preparation code and current adapter/tests. No source rows, target or sealed files were accessed; no model, score, cleanup or new data experiment was run by this reviewer. The two evaluation protocol is `e7cb0b1`.
+
+**Decision: the published admission evidence is sufficient to proceed with the two authorized evaluations under the locked raw/VISIBLE-only policy. I found no new demonstrated blocker requiring the in-progress train-more comparison to stop.** This is permission to test a documented measurement contract, not a statement that PFF labels equal target possession truth or that more-data training will improve performance.
+
+### Evidence resolving the earlier admission objections
+
+- The published matrix attempts **all 64 matches**, records 64 passes and no replacements, and admits exactly the precommitted **48 training / 16 transfer** split.
+- `snapshot.json` fingerprints the adapter, core/feature functions, admission protocol, provider split and release manifest. The reporting code verifies those source fingerprints, release files, prepared feature hashes, nine-column shapes, allowed labels and no infinite clean/corrupted features before creating the modelling cohort lock. This addresses the earlier risk of unknowingly using old smoothed caches.
+- The source reads raw player/ball fields and VISIBLE coordinates, never `ballsSmoothed`. The additional loader fixture explicitly presents a misleading smoothed ball and an ESTIMATED raw ball and verifies that neither becomes an observed ball. The published test log reports **29 passing tests**.
+- CLK/VID uncertainty and native-gap state resets remain implemented, and cumulative half video/frame agreement is checked. No unsupported CLK play meaning has been asserted as truth.
+- Coordinate and presence/missing disagreements, within-list repeats and play/team assertion disagreements have separate reported counters. These are conservative consistency diagnostics; disagreement is not automatically provider error, and raw inputs having zero such contradictions in some matches is plausible because the documented duplicates expand event associations.
+
+### The data contain relevant naturally missing live examples
+
+The aggregate observation-support table reports:
+
+| Provider state | Observed raw ball | Missing/conservatively unobserved raw ball |
+|---|---:|---:|
+| H | 1,888,600 | 1,020,197 |
+| A | 1,815,129 | 1,001,799 |
+| D | 354,561 | 3,649,128 |
+| X | 561 | 787 |
+
+Thus there are **2,021,996 known H/A frames with naturally unobserved ball**, not merely dead-ball examples. Missingness does not remove their valid provider labels. This is the strongest supported reason that the new source could address the existing model's near-constant-D response during gaps; the two modelling evaluations, not this table, determine whether that potential materializes.
+
+“Natural missing” here includes source absence, non-VISIBLE coordinates and observations conservatively discarded by the fixed consensus rule. It should not be described as a pure camera-occlusion indicator. The table concerns the 25 Hz prepared representation and provider conventions, not human-verified game truth.
+
+### Caveats that remain, without justifying post-hoc cleanup
+
+1. Label coverage is extremely high but not literal completeness: the aggregate X support is 1,348 frames. CLK/VID/unsupported-gap handling can make exclusions non-random. Retain per-match coverage and unknown counts in transfer interpretation.
+2. PFF “clean” data already contain substantial missing observations. Additional synthetic corruption can only increase missingness; its total missing rate need not match the target's observed rate. Report natural, newly masked and total missing subsets separately as the evaluation protocol requires. Do not rank providers by comparing their different clean/corrupted conditions as if the observation regimes were matched.
+3. Nearest native observations and past-only labels may straddle transitions by a native frame. This is a fixed documented resampling choice, not perfect simultaneity. It remains an alignment/noise limitation, not grounds for changing the rule after scores arrive.
+4. The visible tests do not exercise every malformed metadata, half-order and cumulative-clock path. Finite-fps/distinct-team/period-order defensive checks remain worthwhile engineering follow-up, but the reviewed 64-match verified cohort provides no observed invalid input demonstrating a new stop condition. Keep those safeguards distinct from an allegation of corrupt current data.
+5. The code/snapshot checks are reproducibility evidence, not independent validation of provider annotation semantics. Event-defined ownership, dead-ball transitions and unknown intervals may differ from IDSSE. Provider transfer also changes competition/teams/camera coverage. A good or poor transfer score cannot isolate one cause.
+
+### Evaluation interpretation
+
+Keep the original five-match outer held-out IDSSE matches out of both parent and expanded training in comparison A. Its strengthened gate is the only promotion decision. Evaluation B must remain descriptive; no tuning, source cleanup, calibration, match replacement or version choice may depend on the 16 transfer matches. Both sealed IDSSE matches remain untouched and permanently excluded from training.
+
+A's legacy known-label-run decoder resets and B's half-only inference are explicitly different in the preregistration. Do not present their score difference as an isolated provider effect. Once results are available, report per-match heterogeneity and live-gap recovery alongside the aggregate gate; no synthetic or admission result substitutes for performance evidence. Keep production at the current candidate unless A passes the full gate and clean-environment reproduction.

@@ -81,3 +81,7 @@ PFFduplicates are explicitly documented annotation expansion; conflict probe mix
 
 ## J035 PFF admitted with raw-observation contract
 Independent review excluded annotation-conditioned ballsSmoothed before modelling. RawVISIBLEonly,CLK/VIDunknown, nativegap/cumulativeclock guards, full64pass source/feature hashes verified,48train16holdoutlocked.2021996knownliveframes naturallymissingball.29tests pass. Models notyetmeasured; Track1A/B nowauthorized/preregistered. No provider-equivalence or targetquality claim.
+
+
+## J037 PFF sequence complete
+All64rawVISIBLEadmitted48/16 afterexcluding label-conditioned smoothing;29tests. Expandeddatareject0/5, corrupted medspell-.034930, macrodegrades; keep IDSSE5ninecore16. Missinglive recallimproves .0638%→8.9503% without passingglobalgate. Forwardtransfer spell .177631/.111395 clean/corrupt; reverse .390468/.271346. Descriptiveonly, providertransfer risk remains substantial, targetaccuracyunknown. No productionchange; originalCSVhashmatches. OptionalGRUeligiblebutnotstarted;freezeNov13unchanged.

@@ -1,0 +1,67 @@
+[
+  {
+    "match": "J03WMX",
+    "arm": "parent",
+    "training_rows": 113507,
+    "seconds": 6.7215051670209505
+  },
+  {
+    "match": "J03WMX",
+    "arm": "expanded",
+    "training_rows": 1571817,
+    "seconds": 106.07103858300252
+  },
+  {
+    "match": "J03WN1",
+    "arm": "parent",
+    "training_rows": 114388,
+    "seconds": 6.53920666599879
+  },
+  {
+    "match": "J03WN1",
+    "arm": "expanded",
+    "training_rows": 1572698,
+    "seconds": 106.11420341700432
+  },
+  {
+    "match": "J03WOH",
+    "arm": "parent",
+    "training_rows": 115258,
+    "seconds": 6.58404841599986
+  },
+  {
+    "match": "J03WOH",
+    "arm": "expanded",
+    "training_rows": 1573568,
+    "seconds": 106.16302766700392
+  },
+  {
+    "match": "J03WOY",
+    "arm": "parent",
+    "training_rows": 114193,
+    "seconds": 6.523080625018338
+  },
+  {
+    "match": "J03WOY",
+    "arm": "expanded",
+    "training_rows": 1572503,
+    "seconds": 106.52335725000012
+  },
+  {
+    "match": "J03WPY",
+    "arm": "parent",
+    "training_rows": 113458,
+    "seconds": 6.633855082996888
+  },
+  {
+    "match": "J03WPY",
+    "arm": "expanded",
+    "training_rows": 1571768,
+    "seconds": 106.87933329198859
+  },
+  {
+    "arm": "reverse_PFF_only",
+    "training_rows": 1458310,
+    "seconds": 98.41000341699691
+  }
+]

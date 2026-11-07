@@ -1,0 +1,38 @@
+{
+  "production_changed": false,
+  "candidate_rejected": true,
+  "parent_csv_sha256_unchanged": "ab253e43f46fc9a7885b689498a220595e78d67ad2a6099a07316e081ca3f815",
+  "transfer_selection_used": false,
+  "fits": 11,
+  "fit_seconds": 663.1626595830312,
+  "transfer": {
+    "IDSSE5_to_PFF_holdout": {
+      "clean": {
+        "matches": 16,
+        "spellF1_mean": 0.17763056152661555,
+        "macroF1_mean": 0.6985126897829035
+      },
+      "targetlike": {
+        "matches": 16,
+        "spellF1_mean": 0.11139473515939435,
+        "macroF1_mean": 0.5465746555051663
+      }
+    },
+    "PFF_training_to_IDSSE5": {
+      "clean": {
+        "matches": 5,
+        "spellF1_mean": 0.3904675694803707,
+        "macroF1_mean": 0.732170247148398
+      },
+      "targetlike": {
+        "matches": 5,
+        "spellF1_mean": 0.2713459346594075,
+        "macroF1_mean": 0.6026912143922144
+      }
+    }
+  },
+  "missing_live_recall": {
+    "parent": 0.0006379277015271603,
+    "expanded": 0.08950318963850763
+  }
+}

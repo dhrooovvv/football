@@ -1,149 +1,76 @@
 project:
-  title: Ball possession Phase 1
-  question: Which local inference and temporal decoding approach best recovers possession spells under missing tracking?
+  title: Ball possession
   status: active
-  started: '2026-11-06'
   phase: 2
   phase_one_status: complete
   contributors: 3
-  match_assets_available: tactical_complete_broadcast_partial
-  separate_fallback: false
-  tactical_duplicate_inputs_verified: '2026-11-06'
-  input_archive: /Users/dhruv/Downloads/Archive.zip
-  target_submission: '2026-11-16'
   architecture_freeze: '2026-11-13'
+  delivery_only: November14–16
+  target_submission: '2026-11-16'
   deadline: '2026-11-17'
 continuity:
   automation_id: ball-possession-research
-  interval_minutes: 20
   automation_status: paused
   no_research_after: '2026-11-13'
   no_action_after: '2026-11-17'
-literature:
-  key_papers: [borghesi2023, vidalcodina2022, kim2023, bassek2025, kim2026pathcrf, renner2026, capellera2024transportmer, peral2026multimodal]
-  evidence_gaps: [sealed_generalisation_unmeasured, competition_quality_unmeasured, corruption_robustness_limited]
-hypotheses:
-  - {id: H1, status: pending, priority: high, statement: Temporal decoding improves external spellF1 over matched emissions}
-  - {id: H2, status: pending, priority: medium, statement: Factorised CatBoost improves over direct three-class prediction}
-  - {id: H3, status: pending, priority: high, statement: Structured gap augmentation improves occlusion robustness}
-  - {id: H4, status: pending, priority: medium, statement: Soft tag semantics preserve correct restart and ownership evidence}
-experiments:
-  proxy_metric: external match-level spellF1
-  baseline_value: null
-  best_value: 0.420564936202867
-  selected_candidate: core_penalty16
-  consecutive_rejections: 2
-  total_runs: null # legacy counter retired; see committed experiment protocols/results
-  synthetic_contract_runs: 2
-  external_performance_runs: null # nested fits and comparative candidates are distinct units
-  trajectory:
-    - {run_id: h1-contracts-001, scope: synthetic_correctness, tests_passed: 9, tests_total: 9, spellF1: null}
-    - {run_id: phase1-ingestion-001, scope: input_feature_correctness, tests_passed: 18, tests_total: 18, spellF1: null}
-  target_public_labels_for_tuning: false
-  split_status: locked_five_development_two_sealed
-outer_loop:
-  cycle: 0
-  last_direction: deepen
-  last_reflection: Prioritise main-pipeline input correctness and recent-method evidence; no model superiority established.
+production:
+  selected: core_penalty16
+  features: nine_core_only
+  training: five_IDSSE_development_matches
+  augmentation: false
+  thread_count: 1
+  changed_this_sequence: false
+  csv_sha256: ab253e43f46fc9a7885b689498a220595e78d67ad2a6099a07316e081ca3f815
+  clean_environment_reproduction: true
+  fresh_clone_raw_reproduction: true
+promotion:
+  paired_clean_corrupted_mean_spell: positive_median_and_majority_improve
+  paired_macro_median_delta_minimum: -0.01
+  corrupted_spell_median_delta_minimum: 0.01
+  tests_required: true
+  stop_track_after_consecutive_failures: 3
+tracks:
+  more_data:
+    status: completed_candidate_rejected_transfer_measured
+    consecutive_failures: 1
+    report: experiments/pff-evaluation/report.md
+  decoder:
+    status: stopped_three_consecutive_failures
+    consecutive_failures: 3
+    calibration_step: not_run_stop_rule
+  settings:
+    status: bounded_nested_search_rejected_budget_closed
+    consecutive_failures: 1
+  optional_gru:
+    status: eligible_not_started
+    start_before: '2026-11-11'
+    protocol_required: true
+pff:
+  input_archive: /Users/dhruv/Downloads/Archive 2.zip
+  admitted: 64
+  training: 48
+  transfer_holdout: 16
+  native_fps: 29.97
+  pipeline_fps: 25
+  observation_policy: raw_VISIBLE_only_no_smoothed_fallback
+  admission: experiments/pff-admission/report.md
+  snapshot: experiments/pff-admission/snapshot.json
+  split: experiments/pff-intake/split.json
+  evaluations: experiments/pff-evaluation/summary.json
+constraints:
+  sealed_matches_opened: false
+  sealed_matches_excluded_from_all_training: true
+  public_labels_used_for_selection: false
+  target_accuracy: unknown
+  transfer_results_for_selection: false
+  external_submission: false
+  legacy_run_counters: retired_ambiguous_units
+reviews:
+  admission: docs/pff-admission-review-2026-11-07.md
+  evaluation: docs/pff-evaluation-review-2026-11-07.md
 workspace:
   primary_memory: ball.md
   findings: findings.md
-  log: research-log.md
-  literature_dir: literature/
-  experiments_dir: experiments/
-  to_human_dir: to_human/
-  paper_dir: paper/
-next_action: PFF official release intake and full native-label coverage audit; then strict25Hz adapter before Track1modelling. Sealed closed untilNovember13.
-
-approved_gap_review:
-  status: complete_stopped
-  report: experiments/gap-augmentation/report.md
-  retained_separate_branch: null
-  target_export_regenerated: true
-  combined_augmentation16_tested: true
-
-combined16_review:
-  status: complete_rejected
-  augmentation_retained: false
-  report: experiments/combined16/report.md
-  next_protocol: experiments/combined16/proposed-whole-pitch.md
-  next_protocol_approved: true
-
-whole_pitch_review:
-  status: rejected_feature_additions_stopped
-  report: experiments/whole-pitch/report.md
-  both_gates_passed: false
-finalization:
-  date: 2026-11-07
-  selected: core_penalty16
-  csv_sha256: ab253e43f46fc9a7885b689498a220595e78d67ad2a6099a07316e081ca3f815
-  two_full_runs_identical: true
-  clean_environment_reproduction: true
-  official_validator_pass: true
-  evidence: experiments/whole-pitch/reproduction.json
-  technical_draft: docs/technical-report.md
-
-extension:
-  plan: experiments/extension-2026-11-07/plan.md
-  freeze: 2026-11-13
-  delivery_only: November14–16
-  minimum_median_corrupted_spell_gain: 0.01
-  track: data_access_pending
-
-extension_checkpoint:
-  track1: official_pff_native_audit_complete_adapter_pending
-  track2: stopped_three_consecutive_failures
-  track3: bounded_nested_search_rejected
-  track4: deferred_until_track1_evaluations_complete
-  track2_failures: 3
-  track3_failures: 1
-  fresh_clone_raw_reproduction: true
-  thread_count: 1
-  independent_transfer_evidence: unavailable
-
-pff_intake:
-  archive: /Users/dhruv/Downloads/Archive 2.zip
-  matches: 64
-  native_fps: 29.97
-  prospective_training: 48
-  prospective_transfer_holdout: 16
-  split: experiments/pff-intake/split.json
-  state_coverage: provisional_native_presence_only_duplicates_unresolved
-  modelling_executed: false
-
-pff_native_audit:
-  completed: true
-  matches: 64
-  delivered_standard_records: 11707598
-  nonincreasing_frame_matches: 64
-  extra_event_code: CLK
-  model_admission: true
-  next_action: Preregister strict duplicate_CLK_native_time_and25Hz_adapter_validation.
-
-next_step_plan: docs/next-steps-2026-11-07.md
-
-independent_reviews:
-  scientist: docs/review-data-scientist-2026-11-07.md
-  analyst: docs/review-data-analyst-2026-11-07.md
-  recent_gate_arithmetic: confirmed
-  legacy_run_counters: retired_ambiguous_units
-pff_adapter:
-  protocol: experiments/pff-adapter/protocol.md
-  status: implemented_pilot_repeat_verified_full_admission_pending
-  full64_admission: true
-  production_affected: false
-
-review_interpretation_corrections:
-  oracle_repairs: counterfactual_not_upper_bound
-  duration_prior: rejected_implementation_did_not_handle_censoring
-  missing_ball_behavior: nearconstant_dead_on_development_corruption
-  baseline_value_note: no_single_baseline_across_different_corruption_versions
-
-pff_admission_final:
-  status: all64_pass_raw_visible_only
-  train: 48
-  transfer_holdout: 16
-  known_live_naturally_missing_frames: 2021996
-  snapshot: experiments/pff-admission/snapshot.json
-  cohort: experiments/pff-evaluation/cohort-lock.json
-  evaluation_status: preregistered_starting
+  technical_document: docs/technical-report.md
+  next_step_plan: docs/next-steps-2026-11-07.md
+next_action: Sequence complete; optional GRU decision/protocol beforeNov11, otherwise preserve candidate forNov13freeze.

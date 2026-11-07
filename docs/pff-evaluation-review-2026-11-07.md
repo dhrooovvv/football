@@ -64,3 +64,36 @@ The prior development failure is near-constant D during missing-ball frames. D r
 Before any fit, publish one admission matrix for all64 matches: source records→unique native keys→duplicate observations→coordinate/missingness disagreements→state/team conflicts→half/time checks→unique25Hz frames→known/unknown labels, with natural missing-ball × H/A/D support. Keep rows private, aggregates/hashes committed. Then preregister A/B exact training populations, mask seeds, inference-block policy and gate; execute once, report failures without replacement or retrospective threshold changes.
 
 Sources: experiments/pff-intake/split.json; src/possession/config.py/core.py/decode.py; scripts/run_core.py/review_frozen.py; docs/review-data-analyst-2026-11-07.md; project memories. No newly measured performance is asserted here.
+
+## Outcome verification — completed A/B, November 7
+
+I independently recomputed the decision and headline summaries from current aggregate JSON only. No raw/target/public/sealed assets, model files or prediction arrays were read; no training or scoring was rerun. The cohort contains all48 fixed training matches and all16 fixed holdout matches, with zero admission exclusions. Completeness is20 A cells and42 B cells (16forward+5reverse matches, each clean/corrupted).
+
+**No decision-changing arithmetic issue found. Reject expanded training and retain the original unaugmented penalty16 configuration.** All five paired spell changes are negative; median paired spell change is−.056268, median paired macro change−.099643, and median corrupted spell change−.034930. Both gates fail, not merely the+.01 corrupted minimum. Stored gate deltas/decision agree with independent recomputation. Tests are recorded as passing, but this review did not rerun them.
+
+| Evaluation | Condition | Equal-match mean spellF1 | Equal-match mean macroF1 | SpellF1 sample SD |
+|---|---|---:|---:|---:|
+| A parent | clean | .517654 | .895099 | .031366 |
+| A parent | target-like | .323476 | .679401 | .012640 |
+| A expanded | clean | .423010 | .771147 | .022289 |
+| A expanded | target-like | .289040 | .623183 | .009950 |
+| B IDSSE5→PFF16 | clean | .177631 | .698513 | .052004 |
+| B IDSSE5→PFF16 | target-like | .111395 | .546575 | .030475 |
+| B PFF48→IDSSE5 | clean | .390468 | .732170 | .018423 |
+| B PFF48→IDSSE5 | target-like | .271346 | .602691 | .013021 |
+
+B remains descriptive transfer-risk evidence, never a promotion/cleanup/calibration selection tool. The asymmetric scores cannot isolate a causal provider effect because training populations, labels, observed coverage and domain distributions differ. A rejects this particular unweighted expanded-data intervention at the fixed budget; it does not establish that PFF labels or any future compatible use can never help.
+
+### Missing-ball trade-off, not a successful fix
+
+On A's identical286943 corrupted missing-ball frames across the five matches, pooled confusion counts imply parent predicted-D share99.9655% and live recall.0638%; expanded training predicts D93.8434% with live recall8.9503% and D recall97.1340%. This is genuine movement away from the nearly constant-D response, yet it coexists with worse whole-match spellF1 and macroF1 and does not override the gate. These pooled confusion rates are explicitly frame-weighted diagnostic summaries, distinct from equal-match headline scores. They cannot identify whether source mixture, label conventions, visibility distribution, model capacity/budget or another factor caused the degradation.
+
+### Segmentation caveat narrowed by actual data
+
+The A/B implementation policies differ (legacyX resets versus halves only), as previously documented. However, every completed result reports known_label_fraction1.0; there are no X gaps in these scored arrays. Therefore the X-reset disparity is a **general protocol caveat, not a demonstrated active driver of this run's score difference**. Keep the distinction documented for future cohorts, but do not attribute the observed transfer gap to X resets here.
+
+### Immediate decision and next slice
+
+Keep production unchanged. Record the failed train-more result and the transfer risk without retroactively changing source weights or reusing PFF16 as a tuning leaderboard. The next useful observational slice is an aggregate source-mixture/label-support/visibility table over actual sampled training rows, to distinguish plausible drivers without rerunning models. Any proposed data weighting or mixture intervention would be a new preregistered change and must not be silently bundled into this rejected comparison. Preserve sealed evaluation and target-score restrictions.
+
+Verification sources: experiments/pff-evaluation/train-more-results.json, transfer-results.json, gate.json, cohort.json and the generated report. All numeric summaries above were recomputed directly from those aggregate files. No new independent generalization guarantee is claimed.
