@@ -557,3 +557,7 @@ Primary-source dataset audit completed: experiments/extension-2026-11-07/dataset
 
 ### J026 — 2026-11-07 — Decoder gap-age change rejected
 Protocola4037c2; variable switching16→32 as gap age reaches2s produced exactly unchanged metrics on all5 clean/corrupted folds. Median paired/primary spell delta0,0/5improve; tests and exhaustive small-state optimization contract pass. Reject; Track2 failure1, parent stays16. Results decoder/gap-results.json and gap-gate.json. No claim that all gap-aware decoders fail; this fixed rule did not earn inclusion.
+
+
+### J027 — 2026-11-07 — Separate live/D costs rejected
+Protocolca2f200; H/A8 versus D16 fails:2/5 paired improvements, median corrupted spell delta-.014535, negative paired median. Track2 failures2, parent16 unchanged. Tests pass; additional asymmetric exhaustive contract run separately. Semi-Markov correctness test initially hit a matrix-broadcast shape error; corrected before any semi-Markov development evaluation, no metric-based tuning.
