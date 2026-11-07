@@ -38,3 +38,15 @@ prepare_data.py validates extracted files; prepare_features.py is the earlier in
 
 ## November7 finalization
 Selected production is unaugmented nine-core CatBoost+penalty16. Rolling whole-pitch bundle rejected, archived under experiments/whole-pitch; do not add it to production. Final CSV regenerated and identical across two full runs plus clean-venv raw-input rebuild. See docs/technical-report.md for fresh-environment commands and experiments/whole-pitch/reproduction.json for hashes. predict_core.py accepts --cache, --outdir and --model-path for isolated runs. Full transitive dependency pins: experiments/whole-pitch/clean-environment-lock.txt. Default production paths remain unchanged. No target labels or sealed matches required.
+
+
+## Fresh-clone preparation (November7 extension)
+Install experiments/whole-pitch/clean-environment-lock.txt in a Python3.13 venv. Arrange the private tactical files under data/competition/tactical (not Git), then run:
+
+```
+python scripts/fetch_external.py
+PYTHONPATH=src python scripts/prepare_training_inputs.py
+PYTHONPATH=src python scripts/predict_core.py
+```
+
+Only five external development matches are fetched. Preparation and target prediction need no organizer evaluation tree. The last line is the regeneration command once inputs are prepared. Official validation/research scoring additionally require the unchanged organizer starter evaluation code, kept outside public source. No sealed matches downloaded. New freezeNovember13; November14–16 delivery only.

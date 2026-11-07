@@ -1,6 +1,6 @@
 import concurrent.futures,hashlib,json,urllib.request
 from pathlib import Path
-root=Path('data/external'); root.mkdir(exist_ok=True)
+root=Path('data/external'); root.mkdir(parents=True,exist_ok=True)
 split=json.loads(Path('experiments/core-development/split.json').read_text())
 manifest=json.loads(urllib.request.urlopen('https://api.figshare.com/v2/articles/28196177').read())
 files=[f for f in manifest['files'] if any('DFL-MAT-'+m+'.xml' in f['name'] for m in split['development']) and ('positions_raw' in f['name'] or 'matchinformation' in f['name'])]
