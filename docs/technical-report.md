@@ -2,7 +2,7 @@
 
 ## Selected method and status
 
-Selected pipeline: strict local adapter → nine masked core features → direct three-class CatBoost H/A/D probabilities → deterministic Viterbi, uniform switching penalty16 → frame,label CSV. No minimum spell length, augmentation, whole-pitch bundle, Smart Tagging, video model, reconstructed ball, fallback branch or class rebalancing enters production. Architecture freeze remains November12. This draft documents the executed candidate, not a competition submission or hidden-score claim.
+Selected pipeline: strict local adapter → nine masked core features → direct three-class CatBoost H/A/D probabilities → deterministic Viterbi, uniform switching penalty16 → frame,label CSV. No minimum spell length, augmentation, whole-pitch bundle, Smart Tagging, video model, reconstructed ball, fallback branch or class rebalancing enters production. Architecture freeze is November13; November14–16 is delivery only. This draft documents the executed candidate, not a competition submission or hidden-score claim.
 
 The final target CSV has199319 rows and SHA-256 `ab253e43f46fc9a7885b689498a220595e78d67ad2a6099a07316e081ca3f815`. Official validation passes. Two independent full training/inference runs and a third run in a clean environment generated identical CSV bytes. Model serialization hashes differ across fits because metadata differs; actual artifact hashes are recorded without claiming identical model-file bytes.
 
@@ -13,7 +13,7 @@ The final target CSV has199319 rows and SHA-256 `ab253e43f46fc9a7885b689498a2205
 - [Floodlight DFL parser](https://raw.githubusercontent.com/floodlight-sports/floodlight/master/floodlight/io/dfl.py) supplies documented label mapping: BallStatus0=Dead,1=Alive; BallPossession1=Home,2=Away. Metadata explicit HomeTeamId/GuestTeamId and pitch dimensions determine teams and coordinate transformation.
 - [CatBoost](https://catboost.ai/docs/), version1.2.10. No pretrained neural checkpoint or hosted model receives competition assets.
 
-Five external development matches: J03WMX,J03WN1,J03WOH,J03WOY,J03WPY. Leave-one-match-out evaluation trains on four and scores the fifth. Two sealed matches J03WQQ/J03WR9 remain unopened and undownloaded. Final model trains on all five development matches. Use every fifth clean training frame after excluding unknown labels; unknowns break evaluation/decoding runs. Final CatBoost budget:300iterations, depth6, learning_rate.05, l2_leaf_reg3, random_seed20261106, thread_count4, MultiClass, no early stopping. No target labels are training samples.
+Five external development matches: J03WMX,J03WN1,J03WOH,J03WOY,J03WPY. Leave-one-match-out evaluation trains on four and scores the fifth. Two sealed matches J03WQQ/J03WR9 remain unopened and undownloaded. Final model trains on all five development matches. Use every fifth clean training frame after excluding unknown labels; unknowns break evaluation/decoding runs. Final CatBoost budget:300iterations, depth6, learning_rate.05, l2_leaf_reg3, random_seed20261106, thread_count1, MultiClass, no early stopping. No target labels are training samples.
 
 ## Input and feature rules
 
@@ -49,8 +49,37 @@ The rebuild command loads only the five development XML matches and asserts exac
 
 ## Rules implemented and limitations
 
-No target public-label tuning/training, sealed-match access, external submission or restricted-row publication. Earlier one-off public-window evaluation was authorized solely for alignment checks; this finalization did not reload public labels or rescore target predictions. Synthetic tests establish contracts, not competition quality. Existing paused automation remains paused. No research after November12 architecture freeze; no further action after November17 under the standing schedule.
+No target public-label tuning/training, sealed-match access, external submission or restricted-row publication. Earlier one-off public-window evaluation was authorized solely for alignment checks; this finalization did not reload public labels or rescore target predictions. Synthetic tests establish contracts, not competition quality. Existing paused automation remains paused. No research after November13 architecture freeze; no further action after November17 under the standing schedule.
 
 External label conventions are only nominally matched to H/A/D. Dead share41–52% and mean possessions5.5–7.7s differ from the short public-window documentation; loose-ball/flight ownership continuation and unknown-label exclusions may differ. Ball absence interacts differently with nearest-player heuristics across sources. No remapping or class rebalance was fitted to target summaries. Domain shift, corrupted tracking robustness, visible-subset bias and short-spell recall remain limitations. Sealed generalization and full target accuracy remain unknown.
 
 This draft still needs team review, the later authorized frozen sealed evaluation, and any organizer-specific final packaging requirements. No submission receipt exists because no submission has been made.
+
+
+## November7 extension and audit status
+
+Current production remains the nine-core unaugmented CatBoost+penalty16 anchor. CPU execution now uses one thread, verified against the original CSV hash in both original and clean environments. Prediction imports only production config, not evaluation modules. The three deliverables are the full frame,label CSV, public reproducible code repository, and short technical document (organizer SUBMISSION.md). Their final freeze packaging and team-named files remain pending; nothing is submitted.
+
+Additional source compatibility/licence/citation/schema audit: experiments/extension-2026-11-07/dataset-audit.md. PFF official access/usage terms unresolved; SkillCorner MIT data lacks a verified explicit dead/live complement despite frame possession; Metrica lacks verified continuous state labels/licence grant; IDSSE's seven matches are exactly five development plus two permanently training-excluded sealed matches. No new provider or label proxy admitted. Train-more and cross-provider measurements unavailable; this blocks independent transfer evidence. Final all-compatible-data variant must also EXCLUDE both sealed matches even after evaluation; if no new compatible matches arrive, record that no distinct expanded-data training variant exists.
+
+Dependency licences, versions and declared metadata are inventoried in experiments/extension-2026-11-07/dependency-licenses.json. Examples: CatBoost Apache2.0, NumPy/Pandas BSD, SciPy BSD; see complete inventory and installed wheel notices for exact versions/terms. This is an inventory, not a new project licence grant. Data licences do not automatically apply to provider parser code or vice versa. No competitor data assets are redistributed.
+
+### Rejected experiment register
+
+| Candidate | Outcome / evidence |
+|---|---|
+| Mean-player-speed instantaneous feature | Rejected; core-development/mean-speed/gate.json |
+| H/A4,D8 short-turnover cost | Rejected; core-development/short-turnover/gate.json |
+| Gap-augmentation at8 | Passed relative8 but subsequently dropped on current16 parent; gap-augmentation/gates.json and combined16/gate.json |
+| Gap-augmentation at16 | Rejected; combined16/gate.json |
+| Rolling whole-pitch five-column bundle | Rejected both paired and minimum corrupted+.01 gates; whole-pitch/gate.json |
+| Gap-age16→32 switching | Rejected, exactly no gain; extension-2026-11-07/decoder/gap-gate.json |
+| H/A8,D16 switching | Rejected; extension-2026-11-07/decoder/asymmetric-gate.json |
+| Fold-learned semi-Markov duration | Rejected; extension-2026-11-07/decoder/duration-gate.json |
+| Joint emission calibration+penalties | Not run: third consecutive decoder failure stopped track |
+
+The CatBoost setting-policy search is preregistered as nested match-grouped CV:80 logical inner fits with exact-set cache reuse (40 unique),5outer fits, <=21500tree budget. Each outer match is excluded from inner setting choice. No preprocessing/calibrator is fit outside folds. Search result pending in settings/gate.json; do not treat the search as an already promoted change. Nested CV reduces within-search selection leakage but does not undo historical reuse of these five matches. Target-match accuracy remains unknown.
+
+New global promotion requires original paired gate PLUS median target-like corrupted spell gain>=+.01. No target/public score influences any data/model/decoder choice. Future final frozen public score is a one-time correctness check. At November13 freeze, sealed results trigger bug/transfer investigation only, never tuning; operational interpretation threshold committed in extension plan before opening sealed files. A decrease>.10spellF1 versus same-condition development mean, or below preregistered supplied smooth50, flags investigation. Report all values, including failures, without choosing new settings from them.
+
+One regeneration command after installing pinned dependencies and arranging the provided private input paths is `PYTHONPATH=src python scripts/predict_core.py`. This trains from external prepared inputs and regenerates output locally; README and this report describe raw-input preparation. A fresh clone must rebuild/provide external inputs and arrange private target files; no data is silently fetched from competition services. Fresh-clone preflight is tracked separately from clean-environment reproduction and must pass again at final freeze.
