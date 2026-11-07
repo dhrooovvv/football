@@ -119,3 +119,5 @@ pff_native_audit:
   extra_event_code: CLK
   model_admission: false
   next_action: Preregister strict duplicate_CLK_native_time_and25Hz_adapter_validation.
+
+next_step_plan: docs/next-steps-2026-11-07.md

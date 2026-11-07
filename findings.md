@@ -69,3 +69,7 @@ Missing-file blocker changed: user delivered64PFFmatches with matchingmetadata/r
 
 ## J031 PFF native audit complete, adapter pending
 64streams,11707598standard-time deliveredrecords,H/A/D present all64under provisional rule. All64non-increasingIDs; firstprobe849duplicates incl401conflictingpayloads, no backwardframe/time steps. Need explicitduplicate/CLK/time/resampling contract before training.48/16prospective split/hash locked; no PFFperformance results or production change.
+
+
+## J032 recommendation
+Prioritize strict PFFadapter contracts→train-more gate→cross-provider diagnostics. Threecontributor/date plan docs/next-steps-2026-11-07.md. More-data benefit unproven; transfer must not select versions. No production change or experiment this planning turn.
