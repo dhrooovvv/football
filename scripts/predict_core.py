@@ -6,7 +6,7 @@ from catboost import CatBoostClassifier
 from possession.inputs import load_atd,load_teams,export_labels
 from possession.core import features
 from possession.decode import decode
-from run_core import PARAMS,CACHE,ROOT
+from possession.config import PARAMS,CACHE,ROOT
 
 def main():
  p=argparse.ArgumentParser();p.add_argument('--selection',type=Path,default=ROOT/'selection.json');p.add_argument('--cache',type=Path,default=CACHE);p.add_argument('--outdir',type=Path,default=Path('data/competition/predictions'));p.add_argument('--model-path',type=Path,default=Path('models/core-final.cbm'));a=p.parse_args()

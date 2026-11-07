@@ -561,3 +561,58 @@ Protocola4037c2; variable switching16→32 as gap age reaches2s produced exactly
 
 ### J027 — 2026-11-07 — Separate live/D costs rejected
 Protocolca2f200; H/A8 versus D16 fails:2/5 paired improvements, median corrupted spell delta-.014535, negative paired median. Track2 failures2, parent16 unchanged. Tests pass; additional asymmetric exhaustive contract run separately. Semi-Markov correctness test initially hit a matrix-broadcast shape error; corrected before any semi-Markov development evaluation, no metric-based tuning.
+
+
+### J028 — 2026-11-07 — Decoder stopped; one-thread anchor reproduced
+Semi-Markov protocolc79b9d4 failed0/5 paired improvements, median corrupted spell-.005646. Exact expanded-age hazard learned only from other4matches. Track2 failures3; joint calibration step4 not run. Exhaustive tiny-case including geometric tail passed after pre-evaluation matrix shape fix. One-thread protocol62127c0 passed: existing/clean environments independently trained and inferred thread1 and match promoted CSV. Earlier J028 append failed under system Python missing numpy; corrected with project Python, no experiments rerun. Production constants separated into possession/config.py so target regeneration no longer imports evaluation code from untracked reference. Runtime params unchanged; fresh clone+clean environment re-verification follows.
+
+#### Decoder gap
+
+| Match | Setting | spellF1 | macroF1 |
+|---|---|---:|---:|
+| J03WMX | clean | 0.501360 | 0.907574 |
+| J03WMX | targetlike | 0.323426 | 0.692742 |
+| J03WN1 | clean | 0.484682 | 0.875014 |
+| J03WN1 | targetlike | 0.313253 | 0.680025 |
+| J03WOH | clean | 0.568452 | 0.903698 |
+| J03WOH | targetlike | 0.343671 | 0.646450 |
+| J03WOY | clean | 0.516129 | 0.885072 |
+| J03WOY | targetlike | 0.312291 | 0.663388 |
+| J03WPY | clean | 0.517647 | 0.904135 |
+| J03WPY | targetlike | 0.324741 | 0.714401 |
+
+Gate {"promoted": false, "existing_gate": false, "median_primary_delta": 0.0, "paired_spell_deltas": {"J03WMX": 0.0, "J03WN1": 0.0, "J03WOH": 0.0, "J03WOY": 0.0, "J03WPY": 0.0}, "paired_macro_deltas": {"J03WMX": 0.0, "J03WN1": 0.0, "J03WOH": 0.0, "J03WOY": 0.0, "J03WPY": 0.0}, "primary_deltas": {"J03WMX": 0.0, "J03WN1": 0.0, "J03WOH": 0.0, "J03WOY": 0.0, "J03WPY": 0.0}, "matches_improved": 0, "tests_passed": true, "exhaustive_contract": true}
+
+#### Decoder asymmetric
+
+| Match | Setting | spellF1 | macroF1 |
+|---|---|---:|---:|
+| J03WMX | clean | 0.504176 | 0.902443 |
+| J03WMX | targetlike | 0.307200 | 0.685997 |
+| J03WN1 | clean | 0.498915 | 0.873784 |
+| J03WN1 | targetlike | 0.311323 | 0.675847 |
+| J03WOH | clean | 0.527861 | 0.894573 |
+| J03WOH | targetlike | 0.325326 | 0.637961 |
+| J03WOY | clean | 0.486937 | 0.875173 |
+| J03WOY | targetlike | 0.297756 | 0.655227 |
+| J03WPY | clean | 0.536352 | 0.903977 |
+| J03WPY | targetlike | 0.330548 | 0.710025 |
+
+Gate {"promoted": false, "existing_gate": false, "median_primary_delta": -0.014534891820727591, "paired_spell_deltas": {"J03WMX": -0.006704785928421775, "J03WN1": 0.006151475991093336, "J03WOH": -0.02946804702239414, "J03WOY": -0.021863246342359755, "J03WPY": 0.012256352282827176}, "paired_macro_deltas": {"J03WMX": -0.00593819194535905, "J03WN1": -0.002703497544737421, "J03WOH": -0.008807463306784391, "J03WOY": -0.009030385359112048, "J03WPY": -0.002266877280253765}, "primary_deltas": {"J03WMX": -0.016225692695214067, "J03WN1": -0.0019300084725073496, "J03WOH": -0.018345271025298093, "J03WOY": -0.014534891820727591, "J03WPY": 0.005807562131322053}, "matches_improved": 2, "tests_passed": true, "exhaustive_contract": true}
+
+#### Decoder duration
+
+| Match | Setting | spellF1 | macroF1 |
+|---|---|---:|---:|
+| J03WMX | clean | 0.473480 | 0.906854 |
+| J03WMX | targetlike | 0.311927 | 0.693873 |
+| J03WN1 | clean | 0.460903 | 0.873187 |
+| J03WN1 | targetlike | 0.307607 | 0.681434 |
+| J03WOH | clean | 0.561203 | 0.905151 |
+| J03WOH | targetlike | 0.334959 | 0.648134 |
+| J03WOY | clean | 0.504000 | 0.886456 |
+| J03WOY | targetlike | 0.309249 | 0.663984 |
+| J03WPY | clean | 0.510574 | 0.904498 |
+| J03WPY | targetlike | 0.328158 | 0.716801 |
+
+Gate {"promoted": false, "existing_gate": false, "median_primary_delta": -0.0056458197936975485, "paired_spell_deltas": {"J03WMX": -0.019689421137261465, "J03WN1": -0.014712517417035165, "J03WOH": -0.007980024250279771, "J03WOY": -0.0075854900690329186, "J03WPY": -0.001827743077899402}, "paired_macro_deltas": {"J03WMX": 0.00020513193304294575, "J03WN1": -0.00020885265410852671, "J03WOH": 0.0015684264267243897, "J03WOY": 0.0009898880668208765, "J03WPY": 0.0013819689139688007}, "primary_deltas": {"J03WMX": -0.011499087190626867, "J03WN1": -0.0056458197936975485, "J03WOH": -0.00871153648245343, "J03WOY": -0.0030419478800013944, "J03WPY": 0.00341755454084236}, "matches_improved": 0, "tests_passed": true, "exhaustive_contract": true}
