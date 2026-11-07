@@ -11,13 +11,13 @@ project:
   tactical_duplicate_inputs_verified: '2026-11-06'
   input_archive: /Users/dhruv/Downloads/Archive.zip
   target_submission: '2026-11-16'
-  architecture_freeze: '2026-11-12'
+  architecture_freeze: '2026-11-13'
   deadline: '2026-11-17'
 continuity:
   automation_id: ball-possession-research
   interval_minutes: 20
   automation_status: paused
-  no_research_after: '2026-11-12'
+  no_research_after: '2026-11-13'
   no_action_after: '2026-11-17'
 literature:
   key_papers: [borghesi2023, vidalcodina2022, kim2023, bassek2025, kim2026pathcrf, renner2026, capellera2024transportmer, peral2026multimodal]
@@ -53,7 +53,7 @@ workspace:
   experiments_dir: experiments/
   to_human_dir: to_human/
   paper_dir: paper/
-next_action: Feature additions stopped; review technical draft and frozen candidate. No further experiments.
+next_action: Extension Track1 compatibility audit first; then preregister decoder changes. Sealed closed untilNovember13.
 
 approved_gap_review:
   status: complete_stopped
@@ -82,3 +82,10 @@ finalization:
   official_validator_pass: true
   evidence: experiments/whole-pitch/reproduction.json
   technical_draft: docs/technical-report.md
+
+extension:
+  plan: experiments/extension-2026-11-07/plan.md
+  freeze: 2026-11-13
+  delivery_only: November14–16
+  minimum_median_corrupted_spell_gain: 0.01
+  track: 1
