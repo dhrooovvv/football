@@ -1,0 +1,14 @@
+{
+  "archive_sha256": "25e2151fc4c004088ac6146b0d0b302ccda12ba572fe3ec07ec854773177e44f",
+  "delivered_release_files": 390,
+  "tracking_matches": 64,
+  "matching_metadata": 64,
+  "matching_rosters": 64,
+  "native_fps_values": [
+    29.97
+  ],
+  "manifest_sha256": "b1e5127897f007870056028d3f256393f3ad26889658674bf01873e4ca94a3de",
+  "split_sha256": "18d690fa49744f2d560fc8b2d6c8eea7a717267ae2fa992fa1a71c24b748cfdc",
+  "training_executed": false,
+  "full_state_coverage_validated": false
+}
