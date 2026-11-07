@@ -718,3 +718,62 @@ Updated10502pilot with stale-owner fix matches all prior observations/labels;146
 User authorized nextsequence and agents. Scientist found PFFspec2.2 ballsSmoothed uses events/carrier locations (real label-conditioned feature leakage risk). Pilot engineering output NOT eligible for modelling. Protocol260e6e0 amended BEFORE full preparation to raw homePlayers/awayPlayers/balls VISIBLEonly, no fallback; ESTIMATEDmissing. CLK/VIDunknown and ownershipcleared, nativegaps clearstate, cumulative half-clock checks (e37bfb6). Analyst required fresh1threadparentfits, legacyXreset disclosure for controlledA, half-onlyinference for descriptiveB, natural/new/allmissing denominators. Reviews docs/pff-admission-review-2026-11-07.md and pff-evaluation-review-2026-11-07.md.
 Preliminary sequential3-match preparation paused deliberately for richer counters/sourcefingerprints;30bf345 locked2independent preparationworkers with numericalthreads1. Same source semantics, fixedseeds/split, no models. Each rawfile+featurehash verified beforeadmission. All64pass,48train/16holdout, no excluded/replaced matches. Naturallymissing knownliveH1020197+A1001799=2021996frames;D3649128; unknowncoverage/visible tables in experiments/pff-admission/report.md.29tests pass inclactual-loader no-smoothed/no-estimated regression. Counter reports separate finite-coordinate/missingness/within-list/state/owner assertions. No data-drivencleanup or source selection byscores.
 Tooling failures: admissionreport generator initial syntax error fixed beforeexecution; later digest helper shadowed by localvariable, fixed then reportonlyrerun. No model/performance trial affected. Exactsource/protocol/release/split hashes and finaladmission/cohort lock committed BEFORE fits. Twoeval protocole7cb0b1: A freshparent4IDSSEvs4+48PFF onheldoutIDSSE5 with unchangedparams/gate; B IDSSE5→PFF16 andPFF48→IDSSE5descriptiveonly, halfinference. Productionunchanged untilA passesbothgates andcleanreproduction. No targetpublic/sealed access.
+
+
+### J036 — 2026-11-07 — More-data candidate rejected BEFORE transfer interpretation
+All5fresh1threadpaired fits completed under e7cb0b1. Added48rawVISIBLEPFFmatches to each4IDSSEtrainingfold, unchanged9features/budget/penalty16/noaugmentation.0/5paired improvements; median corrupted spell delta-.034930; both original and+.01gatesfail, with substantialmacro drops. REJECT unweighted expanded-data candidate; current5IDSSEtrained production stays unchanged. This rejects this specified data mixture, not all PFFusage or all more-data methods.29tests pass. Bforward/reverse begins separately asdescriptiveonly; no Bscore selects preprocessing, model or classbalance.
+
+| Match | Arm | Setting | spellF1 | macroF1 |
+|---|---|---|---:|---:|
+| J03WMX | parent | clean | 0.501360 | 0.907574 |
+| J03WMX | parent | targetlike | 0.323426 | 0.692742 |
+| J03WMX | expanded | clean | 0.428664 | 0.824306 |
+| J03WMX | expanded | targetlike | 0.283586 | 0.658074 |
+| J03WN1 | parent | clean | 0.484682 | 0.875014 |
+| J03WN1 | parent | targetlike | 0.313253 | 0.680025 |
+| J03WN1 | expanded | clean | 0.413567 | 0.725119 |
+| J03WN1 | expanded | targetlike | 0.278323 | 0.603893 |
+| J03WOH | parent | clean | 0.568452 | 0.903698 |
+| J03WOH | parent | targetlike | 0.343671 | 0.646450 |
+| J03WOH | expanded | clean | 0.435062 | 0.786468 |
+| J03WOH | expanded | targetlike | 0.299858 | 0.608644 |
+| J03WOY | parent | clean | 0.516129 | 0.885072 |
+| J03WOY | parent | targetlike | 0.312291 | 0.663388 |
+| J03WOY | expanded | clean | 0.389838 | 0.748756 |
+| J03WOY | expanded | targetlike | 0.283969 | 0.600419 |
+| J03WPY | parent | clean | 0.517647 | 0.904135 |
+| J03WPY | parent | targetlike | 0.324741 | 0.714401 |
+| J03WPY | expanded | clean | 0.447919 | 0.771085 |
+| J03WPY | expanded | targetlike | 0.299465 | 0.644884 |
+
+Gate:
+```json
+{
+  "promoted": false,
+  "existing_gate": false,
+  "median_primary_delta": -0.03492965875477955,
+  "paired_spell_deltas": {
+    "J03WMX": -0.056267668154324824,
+    "J03WN1": -0.053022679997738464,
+    "J03WOH": -0.08860146236422967,
+    "J03WOY": -0.07730586611002876,
+    "J03WPY": -0.0475016325508128
+  },
+  "paired_macro_deltas": {
+    "J03WMX": -0.058968164680084145,
+    "J03WN1": -0.1130132869227145,
+    "J03WOH": -0.07751849583222292,
+    "J03WOY": -0.09964304514502209,
+    "J03WPY": -0.1012829633914506
+  },
+  "primary_deltas": {
+    "J03WMX": -0.03984012808520243,
+    "J03WN1": -0.03492965875477955,
+    "J03WOH": -0.043813133586617925,
+    "J03WOY": -0.02832103714444112,
+    "J03WPY": -0.025275500099029402
+  },
+  "matches_improved": 0,
+  "tests_pass": true
+}
+```
