@@ -77,3 +77,7 @@ Prioritize strict PFFadapter contracts→train-more gate→cross-provider diagno
 
 ## J033 adapter and independent reviews
 PFFduplicates are explicitly documented annotation expansion; conflict probe mixed event and tracking changes, not purecoordinateconflict. New conservative adapter/pilot and28tests implemented; full64admission pending. Both requested reviews confirm recent rejection arithmetic; missing-ball model behavior is nearconstantD, counterfactual repair gains are not upperbounds, and rejectedduration model mishandled censoring. No production change or reopening stopped research track. Review docs preserve evidence and priorities.
+
+
+## J035 PFF admitted with raw-observation contract
+Independent review excluded annotation-conditioned ballsSmoothed before modelling. RawVISIBLEonly,CLK/VIDunknown, nativegap/cumulativeclock guards, full64pass source/feature hashes verified,48train16holdoutlocked.2021996knownliveframes naturallymissingball.29tests pass. Models notyetmeasured; Track1A/B nowauthorized/preregistered. No provider-equivalence or targetquality claim.

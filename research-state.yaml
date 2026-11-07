@@ -117,7 +117,7 @@ pff_native_audit:
   delivered_standard_records: 11707598
   nonincreasing_frame_matches: 64
   extra_event_code: CLK
-  model_admission: false
+  model_admission: true
   next_action: Preregister strict duplicate_CLK_native_time_and25Hz_adapter_validation.
 
 next_step_plan: docs/next-steps-2026-11-07.md
@@ -130,7 +130,7 @@ independent_reviews:
 pff_adapter:
   protocol: experiments/pff-adapter/protocol.md
   status: implemented_pilot_repeat_verified_full_admission_pending
-  full64_admission: false
+  full64_admission: true
   production_affected: false
 
 review_interpretation_corrections:
@@ -138,3 +138,12 @@ review_interpretation_corrections:
   duration_prior: rejected_implementation_did_not_handle_censoring
   missing_ball_behavior: nearconstant_dead_on_development_corruption
   baseline_value_note: no_single_baseline_across_different_corruption_versions
+
+pff_admission_final:
+  status: all64_pass_raw_visible_only
+  train: 48
+  transfer_holdout: 16
+  known_live_naturally_missing_frames: 2021996
+  snapshot: experiments/pff-admission/snapshot.json
+  cohort: experiments/pff-evaluation/cohort-lock.json
+  evaluation_status: preregistered_starting

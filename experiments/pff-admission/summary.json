@@ -1,0 +1,28 @@
+{
+  "release_and_feature_hashes_verified": true,
+  "attempted": 64,
+  "passed": 64,
+  "failed": 0,
+  "training_admitted": 48,
+  "transfer_admitted": 16,
+  "label_by_natural_observation": {
+    "H": {
+      "visible": 1888600,
+      "missing": 1020197
+    },
+    "A": {
+      "visible": 1815129,
+      "missing": 1001799
+    },
+    "D": {
+      "visible": 354561,
+      "missing": 3649128
+    },
+    "X": {
+      "visible": 561,
+      "missing": 787
+    }
+  },
+  "preparation_script_sha256": "f71e65ede470fee91523467ef6f0addcf50e7597006f1e7b5393f90fe55f41fb",
+  "inference_label_cleanup_chosen_by_score": false
+}

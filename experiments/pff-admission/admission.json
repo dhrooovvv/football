@@ -1,0 +1,3010 @@
+[
+  {
+    "match": "10502",
+    "status": "pass",
+    "frames": 146785,
+    "known_labels": 146785,
+    "known_fraction": 1.0,
+    "natural_missing_graded": 78313,
+    "corrupted_missing_graded": 103021,
+    "label_by_natural_observation": {
+      "H": {
+        "visible": 23570,
+        "missing": 14878
+      },
+      "A": {
+        "visible": 39809,
+        "missing": 16709
+      },
+      "D": {
+        "visible": 5093,
+        "missing": 46726
+      },
+      "X": {
+        "visible": 0,
+        "missing": 0
+      }
+    },
+    "counts": {
+      "records": 176818,
+      "unique_frames": 175969,
+      "duplicate_records": 849,
+      "player_conflicts": 0,
+      "ball_conflicts": 0,
+      "event_association_only_duplicates": 59,
+      "within_list_repeats": 0,
+      "state_assertion_conflicts": 0,
+      "owner_assertion_conflicts": 0,
+      "raw_visible_only": true,
+      "player_coordinate_disagreements": 0,
+      "player_missingness_disagreements": 0,
+      "ball_coordinate_disagreements": 0,
+      "ball_missingness_disagreements": 0,
+      "within_list_coordinate_disagreements": 0,
+      "within_list_missingness_disagreements": 0
+    },
+    "feature_sha256": "d5c1ab2b912e3b1280a1a91da48bf09cf8c6a4a6928fd5c3a1f89a904489b925",
+    "seconds": 19.355841999989934
+  },
+  {
+    "match": "10503",
+    "status": "pass",
+    "frames": 149145,
+    "known_labels": 149145,
+    "known_fraction": 1.0,
+    "natural_missing_graded": 81495,
+    "corrupted_missing_graded": 116701,
+    "label_by_natural_observation": {
+      "H": {
+        "visible": 39807,
+        "missing": 20450
+      },
+      "A": {
+        "visible": 23473,
+        "missing": 15090
+      },
+      "D": {
+        "visible": 4370,
+        "missing": 45955
+      },
+      "X": {
+        "visible": 0,
+        "missing": 0
+      }
+    },
+    "counts": {
+      "records": 179620,
+      "unique_frames": 178797,
+      "duplicate_records": 823,
+      "player_conflicts": 0,
+      "ball_conflicts": 0,
+      "event_association_only_duplicates": 61,
+      "within_list_repeats": 0,
+      "state_assertion_conflicts": 0,
+      "owner_assertion_conflicts": 0,
+      "raw_visible_only": true,
+      "player_coordinate_disagreements": 0,
+      "player_missingness_disagreements": 0,
+      "ball_coordinate_disagreements": 0,
+      "ball_missingness_disagreements": 0,
+      "within_list_coordinate_disagreements": 0,
+      "within_list_missingness_disagreements": 0
+    },
+    "feature_sha256": "e3d83c679a73d67dab10e6e94c93ba3a088f49013dfb706e14fe59273ab3fde0",
+    "seconds": 21.401110832986888
+  },
+  {
+    "match": "10504",
+    "status": "pass",
+    "frames": 151824,
+    "known_labels": 151824,
+    "known_fraction": 1.0,
+    "natural_missing_graded": 83816,
+    "corrupted_missing_graded": 113202,
+    "label_by_natural_observation": {
+      "H": {
+        "visible": 33173,
+        "missing": 17994
+      },
+      "A": {
+        "visible": 29128,
+        "missing": 15225
+      },
+      "D": {
+        "visible": 5707,
+        "missing": 50597
+      },
+      "X": {
+        "visible": 0,
+        "missing": 0
+      }
+    },
+    "counts": {
+      "records": 182612,
+      "unique_frames": 182008,
+      "duplicate_records": 604,
+      "player_conflicts": 0,
+      "ball_conflicts": 0,
+      "event_association_only_duplicates": 42,
+      "within_list_repeats": 0,
+      "state_assertion_conflicts": 0,
+      "owner_assertion_conflicts": 0,
+      "raw_visible_only": true,
+      "player_coordinate_disagreements": 0,
+      "player_missingness_disagreements": 0,
+      "ball_coordinate_disagreements": 0,
+      "ball_missingness_disagreements": 0,
+      "within_list_coordinate_disagreements": 0,
+      "within_list_missingness_disagreements": 0
+    },
+    "feature_sha256": "b67c17784077cddf5ae984d90da169423590a47374d67000047fd2f8498c65cd",
+    "seconds": 21.36659104100545
+  },
+  {
+    "match": "10505",
+    "status": "pass",
+    "frames": 146433,
+    "known_labels": 146433,
+    "known_fraction": 1.0,
+    "natural_missing_graded": 78448,
+    "corrupted_missing_graded": 107335,
+    "label_by_natural_observation": {
+      "H": {
+        "visible": 38410,
+        "missing": 14461
+      },
+      "A": {
+        "visible": 23921,
+        "missing": 11950
+      },
+      "D": {
+        "visible": 5654,
+        "missing": 52037
+      },
+      "X": {
+        "visible": 0,
+        "missing": 0
+      }
+    },
+    "counts": {
+      "records": 176158,
+      "unique_frames": 175545,
+      "duplicate_records": 613,
+      "player_conflicts": 0,
+      "ball_conflicts": 0,
+      "event_association_only_duplicates": 45,
+      "within_list_repeats": 0,
+      "state_assertion_conflicts": 0,
+      "owner_assertion_conflicts": 0,
+      "raw_visible_only": true,
+      "player_coordinate_disagreements": 0,
+      "player_missingness_disagreements": 0,
+      "ball_coordinate_disagreements": 0,
+      "ball_missingness_disagreements": 0,
+      "within_list_coordinate_disagreements": 0,
+      "within_list_missingness_disagreements": 0
+    },
+    "feature_sha256": "a99c716480f134849dc5931fed8ee1d5e028c5b1d346bb82994d86bca2ae5b48",
+    "seconds": 20.406419875012944
+  },
+  {
+    "match": "10506",
+    "status": "pass",
+    "frames": 144966,
+    "known_labels": 144966,
+    "known_fraction": 1.0,
+    "natural_missing_graded": 81785,
+    "corrupted_missing_graded": 105072,
+    "label_by_natural_observation": {
+      "H": {
+        "visible": 21569,
+        "missing": 16487
+      },
+      "A": {
+        "visible": 33124,
+        "missing": 18128
+      },
+      "D": {
+        "visible": 8488,
+        "missing": 47170
+      },
+      "X": {
+        "visible": 0,
+        "missing": 0
+      }
+    },
+    "counts": {
+      "records": 234265,
+      "unique_frames": 173787,
+      "duplicate_records": 918,
+      "player_conflicts": 0,
+      "ball_conflicts": 0,
+      "event_association_only_duplicates": 62,
+      "within_list_repeats": 0,
+      "state_assertion_conflicts": 0,
+      "owner_assertion_conflicts": 0,
+      "raw_visible_only": true,
+      "player_coordinate_disagreements": 0,
+      "player_missingness_disagreements": 0,
+      "ball_coordinate_disagreements": 0,
+      "ball_missingness_disagreements": 0,
+      "within_list_coordinate_disagreements": 0,
+      "within_list_missingness_disagreements": 0
+    },
+    "feature_sha256": "831ffb02d91ffc2e2ab2cdd8509f057d5e6d2379c8b1f083958700872ad98cb1",
+    "seconds": 27.195589499984635
+  },
+  {
+    "match": "10507",
+    "status": "pass",
+    "frames": 148456,
+    "known_labels": 148456,
+    "known_fraction": 1.0,
+    "natural_missing_graded": 78880,
+    "corrupted_missing_graded": 107148,
+    "label_by_natural_observation": {
+      "H": {
+        "visible": 35063,
+        "missing": 14554
+      },
+      "A": {
+        "visible": 30232,
+        "missing": 14158
+      },
+      "D": {
+        "visible": 4281,
+        "missing": 50168
+      },
+      "X": {
+        "visible": 0,
+        "missing": 0
+      }
+    },
+    "counts": {
+      "records": 178414,
+      "unique_frames": 177972,
+      "duplicate_records": 442,
+      "player_conflicts": 0,
+      "ball_conflicts": 0,
+      "event_association_only_duplicates": 32,
+      "within_list_repeats": 0,
+      "state_assertion_conflicts": 0,
+      "owner_assertion_conflicts": 0,
+      "raw_visible_only": true,
+      "player_coordinate_disagreements": 0,
+      "player_missingness_disagreements": 0,
+      "ball_coordinate_disagreements": 0,
+      "ball_missingness_disagreements": 0,
+      "within_list_coordinate_disagreements": 0,
+      "within_list_missingness_disagreements": 0
+    },
+    "feature_sha256": "ad6ec3d72ed995a692b4aba08e4c7edb10a4bee1f4956143c721b64d63e2f4a5",
+    "seconds": 21.50779525001417
+  },
+  {
+    "match": "10508",
+    "status": "pass",
+    "frames": 144316,
+    "known_labels": 144316,
+    "known_fraction": 1.0,
+    "natural_missing_graded": 75142,
+    "corrupted_missing_graded": 101348,
+    "label_by_natural_observation": {
+      "H": {
+        "visible": 14315,
+        "missing": 12305
+      },
+      "A": {
+        "visible": 49952,
+        "missing": 12307
+      },
+      "D": {
+        "visible": 4907,
+        "missing": 50530
+      },
+      "X": {
+        "visible": 0,
+        "missing": 0
+      }
+    },
+    "counts": {
+      "records": 235670,
+      "unique_frames": 173007,
+      "duplicate_records": 595,
+      "player_conflicts": 0,
+      "ball_conflicts": 0,
+      "event_association_only_duplicates": 43,
+      "within_list_repeats": 0,
+      "state_assertion_conflicts": 0,
+      "owner_assertion_conflicts": 0,
+      "raw_visible_only": true,
+      "player_coordinate_disagreements": 0,
+      "player_missingness_disagreements": 0,
+      "ball_coordinate_disagreements": 0,
+      "ball_missingness_disagreements": 0,
+      "within_list_coordinate_disagreements": 0,
+      "within_list_missingness_disagreements": 0
+    },
+    "feature_sha256": "e225ec70aadf622dc035a91b64a2a3dcae29a888c47c501617c5901233e188b7",
+    "seconds": 27.778075999987777
+  },
+  {
+    "match": "10509",
+    "status": "pass",
+    "frames": 147063,
+    "known_labels": 147063,
+    "known_fraction": 1.0,
+    "natural_missing_graded": 90550,
+    "corrupted_missing_graded": 116013,
+    "label_by_natural_observation": {
+      "H": {
+        "visible": 23502,
+        "missing": 16018
+      },
+      "A": {
+        "visible": 28667,
+        "missing": 15940
+      },
+      "D": {
+        "visible": 4344,
+        "missing": 58592
+      },
+      "X": {
+        "visible": 0,
+        "missing": 0
+      }
+    },
+    "counts": {
+      "records": 176708,
+      "unique_frames": 176301,
+      "duplicate_records": 407,
+      "player_conflicts": 0,
+      "ball_conflicts": 0,
+      "event_association_only_duplicates": 29,
+      "within_list_repeats": 0,
+      "state_assertion_conflicts": 0,
+      "owner_assertion_conflicts": 0,
+      "raw_visible_only": true,
+      "player_coordinate_disagreements": 0,
+      "player_missingness_disagreements": 0,
+      "ball_coordinate_disagreements": 0,
+      "ball_missingness_disagreements": 0,
+      "within_list_coordinate_disagreements": 0,
+      "within_list_missingness_disagreements": 0
+    },
+    "feature_sha256": "1b65597b54ba054a41cfa3faa7c8b67edc9a5b5a1beb36a37e84de387641fe13",
+    "seconds": 20.42644387501059
+  },
+  {
+    "match": "10510",
+    "status": "pass",
+    "frames": 142405,
+    "known_labels": 142405,
+    "known_fraction": 1.0,
+    "natural_missing_graded": 73531,
+    "corrupted_missing_graded": 98965,
+    "label_by_natural_observation": {
+      "H": {
+        "visible": 30803,
+        "missing": 19893
+      },
+      "A": {
+        "visible": 33457,
+        "missing": 16185
+      },
+      "D": {
+        "visible": 4614,
+        "missing": 37453
+      },
+      "X": {
+        "visible": 0,
+        "missing": 0
+      }
+    },
+    "counts": {
+      "records": 171128,
+      "unique_frames": 170717,
+      "duplicate_records": 411,
+      "player_conflicts": 0,
+      "ball_conflicts": 0,
+      "event_association_only_duplicates": 29,
+      "within_list_repeats": 0,
+      "state_assertion_conflicts": 0,
+      "owner_assertion_conflicts": 0,
+      "raw_visible_only": true,
+      "player_coordinate_disagreements": 0,
+      "player_missingness_disagreements": 0,
+      "ball_coordinate_disagreements": 0,
+      "ball_missingness_disagreements": 0,
+      "within_list_coordinate_disagreements": 0,
+      "within_list_missingness_disagreements": 0
+    },
+    "feature_sha256": "ef07a858ecc1ac5988fb4d2d31d7604a084464edd99984b2486d9c0f82e14caa",
+    "seconds": 20.641139290994033
+  },
+  {
+    "match": "10511",
+    "status": "pass",
+    "frames": 163051,
+    "known_labels": 163051,
+    "known_fraction": 1.0,
+    "natural_missing_graded": 99968,
+    "corrupted_missing_graded": 125122,
+    "label_by_natural_observation": {
+      "H": {
+        "visible": 32863,
+        "missing": 20052
+      },
+      "A": {
+        "visible": 22268,
+        "missing": 15881
+      },
+      "D": {
+        "visible": 7952,
+        "missing": 64035
+      },
+      "X": {
+        "visible": 0,
+        "missing": 0
+      }
+    },
+    "counts": {
+      "records": 196098,
+      "unique_frames": 195468,
+      "duplicate_records": 630,
+      "player_conflicts": 0,
+      "ball_conflicts": 0,
+      "event_association_only_duplicates": 48,
+      "within_list_repeats": 0,
+      "state_assertion_conflicts": 0,
+      "owner_assertion_conflicts": 0,
+      "raw_visible_only": true,
+      "player_coordinate_disagreements": 0,
+      "player_missingness_disagreements": 0,
+      "ball_coordinate_disagreements": 0,
+      "ball_missingness_disagreements": 0,
+      "within_list_coordinate_disagreements": 0,
+      "within_list_missingness_disagreements": 0
+    },
+    "feature_sha256": "2199143088999030574e8b82a1c48c62ca693f6b0a6b52a5ce5c92e552e7033c",
+    "seconds": 23.141784165985882
+  },
+  {
+    "match": "10512",
+    "status": "pass",
+    "frames": 150886,
+    "known_labels": 150886,
+    "known_fraction": 1.0,
+    "natural_missing_graded": 97691,
+    "corrupted_missing_graded": 117294,
+    "label_by_natural_observation": {
+      "H": {
+        "visible": 12205,
+        "missing": 13109
+      },
+      "A": {
+        "visible": 35771,
+        "missing": 25449
+      },
+      "D": {
+        "visible": 5219,
+        "missing": 59133
+      },
+      "X": {
+        "visible": 0,
+        "missing": 0
+      }
+    },
+    "counts": {
+      "records": 181528,
+      "unique_frames": 180885,
+      "duplicate_records": 643,
+      "player_conflicts": 0,
+      "ball_conflicts": 0,
+      "event_association_only_duplicates": 47,
+      "within_list_repeats": 0,
+      "state_assertion_conflicts": 0,
+      "owner_assertion_conflicts": 0,
+      "raw_visible_only": true,
+      "player_coordinate_disagreements": 0,
+      "player_missingness_disagreements": 0,
+      "ball_coordinate_disagreements": 0,
+      "ball_missingness_disagreements": 0,
+      "within_list_coordinate_disagreements": 0,
+      "within_list_missingness_disagreements": 0
+    },
+    "feature_sha256": "d760a23f996227a6d3720b163404fddb12c4ff91c7e223c3665ced2e3d9b1aa3",
+    "seconds": 19.83801287499955
+  },
+  {
+    "match": "10513",
+    "status": "pass",
+    "frames": 157996,
+    "known_labels": 157996,
+    "known_fraction": 1.0,
+    "natural_missing_graded": 93633,
+    "corrupted_missing_graded": 123857,
+    "label_by_natural_observation": {
+      "H": {
+        "visible": 36020,
+        "missing": 16181
+      },
+      "A": {
+        "visible": 22620,
+        "missing": 16192
+      },
+      "D": {
+        "visible": 5723,
+        "missing": 61260
+      },
+      "X": {
+        "visible": 0,
+        "missing": 0
+      }
+    },
+    "counts": {
+      "records": 190254,
+      "unique_frames": 189407,
+      "duplicate_records": 847,
+      "player_conflicts": 0,
+      "ball_conflicts": 0,
+      "event_association_only_duplicates": 59,
+      "within_list_repeats": 0,
+      "state_assertion_conflicts": 0,
+      "owner_assertion_conflicts": 0,
+      "raw_visible_only": true,
+      "player_coordinate_disagreements": 0,
+      "player_missingness_disagreements": 0,
+      "ball_coordinate_disagreements": 0,
+      "ball_missingness_disagreements": 0,
+      "within_list_coordinate_disagreements": 0,
+      "within_list_missingness_disagreements": 0
+    },
+    "feature_sha256": "31a4aa2ac4658c7dc137af50f88bc91e47eca165474d2560812eaff845ac0eae",
+    "seconds": 20.829908791027265
+  },
+  {
+    "match": "10514",
+    "status": "pass",
+    "frames": 148847,
+    "known_labels": 148847,
+    "known_fraction": 1.0,
+    "natural_missing_graded": 90751,
+    "corrupted_missing_graded": 112974,
+    "label_by_natural_observation": {
+      "H": {
+        "visible": 19778,
+        "missing": 18048
+      },
+      "A": {
+        "visible": 33882,
+        "missing": 17769
+      },
+      "D": {
+        "visible": 4436,
+        "missing": 54934
+      },
+      "X": {
+        "visible": 0,
+        "missing": 0
+      }
+    },
+    "counts": {
+      "records": 178822,
+      "unique_frames": 178440,
+      "duplicate_records": 382,
+      "player_conflicts": 0,
+      "ball_conflicts": 0,
+      "event_association_only_duplicates": 28,
+      "within_list_repeats": 0,
+      "state_assertion_conflicts": 0,
+      "owner_assertion_conflicts": 0,
+      "raw_visible_only": true,
+      "player_coordinate_disagreements": 0,
+      "player_missingness_disagreements": 0,
+      "ball_coordinate_disagreements": 0,
+      "ball_missingness_disagreements": 0,
+      "within_list_coordinate_disagreements": 0,
+      "within_list_missingness_disagreements": 0
+    },
+    "feature_sha256": "a6b532d5d514ff91d3db495dfa2fa08be378d6bc788bf360949a190c4a0f5166",
+    "seconds": 19.778537749982206
+  },
+  {
+    "match": "10515",
+    "status": "pass",
+    "frames": 148878,
+    "known_labels": 148878,
+    "known_fraction": 1.0,
+    "natural_missing_graded": 84135,
+    "corrupted_missing_graded": 108383,
+    "label_by_natural_observation": {
+      "H": {
+        "visible": 22881,
+        "missing": 16090
+      },
+      "A": {
+        "visible": 38148,
+        "missing": 16707
+      },
+      "D": {
+        "visible": 3714,
+        "missing": 51338
+      },
+      "X": {
+        "visible": 0,
+        "missing": 0
+      }
+    },
+    "counts": {
+      "records": 178997,
+      "unique_frames": 178477,
+      "duplicate_records": 520,
+      "player_conflicts": 0,
+      "ball_conflicts": 0,
+      "event_association_only_duplicates": 38,
+      "within_list_repeats": 0,
+      "state_assertion_conflicts": 0,
+      "owner_assertion_conflicts": 0,
+      "raw_visible_only": true,
+      "player_coordinate_disagreements": 0,
+      "player_missingness_disagreements": 0,
+      "ball_coordinate_disagreements": 0,
+      "ball_missingness_disagreements": 0,
+      "within_list_coordinate_disagreements": 0,
+      "within_list_missingness_disagreements": 0
+    },
+    "feature_sha256": "03ca8541a1c9963b61ef66df916a4be209b2352c7bfdc17dbf4f67a041e7efc1",
+    "seconds": 19.696053332998417
+  },
+  {
+    "match": "10516",
+    "status": "pass",
+    "frames": 147114,
+    "known_labels": 147114,
+    "known_fraction": 1.0,
+    "natural_missing_graded": 83018,
+    "corrupted_missing_graded": 114687,
+    "label_by_natural_observation": {
+      "H": {
+        "visible": 28433,
+        "missing": 16607
+      },
+      "A": {
+        "visible": 28697,
+        "missing": 15675
+      },
+      "D": {
+        "visible": 6966,
+        "missing": 50736
+      },
+      "X": {
+        "visible": 0,
+        "missing": 0
+      }
+    },
+    "counts": {
+      "records": 176882,
+      "unique_frames": 176363,
+      "duplicate_records": 519,
+      "player_conflicts": 0,
+      "ball_conflicts": 0,
+      "event_association_only_duplicates": 37,
+      "within_list_repeats": 0,
+      "state_assertion_conflicts": 0,
+      "owner_assertion_conflicts": 0,
+      "raw_visible_only": true,
+      "player_coordinate_disagreements": 0,
+      "player_missingness_disagreements": 0,
+      "ball_coordinate_disagreements": 0,
+      "ball_missingness_disagreements": 0,
+      "within_list_coordinate_disagreements": 0,
+      "within_list_missingness_disagreements": 0
+    },
+    "feature_sha256": "2e8321223c495ed98076915a782aa5c4e496ae53ce4b201fddb9867f61d8e66d",
+    "seconds": 19.773366292007267
+  },
+  {
+    "match": "10517",
+    "status": "pass",
+    "frames": 159232,
+    "known_labels": 159232,
+    "known_fraction": 1.0,
+    "natural_missing_graded": 105099,
+    "corrupted_missing_graded": 123787,
+    "label_by_natural_observation": {
+      "H": {
+        "visible": 24659,
+        "missing": 17476
+      },
+      "A": {
+        "visible": 24222,
+        "missing": 17197
+      },
+      "D": {
+        "visible": 5252,
+        "missing": 70426
+      },
+      "X": {
+        "visible": 0,
+        "missing": 0
+      }
+    },
+    "counts": {
+      "records": 255182,
+      "unique_frames": 190890,
+      "duplicate_records": 753,
+      "player_conflicts": 0,
+      "ball_conflicts": 0,
+      "event_association_only_duplicates": 55,
+      "within_list_repeats": 0,
+      "state_assertion_conflicts": 0,
+      "owner_assertion_conflicts": 0,
+      "raw_visible_only": true,
+      "player_coordinate_disagreements": 0,
+      "player_missingness_disagreements": 0,
+      "ball_coordinate_disagreements": 0,
+      "ball_missingness_disagreements": 0,
+      "within_list_coordinate_disagreements": 0,
+      "within_list_missingness_disagreements": 0
+    },
+    "feature_sha256": "0a146dc7371ada37ab87792954387abef8858a4dcfd80d1101772b601813f1c3",
+    "seconds": 28.12360200000694
+  },
+  {
+    "match": "3812",
+    "status": "pass",
+    "frames": 154200,
+    "known_labels": 154200,
+    "known_fraction": 1.0,
+    "natural_missing_graded": 103217,
+    "corrupted_missing_graded": 125999,
+    "label_by_natural_observation": {
+      "H": {
+        "visible": 20235,
+        "missing": 20327
+      },
+      "A": {
+        "visible": 25458,
+        "missing": 18199
+      },
+      "D": {
+        "visible": 5290,
+        "missing": 64691
+      },
+      "X": {
+        "visible": 0,
+        "missing": 0
+      }
+    },
+    "counts": {
+      "records": 185746,
+      "unique_frames": 184857,
+      "duplicate_records": 889,
+      "player_conflicts": 0,
+      "ball_conflicts": 0,
+      "event_association_only_duplicates": 61,
+      "within_list_repeats": 0,
+      "state_assertion_conflicts": 0,
+      "owner_assertion_conflicts": 0,
+      "raw_visible_only": true,
+      "player_coordinate_disagreements": 0,
+      "player_missingness_disagreements": 0,
+      "ball_coordinate_disagreements": 0,
+      "ball_missingness_disagreements": 0,
+      "within_list_coordinate_disagreements": 0,
+      "within_list_missingness_disagreements": 0
+    },
+    "feature_sha256": "db7ef97eb7bc3990c8a06dd980547e421f0c2ebbbd0b78d38b857486d6af84a7",
+    "seconds": 22.022097958019003
+  },
+  {
+    "match": "3813",
+    "status": "pass",
+    "frames": 175664,
+    "known_labels": 175664,
+    "known_fraction": 1.0,
+    "natural_missing_graded": 108825,
+    "corrupted_missing_graded": 136583,
+    "label_by_natural_observation": {
+      "H": {
+        "visible": 48455,
+        "missing": 15046
+      },
+      "A": {
+        "visible": 11390,
+        "missing": 9953
+      },
+      "D": {
+        "visible": 6994,
+        "missing": 83826
+      },
+      "X": {
+        "visible": 0,
+        "missing": 0
+      }
+    },
+    "counts": {
+      "records": 211146,
+      "unique_frames": 210587,
+      "duplicate_records": 559,
+      "player_conflicts": 0,
+      "ball_conflicts": 0,
+      "event_association_only_duplicates": 39,
+      "within_list_repeats": 0,
+      "state_assertion_conflicts": 0,
+      "owner_assertion_conflicts": 0,
+      "raw_visible_only": true,
+      "player_coordinate_disagreements": 0,
+      "player_missingness_disagreements": 0,
+      "ball_coordinate_disagreements": 0,
+      "ball_missingness_disagreements": 0,
+      "within_list_coordinate_disagreements": 0,
+      "within_list_missingness_disagreements": 0
+    },
+    "feature_sha256": "b9b352319da6df05da33a1d291f640a821c0cec61f5c01e310bb785b0273c085",
+    "seconds": 22.87400733298273
+  },
+  {
+    "match": "3814",
+    "status": "pass",
+    "frames": 150517,
+    "known_labels": 150517,
+    "known_fraction": 1.0,
+    "natural_missing_graded": 83900,
+    "corrupted_missing_graded": 108751,
+    "label_by_natural_observation": {
+      "H": {
+        "visible": 28192,
+        "missing": 10517
+      },
+      "A": {
+        "visible": 29689,
+        "missing": 11078
+      },
+      "D": {
+        "visible": 8736,
+        "missing": 62305
+      },
+      "X": {
+        "visible": 0,
+        "missing": 0
+      }
+    },
+    "counts": {
+      "records": 181037,
+      "unique_frames": 180443,
+      "duplicate_records": 594,
+      "player_conflicts": 0,
+      "ball_conflicts": 0,
+      "event_association_only_duplicates": 42,
+      "within_list_repeats": 0,
+      "state_assertion_conflicts": 0,
+      "owner_assertion_conflicts": 0,
+      "raw_visible_only": true,
+      "player_coordinate_disagreements": 0,
+      "player_missingness_disagreements": 0,
+      "ball_coordinate_disagreements": 0,
+      "ball_missingness_disagreements": 0,
+      "within_list_coordinate_disagreements": 0,
+      "within_list_missingness_disagreements": 0
+    },
+    "feature_sha256": "b48dea94cb7c55b6f361c1510e805a9bc8b15364ff83b0cd168af52db3287d29",
+    "seconds": 19.87346350000007
+  },
+  {
+    "match": "3815",
+    "status": "pass",
+    "frames": 156759,
+    "known_labels": 156759,
+    "known_fraction": 1.0,
+    "natural_missing_graded": 89216,
+    "corrupted_missing_graded": 115604,
+    "label_by_natural_observation": {
+      "H": {
+        "visible": 37875,
+        "missing": 14502
+      },
+      "A": {
+        "visible": 23904,
+        "missing": 14185
+      },
+      "D": {
+        "visible": 5764,
+        "missing": 60529
+      },
+      "X": {
+        "visible": 0,
+        "missing": 0
+      }
+    },
+    "counts": {
+      "records": 187981,
+      "unique_frames": 187924,
+      "duplicate_records": 57,
+      "player_conflicts": 0,
+      "ball_conflicts": 0,
+      "event_association_only_duplicates": 57,
+      "within_list_repeats": 0,
+      "state_assertion_conflicts": 0,
+      "owner_assertion_conflicts": 0,
+      "raw_visible_only": true,
+      "player_coordinate_disagreements": 0,
+      "player_missingness_disagreements": 0,
+      "ball_coordinate_disagreements": 0,
+      "ball_missingness_disagreements": 0,
+      "within_list_coordinate_disagreements": 0,
+      "within_list_missingness_disagreements": 0
+    },
+    "feature_sha256": "8136cb7f91e17a3e2209b0bf9daecbe2acbd274d739ffe78520cc2c321924fa4",
+    "seconds": 20.772597542003496
+  },
+  {
+    "match": "3816",
+    "status": "pass",
+    "frames": 165281,
+    "known_labels": 165281,
+    "known_fraction": 1.0,
+    "natural_missing_graded": 106684,
+    "corrupted_missing_graded": 133734,
+    "label_by_natural_observation": {
+      "H": {
+        "visible": 38500,
+        "missing": 16993
+      },
+      "A": {
+        "visible": 12042,
+        "missing": 14502
+      },
+      "D": {
+        "visible": 8055,
+        "missing": 75189
+      },
+      "X": {
+        "visible": 0,
+        "missing": 0
+      }
+    },
+    "counts": {
+      "records": 199012,
+      "unique_frames": 198142,
+      "duplicate_records": 870,
+      "player_conflicts": 0,
+      "ball_conflicts": 0,
+      "event_association_only_duplicates": 64,
+      "within_list_repeats": 0,
+      "state_assertion_conflicts": 0,
+      "owner_assertion_conflicts": 0,
+      "raw_visible_only": true,
+      "player_coordinate_disagreements": 0,
+      "player_missingness_disagreements": 0,
+      "ball_coordinate_disagreements": 0,
+      "ball_missingness_disagreements": 0,
+      "within_list_coordinate_disagreements": 0,
+      "within_list_missingness_disagreements": 0
+    },
+    "feature_sha256": "490b36c256744400d2749293972b2b1c48978a7ae0ac0819696bdec86707bdfe",
+    "seconds": 21.878127500007395
+  },
+  {
+    "match": "3817",
+    "status": "pass",
+    "frames": 153360,
+    "known_labels": 153360,
+    "known_fraction": 1.0,
+    "natural_missing_graded": 92430,
+    "corrupted_missing_graded": 113563,
+    "label_by_natural_observation": {
+      "H": {
+        "visible": 35435,
+        "missing": 16850
+      },
+      "A": {
+        "visible": 20823,
+        "missing": 16887
+      },
+      "D": {
+        "visible": 4672,
+        "missing": 58693
+      },
+      "X": {
+        "visible": 0,
+        "missing": 0
+      }
+    },
+    "counts": {
+      "records": 183903,
+      "unique_frames": 183849,
+      "duplicate_records": 54,
+      "player_conflicts": 0,
+      "ball_conflicts": 0,
+      "event_association_only_duplicates": 54,
+      "within_list_repeats": 0,
+      "state_assertion_conflicts": 0,
+      "owner_assertion_conflicts": 0,
+      "raw_visible_only": true,
+      "player_coordinate_disagreements": 0,
+      "player_missingness_disagreements": 0,
+      "ball_coordinate_disagreements": 0,
+      "ball_missingness_disagreements": 0,
+      "within_list_coordinate_disagreements": 0,
+      "within_list_missingness_disagreements": 0
+    },
+    "feature_sha256": "3c1b72c112a48dfb4205709871631f83f598cbf793a9d54e8bde14823f15b56d",
+    "seconds": 20.09579662498436
+  },
+  {
+    "match": "3818",
+    "status": "pass",
+    "frames": 148968,
+    "known_labels": 148968,
+    "known_fraction": 1.0,
+    "natural_missing_graded": 90291,
+    "corrupted_missing_graded": 113227,
+    "label_by_natural_observation": {
+      "H": {
+        "visible": 35567,
+        "missing": 15077
+      },
+      "A": {
+        "visible": 17064,
+        "missing": 17113
+      },
+      "D": {
+        "visible": 6046,
+        "missing": 58101
+      },
+      "X": {
+        "visible": 0,
+        "missing": 0
+      }
+    },
+    "counts": {
+      "records": 179305,
+      "unique_frames": 178584,
+      "duplicate_records": 721,
+      "player_conflicts": 0,
+      "ball_conflicts": 0,
+      "event_association_only_duplicates": 53,
+      "within_list_repeats": 0,
+      "state_assertion_conflicts": 0,
+      "owner_assertion_conflicts": 0,
+      "raw_visible_only": true,
+      "player_coordinate_disagreements": 0,
+      "player_missingness_disagreements": 0,
+      "ball_coordinate_disagreements": 0,
+      "ball_missingness_disagreements": 0,
+      "within_list_coordinate_disagreements": 0,
+      "within_list_missingness_disagreements": 0
+    },
+    "feature_sha256": "f97eff3cd9638778d69e9cc938b637993daa11b04d12b3a4cc75a86cc52a7ff7",
+    "seconds": 19.669133749994216
+  },
+  {
+    "match": "3819",
+    "status": "pass",
+    "frames": 155090,
+    "known_labels": 155090,
+    "known_fraction": 1.0,
+    "natural_missing_graded": 78339,
+    "corrupted_missing_graded": 109672,
+    "label_by_natural_observation": {
+      "H": {
+        "visible": 45690,
+        "missing": 15332
+      },
+      "A": {
+        "visible": 28122,
+        "missing": 11669
+      },
+      "D": {
+        "visible": 2939,
+        "missing": 51338
+      },
+      "X": {
+        "visible": 0,
+        "missing": 0
+      }
+    },
+    "counts": {
+      "records": 186361,
+      "unique_frames": 185923,
+      "duplicate_records": 438,
+      "player_conflicts": 0,
+      "ball_conflicts": 0,
+      "event_association_only_duplicates": 30,
+      "within_list_repeats": 0,
+      "state_assertion_conflicts": 0,
+      "owner_assertion_conflicts": 0,
+      "raw_visible_only": true,
+      "player_coordinate_disagreements": 0,
+      "player_missingness_disagreements": 0,
+      "ball_coordinate_disagreements": 0,
+      "ball_missingness_disagreements": 0,
+      "within_list_coordinate_disagreements": 0,
+      "within_list_missingness_disagreements": 0
+    },
+    "feature_sha256": "bafd157cf777bbdebbab12e2a75723f98023e0649513de9946d83978e809de8a",
+    "seconds": 21.986297416005982
+  },
+  {
+    "match": "3820",
+    "status": "pass",
+    "frames": 146897,
+    "known_labels": 146897,
+    "known_fraction": 1.0,
+    "natural_missing_graded": 76787,
+    "corrupted_missing_graded": 105697,
+    "label_by_natural_observation": {
+      "H": {
+        "visible": 22412,
+        "missing": 10600
+      },
+      "A": {
+        "visible": 42050,
+        "missing": 13744
+      },
+      "D": {
+        "visible": 5648,
+        "missing": 52443
+      },
+      "X": {
+        "visible": 0,
+        "missing": 0
+      }
+    },
+    "counts": {
+      "records": 176774,
+      "unique_frames": 176101,
+      "duplicate_records": 673,
+      "player_conflicts": 0,
+      "ball_conflicts": 0,
+      "event_association_only_duplicates": 49,
+      "within_list_repeats": 0,
+      "state_assertion_conflicts": 0,
+      "owner_assertion_conflicts": 0,
+      "raw_visible_only": true,
+      "player_coordinate_disagreements": 0,
+      "player_missingness_disagreements": 0,
+      "ball_coordinate_disagreements": 0,
+      "ball_missingness_disagreements": 0,
+      "within_list_coordinate_disagreements": 0,
+      "within_list_missingness_disagreements": 0
+    },
+    "feature_sha256": "168c825305c80c77d9b8a5bbd38565f18f7dc678698c41671cd4dd10eddbefd6",
+    "seconds": 19.651398207992315
+  },
+  {
+    "match": "3821",
+    "status": "pass",
+    "frames": 156231,
+    "known_labels": 156231,
+    "known_fraction": 1.0,
+    "natural_missing_graded": 89852,
+    "corrupted_missing_graded": 117650,
+    "label_by_natural_observation": {
+      "H": {
+        "visible": 46677,
+        "missing": 18354
+      },
+      "A": {
+        "visible": 14506,
+        "missing": 11355
+      },
+      "D": {
+        "visible": 5196,
+        "missing": 60143
+      },
+      "X": {
+        "visible": 0,
+        "missing": 0
+      }
+    },
+    "counts": {
+      "records": 187348,
+      "unique_frames": 187292,
+      "duplicate_records": 56,
+      "player_conflicts": 0,
+      "ball_conflicts": 0,
+      "event_association_only_duplicates": 56,
+      "within_list_repeats": 0,
+      "state_assertion_conflicts": 0,
+      "owner_assertion_conflicts": 0,
+      "raw_visible_only": true,
+      "player_coordinate_disagreements": 0,
+      "player_missingness_disagreements": 0,
+      "ball_coordinate_disagreements": 0,
+      "ball_missingness_disagreements": 0,
+      "within_list_coordinate_disagreements": 0,
+      "within_list_missingness_disagreements": 0
+    },
+    "feature_sha256": "dabe8caf6f3ef89472daafcad45c0dc7c4ecbbf489fb317d23237c4fd41c1a15",
+    "seconds": 20.72223370798747
+  },
+  {
+    "match": "3822",
+    "status": "pass",
+    "frames": 154701,
+    "known_labels": 154701,
+    "known_fraction": 1.0,
+    "natural_missing_graded": 76682,
+    "corrupted_missing_graded": 106417,
+    "label_by_natural_observation": {
+      "H": {
+        "visible": 62144,
+        "missing": 16927
+      },
+      "A": {
+        "visible": 11270,
+        "missing": 11965
+      },
+      "D": {
+        "visible": 4605,
+        "missing": 47790
+      },
+      "X": {
+        "visible": 0,
+        "missing": 0
+      }
+    },
+    "counts": {
+      "records": 186008,
+      "unique_frames": 185459,
+      "duplicate_records": 549,
+      "player_conflicts": 0,
+      "ball_conflicts": 0,
+      "event_association_only_duplicates": 41,
+      "within_list_repeats": 0,
+      "state_assertion_conflicts": 0,
+      "owner_assertion_conflicts": 0,
+      "raw_visible_only": true,
+      "player_coordinate_disagreements": 0,
+      "player_missingness_disagreements": 0,
+      "ball_coordinate_disagreements": 0,
+      "ball_missingness_disagreements": 0,
+      "within_list_coordinate_disagreements": 0,
+      "within_list_missingness_disagreements": 0
+    },
+    "feature_sha256": "53b17469cbeccd6f7aced0d0ac45a9220741f6f0b658ee2f1d2f5a44fad8a9ca",
+    "seconds": 21.042656083009206
+  },
+  {
+    "match": "3823",
+    "status": "pass",
+    "frames": 150021,
+    "known_labels": 149329,
+    "known_fraction": 0.9953873124429247,
+    "natural_missing_graded": 85135,
+    "corrupted_missing_graded": 121224,
+    "label_by_natural_observation": {
+      "H": {
+        "visible": 31095,
+        "missing": 15128
+      },
+      "A": {
+        "visible": 26906,
+        "missing": 17147
+      },
+      "D": {
+        "visible": 6193,
+        "missing": 52860
+      },
+      "X": {
+        "visible": 229,
+        "missing": 463
+      }
+    },
+    "counts": {
+      "records": 180340,
+      "unique_frames": 179847,
+      "duplicate_records": 493,
+      "player_conflicts": 0,
+      "ball_conflicts": 0,
+      "event_association_only_duplicates": 39,
+      "within_list_repeats": 0,
+      "state_assertion_conflicts": 0,
+      "owner_assertion_conflicts": 0,
+      "raw_visible_only": true,
+      "player_coordinate_disagreements": 0,
+      "player_missingness_disagreements": 0,
+      "ball_coordinate_disagreements": 0,
+      "ball_missingness_disagreements": 0,
+      "within_list_coordinate_disagreements": 0,
+      "within_list_missingness_disagreements": 0
+    },
+    "feature_sha256": "be4ec8445a0f1c6e13e1be30be387749096bce27445aa048aaf1e2b273993713",
+    "seconds": 20.240280792000704
+  },
+  {
+    "match": "3824",
+    "status": "pass",
+    "frames": 148737,
+    "known_labels": 148737,
+    "known_fraction": 1.0,
+    "natural_missing_graded": 73488,
+    "corrupted_missing_graded": 105405,
+    "label_by_natural_observation": {
+      "H": {
+        "visible": 33489,
+        "missing": 12294
+      },
+      "A": {
+        "visible": 34857,
+        "missing": 14768
+      },
+      "D": {
+        "visible": 6903,
+        "missing": 46426
+      },
+      "X": {
+        "visible": 0,
+        "missing": 0
+      }
+    },
+    "counts": {
+      "records": 178975,
+      "unique_frames": 178308,
+      "duplicate_records": 667,
+      "player_conflicts": 0,
+      "ball_conflicts": 0,
+      "event_association_only_duplicates": 47,
+      "within_list_repeats": 0,
+      "state_assertion_conflicts": 0,
+      "owner_assertion_conflicts": 0,
+      "raw_visible_only": true,
+      "player_coordinate_disagreements": 0,
+      "player_missingness_disagreements": 0,
+      "ball_coordinate_disagreements": 0,
+      "ball_missingness_disagreements": 0,
+      "within_list_coordinate_disagreements": 0,
+      "within_list_missingness_disagreements": 0
+    },
+    "feature_sha256": "93579f9d6bd11f2bcda93a147b6b8b5e7447cbe5fd18a915beccba6dd98a1ff6",
+    "seconds": 20.166675124986796
+  },
+  {
+    "match": "3825",
+    "status": "pass",
+    "frames": 148256,
+    "known_labels": 148256,
+    "known_fraction": 1.0,
+    "natural_missing_graded": 87958,
+    "corrupted_missing_graded": 111841,
+    "label_by_natural_observation": {
+      "H": {
+        "visible": 31967,
+        "missing": 15273
+      },
+      "A": {
+        "visible": 24222,
+        "missing": 15766
+      },
+      "D": {
+        "visible": 4109,
+        "missing": 56919
+      },
+      "X": {
+        "visible": 0,
+        "missing": 0
+      }
+    },
+    "counts": {
+      "records": 178734,
+      "unique_frames": 177731,
+      "duplicate_records": 1003,
+      "player_conflicts": 0,
+      "ball_conflicts": 0,
+      "event_association_only_duplicates": 71,
+      "within_list_repeats": 0,
+      "state_assertion_conflicts": 0,
+      "owner_assertion_conflicts": 0,
+      "raw_visible_only": true,
+      "player_coordinate_disagreements": 0,
+      "player_missingness_disagreements": 0,
+      "ball_coordinate_disagreements": 0,
+      "ball_missingness_disagreements": 0,
+      "within_list_coordinate_disagreements": 0,
+      "within_list_missingness_disagreements": 0
+    },
+    "feature_sha256": "92205fcfed96acd9644d9fc23f2ec3f4b1dfb5cc6d3f754c5b56c263e486df15",
+    "seconds": 20.169551208004123
+  },
+  {
+    "match": "3826",
+    "status": "pass",
+    "frames": 153157,
+    "known_labels": 153157,
+    "known_fraction": 1.0,
+    "natural_missing_graded": 86140,
+    "corrupted_missing_graded": 117167,
+    "label_by_natural_observation": {
+      "H": {
+        "visible": 38972,
+        "missing": 15020
+      },
+      "A": {
+        "visible": 22426,
+        "missing": 11882
+      },
+      "D": {
+        "visible": 5619,
+        "missing": 59238
+      },
+      "X": {
+        "visible": 0,
+        "missing": 0
+      }
+    },
+    "counts": {
+      "records": 184287,
+      "unique_frames": 183606,
+      "duplicate_records": 681,
+      "player_conflicts": 0,
+      "ball_conflicts": 0,
+      "event_association_only_duplicates": 49,
+      "within_list_repeats": 0,
+      "state_assertion_conflicts": 0,
+      "owner_assertion_conflicts": 0,
+      "raw_visible_only": true,
+      "player_coordinate_disagreements": 0,
+      "player_missingness_disagreements": 0,
+      "ball_coordinate_disagreements": 0,
+      "ball_missingness_disagreements": 0,
+      "within_list_coordinate_disagreements": 0,
+      "within_list_missingness_disagreements": 0
+    },
+    "feature_sha256": "dbaa773900f5f2f38fe881ddd4f4843d3f0699fb2d58064a3139b4eaedd95aa5",
+    "seconds": 20.92955312502454
+  },
+  {
+    "match": "3827",
+    "status": "pass",
+    "frames": 147209,
+    "known_labels": 147209,
+    "known_fraction": 1.0,
+    "natural_missing_graded": 90120,
+    "corrupted_missing_graded": 113032,
+    "label_by_natural_observation": {
+      "H": {
+        "visible": 32452,
+        "missing": 19764
+      },
+      "A": {
+        "visible": 20862,
+        "missing": 16619
+      },
+      "D": {
+        "visible": 3775,
+        "missing": 53737
+      },
+      "X": {
+        "visible": 0,
+        "missing": 0
+      }
+    },
+    "counts": {
+      "records": 177109,
+      "unique_frames": 176476,
+      "duplicate_records": 633,
+      "player_conflicts": 0,
+      "ball_conflicts": 0,
+      "event_association_only_duplicates": 43,
+      "within_list_repeats": 0,
+      "state_assertion_conflicts": 0,
+      "owner_assertion_conflicts": 0,
+      "raw_visible_only": true,
+      "player_coordinate_disagreements": 0,
+      "player_missingness_disagreements": 0,
+      "ball_coordinate_disagreements": 0,
+      "ball_missingness_disagreements": 0,
+      "within_list_coordinate_disagreements": 0,
+      "within_list_missingness_disagreements": 0
+    },
+    "feature_sha256": "f73b6133b837ae2532774c1a9ffe4c4c3bc9a19f4009aaf5ffa8eeb182242e11",
+    "seconds": 20.97766541701276
+  },
+  {
+    "match": "3828",
+    "status": "pass",
+    "frames": 159803,
+    "known_labels": 159803,
+    "known_fraction": 1.0,
+    "natural_missing_graded": 102397,
+    "corrupted_missing_graded": 124198,
+    "label_by_natural_observation": {
+      "H": {
+        "visible": 30813,
+        "missing": 18302
+      },
+      "A": {
+        "visible": 18309,
+        "missing": 15424
+      },
+      "D": {
+        "visible": 8284,
+        "missing": 68671
+      },
+      "X": {
+        "visible": 0,
+        "missing": 0
+      }
+    },
+    "counts": {
+      "records": 192530,
+      "unique_frames": 191573,
+      "duplicate_records": 957,
+      "player_conflicts": 0,
+      "ball_conflicts": 0,
+      "event_association_only_duplicates": 67,
+      "within_list_repeats": 0,
+      "state_assertion_conflicts": 0,
+      "owner_assertion_conflicts": 0,
+      "raw_visible_only": true,
+      "player_coordinate_disagreements": 0,
+      "player_missingness_disagreements": 0,
+      "ball_coordinate_disagreements": 0,
+      "ball_missingness_disagreements": 0,
+      "within_list_coordinate_disagreements": 0,
+      "within_list_missingness_disagreements": 0
+    },
+    "feature_sha256": "bd25d3eaecd3f517fcd1ccf7deb8b68ab3473bf2b2baf08003843a2fc5bbb26b",
+    "seconds": 21.218248958000913
+  },
+  {
+    "match": "3829",
+    "status": "pass",
+    "frames": 154615,
+    "known_labels": 154615,
+    "known_fraction": 1.0,
+    "natural_missing_graded": 94806,
+    "corrupted_missing_graded": 118412,
+    "label_by_natural_observation": {
+      "H": {
+        "visible": 23681,
+        "missing": 17746
+      },
+      "A": {
+        "visible": 30455,
+        "missing": 17279
+      },
+      "D": {
+        "visible": 5673,
+        "missing": 59781
+      },
+      "X": {
+        "visible": 0,
+        "missing": 0
+      }
+    },
+    "counts": {
+      "records": 185952,
+      "unique_frames": 185355,
+      "duplicate_records": 597,
+      "player_conflicts": 0,
+      "ball_conflicts": 0,
+      "event_association_only_duplicates": 45,
+      "within_list_repeats": 0,
+      "state_assertion_conflicts": 0,
+      "owner_assertion_conflicts": 0,
+      "raw_visible_only": true,
+      "player_coordinate_disagreements": 0,
+      "player_missingness_disagreements": 0,
+      "ball_coordinate_disagreements": 0,
+      "ball_missingness_disagreements": 0,
+      "within_list_coordinate_disagreements": 0,
+      "within_list_missingness_disagreements": 0
+    },
+    "feature_sha256": "3346b54a2eba8e4568e5dd9ac8424114fc8b73822107728cf2b1de7b9acb941b",
+    "seconds": 20.438850125006866
+  },
+  {
+    "match": "3830",
+    "status": "pass",
+    "frames": 150232,
+    "known_labels": 150232,
+    "known_fraction": 1.0,
+    "natural_missing_graded": 88734,
+    "corrupted_missing_graded": 111084,
+    "label_by_natural_observation": {
+      "H": {
+        "visible": 33808,
+        "missing": 14263
+      },
+      "A": {
+        "visible": 23803,
+        "missing": 15247
+      },
+      "D": {
+        "visible": 3887,
+        "missing": 59224
+      },
+      "X": {
+        "visible": 0,
+        "missing": 0
+      }
+    },
+    "counts": {
+      "records": 181021,
+      "unique_frames": 180100,
+      "duplicate_records": 921,
+      "player_conflicts": 0,
+      "ball_conflicts": 0,
+      "event_association_only_duplicates": 67,
+      "within_list_repeats": 0,
+      "state_assertion_conflicts": 0,
+      "owner_assertion_conflicts": 0,
+      "raw_visible_only": true,
+      "player_coordinate_disagreements": 0,
+      "player_missingness_disagreements": 0,
+      "ball_coordinate_disagreements": 0,
+      "ball_missingness_disagreements": 0,
+      "within_list_coordinate_disagreements": 0,
+      "within_list_missingness_disagreements": 0
+    },
+    "feature_sha256": "2daa0e2a63be8f2fb23ea910678aad18ea2af734a4d542e54020c24d2de533c4",
+    "seconds": 19.981035250006244
+  },
+  {
+    "match": "3831",
+    "status": "pass",
+    "frames": 143955,
+    "known_labels": 143955,
+    "known_fraction": 1.0,
+    "natural_missing_graded": 68907,
+    "corrupted_missing_graded": 95947,
+    "label_by_natural_observation": {
+      "H": {
+        "visible": 37412,
+        "missing": 12474
+      },
+      "A": {
+        "visible": 30454,
+        "missing": 12326
+      },
+      "D": {
+        "visible": 7182,
+        "missing": 44107
+      },
+      "X": {
+        "visible": 0,
+        "missing": 0
+      }
+    },
+    "counts": {
+      "records": 173190,
+      "unique_frames": 172575,
+      "duplicate_records": 615,
+      "player_conflicts": 0,
+      "ball_conflicts": 0,
+      "event_association_only_duplicates": 41,
+      "within_list_repeats": 0,
+      "state_assertion_conflicts": 0,
+      "owner_assertion_conflicts": 0,
+      "raw_visible_only": true,
+      "player_coordinate_disagreements": 0,
+      "player_missingness_disagreements": 0,
+      "ball_coordinate_disagreements": 0,
+      "ball_missingness_disagreements": 0,
+      "within_list_coordinate_disagreements": 0,
+      "within_list_missingness_disagreements": 0
+    },
+    "feature_sha256": "b1eb439a2d7eb0882455a019862743cfebe72207d2d26748317369c2689ac1a9",
+    "seconds": 19.773781166004483
+  },
+  {
+    "match": "3832",
+    "status": "pass",
+    "frames": 151955,
+    "known_labels": 151955,
+    "known_fraction": 1.0,
+    "natural_missing_graded": 98126,
+    "corrupted_missing_graded": 118723,
+    "label_by_natural_observation": {
+      "H": {
+        "visible": 30557,
+        "missing": 18899
+      },
+      "A": {
+        "visible": 16818,
+        "missing": 19465
+      },
+      "D": {
+        "visible": 6454,
+        "missing": 59762
+      },
+      "X": {
+        "visible": 0,
+        "missing": 0
+      }
+    },
+    "counts": {
+      "records": 183291,
+      "unique_frames": 182167,
+      "duplicate_records": 1124,
+      "player_conflicts": 0,
+      "ball_conflicts": 0,
+      "event_association_only_duplicates": 84,
+      "within_list_repeats": 0,
+      "state_assertion_conflicts": 0,
+      "owner_assertion_conflicts": 0,
+      "raw_visible_only": true,
+      "player_coordinate_disagreements": 0,
+      "player_missingness_disagreements": 0,
+      "ball_coordinate_disagreements": 0,
+      "ball_missingness_disagreements": 0,
+      "within_list_coordinate_disagreements": 0,
+      "within_list_missingness_disagreements": 0
+    },
+    "feature_sha256": "0b6773ab6d18b7601c2aef8313b13d22299c23f0ae26d903805e31f6e9a622a1",
+    "seconds": 20.729780084016966
+  },
+  {
+    "match": "3833",
+    "status": "pass",
+    "frames": 160643,
+    "known_labels": 160643,
+    "known_fraction": 1.0,
+    "natural_missing_graded": 104828,
+    "corrupted_missing_graded": 122060,
+    "label_by_natural_observation": {
+      "H": {
+        "visible": 15274,
+        "missing": 14710
+      },
+      "A": {
+        "visible": 33817,
+        "missing": 15571
+      },
+      "D": {
+        "visible": 6724,
+        "missing": 74547
+      },
+      "X": {
+        "visible": 0,
+        "missing": 0
+      }
+    },
+    "counts": {
+      "records": 193235,
+      "unique_frames": 192581,
+      "duplicate_records": 654,
+      "player_conflicts": 0,
+      "ball_conflicts": 0,
+      "event_association_only_duplicates": 49,
+      "within_list_repeats": 0,
+      "state_assertion_conflicts": 0,
+      "owner_assertion_conflicts": 0,
+      "raw_visible_only": true,
+      "player_coordinate_disagreements": 0,
+      "player_missingness_disagreements": 0,
+      "ball_coordinate_disagreements": 0,
+      "ball_missingness_disagreements": 0,
+      "within_list_coordinate_disagreements": 0,
+      "within_list_missingness_disagreements": 0
+    },
+    "feature_sha256": "b3b5f986e721aa1e9345f9910ed7f047264a7c7ce3f138cb0de35481fd8ae057",
+    "seconds": 21.374688125011744
+  },
+  {
+    "match": "3834",
+    "status": "pass",
+    "frames": 150314,
+    "known_labels": 150314,
+    "known_fraction": 1.0,
+    "natural_missing_graded": 84016,
+    "corrupted_missing_graded": 105221,
+    "label_by_natural_observation": {
+      "H": {
+        "visible": 29862,
+        "missing": 16808
+      },
+      "A": {
+        "visible": 32979,
+        "missing": 14114
+      },
+      "D": {
+        "visible": 3457,
+        "missing": 53094
+      },
+      "X": {
+        "visible": 0,
+        "missing": 0
+      }
+    },
+    "counts": {
+      "records": 180875,
+      "unique_frames": 180198,
+      "duplicate_records": 677,
+      "player_conflicts": 0,
+      "ball_conflicts": 0,
+      "event_association_only_duplicates": 51,
+      "within_list_repeats": 0,
+      "state_assertion_conflicts": 0,
+      "owner_assertion_conflicts": 0,
+      "raw_visible_only": true,
+      "player_coordinate_disagreements": 0,
+      "player_missingness_disagreements": 0,
+      "ball_coordinate_disagreements": 0,
+      "ball_missingness_disagreements": 0,
+      "within_list_coordinate_disagreements": 0,
+      "within_list_missingness_disagreements": 0
+    },
+    "feature_sha256": "25793feb922d241997add83e2e6a797a707c8d93c55326e40a8da2e324213044",
+    "seconds": 21.79872029199032
+  },
+  {
+    "match": "3835",
+    "status": "pass",
+    "frames": 152912,
+    "known_labels": 152912,
+    "known_fraction": 1.0,
+    "natural_missing_graded": 97683,
+    "corrupted_missing_graded": 126260,
+    "label_by_natural_observation": {
+      "H": {
+        "visible": 28369,
+        "missing": 19167
+      },
+      "A": {
+        "visible": 19275,
+        "missing": 14613
+      },
+      "D": {
+        "visible": 7585,
+        "missing": 63903
+      },
+      "X": {
+        "visible": 0,
+        "missing": 0
+      }
+    },
+    "counts": {
+      "records": 184106,
+      "unique_frames": 183312,
+      "duplicate_records": 794,
+      "player_conflicts": 0,
+      "ball_conflicts": 0,
+      "event_association_only_duplicates": 58,
+      "within_list_repeats": 0,
+      "state_assertion_conflicts": 0,
+      "owner_assertion_conflicts": 0,
+      "raw_visible_only": true,
+      "player_coordinate_disagreements": 0,
+      "player_missingness_disagreements": 0,
+      "ball_coordinate_disagreements": 0,
+      "ball_missingness_disagreements": 0,
+      "within_list_coordinate_disagreements": 0,
+      "within_list_missingness_disagreements": 0
+    },
+    "feature_sha256": "5f7be3d302783e8cb5da6ee32fffcb2999a521fe76135f778a376c732d8dea73",
+    "seconds": 20.329229416995076
+  },
+  {
+    "match": "3836",
+    "status": "pass",
+    "frames": 145934,
+    "known_labels": 145934,
+    "known_fraction": 1.0,
+    "natural_missing_graded": 77649,
+    "corrupted_missing_graded": 108559,
+    "label_by_natural_observation": {
+      "H": {
+        "visible": 36955,
+        "missing": 13605
+      },
+      "A": {
+        "visible": 25685,
+        "missing": 15501
+      },
+      "D": {
+        "visible": 5645,
+        "missing": 48543
+      },
+      "X": {
+        "visible": 0,
+        "missing": 0
+      }
+    },
+    "counts": {
+      "records": 175496,
+      "unique_frames": 174947,
+      "duplicate_records": 549,
+      "player_conflicts": 0,
+      "ball_conflicts": 0,
+      "event_association_only_duplicates": 37,
+      "within_list_repeats": 0,
+      "state_assertion_conflicts": 0,
+      "owner_assertion_conflicts": 0,
+      "raw_visible_only": true,
+      "player_coordinate_disagreements": 0,
+      "player_missingness_disagreements": 0,
+      "ball_coordinate_disagreements": 0,
+      "ball_missingness_disagreements": 0,
+      "within_list_coordinate_disagreements": 0,
+      "within_list_missingness_disagreements": 0
+    },
+    "feature_sha256": "8849c109c98402c36bd88fa9359fb4c8fce77db1ebf408c70e8fca0782dbf5eb",
+    "seconds": 19.52528999999049
+  },
+  {
+    "match": "3837",
+    "status": "pass",
+    "frames": 148457,
+    "known_labels": 148457,
+    "known_fraction": 1.0,
+    "natural_missing_graded": 87669,
+    "corrupted_missing_graded": 110815,
+    "label_by_natural_observation": {
+      "H": {
+        "visible": 36846,
+        "missing": 18097
+      },
+      "A": {
+        "visible": 18397,
+        "missing": 14346
+      },
+      "D": {
+        "visible": 5545,
+        "missing": 55226
+      },
+      "X": {
+        "visible": 0,
+        "missing": 0
+      }
+    },
+    "counts": {
+      "records": 178577,
+      "unique_frames": 177972,
+      "duplicate_records": 605,
+      "player_conflicts": 0,
+      "ball_conflicts": 0,
+      "event_association_only_duplicates": 43,
+      "within_list_repeats": 0,
+      "state_assertion_conflicts": 0,
+      "owner_assertion_conflicts": 0,
+      "raw_visible_only": true,
+      "player_coordinate_disagreements": 0,
+      "player_missingness_disagreements": 0,
+      "ball_coordinate_disagreements": 0,
+      "ball_missingness_disagreements": 0,
+      "within_list_coordinate_disagreements": 0,
+      "within_list_missingness_disagreements": 0
+    },
+    "feature_sha256": "750d55bd5f3ce8626843dcc89378b3510a6cf640bde8b3e53a95b60d7d2d772f",
+    "seconds": 19.649894208007026
+  },
+  {
+    "match": "3838",
+    "status": "pass",
+    "frames": 151570,
+    "known_labels": 151570,
+    "known_fraction": 1.0,
+    "natural_missing_graded": 84976,
+    "corrupted_missing_graded": 112894,
+    "label_by_natural_observation": {
+      "H": {
+        "visible": 28668,
+        "missing": 14340
+      },
+      "A": {
+        "visible": 31605,
+        "missing": 17494
+      },
+      "D": {
+        "visible": 6321,
+        "missing": 53142
+      },
+      "X": {
+        "visible": 0,
+        "missing": 0
+      }
+    },
+    "counts": {
+      "records": 182311,
+      "unique_frames": 181704,
+      "duplicate_records": 607,
+      "player_conflicts": 0,
+      "ball_conflicts": 0,
+      "event_association_only_duplicates": 43,
+      "within_list_repeats": 0,
+      "state_assertion_conflicts": 0,
+      "owner_assertion_conflicts": 0,
+      "raw_visible_only": true,
+      "player_coordinate_disagreements": 0,
+      "player_missingness_disagreements": 0,
+      "ball_coordinate_disagreements": 0,
+      "ball_missingness_disagreements": 0,
+      "within_list_coordinate_disagreements": 0,
+      "within_list_missingness_disagreements": 0
+    },
+    "feature_sha256": "0ac97f00d477727cfe8eff1019130575129f4fbb6a52173c522350353e5bfb9d",
+    "seconds": 20.108415041002445
+  },
+  {
+    "match": "3839",
+    "status": "pass",
+    "frames": 147148,
+    "known_labels": 147148,
+    "known_fraction": 1.0,
+    "natural_missing_graded": 80175,
+    "corrupted_missing_graded": 110076,
+    "label_by_natural_observation": {
+      "H": {
+        "visible": 39323,
+        "missing": 12602
+      },
+      "A": {
+        "visible": 21324,
+        "missing": 12985
+      },
+      "D": {
+        "visible": 6326,
+        "missing": 54588
+      },
+      "X": {
+        "visible": 0,
+        "missing": 0
+      }
+    },
+    "counts": {
+      "records": 176979,
+      "unique_frames": 176403,
+      "duplicate_records": 576,
+      "player_conflicts": 0,
+      "ball_conflicts": 0,
+      "event_association_only_duplicates": 40,
+      "within_list_repeats": 0,
+      "state_assertion_conflicts": 0,
+      "owner_assertion_conflicts": 0,
+      "raw_visible_only": true,
+      "player_coordinate_disagreements": 0,
+      "player_missingness_disagreements": 0,
+      "ball_coordinate_disagreements": 0,
+      "ball_missingness_disagreements": 0,
+      "within_list_coordinate_disagreements": 0,
+      "within_list_missingness_disagreements": 0
+    },
+    "feature_sha256": "3d5eabd2f977222735313a94370eaa065c5cba9ea38da1ead37a22735f4b1b6c",
+    "seconds": 19.3749813750037
+  },
+  {
+    "match": "3840",
+    "status": "pass",
+    "frames": 155415,
+    "known_labels": 155415,
+    "known_fraction": 1.0,
+    "natural_missing_graded": 103081,
+    "corrupted_missing_graded": 127195,
+    "label_by_natural_observation": {
+      "H": {
+        "visible": 20430,
+        "missing": 16599
+      },
+      "A": {
+        "visible": 28669,
+        "missing": 17094
+      },
+      "D": {
+        "visible": 3235,
+        "missing": 69388
+      },
+      "X": {
+        "visible": 0,
+        "missing": 0
+      }
+    },
+    "counts": {
+      "records": 187312,
+      "unique_frames": 186313,
+      "duplicate_records": 999,
+      "player_conflicts": 0,
+      "ball_conflicts": 0,
+      "event_association_only_duplicates": 57,
+      "within_list_repeats": 0,
+      "state_assertion_conflicts": 0,
+      "owner_assertion_conflicts": 0,
+      "raw_visible_only": true,
+      "player_coordinate_disagreements": 0,
+      "player_missingness_disagreements": 0,
+      "ball_coordinate_disagreements": 0,
+      "ball_missingness_disagreements": 0,
+      "within_list_coordinate_disagreements": 0,
+      "within_list_missingness_disagreements": 0
+    },
+    "feature_sha256": "e6bcf6ebb9ff016cda3e189cb98ece52a2b6716c9991f170ad414fb982dc31cb",
+    "seconds": 20.271038124978077
+  },
+  {
+    "match": "3841",
+    "status": "pass",
+    "frames": 158972,
+    "known_labels": 158972,
+    "known_fraction": 1.0,
+    "natural_missing_graded": 103233,
+    "corrupted_missing_graded": 127736,
+    "label_by_natural_observation": {
+      "H": {
+        "visible": 30730,
+        "missing": 19233
+      },
+      "A": {
+        "visible": 19088,
+        "missing": 14066
+      },
+      "D": {
+        "visible": 5921,
+        "missing": 69934
+      },
+      "X": {
+        "visible": 0,
+        "missing": 0
+      }
+    },
+    "counts": {
+      "records": 191422,
+      "unique_frames": 190577,
+      "duplicate_records": 845,
+      "player_conflicts": 0,
+      "ball_conflicts": 0,
+      "event_association_only_duplicates": 63,
+      "within_list_repeats": 0,
+      "state_assertion_conflicts": 0,
+      "owner_assertion_conflicts": 0,
+      "raw_visible_only": true,
+      "player_coordinate_disagreements": 0,
+      "player_missingness_disagreements": 0,
+      "ball_coordinate_disagreements": 0,
+      "ball_missingness_disagreements": 0,
+      "within_list_coordinate_disagreements": 0,
+      "within_list_missingness_disagreements": 0
+    },
+    "feature_sha256": "63db61a80e7ff472bbd04a4170b42b57e817bb117e444d7ad3a97de8a0ba532d",
+    "seconds": 20.837506459007272
+  },
+  {
+    "match": "3842",
+    "status": "pass",
+    "frames": 145345,
+    "known_labels": 145345,
+    "known_fraction": 1.0,
+    "natural_missing_graded": 73849,
+    "corrupted_missing_graded": 98479,
+    "label_by_natural_observation": {
+      "H": {
+        "visible": 36249,
+        "missing": 15475
+      },
+      "A": {
+        "visible": 29414,
+        "missing": 11341
+      },
+      "D": {
+        "visible": 5833,
+        "missing": 47033
+      },
+      "X": {
+        "visible": 0,
+        "missing": 0
+      }
+    },
+    "counts": {
+      "records": 174743,
+      "unique_frames": 174242,
+      "duplicate_records": 501,
+      "player_conflicts": 0,
+      "ball_conflicts": 0,
+      "event_association_only_duplicates": 35,
+      "within_list_repeats": 0,
+      "state_assertion_conflicts": 0,
+      "owner_assertion_conflicts": 0,
+      "raw_visible_only": true,
+      "player_coordinate_disagreements": 0,
+      "player_missingness_disagreements": 0,
+      "ball_coordinate_disagreements": 0,
+      "ball_missingness_disagreements": 0,
+      "within_list_coordinate_disagreements": 0,
+      "within_list_missingness_disagreements": 0
+    },
+    "feature_sha256": "f1daaf063d0c3a0abce9fd0ff4e10239dc9be61f48d84ab48a02b7dca4e3d9d1",
+    "seconds": 20.735161916993093
+  },
+  {
+    "match": "3843",
+    "status": "pass",
+    "frames": 154715,
+    "known_labels": 154715,
+    "known_fraction": 1.0,
+    "natural_missing_graded": 96505,
+    "corrupted_missing_graded": 118086,
+    "label_by_natural_observation": {
+      "H": {
+        "visible": 33429,
+        "missing": 19840
+      },
+      "A": {
+        "visible": 19271,
+        "missing": 14518
+      },
+      "D": {
+        "visible": 5510,
+        "missing": 62147
+      },
+      "X": {
+        "visible": 0,
+        "missing": 0
+      }
+    },
+    "counts": {
+      "records": 186143,
+      "unique_frames": 185474,
+      "duplicate_records": 669,
+      "player_conflicts": 0,
+      "ball_conflicts": 0,
+      "event_association_only_duplicates": 47,
+      "within_list_repeats": 0,
+      "state_assertion_conflicts": 0,
+      "owner_assertion_conflicts": 0,
+      "raw_visible_only": true,
+      "player_coordinate_disagreements": 0,
+      "player_missingness_disagreements": 0,
+      "ball_coordinate_disagreements": 0,
+      "ball_missingness_disagreements": 0,
+      "within_list_coordinate_disagreements": 0,
+      "within_list_missingness_disagreements": 0
+    },
+    "feature_sha256": "2e38447a0deb5c21b025690f3fedec6ccdb668c456478604e5a133fafc5bcb05",
+    "seconds": 20.470816957997158
+  },
+  {
+    "match": "3844",
+    "status": "pass",
+    "frames": 154410,
+    "known_labels": 154410,
+    "known_fraction": 1.0,
+    "natural_missing_graded": 108526,
+    "corrupted_missing_graded": 126512,
+    "label_by_natural_observation": {
+      "H": {
+        "visible": 26358,
+        "missing": 17302
+      },
+      "A": {
+        "visible": 15441,
+        "missing": 15917
+      },
+      "D": {
+        "visible": 4085,
+        "missing": 75307
+      },
+      "X": {
+        "visible": 0,
+        "missing": 0
+      }
+    },
+    "counts": {
+      "records": 186028,
+      "unique_frames": 185108,
+      "duplicate_records": 920,
+      "player_conflicts": 0,
+      "ball_conflicts": 0,
+      "event_association_only_duplicates": 72,
+      "within_list_repeats": 0,
+      "state_assertion_conflicts": 0,
+      "owner_assertion_conflicts": 0,
+      "raw_visible_only": true,
+      "player_coordinate_disagreements": 0,
+      "player_missingness_disagreements": 0,
+      "ball_coordinate_disagreements": 0,
+      "ball_missingness_disagreements": 0,
+      "within_list_coordinate_disagreements": 0,
+      "within_list_missingness_disagreements": 0
+    },
+    "feature_sha256": "f90f9e9869e4a30de973347ff47bd66fb899afb929ee481b9e0ae802286cc43d",
+    "seconds": 20.215842334000627
+  },
+  {
+    "match": "3845",
+    "status": "pass",
+    "frames": 148608,
+    "known_labels": 148608,
+    "known_fraction": 1.0,
+    "natural_missing_graded": 68768,
+    "corrupted_missing_graded": 97448,
+    "label_by_natural_observation": {
+      "H": {
+        "visible": 47784,
+        "missing": 10618
+      },
+      "A": {
+        "visible": 28178,
+        "missing": 14693
+      },
+      "D": {
+        "visible": 3878,
+        "missing": 43457
+      },
+      "X": {
+        "visible": 0,
+        "missing": 0
+      }
+    },
+    "counts": {
+      "records": 178621,
+      "unique_frames": 178153,
+      "duplicate_records": 468,
+      "player_conflicts": 0,
+      "ball_conflicts": 0,
+      "event_association_only_duplicates": 32,
+      "within_list_repeats": 0,
+      "state_assertion_conflicts": 0,
+      "owner_assertion_conflicts": 0,
+      "raw_visible_only": true,
+      "player_coordinate_disagreements": 0,
+      "player_missingness_disagreements": 0,
+      "ball_coordinate_disagreements": 0,
+      "ball_missingness_disagreements": 0,
+      "within_list_coordinate_disagreements": 0,
+      "within_list_missingness_disagreements": 0
+    },
+    "feature_sha256": "691f59e4d0a78ffe91d09fcd0863d39dbebc0f42ceddd6bb77aa967d2e90ab88",
+    "seconds": 19.67094941699179
+  },
+  {
+    "match": "3846",
+    "status": "pass",
+    "frames": 148506,
+    "known_labels": 148506,
+    "known_fraction": 1.0,
+    "natural_missing_graded": 89784,
+    "corrupted_missing_graded": 107634,
+    "label_by_natural_observation": {
+      "H": {
+        "visible": 17921,
+        "missing": 12593
+      },
+      "A": {
+        "visible": 34833,
+        "missing": 14080
+      },
+      "D": {
+        "visible": 5968,
+        "missing": 63111
+      },
+      "X": {
+        "visible": 0,
+        "missing": 0
+      }
+    },
+    "counts": {
+      "records": 178658,
+      "unique_frames": 178030,
+      "duplicate_records": 628,
+      "player_conflicts": 0,
+      "ball_conflicts": 0,
+      "event_association_only_duplicates": 46,
+      "within_list_repeats": 0,
+      "state_assertion_conflicts": 0,
+      "owner_assertion_conflicts": 0,
+      "raw_visible_only": true,
+      "player_coordinate_disagreements": 0,
+      "player_missingness_disagreements": 0,
+      "ball_coordinate_disagreements": 0,
+      "ball_missingness_disagreements": 0,
+      "within_list_coordinate_disagreements": 0,
+      "within_list_missingness_disagreements": 0
+    },
+    "feature_sha256": "bbde1de81bddb67aa22f85762fee998233dc6b4f624d599fbc8ed1d3fb11ac66",
+    "seconds": 19.709009792015422
+  },
+  {
+    "match": "3847",
+    "status": "pass",
+    "frames": 160440,
+    "known_labels": 160440,
+    "known_fraction": 1.0,
+    "natural_missing_graded": 97935,
+    "corrupted_missing_graded": 122799,
+    "label_by_natural_observation": {
+      "H": {
+        "visible": 26587,
+        "missing": 19215
+      },
+      "A": {
+        "visible": 29523,
+        "missing": 18016
+      },
+      "D": {
+        "visible": 6395,
+        "missing": 60704
+      },
+      "X": {
+        "visible": 0,
+        "missing": 0
+      }
+    },
+    "counts": {
+      "records": 193219,
+      "unique_frames": 192338,
+      "duplicate_records": 881,
+      "player_conflicts": 0,
+      "ball_conflicts": 0,
+      "event_association_only_duplicates": 63,
+      "within_list_repeats": 0,
+      "state_assertion_conflicts": 0,
+      "owner_assertion_conflicts": 0,
+      "raw_visible_only": true,
+      "player_coordinate_disagreements": 0,
+      "player_missingness_disagreements": 0,
+      "ball_coordinate_disagreements": 0,
+      "ball_missingness_disagreements": 0,
+      "within_list_coordinate_disagreements": 0,
+      "within_list_missingness_disagreements": 0
+    },
+    "feature_sha256": "fd66f41cf9bdfbfe335494f4fca2d4306887b0980147e6c82289990d16ac33a9",
+    "seconds": 21.27988699998241
+  },
+  {
+    "match": "3848",
+    "status": "pass",
+    "frames": 147070,
+    "known_labels": 147070,
+    "known_fraction": 1.0,
+    "natural_missing_graded": 86081,
+    "corrupted_missing_graded": 109583,
+    "label_by_natural_observation": {
+      "H": {
+        "visible": 14222,
+        "missing": 17919
+      },
+      "A": {
+        "visible": 39682,
+        "missing": 20252
+      },
+      "D": {
+        "visible": 7085,
+        "missing": 47910
+      },
+      "X": {
+        "visible": 0,
+        "missing": 0
+      }
+    },
+    "counts": {
+      "records": 177440,
+      "unique_frames": 176309,
+      "duplicate_records": 1131,
+      "player_conflicts": 0,
+      "ball_conflicts": 0,
+      "event_association_only_duplicates": 79,
+      "within_list_repeats": 0,
+      "state_assertion_conflicts": 0,
+      "owner_assertion_conflicts": 0,
+      "raw_visible_only": true,
+      "player_coordinate_disagreements": 0,
+      "player_missingness_disagreements": 0,
+      "ball_coordinate_disagreements": 0,
+      "ball_missingness_disagreements": 0,
+      "within_list_coordinate_disagreements": 0,
+      "within_list_missingness_disagreements": 0
+    },
+    "feature_sha256": "54bc22c31d5ab52704c4ddfb6e8d0b9652659ea16922dd1d85f9bf75ede2db1d",
+    "seconds": 21.060380417009583
+  },
+  {
+    "match": "3849",
+    "status": "pass",
+    "frames": 157421,
+    "known_labels": 157421,
+    "known_fraction": 1.0,
+    "natural_missing_graded": 95682,
+    "corrupted_missing_graded": 124706,
+    "label_by_natural_observation": {
+      "H": {
+        "visible": 19150,
+        "missing": 13673
+      },
+      "A": {
+        "visible": 38508,
+        "missing": 16206
+      },
+      "D": {
+        "visible": 4081,
+        "missing": 65803
+      },
+      "X": {
+        "visible": 0,
+        "missing": 0
+      }
+    },
+    "counts": {
+      "records": 189266,
+      "unique_frames": 188718,
+      "duplicate_records": 548,
+      "player_conflicts": 0,
+      "ball_conflicts": 0,
+      "event_association_only_duplicates": 40,
+      "within_list_repeats": 0,
+      "state_assertion_conflicts": 0,
+      "owner_assertion_conflicts": 0,
+      "raw_visible_only": true,
+      "player_coordinate_disagreements": 0,
+      "player_missingness_disagreements": 0,
+      "ball_coordinate_disagreements": 0,
+      "ball_missingness_disagreements": 0,
+      "within_list_coordinate_disagreements": 0,
+      "within_list_missingness_disagreements": 0
+    },
+    "feature_sha256": "00adb7bb4555cdb145b70d9f2c29067b9f724a01cfe7dec4e7f4579a1a52dce9",
+    "seconds": 20.725576124998042
+  },
+  {
+    "match": "3850",
+    "status": "pass",
+    "frames": 148680,
+    "known_labels": 148447,
+    "known_fraction": 0.9984328759752489,
+    "natural_missing_graded": 70264,
+    "corrupted_missing_graded": 98797,
+    "label_by_natural_observation": {
+      "H": {
+        "visible": 17238,
+        "missing": 13270
+      },
+      "A": {
+        "visible": 57186,
+        "missing": 14311
+      },
+      "D": {
+        "visible": 3759,
+        "missing": 42683
+      },
+      "X": {
+        "visible": 46,
+        "missing": 187
+      }
+    },
+    "counts": {
+      "records": 178934,
+      "unique_frames": 178240,
+      "duplicate_records": 694,
+      "player_conflicts": 0,
+      "ball_conflicts": 0,
+      "event_association_only_duplicates": 48,
+      "within_list_repeats": 0,
+      "state_assertion_conflicts": 0,
+      "owner_assertion_conflicts": 0,
+      "raw_visible_only": true,
+      "player_coordinate_disagreements": 0,
+      "player_missingness_disagreements": 0,
+      "ball_coordinate_disagreements": 0,
+      "ball_missingness_disagreements": 0,
+      "within_list_coordinate_disagreements": 0,
+      "within_list_missingness_disagreements": 0
+    },
+    "feature_sha256": "ad086e75ba38dcd9f6d065b5cdbfa189cfa26b2a70a77067810f4c20e1b999cb",
+    "seconds": 19.999361250025686
+  },
+  {
+    "match": "3851",
+    "status": "pass",
+    "frames": 155747,
+    "known_labels": 155747,
+    "known_fraction": 1.0,
+    "natural_missing_graded": 110474,
+    "corrupted_missing_graded": 130051,
+    "label_by_natural_observation": {
+      "H": {
+        "visible": 11908,
+        "missing": 17800
+      },
+      "A": {
+        "visible": 23853,
+        "missing": 20799
+      },
+      "D": {
+        "visible": 9512,
+        "missing": 71875
+      },
+      "X": {
+        "visible": 0,
+        "missing": 0
+      }
+    },
+    "counts": {
+      "records": 187629,
+      "unique_frames": 186711,
+      "duplicate_records": 918,
+      "player_conflicts": 0,
+      "ball_conflicts": 0,
+      "event_association_only_duplicates": 70,
+      "within_list_repeats": 0,
+      "state_assertion_conflicts": 0,
+      "owner_assertion_conflicts": 0,
+      "raw_visible_only": true,
+      "player_coordinate_disagreements": 0,
+      "player_missingness_disagreements": 0,
+      "ball_coordinate_disagreements": 0,
+      "ball_missingness_disagreements": 0,
+      "within_list_coordinate_disagreements": 0,
+      "within_list_missingness_disagreements": 0
+    },
+    "feature_sha256": "3ccf05d3ef2f0d8b102051ded00f2cce5f2cd1e62aa452c15ee25aa0aafc7594",
+    "seconds": 21.90316283298307
+  },
+  {
+    "match": "3852",
+    "status": "pass",
+    "frames": 146907,
+    "known_labels": 146907,
+    "known_fraction": 1.0,
+    "natural_missing_graded": 70312,
+    "corrupted_missing_graded": 100809,
+    "label_by_natural_observation": {
+      "H": {
+        "visible": 34991,
+        "missing": 18042
+      },
+      "A": {
+        "visible": 37902,
+        "missing": 13907
+      },
+      "D": {
+        "visible": 3702,
+        "missing": 38363
+      },
+      "X": {
+        "visible": 0,
+        "missing": 0
+      }
+    },
+    "counts": {
+      "records": 176720,
+      "unique_frames": 176114,
+      "duplicate_records": 606,
+      "player_conflicts": 0,
+      "ball_conflicts": 0,
+      "event_association_only_duplicates": 42,
+      "within_list_repeats": 0,
+      "state_assertion_conflicts": 0,
+      "owner_assertion_conflicts": 0,
+      "raw_visible_only": true,
+      "player_coordinate_disagreements": 0,
+      "player_missingness_disagreements": 0,
+      "ball_coordinate_disagreements": 0,
+      "ball_missingness_disagreements": 0,
+      "within_list_coordinate_disagreements": 0,
+      "within_list_missingness_disagreements": 0
+    },
+    "feature_sha256": "c8b1169dc6e4d5a523aa9e6b309cd658948ede30369b46201ebccaa2f0393b78",
+    "seconds": 19.889434875018196
+  },
+  {
+    "match": "3853",
+    "status": "pass",
+    "frames": 148495,
+    "known_labels": 148072,
+    "known_fraction": 0.9971514192397051,
+    "natural_missing_graded": 87749,
+    "corrupted_missing_graded": 113232,
+    "label_by_natural_observation": {
+      "H": {
+        "visible": 33781,
+        "missing": 13617
+      },
+      "A": {
+        "visible": 19607,
+        "missing": 14336
+      },
+      "D": {
+        "visible": 6935,
+        "missing": 59796
+      },
+      "X": {
+        "visible": 286,
+        "missing": 137
+      }
+    },
+    "counts": {
+      "records": 178676,
+      "unique_frames": 178018,
+      "duplicate_records": 658,
+      "player_conflicts": 0,
+      "ball_conflicts": 0,
+      "event_association_only_duplicates": 48,
+      "within_list_repeats": 0,
+      "state_assertion_conflicts": 0,
+      "owner_assertion_conflicts": 0,
+      "raw_visible_only": true,
+      "player_coordinate_disagreements": 0,
+      "player_missingness_disagreements": 0,
+      "ball_coordinate_disagreements": 0,
+      "ball_missingness_disagreements": 0,
+      "within_list_coordinate_disagreements": 0,
+      "within_list_missingness_disagreements": 0
+    },
+    "feature_sha256": "e4c8bd7f53fc4d4327c0953573490791ac35813e81ea0312342a00449d5f5b66",
+    "seconds": 19.747042625007452
+  },
+  {
+    "match": "3854",
+    "status": "pass",
+    "frames": 147346,
+    "known_labels": 147346,
+    "known_fraction": 1.0,
+    "natural_missing_graded": 67552,
+    "corrupted_missing_graded": 103247,
+    "label_by_natural_observation": {
+      "H": {
+        "visible": 9954,
+        "missing": 9805
+      },
+      "A": {
+        "visible": 67783,
+        "missing": 18673
+      },
+      "D": {
+        "visible": 2057,
+        "missing": 39074
+      },
+      "X": {
+        "visible": 0,
+        "missing": 0
+      }
+    },
+    "counts": {
+      "records": 177231,
+      "unique_frames": 176642,
+      "duplicate_records": 589,
+      "player_conflicts": 0,
+      "ball_conflicts": 0,
+      "event_association_only_duplicates": 41,
+      "within_list_repeats": 0,
+      "state_assertion_conflicts": 0,
+      "owner_assertion_conflicts": 0,
+      "raw_visible_only": true,
+      "player_coordinate_disagreements": 0,
+      "player_missingness_disagreements": 0,
+      "ball_coordinate_disagreements": 0,
+      "ball_missingness_disagreements": 0,
+      "within_list_coordinate_disagreements": 0,
+      "within_list_missingness_disagreements": 0
+    },
+    "feature_sha256": "46c95989b643adcd2b1c94fd7ab70796bbec1904a1e6fd4b56f659f5440f8081",
+    "seconds": 20.06528570901719
+  },
+  {
+    "match": "3855",
+    "status": "pass",
+    "frames": 151554,
+    "known_labels": 151554,
+    "known_fraction": 1.0,
+    "natural_missing_graded": 83425,
+    "corrupted_missing_graded": 112255,
+    "label_by_natural_observation": {
+      "H": {
+        "visible": 18364,
+        "missing": 13786
+      },
+      "A": {
+        "visible": 46041,
+        "missing": 18637
+      },
+      "D": {
+        "visible": 3724,
+        "missing": 51002
+      },
+      "X": {
+        "visible": 0,
+        "missing": 0
+      }
+    },
+    "counts": {
+      "records": 182443,
+      "unique_frames": 181685,
+      "duplicate_records": 758,
+      "player_conflicts": 0,
+      "ball_conflicts": 0,
+      "event_association_only_duplicates": 54,
+      "within_list_repeats": 0,
+      "state_assertion_conflicts": 0,
+      "owner_assertion_conflicts": 0,
+      "raw_visible_only": true,
+      "player_coordinate_disagreements": 0,
+      "player_missingness_disagreements": 0,
+      "ball_coordinate_disagreements": 0,
+      "ball_missingness_disagreements": 0,
+      "within_list_coordinate_disagreements": 0,
+      "within_list_missingness_disagreements": 0
+    },
+    "feature_sha256": "27bd9c7cfcf2dcc146c6321b6cc00159862be45bcde1e56788d3296e9649291c",
+    "seconds": 20.34760962499422
+  },
+  {
+    "match": "3856",
+    "status": "pass",
+    "frames": 161678,
+    "known_labels": 161678,
+    "known_fraction": 1.0,
+    "natural_missing_graded": 106625,
+    "corrupted_missing_graded": 128247,
+    "label_by_natural_observation": {
+      "H": {
+        "visible": 27408,
+        "missing": 17187
+      },
+      "A": {
+        "visible": 21644,
+        "missing": 17111
+      },
+      "D": {
+        "visible": 6001,
+        "missing": 72327
+      },
+      "X": {
+        "visible": 0,
+        "missing": 0
+      }
+    },
+    "counts": {
+      "records": 194552,
+      "unique_frames": 193822,
+      "duplicate_records": 730,
+      "player_conflicts": 0,
+      "ball_conflicts": 0,
+      "event_association_only_duplicates": 56,
+      "within_list_repeats": 0,
+      "state_assertion_conflicts": 0,
+      "owner_assertion_conflicts": 0,
+      "raw_visible_only": true,
+      "player_coordinate_disagreements": 0,
+      "player_missingness_disagreements": 0,
+      "ball_coordinate_disagreements": 0,
+      "ball_missingness_disagreements": 0,
+      "within_list_coordinate_disagreements": 0,
+      "within_list_missingness_disagreements": 0
+    },
+    "feature_sha256": "ea74e895166fe5759edad932808c6814d9de0304a8557c91ba4457ccc628b351",
+    "seconds": 21.394239040993853
+  },
+  {
+    "match": "3857",
+    "status": "pass",
+    "frames": 148595,
+    "known_labels": 148595,
+    "known_fraction": 1.0,
+    "natural_missing_graded": 86779,
+    "corrupted_missing_graded": 112776,
+    "label_by_natural_observation": {
+      "H": {
+        "visible": 21070,
+        "missing": 16448
+      },
+      "A": {
+        "visible": 36292,
+        "missing": 17380
+      },
+      "D": {
+        "visible": 4454,
+        "missing": 52951
+      },
+      "X": {
+        "visible": 0,
+        "missing": 0
+      }
+    },
+    "counts": {
+      "records": 178778,
+      "unique_frames": 178138,
+      "duplicate_records": 640,
+      "player_conflicts": 0,
+      "ball_conflicts": 0,
+      "event_association_only_duplicates": 46,
+      "within_list_repeats": 0,
+      "state_assertion_conflicts": 0,
+      "owner_assertion_conflicts": 0,
+      "raw_visible_only": true,
+      "player_coordinate_disagreements": 0,
+      "player_missingness_disagreements": 0,
+      "ball_coordinate_disagreements": 0,
+      "ball_missingness_disagreements": 0,
+      "within_list_coordinate_disagreements": 0,
+      "within_list_missingness_disagreements": 0
+    },
+    "feature_sha256": "63533641c34e6a8c250c9454ede6288428f36a18c9f0c69aaa36d0446868c7de",
+    "seconds": 19.337118791998364
+  },
+  {
+    "match": "3858",
+    "status": "pass",
+    "frames": 154874,
+    "known_labels": 154874,
+    "known_fraction": 1.0,
+    "natural_missing_graded": 97982,
+    "corrupted_missing_graded": 115601,
+    "label_by_natural_observation": {
+      "H": {
+        "visible": 26034,
+        "missing": 18670
+      },
+      "A": {
+        "visible": 24281,
+        "missing": 15886
+      },
+      "D": {
+        "visible": 6577,
+        "missing": 63426
+      },
+      "X": {
+        "visible": 0,
+        "missing": 0
+      }
+    },
+    "counts": {
+      "records": 186415,
+      "unique_frames": 185665,
+      "duplicate_records": 750,
+      "player_conflicts": 0,
+      "ball_conflicts": 0,
+      "event_association_only_duplicates": 54,
+      "within_list_repeats": 0,
+      "state_assertion_conflicts": 0,
+      "owner_assertion_conflicts": 0,
+      "raw_visible_only": true,
+      "player_coordinate_disagreements": 0,
+      "player_missingness_disagreements": 0,
+      "ball_coordinate_disagreements": 0,
+      "ball_missingness_disagreements": 0,
+      "within_list_coordinate_disagreements": 0,
+      "within_list_missingness_disagreements": 0
+    },
+    "feature_sha256": "c1afe49755448614ff4fa131b6ab3b6b021c127e27925f8cab6ca85546be0f07",
+    "seconds": 20.308927042002324
+  },
+  {
+    "match": "3859",
+    "status": "pass",
+    "frames": 156001,
+    "known_labels": 156001,
+    "known_fraction": 1.0,
+    "natural_missing_graded": 101233,
+    "corrupted_missing_graded": 129679,
+    "label_by_natural_observation": {
+      "H": {
+        "visible": 17216,
+        "missing": 15485
+      },
+      "A": {
+        "visible": 32050,
+        "missing": 22817
+      },
+      "D": {
+        "visible": 5502,
+        "missing": 62931
+      },
+      "X": {
+        "visible": 0,
+        "missing": 0
+      }
+    },
+    "counts": {
+      "records": 187750,
+      "unique_frames": 187017,
+      "duplicate_records": 733,
+      "player_conflicts": 0,
+      "ball_conflicts": 0,
+      "event_association_only_duplicates": 53,
+      "within_list_repeats": 0,
+      "state_assertion_conflicts": 0,
+      "owner_assertion_conflicts": 0,
+      "raw_visible_only": true,
+      "player_coordinate_disagreements": 0,
+      "player_missingness_disagreements": 0,
+      "ball_coordinate_disagreements": 0,
+      "ball_missingness_disagreements": 0,
+      "within_list_coordinate_disagreements": 0,
+      "within_list_missingness_disagreements": 0
+    },
+    "feature_sha256": "7f829450c27c02b54dd3a47246d62000a4c4bf79b1dec1d3e7ee271e7317f3ca",
+    "seconds": 20.13841808302095
+  }
+]
