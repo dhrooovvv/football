@@ -53,7 +53,7 @@ workspace:
   experiments_dir: experiments/
   to_human_dir: to_human/
   paper_dir: paper/
-next_action: Await compatible external-data access; do not repeat blocked tests. Sealed/final-score gates November13 only.
+next_action: PFF official release intake and full native-label coverage audit; then strict25Hz adapter before Track1modelling. Sealed closed untilNovember13.
 
 approved_gap_review:
   status: complete_stopped
@@ -91,12 +91,31 @@ extension:
   track: data_access_pending
 
 extension_checkpoint:
-  track1: audit_complete_evaluations_unavailable
+  track1: official_pff_native_audit_complete_adapter_pending
   track2: stopped_three_consecutive_failures
   track3: bounded_nested_search_rejected
-  track4: deferred_prerequisite1_unavailable
+  track4: deferred_until_track1_evaluations_complete
   track2_failures: 3
   track3_failures: 1
   fresh_clone_raw_reproduction: true
   thread_count: 1
   independent_transfer_evidence: unavailable
+
+pff_intake:
+  archive: /Users/dhruv/Downloads/Archive 2.zip
+  matches: 64
+  native_fps: 29.97
+  prospective_training: 48
+  prospective_transfer_holdout: 16
+  split: experiments/pff-intake/split.json
+  state_coverage: provisional_native_presence_only_duplicates_unresolved
+  modelling_executed: false
+
+pff_native_audit:
+  completed: true
+  matches: 64
+  delivered_standard_records: 11707598
+  nonincreasing_frame_matches: 64
+  extra_event_code: CLK
+  model_admission: false
+  next_action: Preregister strict duplicate_CLK_native_time_and25Hz_adapter_validation.

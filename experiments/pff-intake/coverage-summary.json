@@ -1,0 +1,17 @@
+{
+  "matches_audited": 64,
+  "standard_time_delivered_records": 11707598,
+  "all_matches_have_H_A_D": true,
+  "provisional_annotated_record_fraction": 1.0,
+  "matches_with_nonincreasing_frame_IDs": 64,
+  "nonincreasing_count_range": [
+    54,
+    1245
+  ],
+  "additional_event_codes_requiring_review": [
+    "CLK"
+  ],
+  "coverage_is_not_validated_model_labels": true,
+  "admitted_for_modelling": false,
+  "blocker": "Repeated frame IDs include conflicting payloads; resolve documented duplicate/timing/state semantics plus25Hz resampling before modelling."
+}

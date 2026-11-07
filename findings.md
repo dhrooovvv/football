@@ -61,3 +61,11 @@ Freeze moved toNovember13, delivery14–16. Production9core unaugmented16 remain
 
 ## Extension checkpoint — J029
 Track1 additional labelled data/transfer unavailable; Track2 threefails→stop (joint calibration notrun); Track3 nested4-setting policy fails (1/5, corrupted median-.000035). Track4 deferred because prerequisite1 incomplete. Production original9core unaugmented16 remains; CPUthread1 verified and fresh-clone raw external rebuild/cleanenvCSV identical. New freezeNovember13,delivery14–16. No sealed evaluation/finalpublicscore yet; no independent transfer evidence.
+
+
+## J030 official PFF received
+Missing-file blocker changed: user delivered64PFFmatches with matchingmetadata/rosters and specs; hashes and prospective48/16provider split committed before modelling. Native29.97Hz, embeddedstate/team events; coverageaudit and25Hzadapter validation pending. No model results yet; transfer evidence remains unmeasured. Existing production16unchanged; sealed untouched.
+
+
+## J031 PFF native audit complete, adapter pending
+64streams,11707598standard-time deliveredrecords,H/A/D present all64under provisional rule. All64non-increasingIDs; firstprobe849duplicates incl401conflictingpayloads, no backwardframe/time steps. Need explicitduplicate/CLK/time/resampling contract before training.48/16prospective split/hash locked; no PFFperformance results or production change.

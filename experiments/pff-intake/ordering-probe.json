@@ -1,0 +1,10 @@
+{
+  "match": "10502",
+  "diagnostic": "single-match deeper ordering audit, no rows emitted",
+  "counts": {
+    "duplicate_frame_keys": 849,
+    "identical_payload_duplicate": 448,
+    "conflicting_payload_duplicate": 401
+  },
+  "policy": "Do not silently drop conflicting duplicates, sort or carry labels across reordered frames before an explicit adapter protocol."
+}

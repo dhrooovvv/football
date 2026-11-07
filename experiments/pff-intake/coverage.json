@@ -1,0 +1,1436 @@
+[
+  {
+    "match": "10502",
+    "all_frames": 176818,
+    "standard_time_frames": 176818,
+    "state_counts": {
+      "H": 46528,
+      "D": 62116,
+      "A": 68174
+    },
+    "annotated_fraction": 1.0,
+    "nonmonotonic_frame_count": 849,
+    "event_type_occurrences": {
+      "FIRSTKICKOFF": 1,
+      "OTB": 55969,
+      "OUT": 81,
+      "SECONDKICKOFF": 1,
+      "SUB": 7,
+      "END": 1
+    },
+    "unknown_event_types": []
+  },
+  {
+    "match": "10503",
+    "all_frames": 179620,
+    "standard_time_frames": 179620,
+    "state_counts": {
+      "A": 46672,
+      "D": 60329,
+      "H": 72619
+    },
+    "annotated_fraction": 1.0,
+    "nonmonotonic_frame_count": 823,
+    "event_type_occurrences": {
+      "FIRSTKICKOFF": 1,
+      "OTB": 54625,
+      "OUT": 97,
+      "SECONDKICKOFF": 1,
+      "SUB": 10
+    },
+    "unknown_event_types": []
+  },
+  {
+    "match": "10504",
+    "all_frames": 182612,
+    "standard_time_frames": 182612,
+    "state_counts": {
+      "H": 61759,
+      "A": 53351,
+      "D": 67502
+    },
+    "annotated_fraction": 1.0,
+    "nonmonotonic_frame_count": 604,
+    "event_type_occurrences": {
+      "FIRSTKICKOFF": 1,
+      "OTB": 56990,
+      "OUT": 82,
+      "SECONDKICKOFF": 1,
+      "SUB": 9,
+      "END": 1
+    },
+    "unknown_event_types": []
+  },
+  {
+    "match": "10505",
+    "all_frames": 176158,
+    "standard_time_frames": 176158,
+    "state_counts": {
+      "A": 43319,
+      "H": 63672,
+      "D": 69167
+    },
+    "annotated_fraction": 1.0,
+    "nonmonotonic_frame_count": 613,
+    "event_type_occurrences": {
+      "FIRSTKICKOFF": 1,
+      "OTB": 49915,
+      "OUT": 91,
+      "SECONDKICKOFF": 1,
+      "SUB": 7,
+      "END": 1
+    },
+    "unknown_event_types": []
+  },
+  {
+    "match": "10506",
+    "all_frames": 234265,
+    "standard_time_frames": 174705,
+    "state_counts": {
+      "A": 62016,
+      "H": 45957,
+      "D": 66732
+    },
+    "annotated_fraction": 1.0,
+    "nonmonotonic_frame_count": 1245,
+    "event_type_occurrences": {
+      "FIRSTKICKOFF": 1,
+      "OTB": 66867,
+      "OUT": 122,
+      "END": 3,
+      "SECONDKICKOFF": 1,
+      "SUB": 8,
+      "THIRDKICKOFF": 1,
+      "OFF": 1,
+      "ON": 1,
+      "FOURTHKICKOFF": 1
+    },
+    "unknown_event_types": []
+  },
+  {
+    "match": "10507",
+    "all_frames": 178414,
+    "standard_time_frames": 178414,
+    "state_counts": {
+      "A": 53361,
+      "H": 59773,
+      "D": 65280
+    },
+    "annotated_fraction": 1.0,
+    "nonmonotonic_frame_count": 442,
+    "event_type_occurrences": {
+      "FIRSTKICKOFF": 1,
+      "OTB": 53820,
+      "OUT": 83,
+      "SECONDKICKOFF": 1,
+      "SUB": 8
+    },
+    "unknown_event_types": []
+  },
+  {
+    "match": "10508",
+    "all_frames": 235670,
+    "standard_time_frames": 173602,
+    "state_counts": {
+      "A": 74953,
+      "D": 66456,
+      "H": 32193
+    },
+    "annotated_fraction": 1.0,
+    "nonmonotonic_frame_count": 796,
+    "event_type_occurrences": {
+      "FIRSTKICKOFF": 1,
+      "OTB": 66904,
+      "OUT": 135,
+      "G": 1,
+      "END": 2,
+      "SECONDKICKOFF": 1,
+      "SUB": 27,
+      "OFF": 2,
+      "ON": 2,
+      "THIRDKICKOFF": 1,
+      "FOURTHKICKOFF": 1
+    },
+    "unknown_event_types": []
+  },
+  {
+    "match": "10509",
+    "all_frames": 176708,
+    "standard_time_frames": 176708,
+    "state_counts": {
+      "A": 53684,
+      "H": 47563,
+      "D": 75461
+    },
+    "annotated_fraction": 1.0,
+    "nonmonotonic_frame_count": 407,
+    "event_type_occurrences": {
+      "FIRSTKICKOFF": 1,
+      "OTB": 47541,
+      "OUT": 103,
+      "OFF": 1,
+      "ON": 1,
+      "SECONDKICKOFF": 1,
+      "SUB": 9,
+      "END": 1
+    },
+    "unknown_event_types": []
+  },
+  {
+    "match": "10510",
+    "all_frames": 171128,
+    "standard_time_frames": 171128,
+    "state_counts": {
+      "H": 60955,
+      "D": 50437,
+      "A": 59736
+    },
+    "annotated_fraction": 1.0,
+    "nonmonotonic_frame_count": 411,
+    "event_type_occurrences": {
+      "FIRSTKICKOFF": 1,
+      "OTB": 61948,
+      "OUT": 81,
+      "END": 1,
+      "SECONDKICKOFF": 1,
+      "SUB": 21
+    },
+    "unknown_event_types": []
+  },
+  {
+    "match": "10511",
+    "all_frames": 196098,
+    "standard_time_frames": 196098,
+    "state_counts": {
+      "H": 63844,
+      "A": 45958,
+      "D": 86296
+    },
+    "annotated_fraction": 1.0,
+    "nonmonotonic_frame_count": 630,
+    "event_type_occurrences": {
+      "FIRSTKICKOFF": 1,
+      "OTB": 52692,
+      "OUT": 99,
+      "OFF": 1,
+      "ON": 1,
+      "END": 1,
+      "SECONDKICKOFF": 1,
+      "SUB": 6
+    },
+    "unknown_event_types": []
+  },
+  {
+    "match": "10512",
+    "all_frames": 181528,
+    "standard_time_frames": 181528,
+    "state_counts": {
+      "A": 73772,
+      "H": 30617,
+      "D": 77139
+    },
+    "annotated_fraction": 1.0,
+    "nonmonotonic_frame_count": 643,
+    "event_type_occurrences": {
+      "FIRSTKICKOFF": 1,
+      "OTB": 49447,
+      "OUT": 107,
+      "G": 1,
+      "SECONDKICKOFF": 1,
+      "SUB": 27,
+      "OFF": 3,
+      "ON": 2,
+      "END": 1
+    },
+    "unknown_event_types": []
+  },
+  {
+    "match": "10513",
+    "all_frames": 190254,
+    "standard_time_frames": 190254,
+    "state_counts": {
+      "A": 46972,
+      "H": 62977,
+      "D": 80305
+    },
+    "annotated_fraction": 1.0,
+    "nonmonotonic_frame_count": 847,
+    "event_type_occurrences": {
+      "FIRSTKICKOFF": 1,
+      "OTB": 54685,
+      "OUT": 85,
+      "SECONDKICKOFF": 1,
+      "SUB": 4,
+      "END": 1
+    },
+    "unknown_event_types": []
+  },
+  {
+    "match": "10514",
+    "all_frames": 178822,
+    "standard_time_frames": 178822,
+    "state_counts": {
+      "A": 62115,
+      "H": 45529,
+      "D": 71178
+    },
+    "annotated_fraction": 1.0,
+    "nonmonotonic_frame_count": 382,
+    "event_type_occurrences": {
+      "FIRSTKICKOFF": 2,
+      "OTB": 54076,
+      "OUT": 88,
+      "SECONDKICKOFF": 1,
+      "SUB": 8
+    },
+    "unknown_event_types": []
+  },
+  {
+    "match": "10515",
+    "all_frames": 178997,
+    "standard_time_frames": 178997,
+    "state_counts": {
+      "A": 65960,
+      "H": 47043,
+      "D": 65994
+    },
+    "annotated_fraction": 1.0,
+    "nonmonotonic_frame_count": 520,
+    "event_type_occurrences": {
+      "FIRSTKICKOFF": 1,
+      "OTB": 55333,
+      "OUT": 94,
+      "SUB": 31,
+      "G": 1,
+      "END": 1,
+      "SECONDKICKOFF": 1,
+      "OFF": 1
+    },
+    "unknown_event_types": []
+  },
+  {
+    "match": "10516",
+    "all_frames": 176882,
+    "standard_time_frames": 176882,
+    "state_counts": {
+      "H": 54232,
+      "D": 69177,
+      "A": 53473
+    },
+    "annotated_fraction": 1.0,
+    "nonmonotonic_frame_count": 519,
+    "event_type_occurrences": {
+      "FIRSTKICKOFF": 1,
+      "OTB": 50011,
+      "OUT": 96,
+      "SECONDKICKOFF": 1,
+      "SUB": 8,
+      "OFF": 2,
+      "END": 1
+    },
+    "unknown_event_types": []
+  },
+  {
+    "match": "10517",
+    "all_frames": 255182,
+    "standard_time_frames": 191643,
+    "state_counts": {
+      "A": 50145,
+      "D": 90729,
+      "H": 50769
+    },
+    "annotated_fraction": 1.0,
+    "nonmonotonic_frame_count": 940,
+    "event_type_occurrences": {
+      "FIRSTKICKOFF": 1,
+      "OTB": 60421,
+      "OUT": 141,
+      "OFF": 3,
+      "ON": 3,
+      "SUB": 12,
+      "SECONDKICKOFF": 1,
+      "THIRDKICKOFF": 1,
+      "END": 1,
+      "FOURTHKICKOFF": 1
+    },
+    "unknown_event_types": []
+  },
+  {
+    "match": "3812",
+    "all_frames": 185746,
+    "standard_time_frames": 185746,
+    "state_counts": {
+      "A": 52829,
+      "H": 49022,
+      "D": 83895
+    },
+    "annotated_fraction": 1.0,
+    "nonmonotonic_frame_count": 889,
+    "event_type_occurrences": {
+      "FIRSTKICKOFF": 1,
+      "OTB": 46947,
+      "OUT": 111,
+      "SECONDKICKOFF": 1,
+      "OFF": 2,
+      "SUB": 8,
+      "END": 1
+    },
+    "unknown_event_types": []
+  },
+  {
+    "match": "3813",
+    "all_frames": 211146,
+    "standard_time_frames": 211146,
+    "state_counts": {
+      "A": 25782,
+      "H": 76494,
+      "D": 108870
+    },
+    "annotated_fraction": 1.0,
+    "nonmonotonic_frame_count": 559,
+    "event_type_occurrences": {
+      "FIRSTKICKOFF": 1,
+      "OTB": 45737,
+      "OUT": 90,
+      "SUB": 8,
+      "G": 1,
+      "SECONDKICKOFF": 1,
+      "OFF": 3,
+      "ON": 2,
+      "END": 1
+    },
+    "unknown_event_types": []
+  },
+  {
+    "match": "3814",
+    "all_frames": 181037,
+    "standard_time_frames": 181037,
+    "state_counts": {
+      "H": 46565,
+      "A": 49300,
+      "D": 85172
+    },
+    "annotated_fraction": 1.0,
+    "nonmonotonic_frame_count": 594,
+    "event_type_occurrences": {
+      "FIRSTKICKOFF": 1,
+      "OTB": 42440,
+      "OUT": 101,
+      "OFF": 2,
+      "ON": 2,
+      "END": 1,
+      "SECONDKICKOFF": 1,
+      "SUB": 6
+    },
+    "unknown_event_types": []
+  },
+  {
+    "match": "3815",
+    "all_frames": 187981,
+    "standard_time_frames": 187981,
+    "state_counts": {
+      "H": 62831,
+      "A": 45685,
+      "D": 79465
+    },
+    "annotated_fraction": 1.0,
+    "nonmonotonic_frame_count": 57,
+    "event_type_occurrences": {
+      "FIRSTKICKOFF": 1,
+      "OTB": 48449,
+      "OUT": 102,
+      "SECONDKICKOFF": 1,
+      "SUB": 8,
+      "OFF": 4,
+      "ON": 4
+    },
+    "unknown_event_types": []
+  },
+  {
+    "match": "3816",
+    "all_frames": 199012,
+    "standard_time_frames": 199012,
+    "state_counts": {
+      "A": 32083,
+      "H": 67133,
+      "D": 99796
+    },
+    "annotated_fraction": 1.0,
+    "nonmonotonic_frame_count": 870,
+    "event_type_occurrences": {
+      "FIRSTKICKOFF": 1,
+      "OTB": 45810,
+      "OUT": 108,
+      "SUB": 116,
+      "SECONDKICKOFF": 1,
+      "OFF": 1,
+      "ON": 1,
+      "END": 1
+    },
+    "unknown_event_types": []
+  },
+  {
+    "match": "3817",
+    "all_frames": 183903,
+    "standard_time_frames": 183903,
+    "state_counts": {
+      "H": 62703,
+      "D": 75961,
+      "A": 45239
+    },
+    "annotated_fraction": 1.0,
+    "nonmonotonic_frame_count": 54,
+    "event_type_occurrences": {
+      "FIRSTKICKOFF": 1,
+      "OTB": 47016,
+      "OUT": 104,
+      "SUB": 9,
+      "SECONDKICKOFF": 1,
+      "G": 1
+    },
+    "unknown_event_types": []
+  },
+  {
+    "match": "3818",
+    "all_frames": 179305,
+    "standard_time_frames": 179305,
+    "state_counts": {
+      "H": 61026,
+      "A": 41365,
+      "D": 76914
+    },
+    "annotated_fraction": 1.0,
+    "nonmonotonic_frame_count": 721,
+    "event_type_occurrences": {
+      "FIRSTKICKOFF": 1,
+      "OTB": 48801,
+      "OUT": 106,
+      "OFF": 3,
+      "ON": 3,
+      "SECONDKICKOFF": 1,
+      "SUB": 41
+    },
+    "unknown_event_types": []
+  },
+  {
+    "match": "3819",
+    "all_frames": 186361,
+    "standard_time_frames": 186361,
+    "state_counts": {
+      "H": 73419,
+      "D": 65062,
+      "A": 47880
+    },
+    "annotated_fraction": 1.0,
+    "nonmonotonic_frame_count": 438,
+    "event_type_occurrences": {
+      "FIRSTKICKOFF": 2,
+      "OTB": 58431,
+      "OUT": 87,
+      "OFF": 2,
+      "SUB": 14,
+      "END": 1,
+      "SECONDKICKOFF": 1,
+      "ON": 1
+    },
+    "unknown_event_types": []
+  },
+  {
+    "match": "3820",
+    "all_frames": 176774,
+    "standard_time_frames": 176774,
+    "state_counts": {
+      "H": 39804,
+      "A": 67332,
+      "D": 69638
+    },
+    "annotated_fraction": 1.0,
+    "nonmonotonic_frame_count": 673,
+    "event_type_occurrences": {
+      "FIRSTKICKOFF": 1,
+      "OTB": 50734,
+      "OUT": 95,
+      "OFF": 2,
+      "ON": 2,
+      "SECONDKICKOFF": 1,
+      "SUB": 7,
+      "END": 1
+    },
+    "unknown_event_types": []
+  },
+  {
+    "match": "3821",
+    "all_frames": 187348,
+    "standard_time_frames": 187348,
+    "state_counts": {
+      "H": 77984,
+      "A": 31029,
+      "D": 78335
+    },
+    "annotated_fraction": 1.0,
+    "nonmonotonic_frame_count": 56,
+    "event_type_occurrences": {
+      "FIRSTKICKOFF": 1,
+      "OTB": 45286,
+      "OUT": 109,
+      "END": 2,
+      "SECONDKICKOFF": 1,
+      "SUB": 9
+    },
+    "unknown_event_types": []
+  },
+  {
+    "match": "3822",
+    "all_frames": 186008,
+    "standard_time_frames": 186008,
+    "state_counts": {
+      "H": 95093,
+      "A": 28112,
+      "D": 62803
+    },
+    "annotated_fraction": 1.0,
+    "nonmonotonic_frame_count": 549,
+    "event_type_occurrences": {
+      "FIRSTKICKOFF": 1,
+      "OTB": 58706,
+      "OUT": 90,
+      "END": 2,
+      "SECONDKICKOFF": 1,
+      "SUB": 22
+    },
+    "unknown_event_types": []
+  },
+  {
+    "match": "3823",
+    "all_frames": 180340,
+    "standard_time_frames": 180340,
+    "state_counts": {
+      "A": 53137,
+      "H": 55610,
+      "D": 71593
+    },
+    "annotated_fraction": 1.0,
+    "nonmonotonic_frame_count": 493,
+    "event_type_occurrences": {
+      "FIRSTKICKOFF": 1,
+      "OTB": 50491,
+      "OUT": 106,
+      "SECONDKICKOFF": 1,
+      "CLK": 2,
+      "SUB": 7
+    },
+    "unknown_event_types": [
+      "CLK"
+    ]
+  },
+  {
+    "match": "3824",
+    "all_frames": 178975,
+    "standard_time_frames": 178975,
+    "state_counts": {
+      "H": 55242,
+      "A": 59804,
+      "D": 63929
+    },
+    "annotated_fraction": 1.0,
+    "nonmonotonic_frame_count": 667,
+    "event_type_occurrences": {
+      "FIRSTKICKOFF": 2,
+      "OTB": 56397,
+      "OUT": 86,
+      "OFF": 1,
+      "ON": 1,
+      "END": 2,
+      "SECONDKICKOFF": 1,
+      "SUB": 22
+    },
+    "unknown_event_types": []
+  },
+  {
+    "match": "3825",
+    "all_frames": 178734,
+    "standard_time_frames": 178734,
+    "state_counts": {
+      "A": 48361,
+      "H": 57210,
+      "D": 73163
+    },
+    "annotated_fraction": 1.0,
+    "nonmonotonic_frame_count": 1003,
+    "event_type_occurrences": {
+      "FIRSTKICKOFF": 1,
+      "OTB": 46548,
+      "OUT": 94,
+      "G": 1,
+      "SECONDKICKOFF": 1,
+      "SUB": 7,
+      "OFF": 2,
+      "ON": 2
+    },
+    "unknown_event_types": []
+  },
+  {
+    "match": "3826",
+    "all_frames": 184287,
+    "standard_time_frames": 184287,
+    "state_counts": {
+      "H": 65200,
+      "A": 41338,
+      "D": 77749
+    },
+    "annotated_fraction": 1.0,
+    "nonmonotonic_frame_count": 681,
+    "event_type_occurrences": {
+      "FIRSTKICKOFF": 1,
+      "OTB": 50535,
+      "OUT": 85,
+      "END": 1,
+      "SECONDKICKOFF": 1,
+      "SUB": 37
+    },
+    "unknown_event_types": []
+  },
+  {
+    "match": "3827",
+    "all_frames": 177109,
+    "standard_time_frames": 177109,
+    "state_counts": {
+      "H": 62890,
+      "D": 68951,
+      "A": 45268
+    },
+    "annotated_fraction": 1.0,
+    "nonmonotonic_frame_count": 633,
+    "event_type_occurrences": {
+      "FIRSTKICKOFF": 1,
+      "OTB": 50792,
+      "OUT": 89,
+      "END": 1,
+      "SECONDKICKOFF": 1,
+      "SUB": 10,
+      "G": 1
+    },
+    "unknown_event_types": []
+  },
+  {
+    "match": "3828",
+    "all_frames": 192530,
+    "standard_time_frames": 192530,
+    "state_counts": {
+      "H": 59380,
+      "D": 92252,
+      "A": 40898
+    },
+    "annotated_fraction": 1.0,
+    "nonmonotonic_frame_count": 957,
+    "event_type_occurrences": {
+      "FIRSTKICKOFF": 2,
+      "OTB": 42272,
+      "OUT": 101,
+      "OFF": 3,
+      "ON": 2,
+      "SECONDKICKOFF": 1,
+      "G": 2,
+      "SUB": 9,
+      "END": 1
+    },
+    "unknown_event_types": []
+  },
+  {
+    "match": "3829",
+    "all_frames": 185952,
+    "standard_time_frames": 185952,
+    "state_counts": {
+      "H": 49913,
+      "A": 57574,
+      "D": 78465
+    },
+    "annotated_fraction": 1.0,
+    "nonmonotonic_frame_count": 597,
+    "event_type_occurrences": {
+      "FIRSTKICKOFF": 1,
+      "OTB": 49419,
+      "OUT": 106,
+      "OFF": 2,
+      "ON": 2,
+      "END": 2,
+      "SECONDKICKOFF": 1,
+      "SUB": 9
+    },
+    "unknown_event_types": []
+  },
+  {
+    "match": "3830",
+    "all_frames": 181021,
+    "standard_time_frames": 181021,
+    "state_counts": {
+      "A": 47213,
+      "H": 58148,
+      "D": 75660
+    },
+    "annotated_fraction": 1.0,
+    "nonmonotonic_frame_count": 921,
+    "event_type_occurrences": {
+      "FIRSTKICKOFF": 1,
+      "OTB": 45916,
+      "OUT": 106,
+      "OFF": 1,
+      "SECONDKICKOFF": 1,
+      "G": 1,
+      "SUB": 6
+    },
+    "unknown_event_types": []
+  },
+  {
+    "match": "3831",
+    "all_frames": 173190,
+    "standard_time_frames": 173190,
+    "state_counts": {
+      "H": 60133,
+      "A": 51565,
+      "D": 61492
+    },
+    "annotated_fraction": 1.0,
+    "nonmonotonic_frame_count": 615,
+    "event_type_occurrences": {
+      "FIRSTKICKOFF": 1,
+      "OTB": 57027,
+      "OUT": 80,
+      "SECONDKICKOFF": 1,
+      "SUB": 7,
+      "END": 1
+    },
+    "unknown_event_types": []
+  },
+  {
+    "match": "3832",
+    "all_frames": 183291,
+    "standard_time_frames": 183291,
+    "state_counts": {
+      "A": 44105,
+      "H": 59796,
+      "D": 79390
+    },
+    "annotated_fraction": 1.0,
+    "nonmonotonic_frame_count": 1124,
+    "event_type_occurrences": {
+      "FIRSTKICKOFF": 1,
+      "OTB": 41202,
+      "OUT": 123,
+      "OFF": 3,
+      "ON": 3,
+      "SECONDKICKOFF": 1,
+      "SUB": 62
+    },
+    "unknown_event_types": []
+  },
+  {
+    "match": "3833",
+    "all_frames": 193235,
+    "standard_time_frames": 193235,
+    "state_counts": {
+      "H": 36249,
+      "A": 59563,
+      "D": 97423
+    },
+    "annotated_fraction": 1.0,
+    "nonmonotonic_frame_count": 654,
+    "event_type_occurrences": {
+      "FIRSTKICKOFF": 1,
+      "OTB": 41218,
+      "OUT": 115,
+      "OFF": 4,
+      "ON": 4,
+      "G": 3,
+      "END": 1,
+      "SECONDKICKOFF": 1,
+      "SUB": 10
+    },
+    "unknown_event_types": []
+  },
+  {
+    "match": "3834",
+    "all_frames": 180875,
+    "standard_time_frames": 180875,
+    "state_counts": {
+      "A": 56754,
+      "D": 67796,
+      "H": 56325
+    },
+    "annotated_fraction": 1.0,
+    "nonmonotonic_frame_count": 677,
+    "event_type_occurrences": {
+      "FIRSTKICKOFF": 1,
+      "OTB": 54185,
+      "OUT": 92,
+      "G": 1,
+      "SECONDKICKOFF": 1,
+      "SUB": 14,
+      "OFF": 1,
+      "ON": 1,
+      "END": 1
+    },
+    "unknown_event_types": []
+  },
+  {
+    "match": "3835",
+    "all_frames": 184106,
+    "standard_time_frames": 184106,
+    "state_counts": {
+      "A": 41052,
+      "D": 85698,
+      "H": 57356
+    },
+    "annotated_fraction": 1.0,
+    "nonmonotonic_frame_count": 794,
+    "event_type_occurrences": {
+      "FIRSTKICKOFF": 1,
+      "OTB": 45404,
+      "OUT": 111,
+      "OFF": 1,
+      "ON": 1,
+      "SUB": 9,
+      "SECONDKICKOFF": 1
+    },
+    "unknown_event_types": []
+  },
+  {
+    "match": "3836",
+    "all_frames": 175496,
+    "standard_time_frames": 175496,
+    "state_counts": {
+      "A": 49652,
+      "H": 60877,
+      "D": 64967
+    },
+    "annotated_fraction": 1.0,
+    "nonmonotonic_frame_count": 549,
+    "event_type_occurrences": {
+      "FIRSTKICKOFF": 1,
+      "OTB": 53009,
+      "OUT": 90,
+      "END": 2,
+      "SECONDKICKOFF": 1,
+      "OFF": 1,
+      "ON": 1,
+      "SUB": 7
+    },
+    "unknown_event_types": []
+  },
+  {
+    "match": "3837",
+    "all_frames": 178577,
+    "standard_time_frames": 178577,
+    "state_counts": {
+      "H": 66245,
+      "A": 39475,
+      "D": 72857
+    },
+    "annotated_fraction": 1.0,
+    "nonmonotonic_frame_count": 605,
+    "event_type_occurrences": {
+      "FIRSTKICKOFF": 1,
+      "OTB": 48855,
+      "OUT": 91,
+      "SECONDKICKOFF": 1,
+      "SUB": 10,
+      "END": 1
+    },
+    "unknown_event_types": []
+  },
+  {
+    "match": "3838",
+    "all_frames": 182311,
+    "standard_time_frames": 182311,
+    "state_counts": {
+      "H": 51826,
+      "A": 59209,
+      "D": 71276
+    },
+    "annotated_fraction": 1.0,
+    "nonmonotonic_frame_count": 607,
+    "event_type_occurrences": {
+      "FIRSTKICKOFF": 1,
+      "OTB": 53245,
+      "OUT": 100,
+      "END": 2,
+      "SECONDKICKOFF": 1,
+      "SUB": 8,
+      "OFF": 1,
+      "ON": 1
+    },
+    "unknown_event_types": []
+  },
+  {
+    "match": "3839",
+    "all_frames": 176979,
+    "standard_time_frames": 176979,
+    "state_counts": {
+      "H": 62508,
+      "A": 41446,
+      "D": 73025
+    },
+    "annotated_fraction": 1.0,
+    "nonmonotonic_frame_count": 576,
+    "event_type_occurrences": {
+      "FIRSTKICKOFF": 1,
+      "OTB": 46466,
+      "OUT": 97,
+      "OFF": 1,
+      "ON": 1,
+      "SECONDKICKOFF": 1,
+      "SUB": 9
+    },
+    "unknown_event_types": []
+  },
+  {
+    "match": "3840",
+    "all_frames": 187312,
+    "standard_time_frames": 187312,
+    "state_counts": {
+      "A": 55510,
+      "H": 44740,
+      "D": 87062
+    },
+    "annotated_fraction": 1.0,
+    "nonmonotonic_frame_count": 999,
+    "event_type_occurrences": {
+      "FIRSTKICKOFF": 1,
+      "OTB": 44071,
+      "OUT": 97,
+      "OFF": 3,
+      "ON": 3,
+      "G": 1,
+      "END": 1,
+      "SECONDKICKOFF": 1,
+      "SUB": 10
+    },
+    "unknown_event_types": []
+  },
+  {
+    "match": "3841",
+    "all_frames": 191422,
+    "standard_time_frames": 191422,
+    "state_counts": {
+      "H": 60355,
+      "D": 90933,
+      "A": 40134
+    },
+    "annotated_fraction": 1.0,
+    "nonmonotonic_frame_count": 845,
+    "event_type_occurrences": {
+      "FIRSTKICKOFF": 1,
+      "OTB": 45116,
+      "OUT": 100,
+      "SECONDKICKOFF": 1,
+      "OFF": 2,
+      "ON": 2,
+      "SUB": 8
+    },
+    "unknown_event_types": []
+  },
+  {
+    "match": "3842",
+    "all_frames": 174743,
+    "standard_time_frames": 174743,
+    "state_counts": {
+      "A": 49025,
+      "H": 62343,
+      "D": 63375
+    },
+    "annotated_fraction": 1.0,
+    "nonmonotonic_frame_count": 501,
+    "event_type_occurrences": {
+      "FIRSTKICKOFF": 1,
+      "OTB": 54961,
+      "OUT": 96,
+      "SECONDKICKOFF": 1,
+      "SUB": 9
+    },
+    "unknown_event_types": []
+  },
+  {
+    "match": "3843",
+    "all_frames": 186143,
+    "standard_time_frames": 186143,
+    "state_counts": {
+      "A": 40837,
+      "H": 64203,
+      "D": 81103
+    },
+    "annotated_fraction": 1.0,
+    "nonmonotonic_frame_count": 669,
+    "event_type_occurrences": {
+      "FIRSTKICKOFF": 1,
+      "OTB": 47727,
+      "OUT": 99,
+      "SUB": 10,
+      "SECONDKICKOFF": 1,
+      "OFF": 1,
+      "ON": 1,
+      "G": 1,
+      "END": 1
+    },
+    "unknown_event_types": []
+  },
+  {
+    "match": "3844",
+    "all_frames": 186028,
+    "standard_time_frames": 186028,
+    "state_counts": {
+      "H": 52737,
+      "A": 38110,
+      "D": 95181
+    },
+    "annotated_fraction": 1.0,
+    "nonmonotonic_frame_count": 920,
+    "event_type_occurrences": {
+      "FIRSTKICKOFF": 1,
+      "OTB": 39552,
+      "OUT": 105,
+      "OFF": 4,
+      "ON": 4,
+      "SECONDKICKOFF": 1,
+      "SUB": 5,
+      "END": 1
+    },
+    "unknown_event_types": []
+  },
+  {
+    "match": "3845",
+    "all_frames": 178621,
+    "standard_time_frames": 178621,
+    "state_counts": {
+      "H": 70271,
+      "D": 56742,
+      "A": 51608
+    },
+    "annotated_fraction": 1.0,
+    "nonmonotonic_frame_count": 468,
+    "event_type_occurrences": {
+      "FIRSTKICKOFF": 1,
+      "OTB": 59257,
+      "OUT": 82,
+      "OFF": 2,
+      "ON": 9,
+      "SECONDKICKOFF": 1,
+      "SUB": 10
+    },
+    "unknown_event_types": []
+  },
+  {
+    "match": "3846",
+    "all_frames": 178658,
+    "standard_time_frames": 178658,
+    "state_counts": {
+      "H": 36829,
+      "A": 59025,
+      "D": 82804
+    },
+    "annotated_fraction": 1.0,
+    "nonmonotonic_frame_count": 628,
+    "event_type_occurrences": {
+      "FIRSTKICKOFF": 1,
+      "OTB": 43382,
+      "OUT": 87,
+      "OFF": 2,
+      "ON": 2,
+      "SUB": 9,
+      "SECONDKICKOFF": 1
+    },
+    "unknown_event_types": []
+  },
+  {
+    "match": "3847",
+    "all_frames": 193219,
+    "standard_time_frames": 193219,
+    "state_counts": {
+      "H": 55351,
+      "D": 80442,
+      "A": 57426
+    },
+    "annotated_fraction": 1.0,
+    "nonmonotonic_frame_count": 881,
+    "event_type_occurrences": {
+      "FIRSTKICKOFF": 1,
+      "OTB": 52942,
+      "OUT": 94,
+      "OFF": 3,
+      "ON": 1,
+      "SUB": 8,
+      "SECONDKICKOFF": 1,
+      "END": 1
+    },
+    "unknown_event_types": []
+  },
+  {
+    "match": "3848",
+    "all_frames": 177440,
+    "standard_time_frames": 177440,
+    "state_counts": {
+      "A": 72332,
+      "H": 39173,
+      "D": 65935
+    },
+    "annotated_fraction": 1.0,
+    "nonmonotonic_frame_count": 1131,
+    "event_type_occurrences": {
+      "FIRSTKICKOFF": 1,
+      "OTB": 48909,
+      "OUT": 107,
+      "SECONDKICKOFF": 1,
+      "SUB": 29
+    },
+    "unknown_event_types": []
+  },
+  {
+    "match": "3849",
+    "all_frames": 189266,
+    "standard_time_frames": 189266,
+    "state_counts": {
+      "H": 39603,
+      "A": 65884,
+      "D": 83779
+    },
+    "annotated_fraction": 1.0,
+    "nonmonotonic_frame_count": 548,
+    "event_type_occurrences": {
+      "FIRSTKICKOFF": 1,
+      "OTB": 48685,
+      "OUT": 120,
+      "SECONDKICKOFF": 1,
+      "OFF": 1,
+      "ON": 1,
+      "SUB": 8
+    },
+    "unknown_event_types": []
+  },
+  {
+    "match": "3850",
+    "all_frames": 178934,
+    "standard_time_frames": 178934,
+    "state_counts": {
+      "H": 36947,
+      "D": 55901,
+      "A": 86086
+    },
+    "annotated_fraction": 1.0,
+    "nonmonotonic_frame_count": 694,
+    "event_type_occurrences": {
+      "FIRSTKICKOFF": 1,
+      "OTB": 61410,
+      "OUT": 78,
+      "OFF": 1,
+      "ON": 1,
+      "END": 2,
+      "SECONDKICKOFF": 1,
+      "CLK": 2,
+      "SUB": 20
+    },
+    "unknown_event_types": [
+      "CLK"
+    ]
+  },
+  {
+    "match": "3851",
+    "all_frames": 187629,
+    "standard_time_frames": 187629,
+    "state_counts": {
+      "A": 54060,
+      "H": 35997,
+      "D": 97572
+    },
+    "annotated_fraction": 1.0,
+    "nonmonotonic_frame_count": 918,
+    "event_type_occurrences": {
+      "FIRSTKICKOFF": 1,
+      "OTB": 36873,
+      "OUT": 132,
+      "OFF": 2,
+      "ON": 2,
+      "SUB": 13,
+      "END": 1,
+      "SECONDKICKOFF": 1
+    },
+    "unknown_event_types": []
+  },
+  {
+    "match": "3852",
+    "all_frames": 176720,
+    "standard_time_frames": 176720,
+    "state_counts": {
+      "H": 63920,
+      "D": 50427,
+      "A": 62373
+    },
+    "annotated_fraction": 1.0,
+    "nonmonotonic_frame_count": 606,
+    "event_type_occurrences": {
+      "FIRSTKICKOFF": 2,
+      "OTB": 61981,
+      "OUT": 99,
+      "END": 1,
+      "SECONDKICKOFF": 1,
+      "SUB": 8,
+      "G": 1
+    },
+    "unknown_event_types": []
+  },
+  {
+    "match": "3853",
+    "all_frames": 178676,
+    "standard_time_frames": 178676,
+    "state_counts": {
+      "A": 41079,
+      "D": 80390,
+      "H": 57207
+    },
+    "annotated_fraction": 1.0,
+    "nonmonotonic_frame_count": 658,
+    "event_type_occurrences": {
+      "FIRSTKICKOFF": 1,
+      "OTB": 44402,
+      "OUT": 103,
+      "END": 1,
+      "SECONDKICKOFF": 1,
+      "CLK": 2,
+      "SUB": 10,
+      "G": 1
+    },
+    "unknown_event_types": [
+      "CLK"
+    ]
+  },
+  {
+    "match": "3854",
+    "all_frames": 177231,
+    "standard_time_frames": 177231,
+    "state_counts": {
+      "A": 103951,
+      "D": 49306,
+      "H": 23974
+    },
+    "annotated_fraction": 1.0,
+    "nonmonotonic_frame_count": 589,
+    "event_type_occurrences": {
+      "FIRSTKICKOFF": 1,
+      "OTB": 62377,
+      "OUT": 68,
+      "SECONDKICKOFF": 1,
+      "SUB": 7
+    },
+    "unknown_event_types": []
+  },
+  {
+    "match": "3855",
+    "all_frames": 182443,
+    "standard_time_frames": 182443,
+    "state_counts": {
+      "A": 77943,
+      "H": 38893,
+      "D": 65607
+    },
+    "annotated_fraction": 1.0,
+    "nonmonotonic_frame_count": 758,
+    "event_type_occurrences": {
+      "FIRSTKICKOFF": 1,
+      "OTB": 52854,
+      "OUT": 91,
+      "END": 2,
+      "SECONDKICKOFF": 1,
+      "SUB": 21,
+      "G": 2
+    },
+    "unknown_event_types": []
+  },
+  {
+    "match": "3856",
+    "all_frames": 194552,
+    "standard_time_frames": 194552,
+    "state_counts": {
+      "A": 46897,
+      "H": 53756,
+      "D": 93899
+    },
+    "annotated_fraction": 1.0,
+    "nonmonotonic_frame_count": 730,
+    "event_type_occurrences": {
+      "FIRSTKICKOFF": 1,
+      "OTB": 43633,
+      "OUT": 114,
+      "SUB": 9,
+      "END": 1,
+      "SECONDKICKOFF": 1
+    },
+    "unknown_event_types": []
+  },
+  {
+    "match": "3857",
+    "all_frames": 178778,
+    "standard_time_frames": 178778,
+    "state_counts": {
+      "H": 45343,
+      "D": 68815,
+      "A": 64620
+    },
+    "annotated_fraction": 1.0,
+    "nonmonotonic_frame_count": 640,
+    "event_type_occurrences": {
+      "FIRSTKICKOFF": 1,
+      "OTB": 49090,
+      "OUT": 88,
+      "END": 2,
+      "SECONDKICKOFF": 1,
+      "OFF": 4,
+      "SUB": 9,
+      "ON": 1
+    },
+    "unknown_event_types": []
+  },
+  {
+    "match": "3858",
+    "all_frames": 186415,
+    "standard_time_frames": 186415,
+    "state_counts": {
+      "A": 48497,
+      "H": 53990,
+      "D": 83928
+    },
+    "annotated_fraction": 1.0,
+    "nonmonotonic_frame_count": 750,
+    "event_type_occurrences": {
+      "FIRSTKICKOFF": 1,
+      "OTB": 45264,
+      "OUT": 102,
+      "G": 1,
+      "SECONDKICKOFF": 1,
+      "SUB": 36,
+      "OFF": 1,
+      "ON": 1
+    },
+    "unknown_event_types": []
+  },
+  {
+    "match": "3859",
+    "all_frames": 187750,
+    "standard_time_frames": 187750,
+    "state_counts": {
+      "A": 66162,
+      "D": 82041,
+      "H": 39547
+    },
+    "annotated_fraction": 1.0,
+    "nonmonotonic_frame_count": 733,
+    "event_type_occurrences": {
+      "FIRSTKICKOFF": 1,
+      "OTB": 50638,
+      "OUT": 95,
+      "OFF": 4,
+      "ON": 2,
+      "END": 2,
+      "SECONDKICKOFF": 1,
+      "SUB": 8
+    },
+    "unknown_event_types": []
+  }
+]

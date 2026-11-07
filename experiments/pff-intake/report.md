@@ -1,0 +1,19 @@
+# PFF official-release intake — November7
+
+User supplied /Users/dhruv/Downloads/Archive2.zip (filename contains a space before2). Three nested download parts unpacked locally under ignored data/pff/release;64tracking files,64matching metadata and64matching rosters.390release files fingerprinted with SHA256. Extraction streamed files and checked ZIP CRC. The hashes fingerprint the delivery; they are not an independently supplied publisher signature.
+
+All metadata specify29.97Hz. Tracking specification2.2 and event specifications2.4/2.5 included. Embedded tracking game_event includes event type, home_ball and source frame intervals. Candidate state interpretation: OUT/END dead; kickoff/OTB alive; boolean home_ball maps home/away; VID or unestablished state unknown. Never absent-ball=>dead. Full native state coverage audit is in progress. Updated standalone event releases are NOT silently joined to embedded tracking annotations; version/time alignment needs a separate contract.
+
+Prospective split fixed before modelling:48PFFadditional-training,16PFFcross-provider transfer holdout, deterministic SHA256 ordering specified in split.json. Same original5IDSSEdevelopment; both IDSSEsealedmatches excluded from alltraining. No split choice used labels or performance. No PFFmodel trained, no scores produced, no current production change. Admission still requires complete state audit, native-frame/time/missingness validation and conservative29.97→25Hz resampling tests. Provider convention equivalence not established by schema alone.
+
+No explicit general redistribution licence/usage-terms grant identified among delivered file names/documents inspected. User supplied release for local project analysis; do not infer an MIT/CC licence, publish raw release or treat parser code licensing as data licensing. Any separate PFFaccess email/terms should be retained with provenance. This does not require resending the archive.
+
+Current production remains9core+unaugmentedCatBoost+penalty16, CPUthread1. Nov13freeze and14–16delivery remain unchanged. Track2stopped,Track3fixedsearchrejected; new data only reopensTrack1, not retrospective decoder grids. No target public labels, target score, sealed files or hosted competition data involved.
+
+
+## Full-stream audit result
+All64 native streams audited,11707598 standard-time delivered records. All64contain H/A/D under the preregistered provisional event-state rule; provisional annotation presence100%. This is NOT a certification of correct, unique frame labels: all64show non-increasing frame IDs (54–1245occurrences each). Deeper first-match10502 probe found849duplicate(period,frame)keys:448identical selected payloads and401conflicting tracking/event payloads; no backward-frame or backward-period-time steps in that probe. Do not call all64streams unordered based on non-increasing IDs alone; duplicates are the demonstrated cause in the probe.
+
+CLK is an additional observed game-event code requiring documentation review. It was left state-preserving in the provisional audit, not silently assumed an alive/dead event. Audit counts are over delivered records including duplicates, not unique25Hz graded frames. No performance claims, training admission or scores follow from100%presence.
+
+Next: explicit strict adapter protocol for duplicate-update precedence/conflicts, CLK semantics, native timestamps/half resets, conservative unknown handling and29.97→25Hz mapping. Test synthetic duplicate/missing/timing cases, then verify native source-frame and label provenance for all64without performance-driven match replacement. Preserve locked48/16split. Only after contracts pass run the two authorized Track1evaluations. Do not use public labels or target score. No new user approval is needed for routine adapter work already within the plan; keep each experiment preregistered.

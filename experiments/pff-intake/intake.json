@@ -10,5 +10,7 @@
   "manifest_sha256": "b1e5127897f007870056028d3f256393f3ad26889658674bf01873e4ca94a3de",
   "split_sha256": "18d690fa49744f2d560fc8b2d6c8eea7a717267ae2fa992fa1a71c24b748cfdc",
   "training_executed": false,
-  "full_state_coverage_validated": false
+  "full_state_coverage_validated": false,
+  "full_native_stream_audit_completed": true,
+  "adapter_contract_status": "requires_duplicate_CLK_and_resampling_resolution"
 }
