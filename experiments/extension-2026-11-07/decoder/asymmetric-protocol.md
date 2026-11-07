@@ -1,0 +1,2 @@
+# Track2 change2 — separate live and D costs
+Parent still frozen penalty16, gap-age rejected. Single change H<->A cost8, all transitions to/fromD16. No gap age modification, no fitting/search. Same cached CatBoost fold emissions, folds/seeds/budget, clean/fixed target-like masks. Test asymmetry optimizer against exhaustive tiny sequences. Strengthened gate original paired gate plus median corrupted spell gain>=+.01. Commit before execution; no public/sealed/target labels. Failure counter1; reject increments, promotion resets. No long hard min duration.
