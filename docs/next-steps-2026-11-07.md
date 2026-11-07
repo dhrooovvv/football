@@ -29,3 +29,7 @@ Adapter admission64/64(rawVISIBLEonly, no label-conditioned smoothedball), 48/16
 
 ## November8 checkpoint
 OptionalGRUtrack executed as onefixedcandidate and rejected bothgates. DeterministicexternalCSVchecks passed, performancefailed. Allauthorizedboundedtracks nowexercised; no rescuevariants. Preserveproduction9coreunaugmentedCatBoost16. Nextwork is freeze/deliveryreadiness and scheduledNov13sealed/finalcorrectness checks, not automaticfeature/modelsearch.
+
+
+## November8 open-model review checkpoint
+Read-only audit adds TabICLv2 as an untested, permissively licensed pretrained classifier lead. It does not reopen the completed bounded research tracks or change the freeze schedule. Current next action remains delivery/freeze readiness. Any user-authorized new model track would first lock a local CPU/memory/determinism feasibility protocol, followed by the unchanged grouped comparison/gate if feasible. PathCRF pretrained weights are unsuitable for independent comparison without resolving canonical development/sealed-validation overlap. See literature/open-models-review-2026-11-08.md. No performance result or predicted improvement from this review.
