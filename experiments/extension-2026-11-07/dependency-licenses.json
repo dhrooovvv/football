@@ -1,0 +1,152 @@
+[
+  {
+    "package": "catboost",
+    "version": "1.2.10",
+    "declared_license": "Apache License, Version 2.0"
+  },
+  {
+    "package": "contourpy",
+    "version": "1.4.0",
+    "declared_license": "BSD-3-Clause"
+  },
+  {
+    "package": "cycler",
+    "version": "0.12.1",
+    "declared_license": "BSD License"
+  },
+  {
+    "package": "flatbuffers",
+    "version": "25.12.19",
+    "declared_license": "Apache Software License"
+  },
+  {
+    "package": "fonttools",
+    "version": "4.68.0",
+    "declared_license": "MIT"
+  },
+  {
+    "package": "graphviz",
+    "version": "0.21",
+    "declared_license": "MIT"
+  },
+  {
+    "package": "kiwisolver",
+    "version": "1.5.1",
+    "declared_license": "BSD License"
+  },
+  {
+    "package": "matplotlib",
+    "version": "3.11.2",
+    "declared_license": "Python Software Foundation License"
+  },
+  {
+    "package": "narwhals",
+    "version": "2.28.0",
+    "declared_license": "MIT"
+  },
+  {
+    "package": "networkx",
+    "version": "3.7",
+    "declared_license": "BSD-3-Clause"
+  },
+  {
+    "package": "numpy",
+    "version": "2.5.4",
+    "declared_license": "BSD-3-Clause AND 0BSD AND MIT AND Zlib AND CC0-1.0"
+  },
+  {
+    "package": "onnxruntime",
+    "version": "1.31.1",
+    "declared_license": "MIT License"
+  },
+  {
+    "package": "packaging",
+    "version": "26.3",
+    "declared_license": "Apache-2.0 OR BSD-2-Clause"
+  },
+  {
+    "package": "pandas",
+    "version": "3.1.1",
+    "declared_license": "BSD-3-Clause"
+  },
+  {
+    "package": "pillow",
+    "version": "13.0.0",
+    "declared_license": "MIT-CMU"
+  },
+  {
+    "package": "pip",
+    "version": "26.2.1",
+    "declared_license": "MIT"
+  },
+  {
+    "package": "plotly",
+    "version": "7.1.0",
+    "declared_license": "MIT"
+  },
+  {
+    "package": "protobuf",
+    "version": "7.36.2",
+    "declared_license": "3-Clause BSD License"
+  },
+  {
+    "package": "psutil",
+    "version": "7.2.2",
+    "declared_license": "BSD-3-Clause"
+  },
+  {
+    "package": "pymupdf",
+    "version": "2.1",
+    "declared_license": "Dual Licensed - GNU AFFERO GPL 3.0 or Artifex Commercial License"
+  },
+  {
+    "package": "pymupdf4llm",
+    "version": "2.1",
+    "declared_license": "Unspecified; inspect wheel LICENSE"
+  },
+  {
+    "package": "pymupdf_layout",
+    "version": "2.1",
+    "declared_license": "Unspecified; inspect wheel LICENSE"
+  },
+  {
+    "package": "pyparsing",
+    "version": "3.3.3",
+    "declared_license": "MIT"
+  },
+  {
+    "package": "pypdf",
+    "version": "6.21.4",
+    "declared_license": "BSD-3-Clause"
+  },
+  {
+    "package": "python-dateutil",
+    "version": "4.0.0",
+    "declared_license": "BSD-3-Clause"
+  },
+  {
+    "package": "PyYAML",
+    "version": "6.0.3",
+    "declared_license": "MIT License"
+  },
+  {
+    "package": "scipy",
+    "version": "1.18.1",
+    "declared_license": "BSD License"
+  },
+  {
+    "package": "six",
+    "version": "1.17.0",
+    "declared_license": "MIT License"
+  },
+  {
+    "package": "tabulate",
+    "version": "0.10.0",
+    "declared_license": "MIT"
+  },
+  {
+    "package": "tzdata",
+    "version": "2026.6",
+    "declared_license": "Apache-2.0"
+  }
+]
