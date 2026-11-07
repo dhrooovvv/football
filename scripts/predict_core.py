@@ -21,12 +21,12 @@ def main():
  cfg=json.loads(Path('configs/competition.json').read_text());root=Path('data/competition');base=root/'tactical/BAR-ATH_tactical'
  team=load_teams(str(base)+'_atd.xml',46,cfg['home_team'],cfg['away_team']);track=load_atd(str(base)+'_atd.txt',199319,46)
  x,names=features(track,team,cfg['tactical_half_open_blocks'],cfg['pitch_metres'])
- probs=model.predict_proba(x)[:,[list(model.classes_).index(c) for c in ['H','A','D']]]
+ probs=model.predict_proba(x,thread_count=1)[:,[list(model.classes_).index(c) for c in ['H','A','D']]]
  pred=decode(probs,(np.ones((3,3))-np.eye(3))*penalty,cfg['tactical_half_open_blocks'])
  out=a.outdir;out.mkdir(parents=True,exist_ok=True)
  export_labels(out/'candidate.csv',pred,199319)
  reloaded=CatBoostClassifier();reloaded.load_model(str(a.model_path))
- again=reloaded.predict_proba(x)[:,[list(reloaded.classes_).index(c) for c in ['H','A','D']]]
+ again=reloaded.predict_proba(x,thread_count=1)[:,[list(reloaded.classes_).index(c) for c in ['H','A','D']]]
  repeat=decode(again,(np.ones((3,3))-np.eye(3))*penalty,cfg['tactical_half_open_blocks'])
  export_labels(out/'candidate-repeat.csv',repeat,199319)
  assert (out/'candidate.csv').read_bytes()==(out/'candidate-repeat.csv').read_bytes()

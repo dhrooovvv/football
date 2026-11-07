@@ -1,0 +1,12 @@
+{
+  "thread_count": 1,
+  "same_csv_as_promoted_anchor": true,
+  "clean_environment_csv_equal": true,
+  "csv_sha256": "ab253e43f46fc9a7885b689498a220595e78d67ad2a6099a07316e081ca3f815",
+  "hashes": {
+    "scripts/run_core.py": "d8f060c50b33a281e35e369ca4cddce4cb4aa2c901b931acfe125d3b16eb63a4",
+    "scripts/predict_core.py": "5084d7c0431c6b2e90796ce482fb9afbdb23486e43370637279a3fa261e5a685",
+    "models/extension-one-thread/run1.cbm": "5cdf28c21985720375f418cea27cd4a9e5b5bbd7c8194641ebb7a2a834e7164b",
+    "models/extension-one-thread/clean.cbm": "5dbb1d86cd98d4f18a8d589fc072cbd353d99912c1caba613ece9a339dac3b49"
+  }
+}
