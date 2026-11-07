@@ -1,0 +1,8 @@
+{
+  "src/possession/pff.py": "1a304f77614c909e74a20733c3021b82d9379edc3f8b3ea7d6736514653e9930",
+  "src/possession/core.py": "b0f54209e00a595a6d7943c83ab3578481f044f15ddacbf26bad74ab32ac8693",
+  "src/possession/features.py": "efa351988c150316f47b15ffa09dc20174962702e074f404a29a24650f3d3500",
+  "experiments/pff-admission/protocol.md": "2a5b2bfd87ed40ea16fb27bf51bf8affbc9b9b677bf6fd7973f0be4d81bbd483",
+  "experiments/pff-intake/split.json": "18d690fa49744f2d560fc8b2d6c8eea7a717267ae2fa992fa1a71c24b748cfdc",
+  "experiments/pff-intake/release-manifest.json": "b1e5127897f007870056028d3f256393f3ad26889658674bf01873e4ca94a3de"
+}
