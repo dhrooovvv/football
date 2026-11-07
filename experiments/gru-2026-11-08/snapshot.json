@@ -1,0 +1,12 @@
+{
+  "source_hashes": {
+    "experiments/gru-2026-11-08/protocol.md": "d4acc1ee2abb678b4e47d3799405a45ac8c4655028cd1db700b6533312e49a6e",
+    "experiments/gru-2026-11-08/gru_candidate.py": "b1ee5390ec7c818e5dec80e6df9602e202d38ef47979e197ba6dd2ae8401f766",
+    "scripts/run_gru_candidate.py": "73381883860add63fdcc371fc64de04841abc584eb45ab96cb47d39838a0ba55",
+    "experiments/core-development/split.json": "c3ecb1a94f95d12bfc502c92b1eff59911faf88d488289144753c4ce492a7960",
+    "experiments/gru-2026-11-08/environment-lock.txt": "be01d7c4dc058fa80bfedca053851a499538349be99f916f5055dd0dd53bfbd7"
+  },
+  "torch": "2.15.0",
+  "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+  "cpu_only": true
+}
