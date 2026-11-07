@@ -33,9 +33,9 @@ experiments:
   best_value: 0.420564936202867
   selected_candidate: core_penalty16
   consecutive_rejections: 2
-  total_runs: 6
+  total_runs: null # legacy counter retired; see committed experiment protocols/results
   synthetic_contract_runs: 2
-  external_performance_runs: 4
+  external_performance_runs: null # nested fits and comparative candidates are distinct units
   trajectory:
     - {run_id: h1-contracts-001, scope: synthetic_correctness, tests_passed: 9, tests_total: 9, spellF1: null}
     - {run_id: phase1-ingestion-001, scope: input_feature_correctness, tests_passed: 18, tests_total: 18, spellF1: null}
@@ -121,3 +121,20 @@ pff_native_audit:
   next_action: Preregister strict duplicate_CLK_native_time_and25Hz_adapter_validation.
 
 next_step_plan: docs/next-steps-2026-11-07.md
+
+independent_reviews:
+  scientist: docs/review-data-scientist-2026-11-07.md
+  analyst: docs/review-data-analyst-2026-11-07.md
+  recent_gate_arithmetic: confirmed
+  legacy_run_counters: retired_ambiguous_units
+pff_adapter:
+  protocol: experiments/pff-adapter/protocol.md
+  status: implemented_pilot_repeat_verified_full_admission_pending
+  full64_admission: false
+  production_affected: false
+
+review_interpretation_corrections:
+  oracle_repairs: counterfactual_not_upper_bound
+  duration_prior: rejected_implementation_did_not_handle_censoring
+  missing_ball_behavior: nearconstant_dead_on_development_corruption
+  baseline_value_note: no_single_baseline_across_different_corruption_versions

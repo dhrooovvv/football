@@ -73,3 +73,7 @@ Missing-file blocker changed: user delivered64PFFmatches with matchingmetadata/r
 
 ## J032 recommendation
 Prioritize strict PFFadapter contracts→train-more gate→cross-provider diagnostics. Threecontributor/date plan docs/next-steps-2026-11-07.md. More-data benefit unproven; transfer must not select versions. No production change or experiment this planning turn.
+
+
+## J033 adapter and independent reviews
+PFFduplicates are explicitly documented annotation expansion; conflict probe mixed event and tracking changes, not purecoordinateconflict. New conservative adapter/pilot and28tests implemented; full64admission pending. Both requested reviews confirm recent rejection arithmetic; missing-ball model behavior is nearconstantD, counterfactual repair gains are not upperbounds, and rejectedduration model mishandled censoring. No production change or reopening stopped research track. Review docs preserve evidence and priorities.

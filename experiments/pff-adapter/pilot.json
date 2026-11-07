@@ -1,0 +1,25 @@
+{
+  "match": "10502",
+  "frames25Hz": 146785,
+  "label_counts": {
+    "H": 38448,
+    "A": 56518,
+    "D": 51819,
+    "X": 0
+  },
+  "counts": {
+    "records": 176818,
+    "unique_frames": 175969,
+    "duplicate_records": 849,
+    "player_conflicts": 1298,
+    "ball_conflicts": 59,
+    "event_association_only_duplicates": 0
+  },
+  "same_arrays_on_repeat": true,
+  "same_labels_after_stale_owner_fix": true,
+  "source_sha256": "236d0b601f4bba235396f69a52d0824729e0e333c81aa0caf12aefe84d17b008",
+  "training_admission": "pilot_only_full64_pending",
+  "performance_measured": false,
+  "canonical_array_bytes_sha256": "32ba264e9fc04ee0653aa9e23bc9f5fd1cffcdf19cbc4b5b0bf0046b91777495",
+  "diagnostic_counter_note": "player_conflicts/ball_conflicts are provisional consensus-missing counters including missingness, not certified coordinate-only disagreements; association-only counter is not a final classification."
+}
