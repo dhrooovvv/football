@@ -1,7 +1,7 @@
 {
   "scope": "all commits reachable from all local refs; every unique blob read locally; filename/binary/raw-ATD/frame-CSV signatures; no contents reported",
-  "commits_scanned": 27,
-  "unique_blobs_scanned": 186,
+  "commits_scanned": 41,
+  "unique_blobs_scanned": 247,
   "findings": [],
   "limitations": "Signature scan is not proof against arbitrary transformed/embedded derivatives; ordinary narrative aggregates/configuration are intentionally allowed."
 }
