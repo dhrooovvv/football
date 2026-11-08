@@ -1,0 +1,28 @@
+# Independent review: uncapped CPU admission, November 8
+
+Scope: static read-only inspection of protocol, scripts/probe_tabicl_uncapped.py and imported scripts/probe_tabicl.py. No model execution, dataset observations, target/sealed assets or process interruption. This reviewer edited only this document.
+
+## Decision
+No blocking mismatch found. The new wrapper has no programmatic memory ceiling, system-available-memory floor, elapsed-time termination or subprocess timeout. Its loop samples memory and prints observations every30seconds; it never calls terminate/kill. OS resource behavior and user interruption remain outside this claim. The old capped main() exists in the imported module but is not executed: the wrapper directly calls worker('actual').
+
+The imported worker retains CPU device, Torch intra/inter-opthreads1, deterministic algorithms, mkldnnOFF, seed20261106, one estimator, temperature1, AMP/FA3/offload/cacheOFF and local pinned weights with autodownload disabled. Wrapper verifies local weight SHA256 against the prior source record before launch. Context remains the other four development matches, exact parent stride5 thenXfilter; first development match is queried using its first64feature frames, with no heldout label conditioning. H/A/D columns are reordered and normalized in float64. Two fits/predictions must have exactly equal probabilities and identical decoded CSV hashes; worker assertions make wrapper exit-based success consistent with those requirements.
+
+Protocol preserves privacy, sealed/public-label restrictions, unchanged scorer/promotion gate and November13freeze. No target, sealed or PFFholdout path or hosted inference is introduced. Source protocol is committed before execution according to parent record; a scored comparison still requires its own committed supplement after admission.
+
+## Interpretation limits
+This tests resource completion and numerical repeatability, not spellF1. Successful64queries cannot establish full-match throughput or quality; failed OS/runtime execution cannot establish low accuracy. Observed child-process RSS is sampled and does not measure all physical/compressed/swap memory or all system resource costs. No OS-limit bypass or unrestricted hardware capacity is implied. No final admission.json existed at inspection time, so completion, actual-context repeatability and quality remain unmeasured in this review.
+
+Recommendation: let the authorized observational run finish without experiment-imposed resource termination. Interpret final exit/log and repeatability artifacts before any scored supplement; keep production unchanged meanwhile.
+
+## Read-only scored execution design note
+No new runs or match observations were used for this note. Installed public source inspected: `_sklearn/classifier.py` predict_proba/_batch_forward, `_sklearn/preprocessing.py` EnsembleGenerator.transform, `_model/embedding.py`, `_model/learning.py`, `_model/encoders.py` and `_model/layers.py`.
+
+`batch_size=8` divides ensemble members, not query rows. With `kv_cache=False`, each predict_proba call builds train+test arrays and recomputes training-context embeddings and ICL attention. Dense ICL attention has an approximate per-layer arithmetic term proportional to Ntrain*(Ntrain+Nquery). For total Q queries split into k calls, this gives roughly k*Ntrain²+Ntrain*Q rather than Ntrain²+Ntrain*Q for one call, before other stages and implementation effects. This is algorithmic structure, not a measured walltime/memory estimate. A64query call can therefore have a large fixed cost that must not be linearly treated as a cheap per-query rate.
+
+One whole heldout condition per call minimizes recomputation, but increases train+query row activations and memory relative to64query admission. Peak memory for that call is not established by admission, and streaming attention means arithmetic complexity is not necessarily the size of allocated attention memory. A full-match one-call design is thus an untested operational choice, not a demonstrated safe consequence of admission.
+
+Recommended fixed serving choice before any labels/metrics:16,384consecutive query rows per predict_proba call, final remainder shorter, same complete training context in every call. This is a declared compromise, not an optimized chunk-size result: query expansion is about14.4% of the113507row admission context, and context recomputations are up to256times fewer than with64row chunks for a large Q. Actual speedup, peakRSS and finish time remain unknown. No search over chunk sizes, caching, offload, temperatures or blend weights should be performed against development scores.
+
+Fit once per outer fold using exact parent rows; reuse fitted model for clean and targetlike conditions. Keep query order, explicit H/A/D remapping and float64 row normalization. Allocate/save completed probability blocks locally so interrupted inference can resume only from a fingerprint-matched environment/model/context/config. Concatenate all query probabilities before applying penalty16 over full half blocks; never create new Viterbi reset boundaries at query chunks. Parent probabilities must retain identical class/order/half treatment.
+
+Training-only preprocessing and column inducing-point context (`embed_with_test=False`) and train-only ICL keys/values support theoretical per-query independence, but this is not a bitwise chunk-invariance guarantee. Before scoring, a separately committed operational supplement must lock the query chunk, effective options and repeat/save-reload checks. Fixed serving-order repeated probabilities/CSV must pass; a query-chunk change cannot be silently treated as identical numerics. No metric improvement or expected gain is inferable from this design.
