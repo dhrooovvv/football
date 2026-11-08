@@ -109,3 +109,7 @@ Userclosedapps;8.23555GiBbaselineavailable. Same10GiB/3GiBCPUprobe reached7.388G
 
 ## J044 — Uncapped admission authorized
 User explicitly overrode resourcecaps/resourcestop. Protocola0f5dd3 committed; identicalCPUadmission runningwithoutmemory/timekillthresholds. No resultsyet. Modelgate/privacy/CPU/splits/freezeunchanged.
+
+
+## J044 result — M3Pro full-context completion/repeatability
+Uncapped113507context/64querytwofitCPUtestPASS:exactprobabilities/CSV,41.586mintotal,9.016GiBobservedprocesspeak. Earlierresourcefailuresdidnotprovehardwareincompatibility. Noqualityscores/fullmatchevaluationyet. Preregisteredcachecorrectness915d198next, quality9656b93onlyaftercachepass. Productionunchanged, targetaccuracyunknown.

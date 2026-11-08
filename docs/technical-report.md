@@ -118,3 +118,7 @@ User approved10GiB process budget; unchanged full-context TabICL run was stopped
 
 ## Changed-headroom retry, November8
 After userclosedapps, baselineavailable8.23555GiB. Preregistered identicalCPUretry reached7.388GiBprocessRSS, then3GiBsystemavailableguard stopped it after19.816s;10GiBprocesscapnotreached. No actualcontextcompletion/qualityscore/blendevaluation. Threeconsecutivefullcontextresourceadmissionsstopped, boundedtrackclosed. This doesnotprovefullworkloadcannotfit18GiB with a differentmemoryconfiguration; no suchvarianttested. Production/previousreproductionunchanged. Evidence experiments/tabicl-highmem-retry-2026-11-08/report.md.
+
+
+## Uncapped admission completed, November8
+Explicituserresourceoverride, unchanged full113507rowcontext/64queryCPUtwofitadmission passed exactprobability/CSV equality.41.586minwall,9.016GiBsampledprocesspeak; RSSnotallsystem/compressed/swapmemory. ConfirmscompletionforM3Pro18GiBtestedcase, notfullmatchcapacity,quality orcrosshardwareguarantees. No metriccomparison orproductionchange. Preregisteredcomputationalcachechecks915d198 next; conditionaltwoarm10casescoring9656b93afterpassonly. Dependencies/licences/sourcehashes pinned; no public/sealed/targetlabels accessed. Evidence experiments/tabicl-uncapped-2026-11-08/report.md.

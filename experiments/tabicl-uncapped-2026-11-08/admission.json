@@ -1,0 +1,9 @@
+{
+  "exit_code": 0,
+  "reason": null,
+  "wall_seconds": 2495.1837696660077,
+  "observed_peak_rss_bytes": 9680912384,
+  "min_observed_system_available_bytes": 2940846080,
+  "passed": true,
+  "experiment_resource_caps": false
+}

@@ -1,0 +1,32 @@
+{
+  "probe": "actual",
+  "context_rows": 113507,
+  "query_rows": 64,
+  "seconds": 2492.117601957987,
+  "probabilities_equal": true,
+  "csv_equal": true,
+  "csv_sha256": "283eba25193476a39c0e5a9a29b81eeb6093c2dfad911d24c0f601fa7eb167a2",
+  "params": {
+    "n_estimators": 1,
+    "softmax_temperature": 1.0,
+    "random_state": 20261106,
+    "n_jobs": 1,
+    "device": "cpu",
+    "use_amp": false,
+    "use_fa3": false,
+    "offload_mode": false,
+    "kv_cache": false,
+    "model_path": "data/tabicl/model.ckpt",
+    "allow_auto_download": false
+  },
+  "classes_order": "H,A,D",
+  "dependencies": {
+    "scikit-learn": "1.9.1",
+    "einops": "0.8.2",
+    "numpy": "2.5.4",
+    "tabicl": "2.2.0",
+    "huggingface_hub": "2.4.0",
+    "scipy": "1.18.1",
+    "torch": "2.15.0"
+  }
+}

@@ -76,14 +76,14 @@ workspace:
   findings: findings.md
   technical_document: docs/technical-report.md
   next_step_plan: docs/next-steps-2026-11-07.md
-next_action: Follow explicitly authorized uncapped CPU admission to completion; score only after admission and committed supplement.
+next_action: Run committed cache correctness admission; score ten fixed development cases only if it passes.
 
 open_model_audit:
   date: '2026-11-08'
   status: research_only_no_trial
   report: literature/open-models-review-2026-11-08.md
   primary_sources: literature/open-model-primary-audit-2026-11-08.md
-  new_lead: TabICLv2_failed_fixed_resource_admission_no_scores
+  new_lead: TabICLv2_uncapped_repeatability_pass_quality_unknown
   pathcrf_checkpoint: conditional_dev_training_and_sealed_validation_overlap
   fresh_window: '2026-10-09_to_2026-11-08_partial_coverage'
   performance_budget_reopened: true
@@ -117,7 +117,17 @@ tabicl_changed_headroom_retry:
 
 tabicl_uncapped:
   authorized_resource_override: true
-  status: running_admission
+  status: completed_repeatability_pass
   protocol: experiments/tabicl-uncapped-2026-11-08/protocol.md
   resource_caps: false
   accuracy_scored: false
+
+tabicl_cache:
+  status: preregistered_pending_execution
+  protocol: experiments/tabicl-cache-2026-11-08/protocol.md
+  quality_scored: false
+tabicl_scored:
+  status: conditional_preregistered_not_run
+  protocol: experiments/tabicl-scored-2026-11-08/protocol.md
+  cases: 10
+  candidate_arms: 2
