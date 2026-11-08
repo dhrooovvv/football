@@ -3,7 +3,7 @@ import os
 for k in ('OMP_NUM_THREADS','OPENBLAS_NUM_THREADS','MKL_NUM_THREADS','VECLIB_MAXIMUM_THREADS','NUMEXPR_NUM_THREADS'): os.environ[k]='1'
 import sys,time,json,hashlib,subprocess
 from pathlib import Path
-R=Path('experiments/tabicl-highmem-2026-11-08')
+R=Path(sys.argv[sys.argv.index('--output')+1]) if '--output' in sys.argv else Path('experiments/tabicl-highmem-2026-11-08')
 if '--worker' in sys.argv:
  import probe_tabicl
  probe_tabicl.R=R
@@ -14,7 +14,7 @@ else:
  assert hashlib.sha256(Path('data/tabicl/model.ckpt').read_bytes()).hexdigest()==meta['sha256']
  (R/'weight-source.json').write_text(json.dumps(meta,indent=2))
  with (R/'actual.log').open('w') as log:
-  start=time.monotonic();p=subprocess.Popen([sys.executable,__file__,'--worker'],stdout=log,stderr=subprocess.STDOUT);peak=0;minavailable=psutil.virtual_memory().available;reason=None
+  start=time.monotonic();p=subprocess.Popen([sys.executable,__file__,'--worker','--output',str(R)],stdout=log,stderr=subprocess.STDOUT);peak=0;minavailable=psutil.virtual_memory().available;reason=None
   while p.poll() is None:
    try:peak=max(peak,psutil.Process(p.pid).memory_info().rss)
    except psutil.NoSuchProcess:pass
