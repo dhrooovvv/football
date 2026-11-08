@@ -1,0 +1,20 @@
+{
+  "data/external/prepared/J03WMX.npz": "fafb925ce89a340aceffb67bacfc6562c319e7cc3671b3d2aeb14c55aa8b52c7",
+  "data/external/prepared/J03WN1.npz": "7b630e11e8fd68278d96199253fba87c849f5397bd133e2a08070c35b02129ee",
+  "data/external/prepared/J03WOH.npz": "3172101d6c911e4e38d824c0e627b81fcfaed105fc4dd237165017dd7aa4d65a",
+  "data/external/prepared/J03WOY.npz": "f557f48aa2ede08949d9a0a66fcb8763004bc4f734b630323127e3198d726281",
+  "data/external/prepared/J03WPY.npz": "928cae4a6e137b9537cd4f2e5e1dc22a8ad7ac490ed92501215fb6be07f22873",
+  "data/tabicl-cache/actual16384-first-probs.npz": "bc965f4520db3e4e9ba2741ef6b5afacaec9c9887c59a5e092773bceea0e8e2d",
+  "data/tabicl-cache/actual64-first-probs.npz": "dd4aa9dad4c44ff30aa5c73bdd641929ef6a43ca4785e6c9c6bbdb4e251aebc1",
+  "experiments/core-development/split.json": "c3ecb1a94f95d12bfc502c92b1eff59911faf88d488289144753c4ce492a7960",
+  "experiments/tabicl-2026-11-08/context-provenance.json": "e92747988cc41293d4bf2d1da4c32a404f4716abd7fce172783aa6a5a6b731fc",
+  "experiments/tabicl-cache-2026-11-08/actual.json": "51750272feb7d99bd71d40149612af596c7ab6539cd1cf2e3e0b10dd9f65fb19",
+  "experiments/tabicl-cache-2026-11-08/admission.json": "496b6d8357cedcbe565b6b596961f56b10ab581f68a4053f1d8f1290dcc6c9d4",
+  "experiments/tabicl-cache-2026-11-08/provenance.json": "79ade4e9cb8888211a20b262c24725e7f56c0d6a857fd2140e2f12680f2f044f",
+  "experiments/tabicl-threads-csv-2026-11-08/baseline-timings.json": "e33c5887816a6f2ee6b64b3619c4070c3c2b9f6ea8a47d72ee13a7af6b98144f",
+  "experiments/tabicl-uncapped-2026-11-08/weight-source.json": "e7159664338b5998f07b3452b6329aae8a4dfc2bbdb5cbafd39c2baa9381cb2c",
+  "scripts/probe_tabicl_cache.py": "317435714a647bb9f8b47b54c4527d2dafbaa53ee31ecad8bd3addcb101b4d68",
+  "scripts/probe_tabicl_threads.py": "d4db868786ddb55bb4b5ad433071e2fce828e8c9684f0dfe6c33b817f982a3f4",
+  "src/possession/decode.py": "c987dd44e17c9e35650a4a4c9c59d62b5dde2f02c06a83e6a71bf2345da13710",
+  "src/possession/inputs.py": "8db3bf7aa820c7dcc04e44af4543b82d8448c59988218073bff9ea485b4c164a"
+}

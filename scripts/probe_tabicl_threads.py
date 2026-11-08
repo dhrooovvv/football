@@ -1,9 +1,10 @@
 """Preregistered CPU-11 cache speed/equality admission; no quality scoring.
 
-Model and context stay fixed. CPU-11 is admitted only if normalized probability
-arrays meet fixed cross-thread tolerances AND decoded CSV bytes exactly match
-the persisted CPU-1 references. Within CPU-11 refit/reload arrays remain exact.
-No thread-count search, tolerance rescue, resource caps or production changes.
+Model and context stay fixed. Default probability mode retains the old numeric
+plus exact-CSV criterion. Explicit csv mode gates cross-core equivalence only on
+exact decoded CSV bytes, recording numeric differences as diagnostics. Within
+CPU-11 refit/reload probabilities and CSV remain exact in both modes.
+No thread-count search, tolerance search, resource caps or production changes.
 """
 import os
 BLAS_KEYS = ('OMP_NUM_THREADS', 'OPENBLAS_NUM_THREADS', 'MKL_NUM_THREADS',
@@ -21,8 +22,10 @@ import sys
 import time
 from pathlib import Path
 
-R = Path('experiments/tabicl-threads-2026-11-08')
-OUT = Path('data/tabicl-threads')
+DEFAULT_R = Path('experiments/tabicl-threads-2026-11-08')
+DEFAULT_OUT = Path('data/tabicl-threads')
+R, OUT = DEFAULT_R, DEFAULT_OUT
+CRITERION = 'probability'
 CACHE = Path('experiments/tabicl-cache-2026-11-08')
 BASE_DATA = Path('data/tabicl-cache')
 PREPARED = Path('data/external/prepared')
@@ -52,10 +55,11 @@ def write(name, value):
     temporary.replace(path)
 
 
-def expected_locked_paths():
+def expected_locked_paths(output_dir=None):
+    registration = Path(output_dir) if output_dir is not None else R
     expected = {
         'scripts/probe_tabicl_threads.py', 'scripts/probe_tabicl_cache.py',
-        'experiments/tabicl-threads-2026-11-08/baseline-timings.json',
+        (registration / 'baseline-timings.json').as_posix(),
         'src/possession/decode.py', 'src/possession/inputs.py',
         'experiments/core-development/split.json',
         'experiments/tabicl-2026-11-08/context-provenance.json',
@@ -131,7 +135,11 @@ def authority(protocol):
             'checkpoint_source': source['source'],
             'cpu1_parameters_except_cache': source['parameters_except_cache'], 'threads_tested': THREADS,
             'verification_threads': 1, 'resource_caps': False, 'quality_scored': False,
-            'cross_thread_rule': {'max_abs': MAX_ABS, 'atol': ATOL, 'rtol': RTOL, 'csv_exact': True},
+            'criterion': CRITERION,
+            'output_directory': R.as_posix(), 'artifact_directory': OUT.as_posix(),
+            'numeric_reference_rule_not_enforced': CRITERION == 'csv',
+            'cross_thread_rule': ({'max_abs': MAX_ABS, 'atol': ATOL, 'rtol': RTOL, 'csv_exact': True}
+                                  if CRITERION == 'probability' else {'csv_exact': True, 'numeric_differences': 'diagnostic_only'}),
             'within_cpu11_rule': 'exact normalized probabilities and CSV bytes'}
 
 
@@ -200,7 +208,7 @@ def baseline_probabilities(base, blocks):
         if arrays[count].shape != (count, 3):
             raise RuntimeError('CPU1 baseline probability shape changed')
         # References already contain normalized float64 probabilities. Do not
-        # renormalize them a second time: exact equality is the admission rule.
+        # renormalize them a second time; cross-mode rules are applied below.
         digest = base.csv_hash(arrays[count], OUT / f'cpu1-reference-{count}.csv', bb)
         if digest != hashes[count]:
             raise RuntimeError('CPU1 baseline probabilities/CSV provenance mismatch')
@@ -228,7 +236,8 @@ def run_predictions(base, model, q, blocks, stage, serving_threads, references, 
         digest = base.csv_hash(p, OUT / f'{stage}-serve{serving_threads}-{count}.csv', bb)
         exact = bool(np.array_equal(p, references[count]))
         delta = float(np.max(np.abs(p - references[count])))
-        cross_numeric = bool(delta <= MAX_ABS and np.allclose(p, references[count], atol=ATOL, rtol=RTOL))
+        cross_numeric = (bool(delta <= MAX_ABS and np.allclose(p, references[count], atol=ATOL, rtol=RTOL))
+                         if CRITERION == 'probability' else None)
         within_exact = None
         if serving_threads == THREADS and stage != 'first':
             anchor_path = OUT / f'first-serve{THREADS}-{count}-probs.npz'
@@ -241,16 +250,21 @@ def run_predictions(base, model, q, blocks, stage, serving_threads, references, 
         row = {'stage': stage, 'serving_threads': serving_threads, 'query_rows': count,
                'torch_threads_before': before, 'torch_threads_after': after,
                'normalized_probabilities_exact_to_cpu1': exact,
-               'max_abs_difference_to_cpu1': delta, 'cross_thread_numeric_tolerance_pass': cross_numeric,
+               'criterion': CRITERION, 'max_abs_difference_to_cpu1': delta,
+               'numeric_reference_rule_not_enforced': CRITERION == 'csv',
                'within_cpu11_probabilities_exact_to_first': within_exact,
                'csv_bytes_equal_to_cpu1': digest == hashes[count], 'csv_sha256': digest}
+        if CRITERION == 'probability':
+            row['cross_thread_numeric_tolerance_pass'] = cross_numeric
         checks.append(row)
         costs.append({'stage': stage, 'operation': 'predict', 'serving_threads': serving_threads,
                       'query_rows': count, 'seconds': seconds})
         write('checks.json', checks)
         write('cost.json', costs)
-        if not cross_numeric or digest != hashes[count]:
-            raise AssertionError('Thread optimization rejected: fixed cross-thread numeric/CSV rule failed: ' + tag)
+        if digest != hashes[count]:
+            raise AssertionError('Thread optimization rejected: exact cross-core CSV equality failed: ' + tag)
+        if CRITERION == 'probability' and not cross_numeric:
+            raise AssertionError('Thread optimization rejected: fixed cross-thread probability rule failed: ' + tag)
         if within_exact is False:
             raise AssertionError('Thread optimization rejected: within-CPU11 exact repeatability failed: ' + tag)
         probabilities_path = OUT / f'{stage}-serve{serving_threads}-{count}-probs.npz'
@@ -260,10 +274,25 @@ def run_predictions(base, model, q, blocks, stage, serving_threads, references, 
 
 
 def main():
-    global EXECUTION_STARTED
+    global EXECUTION_STARTED, R, OUT, CRITERION
     parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--criterion', choices=('probability', 'csv'), default='probability')
+    parser.add_argument('--output', type=Path, default=DEFAULT_R)
+    parser.add_argument('--data-output', type=Path, default=DEFAULT_OUT)
     parser.add_argument('--protocol', required=True, help='Exact committed CPU-11 protocol')
     args = parser.parse_args()
+    R, OUT, CRITERION = args.output, args.data_output, args.criterion
+    root = Path.cwd().resolve()
+    relative_r = R.resolve().relative_to(root)
+    relative_out = OUT.resolve().relative_to(root)
+    if not relative_r.parts or relative_r.parts[0] != 'experiments':
+        raise RuntimeError('Research output must stay under experiments/')
+    if not relative_out.parts or relative_out.parts[0] != 'data':
+        raise RuntimeError('Model/probability artifacts must stay under ignored data/')
+    if CRITERION == 'csv' and (R.resolve() == DEFAULT_R.resolve() or OUT.resolve() == DEFAULT_OUT.resolve()):
+        raise RuntimeError('CSV criterion requires separate new output/artifact directories; preserve original results')
+    if OUT.exists() and any(OUT.iterdir()):
+        raise RuntimeError('Existing artifact directory is nonempty; preserve prior evidence')
     provenance = authority(args.protocol)
     registration_names = {'locked-inputs.json', 'baseline-timings.json'}
     if any(p.name not in registration_names for p in R.glob('*.json')):
@@ -347,7 +376,9 @@ def main():
             'paired_cpu11_seconds': eleven, 'cpu1_over_cpu11_wall_ratio': one/eleven if eleven else None,
             'ordering_caveat': 'Same fitted cache; CPU11 measured before CPU1; shared system load uncontrolled'})
     write('admission.json', {'passed': True, 'thread_optimization_admitted': True,
-          'admission_scope': 'Computational equivalence only; speed ratios are descriptive',
+          'criterion': CRITERION, 'numeric_reference_rule_not_enforced': CRITERION == 'csv',
+          'admission_scope': ('Cross-core exact CSV equivalence only; numeric differences diagnostic; exact within-CPU11 proof'
+                              if CRITERION == 'csv' else 'Numeric and CSV computational equivalence only; speed ratios descriptive'),
           'cores_selected_for_scoring': False,
           'threads': THREADS, 'cpu1_verification': True, 'checks': len(checks),
           'seconds': time.monotonic()-start_all, 'observed_fit_wall_ratios': fit_ratios,
@@ -355,7 +386,7 @@ def main():
           'final_refit_same_cache_serving_wall_ratios': paired_ratios,
           'controlled_speed_benchmark': False, 'quality_scored': False,
           'production_changed': False, 'experiment_resource_caps': False})
-    print('CPU11 cross-thread equivalence and exact within-mode admission passed; no quality or production change.', flush=True)
+    print(f'CPU11 {CRITERION} criterion and exact within-mode admission passed; no quality or production change.', flush=True)
 
 
 if __name__ == '__main__':
@@ -364,8 +395,10 @@ if __name__ == '__main__':
     except Exception as error:
         if EXECUTION_STARTED:
             write('failure.json', {'type': type(error).__name__, 'message': str(error),
+                                   'criterion': CRITERION, 'numeric_reference_rule_not_enforced': CRITERION == 'csv',
                                    'quality_scored': False, 'production_changed': False})
             write('admission.json', {'passed': False, 'thread_optimization_admitted': False,
+                  'criterion': CRITERION, 'numeric_reference_rule_not_enforced': CRITERION == 'csv',
                   'fallback_threads': 1, 'failure': str(error), 'quality_scored': False,
                   'production_changed': False, 'experiment_resource_caps': False,
                   'no_retry_thread_search': True})
