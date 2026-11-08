@@ -1,0 +1,12 @@
+{
+  "stopped_by_user": true,
+  "process_already_exited": true,
+  "exit_code": 1,
+  "prior_failure": "No space left on device while writing cache",
+  "incomplete_cache_removed": "data/tabicl-threads-csv/actual-cpu11.pkl",
+  "removed_bytes": 4496723968,
+  "free_bytes_before": 3540443136,
+  "free_bytes_after": 8048496640,
+  "quality_scored": false,
+  "production_changed": false
+}

@@ -1,0 +1,8 @@
+{
+  "type": "OSError",
+  "message": "[Errno 28] No space left on device",
+  "criterion": "csv",
+  "numeric_reference_rule_not_enforced": true,
+  "quality_scored": false,
+  "production_changed": false
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "stage": "first",
+    "serving_threads": 11,
+    "query_rows": 64,
+    "torch_threads_before": 11,
+    "torch_threads_after": 11,
+    "normalized_probabilities_exact_to_cpu1": false,
+    "criterion": "csv",
+    "max_abs_difference_to_cpu1": 1.4782109443833846e-05,
+    "numeric_reference_rule_not_enforced": true,
+    "within_cpu11_probabilities_exact_to_first": null,
+    "csv_bytes_equal_to_cpu1": true,
+    "csv_sha256": "283eba25193476a39c0e5a9a29b81eeb6093c2dfad911d24c0f601fa7eb167a2",
+    "saved_probabilities_sha256": "a57c700ea35fcb1007158823f2b47c40f6db815b1aa7ec97552160e4eca80e57"
+  },
+  {
+    "stage": "first",
+    "serving_threads": 11,
+    "query_rows": 16384,
+    "torch_threads_before": 11,
+    "torch_threads_after": 11,
+    "normalized_probabilities_exact_to_cpu1": false,
+    "criterion": "csv",
+    "max_abs_difference_to_cpu1": 6.521959831495838e-05,
+    "numeric_reference_rule_not_enforced": true,
+    "within_cpu11_probabilities_exact_to_first": null,
+    "csv_bytes_equal_to_cpu1": true,
+    "csv_sha256": "61bd98231a24ffbf46b3a1fc80d53043cf9f5a5590f95f601c0f46862975f6cc",
+    "saved_probabilities_sha256": "0b0f601eef95a4809ba9064f26488d6a412a815b1824b7044d6979f7069cc04c"
+  }
+]

@@ -1,0 +1,25 @@
+[
+  {
+    "stage": "first",
+    "operation": "cached_fit",
+    "fitting_threads": 11,
+    "torch_intra_threads": 11,
+    "torch_interop_threads": 1,
+    "context_rows": 113507,
+    "seconds": 357.5939679160365
+  },
+  {
+    "stage": "first",
+    "operation": "predict",
+    "serving_threads": 11,
+    "query_rows": 64,
+    "seconds": 4.047061958000995
+  },
+  {
+    "stage": "first",
+    "operation": "predict",
+    "serving_threads": 11,
+    "query_rows": 16384,
+    "seconds": 49.18341895897174
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "heldout": "J03WMX",
+  "context_rows": 113507,
+  "training": {
+    "J03WN1": {
+      "rows": 28313,
+      "prepared_sha256": "7b630e11e8fd68278d96199253fba87c849f5397bd133e2a08070c35b02129ee"
+    },
+    "J03WOH": {
+      "rows": 27443,
+      "prepared_sha256": "3172101d6c911e4e38d824c0e627b81fcfaed105fc4dd237165017dd7aa4d65a"
+    },
+    "J03WOY": {
+      "rows": 28508,
+      "prepared_sha256": "f557f48aa2ede08949d9a0a66fcb8763004bc4f734b630323127e3198d726281"
+    },
+    "J03WPY": {
+      "rows": 29243,
+      "prepared_sha256": "928cae4a6e137b9537cd4f2e5e1dc22a8ad7ac490ed92501215fb6be07f22873"
+    }
+  },
+  "query_labels_loaded_or_used": false
+}

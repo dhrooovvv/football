@@ -1,0 +1,12 @@
+{
+  "passed": false,
+  "thread_optimization_admitted": false,
+  "criterion": "csv",
+  "numeric_reference_rule_not_enforced": true,
+  "fallback_threads": 1,
+  "failure": "[Errno 28] No space left on device",
+  "quality_scored": false,
+  "production_changed": false,
+  "experiment_resource_caps": false,
+  "no_retry_thread_search": true
+}
