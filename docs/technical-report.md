@@ -122,3 +122,11 @@ After userclosedapps, baselineavailable8.23555GiB. Preregistered identicalCPUret
 
 ## Uncapped admission completed, November8
 Explicituserresourceoverride, unchanged full113507rowcontext/64queryCPUtwofitadmission passed exactprobability/CSV equality.41.586minwall,9.016GiBsampledprocesspeak; RSSnotallsystem/compressed/swapmemory. ConfirmscompletionforM3Pro18GiBtestedcase, notfullmatchcapacity,quality orcrosshardwareguarantees. No metriccomparison orproductionchange. Preregisteredcomputationalcachechecks915d198 next; conditionaltwoarm10casescoring9656b93afterpassonly. Dependencies/licences/sourcehashes pinned; no public/sealed/targetlabels accessed. Evidence experiments/tabicl-uncapped-2026-11-08/report.md.
+
+## Research-only TabICLv2 source and dependencies
+
+The candidate uses [TabICLv2](https://arxiv.org/abs/2602.11139), Qu, Holzmüller, Varoquaux and Le Morvan (2026), with [public classifier weights](https://huggingface.co/jingang/TabICL). The installed TabICL 2.2.0 wheel includes a BSD 3-Clause licence; the model card declares BSD-3-Clause for the weights. The exact checkpoint revision and SHA256 are recorded in the experiment's weight-source.json.
+
+These dependencies remain isolated from the production regeneration environment. The local declaration inventory is `experiments/tabicl-cache-2026-11-08/dependency-licenses.json`. It records actual versions and compact licence expressions, including bundled-component expressions for Torch and NumPy. Missing compact metadata is not an absence of a licence: the TabICL wheel has `licenses/LICENSE`, and SciPy has a bundled `LICENSE.txt` with a BSD-family notice. The wheel notices remain the source for full bundled terms. No cached training arrays or model pickles are published.
+
+Current operational evidence supports uncapped full-context completion and exact repeatability on the tested M3 Pro. Cache correctness is still being checked. No TabICL quality result or production promotion is claimed here.

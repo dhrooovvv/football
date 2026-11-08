@@ -1,0 +1,58 @@
+{
+  "tabicl": {
+    "version": "2.2.0",
+    "declared_license": null,
+    "license_classifiers": []
+  },
+  "torch": {
+    "version": "2.15.0",
+    "declared_license": "Apache-2.0 AND Apache-2.0 WITH LLVM-exception AND BSD-2-Clause AND BSD-3-Clause AND BSL-1.0 AND ISC AND MIT AND Zlib",
+    "license_classifiers": []
+  },
+  "numpy": {
+    "version": "2.5.4",
+    "declared_license": "BSD-3-Clause AND 0BSD AND MIT AND Zlib AND CC0-1.0",
+    "license_classifiers": []
+  },
+  "scipy": {
+    "version": "1.18.1",
+    "declared_license": null,
+    "license_classifiers": [
+      "License :: OSI Approved :: BSD License"
+    ]
+  },
+  "scikit-learn": {
+    "version": "1.9.1",
+    "declared_license": "BSD-3-Clause",
+    "license_classifiers": []
+  },
+  "pandas": {
+    "version": "3.1.1",
+    "declared_license": "BSD-3-Clause",
+    "license_classifiers": []
+  },
+  "einops": {
+    "version": "0.8.2",
+    "declared_license": "MIT",
+    "license_classifiers": [
+      "License :: OSI Approved :: MIT License"
+    ]
+  },
+  "huggingface-hub": {
+    "version": "2.4.0",
+    "declared_license": "Apache-2.0",
+    "license_classifiers": [
+      "License :: OSI Approved :: Apache Software License"
+    ]
+  },
+  "psutil": {
+    "version": "7.2.2",
+    "declared_license": "BSD-3-Clause",
+    "license_classifiers": []
+  },
+  "tqdm": {
+    "version": "4.70.1",
+    "declared_license": "MPL-2.0 AND MIT",
+    "license_classifiers": []
+  }
+}
