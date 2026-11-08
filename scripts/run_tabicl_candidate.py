@@ -49,6 +49,41 @@ def write(name, value):
     temporary.replace(path)
 
 
+def verify_locked_inputs():
+    """Registration metadata is allowed; it must pin every permitted input."""
+    manifest_path = R / 'locked-inputs.json'
+    relative = manifest_path.resolve().relative_to(Path.cwd().resolve()).as_posix()
+    committed = subprocess.check_output(['git', 'show', 'HEAD:' + relative])
+    raw = manifest_path.read_bytes()
+    if committed != raw:
+        raise RuntimeError('Locked-input manifest must be committed unchanged before execution')
+    locked = json.loads(raw)
+    expected = {
+        'scripts/run_tabicl_candidate.py',
+        'reference/more-than-a-hack-2027-main/evaluation/possession_metrics.py',
+        'src/possession/core.py', 'src/possession/decode.py', 'src/possession/inputs.py',
+        'experiments/core-development/split.json',
+    }
+    for match in EXPECTED_IDS:
+        expected.update({
+            f'data/external/prepared/{match}.npz',
+            f'data/diagnostics-review/{match}-targetlike.npz',
+            f'data/diagnostics-review/{match}-clean-probs.npz',
+            f'data/diagnostics-review/{match}-targetlike-probs.npz',
+        })
+    if not isinstance(locked, dict) or set(locked) != expected:
+        raise RuntimeError('Locked-input manifest must cover exactly the registered code and five development inputs')
+    for name, digest in locked.items():
+        if (not isinstance(digest, str) or len(digest) != 64
+                or any(c not in '0123456789abcdef' for c in digest)):
+            raise RuntimeError('Invalid registered SHA256: ' + name)
+        if sha(name) != digest:
+            raise RuntimeError('Locked input changed before execution: ' + name)
+    return {'locked_inputs_manifest': relative,
+            'locked_inputs_sha256': hashlib.sha256(raw).hexdigest(),
+            'locked_input_files_verified': len(locked)}
+
+
 def require_execution_authority(protocol):
     """Do not accidentally turn draft code into an unregistered experiment."""
     from datetime import datetime, date
@@ -60,6 +95,7 @@ def require_execution_authority(protocol):
     committed = subprocess.check_output(['git', 'show', 'HEAD:' + relative])
     if committed != protocol.read_bytes():
         raise RuntimeError('Scored protocol must be committed unchanged before execution')
+    locked_provenance = verify_locked_inputs()
     admission_dir = Path('experiments/tabicl-uncapped-2026-11-08')
     admission = json.loads((admission_dir / 'admission.json').read_text())
     actual = json.loads((admission_dir / 'actual.json').read_text())
@@ -79,7 +115,7 @@ def require_execution_authority(protocol):
         raise RuntimeError('Cache admission checkpoint differs')
     if QUERY_CHUNK != 16384:
         raise RuntimeError('Query chunk changed from fixed pre-score design')
-    return {'protocol': relative, 'protocol_sha256': sha(protocol),
+    return {**locked_provenance, 'protocol': relative, 'protocol_sha256': sha(protocol),
             'protocol_commit': subprocess.check_output(['git', 'rev-parse', 'HEAD'], text=True).strip(),
             'weight_source': source, 'query_chunk': QUERY_CHUNK,
             'cache_admission_sha256': sha(cache_dir / 'admission.json'),
@@ -388,8 +424,9 @@ def main():
     parser.add_argument('--protocol', required=True, help='Exact committed scored supplement; no default approval')
     args = parser.parse_args()
     provenance = require_execution_authority(args.protocol)
-    if R.exists() and any(R.glob('*.json')):
-        raise RuntimeError('Existing scored results require review; no silent overwrite/resume')
+    existing_results = [p for p in R.glob('*.json') if p.name != 'locked-inputs.json']
+    if existing_results:
+        raise RuntimeError('Existing scored result JSON requires review; no silent overwrite/resume')
     import numpy as np
     from tabicl import TabICLClassifier  # noqa: F401; fail fast on dependency/import problems.
     # The unchanged scorer imports pandas; check it before expensive warm-up.
