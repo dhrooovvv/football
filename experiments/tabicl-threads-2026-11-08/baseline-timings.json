@@ -1,0 +1,11 @@
+{
+  "first_cache_fit_seconds": 1024.517,
+  "first_predict64_seconds": 2.509,
+  "first_predict16384_seconds": 144.788,
+  "reload_predict64_seconds": 1.962,
+  "reload_predict16384_seconds": 216.33,
+  "source_log": "data/tabicl-cache-run.log",
+  "archived_log": "experiments/tabicl-cache-2026-11-08/execution.log",
+  "archived_log_sha256": "43110a73d9da0aeb92e7a5ae1d3b8da5f329c4a9d24df79fce486f7ac7feda1e",
+  "timing_scope": "Historical CPU1 measurements; run order and load uncontrolled"
+}

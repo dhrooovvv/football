@@ -1,0 +1,52 @@
+synthetic-1000/uncached: fit start; rows=1000, kv_cache=False
+synthetic-1000/uncached: fit complete in 0.150s
+synthetic-1000/uncached: predict start; queries=64
+synthetic-1000/uncached: predict complete in 0.421s
+synthetic-1000/cached-first: fit start; rows=1000, kv_cache=True
+synthetic-1000/cached-first: fit complete in 0.484s
+synthetic-1000/cached-first: predict start; queries=64
+synthetic-1000/cached-first: predict complete in 0.024s
+synthetic-1000: saving local cache
+synthetic-1000: loading newly generated local cache
+synthetic-1000/reload: predict start; queries=64
+synthetic-1000/reload: predict complete in 0.025s
+synthetic-1000/refit: fit start; rows=1000, kv_cache=True
+synthetic-1000/refit: fit complete in 0.556s
+synthetic-1000/refit: predict start; queries=64
+synthetic-1000/refit: predict complete in 0.029s
+synthetic-10000/uncached: fit start; rows=10000, kv_cache=False
+synthetic-10000/uncached: fit complete in 0.135s
+synthetic-10000/uncached: predict start; queries=64
+synthetic-10000/uncached: predict complete in 14.306s
+synthetic-10000/cached-first: fit start; rows=10000, kv_cache=True
+synthetic-10000/cached-first: fit complete in 11.065s
+synthetic-10000/cached-first: predict start; queries=64
+synthetic-10000/cached-first: predict complete in 0.106s
+synthetic-10000: saving local cache
+synthetic-10000: loading newly generated local cache
+synthetic-10000/reload: predict start; queries=64
+synthetic-10000/reload: predict complete in 0.085s
+synthetic-10000/refit: fit start; rows=10000, kv_cache=True
+synthetic-10000/refit: fit complete in 10.371s
+synthetic-10000/refit: predict start; queries=64
+synthetic-10000/refit: predict complete in 0.087s
+actual: matched context loaded; query labels not loaded or used
+actual/cached-first: fit start; rows=113507, kv_cache=True
+actual/cached-first: fit complete in 1024.517s
+actual/64/cached-first: predict start; queries=64
+actual/64/cached-first: predict complete in 2.509s
+actual/16384/cached-first: predict start; queries=16384
+actual/16384/cached-first: predict complete in 144.788s
+actual: saving local cache
+actual: loading newly generated local cache
+actual/64/reload: predict start; queries=64
+actual/64/reload: predict complete in 1.962s
+actual/16384/reload: predict start; queries=16384
+actual/16384/reload: predict complete in 216.330s
+actual/refit: fit start; rows=113507, kv_cache=True
+actual/refit: fit complete in 986.575s
+actual/64/refit: predict start; queries=64
+actual/64/refit: predict complete in 3.184s
+actual/16384/refit: predict start; queries=16384
+actual/16384/refit: predict complete in 139.952s
+Cache correctness admission passed; no quality scored or production changed.

@@ -130,3 +130,7 @@ The candidate uses [TabICLv2](https://arxiv.org/abs/2602.11139), Qu, Holzmüller
 These dependencies remain isolated from the production regeneration environment. The local declaration inventory is `experiments/tabicl-cache-2026-11-08/dependency-licenses.json`. It records actual versions and compact licence expressions, including bundled-component expressions for Torch and NumPy. Missing compact metadata is not an absence of a licence: the TabICL wheel has `licenses/LICENSE`, and SciPy has a bundled `LICENSE.txt` with a BSD-family notice. The wheel notices remain the source for full bundled terms. No cached training arrays or model pickles are published.
 
 Current operational evidence supports uncapped full-context completion and exact repeatability on the tested M3 Pro. Cache correctness is still being checked. No TabICL quality result or production promotion is claimed here.
+
+
+## Cache admission completed; threading test pending
+The registered cache checks passed. Synthetic probabilities match exactly; full-context64CSV matches the uncapped reference; cached reload/refit probabilities and CSVs match exactly at64/16384queries. Full-context uncached probability equality and arbitrary chunk invariance were not tested. Actual procedure2540.665s includes multiple operations. Detailed costs and limited-scope memory observations: experiments/tabicl-cache-2026-11-08/report.md. No quality scores or promotion. User-approved11-core equivalence testing is separately preregistered; single-thread verification remains required for winners.

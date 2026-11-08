@@ -1,0 +1,7 @@
+{
+  "scope": "observation begins after synthetic10000 first pass; may omit earlier peaks",
+  "seconds_observed": 2527.170916584,
+  "observed_peak_process_rss_bytes": 9674309632,
+  "minimum_observed_system_available_bytes": 2803515392,
+  "resource_termination_thresholds": false
+}

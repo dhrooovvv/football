@@ -117,3 +117,7 @@ Uncapped113507context/64querytwofitCPUtestPASS:exactprobabilities/CSV,41.586mint
 
 ## J045 — Cache admission in progress
 Synthetic1000/10000cacheFalse/Trueprobabilities/CSV andcachedreload/refitchecks passed;10000maxabsdelta0. Full113507context/16384querycachechecks running, noqualityscores. Cacheprecomputescostlytrainingcontext; measuredsyntheticrepeatqueryspeedisnotfullmatchperformance. Productionunchanged.
+
+
+## J045 result / J046 next step
+Cache correctness passed: synthetic numeric delta0; actual64CSV matches uncapped; cached reload/refit exact for64/16384queries. Full uncached numeric equivalence is not established. No quality result. User explicitly approved11-core development speed testing with single-thread winner checks; protocol/inputs locked before execution. Production unchanged.

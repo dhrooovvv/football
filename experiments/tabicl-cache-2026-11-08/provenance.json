@@ -1,0 +1,52 @@
+{
+  "protocol": "experiments/tabicl-cache-2026-11-08/protocol.md",
+  "protocol_sha256": "2566f8a7b35a10c67f51c41ab5611bcef05487be370486d430698cde56e704c1",
+  "source": {
+    "repo": "jingang/TabICL",
+    "revision": "4dcd344ece2c00be9e831fdd35bed57b5ad83e19",
+    "filename": "tabicl-classifier-v2-20260212.ckpt",
+    "license": "bsd-3-clause",
+    "sha256": "bdc7dbd5e4ff21f8f0456fcf90c6b7cdf72dbea960f2d05b19bec19f9b3d4ed0",
+    "bytes": 110368038
+  },
+  "uncapped_actual_sha256": "5939853137a118934df6af87fea8ffd676e47fe03975fcdcff9c0d5647a07d27",
+  "uncapped_dependencies": {
+    "scikit-learn": "1.9.1",
+    "einops": "0.8.2",
+    "numpy": "2.5.4",
+    "tabicl": "2.2.0",
+    "huggingface_hub": "2.4.0",
+    "scipy": "1.18.1",
+    "torch": "2.15.0"
+  },
+  "uncapped_csv_sha256": "283eba25193476a39c0e5a9a29b81eeb6093c2dfad911d24c0f601fa7eb167a2",
+  "uncached_full_probability_comparison": false,
+  "full_comparison_limit": "Prior uncapped worker persisted CSV hashes, not raw probabilities",
+  "synthetic_numeric_rule": {
+    "max_abs": 1e-06,
+    "atol": 1e-06,
+    "rtol": 1e-05
+  },
+  "query_count": 16384,
+  "parameters_except_cache": {
+    "n_estimators": 1,
+    "softmax_temperature": 1.0,
+    "random_state": 20261106,
+    "n_jobs": 1,
+    "device": "cpu",
+    "use_amp": false,
+    "use_fa3": false,
+    "offload_mode": false,
+    "model_path": "data/tabicl/model.ckpt",
+    "allow_auto_download": false
+  },
+  "dependencies": {
+    "scikit-learn": "1.9.1",
+    "einops": "0.8.2",
+    "numpy": "2.5.4",
+    "tabicl": "2.2.0",
+    "huggingface_hub": "2.4.0",
+    "scipy": "1.18.1",
+    "torch": "2.15.0"
+  }
+}

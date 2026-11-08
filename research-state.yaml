@@ -76,7 +76,7 @@ workspace:
   findings: findings.md
   technical_document: docs/technical-report.md
   next_step_plan: docs/next-steps-2026-11-07.md
-next_action: Run committed cache correctness admission; score ten fixed development cases only if it passes.
+next_action: Test explicitly approved eleven-core execution equivalence; keep single-thread verification for any winner.
 
 open_model_audit:
   date: '2026-11-08'
@@ -123,7 +123,7 @@ tabicl_uncapped:
   accuracy_scored: false
 
 tabicl_cache:
-  status: running_full_context_correctness
+  status: completed_correctness_pass
   protocol: experiments/tabicl-cache-2026-11-08/protocol.md
   quality_scored: false
 tabicl_scored:
@@ -131,3 +131,11 @@ tabicl_scored:
   protocol: experiments/tabicl-scored-2026-11-08/protocol.md
   cases: 10
   candidate_arms: 2
+
+tabicl_threads:
+  authorized: true
+  requested_cores: 11
+  verification_threads: 1
+  status: preregistered_pending_execution
+  protocol: experiments/tabicl-threads-2026-11-08/protocol.md
+  quality_scored: false

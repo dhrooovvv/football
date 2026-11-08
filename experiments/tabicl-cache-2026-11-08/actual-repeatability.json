@@ -1,0 +1,30 @@
+[
+  {
+    "stage": "reload",
+    "query_rows": 64,
+    "probabilities_exact": true,
+    "csv_bytes_equal": true,
+    "csv_sha256": "283eba25193476a39c0e5a9a29b81eeb6093c2dfad911d24c0f601fa7eb167a2"
+  },
+  {
+    "stage": "reload",
+    "query_rows": 16384,
+    "probabilities_exact": true,
+    "csv_bytes_equal": true,
+    "csv_sha256": "61bd98231a24ffbf46b3a1fc80d53043cf9f5a5590f95f601c0f46862975f6cc"
+  },
+  {
+    "stage": "refit",
+    "query_rows": 64,
+    "probabilities_exact": true,
+    "csv_bytes_equal": true,
+    "csv_sha256": "283eba25193476a39c0e5a9a29b81eeb6093c2dfad911d24c0f601fa7eb167a2"
+  },
+  {
+    "stage": "refit",
+    "query_rows": 16384,
+    "probabilities_exact": true,
+    "csv_bytes_equal": true,
+    "csv_sha256": "61bd98231a24ffbf46b3a1fc80d53043cf9f5a5590f95f601c0f46862975f6cc"
+  }
+]

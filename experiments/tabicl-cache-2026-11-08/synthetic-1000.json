@@ -1,0 +1,35 @@
+{
+  "context_rows": 1000,
+  "query_rows": 64,
+  "max_abs_probability_delta": 0.0,
+  "numeric_tolerance_pass": true,
+  "uncached_csv_sha256": "74ed449da4ca91c64c28aa3bb90b9f405d97b43492cfc280e543862b4f6be320",
+  "cached_csv_sha256": "74ed449da4ca91c64c28aa3bb90b9f405d97b43492cfc280e543862b4f6be320",
+  "csv_bytes_equal": true,
+  "repeatability": [
+    {
+      "stage": "reload",
+      "probabilities_exact": true,
+      "csv_bytes_equal": true,
+      "csv_sha256": "74ed449da4ca91c64c28aa3bb90b9f405d97b43492cfc280e543862b4f6be320"
+    },
+    {
+      "stage": "refit",
+      "probabilities_exact": true,
+      "csv_bytes_equal": true,
+      "csv_sha256": "74ed449da4ca91c64c28aa3bb90b9f405d97b43492cfc280e543862b4f6be320"
+    }
+  ],
+  "saved_cache": {
+    "path": "data/tabicl-cache/synthetic-1000.pkl",
+    "sha256": "1852c8ee7559c143461c3316a26fe4df950bb93b809e34d25c08027ea156ab50",
+    "bytes": 54432775,
+    "trusted_local_file_only": true,
+    "training_context_saved": true,
+    "kv_cache_saved": true,
+    "weights_saved": false
+  },
+  "seconds": 3.1041111249942333,
+  "passed": true,
+  "proves_possession_quality": false
+}

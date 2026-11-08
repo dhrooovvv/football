@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "synthetic_context_rows": [
+    1000,
+    10000
+  ],
+  "actual_context_rows": 113507,
+  "fixed_query_rows": 16384,
+  "quality_scored": false,
+  "experiment_resource_caps": false,
+  "full_uncached_comparison": "CSV equality only; raw probabilities unavailable",
+  "independent_cached_refit_and_reload": true,
+  "production_changed": false
+}

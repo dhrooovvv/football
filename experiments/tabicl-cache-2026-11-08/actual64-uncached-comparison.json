@@ -1,0 +1,8 @@
+{
+  "query_rows": 64,
+  "cached_csv_sha256": "283eba25193476a39c0e5a9a29b81eeb6093c2dfad911d24c0f601fa7eb167a2",
+  "prior_uncapped_csv_sha256": "283eba25193476a39c0e5a9a29b81eeb6093c2dfad911d24c0f601fa7eb167a2",
+  "csv_bytes_equal": true,
+  "uncached_numeric_equivalence_tested": false,
+  "limitation": "Prior uncapped worker did not save raw probabilities"
+}

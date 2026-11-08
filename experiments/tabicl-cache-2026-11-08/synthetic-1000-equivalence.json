@@ -1,0 +1,9 @@
+{
+  "context_rows": 1000,
+  "query_rows": 64,
+  "max_abs_probability_delta": 0.0,
+  "numeric_tolerance_pass": true,
+  "uncached_csv_sha256": "74ed449da4ca91c64c28aa3bb90b9f405d97b43492cfc280e543862b4f6be320",
+  "cached_csv_sha256": "74ed449da4ca91c64c28aa3bb90b9f405d97b43492cfc280e543862b4f6be320",
+  "csv_bytes_equal": true
+}
