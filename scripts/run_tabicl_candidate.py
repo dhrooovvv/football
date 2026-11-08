@@ -1,6 +1,6 @@
 """Conditional, preregistered TabICL-only and fixed 50/50 blend comparison.
 
-Implementation only until uncapped admission passes and --protocol names an
+Implementation only until uncapped and cache admissions pass and --protocol names an
 unchanged, git-committed scored supplement. All model artifacts stay in data/.
 This script reports development gates; it never changes production.
 """
@@ -30,12 +30,16 @@ EXPECTED_IDS = ('J03WMX', 'J03WN1', 'J03WOH', 'J03WOY', 'J03WPY')
 EXECUTION_STARTED = False
 PARAMS = dict(n_estimators=1, softmax_temperature=1., random_state=SEED,
               n_jobs=1, device='cpu', use_amp=False, use_fa3=False,
-              offload_mode=False, kv_cache=False, model_path=str(WEIGHT),
+              offload_mode=False, kv_cache=True, model_path=str(WEIGHT),
               allow_auto_download=False)
 
 
 def sha(path):
-    return hashlib.sha256(Path(path).read_bytes()).hexdigest()
+    digest = hashlib.sha256()
+    with Path(path).open('rb') as stream:
+        for block in iter(lambda: stream.read(8 * 1024**2), b''):
+            digest.update(block)
+    return digest.hexdigest()
 
 
 def write(name, value):
@@ -64,11 +68,22 @@ def require_execution_authority(protocol):
     source = json.loads((admission_dir / 'weight-source.json').read_text())
     if sha(WEIGHT) != source['sha256']:
         raise RuntimeError('Pinned checkpoint hash changed')
+    cache_dir = Path('experiments/tabicl-cache-2026-11-08')
+    cache_admission = json.loads((cache_dir / 'admission.json').read_text())
+    cache_actual = json.loads((cache_dir / 'actual.json').read_text())
+    cache_provenance = json.loads((cache_dir / 'provenance.json').read_text())
+    if not (cache_admission['passed'] and cache_actual['passed']
+            and cache_admission['fixed_query_rows'] == QUERY_CHUNK):
+        raise RuntimeError('Cache equivalence/repeatability admission has not passed')
+    if cache_provenance['source']['sha256'] != source['sha256']:
+        raise RuntimeError('Cache admission checkpoint differs')
     if QUERY_CHUNK != 16384:
         raise RuntimeError('Query chunk changed from fixed pre-score design')
     return {'protocol': relative, 'protocol_sha256': sha(protocol),
             'protocol_commit': subprocess.check_output(['git', 'rev-parse', 'HEAD'], text=True).strip(),
-            'weight_source': source, 'query_chunk': QUERY_CHUNK}
+            'weight_source': source, 'query_chunk': QUERY_CHUNK,
+            'cache_admission_sha256': sha(cache_dir / 'admission.json'),
+            'cache_dependencies': cache_provenance['dependencies']}
 
 
 def configure():
@@ -177,7 +192,8 @@ def measure(y, predicted, blocks, x):
             'missing_ball': missing_quality(y, predicted, x[:, 5] == 0)}
 
 
-def gate(reference, candidate, ids, tests_pass, determinism_pass):
+def gate(reference, candidate, ids, tests_pass, determinism_pass=None):
+    """Quality eligibility precedes expensive full-case reproducibility proof."""
     import numpy as np
     from possession.core import promote
     def paired(rows):
@@ -191,13 +207,179 @@ def gate(reference, candidate, ids, tests_pass, determinism_pass):
                  for m in ids}
     existing = promote(before, after, tests_pass)
     primary = float(np.median(list(corrupted.values())))
-    return {'development_gate_pass': bool(existing and primary >= .01 and determinism_pass),
+    quality = bool(existing and primary >= .01)
+    promotable = bool(quality and determinism_pass is True)
+    return {'quality_eligible': quality, 'development_promotable': promotable,
+            'phase': ('DEVELOPMENT_PROMOTABLE' if promotable else 'QUALITY_ELIGIBLE'
+                      if quality and determinism_pass is None else 'QUALITY_REJECTED'
+                      if not quality else 'DETERMINISM_FAILED'),
             'existing_gate': existing, 'primary_median_delta': primary,
             'paired_spell_deltas': spell, 'paired_macro_deltas': macro,
             'primary_deltas': corrupted, 'matches_improved': int(sum(v > 0 for v in spell.values())),
-            'tests_pass': tests_pass, 'determinism_pass': determinism_pass,
-            'production_promotion': False,
+            'tests_pass': tests_pass, 'determinism_all_cases_pass': determinism_pass,
+            'cache_admission_pass': True, 'production_promotion': False,
             'production_promotion_requires': 'integration, official validation, repeated CSV and clean-environment reproduction'}
+
+
+def decisions(rows, ids, tests_pass, determinism_pass=None):
+    by_arm = {arm: [r for r in rows if r['arm'] == arm] for arm in ('parent', 'tabicl', 'blend')}
+    standalone = gate(by_arm['parent'], by_arm['tabicl'], ids, tests_pass, determinism_pass)
+    # Freeze the comparison reference using QUALITY, even if a later shared
+    # emission determinism failure makes both neural arms nonpromotable.
+    reference = 'tabicl' if standalone['quality_eligible'] else 'parent'
+    blended = gate(by_arm[reference], by_arm['blend'], ids, tests_pass, determinism_pass)
+    original = gate(by_arm['parent'], by_arm['blend'], ids, tests_pass, determinism_pass)
+    selected = 'blend' if blended['development_promotable'] else (
+        'tabicl' if standalone['development_promotable'] else 'parent')
+    return {'standalone_vs_parent': standalone, 'blend_reference': reference,
+            'blend_vs_current_best': blended, 'blend_vs_original_parent': original,
+            'development_selected': selected,
+            'determinism_all_cases_pass': determinism_pass,
+            'production_changed': False, 'sealed_opened': False, 'target_accuracy': 'unknown'}
+
+
+def fit_cached(x, y, tag):
+    from tabicl import TabICLClassifier
+    print(f'{tag}: cached fit/warm-up start, rows={len(x)}', flush=True)
+    model = TabICLClassifier(**PARAMS)
+    model.fit(x, y)
+    print(f'{tag}: cached fit/warm-up complete', flush=True)
+    return model
+
+
+def first_inference(ids):
+    """Single initial fit and two fixed-condition predictions per held-out match."""
+    import numpy as np
+    costs, inputs, first_hashes = [], {}, {}
+    for match in ids:
+        start = time.monotonic()
+        x_train, y_train, training = context(ids, match)
+        inputs[match] = {'training': training, 'conditions': {}}
+        first_hashes[match] = {}
+        model = fit_cached(x_train, y_train, match + '/first')
+        path = OUT / (match + '.pkl')
+        print(f'{match}: saving initial local context/cache for conditional verification', flush=True)
+        model.save(path, save_model_weights=False, save_training_data=True, save_kv_cache=True)
+        model_hash = sha(path)
+        for condition in ('clean', 'targetlike'):
+            x = case_features(match, condition)
+            tab = predict(model, x, f'{match}/{condition}/first')
+            saved = OUT / f'{match}-{condition}-probs.npz'
+            np.savez_compressed(saved, p=tab)
+            with np.load(DIAG / f'{match}-{condition}-probs.npz') as d:
+                cat = d['p']
+            if cat.shape != tab.shape:
+                raise ValueError('Frozen parent probability shape mismatch')
+            with np.load(PREPARED / (match + '.npz')) as d:
+                blocks = d['blocks'].tolist()
+            first_hashes[match][condition] = decoded_csvs(match, condition, 'first', cat, tab, blocks)
+            feature_path = PREPARED / (match + '.npz') if condition == 'clean' else DIAG / (match + '-targetlike.npz')
+            inputs[match]['conditions'][condition] = {
+                'feature_sha256': sha(feature_path),
+                'parent_probabilities_sha256': sha(DIAG / f'{match}-{condition}-probs.npz'),
+                'candidate_probabilities_sha256': sha(saved)}
+            write('input-hashes.json', inputs)
+            write('first-csv-hashes.json', first_hashes)
+            del x, cat, tab
+            gc.collect()
+        costs.append({'match': match, 'stage': 'first', 'context_rows': len(y_train),
+                      'seconds': time.monotonic()-start, 'saved_model_sha256': model_hash})
+        write('cost.json', costs)
+        del model, x_train, y_train
+        gc.collect()
+        print(f'Initial inference complete: {match}', flush=True)
+    return costs, inputs, first_hashes
+
+
+def score_initial(ids, inputs):
+    import numpy as np
+    from possession.decode import decode
+    print('Initial five-match inference complete; starting quality-only scoring.', flush=True)
+    rows = []
+    for match in ids:
+        prepared_path = PREPARED / (match + '.npz')
+        if sha(prepared_path) != inputs[match]['conditions']['clean']['feature_sha256']:
+            raise RuntimeError('Prepared heldout input/labels changed before quality scoring')
+        with np.load(prepared_path) as d:
+            y, blocks = d['y'], d['blocks'].tolist()
+        for condition in ('clean', 'targetlike'):
+            expected = inputs[match]['conditions'][condition]
+            feature_path = prepared_path if condition == 'clean' else DIAG / (match + '-targetlike.npz')
+            if sha(feature_path) != expected['feature_sha256']:
+                raise RuntimeError('Features changed before quality scoring')
+            if sha(DIAG / f'{match}-{condition}-probs.npz') != expected['parent_probabilities_sha256']:
+                raise RuntimeError('Parent emissions changed before quality scoring')
+            if sha(OUT / f'{match}-{condition}-probs.npz') != expected['candidate_probabilities_sha256']:
+                raise RuntimeError('Candidate emissions changed before quality scoring')
+            x = case_features(match, condition)
+            with np.load(DIAG / f'{match}-{condition}-probs.npz') as d:
+                cat = d['p']
+            with np.load(OUT / f'{match}-{condition}-probs.npz') as d:
+                tab = d['p']
+            for arm, probability in arm_probabilities(cat, tab).items():
+                predicted = decode(probability, (1 - np.eye(3))*16, blocks)
+                rows.append({'match': match, 'condition': condition, 'arm': arm,
+                             **measure(y, predicted, blocks, x)})
+    write('results.json', rows)
+    return rows
+
+
+def verify_eligible(ids, costs, inputs, first_hashes):
+    """Mandatory all-case proof if either fixed candidate is quality-eligible."""
+    import numpy as np
+    from tabicl import TabICLClassifier
+    checks = []
+    for match in ids:
+        x_train, y_train, training = context(ids, match)
+        if training != inputs[match]['training']:
+            raise RuntimeError('Training source changed after initial inference')
+        path = OUT / (match + '.pkl')
+        expected_model_hash = next(r['saved_model_sha256'] for r in costs
+                                   if r['match'] == match and r['stage'] == 'first')
+        if sha(path) != expected_model_hash:
+            raise RuntimeError('Initial saved model changed before verification')
+        for stage in ('reload', 'refit'):
+            start = time.monotonic()
+            print(f'{match}/{stage}: full-case reproducibility verification starts', flush=True)
+            model = (TabICLClassifier.load(path, device='cpu') if stage == 'reload'
+                     else fit_cached(x_train, y_train, match + '/refit'))
+            for condition in ('clean', 'targetlike'):
+                expected = inputs[match]['conditions'][condition]
+                feature_path = PREPARED / (match + '.npz') if condition == 'clean' else DIAG / (match + '-targetlike.npz')
+                if sha(feature_path) != expected['feature_sha256']:
+                    raise RuntimeError('Feature source changed after initial inference')
+                parent_path = DIAG / f'{match}-{condition}-probs.npz'
+                if sha(parent_path) != expected['parent_probabilities_sha256']:
+                    raise RuntimeError('Frozen parent emissions changed after initial inference')
+                x = case_features(match, condition)
+                tab = predict(model, x, f'{match}/{condition}/{stage}')
+                saved = OUT / f'{match}-{condition}-probs.npz'
+                if sha(saved) != expected['candidate_probabilities_sha256']:
+                    raise RuntimeError('Initial candidate probabilities changed')
+                with np.load(saved) as first:
+                    probability_equal = bool(np.array_equal(tab, first['p']))
+                with np.load(parent_path) as d:
+                    cat = d['p']
+                with np.load(PREPARED / (match + '.npz')) as d:
+                    blocks = d['blocks'].tolist()
+                hashes = decoded_csvs(match, condition, stage, cat, tab, blocks)
+                csv_equal = hashes == first_hashes[match][condition]
+                checks.append({'match': match, 'condition': condition, 'stage': stage,
+                               'probabilities_exact': probability_equal, 'csv_bytes_equal': csv_equal,
+                               'csv_sha256': hashes})
+                write('determinism.json', checks)
+                if not probability_equal or not csv_equal:
+                    raise AssertionError(f'Shared TabICL emission determinism failed: {match}/{condition}/{stage}')
+                del x, cat, tab
+                gc.collect()
+            costs.append({'match': match, 'stage': stage, 'context_rows': len(y_train),
+                          'seconds': time.monotonic()-start, 'initial_saved_model_sha256': expected_model_hash})
+            write('cost.json', costs)
+            del model
+            gc.collect()
+        del x_train, y_train
+        gc.collect()
+    return checks
 
 
 def main():
@@ -208,110 +390,65 @@ def main():
     provenance = require_execution_authority(args.protocol)
     if R.exists() and any(R.glob('*.json')):
         raise RuntimeError('Existing scored results require review; no silent overwrite/resume')
-    EXECUTION_STARTED = True
     import numpy as np
-    from tabicl import TabICLClassifier
-    from possession.decode import decode
-    # Fail before expensive inference if the unchanged scorer's dependencies are absent.
+    from tabicl import TabICLClassifier  # noqa: F401; fail fast on dependency/import problems.
+    # The unchanged scorer imports pandas; check it before expensive warm-up.
     scorer_path = Path('reference/more-than-a-hack-2027-main/evaluation/possession_metrics.py')
     sys.path.insert(0, str(scorer_path.parent.resolve()))
-    import possession_metrics  # noqa: F401; includes the official pandas dependency.
-    provenance['reference_scorer_sha256'] = sha(scorer_path)
-    provenance['split_sha256'] = sha('experiments/core-development/split.json')
+    import possession_metrics  # noqa: F401
+    from importlib.metadata import distributions
+    dependencies = {d.metadata['Name']: d.version for d in distributions()
+        if d.metadata['Name'] in ('tabicl', 'torch', 'numpy', 'scikit-learn', 'scipy', 'einops', 'huggingface_hub')}
+    if dependencies != provenance['cache_dependencies']:
+        raise RuntimeError('Predictor dependencies changed since cache admission')
+    provenance.update(reference_scorer_sha256=sha(scorer_path), dependencies=dependencies,
+                      split_sha256=sha('experiments/core-development/split.json'))
     configure()
     R.mkdir(parents=True, exist_ok=True)
     OUT.mkdir(parents=True, exist_ok=True)
+    EXECUTION_STARTED = True
     ids = json.loads(Path('experiments/core-development/split.json').read_text())['development']
     if tuple(ids) != EXPECTED_IDS:
         raise ValueError('Original ordered development matches required; sealed matches forbidden')
     provenance.update(params=PARAMS, class_order=LABELS, match_order=ids)
     write('provenance.json', provenance)
-    determinism, costs, input_hashes = [], [], {}
-    for match in ids:
-        x_train, y_train, training = context(ids, match)
-        input_hashes[match] = {'training': training, 'conditions': {}}
-        model_path = OUT / (match + '.pkl')
-        stage_hashes = {}
-        for stage in ('first', 'reload', 'refit'):
-            start = time.monotonic()
-            if stage == 'reload':
-                model = TabICLClassifier.load(model_path, device='cpu')  # Newly generated local file only.
-            else:
-                model = TabICLClassifier(**PARAMS)
-                model.fit(x_train, y_train)
-                if stage == 'first':
-                    model.save(model_path, save_model_weights=False,
-                               save_training_data=True, save_kv_cache=False)
-            for condition in ('clean', 'targetlike'):
-                x = case_features(match, condition)
-                tab = predict(model, x, f'{match}/{condition}/{stage}')
-                saved = OUT / f'{match}-{condition}-probs.npz'
-                if stage == 'first':
-                    np.savez_compressed(saved, p=tab)
-                else:
-                    with np.load(saved) as first:
-                        if not np.array_equal(tab, first['p']):
-                            raise AssertionError(f'{stage} probabilities differ: {match}/{condition}')
-                with np.load(DIAG / f'{match}-{condition}-probs.npz') as d:
-                    cat = d['p']
-                if cat.shape != tab.shape:
-                    raise ValueError('Frozen parent probability shape mismatch')
-                with np.load(PREPARED / (match + '.npz')) as d:
-                    blocks = d['blocks'].tolist()
-                hashes = decoded_csvs(match, condition, stage, cat, tab, blocks)
-                if stage == 'first':
-                    stage_hashes[condition] = hashes
-                    feature_path = PREPARED / (match + '.npz') if condition == 'clean' else DIAG / (match + '-targetlike.npz')
-                    input_hashes[match]['conditions'][condition] = {'feature_sha256': sha(feature_path),
-                        'parent_probabilities_sha256': sha(DIAG / f'{match}-{condition}-probs.npz'),
-                        'candidate_probabilities_sha256': sha(saved)}
-                elif hashes != stage_hashes[condition]:
-                    raise AssertionError(f'{stage} CSV bytes differ: {match}/{condition}')
-                determinism.append({'match': match, 'condition': condition, 'stage': stage,
-                                    'probabilities_equal_to_first': True, 'csv_sha256': hashes})
-                write('determinism.json', determinism)
-                del x, cat, tab
-                gc.collect()
-            costs.append({'match': match, 'stage': stage, 'context_rows': len(y_train),
-                          'seconds': time.monotonic() - start, 'saved_model_sha256': sha(model_path)})
-            write('cost.json', costs)
-            write('input-hashes.json', input_hashes)
-            del model
-            gc.collect()
-        del x_train, y_train
-        gc.collect()
-        print('Verified all stages', match, flush=True)
-
-    # No quality score is computed until every planned repeat/reload check passes.
-    rows = []
-    for match in ids:
-        with np.load(PREPARED / (match + '.npz')) as d:
-            y, blocks = d['y'], d['blocks'].tolist()
-        for condition in ('clean', 'targetlike'):
-            x = case_features(match, condition)
-            with np.load(DIAG / f'{match}-{condition}-probs.npz') as d:
-                cat = d['p']
-            with np.load(OUT / f'{match}-{condition}-probs.npz') as d:
-                tab = d['p']
-            for arm, probability in arm_probabilities(cat, tab).items():
-                predicted = decode(probability, (1 - np.eye(3)) * 16, blocks)
-                rows.append({'match': match, 'condition': condition, 'arm': arm,
-                             **measure(y, predicted, blocks, x)})
-    write('results.json', rows)
     tests = subprocess.run([sys.executable, '-m', 'unittest', 'discover', '-s', 'tests', '-q'],
                            capture_output=True, text=True)
-    (R / 'production-tests.txt').write_text(tests.stdout + tests.stderr)
-    by_arm = {arm: [r for r in rows if r['arm'] == arm] for arm in ('parent', 'tabicl', 'blend')}
-    standalone = gate(by_arm['parent'], by_arm['tabicl'], ids, tests.returncode == 0, True)
-    reference = 'tabicl' if standalone['development_gate_pass'] else 'parent'
-    blended = gate(by_arm[reference], by_arm['blend'], ids, tests.returncode == 0, True)
-    decision = {'standalone_vs_parent': standalone, 'blend_reference': reference,
-                'blend_vs_current_best': blended,
-                'blend_vs_original_parent': gate(by_arm['parent'], by_arm['blend'], ids, tests.returncode == 0, True),
-                'development_selected': 'blend' if blended['development_gate_pass'] else reference,
-                'production_changed': False, 'sealed_opened': False, 'target_accuracy': 'unknown'}
+    (R / 'production-tests.txt').write_text(tests.stdout+tests.stderr)
+    if tests.returncode:
+        raise RuntimeError('Required production tests failed; no model fitting or scoring')
+    costs, inputs, first_hashes = first_inference(ids)
+    rows = score_initial(ids, inputs)
+    decision = decisions(rows, ids, tests_pass=True)
+    eligible = (decision['standalone_vs_parent']['quality_eligible']
+                or decision['blend_vs_current_best']['quality_eligible'])
+    decision.update(status='QUALITY_ELIGIBLE' if eligible else 'QUALITY_REJECTED',
+                    determinism_all_cases_performed=False, determinism_verification_started=False)
+    write('quality-gate.json', decision)
     write('gate.json', decision)
-    print(json.dumps(decision), flush=True)
+    print('Quality-only decision:', json.dumps(decision), flush=True)
+    if not eligible:
+        decision['verification_skipped_reason'] = 'Neither fixed arm passed quality gate; no promotion possible'
+        write('gate.json', decision)
+        print('Both quality gates failed; no full-case refit/reload verification required.', flush=True)
+        return
+    print('Quality eligibility is provisional; mandatory full-case verification now starts.', flush=True)
+    try:
+        verify_eligible(ids, costs, inputs, first_hashes)
+    except Exception as error:
+        # Both arms share TabICL emissions. No fallback/rescoring against a new
+        # reference after seeing this failure; neither becomes promotable.
+        decision = decisions(rows, ids, tests_pass=True, determinism_pass=False)
+        decision.update(status='DETERMINISM_FAILED', determinism_all_cases_performed=False,
+                        determinism_verification_started=True,
+                        verification_error={'type': type(error).__name__, 'message': str(error)})
+        write('gate.json', decision)
+        raise
+    decision = decisions(rows, ids, tests_pass=True, determinism_pass=True)
+    decision.update(status='DEVELOPMENT_PROMOTABLE', determinism_all_cases_performed=True,
+                    determinism_verification_started=True)
+    write('gate.json', decision)
+    print('Verified development decision:', json.dumps(decision), flush=True)
 
 
 if __name__ == '__main__':
