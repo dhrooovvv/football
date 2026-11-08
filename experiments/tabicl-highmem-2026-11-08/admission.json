@@ -1,0 +1,8 @@
+{
+  "exit_code": -15,
+  "reason": "3 GiB system available-memory floor",
+  "wall_seconds": 8.738204958004644,
+  "observed_peak_rss_bytes": 5240406016,
+  "min_observed_system_available_bytes": 3103588352,
+  "passed": false
+}

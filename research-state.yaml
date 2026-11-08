@@ -76,7 +76,7 @@ workspace:
   findings: findings.md
   technical_document: docs/technical-report.md
   next_step_plan: docs/next-steps-2026-11-07.md
-next_action: All authorized bounded tracks complete; preserve current candidate and review freeze/delivery readiness. Sealed evaluation November13 only.
+next_action: Await user freeing memory before any committed higher-cap CPU retry; preserve production and November13 sealed boundary.
 
 open_model_audit:
   date: '2026-11-08'
@@ -97,3 +97,12 @@ tabicl_extension:
   standalone_scored: false
   blend_scored: false
   report: experiments/tabicl-2026-11-08/report.md
+
+tabicl_highmem:
+  authorized: true
+  status: awaiting_user_memory_headroom
+  process_cap_gib: 10
+  available_floor_gib: 3
+  outcome: stopped_system_available_floor_not_process_cap
+  report: experiments/tabicl-highmem-2026-11-08/report.md
+  accuracy_scored: false

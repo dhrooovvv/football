@@ -1,0 +1,10 @@
+# Higher-memory CPU admission — November 8
+Protocol and runner committed b916aca before execution. User approved higher allowance on verified M3Pro18GiB. Same pinned checkpoint/environment, CPUthread1, exact113507parentcontextrows,64queryframes, two-repeat probability/CSV contract, no offload/cache/AMP/FA3 or modelling changes. Old6GiB evidence preserved; synthetic probes not repeated.
+
+STOPPED FOR SYSTEM HEADROOM, not for reaching10GiB process cap. Monitor recorded8.738204958s, exitSIGTERM-15, observed process peak5,240,406,016bytes (4.881GiB), minimum sampled available system memory3,103,588,352bytes (2.890GiB), below preregistered3GiBfloor. Poll interval.25s permits overshoot; no hard OSlimit claim. No completed actual-context probability output, determinism conclusion or quality score. Empty actual.log is expected from termination before final output.
+
+This is operational admission failure under the machine's current memory use. It neither proves113507rows fit18GiB nor proves they cannot. It does not show10GiB is insufficient. Current system contention confounds direct comparison with the earlier6GiB process-cap result. Do not call it two metric rejections. Neither standalone TabICL nor fixed50/50blend was scored.
+
+User asked to close unneeded memory-heavy apps and reply ready. No automatic killing of applications, no unchanged-input retries. A retry requires changed memory availability and its own committed continuation note before execution, same model/CPUsettings and10GiB/3GiB/300s guards. No production changes, target/public/sealed/PFFholdout access, hosted inference or external submission. Targetaccuracyunknown. November13freeze/14–16delivery unchanged. Previous29productiontests remain applicable; not rerun for this isolated resource-wrapper change. Production CSV not regenerated.
+
+Evidence: admission.json, pinned weight-source.json, actual.log, protocol.md; independent review docs/tabicl-highmem-review-2026-11-08.md. No accuracy selection or promotion. Pending required action: user frees memory before any retry.

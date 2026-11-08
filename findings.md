@@ -97,3 +97,7 @@ TabICLv2 is a newly identified permissively licensed pretrained probability-mode
 
 ## J040 — TabICLv2 and fixed blend admission
 User authorized new model experiments and two-model blend. Committed protocol plus independent sampling correction; exact parent113507rowLOMOcontext. Small1000/10000row probes deterministic after float64 probability normalization, but actual context exceeded preregistered6GiB observedRSS cap (6.377GiB,15.787s) and terminated before accuracy scoring. No standalone/blend metrics or promotion; resource rejection only, no claim TabICL lowers accuracy. Bounded track stopped, no rescue.29tests pass, production9coreCatBoost16/CSV unchanged; sealed and target labels untouched. See experiments/tabicl-2026-11-08/report.md.
+
+
+## J042 — Higher-memory admission
+User-approved10GiB CPUretry stopped at3GiBsystemavailablefloor after8.738s, processobservedpeak4.881GiB. Didnotreach10GiB orcompleteactualcontext; fit18GiB remainsunknown. No metrics/blend/productionchange. Awaituserclosingunneededapps andchangedheadroom beforecommittedretry. See experiments/tabicl-highmem-2026-11-08/report.md.

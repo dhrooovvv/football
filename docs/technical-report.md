@@ -110,3 +110,7 @@ Production remains unchanged after a read-only public-source review; no addition
 
 ## November8 TabICLv2 feasibility extension
 After user authorization, a committed local CPU admission protocol preceded conditional standalone and fixed50/50CatBoost blend comparisons. Independent review corrected context to exact parent stride5 rows. Synthetic probes were deterministic after a logged float64 row-normalization adapter correction. The actual113507rowcontext exceeded6GiB preregistered observedRSS cap and terminated before prediction completion; no possession score or blend was run. This is resource admission failure, not evidence of lower accuracy. Public BSD3weights remain ignored/private locally; checkpoint/dependency provenance and all failures in experiments/tabicl-2026-11-08/report.md. No production dependency/config change;29tests pass and canonicalCSVhash unchanged. Targetaccuracyunknown, no sealed/public-label access. Track stopped without rescue variants.
+
+
+## Higher-memory CPU admission clarification, November8
+User approved10GiB process budget; unchanged full-context TabICL run was stopped after8.738s by the3GiB systemavailable guard, processpeak4.881GiB. This does not demonstrate10GiBbudget failure or fullworkload compatibility/incompatibility with18GiB. Actual inference unfinished, no quality scores orblend. Await changedmemoryheadroom before anynewcommittedretry; production and existingreproductionevidence unchanged. See experiments/tabicl-highmem-2026-11-08/report.md.
