@@ -114,3 +114,7 @@ After user authorization, a committed local CPU admission protocol preceded cond
 
 ## Higher-memory CPU admission clarification, November8
 User approved10GiB process budget; unchanged full-context TabICL run was stopped after8.738s by the3GiB systemavailable guard, processpeak4.881GiB. This does not demonstrate10GiBbudget failure or fullworkload compatibility/incompatibility with18GiB. Actual inference unfinished, no quality scores orblend. Await changedmemoryheadroom before anynewcommittedretry; production and existingreproductionevidence unchanged. See experiments/tabicl-highmem-2026-11-08/report.md.
+
+
+## Changed-headroom retry, November8
+After userclosedapps, baselineavailable8.23555GiB. Preregistered identicalCPUretry reached7.388GiBprocessRSS, then3GiBsystemavailableguard stopped it after19.816s;10GiBprocesscapnotreached. No actualcontextcompletion/qualityscore/blendevaluation. Threeconsecutivefullcontextresourceadmissionsstopped, boundedtrackclosed. This doesnotprovefullworkloadcannotfit18GiB with a differentmemoryconfiguration; no suchvarianttested. Production/previousreproductionunchanged. Evidence experiments/tabicl-highmem-retry-2026-11-08/report.md.

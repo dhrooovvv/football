@@ -76,7 +76,7 @@ workspace:
   findings: findings.md
   technical_document: docs/technical-report.md
   next_step_plan: docs/next-steps-2026-11-07.md
-next_action: Await user freeing memory before any committed higher-cap CPU retry; preserve production and November13 sealed boundary.
+next_action: Preserve production and prepare freeze/delivery; unchanged full-context TabICL track closed after three resource admissions.
 
 open_model_audit:
   date: '2026-11-08'
@@ -100,9 +100,17 @@ tabicl_extension:
 
 tabicl_highmem:
   authorized: true
-  status: awaiting_user_memory_headroom
+  status: stopped_after_changed_headroom_retry
   process_cap_gib: 10
   available_floor_gib: 3
   outcome: stopped_system_available_floor_not_process_cap
   report: experiments/tabicl-highmem-2026-11-08/report.md
   accuracy_scored: false
+
+tabicl_changed_headroom_retry:
+  status: stopped_three_consecutive_full_context_admissions
+  report: experiments/tabicl-highmem-retry-2026-11-08/report.md
+  full_context_resource_failures_total: 3
+  metric_failures: 0
+  accuracy_scored: false
+  unchanged_retry_allowed: false

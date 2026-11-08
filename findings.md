@@ -101,3 +101,7 @@ User authorized new model experiments and two-model blend. Committed protocol pl
 
 ## J042 — Higher-memory admission
 User-approved10GiB CPUretry stopped at3GiBsystemavailablefloor after8.738s, processobservedpeak4.881GiB. Didnotreach10GiB orcompleteactualcontext; fit18GiB remainsunknown. No metrics/blend/productionchange. Awaituserclosingunneededapps andchangedheadroom beforecommittedretry. See experiments/tabicl-highmem-2026-11-08/report.md.
+
+
+## J043 — Changed-headroom retry stopped
+Userclosedapps;8.23555GiBbaselineavailable. Same10GiB/3GiBCPUprobe reached7.388GiBprocessRSS butstopped3GiBavailablefloorafter19.816s. Fullfit/actualdeterminism/accuracyremainunknown. Threefullcontextadmissionsnowstoppedforresourceguards; boundedtrackclosed,no unchangedretry, metricfailures0. No standalone/blend scored; productionunchanged. Report experiments/tabicl-highmem-retry-2026-11-08/report.md.
