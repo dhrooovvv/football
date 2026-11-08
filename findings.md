@@ -105,3 +105,7 @@ User-approved10GiB CPUretry stopped at3GiBsystemavailablefloor after8.738s, proc
 
 ## J043 — Changed-headroom retry stopped
 Userclosedapps;8.23555GiBbaselineavailable. Same10GiB/3GiBCPUprobe reached7.388GiBprocessRSS butstopped3GiBavailablefloorafter19.816s. Fullfit/actualdeterminism/accuracyremainunknown. Threefullcontextadmissionsnowstoppedforresourceguards; boundedtrackclosed,no unchangedretry, metricfailures0. No standalone/blend scored; productionunchanged. Report experiments/tabicl-highmem-retry-2026-11-08/report.md.
+
+
+## J044 — Uncapped admission authorized
+User explicitly overrode resourcecaps/resourcestop. Protocola0f5dd3 committed; identicalCPUadmission runningwithoutmemory/timekillthresholds. No resultsyet. Modelgate/privacy/CPU/splits/freezeunchanged.
