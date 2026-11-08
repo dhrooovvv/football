@@ -123,7 +123,7 @@ tabicl_uncapped:
   accuracy_scored: false
 
 tabicl_cache:
-  status: preregistered_pending_execution
+  status: running_full_context_correctness
   protocol: experiments/tabicl-cache-2026-11-08/protocol.md
   quality_scored: false
 tabicl_scored:

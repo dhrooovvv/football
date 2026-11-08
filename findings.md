@@ -113,3 +113,7 @@ User explicitly overrode resourcecaps/resourcestop. Protocola0f5dd3 committed; i
 
 ## J044 result — M3Pro full-context completion/repeatability
 Uncapped113507context/64querytwofitCPUtestPASS:exactprobabilities/CSV,41.586mintotal,9.016GiBobservedprocesspeak. Earlierresourcefailuresdidnotprovehardwareincompatibility. Noqualityscores/fullmatchevaluationyet. Preregisteredcachecorrectness915d198next, quality9656b93onlyaftercachepass. Productionunchanged, targetaccuracyunknown.
+
+
+## J045 — Cache admission in progress
+Synthetic1000/10000cacheFalse/Trueprobabilities/CSV andcachedreload/refitchecks passed;10000maxabsdelta0. Full113507context/16384querycachechecks running, noqualityscores. Cacheprecomputescostlytrainingcontext; measuredsyntheticrepeatqueryspeedisnotfullmatchperformance. Productionunchanged.
