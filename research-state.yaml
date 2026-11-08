@@ -141,7 +141,7 @@ tabicl_threads:
   quality_scored: false
 
 tabicl_threads_csv:
-  status: preregistered_pending_execution
+  status: running_csv_equivalence
   user_approved_after_numeric_failure: true
   requested_cores: 11
   criterion: exact_cross_core_csv_and_exact_within_mode_probabilities
