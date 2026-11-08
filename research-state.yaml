@@ -136,6 +136,6 @@ tabicl_threads:
   authorized: true
   requested_cores: 11
   verification_threads: 1
-  status: preregistered_pending_execution
+  status: running_thread_equivalence
   protocol: experiments/tabicl-threads-2026-11-08/protocol.md
   quality_scored: false
