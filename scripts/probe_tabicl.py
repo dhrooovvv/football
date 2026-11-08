@@ -23,7 +23,8 @@ def worker(kind):
  results=[];hashes=[];start=time.monotonic()
  for rep in range(2):
   model=TabICLClassifier(**params);model.fit(x,y);p=model.predict_proba(q)[:,[list(model.classes_).index(c) for c in ['H','A','D']]]
-  assert np.isfinite(p).all() and np.allclose(p.sum(1),1)
+  assert np.isfinite(p).all() and (p >= 0).all() and np.allclose(p.sum(1),1)
+  p=p.astype(np.float64);p/=p.sum(axis=1,keepdims=True)
   results.append(p);pred=decode(p,(1-np.eye(3))*16,[(0,len(p))]);f=D/(kind+'-'+str(rep)+'.csv');export_labels(f,pred,len(pred));hashes.append(hashlib.sha256(f.read_bytes()).hexdigest())
  same=np.array_equal(*results);csvsame=len(set(hashes))==1
  out=dict(probe=kind,context_rows=len(x),query_rows=len(q),seconds=time.monotonic()-start,probabilities_equal=same,csv_equal=csvsame,csv_sha256=hashes[0],params=params,classes_order='H,A,D',dependencies={d.metadata['Name']:d.version for d in distributions() if d.metadata['Name'] in ['tabicl','torch','numpy','scikit-learn','scipy','einops','huggingface_hub']})

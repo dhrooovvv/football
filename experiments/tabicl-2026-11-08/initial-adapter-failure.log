@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/dhruv/Desktop/backend projects/barcelona-track/scripts/probe_tabicl.py", line 50, in <module>
+    if len(sys.argv)>1:worker(sys.argv[2])
+                       ~~~~~~^^^^^^^^^^^^^
+  File "/Users/dhruv/Desktop/backend projects/barcelona-track/scripts/probe_tabicl.py", line 27, in worker
+    results.append(p);pred=decode(p,(1-np.eye(3))*16,[(0,len(p))]);f=D/(kind+'-'+str(rep)+'.csv');export_labels(f,pred,len(pred));hashes.append(hashlib.sha256(f.read_bytes()).hexdigest())
+                           ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhruv/Desktop/backend projects/barcelona-track/src/possession/decode.py", line 24, in decode
+    raise ValueError('probability rows must sum to one')
+ValueError: probability rows must sum to one
