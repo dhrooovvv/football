@@ -1,0 +1,62 @@
+{
+  "J03WMX": {
+    "clean": {
+      "parent": "ec167a3cc5ea5f11b9ede12de0fd90d0721129d8af1bb1a7f093c29d34d7b35f",
+      "tabicl": "054e30a3021f1afc318a36041927c9ff8ad729671134929f56f9e669e08dbbe9",
+      "blend": "58f26c02429adfd1bbda0c18d5734f35c7808ed17595cc820e6722a19c4ce9b9"
+    },
+    "targetlike": {
+      "parent": "d5e9496cc2dcfef5f8920d994da2d92e6c966adcf9a41ea396d2db3a91dba258",
+      "tabicl": "a676e63bd46a7f5e104a8a1319a0d8e09b2f7f24b890eb7fa44e86da67819ee4",
+      "blend": "8ba1b20ef8ac1811d3244ba4dc87138659632196c86bd1a7aa73bcfc0400bea4"
+    }
+  },
+  "J03WN1": {
+    "clean": {
+      "parent": "9ae31e32f000950d1bff1561e5ac4cf17c59d2a58a1240aafafc947cc6dca690",
+      "tabicl": "1caab7ccf64b9cfae288408aefb6daac14bb43cf65969d2da1fb3bb1e7d46f10",
+      "blend": "81df8b0221920a7ec0a39b23bf31ab450b03a9190abd203ff45f3ce76d7fdd09"
+    },
+    "targetlike": {
+      "parent": "8a9898f829a61c2bdbe12750912731e8f67d8346bda44bfd440028d7d1d77872",
+      "tabicl": "b02186d77bacb6303d80f5dc7c41b0b1ab4369b98310d2565709d3d0ca45d44d",
+      "blend": "ed7a53d23bbbb8adfeeaf5c8df8f06ee7b16cdd55fc5e03f4357dd3a702f28d3"
+    }
+  },
+  "J03WOH": {
+    "clean": {
+      "parent": "17784d1944b8f64258a289ac36620aca1bfd2b7d56d3f5a75c8e9db59ad1f9fd",
+      "tabicl": "8aa089d67027fb6bd94c4f0dc10820cba830f5e9bca46360edc192e4b983f01a",
+      "blend": "b1119069f1693a9f62fd6384a4f42c9753538945b5a8871394e7934842aef77b"
+    },
+    "targetlike": {
+      "parent": "61f18e67c9dd30435efaa7e712d29d3bf225bdb0aad38bcdc8482a2b9ccfd9f5",
+      "tabicl": "d0cc1afbf94abf8c22aec71092e11e1a26b4bb35f2c4796dbd8ec863d06cf96a",
+      "blend": "0e479c48d57a0d8a38e497c6315fa8eb54dc1fbe081a1a961197340ec03225ec"
+    }
+  },
+  "J03WOY": {
+    "clean": {
+      "parent": "a13179ccf09f247fbb2eba5b09e68b37e66e5083fe20f1f1086790b61ffc7e9f",
+      "tabicl": "bfe284c6598927a71e6e7f4cdef4e5f93ed89850e2f59ceb7bdc6bf15c1f827a",
+      "blend": "0effc957468561cc3f75c7a15092b978979e9988533d710d824f2cb56ae4da24"
+    },
+    "targetlike": {
+      "parent": "1bb430f7aed7a7655cc11939453766eac0956712b678e6227cd41db8bc878bee",
+      "tabicl": "70ee9ce617f4ef1d553b704dd95ad731df8556a5c8a5a547f421d4e7a1747258",
+      "blend": "610821e02406995dcd89952796ed719015e9452a3f494c537a54b5ea7692d99b"
+    }
+  },
+  "J03WPY": {
+    "clean": {
+      "parent": "60dab1cdd8d15213d2a5ae4188424a98cd3bb1965f740210bf000d1742468f74",
+      "tabicl": "6ff12412eb74349ecb23d2923d31eea25842719b177810ff6840293063ba1110",
+      "blend": "3625d8ca7fce6fc5042767b20b3be4211940a2259ebc31a54d159713004e0b11"
+    },
+    "targetlike": {
+      "parent": "ae9d57fa4f1dc35e2efcc0711c1a9fd367765fdfb32626c5f16b30dbefa0d866",
+      "tabicl": "b300cb14ef08597fbbd0742b675d173b627d08d3b3ddd930a0ad54fbd3eef2ae",
+      "blend": "7e76993b0ecfc270f8eac89f5de4f93213aa03c4b05f7f8a0841e67d9fe121b9"
+    }
+  }
+}

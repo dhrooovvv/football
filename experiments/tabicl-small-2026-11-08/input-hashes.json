@@ -1,0 +1,192 @@
+{
+  "J03WMX": {
+    "training": {
+      "J03WN1": {
+        "rows": 28313,
+        "prepared_sha256": "7b630e11e8fd68278d96199253fba87c849f5397bd133e2a08070c35b02129ee"
+      },
+      "J03WOH": {
+        "rows": 27443,
+        "prepared_sha256": "3172101d6c911e4e38d824c0e627b81fcfaed105fc4dd237165017dd7aa4d65a"
+      },
+      "J03WOY": {
+        "rows": 28508,
+        "prepared_sha256": "f557f48aa2ede08949d9a0a66fcb8763004bc4f734b630323127e3198d726281"
+      },
+      "J03WPY": {
+        "rows": 29243,
+        "prepared_sha256": "928cae4a6e137b9537cd4f2e5e1dc22a8ad7ac490ed92501215fb6be07f22873"
+      },
+      "_sampling": {
+        "pool_rows": 113507,
+        "selected_rows": 10000,
+        "seed": 20261106,
+        "indices_sha256": "16b1159632154fcaa6876a1620d73ba3097809f9a798c1e175496e8fe3283f44"
+      }
+    },
+    "conditions": {
+      "clean": {
+        "feature_sha256": "fafb925ce89a340aceffb67bacfc6562c319e7cc3671b3d2aeb14c55aa8b52c7",
+        "parent_probabilities_sha256": "0d2291805410acc97a443d0f16d9020dbf05b853b41f133fc3cb1f9088e53eed",
+        "candidate_probabilities_sha256": "0102b6af47047082e1fe399dfbbc745bf24a258aeaed62fbb95a1c3619ec29bc"
+      },
+      "targetlike": {
+        "feature_sha256": "fd9e5c2714bfc092c05013f03fd339166cc0c398f2cb28a139c19b64f95a290f",
+        "parent_probabilities_sha256": "ee54e99a881ca32a08ca9e128354e02d967727d2d96b3446dce0236a64e0e05c",
+        "candidate_probabilities_sha256": "a14e4353368c18aa7a48a86a9f6ac584251662c8cd09c2e6da60d1d5f988c6bf"
+      }
+    }
+  },
+  "J03WN1": {
+    "training": {
+      "J03WMX": {
+        "rows": 29194,
+        "prepared_sha256": "fafb925ce89a340aceffb67bacfc6562c319e7cc3671b3d2aeb14c55aa8b52c7"
+      },
+      "J03WOH": {
+        "rows": 27443,
+        "prepared_sha256": "3172101d6c911e4e38d824c0e627b81fcfaed105fc4dd237165017dd7aa4d65a"
+      },
+      "J03WOY": {
+        "rows": 28508,
+        "prepared_sha256": "f557f48aa2ede08949d9a0a66fcb8763004bc4f734b630323127e3198d726281"
+      },
+      "J03WPY": {
+        "rows": 29243,
+        "prepared_sha256": "928cae4a6e137b9537cd4f2e5e1dc22a8ad7ac490ed92501215fb6be07f22873"
+      },
+      "_sampling": {
+        "pool_rows": 114388,
+        "selected_rows": 10000,
+        "seed": 20261106,
+        "indices_sha256": "d288a6c0769a129c0778dacfc106bc4bc362ac73ba124e72e2d529520ee793eb"
+      }
+    },
+    "conditions": {
+      "clean": {
+        "feature_sha256": "7b630e11e8fd68278d96199253fba87c849f5397bd133e2a08070c35b02129ee",
+        "parent_probabilities_sha256": "31232e83efca16ab4f68d404ae9e46c506895c28f047bf83ab3a8122d7be2dad",
+        "candidate_probabilities_sha256": "8c6f64ed4494582a43085a44966bb61b1bc4cc79c1d8e483b0113cf96712a25c"
+      },
+      "targetlike": {
+        "feature_sha256": "e401176de7da2af79368381f1a8b14ae2cd7778bd9c1925acbf34a3d19a951df",
+        "parent_probabilities_sha256": "2e8e72f02ae63961c192070f571c1b594cb37a888a00c83ad232ffa87fc62ca6",
+        "candidate_probabilities_sha256": "5a4787703a44fb10ff8dcb74a1e860aa61fdf494892023c0d9cd04e8e1c47f28"
+      }
+    }
+  },
+  "J03WOH": {
+    "training": {
+      "J03WMX": {
+        "rows": 29194,
+        "prepared_sha256": "fafb925ce89a340aceffb67bacfc6562c319e7cc3671b3d2aeb14c55aa8b52c7"
+      },
+      "J03WN1": {
+        "rows": 28313,
+        "prepared_sha256": "7b630e11e8fd68278d96199253fba87c849f5397bd133e2a08070c35b02129ee"
+      },
+      "J03WOY": {
+        "rows": 28508,
+        "prepared_sha256": "f557f48aa2ede08949d9a0a66fcb8763004bc4f734b630323127e3198d726281"
+      },
+      "J03WPY": {
+        "rows": 29243,
+        "prepared_sha256": "928cae4a6e137b9537cd4f2e5e1dc22a8ad7ac490ed92501215fb6be07f22873"
+      },
+      "_sampling": {
+        "pool_rows": 115258,
+        "selected_rows": 10000,
+        "seed": 20261106,
+        "indices_sha256": "7b0c6070c05f44e5dfe49fd4dd8435c72e4e6b47813defdb0c8c23b2d5028df2"
+      }
+    },
+    "conditions": {
+      "clean": {
+        "feature_sha256": "3172101d6c911e4e38d824c0e627b81fcfaed105fc4dd237165017dd7aa4d65a",
+        "parent_probabilities_sha256": "303e4c4dd4795fb3ce8e5b679bacba5c91e8b42b9c22e0d0922ff89602e652f7",
+        "candidate_probabilities_sha256": "13136f2f7c2a6a4da908920d95737bee5ec7aeff3eff0a6b84e3174190c46e9b"
+      },
+      "targetlike": {
+        "feature_sha256": "242e117c13aa5cbb06cd81df28fa7c1713b6bb16fe20efe012bd633a3e05756f",
+        "parent_probabilities_sha256": "b82d9a10a96f82c20e725bcf56b1f286c58bd0d3372cb6be8efb252b2a21fd14",
+        "candidate_probabilities_sha256": "80fe2c878437b69c7bfe9172b991c716b1b168d0ac19df682c4796d16e9114b7"
+      }
+    }
+  },
+  "J03WOY": {
+    "training": {
+      "J03WMX": {
+        "rows": 29194,
+        "prepared_sha256": "fafb925ce89a340aceffb67bacfc6562c319e7cc3671b3d2aeb14c55aa8b52c7"
+      },
+      "J03WN1": {
+        "rows": 28313,
+        "prepared_sha256": "7b630e11e8fd68278d96199253fba87c849f5397bd133e2a08070c35b02129ee"
+      },
+      "J03WOH": {
+        "rows": 27443,
+        "prepared_sha256": "3172101d6c911e4e38d824c0e627b81fcfaed105fc4dd237165017dd7aa4d65a"
+      },
+      "J03WPY": {
+        "rows": 29243,
+        "prepared_sha256": "928cae4a6e137b9537cd4f2e5e1dc22a8ad7ac490ed92501215fb6be07f22873"
+      },
+      "_sampling": {
+        "pool_rows": 114193,
+        "selected_rows": 10000,
+        "seed": 20261106,
+        "indices_sha256": "512117207d67ad8bcef487f928d72fd9f0c153d4d7c91814d96f3d574105208d"
+      }
+    },
+    "conditions": {
+      "clean": {
+        "feature_sha256": "f557f48aa2ede08949d9a0a66fcb8763004bc4f734b630323127e3198d726281",
+        "parent_probabilities_sha256": "a8087eb1c0daddac9aa851d84f92f9231e9984f54ced2b93a70113ad229ffb44",
+        "candidate_probabilities_sha256": "bd7f1614b816189cd686f72140f69e7ed4857f164ad503635948c4b6a98bd7cd"
+      },
+      "targetlike": {
+        "feature_sha256": "a1d41aabe77b99667691a620c59f46262d2434f1c33a9bdb980e920416da6584",
+        "parent_probabilities_sha256": "2f560a23a365263836634a3fc07bb8a5c7175a25739830024f4811a3e0534852",
+        "candidate_probabilities_sha256": "95d805b56f054150ee466dff4468705bbf422ad44c6b49d93671add94b29d09a"
+      }
+    }
+  },
+  "J03WPY": {
+    "training": {
+      "J03WMX": {
+        "rows": 29194,
+        "prepared_sha256": "fafb925ce89a340aceffb67bacfc6562c319e7cc3671b3d2aeb14c55aa8b52c7"
+      },
+      "J03WN1": {
+        "rows": 28313,
+        "prepared_sha256": "7b630e11e8fd68278d96199253fba87c849f5397bd133e2a08070c35b02129ee"
+      },
+      "J03WOH": {
+        "rows": 27443,
+        "prepared_sha256": "3172101d6c911e4e38d824c0e627b81fcfaed105fc4dd237165017dd7aa4d65a"
+      },
+      "J03WOY": {
+        "rows": 28508,
+        "prepared_sha256": "f557f48aa2ede08949d9a0a66fcb8763004bc4f734b630323127e3198d726281"
+      },
+      "_sampling": {
+        "pool_rows": 113458,
+        "selected_rows": 10000,
+        "seed": 20261106,
+        "indices_sha256": "113edfa3bd1dd542f641f29d3f81e221d09b078e379103b9e8fb0585bf4450a9"
+      }
+    },
+    "conditions": {
+      "clean": {
+        "feature_sha256": "928cae4a6e137b9537cd4f2e5e1dc22a8ad7ac490ed92501215fb6be07f22873",
+        "parent_probabilities_sha256": "4bbeedfd44974f26a3d133851a7e636735a5edba03ce187b84a62be8e0a0b5ce",
+        "candidate_probabilities_sha256": "b050053ea47ae92b6dc2c6ab90574f56b57935742f6f7bce66fe52be45f7d62a"
+      },
+      "targetlike": {
+        "feature_sha256": "61164f2aec81dbaa90d44cb369e8380eeb8f86c0c509510dbd5446d04a84ec91",
+        "parent_probabilities_sha256": "87747971e1444c91eda586988beef5e3c7ebcbf2214028017c62e81087398b7f",
+        "candidate_probabilities_sha256": "1a157b41ef20e0e5fbbcffa4faa978c93f867c2b444d0afa461d71f22006683b"
+      }
+    }
+  }
+}

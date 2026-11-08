@@ -155,7 +155,19 @@ user_stop:
   resume_requires_user_instruction: true
 
 manual_small_runner:
-  status: prepared_not_executed
+  status: completed_quality_rejected
   script: scripts/run_tabicl_small.py
   protocol: experiments/tabicl-small-2026-11-08/protocol.md
   automatic_promotion: false
+
+manual_small_result_audit:
+  date: "2026-11-08"
+  report: experiments/tabicl-small-2026-11-08/report.md
+  standalone_primary_median_delta: -0.03126212695186176
+  blend_primary_median_delta: 0.0019948574867335034
+  standalone_matches_improved: 0
+  blend_matches_improved: 1
+  tests_passed: 31
+  independently_recomputed: true
+  production_changed: false
+  next_action: bounded_screen_stopped_no_new_run
