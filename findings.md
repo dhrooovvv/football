@@ -125,3 +125,13 @@ Cache correctness passed: synthetic numeric delta0; actual64CSV matches uncapped
 
 ## J046 failure / J047 approved endpoint
 CPU11 fit was332.785s;64CSV matched CPU1, but max probability delta1.47821e-5 failed the registered1e-6 criterion. No quality/16k/repeatability test followed. User then approved a separate full16kCSV-based cross-mode test with exact within-mode repeatability and single-thread winner verification. Original failed result preserved; production unchanged.
+
+
+## J048 — User stop
+Active cross-core CSV test terminated at user request. Admission incomplete; no quality scores or model promotion. Production CatBoost16 unchanged. No background inference remains from this experiment.
+
+J048 clarification: the process had already failed on disk space before stop inspection. Removed its incomplete generated cache only; no experiment restarted.
+
+
+## J049 — Saved results reviewed, no restart
+CPU11 initial64/16384CSV matches CPU1 exactly; numerical probabilities differ slightly. Observed fit/prediction speed about3x, but11-core reload/refit failed to complete due disk space. No F1/blend evaluation or proven accuracy gain. Current production unchanged; user stop active. See experiments/tabicl-threads-csv-2026-11-08/report.md.
