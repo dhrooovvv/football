@@ -1,8 +1,26 @@
-# Uncapped CPU admission — November8
-PASS. User explicitly removed experimentresourcecaps; protocola0f5dd3 committedbeforeexecution, previousresourcefailures preserved. Same TabICL2.2.0/pinnedcheckpoint/9features/seed20261106/CPUthread1,113507exactparentcontextrows,heldoutJ03WMX64queryframes, twoindependentfits/predictions. No resourcekillthreshold orOSconfigurationchange. Both probabilities EXACTequal, bothdecodedCSVbytesidentical SHA256283eba25193476a39c0e5a9a29b81eeb6093c2dfad911d24c0f601fa7eb167a2.
+# Uncapped CPU admission — November 8, 2026
 
-Wall2495.183770s(41.586min), worker2492.117602s. Sampledobservedprocesspeak9,680,912,384bytes(9.016GiB), minimumavailable2,940,846,080bytes(2.739GiB). RSSdoesnotmeasureallsystem/compressed/swapcost; no claim fullworkloadfitsphysicalRAMwithoutswap. VerifiedM3Pro18GiB completedthisfullcontext64querytest. No full-matchtest orqualityscores; not evidence ofhigher spellF1/targetaccuracy. No metricpromotion. CPUstackdiagnostic showed activeTorchCPUattention; profile retainedignoreddataonly.
+**Passed.** The M3 Pro with 18 GiB memory completed two full-context predictions, producing exactly equal probabilities and identical CSV bytes. No possession-quality score was calculated.
 
-This supersedes any inference that earlier6GiB/self-imposedheadroomstops demonstratedhardwareincompatibility. No syntheticreruns. No target/publiclabels/sealed/PFFholdoutreads/hostedinference/submission. Production9coreunaugmentedCatBoost16unchanged; no newproductionreproductionclaimed. Dependencies/checkpoint/outcomes inactual.json/admission.json/weight-source.json. Independentstaticreview docs/tabicl-uncapped-review-2026-11-08.md. Officialscorer/pandas3.1.1importpreflightpassedwithoutscoring orinstallchanges.
+| Measurement | Result |
+|---|---:|
+| Labelled training-context rows | 113,507 |
+| Held-out query frames per prediction | 64 |
+| Independent fits and predictions | 2 |
+| Total wall time | 2,495.184 seconds / 41.586 minutes |
+| Observed peak process RSS | 9,680,912,384 bytes / 9.016 GiB |
+| Minimum sampled system-available memory | 2,940,846,080 bytes / 2.739 GiB |
+| Probability equality | Exact |
+| CSV byte equality | Exact |
 
-Next: computationalcacheadmission protocol915d198, then scoredsupplement9656b93 ONLYifcachechecks pass. Fixedtwoarms,5matchesclean/corrupt=10cases; blendsharesTabICLprobabilities. No openendedsearch. Allqualitygates/CPU/splits/privacy/freezeNov13 unchanged. Preparedscoringcodewasnotexecutedduringadmission.
+CSV SHA256: `283eba25193476a39c0e5a9a29b81eeb6093c2dfad911d24c0f601fa7eb167a2`.
+
+Protocol `a0f5dd3` was committed before execution after the user explicitly removed the experiment's memory and runtime limits. The model, checkpoint, nine features, seed 20261106 and single-thread CPU settings were unchanged. The context used the parent model's exact stride-five sampling from the four development matches other than J03WMX. Earlier resource-guard failures remain in their original directories.
+
+This establishes completion and repeatability for this 64-query test on the verified Mac. It does not establish full-match runtime, full-match memory requirements, operation without compression or swap, cross-machine reproducibility, higher spellF1, or target accuracy. RSS is a process measurement, not total system memory cost.
+
+No target, public-label, sealed-match or PFF holdout data was used. No hosted inference or system-setting changes occurred. Production remains the nine-feature, unaugmented CatBoost model with penalty 16. Existing production reproduction evidence still applies; no new production reproduction was performed here.
+
+Evidence: `actual.json`, `admission.json`, `weight-source.json`, and the independent static review in `docs/tabicl-uncapped-review-2026-11-08.md`. A read-only CPU stack sample showed active PyTorch attention; that diagnostic remains under ignored `data/`. The pandas 3.1.1 and official-scorer import preflight passed without scoring or dependency changes.
+
+Next: cache-correctness admission under protocol `915d198`. Only if it passes may the fixed two-arm comparison under protocol `9656b93` run. That comparison covers five development matches, clean and corrupted: ten cases. The blend reuses TabICL probabilities. Production can change only after the unchanged promotion gate and all required reproducibility checks pass. The November 13 freeze remains unchanged.
