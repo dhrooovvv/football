@@ -1,9 +1,23 @@
 [
   {
     "probe": "1000",
-    "exit_code": 1,
+    "exit_code": 0,
     "reason": null,
-    "wall_seconds": 3.6370675420039333,
-    "peak_rss_bytes": 790970368
+    "wall_seconds": 3.3850197500141803,
+    "peak_rss_bytes": 807518208
+  },
+  {
+    "probe": "10000",
+    "exit_code": 0,
+    "reason": null,
+    "wall_seconds": 26.49026470797253,
+    "peak_rss_bytes": 2306818048
+  },
+  {
+    "probe": "actual",
+    "exit_code": -15,
+    "reason": "6 GiB resident-memory cap",
+    "wall_seconds": 15.786887541995384,
+    "peak_rss_bytes": 6847381504
   }
 ]

@@ -83,7 +83,17 @@ open_model_audit:
   status: research_only_no_trial
   report: literature/open-models-review-2026-11-08.md
   primary_sources: literature/open-model-primary-audit-2026-11-08.md
-  new_lead: TabICLv2_unmeasured_CPU_feasibility_pending
+  new_lead: TabICLv2_failed_fixed_resource_admission_no_scores
   pathcrf_checkpoint: conditional_dev_training_and_sealed_validation_overlap
   fresh_window: '2026-10-09_to_2026-11-08_partial_coverage'
-  performance_budget_reopened: false
+  performance_budget_reopened: true
+
+tabicl_extension:
+  authorized: true
+  status: stopped_resource_admission_failure
+  context_rows: 113507
+  resource_failures: 1
+  metric_failures: 0
+  standalone_scored: false
+  blend_scored: false
+  report: experiments/tabicl-2026-11-08/report.md
