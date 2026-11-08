@@ -998,3 +998,14 @@ User asked whether another useful test exists. Recommend at most one separate, p
 
 ### J054 — 2026-11-08 — Prepared authorized manual30k follow-up
 User requested command for proposed30k screen. Prepared separate run_tabicl_medium.py, committed protocol and locked26-input manifest; only scientific change is context cap30k. Previous10k evidence preserved. Synthetic sampler tests cover30k cap, exclusions, deterministic seed and complete evaluation timeline; no model execution or automatic promotion. User-run command follows existing isolated environment.
+
+
+Manual reduced-context run 2026-11-09T00:19:37.564184+05:30: status=QUALITY_REJECTED; report experiments/tabicl-medium-2026-11-08/report.md. No production promotion.
+
+
+### J055 — 2026-11-09 — Manual30k follow-up audited and rejected
+User reported completion. Reviewed experiments/tabicl-medium-2026-11-08 aggregate results, gate, provenance, costs and test log; independently recomputed all per-match paired spell deltas and primary corrupted deltas and confirmed recorded gate within1e-12. Complete QUALITY_REJECTED; no runner active. Provenance records26 locked inputs,30,000 context rows,11cores;33 contract tests passed. Five fold processing stages total1373.004s (22.88min), excluding setup/scoring overhead.
+
+Mean spellF1 clean/target-like corrupted: parent .517654/.323476; TabICL .493411/.291949; fixed50/50blend .508988/.327294. Mean macroF1 clean/corrupted: parent .895099/.679401; TabICL .879168/.637765; blend .892221/.680216. Standalone median paired spell delta−.031473,0/5 improved, median macro delta−.027112, primary median delta−.031552. Blend median paired spell delta−.004627,1/5 improved, median macro delta−.002116, primary median delta+.001606, below+.01. Both reject. Full per-match clean/corrupted scores preserved in report.md/results.json and deltas in gate.json.
+
+Decision: close this bounded follow-up; no further context-size/seed/blend search, no new run started. Keep nine core features + unaugmented CatBoost + penalty16. Increasing context from10k to30k did not rescue the registered model; this does not disprove other TabICL configurations. These reused development matches cannot establish independent target quality. No candidate repeatability or clean-environment verification performed because numeric gate failed; no production changes. Sealed matches remain untouched, target accuracy unknown, no target/public-label selection. Next independent evaluation remainsNovember13 under the frozen interpretation rule; deliveryNovember14–16.

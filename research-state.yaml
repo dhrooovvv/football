@@ -171,3 +171,20 @@ manual_small_result_audit:
   independently_recomputed: true
   production_changed: false
   next_action: bounded_screen_stopped_no_new_run
+
+manual_medium_result_audit:
+  date: "2026-11-09"
+  status: completed_quality_rejected_bounded_followup_closed
+  report: experiments/tabicl-medium-2026-11-08/report.md
+  context_rows: 30000
+  threads: 11
+  standalone_primary_median_delta: -0.03155171651361277
+  blend_primary_median_delta: 0.0016063997309733735
+  standalone_matches_improved: 0
+  blend_matches_improved: 1
+  tests_passed: 33
+  fold_processing_seconds: 1373.0044653319055
+  independently_recomputed: true
+  production_changed: false
+  sealed_opened: false
+  next_action: no_further_context_search_sealed_evaluation_at_freeze

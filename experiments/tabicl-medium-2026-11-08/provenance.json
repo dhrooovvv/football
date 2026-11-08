@@ -1,0 +1,66 @@
+{
+  "locked_inputs_manifest": "experiments/tabicl-medium-2026-11-08/locked-inputs.json",
+  "locked_inputs_sha256": "96942d8545f2e78dd59717225ed6451d8978e24d2b5b73fbf41b04e574b03570",
+  "locked_input_files_verified": 26,
+  "protocol": "experiments/tabicl-medium-2026-11-08/protocol.md",
+  "protocol_sha256": "5b893d9fcba6878784a78bb20db9e6365808a4fa13021431c42f2094f9a1189d",
+  "protocol_commit": "d356d1ac3cceea2a70202e79f2384a0c7702faa1",
+  "weight_source": {
+    "repo": "jingang/TabICL",
+    "revision": "4dcd344ece2c00be9e831fdd35bed57b5ad83e19",
+    "filename": "tabicl-classifier-v2-20260212.ckpt",
+    "license": "bsd-3-clause",
+    "sha256": "bdc7dbd5e4ff21f8f0456fcf90c6b7cdf72dbea960f2d05b19bec19f9b3d4ed0",
+    "bytes": 110368038
+  },
+  "query_chunk": 16384,
+  "cache_admission_sha256": "496b6d8357cedcbe565b6b596961f56b10ab581f68a4053f1d8f1290dcc6c9d4",
+  "cache_dependencies": {
+    "scikit-learn": "1.9.1",
+    "einops": "0.8.2",
+    "numpy": "2.5.4",
+    "tabicl": "2.2.0",
+    "huggingface_hub": "2.4.0",
+    "scipy": "1.18.1",
+    "torch": "2.15.0"
+  },
+  "reference_scorer_sha256": "341bad48904b489d6e875397b27687f5d6a4d22a397f3dc8af3a00d48f16874d",
+  "dependencies": {
+    "scikit-learn": "1.9.1",
+    "einops": "0.8.2",
+    "numpy": "2.5.4",
+    "tabicl": "2.2.0",
+    "huggingface_hub": "2.4.0",
+    "scipy": "1.18.1",
+    "torch": "2.15.0"
+  },
+  "split_sha256": "c3ecb1a94f95d12bfc502c92b1eff59911faf88d488289144753c4ce492a7960",
+  "params": {
+    "n_estimators": 1,
+    "softmax_temperature": 1.0,
+    "random_state": 20261106,
+    "n_jobs": 11,
+    "device": "cpu",
+    "use_amp": false,
+    "use_fa3": false,
+    "offload_mode": false,
+    "kv_cache": true,
+    "model_path": "data/tabicl/model.ckpt",
+    "allow_auto_download": false
+  },
+  "class_order": [
+    "H",
+    "A",
+    "D"
+  ],
+  "match_order": [
+    "J03WMX",
+    "J03WN1",
+    "J03WOH",
+    "J03WOY",
+    "J03WPY"
+  ],
+  "training_context_limit": 30000,
+  "quality_screen_only": true,
+  "model_checkpoints_written": false
+}

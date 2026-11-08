@@ -1,0 +1,116 @@
+{
+  "standalone_vs_parent": {
+    "quality_eligible": false,
+    "development_promotable": false,
+    "phase": "QUALITY_REJECTED",
+    "existing_gate": false,
+    "primary_median_delta": -0.03155171651361277,
+    "paired_spell_deltas": {
+      "J03WMX": -0.03147259971267141,
+      "J03WN1": -0.023688247092043258,
+      "J03WOH": -0.03853704394026053,
+      "J03WOY": -0.038061738607202855,
+      "J03WPY": -0.007664187732826067
+    },
+    "paired_macro_deltas": {
+      "J03WMX": -0.024410317580552676,
+      "J03WN1": -0.035846396113054624,
+      "J03WOH": -0.03394626356954855,
+      "J03WOY": -0.027111985120254256,
+      "J03WPY": -0.022600829993181915
+    },
+    "primary_deltas": {
+      "J03WMX": -0.03571484932172009,
+      "J03WN1": -0.03023896351690286,
+      "J03WOH": -0.04497334627855426,
+      "J03WOY": -0.03155171651361277,
+      "J03WPY": -0.015155619138451648
+    },
+    "matches_improved": 0,
+    "tests_pass": true,
+    "determinism_all_cases_pass": null,
+    "prior_single_thread_cache_contract": true,
+    "current_repeatability_verified": false,
+    "production_promotion": false,
+    "production_promotion_requires": "integration, official validation, repeated CSV and clean-environment reproduction"
+  },
+  "blend_reference": "parent",
+  "blend_vs_current_best": {
+    "quality_eligible": false,
+    "development_promotable": false,
+    "phase": "QUALITY_REJECTED",
+    "existing_gate": false,
+    "primary_median_delta": 0.0016063997309733735,
+    "paired_spell_deltas": {
+      "J03WMX": -0.004626651803240123,
+      "J03WN1": -0.00011769447662668409,
+      "J03WOH": -0.014736479171342187,
+      "J03WOY": -0.005752239237245105,
+      "J03WPY": 0.013112663085210363
+    },
+    "paired_macro_deltas": {
+      "J03WMX": -0.0006994817102977668,
+      "J03WN1": -0.002116164959989897,
+      "J03WOH": -0.0021963396551213377,
+      "J03WOY": -0.002739792508325789,
+      "J03WPY": 0.002594723278289357
+    },
+    "primary_deltas": {
+      "J03WMX": 0.0016063997309733735,
+      "J03WN1": 0.004940879054064928,
+      "J03WOH": -0.010018573476268389,
+      "J03WOY": -0.0003690441677701717,
+      "J03WPY": 0.022928432191590187
+    },
+    "matches_improved": 1,
+    "tests_pass": true,
+    "determinism_all_cases_pass": null,
+    "prior_single_thread_cache_contract": true,
+    "current_repeatability_verified": false,
+    "production_promotion": false,
+    "production_promotion_requires": "integration, official validation, repeated CSV and clean-environment reproduction"
+  },
+  "blend_vs_original_parent": {
+    "quality_eligible": false,
+    "development_promotable": false,
+    "phase": "QUALITY_REJECTED",
+    "existing_gate": false,
+    "primary_median_delta": 0.0016063997309733735,
+    "paired_spell_deltas": {
+      "J03WMX": -0.004626651803240123,
+      "J03WN1": -0.00011769447662668409,
+      "J03WOH": -0.014736479171342187,
+      "J03WOY": -0.005752239237245105,
+      "J03WPY": 0.013112663085210363
+    },
+    "paired_macro_deltas": {
+      "J03WMX": -0.0006994817102977668,
+      "J03WN1": -0.002116164959989897,
+      "J03WOH": -0.0021963396551213377,
+      "J03WOY": -0.002739792508325789,
+      "J03WPY": 0.002594723278289357
+    },
+    "primary_deltas": {
+      "J03WMX": 0.0016063997309733735,
+      "J03WN1": 0.004940879054064928,
+      "J03WOH": -0.010018573476268389,
+      "J03WOY": -0.0003690441677701717,
+      "J03WPY": 0.022928432191590187
+    },
+    "matches_improved": 1,
+    "tests_pass": true,
+    "determinism_all_cases_pass": null,
+    "prior_single_thread_cache_contract": true,
+    "current_repeatability_verified": false,
+    "production_promotion": false,
+    "production_promotion_requires": "integration, official validation, repeated CSV and clean-environment reproduction"
+  },
+  "development_selected": "parent",
+  "determinism_all_cases_pass": null,
+  "production_changed": false,
+  "sealed_opened": false,
+  "target_accuracy": "unknown",
+  "status": "QUALITY_REJECTED",
+  "determinism_all_cases_performed": false,
+  "determinism_verification_started": false
+}

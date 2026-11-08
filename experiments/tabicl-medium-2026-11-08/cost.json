@@ -1,0 +1,37 @@
+[
+  {
+    "match": "J03WMX",
+    "stage": "first",
+    "context_rows": 30000,
+    "seconds": 282.4320670409943,
+    "saved_model_sha256": null
+  },
+  {
+    "match": "J03WN1",
+    "stage": "first",
+    "context_rows": 30000,
+    "seconds": 275.70308016601484,
+    "saved_model_sha256": null
+  },
+  {
+    "match": "J03WOH",
+    "stage": "first",
+    "context_rows": 30000,
+    "seconds": 264.81711966596777,
+    "saved_model_sha256": null
+  },
+  {
+    "match": "J03WOY",
+    "stage": "first",
+    "context_rows": 30000,
+    "seconds": 271.7592975839507,
+    "saved_model_sha256": null
+  },
+  {
+    "match": "J03WPY",
+    "stage": "first",
+    "context_rows": 30000,
+    "seconds": 278.29290087497793,
+    "saved_model_sha256": null
+  }
+]
