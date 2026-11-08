@@ -1,0 +1,15 @@
+[
+  {
+    "stage": "first",
+    "serving_threads": 11,
+    "query_rows": 64,
+    "torch_threads_before": 11,
+    "torch_threads_after": 11,
+    "normalized_probabilities_exact_to_cpu1": false,
+    "max_abs_difference_to_cpu1": 1.4782109443833846e-05,
+    "cross_thread_numeric_tolerance_pass": false,
+    "within_cpu11_probabilities_exact_to_first": null,
+    "csv_bytes_equal_to_cpu1": true,
+    "csv_sha256": "283eba25193476a39c0e5a9a29b81eeb6093c2dfad911d24c0f601fa7eb167a2"
+  }
+]

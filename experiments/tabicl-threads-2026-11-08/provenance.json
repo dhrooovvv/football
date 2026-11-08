@@ -1,0 +1,98 @@
+{
+  "protocol": "experiments/tabicl-threads-2026-11-08/protocol.md",
+  "protocol_sha256": "763a4b38c8d133b144f7884dca50bae02d7414ecf82c9d9050d405f9d6d02af2",
+  "locked_manifest": "experiments/tabicl-threads-2026-11-08/locked-inputs.json",
+  "locked_manifest_sha256": "f0cb604345734df57a0bdd98318e1fdc0a1fe910ddbdaae6f56d7698746837de",
+  "locked_file_count": 18,
+  "expected_dependencies": {
+    "scikit-learn": "1.9.1",
+    "einops": "0.8.2",
+    "numpy": "2.5.4",
+    "tabicl": "2.2.0",
+    "huggingface_hub": "2.4.0",
+    "scipy": "1.18.1",
+    "torch": "2.15.0"
+  },
+  "cache_actual_sha256": "51750272feb7d99bd71d40149612af596c7ab6539cd1cf2e3e0b10dd9f65fb19",
+  "cached_cpu1_total_admission_seconds": 2540.665487166989,
+  "baseline_timings": {
+    "first_cache_fit_seconds": 1024.517,
+    "first_predict64_seconds": 2.509,
+    "first_predict16384_seconds": 144.788,
+    "reload_predict64_seconds": 1.962,
+    "reload_predict16384_seconds": 216.33,
+    "source_log": "data/tabicl-cache-run.log",
+    "archived_log": "experiments/tabicl-cache-2026-11-08/execution.log",
+    "archived_log_sha256": "43110a73d9da0aeb92e7a5ae1d3b8da5f329c4a9d24df79fce486f7ac7feda1e",
+    "timing_scope": "Historical CPU1 measurements; run order and load uncontrolled"
+  },
+  "baseline_timings_sha256": "e33c5887816a6f2ee6b64b3619c4070c3c2b9f6ea8a47d72ee13a7af6b98144f",
+  "timing_limit": "Historical CPU1 phase times; run order/system load are uncontrolled",
+  "checkpoint_source": {
+    "repo": "jingang/TabICL",
+    "revision": "4dcd344ece2c00be9e831fdd35bed57b5ad83e19",
+    "filename": "tabicl-classifier-v2-20260212.ckpt",
+    "license": "bsd-3-clause",
+    "sha256": "bdc7dbd5e4ff21f8f0456fcf90c6b7cdf72dbea960f2d05b19bec19f9b3d4ed0",
+    "bytes": 110368038
+  },
+  "cpu1_parameters_except_cache": {
+    "n_estimators": 1,
+    "softmax_temperature": 1.0,
+    "random_state": 20261106,
+    "n_jobs": 1,
+    "device": "cpu",
+    "use_amp": false,
+    "use_fa3": false,
+    "offload_mode": false,
+    "model_path": "data/tabicl/model.ckpt",
+    "allow_auto_download": false
+  },
+  "threads_tested": 11,
+  "verification_threads": 1,
+  "resource_caps": false,
+  "quality_scored": false,
+  "cross_thread_rule": {
+    "max_abs": 1e-06,
+    "atol": 1e-06,
+    "rtol": 1e-05,
+    "csv_exact": true
+  },
+  "within_cpu11_rule": "exact normalized probabilities and CSV bytes",
+  "dependencies": {
+    "scikit-learn": "1.9.1",
+    "einops": "0.8.2",
+    "numpy": "2.5.4",
+    "tabicl": "2.2.0",
+    "huggingface_hub": "2.4.0",
+    "scipy": "1.18.1",
+    "torch": "2.15.0"
+  },
+  "hardware": {
+    "logical_cores": 11,
+    "physical_cores": 11,
+    "machine": "arm64",
+    "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+    "torch_intra_threads": 11,
+    "torch_interop_threads": 1,
+    "blas_preprocessing_env": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1"
+    }
+  },
+  "parameters_except_cache": {
+    "n_estimators": 1,
+    "softmax_temperature": 1.0,
+    "random_state": 20261106,
+    "n_jobs": 11,
+    "device": "cpu",
+    "use_amp": false,
+    "use_fa3": false,
+    "offload_mode": false,
+    "model_path": "data/tabicl/model.ckpt",
+    "allow_auto_download": false
+  }
+}

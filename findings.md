@@ -121,3 +121,7 @@ Synthetic1000/10000cacheFalse/Trueprobabilities/CSV andcachedreload/refitchecks 
 
 ## J045 result / J046 next step
 Cache correctness passed: synthetic numeric delta0; actual64CSV matches uncapped; cached reload/refit exact for64/16384queries. Full uncached numeric equivalence is not established. No quality result. User explicitly approved11-core development speed testing with single-thread winner checks; protocol/inputs locked before execution. Production unchanged.
+
+
+## J046 failure / J047 approved endpoint
+CPU11 fit was332.785s;64CSV matched CPU1, but max probability delta1.47821e-5 failed the registered1e-6 criterion. No quality/16k/repeatability test followed. User then approved a separate full16kCSV-based cross-mode test with exact within-mode repeatability and single-thread winner verification. Original failed result preserved; production unchanged.

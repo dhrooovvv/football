@@ -1,0 +1,6 @@
+{
+  "type": "AssertionError",
+  "message": "Thread optimization rejected: fixed cross-thread numeric/CSV rule failed: first/serve11/64",
+  "quality_scored": false,
+  "production_changed": false
+}

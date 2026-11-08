@@ -1,0 +1,15 @@
+first: CPU11 cache fit/load starts
+threads/first: fit start; rows=113507, kv_cache=True
+threads/first: fit complete in 332.785s
+first/serve11/64: predict start; queries=64
+first/serve11/64: predict complete in 1.436s
+Traceback (most recent call last):
+  File "/Users/dhruv/Desktop/backend projects/barcelona-track/scripts/probe_tabicl_threads.py", line 363, in <module>
+    main()
+    ~~~~^^
+  File "/Users/dhruv/Desktop/backend projects/barcelona-track/scripts/probe_tabicl_threads.py", line 315, in main
+    run_predictions(base, model, q, blocks, stage, THREADS, references, hashes, checks, costs)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhruv/Desktop/backend projects/barcelona-track/scripts/probe_tabicl_threads.py", line 253, in run_predictions
+    raise AssertionError('Thread optimization rejected: fixed cross-thread numeric/CSV rule failed: ' + tag)
+AssertionError: Thread optimization rejected: fixed cross-thread numeric/CSV rule failed: first/serve11/64
