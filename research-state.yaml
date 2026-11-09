@@ -4,14 +4,14 @@ project:
   phase: 2
   phase_one_status: complete
   contributors: 3
-  architecture_freeze: '2026-11-13'
-  delivery_only: November14–16
+  architecture_freeze: '2026-11-16'
+  delivery_only: November16_after_freeze_and_November17_buffer
   target_submission: '2026-11-16'
   deadline: '2026-11-17'
 continuity:
   automation_id: ball-possession-research
   automation_status: paused
-  no_research_after: '2026-11-13'
+  no_research_after: '2026-11-16'
   no_action_after: '2026-11-17'
 production:
   selected: core_penalty16
@@ -212,3 +212,10 @@ control_context_extension:
   tests_passed: 35
   production_changed: false
   tcn_status: conditional_not_prepared_not_run
+
+schedule_revision:
+  date: "2026-11-10"
+  authorized_by: user
+  plan: docs/plan-2026-11-10.md
+  sealed_evaluation: November16_after_configuration_freeze
+  historical_runner_deadlines_preserved: true

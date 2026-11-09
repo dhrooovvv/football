@@ -1035,3 +1035,7 @@ Manual temporal-control screen completed: {"quality_eligible": false, "productio
 
 ### J059 — 2026-11-09 — User-run temporal-control screen rejected
 Checked complete10candidate/10parentcells; independently recomputed all paired spell/macro and primary deltas, matching gate within1e-12.35tests pass. Primary median corrupted gain+.000115 fails+.01minimum; paired median+.000185,3/5wins, median macro−.006577 pass original numerical gate. Thus complete promotion gateFAIL. Reject bundle, close bounded feature extension; retain ninecoreCatBoost16. No model rerun or promotion. Per-match evidence experiments/control-context-2026-11-09/report.md/results.json/parent.json/gate.json. TCN remains unprepared and unexecuted; any next trajectory-model trial requires its own protocol/contracts and user execution. Sealed/target untouched.
+
+
+### J060 — 2026-11-10 — User moved freeze toNovember16
+Updated active schedule and state; docs/plan-2026-11-10.md supersedes prior dates. Nov10–11TCNdata contracts/runner preparation,12–13user-run trial,14conditional evidence review,15reproduction/report reserve,16freeze-before-sealed then deliverychecks,17deadlinebuffer. Gates/stoprules/splitprotection/user-run model policy unchanged; closed trials not reopened. Old protocol/runner guards preserved with hashes, new trial must register revised deadline. No experiment executed. Verify organizer exact cutoff before relying on17buffer; no external submission authorized.
