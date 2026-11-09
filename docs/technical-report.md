@@ -154,3 +154,7 @@ Decision: close this bounded follow-up; no further context-size/seed/blend searc
 
 ## Technology review — 2026-11-09
 No comparable published official spellF1 supports a forecast to.8. Public primary papers favour temporal player-interaction representations as a hypothesis; current gap representation is limited. Recent engine coverage thin/irrelevant, not proof of no releases. Recommended current16error audit, followed by at most one authorized/preregistered intervention; no experiments or production changes. See literature/possession-improvement-market-review-2026-11-09.md and its three companion reviews. Decoder-X-reset concern is general, not a demonstrated current score driver. Existing stop rules and freeze remain.
+
+
+## November9 control-context diagnostic / prepared trial
+Frozen parent metrics reproduced from cached emissions; clean ownership errors dominate frame counts, corrupted live recovery collapses. One bounded temporal-control feature trial authorized/prepared;35contract tests, not quality. No new model fit or inference executed; user-run only. Evidence/protocol: experiments/control-context-2026-11-09/. Production unchanged, sealed untouched.

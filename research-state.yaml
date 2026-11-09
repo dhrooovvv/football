@@ -200,3 +200,15 @@ improvement_technology_review:
   new_experiment_authorized: false
   production_changed: false
   stopped_tracks_reopened: false
+
+control_context_extension:
+  date: "2026-11-09"
+  status: audit_completed_model_trial_prepared_not_run
+  bounded_feature_track_reopened: true
+  previous_failures_preserved: true
+  user_execution_required: true
+  protocol: experiments/control-context-2026-11-09/protocol.md
+  runner: scripts/run_control_context.py
+  tests_passed: 35
+  production_changed: false
+  tcn_status: conditional_not_prepared_not_run
