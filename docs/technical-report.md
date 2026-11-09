@@ -164,3 +164,7 @@ Temporal-control result November9: rejected; median corrupted gain+.000115 versu
 
 
 Schedule supersession November10: user moved architecture freeze/sealed evaluation toNovember16. Active plan docs/plan-2026-11-10.md; historical dates retained as history. Gates, stoplimits and production unchanged.
+
+
+## November10 scratch trajectoryTCN prepared, not evaluated
+One fixed richer-input localTCN candidate and user-run preparation/evaluation CLI registered under experiments/tcn-2026-11-10/.35productioncontracts+4isolatedsyntheticTCNtests pass, no external quality evidence. User executes dataset runs only. See docs/run-tcn.md for commands and declared shortcontext/cleantraining/budget limitations. Uses PyTorch/NumPy existing research dependencies; original scratch implementation inspired by temporal-trajectory literature, no borrowed weights or assumed model licence.46input/source hashes and dependencyversions locked; no production change. Full adapter contracts, fitrepeatability, runtime/memory and cleanenvverification pending userrun. Targetaccuracyunknown/sealedprotected.

@@ -219,3 +219,19 @@ schedule_revision:
   plan: docs/plan-2026-11-10.md
   sealed_evaluation: November16_after_configuration_freeze
   historical_runner_deadlines_preserved: true
+
+tcn_candidate:
+  date: "2026-11-10"
+  status: implemented_preregistered_not_dataset_executed
+  bounded_sequence_track_amendment: true
+  protocol: experiments/tcn-2026-11-10/protocol.md
+  commands: docs/run-tcn.md
+  source_input_hashes: 46
+  production_contract_tests: 35
+  synthetic_tcn_tests: 4
+  synthetic_training_steps: 2
+  model_dataset_run_by_assistant: false
+  user_execution_required: true
+  runtime_estimate: unknown
+  production_changed: false
+  previous_failures_preserved: true

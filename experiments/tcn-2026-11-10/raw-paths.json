@@ -1,0 +1,22 @@
+{
+  "J03WMX": [
+    "data/external/DFL_02_01_matchinformation_DFL-COM-000001_DFL-MAT-J03WMX.xml",
+    "data/external/DFL_04_03_positions_raw_observed_DFL-COM-000001_DFL-MAT-J03WMX.xml"
+  ],
+  "J03WN1": [
+    "data/external/DFL_02_01_matchinformation_DFL-COM-000001_DFL-MAT-J03WN1.xml",
+    "data/external/DFL_04_03_positions_raw_observed_DFL-COM-000001_DFL-MAT-J03WN1.xml"
+  ],
+  "J03WOH": [
+    "data/external/DFL_02_01_matchinformation_DFL-COM-000002_DFL-MAT-J03WOH.xml",
+    "data/external/DFL_04_03_positions_raw_observed_DFL-COM-000002_DFL-MAT-J03WOH.xml"
+  ],
+  "J03WOY": [
+    "data/external/DFL_02_01_matchinformation_DFL-COM-000002_DFL-MAT-J03WOY.xml",
+    "data/external/DFL_04_03_positions_raw_observed_DFL-COM-000002_DFL-MAT-J03WOY.xml"
+  ],
+  "J03WPY": [
+    "data/external/DFL_02_01_matchinformation_DFL-COM-000002_DFL-MAT-J03WPY.xml",
+    "data/external/DFL_04_03_positions_raw_observed_DFL-COM-000002_DFL-MAT-J03WPY.xml"
+  ]
+}
