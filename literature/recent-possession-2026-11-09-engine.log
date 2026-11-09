@@ -1,0 +1,19 @@
+/last30days · researching: soccer ball possession segmentation tracking machine learning
+⏳ [95mProcessing[0m Scoring and ranking...
+[Planner] Plan: intent=concept, freshness=balanced_recent, cluster_mode=none, subqueries=1, source=external
+[Planner]   sq1 label=primary search="soccer ball possession tracking machine learning" sources=[hackernews,reddit]
+[HN] Searching for 'soccer ball possession tracking machine learning' (raw: 'soccer ball possession tracking machine learning', since 2026-10-10, count=15)
+[RedditSearch] global page 1 failed: HTTP 403: Blocked
+[RedditSearch] r/computervision page 1 failed: HTTP 403: Blocked
+[RedditSearch] 0 posts (t=month, 1 targeted subs)
+[HN] Filtered 3/6 low-engagement stories
+[HN] Found 3 stories
+[HN] Enriching top 3 stories with comments
+[RedditKeyless] arctic-shift supplement: 10 new posts from 10 arctic results
+[RedditKeyless] Tier 1 (site search) 0 posts; listing discovery 10
+[ArcticShift] comments lookup failed t3_1xhz195: HTTP 422: Unprocessable Entity
+[Reddit] relevance prune dropped 9 of 10 items below the relevance/engagement floor
+✓ Research complete (79.0s) - Reddit: 1 thread, HN: 3 stories
+[last30days] Saved output to /Users/dhruv/Desktop/backend projects/barcelona-track/literature/recent-possession-engine-2026-11-09/soccer-ball-possession-segmentation-tracking-machine-learning-raw.md
+
+Optional source omitted: X/Twitter was not enabled; research continued with the available sources.
