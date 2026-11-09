@@ -1,0 +1,28 @@
+{
+  "quality_eligible": false,
+  "production_changed": false,
+  "primary_deltas": {
+    "J03WMX": -0.007264076533597952,
+    "J03WN1": 0.00727330374128099,
+    "J03WOH": -0.009501607079084151,
+    "J03WOY": 0.004093677997664302,
+    "J03WPY": 0.00011475058873910982
+  },
+  "primary_median_delta": 0.00011475058873910982,
+  "paired_spell_deltas": {
+    "J03WMX": -0.012848475301379558,
+    "J03WN1": 0.007321528718877146,
+    "J03WOH": -0.012118218286955751,
+    "J03WOY": 0.0001848545153695924,
+    "J03WPY": 0.0009598732798651866
+  },
+  "paired_macro_deltas": {
+    "J03WMX": -0.0052993969239482075,
+    "J03WN1": -0.007027353851463358,
+    "J03WOH": -0.0065774675470179345,
+    "J03WOY": -0.0029343577408500465,
+    "J03WPY": -0.00786103742651345
+  },
+  "verification_required": "single-thread repeated fit/CSV and clean environment before promotion",
+  "sealed_opened": false
+}

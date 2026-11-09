@@ -158,3 +158,6 @@ No comparable published official spellF1 supports a forecast to.8. Public primar
 
 ## November9 control-context diagnostic / prepared trial
 Frozen parent metrics reproduced from cached emissions; clean ownership errors dominate frame counts, corrupted live recovery collapses. One bounded temporal-control feature trial authorized/prepared;35contract tests, not quality. No new model fit or inference executed; user-run only. Evidence/protocol: experiments/control-context-2026-11-09/. Production unchanged, sealed untouched.
+
+
+Temporal-control result November9: rejected; median corrupted gain+.000115 versus+.01required,3/5pairedwins,35tests. Independent gate verified. Production unchanged; see experiments/control-context-2026-11-09/report.md.

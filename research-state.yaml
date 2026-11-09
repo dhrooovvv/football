@@ -203,7 +203,7 @@ improvement_technology_review:
 
 control_context_extension:
   date: "2026-11-09"
-  status: audit_completed_model_trial_prepared_not_run
+  status: completed_rejected_bounded_extension_closed
   bounded_feature_track_reopened: true
   previous_failures_preserved: true
   user_execution_required: true
