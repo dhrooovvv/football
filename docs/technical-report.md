@@ -197,3 +197,6 @@ November10userauthorized20kstepTCNbudgetextensionprepared,notrun. SamefiveLOMOan
 
 ## November10 fixed50/50blend — provisionalqualitypass
 Against20kTCN, meanblendspell .602554clean/.397037corrupted (TCN .609882/.386651). Cleandeclineexplicit;3/5pairedwins, primarymedian+.015717, medianmacro+.015701passunchangedgate.35tests+10exactparentreconstructions/10repeatedblendCSVchecks. No retraining/weightsearch. Leadingdevelopmentcandidateonly; releasecleanenv/integrationverificationpending, productionunchanged. Evidence experiments/tcn-cat-blend-2026-11-10/report.md.
+
+
+November10approvedTCNtraining-ball-gaptrialpreparednotrun: experiments/tcn-gap-2026-11-10/protocol.md; commands docs/run-tcn-gap.md.41synthetic/productioncontracts pass. Same20kbudget/currentblendreference, independenttrainingmasks beforefeatures, no player/labelaugmentation. Quality/reproduction/integrationpending; no datasetexecution orproductionchange.

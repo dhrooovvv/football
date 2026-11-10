@@ -320,3 +320,16 @@ fixed_blend_result:
   production_changed: false
   clean_environment_verified: false
   augmentation_started: false
+
+tcn_gap_augmentation:
+  status: preregistered_not_dataset_run
+  user_authorized: true
+  user_executes_long_run: true
+  protocol: experiments/tcn-gap-2026-11-10/protocol.md
+  commands: docs/run-tcn-gap.md
+  reference: catboost_tcn_50_50
+  training_steps: 20000
+  training_gap_seed_base: 20261206
+  evaluation_gap_seed_base: 20261106
+  tests_passed: 41
+  production_changed: false
