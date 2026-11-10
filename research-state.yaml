@@ -297,9 +297,9 @@ best_development_candidate:
   status: quality_eligible_not_production_promoted
   mean_clean_spellF1: 0.6025541654696472
   mean_corrupted_spellF1: 0.39703722392353985
-  primary_median_delta: 0.05863681550244326
-  matches_improved: 5
-  tests_passed: 39
+  primary_median_delta: 0.015717094039299218
+  matches_improved: 3
+  tests_passed: 35
   repeatability_cases_passed: 10
   clean_environment_verified: false
   target_integration_verified: false
