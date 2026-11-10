@@ -1,0 +1,82 @@
+[
+  {
+    "match": "J03WMX",
+    "condition": "clean",
+    "repeated_training_equal": true,
+    "reload_probabilities_equal": true,
+    "csv_bytes_equal_reload_batch4": true,
+    "csv_sha256": "62e56be3545b66b3e2b1353151c0fb15e656aac5e16860594fc68cc5ffaf8bef"
+  },
+  {
+    "match": "J03WMX",
+    "condition": "targetlike",
+    "repeated_training_equal": true,
+    "reload_probabilities_equal": true,
+    "csv_bytes_equal_reload_batch4": true,
+    "csv_sha256": "84276f75f0937f2f3a7010962e354b7fbfa91fe955e46db1ed6f8507a625a52a"
+  },
+  {
+    "match": "J03WN1",
+    "condition": "clean",
+    "repeated_training_equal": true,
+    "reload_probabilities_equal": true,
+    "csv_bytes_equal_reload_batch4": true,
+    "csv_sha256": "0ca762589a8458f988d105e11ce919704e99c18a50a98b7742ce122be4ddbc57"
+  },
+  {
+    "match": "J03WN1",
+    "condition": "targetlike",
+    "repeated_training_equal": true,
+    "reload_probabilities_equal": true,
+    "csv_bytes_equal_reload_batch4": true,
+    "csv_sha256": "1b8865e3f9c309fb08818f2b183e49b64b33f5e9087f51cbecb2e33b55151ed5"
+  },
+  {
+    "match": "J03WOH",
+    "condition": "clean",
+    "repeated_training_equal": true,
+    "reload_probabilities_equal": true,
+    "csv_bytes_equal_reload_batch4": true,
+    "csv_sha256": "957220abe066823829486ef190e8f76dd1f5c5478ea78e11be740d9ce41dd573"
+  },
+  {
+    "match": "J03WOH",
+    "condition": "targetlike",
+    "repeated_training_equal": true,
+    "reload_probabilities_equal": true,
+    "csv_bytes_equal_reload_batch4": true,
+    "csv_sha256": "5e0ae9f379f47513ecf24317b712b1474f34be35977ee53f030e69f7462bdd57"
+  },
+  {
+    "match": "J03WOY",
+    "condition": "clean",
+    "repeated_training_equal": true,
+    "reload_probabilities_equal": true,
+    "csv_bytes_equal_reload_batch4": true,
+    "csv_sha256": "42a1068c7794d5dd9ea18297947a9952c23c68dc7205c3ded5fa2262c4145f87"
+  },
+  {
+    "match": "J03WOY",
+    "condition": "targetlike",
+    "repeated_training_equal": true,
+    "reload_probabilities_equal": true,
+    "csv_bytes_equal_reload_batch4": true,
+    "csv_sha256": "7ace1a2e53232ce5b3739db2471a981fbce2b0f35770e8a5ab72e81676218435"
+  },
+  {
+    "match": "J03WPY",
+    "condition": "clean",
+    "repeated_training_equal": true,
+    "reload_probabilities_equal": true,
+    "csv_bytes_equal_reload_batch4": true,
+    "csv_sha256": "8d82bc15b1fe2349446d67d60b3161b5e64a1f1171f04cf0e970a48ca273477f"
+  },
+  {
+    "match": "J03WPY",
+    "condition": "targetlike",
+    "repeated_training_equal": true,
+    "reload_probabilities_equal": true,
+    "csv_bytes_equal_reload_batch4": true,
+    "csv_sha256": "9ea417e6366e7c88a7199085af9198a328e82b29c610263807ac287567c6df45"
+  }
+]

@@ -285,9 +285,23 @@ tcn_budget_extension_2000:
   automatic_further_budget_increase: false
 
 tcn_long_run:
-  status: preregistered_not_run
+  status: completed_quality_eligible_verification_pending
   user_authorized_budget_extension: true
   training_steps: 20000
   user_execution_required: true
   protocol: experiments/tcn-long-2026-11-10/protocol.md
+  production_changed: false
+
+best_development_candidate:
+  selected: trajectory_tcn_20000
+  status: quality_eligible_not_production_promoted
+  mean_clean_spellF1: 0.6098822918620596
+  mean_corrupted_spellF1: 0.3866512536423881
+  primary_median_delta: 0.05863681550244326
+  matches_improved: 5
+  tests_passed: 39
+  repeatability_cases_passed: 10
+  clean_environment_verified: false
+  target_integration_verified: false
+  next_action: preregister_clean_reproduction_and_adapter_integration
   production_changed: false

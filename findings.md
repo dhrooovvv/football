@@ -190,3 +190,7 @@ SameTCN withbudget200->2000 raisesmeanheldoutspell from .117838/.082347 to .4348
 
 
 November10userauthorized20kstepTCNbudgetextensionprepared,notrun. SamefiveLOMOandcorruptionasCatBoost; gateunchanged. Sealedexcluded. Protocol experiments/tcn-long-2026-11-10/protocol.md.
+
+
+## November10 longTCN — developmentqualitygatePASS
+20kTCN meanheldoutspell .609882clean/.386651corrupted, versusCatBoost .517654/.323476.5/5pairedwins, medianprimary+.058637, medianmacro+.011711. Independentgateverified;39tests+10exactrepeatfit/reload/batchCSVchecks pass. Newbestdevelopmentcandidate ONLY; productionCatBoostunchanged pendingcleanenvironment/freshclone/integration/officialvalidation. Sealeduntouched/targetaccuracyunknown. Fullpermatchreport experiments/tcn-long-2026-11-10/report.md.
