@@ -76,7 +76,7 @@ workspace:
   findings: findings.md
   technical_document: docs/technical-report.md
   next_step_plan: docs/next-steps-2026-11-07.md
-next_action: Await user-run expanded training completion; review gate before executing prepared neural export checks.
+next_action: Expanded-data trial rejected; retain prior candidate and prepare its release qualification without executing new tests.
 
 open_model_audit:
   date: '2026-11-08'
@@ -392,7 +392,7 @@ blend_switch_8:
   candidate_penalty: 8
 
 expanded_tcn_training:
-  status: user_run_in_progress_no_final_result_reviewed
+  status: completed_rejected_bounded_trial_closed
   user_scope_decision: expand_training_preserve_some_test_matches
   training_eligible_matches: 53
   idsse_development_matches: 5
@@ -406,7 +406,7 @@ expanded_tcn_training:
   source_balancing_added: false
   user_executes_all_checks_and_training: true
   checkpoint_interval_updates: 1000
-  compact_storage_lossless_contract: pending_user_checks
+  compact_storage_lossless_contract: passed_user_run_preparation
   new_regression_checks_provided: 4
   protocol: experiments/tcn-expanded-2026-11-10/protocol.md
   membership: experiments/tcn-expanded-2026-11-10/membership.json
@@ -433,3 +433,27 @@ neural_export_verification:
   target_temporal_slot_continuity_verified: false
   target_accuracy: unknown
   production_changed: false
+
+expanded_tcn_result_audit:
+  date: "2026-11-11"
+  report: experiments/tcn-expanded-2026-11-10/result-review.md
+  independently_recomputed: true
+  mean_clean_spellF1: 0.520562136394373
+  mean_corrupted_spellF1: 0.3769587226821987
+  standalone_clean_spellF1: 0.49092192012107255
+  standalone_corrupted_spellF1: 0.37169222335284935
+  primary_median_delta: -0.05909837156675679
+  paired_median_spell_delta: -0.0702869019012172
+  paired_median_macro_delta: -0.029278184264613927
+  paired_matches_improved: 0
+  recorded_contract_tests_passed: 45
+  recorded_repeatability_cases_passed: 10
+  registered_code_hashes_verified: 32
+  final_53_model_sha256: 9e0a1e41e5c0994249fa5c833089aa8f3cad5a2139696f32b40e641a196d110d
+  final_model_research_only: true
+  final_model_hash_verified: true
+  clean_environment_verified: false
+  retained_candidate: gap_augmented_catboost_tcn_50_50
+  production_changed: false
+  new_training_or_inference_by_assistant: false
+  automatic_sampler_or_budget_rescue: false

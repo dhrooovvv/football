@@ -1,0 +1,102 @@
+{
+  "means": {
+    "parent": {
+      "clean": {
+        "spellF1": 0.5925021056601485,
+        "macroF1": 0.9195883165114103
+      },
+      "targetlike": {
+        "spellF1": 0.4283855855925492,
+        "macroF1": 0.7686851822344695
+      }
+    },
+    "candidate": {
+      "clean": {
+        "spellF1": 0.520562136394373,
+        "macroF1": 0.8978735030235522
+      },
+      "targetlike": {
+        "spellF1": 0.3769587226821987,
+        "macroF1": 0.7339185622430443
+      }
+    },
+    "standalone_tcn": {
+      "clean": {
+        "spellF1": 0.49092192012107255,
+        "macroF1": 0.8819663659758848
+      },
+      "targetlike": {
+        "spellF1": 0.37169222335284935,
+        "macroF1": 0.7372474039441584
+      }
+    }
+  },
+  "paired_spell_median": -0.0702869019012172,
+  "paired_macro_median": -0.029278184264613927,
+  "primary_median": -0.05909837156675679,
+  "matches_improved": 0,
+  "folds": [
+    {
+      "match": "J03WMX",
+      "seconds": 1190.7579069160274,
+      "sampled": {
+        "idsse": 11365,
+        "pff": 148635
+      },
+      "pff_fraction": 0.92896875
+    },
+    {
+      "match": "J03WN1",
+      "seconds": 1204.840846084,
+      "sampled": {
+        "idsse": 11453,
+        "pff": 148547
+      },
+      "pff_fraction": 0.92841875
+    },
+    {
+      "match": "J03WOH",
+      "seconds": 1227.482452458993,
+      "sampled": {
+        "idsse": 11542,
+        "pff": 148458
+      },
+      "pff_fraction": 0.9278625
+    },
+    {
+      "match": "J03WOY",
+      "seconds": 1230.7457984169596,
+      "sampled": {
+        "idsse": 11427,
+        "pff": 148573
+      },
+      "pff_fraction": 0.92858125
+    },
+    {
+      "match": "J03WPY",
+      "seconds": 1222.3269041249878,
+      "sampled": {
+        "idsse": 11352,
+        "pff": 148648
+      },
+      "pff_fraction": 0.92905
+    }
+  ],
+  "fold_seconds_total": 6076.153908000968,
+  "final_model_sha256": "9e0a1e41e5c0994249fa5c833089aa8f3cad5a2139696f32b40e641a196d110d",
+  "final_sampled": {
+    "idsse": 14092,
+    "pff": 145908
+  },
+  "final_pff_sample_fraction": 0.911925,
+  "recorded_tests_per_suite": [
+    35,
+    4,
+    2,
+    4
+  ],
+  "recorded_tests_total": 45,
+  "registered_code_hashes_verified": 32,
+  "independently_recomputed": true,
+  "new_training_or_inference": false
+}
