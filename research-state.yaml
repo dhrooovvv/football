@@ -499,3 +499,12 @@ balanced_provider_tcn:
   final_fit_requires_recomputed_complete_passing_gate: true
   target_accuracy: unknown
   production_changed: false
+
+additional_dataset_refresh:
+  date: "2026-11-11"
+  scope: official_public_documentation_only
+  report: literature/additional-datasets-2026-11-11.md
+  strongest_conditional_lead: SkillCorner
+  downloaded_data: false
+  new_matches_admitted: 0
+  experiment_or_split_changed: false
