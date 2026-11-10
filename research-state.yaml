@@ -246,3 +246,13 @@ tcn_result_audit:
   within_environment_repeatability_cases_passed: 10
   independently_recomputed: true
   production_changed: false
+
+competitor_practice_review:
+  date: "2026-11-10"
+  status: research_completed_no_experiment
+  report: literature/competitor-practice-review-2026-11-10.md
+  current_competitor_submissions_verified: false
+  comparable_spellF1_winning_score_available: false
+  reddit_coverage: engine_and_public_thread_supplements
+  twitter_coverage: unavailable_no_usable_posts
+  production_changed: false

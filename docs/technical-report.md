@@ -172,3 +172,7 @@ One fixed richer-input localTCN candidate and user-run preparation/evaluation CL
 
 ## November10 trajectoryTCN result — rejected
 Fixed200stepcandidate mean spellF1 .117838clean/.082347corrupted vs .517654/.323476parent;0/5improve, primarymedian−.233750. Independentgate verified.39tests and10within-environment repeatfit/reload/batchCSVchecks pass; not cleanenvironmentproof. Rejectboundedcandidate, no automaticbudgetrescue. Fullpermatch results experiments/tcn-2026-11-10/report.md; productionunchanged, targetaccuracyunknown/sealeduntouched.
+
+
+## November10 competitor/practice research
+MoreThanAHack2026IpurdIAr conversationalanalysisproduct is not comparableintervalbenchmark. SoccerNet2025/2026winners document pretraining, temporal/playercontext andensembles on differentmetrics. Currentrivals/privateapproaches/scoreunknown. Redditprovidedanecdotalbaseline/recruitmentsignals, Xretrievalunavailable; no validatedspellF1. See literature/competitor-practice-review-2026-11-10.md andcompanions. No modelrun, productionchange or publiclabelselection.
