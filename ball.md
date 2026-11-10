@@ -1146,3 +1146,9 @@ Proposalreviewonly, not executionauthority. docs/proposed-levers-review-2026-11-
 
 ### J078 — November 10 — One decoder comparison registered
 User requests notice before any tests, including small checks. Prepared a user-run comparison of fixed penalties 8 and 16 on the gap-trained blend. Lower penalty may recover brief possessions or add spurious switches. Protocol and inputs in experiments/blend-switch-8. No tests, inference or training executed. Longer context follows the decision on this parent.
+
+User-run decoder comparison completed. {"quality_eligible": false, "primary_median_delta": 0.007421491179840423, "primary_deltas": {"J03WMX": 0.03352510408932874, "J03WN1": 0.02316056542225442, "J03WOH": 0.006117858749437599, "J03WOY": 0.007421491179840423, "J03WPY": -0.004357275283639828}, "production_changed": false}
+
+
+### J079 — November 10 — Full data inventory clarified
+Read locked IDSSE split and PFF cohort/admission aggregates. IDSSE has7matches, five development and two permanently excluded sealed matches. PFF has64admitted matches,48additional-training and16transferholdout. PFF standardized timelines total9,730,762frames at25Hz (108.1196h), ofwhich training48 total7,292,810frames (81.0312h) andholdout16 total2,437,952frames (27.0884h). Known-label support may be smaller than timeline frames. CurrentTCNexperiments useonlyfiveIDSSEmatches (713,489gradedframes,7.9277h). Totalexternalinventory71matches plusonecompetitiontarget, not72trainingmatches. Nominaltrainingeligiblepool53matches; eachcurrentLOMOfoldcanuse4IDSSE+48PFF=52whileprotectingheldoutIDSSEandPFF16/sealed2. Sealed observation/label files not opened to obtain counts. More-dataTCN requires compatible raw-trajectory adapter and a fixed source-mixture/training protocol before user execution; earlier unweightedCatBoostPFFexpansion failed. No data-training experiment or policychange performed.
