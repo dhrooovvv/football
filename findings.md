@@ -187,3 +187,6 @@ November10trainingdiagnostic PASS: 2000steps fitfixedexternaltrainingsegment .97
 
 ## November10 fixed2000stepLOMO result — rejected
 SameTCN withbudget200->2000 raisesmeanheldoutspell from .117838/.082347 to .434855/.271903clean/corrupted; stillbelowCatBoost .517654/.323476.0/5pairedwins, primarymedian−.055559, medianmacro−.017240. Independentgateverified;39tests and10repeatfit/reload/batchCSVchecks pass. Notcleanenvironmentproof; trainingsegment .805556 isnotheldoutresult. Boundedextensionclosed; no furtherautomaticbudgetrescue. See experiments/tcn-budget2000-2026-11-10/report.md. Productionunchanged/sealeduntouched.
+
+
+November10userauthorized20kstepTCNbudgetextensionprepared,notrun. SamefiveLOMOandcorruptionasCatBoost; gateunchanged. Sealedexcluded. Protocol experiments/tcn-long-2026-11-10/protocol.md.

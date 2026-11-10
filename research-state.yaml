@@ -283,3 +283,11 @@ tcn_budget_extension_2000:
   independently_recomputed: true
   production_changed: false
   automatic_further_budget_increase: false
+
+tcn_long_run:
+  status: preregistered_not_run
+  user_authorized_budget_extension: true
+  training_steps: 20000
+  user_execution_required: true
+  protocol: experiments/tcn-long-2026-11-10/protocol.md
+  production_changed: false
