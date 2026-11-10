@@ -183,3 +183,7 @@ November10learningdiagnostic prepared, not executed/tested: scripts/check_tcn_le
 
 
 November10trainingdiagnostic PASS: 2000steps fitfixedexternaltrainingsegment .9788accuracy/.07158CE/.805556decodedspellF1; NOT development/testquality. Supportsonepreregisteredlongertrainingcomparison, not modelpromotion. Latestuserallowsshortautonomoustests; hourslongrunsuserexecuted.
+
+
+## November10 fixed2000stepLOMO result — rejected
+SameTCN withbudget200->2000 raisesmeanheldoutspell from .117838/.082347 to .434855/.271903clean/corrupted; stillbelowCatBoost .517654/.323476.0/5pairedwins, primarymedian−.055559, medianmacro−.017240. Independentgateverified;39tests and10repeatfit/reload/batchCSVchecks pass. Notcleanenvironmentproof; trainingsegment .805556 isnotheldoutresult. Boundedextensionclosed; no furtherautomaticbudgetrescue. See experiments/tcn-budget2000-2026-11-10/report.md. Productionunchanged/sealeduntouched.

@@ -269,3 +269,17 @@ learning_diagnostic:
   training_segment_only: true
   promotion_evidence: false
   production_changed: false
+
+tcn_budget_extension_2000:
+  date: "2026-11-10"
+  status: completed_rejected_bounded_trial_closed
+  protocol_commit: 1ecaa83
+  mean_clean_spellF1: 0.43485511189620873
+  mean_corrupted_spellF1: 0.27190266441011296
+  primary_median_delta: -0.05555936878775902
+  paired_matches_improved: 0
+  tests_passed: 39
+  repeatability_cases_passed: 10
+  independently_recomputed: true
+  production_changed: false
+  automatic_further_budget_increase: false
