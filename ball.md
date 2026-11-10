@@ -1143,3 +1143,6 @@ User asked whether training remains active. No matchingprocess; all10resultcells
 
 ### J077 — November10 — Reviewed user screenshot of improvement levers
 Proposalreviewonly, not executionauthority. docs/proposed-levers-review-2026-11-10.md documents decoder temperature/effective-penalty redundancy, completedfailedrelativeXYtrial, confirmedlabel-freegapmedian10.72s/contextlimits, conditional40k/ensembleideas and compute/equivalencecaveats. Existingsealedmatchesmustneverentertraining, so proposedfive->sevenretrainconflictswithrules. Suggestedoneboundeddecoderreviewthencontext, subjecttostoppedtrackamendment/protocol; no new experiment, policychange or promotion.
+
+### J078 — November 10 — One decoder comparison registered
+User requests notice before any tests, including small checks. Prepared a user-run comparison of fixed penalties 8 and 16 on the gap-trained blend. Lower penalty may recover brief possessions or add spurious switches. Protocol and inputs in experiments/blend-switch-8. No tests, inference or training executed. Longer context follows the decision on this parent.

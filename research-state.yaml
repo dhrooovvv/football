@@ -384,3 +384,9 @@ interaction_result_audit:
   matches_improved: 2
   independently_recomputed: true
   production_changed: false
+
+blend_switch_8:
+  status: registered_user_run_pending
+  user_runs_all_tests: true
+  parent_penalty: 16
+  candidate_penalty: 8
