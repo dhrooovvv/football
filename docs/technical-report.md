@@ -211,3 +211,7 @@ Cached 40-case audit: leading gap blend short-spell recall .138 clean/.100 corru
 
 
 November10interactiontrial finished/rejected: .579542clean/.413382corrupted;2/5pairedwins, primarymedian−.009586.45tests/10repeatabilitycasespass; independentgateverified. Previousgapblendretained, no productionchange. See experiments/tcn-interaction-2026-11-10/report.md.
+
+
+## November 10 — expanded training code prepared
+User chose expanded training while preserving holdouts. New registered pool53matches, development52perfold, finalfit53. Memory-mapped lossless input storage, source/label/feature equality checks, checkpoint resumption, exact repeat fits and unchanged gate against current gap-trained blend. Code and four regression checks are provided but have not been executed. PFF may dominate the unchanged uniform-window sampler. All fixed model/budget/augmentation/blend settings are preserved. Commands docs/run-tcn-expanded.md, registration experiments/tcn-expanded-2026-11-10/. Two sealed IDSSE and16PFF holdouts remain excluded. Final artifact is a research variant even if generated after a failed gate. Production and release verification status are unchanged.

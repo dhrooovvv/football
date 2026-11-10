@@ -390,3 +390,26 @@ blend_switch_8:
   user_runs_all_tests: true
   parent_penalty: 16
   candidate_penalty: 8
+
+expanded_tcn_training:
+  status: registered_code_prepared_not_executed_or_tested
+  user_scope_decision: expand_training_preserve_some_test_matches
+  training_eligible_matches: 53
+  idsse_development_matches: 5
+  pff_training_matches: 48
+  matches_per_development_fit: 52
+  final_fit_matches: 53
+  sealed_idsse_preserved: 2
+  pff_transfer_holdout_preserved: 16
+  training_steps: 20000
+  sampling: uniform_known_window_starts
+  source_balancing_added: false
+  user_executes_all_checks_and_training: true
+  checkpoint_interval_updates: 1000
+  compact_storage_lossless_contract: pending_user_checks
+  new_regression_checks_provided: 4
+  protocol: experiments/tcn-expanded-2026-11-10/protocol.md
+  membership: experiments/tcn-expanded-2026-11-10/membership.json
+  commands: docs/run-tcn-expanded.md
+  final_model_path: models/tcn-expanded/final/tcn-53-matches.pt
+  production_changed: false

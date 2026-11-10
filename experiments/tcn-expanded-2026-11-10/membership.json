@@ -1,0 +1,646 @@
+{
+  "training": [
+    {
+      "provider": "idsse",
+      "match": "J03WMX",
+      "key": "idsse-J03WMX",
+      "inputs": [
+        "data/tcn-prepared/J03WMX-clean.npz",
+        "data/tcn-gap-prepared/J03WMX.npz"
+      ]
+    },
+    {
+      "provider": "idsse",
+      "match": "J03WN1",
+      "key": "idsse-J03WN1",
+      "inputs": [
+        "data/tcn-prepared/J03WN1-clean.npz",
+        "data/tcn-gap-prepared/J03WN1.npz"
+      ]
+    },
+    {
+      "provider": "idsse",
+      "match": "J03WOH",
+      "key": "idsse-J03WOH",
+      "inputs": [
+        "data/tcn-prepared/J03WOH-clean.npz",
+        "data/tcn-gap-prepared/J03WOH.npz"
+      ]
+    },
+    {
+      "provider": "idsse",
+      "match": "J03WOY",
+      "key": "idsse-J03WOY",
+      "inputs": [
+        "data/tcn-prepared/J03WOY-clean.npz",
+        "data/tcn-gap-prepared/J03WOY.npz"
+      ]
+    },
+    {
+      "provider": "idsse",
+      "match": "J03WPY",
+      "key": "idsse-J03WPY",
+      "inputs": [
+        "data/tcn-prepared/J03WPY-clean.npz",
+        "data/tcn-gap-prepared/J03WPY.npz"
+      ]
+    },
+    {
+      "provider": "pff",
+      "match": "3822",
+      "key": "pff-3822",
+      "inputs": [
+        "data/pff/release/Metadata/3822.json",
+        "data/pff/release/Rosters/3822.json",
+        "data/pff/release/Tracking Data/3822.jsonl.bz2",
+        "data/pff/features/3822.npz"
+      ],
+      "admitted_features": "data/pff/features/3822.npz"
+    },
+    {
+      "provider": "pff",
+      "match": "3835",
+      "key": "pff-3835",
+      "inputs": [
+        "data/pff/release/Metadata/3835.json",
+        "data/pff/release/Rosters/3835.json",
+        "data/pff/release/Tracking Data/3835.jsonl.bz2",
+        "data/pff/features/3835.npz"
+      ],
+      "admitted_features": "data/pff/features/3835.npz"
+    },
+    {
+      "provider": "pff",
+      "match": "3852",
+      "key": "pff-3852",
+      "inputs": [
+        "data/pff/release/Metadata/3852.json",
+        "data/pff/release/Rosters/3852.json",
+        "data/pff/release/Tracking Data/3852.jsonl.bz2",
+        "data/pff/features/3852.npz"
+      ],
+      "admitted_features": "data/pff/features/3852.npz"
+    },
+    {
+      "provider": "pff",
+      "match": "3843",
+      "key": "pff-3843",
+      "inputs": [
+        "data/pff/release/Metadata/3843.json",
+        "data/pff/release/Rosters/3843.json",
+        "data/pff/release/Tracking Data/3843.jsonl.bz2",
+        "data/pff/features/3843.npz"
+      ],
+      "admitted_features": "data/pff/features/3843.npz"
+    },
+    {
+      "provider": "pff",
+      "match": "10513",
+      "key": "pff-10513",
+      "inputs": [
+        "data/pff/release/Metadata/10513.json",
+        "data/pff/release/Rosters/10513.json",
+        "data/pff/release/Tracking Data/10513.jsonl.bz2",
+        "data/pff/features/10513.npz"
+      ],
+      "admitted_features": "data/pff/features/10513.npz"
+    },
+    {
+      "provider": "pff",
+      "match": "3839",
+      "key": "pff-3839",
+      "inputs": [
+        "data/pff/release/Metadata/3839.json",
+        "data/pff/release/Rosters/3839.json",
+        "data/pff/release/Tracking Data/3839.jsonl.bz2",
+        "data/pff/features/3839.npz"
+      ],
+      "admitted_features": "data/pff/features/3839.npz"
+    },
+    {
+      "provider": "pff",
+      "match": "3848",
+      "key": "pff-3848",
+      "inputs": [
+        "data/pff/release/Metadata/3848.json",
+        "data/pff/release/Rosters/3848.json",
+        "data/pff/release/Tracking Data/3848.jsonl.bz2",
+        "data/pff/features/3848.npz"
+      ],
+      "admitted_features": "data/pff/features/3848.npz"
+    },
+    {
+      "provider": "pff",
+      "match": "3814",
+      "key": "pff-3814",
+      "inputs": [
+        "data/pff/release/Metadata/3814.json",
+        "data/pff/release/Rosters/3814.json",
+        "data/pff/release/Tracking Data/3814.jsonl.bz2",
+        "data/pff/features/3814.npz"
+      ],
+      "admitted_features": "data/pff/features/3814.npz"
+    },
+    {
+      "provider": "pff",
+      "match": "10502",
+      "key": "pff-10502",
+      "inputs": [
+        "data/pff/release/Metadata/10502.json",
+        "data/pff/release/Rosters/10502.json",
+        "data/pff/release/Tracking Data/10502.jsonl.bz2",
+        "data/pff/features/10502.npz"
+      ],
+      "admitted_features": "data/pff/features/10502.npz"
+    },
+    {
+      "provider": "pff",
+      "match": "3857",
+      "key": "pff-3857",
+      "inputs": [
+        "data/pff/release/Metadata/3857.json",
+        "data/pff/release/Rosters/3857.json",
+        "data/pff/release/Tracking Data/3857.jsonl.bz2",
+        "data/pff/features/3857.npz"
+      ],
+      "admitted_features": "data/pff/features/3857.npz"
+    },
+    {
+      "provider": "pff",
+      "match": "10509",
+      "key": "pff-10509",
+      "inputs": [
+        "data/pff/release/Metadata/10509.json",
+        "data/pff/release/Rosters/10509.json",
+        "data/pff/release/Tracking Data/10509.jsonl.bz2",
+        "data/pff/features/10509.npz"
+      ],
+      "admitted_features": "data/pff/features/10509.npz"
+    },
+    {
+      "provider": "pff",
+      "match": "10508",
+      "key": "pff-10508",
+      "inputs": [
+        "data/pff/release/Metadata/10508.json",
+        "data/pff/release/Rosters/10508.json",
+        "data/pff/release/Tracking Data/10508.jsonl.bz2",
+        "data/pff/features/10508.npz"
+      ],
+      "admitted_features": "data/pff/features/10508.npz"
+    },
+    {
+      "provider": "pff",
+      "match": "10516",
+      "key": "pff-10516",
+      "inputs": [
+        "data/pff/release/Metadata/10516.json",
+        "data/pff/release/Rosters/10516.json",
+        "data/pff/release/Tracking Data/10516.jsonl.bz2",
+        "data/pff/features/10516.npz"
+      ],
+      "admitted_features": "data/pff/features/10516.npz"
+    },
+    {
+      "provider": "pff",
+      "match": "3856",
+      "key": "pff-3856",
+      "inputs": [
+        "data/pff/release/Metadata/3856.json",
+        "data/pff/release/Rosters/3856.json",
+        "data/pff/release/Tracking Data/3856.jsonl.bz2",
+        "data/pff/features/3856.npz"
+      ],
+      "admitted_features": "data/pff/features/3856.npz"
+    },
+    {
+      "provider": "pff",
+      "match": "3821",
+      "key": "pff-3821",
+      "inputs": [
+        "data/pff/release/Metadata/3821.json",
+        "data/pff/release/Rosters/3821.json",
+        "data/pff/release/Tracking Data/3821.jsonl.bz2",
+        "data/pff/features/3821.npz"
+      ],
+      "admitted_features": "data/pff/features/3821.npz"
+    },
+    {
+      "provider": "pff",
+      "match": "3815",
+      "key": "pff-3815",
+      "inputs": [
+        "data/pff/release/Metadata/3815.json",
+        "data/pff/release/Rosters/3815.json",
+        "data/pff/release/Tracking Data/3815.jsonl.bz2",
+        "data/pff/features/3815.npz"
+      ],
+      "admitted_features": "data/pff/features/3815.npz"
+    },
+    {
+      "provider": "pff",
+      "match": "3813",
+      "key": "pff-3813",
+      "inputs": [
+        "data/pff/release/Metadata/3813.json",
+        "data/pff/release/Rosters/3813.json",
+        "data/pff/release/Tracking Data/3813.jsonl.bz2",
+        "data/pff/features/3813.npz"
+      ],
+      "admitted_features": "data/pff/features/3813.npz"
+    },
+    {
+      "provider": "pff",
+      "match": "3824",
+      "key": "pff-3824",
+      "inputs": [
+        "data/pff/release/Metadata/3824.json",
+        "data/pff/release/Rosters/3824.json",
+        "data/pff/release/Tracking Data/3824.jsonl.bz2",
+        "data/pff/features/3824.npz"
+      ],
+      "admitted_features": "data/pff/features/3824.npz"
+    },
+    {
+      "provider": "pff",
+      "match": "3818",
+      "key": "pff-3818",
+      "inputs": [
+        "data/pff/release/Metadata/3818.json",
+        "data/pff/release/Rosters/3818.json",
+        "data/pff/release/Tracking Data/3818.jsonl.bz2",
+        "data/pff/features/3818.npz"
+      ],
+      "admitted_features": "data/pff/features/3818.npz"
+    },
+    {
+      "provider": "pff",
+      "match": "3816",
+      "key": "pff-3816",
+      "inputs": [
+        "data/pff/release/Metadata/3816.json",
+        "data/pff/release/Rosters/3816.json",
+        "data/pff/release/Tracking Data/3816.jsonl.bz2",
+        "data/pff/features/3816.npz"
+      ],
+      "admitted_features": "data/pff/features/3816.npz"
+    },
+    {
+      "provider": "pff",
+      "match": "3827",
+      "key": "pff-3827",
+      "inputs": [
+        "data/pff/release/Metadata/3827.json",
+        "data/pff/release/Rosters/3827.json",
+        "data/pff/release/Tracking Data/3827.jsonl.bz2",
+        "data/pff/features/3827.npz"
+      ],
+      "admitted_features": "data/pff/features/3827.npz"
+    },
+    {
+      "provider": "pff",
+      "match": "3836",
+      "key": "pff-3836",
+      "inputs": [
+        "data/pff/release/Metadata/3836.json",
+        "data/pff/release/Rosters/3836.json",
+        "data/pff/release/Tracking Data/3836.jsonl.bz2",
+        "data/pff/features/3836.npz"
+      ],
+      "admitted_features": "data/pff/features/3836.npz"
+    },
+    {
+      "provider": "pff",
+      "match": "10511",
+      "key": "pff-10511",
+      "inputs": [
+        "data/pff/release/Metadata/10511.json",
+        "data/pff/release/Rosters/10511.json",
+        "data/pff/release/Tracking Data/10511.jsonl.bz2",
+        "data/pff/features/10511.npz"
+      ],
+      "admitted_features": "data/pff/features/10511.npz"
+    },
+    {
+      "provider": "pff",
+      "match": "3842",
+      "key": "pff-3842",
+      "inputs": [
+        "data/pff/release/Metadata/3842.json",
+        "data/pff/release/Rosters/3842.json",
+        "data/pff/release/Tracking Data/3842.jsonl.bz2",
+        "data/pff/features/3842.npz"
+      ],
+      "admitted_features": "data/pff/features/3842.npz"
+    },
+    {
+      "provider": "pff",
+      "match": "10514",
+      "key": "pff-10514",
+      "inputs": [
+        "data/pff/release/Metadata/10514.json",
+        "data/pff/release/Rosters/10514.json",
+        "data/pff/release/Tracking Data/10514.jsonl.bz2",
+        "data/pff/features/10514.npz"
+      ],
+      "admitted_features": "data/pff/features/10514.npz"
+    },
+    {
+      "provider": "pff",
+      "match": "10503",
+      "key": "pff-10503",
+      "inputs": [
+        "data/pff/release/Metadata/10503.json",
+        "data/pff/release/Rosters/10503.json",
+        "data/pff/release/Tracking Data/10503.jsonl.bz2",
+        "data/pff/features/10503.npz"
+      ],
+      "admitted_features": "data/pff/features/10503.npz"
+    },
+    {
+      "provider": "pff",
+      "match": "3830",
+      "key": "pff-3830",
+      "inputs": [
+        "data/pff/release/Metadata/3830.json",
+        "data/pff/release/Rosters/3830.json",
+        "data/pff/release/Tracking Data/3830.jsonl.bz2",
+        "data/pff/features/3830.npz"
+      ],
+      "admitted_features": "data/pff/features/3830.npz"
+    },
+    {
+      "provider": "pff",
+      "match": "3859",
+      "key": "pff-3859",
+      "inputs": [
+        "data/pff/release/Metadata/3859.json",
+        "data/pff/release/Rosters/3859.json",
+        "data/pff/release/Tracking Data/3859.jsonl.bz2",
+        "data/pff/features/3859.npz"
+      ],
+      "admitted_features": "data/pff/features/3859.npz"
+    },
+    {
+      "provider": "pff",
+      "match": "10517",
+      "key": "pff-10517",
+      "inputs": [
+        "data/pff/release/Metadata/10517.json",
+        "data/pff/release/Rosters/10517.json",
+        "data/pff/release/Tracking Data/10517.jsonl.bz2",
+        "data/pff/features/10517.npz"
+      ],
+      "admitted_features": "data/pff/features/10517.npz"
+    },
+    {
+      "provider": "pff",
+      "match": "3825",
+      "key": "pff-3825",
+      "inputs": [
+        "data/pff/release/Metadata/3825.json",
+        "data/pff/release/Rosters/3825.json",
+        "data/pff/release/Tracking Data/3825.jsonl.bz2",
+        "data/pff/features/3825.npz"
+      ],
+      "admitted_features": "data/pff/features/3825.npz"
+    },
+    {
+      "provider": "pff",
+      "match": "3837",
+      "key": "pff-3837",
+      "inputs": [
+        "data/pff/release/Metadata/3837.json",
+        "data/pff/release/Rosters/3837.json",
+        "data/pff/release/Tracking Data/3837.jsonl.bz2",
+        "data/pff/features/3837.npz"
+      ],
+      "admitted_features": "data/pff/features/3837.npz"
+    },
+    {
+      "provider": "pff",
+      "match": "3817",
+      "key": "pff-3817",
+      "inputs": [
+        "data/pff/release/Metadata/3817.json",
+        "data/pff/release/Rosters/3817.json",
+        "data/pff/release/Tracking Data/3817.jsonl.bz2",
+        "data/pff/features/3817.npz"
+      ],
+      "admitted_features": "data/pff/features/3817.npz"
+    },
+    {
+      "provider": "pff",
+      "match": "3832",
+      "key": "pff-3832",
+      "inputs": [
+        "data/pff/release/Metadata/3832.json",
+        "data/pff/release/Rosters/3832.json",
+        "data/pff/release/Tracking Data/3832.jsonl.bz2",
+        "data/pff/features/3832.npz"
+      ],
+      "admitted_features": "data/pff/features/3832.npz"
+    },
+    {
+      "provider": "pff",
+      "match": "3828",
+      "key": "pff-3828",
+      "inputs": [
+        "data/pff/release/Metadata/3828.json",
+        "data/pff/release/Rosters/3828.json",
+        "data/pff/release/Tracking Data/3828.jsonl.bz2",
+        "data/pff/features/3828.npz"
+      ],
+      "admitted_features": "data/pff/features/3828.npz"
+    },
+    {
+      "provider": "pff",
+      "match": "3823",
+      "key": "pff-3823",
+      "inputs": [
+        "data/pff/release/Metadata/3823.json",
+        "data/pff/release/Rosters/3823.json",
+        "data/pff/release/Tracking Data/3823.jsonl.bz2",
+        "data/pff/features/3823.npz"
+      ],
+      "admitted_features": "data/pff/features/3823.npz"
+    },
+    {
+      "provider": "pff",
+      "match": "3826",
+      "key": "pff-3826",
+      "inputs": [
+        "data/pff/release/Metadata/3826.json",
+        "data/pff/release/Rosters/3826.json",
+        "data/pff/release/Tracking Data/3826.jsonl.bz2",
+        "data/pff/features/3826.npz"
+      ],
+      "admitted_features": "data/pff/features/3826.npz"
+    },
+    {
+      "provider": "pff",
+      "match": "3844",
+      "key": "pff-3844",
+      "inputs": [
+        "data/pff/release/Metadata/3844.json",
+        "data/pff/release/Rosters/3844.json",
+        "data/pff/release/Tracking Data/3844.jsonl.bz2",
+        "data/pff/features/3844.npz"
+      ],
+      "admitted_features": "data/pff/features/3844.npz"
+    },
+    {
+      "provider": "pff",
+      "match": "10515",
+      "key": "pff-10515",
+      "inputs": [
+        "data/pff/release/Metadata/10515.json",
+        "data/pff/release/Rosters/10515.json",
+        "data/pff/release/Tracking Data/10515.jsonl.bz2",
+        "data/pff/features/10515.npz"
+      ],
+      "admitted_features": "data/pff/features/10515.npz"
+    },
+    {
+      "provider": "pff",
+      "match": "3850",
+      "key": "pff-3850",
+      "inputs": [
+        "data/pff/release/Metadata/3850.json",
+        "data/pff/release/Rosters/3850.json",
+        "data/pff/release/Tracking Data/3850.jsonl.bz2",
+        "data/pff/features/3850.npz"
+      ],
+      "admitted_features": "data/pff/features/3850.npz"
+    },
+    {
+      "provider": "pff",
+      "match": "10504",
+      "key": "pff-10504",
+      "inputs": [
+        "data/pff/release/Metadata/10504.json",
+        "data/pff/release/Rosters/10504.json",
+        "data/pff/release/Tracking Data/10504.jsonl.bz2",
+        "data/pff/features/10504.npz"
+      ],
+      "admitted_features": "data/pff/features/10504.npz"
+    },
+    {
+      "provider": "pff",
+      "match": "3855",
+      "key": "pff-3855",
+      "inputs": [
+        "data/pff/release/Metadata/3855.json",
+        "data/pff/release/Rosters/3855.json",
+        "data/pff/release/Tracking Data/3855.jsonl.bz2",
+        "data/pff/features/3855.npz"
+      ],
+      "admitted_features": "data/pff/features/3855.npz"
+    },
+    {
+      "provider": "pff",
+      "match": "3829",
+      "key": "pff-3829",
+      "inputs": [
+        "data/pff/release/Metadata/3829.json",
+        "data/pff/release/Rosters/3829.json",
+        "data/pff/release/Tracking Data/3829.jsonl.bz2",
+        "data/pff/features/3829.npz"
+      ],
+      "admitted_features": "data/pff/features/3829.npz"
+    },
+    {
+      "provider": "pff",
+      "match": "3853",
+      "key": "pff-3853",
+      "inputs": [
+        "data/pff/release/Metadata/3853.json",
+        "data/pff/release/Rosters/3853.json",
+        "data/pff/release/Tracking Data/3853.jsonl.bz2",
+        "data/pff/features/3853.npz"
+      ],
+      "admitted_features": "data/pff/features/3853.npz"
+    },
+    {
+      "provider": "pff",
+      "match": "10507",
+      "key": "pff-10507",
+      "inputs": [
+        "data/pff/release/Metadata/10507.json",
+        "data/pff/release/Rosters/10507.json",
+        "data/pff/release/Tracking Data/10507.jsonl.bz2",
+        "data/pff/features/10507.npz"
+      ],
+      "admitted_features": "data/pff/features/10507.npz"
+    },
+    {
+      "provider": "pff",
+      "match": "3838",
+      "key": "pff-3838",
+      "inputs": [
+        "data/pff/release/Metadata/3838.json",
+        "data/pff/release/Rosters/3838.json",
+        "data/pff/release/Tracking Data/3838.jsonl.bz2",
+        "data/pff/features/3838.npz"
+      ],
+      "admitted_features": "data/pff/features/3838.npz"
+    },
+    {
+      "provider": "pff",
+      "match": "10510",
+      "key": "pff-10510",
+      "inputs": [
+        "data/pff/release/Metadata/10510.json",
+        "data/pff/release/Rosters/10510.json",
+        "data/pff/release/Tracking Data/10510.jsonl.bz2",
+        "data/pff/features/10510.npz"
+      ],
+      "admitted_features": "data/pff/features/10510.npz"
+    },
+    {
+      "provider": "pff",
+      "match": "3854",
+      "key": "pff-3854",
+      "inputs": [
+        "data/pff/release/Metadata/3854.json",
+        "data/pff/release/Rosters/3854.json",
+        "data/pff/release/Tracking Data/3854.jsonl.bz2",
+        "data/pff/features/3854.npz"
+      ],
+      "admitted_features": "data/pff/features/3854.npz"
+    },
+    {
+      "provider": "pff",
+      "match": "3840",
+      "key": "pff-3840",
+      "inputs": [
+        "data/pff/release/Metadata/3840.json",
+        "data/pff/release/Rosters/3840.json",
+        "data/pff/release/Tracking Data/3840.jsonl.bz2",
+        "data/pff/features/3840.npz"
+      ],
+      "admitted_features": "data/pff/features/3840.npz"
+    }
+  ],
+  "protected": [
+    "idsse-J03WQQ",
+    "idsse-J03WR9",
+    "pff-3846",
+    "pff-3831",
+    "pff-3841",
+    "pff-10512",
+    "pff-3847",
+    "pff-10506",
+    "pff-3833",
+    "pff-3819",
+    "pff-10505",
+    "pff-3849",
+    "pff-3858",
+    "pff-3834",
+    "pff-3812",
+    "pff-3820",
+    "pff-3851",
+    "pff-3845"
+  ],
+  "policy": "preserve_existing_holdouts"
+}
