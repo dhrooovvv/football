@@ -1,0 +1,2 @@
+# Bounded intermediate-core operational check
+Initial1/11syntheticbenchmark found11slower; no trainingmodechange. Useraskscontinue. Onefixedsweep1/2/4/6/11, same50updates/twofits/seed/model/shape/flags; originalresults preserved. Newsource scripts/benchmark_tcn_core_sweep.py. Timingonly/within-modeweights, not fullCSVproof. Recordallcounts andtimings; choose nocores untiltraining ANDinference effects understood. No datasetfit/modelselection or gatechange.
