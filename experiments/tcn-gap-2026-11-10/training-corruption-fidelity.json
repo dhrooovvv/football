@@ -1,0 +1,37 @@
+[
+  {
+    "match": "J03WMX",
+    "seed": 20261206,
+    "training_view_missing_fraction": 0.43394739906965274,
+    "target_observed_missing_fraction": 0.40692572565263097,
+    "labels_changed": false
+  },
+  {
+    "match": "J03WN1",
+    "seed": 20261207,
+    "training_view_missing_fraction": 0.3766856690755222,
+    "target_observed_missing_fraction": 0.40692572565263097,
+    "labels_changed": false
+  },
+  {
+    "match": "J03WOH",
+    "seed": 20261208,
+    "training_view_missing_fraction": 0.3696780211931727,
+    "target_observed_missing_fraction": 0.40692572565263097,
+    "labels_changed": false
+  },
+  {
+    "match": "J03WOY",
+    "seed": 20261209,
+    "training_view_missing_fraction": 0.37865521692765336,
+    "target_observed_missing_fraction": 0.40692572565263097,
+    "labels_changed": false
+  },
+  {
+    "match": "J03WPY",
+    "seed": 20261210,
+    "training_view_missing_fraction": 0.42083017009664114,
+    "target_observed_missing_fraction": 0.40692572565263097,
+    "labels_changed": false
+  }
+]

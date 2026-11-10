@@ -293,13 +293,13 @@ tcn_long_run:
   production_changed: false
 
 best_development_candidate:
-  selected: catboost_tcn_50_50
+  selected: gap_augmented_catboost_tcn_50_50
   status: quality_eligible_not_production_promoted
-  mean_clean_spellF1: 0.6025541654696472
-  mean_corrupted_spellF1: 0.39703722392353985
-  primary_median_delta: 0.015717094039299218
+  mean_clean_spellF1: 0.5925021056601485
+  mean_corrupted_spellF1: 0.4283855855925492
+  primary_median_delta: 0.020148972553111322
   matches_improved: 3
-  tests_passed: 35
+  tests_passed: 41
   repeatability_cases_passed: 10
   clean_environment_verified: false
   target_integration_verified: false
@@ -322,7 +322,7 @@ fixed_blend_result:
   augmentation_started: false
 
 tcn_gap_augmentation:
-  status: preregistered_not_dataset_run
+  status: completed_quality_eligible_verification_pending
   user_authorized: true
   user_executes_long_run: true
   protocol: experiments/tcn-gap-2026-11-10/protocol.md
@@ -333,3 +333,17 @@ tcn_gap_augmentation:
   evaluation_gap_seed_base: 20261106
   tests_passed: 41
   production_changed: false
+
+gap_augmentation_result_audit:
+  independently_recomputed: true
+  mean_clean_spellF1: 0.5925021056601485
+  mean_corrupted_spellF1: 0.4283855855925492
+  primary_median_delta: 0.020148972553111322
+  paired_median_delta: 0.008055385269600368
+  paired_matches_improved: 3
+  clean_spell_declined_all_five: true
+  corrupted_spell_improved_all_five: true
+  tests_passed: 41
+  repeatability_cases_passed: 10
+  production_changed: false
+  clean_environment_verified: false
