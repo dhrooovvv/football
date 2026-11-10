@@ -1,0 +1,72 @@
+[
+  {
+    "match": "J03WMX",
+    "condition": "clean",
+    "csv_repeat_equal": true,
+    "parent_reconstructed_exact": true,
+    "sha256": "8351df9ab2d7f3e254896957dd8f713887b05ebb1650b5f039fc420111ff8dfe"
+  },
+  {
+    "match": "J03WMX",
+    "condition": "targetlike",
+    "csv_repeat_equal": true,
+    "parent_reconstructed_exact": true,
+    "sha256": "93a94a8f756c5750f159945eba6d3915df4e8563490089c6d4b52a63383f4acc"
+  },
+  {
+    "match": "J03WN1",
+    "condition": "clean",
+    "csv_repeat_equal": true,
+    "parent_reconstructed_exact": true,
+    "sha256": "5e5b46a25150a5a81f6037a176fd9b2d9d8262a57308ac020dc6f62bdce0bb29"
+  },
+  {
+    "match": "J03WN1",
+    "condition": "targetlike",
+    "csv_repeat_equal": true,
+    "parent_reconstructed_exact": true,
+    "sha256": "820a65d24ad2a6e8ba1360bf27904470938dd3fb879b77640060ce9d52105346"
+  },
+  {
+    "match": "J03WOH",
+    "condition": "clean",
+    "csv_repeat_equal": true,
+    "parent_reconstructed_exact": true,
+    "sha256": "9b0043bbd5b55032b8af6045aecae214b0db23fe9a7522e1d99428f9ca0d5565"
+  },
+  {
+    "match": "J03WOH",
+    "condition": "targetlike",
+    "csv_repeat_equal": true,
+    "parent_reconstructed_exact": true,
+    "sha256": "0a40711586db692c276167e7e149b1bc0b56ae815a5ce30c06be7936d16630cd"
+  },
+  {
+    "match": "J03WOY",
+    "condition": "clean",
+    "csv_repeat_equal": true,
+    "parent_reconstructed_exact": true,
+    "sha256": "b8f963ceeeb55c235c02fcee88aedfce2367bc7d9162bd3ecc60255522481347"
+  },
+  {
+    "match": "J03WOY",
+    "condition": "targetlike",
+    "csv_repeat_equal": true,
+    "parent_reconstructed_exact": true,
+    "sha256": "b48faefd8eb14bd150ea02bf2331f949aa208d87edc2ed18bb05a3c961ded05a"
+  },
+  {
+    "match": "J03WPY",
+    "condition": "clean",
+    "csv_repeat_equal": true,
+    "parent_reconstructed_exact": true,
+    "sha256": "e7dc04942433b7a7a876bfc10ef00a96e46f9e9266f73ca7d0d526766452f344"
+  },
+  {
+    "match": "J03WPY",
+    "condition": "targetlike",
+    "csv_repeat_equal": true,
+    "parent_reconstructed_exact": true,
+    "sha256": "75a2150b7c109a38b91e56a348bdd5a35c9a986000af7d19684f39c402682926"
+  }
+]

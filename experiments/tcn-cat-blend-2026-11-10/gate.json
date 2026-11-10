@@ -1,0 +1,29 @@
+{
+  "quality_eligible": true,
+  "primary_median_delta": 0.015717094039299218,
+  "primary_deltas": {
+    "J03WMX": 0.006976516394446131,
+    "J03WN1": 0.017804761579916784,
+    "J03WOH": 0.015717094039299218,
+    "J03WOY": 0.026809598253058342,
+    "J03WPY": -0.015378118860961743
+  },
+  "paired_spell_deltas": {
+    "J03WMX": -0.012938223890297584,
+    "J03WN1": 0.008900100184229431,
+    "J03WOH": 0.009995076778601564,
+    "J03WOY": 0.002671515151144388,
+    "J03WPY": -0.000983858501829138
+  },
+  "paired_macro_deltas": {
+    "J03WMX": 0.024566614983259294,
+    "J03WN1": 0.011498416084718022,
+    "J03WOH": 0.004448975487759688,
+    "J03WOY": 0.01831048119513512,
+    "J03WPY": 0.01570149166751955
+  },
+  "matches_improved": 3,
+  "tests_passed": true,
+  "production_changed": false,
+  "clean_environment_verified": false
+}

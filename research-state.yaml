@@ -293,10 +293,10 @@ tcn_long_run:
   production_changed: false
 
 best_development_candidate:
-  selected: trajectory_tcn_20000
+  selected: catboost_tcn_50_50
   status: quality_eligible_not_production_promoted
-  mean_clean_spellF1: 0.6098822918620596
-  mean_corrupted_spellF1: 0.3866512536423881
+  mean_clean_spellF1: 0.6025541654696472
+  mean_corrupted_spellF1: 0.39703722392353985
   primary_median_delta: 0.05863681550244326
   matches_improved: 5
   tests_passed: 39
@@ -305,3 +305,18 @@ best_development_candidate:
   target_integration_verified: false
   next_action: preregister_clean_reproduction_and_adapter_integration
   production_changed: false
+
+fixed_blend_result:
+  status: completed_quality_eligible_verification_pending
+  protocol_commit: 049a61f
+  reference: trajectory_tcn_20000
+  primary_median_delta: 0.015717094039299218
+  paired_median_spell_delta: 0.002671515151144388
+  paired_matches_improved: 3
+  clean_mean_spell_declined: true
+  tests_passed: 35
+  parent_csv_reconstruction_cases: 10
+  repeated_blend_csv_cases: 10
+  production_changed: false
+  clean_environment_verified: false
+  augmentation_started: false

@@ -193,3 +193,7 @@ November10userauthorized20kstepTCNbudgetextensionprepared,notrun. SamefiveLOMOan
 
 ## November10 longTCN — developmentqualitygatePASS
 20kTCN meanheldoutspell .609882clean/.386651corrupted, versusCatBoost .517654/.323476.5/5pairedwins, medianprimary+.058637, medianmacro+.011711. Independentgateverified;39tests+10exactrepeatfit/reload/batchCSVchecks pass. Newbestdevelopmentcandidate ONLY; productionCatBoostunchanged pendingcleanenvironment/freshclone/integration/officialvalidation. Sealeduntouched/targetaccuracyunknown. Fullpermatchreport experiments/tcn-long-2026-11-10/report.md.
+
+
+## November10 fixed50/50blend — provisionalqualitypass
+Against20kTCN, meanblendspell .602554clean/.397037corrupted (TCN .609882/.386651). Cleandeclineexplicit;3/5pairedwins, primarymedian+.015717, medianmacro+.015701passunchangedgate.35tests+10exactparentreconstructions/10repeatedblendCSVchecks. No retraining/weightsearch. Leadingdevelopmentcandidateonly; releasecleanenv/integrationverificationpending, productionunchanged. Evidence experiments/tcn-cat-blend-2026-11-10/report.md.
