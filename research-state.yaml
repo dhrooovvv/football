@@ -364,3 +364,15 @@ tcn_interaction_trial:
   tests_passed: 45
   user_executes_long_run: true
   production_changed: false
+
+research_dossier:
+  snapshot_date: "2026-11-10"
+  pdf: output/pdf/ball-possession-research-dossier.pdf
+  markdown: output/pdf/ball-possession-research-dossier.md
+  source_inventory: output/pdf/ball-possession-research-sources.json
+  pages: 74
+  archived_research_notes: 24
+  visual_review_completed: true
+  model_experiment_executed: false
+  externally_published: false
+  pdf_sha256: 9cc97b309fc0816897bb59266efe3ee1cc9276800f528c4fdfaf8a60840b5fca
