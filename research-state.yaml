@@ -259,10 +259,11 @@ competitor_practice_review:
 
 execution_policy_update:
   date: "2026-11-10"
-  all_tests_run_by_user: true
+  all_tests_run_by_user: false
+  hours_long_runs_by_user: true
   assistant_may_prepare_commands_and_review_results: true
 learning_diagnostic:
-  status: prepared_committed_not_run_not_tested
+  status: completed_training_fit_pass_not_generalization
   protocol: experiments/tcn-learning-check-2026-11-10/protocol.md
   runner: scripts/check_tcn_learning.py
   training_segment_only: true

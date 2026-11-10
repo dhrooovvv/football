@@ -179,3 +179,6 @@ MoreThanAHack2026IpurdIAr conversationalanalysisproduct is not comparableinterva
 
 
 November10learningdiagnostic prepared, not executed/tested: scripts/check_tcn_learning.py, experiments/tcn-learning-check-2026-11-10/protocol.md. Fixedtrainingsegment scores are diagnostic only; no promotion/generalizationclaim. User reserves all tests/datasetexecution. Productionunchanged.
+
+
+November10trainingdiagnostic PASS: 2000steps fitfixedexternaltrainingsegment .9788accuracy/.07158CE/.805556decodedspellF1; NOT development/testquality. Supportsonepreregisteredlongertrainingcomparison, not modelpromotion. Latestuserallowsshortautonomoustests; hourslongrunsuserexecuted.
