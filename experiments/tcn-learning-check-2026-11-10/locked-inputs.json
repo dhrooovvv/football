@@ -1,0 +1,11 @@
+{
+  "data/tcn-prepared/J03WMX-clean.npz": "9630f6a027a6b4e6fe19a0a619cc70f915d3eabd16e9d1ad61bdd539d10ec029",
+  "scripts/check_tcn_learning.py": "4d569074f26aeea8de7421859418c327079cb99614b259ff37c02c2c383a133d",
+  "scripts/prepare_tcn.py": "b1bba941c77faabe87a9e998b60e223b6c67766fab0800bd05c07c09596bf2ec",
+  "scripts/review_frozen.py": "aed2a492a2219b7950e07d8f613d0fa6b4fc06fe9f75fd8f81c16b1471dae237",
+  "src/possession/decode.py": "c987dd44e17c9e35650a4a4c9c59d62b5dde2f02c06a83e6a71bf2345da13710",
+  "src/possession/diagnostics.py": "8b6cbe4926fbffa8b8759973222c29c1da61d19612227c6a0f731c850badaee7",
+  "experiments/tcn-2026-11-10/tcn_candidate.py": "42decde35540780d928568b6bd577e7c9cb8bad314e6424924cf9bb04e462891",
+  "experiments/tcn-2026-11-10/environment.json": "4fcaf01214735661f21296cc4436a7280f7dc8bad8270d9d2dcf18755a5a08ef",
+  "reference/more-than-a-hack-2027-main/evaluation/possession_metrics.py": "341bad48904b489d6e875397b27687f5d6a4d22a397f3dc8af3a00d48f16874d"
+}
