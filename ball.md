@@ -1069,3 +1069,7 @@ User-runTCNtraining-onlydiagnostic completed: {"training_overfit_diagnostic_pass
 
 ### J065 — 2026-11-10 — Learning diagnostic passes; execution policy broadened
 Latestuser authorizes autonomous usefulwork/shorttests; hourslongtraining/evaluation to userwithcommands. This supersedes previousalltestsuseronly, not gate/sealed/publiclabelpolicy. Completeduserdiagnostic46.50s: fixedsegment fullCE1.14582->.81004->.17274->.07158 at0/200/1000/2000; argmaxaccuracy.1901/.6495/.9374/.9788. FinalclassrecallsH.93942/A.98707/D.99737. Decoder16trainingsegmentspellF1.805556 at2000 vs.054545at200. This is TRAININGFIT, no generalization or targetclaim, not ourbestdevelopmentmetric. Diagnosticthresholds independentlyverified; keepproductionCatBoost16. Sourceevidence experiments/tcn-learning-check-2026-11-10/results.json/verdict.json. LongerfullLOMO fixed2000-steptrial nowjustified asonebudgetchange, protocolbeforeexecution. No assumptionofgain.
+
+
+### J066 — November10 — Preregistered one2000stepfullLOMOtrial
+Protocol/scripts/inputhashescommittedbeforeexecution; trainingbudgetonlychangefromrejected200stepTCN, parentCatBoost16 unchanged. Segmentfitdoesnotpredictdevelopmentgain. Samefolds/seeds/arch/features/corruption/penalty/gate, twofitrepeatability. Mayexecuteshortjobunderlatestauthorization; hourslongusercmdonly. No automaticpromotion/continuations.
