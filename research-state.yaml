@@ -31,9 +31,11 @@ promotion:
   stop_track_after_consecutive_failures: 3
 tracks:
   more_data:
-    status: completed_candidate_rejected_transfer_measured
-    consecutive_failures: 1
-    report: experiments/pff-evaluation/report.md
+    status: fixed_balanced_provider_followup_registered_user_run_pending
+    consecutive_failures: 2
+    report: experiments/tcn-expanded-2026-11-10/result-review.md
+    failures_preserved: [catboost_unweighted_expansion, tcn_unweighted_expansion]
+    stop_on_next_failure: true
   decoder:
     status: stopped_three_consecutive_failures
     consecutive_failures: 3
@@ -76,7 +78,7 @@ workspace:
   findings: findings.md
   technical_document: docs/technical-report.md
   next_step_plan: docs/next-steps-2026-11-07.md
-next_action: Expanded-data trial rejected; retain prior candidate and prepare its release qualification without executing new tests.
+next_action: User runs balanced-provider checks then five-fold trial; review results before any further experiment or final fit.
 
 open_model_audit:
   date: '2026-11-08'
@@ -457,3 +459,43 @@ expanded_tcn_result_audit:
   production_changed: false
   new_training_or_inference_by_assistant: false
   automatic_sampler_or_budget_rescue: false
+
+improvement_strategy_2026_11_11:
+  user_authorized_preparation: true
+  all_tests_training_inference_by_user: true
+  independent_reviews: [data_scientist, scientific_literature_researcher, reviewer]
+  plan: docs/improvement-plan-2026-11-11.md
+  research: literature/tcn-transfer-context-refresh-2026-11-11.md
+  no_confirmed_expansion_implementation_bug_found: true
+  final_53_checkpoint_invalid_for_development_initialization: true
+  future_context_trial: conditional_separate_preregistration_required
+  adaptation_trial: deferred_if_expansion_track_stops
+  new_experiment_executed: false
+  production_changed: false
+
+balanced_provider_tcn:
+  status: registered_code_prepared_not_executed_or_tested
+  protocol: experiments/tcn-balanced-2026-11-11/protocol.md
+  inputs: experiments/tcn-balanced-2026-11-11/inputs.json
+  runner: scripts/run_tcn_balanced.py
+  commands: docs/run-tcn-balanced.md
+  idsse_probability: 0.5
+  pff_probability: 0.5
+  within_provider_sampling: uniform_valid_known_window_starts
+  provider_seed: 20392419
+  training_steps_per_fit: 20000
+  initialization: scratch
+  warm_start_from_final53: forbidden
+  matches_per_development_fit: 52
+  promotion_parent: retained_gap_augmented_50_50_blend_penalty16
+  failed_uniform_reference: descriptive_only
+  data_expansion_failures_before_trial: 2
+  failure_stops_data_expansion_track: true
+  automatic_ratio_search: false
+  new_regression_tests_provided: 8
+  tests_executed: false
+  prepared_case_manifest_hashes_pinned: 53
+  final_fit_automatic: false
+  final_fit_requires_recomputed_complete_passing_gate: true
+  target_accuracy: unknown
+  production_changed: false
