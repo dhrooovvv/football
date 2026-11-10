@@ -1,0 +1,23 @@
+{
+  "scripts/export_neural_candidate.py": "fc2aa1cedb48157dec2581751abeaa6059a7ecd611a9ef245685ac3fe74714c6",
+  "scripts/prepare_tcn.py": "b1bba941c77faabe87a9e998b60e223b6c67766fab0800bd05c07c09596bf2ec",
+  "experiments/tcn-2026-11-10/tcn_candidate.py": "42decde35540780d928568b6bd577e7c9cb8bad314e6424924cf9bb04e462891",
+  "experiments/tcn-2026-11-10/environment.json": "4fcaf01214735661f21296cc4436a7280f7dc8bad8270d9d2dcf18755a5a08ef",
+  "experiments/tcn-expanded-2026-11-10/membership.json": "ddba83eead041e2b6977f7c69275525a8c7ae77ea139c2657ab617094b893ef8",
+  "configs/competition.json": "252091ff6779e8bf809399cbdb844ceefa673125574c6ea52f3ae8b5a27f017c",
+  "models/core-final.cbm": "5dbb1d86cd98d4f18a8d589fc072cbd353d99912c1caba613ece9a339dac3b49",
+  "reference/more-than-a-hack-2027-main/evaluation/possession_metrics.py": "341bad48904b489d6e875397b27687f5d6a4d22a397f3dc8af3a00d48f16874d",
+  "src/possession/config.py": "33fea8f14b4415d4f10cfa1d32eedaef3ed62e655706178f07aeceeac4511e45",
+  "src/possession/diagnostics.py": "8b6cbe4926fbffa8b8759973222c29c1da61d19612227c6a0f731c850badaee7",
+  "src/possession/__init__.py": "62ccc2a3937b3d4dee39ea16f71498eb2a8f85dee8329b62888bc2e2489657c5",
+  "src/possession/features.py": "efa351988c150316f47b15ffa09dc20174962702e074f404a29a24650f3d3500",
+  "src/possession/core.py": "b0f54209e00a595a6d7943c83ab3578481f044f15ddacbf26bad74ab32ac8693",
+  "src/possession/pff.py": "1a304f77614c909e74a20733c3021b82d9379edc3f8b3ea7d6736514653e9930",
+  "src/possession/inputs.py": "8db3bf7aa820c7dcc04e44af4543b82d8448c59988218073bff9ea485b4c164a",
+  "src/possession/archive.py": "e8a81bbc92255ea6dde8c140a4a2333e3f7649beca1f180d933549400cd84c11",
+  "src/possession/external.py": "83eda686589cda1e6080cc37d45494eaae8a43f2fff54278efefb86da02ce01b",
+  "src/possession/decode.py": "c987dd44e17c9e35650a4a4c9c59d62b5dde2f02c06a83e6a71bf2345da13710",
+  "experiments/neural-export-2026-11-11/requirements.txt": "9cac59780abbb732255d08d89c751550cc9ee506184778facabe4f179fc849e5",
+  "experiments/tcn-expanded-2026-11-10/protocol.md": "573bc18b36222025dca7400d47e8d25fef75dbb86ca81b1b0b187dfb0f6de4d8",
+  "experiments/tcn-expanded-2026-11-10/inputs.json": "1fdc19412ce445a775af49fc1287ef2a27a1ad6f3465bafb3762ff5678fd748f"
+}

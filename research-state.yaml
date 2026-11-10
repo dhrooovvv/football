@@ -76,7 +76,7 @@ workspace:
   findings: findings.md
   technical_document: docs/technical-report.md
   next_step_plan: docs/next-steps-2026-11-07.md
-next_action: Wait for explicit user instruction; experiments stopped.
+next_action: Await user-run expanded training completion; review gate before executing prepared neural export checks.
 
 open_model_audit:
   date: '2026-11-08'
@@ -259,7 +259,7 @@ competitor_practice_review:
 
 execution_policy_update:
   date: "2026-11-10"
-  all_tests_run_by_user: false
+  all_tests_run_by_user: true
   hours_long_runs_by_user: true
   assistant_may_prepare_commands_and_review_results: true
 learning_diagnostic:
@@ -392,7 +392,7 @@ blend_switch_8:
   candidate_penalty: 8
 
 expanded_tcn_training:
-  status: registered_code_prepared_not_executed_or_tested
+  status: user_run_in_progress_no_final_result_reviewed
   user_scope_decision: expand_training_preserve_some_test_matches
   training_eligible_matches: 53
   idsse_development_matches: 5
@@ -412,4 +412,24 @@ expanded_tcn_training:
   membership: experiments/tcn-expanded-2026-11-10/membership.json
   commands: docs/run-tcn-expanded.md
   final_model_path: models/tcn-expanded/final/tcn-53-matches.pt
+  production_changed: false
+
+neural_export_verification:
+  date: "2026-11-11"
+  status: prepared_registered_not_executed_or_tested
+  protocol: experiments/neural-export-2026-11-11/protocol.md
+  commands: docs/run-neural-export.md
+  runner: scripts/export_neural_candidate.py
+  checkpoint_source: expanded_final_53_match_fit
+  frozen_catboost_retrained: false
+  blend_weights: [0.5, 0.5]
+  penalty: 16
+  user_executes_all_checks: true
+  official_validator_executed: false
+  csv_byte_reproduction_verified: false
+  clean_environment_verified: false
+  fresh_clone_verified: false
+  clean_training_reproduced: false
+  target_temporal_slot_continuity_verified: false
+  target_accuracy: unknown
   production_changed: false
