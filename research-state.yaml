@@ -222,7 +222,7 @@ schedule_revision:
 
 tcn_candidate:
   date: "2026-11-10"
-  status: implemented_preregistered_not_dataset_executed
+  status: completed_rejected_bounded_trial_closed
   bounded_sequence_track_amendment: true
   protocol: experiments/tcn-2026-11-10/protocol.md
   commands: docs/run-tcn.md
@@ -235,3 +235,14 @@ tcn_candidate:
   runtime_estimate: unknown
   production_changed: false
   previous_failures_preserved: true
+
+tcn_result_audit:
+  date: "2026-11-10"
+  mean_clean_spellF1: 0.11783795956948205
+  mean_corrupted_spellF1: 0.08234701834560379
+  primary_median_delta: -0.23374990645813062
+  matches_improved: 0
+  tests_passed: 39
+  within_environment_repeatability_cases_passed: 10
+  independently_recomputed: true
+  production_changed: false

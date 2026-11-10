@@ -1,0 +1,52 @@
+[
+  {
+    "match": "J03WMX",
+    "steps": 200,
+    "batch": 8,
+    "input_window": 250,
+    "retained_loss_frames": 200,
+    "initial_training_seconds": 5.589411333028693,
+    "initial_loss": 1.103837013244629,
+    "final_loss": 0.5585266351699829
+  },
+  {
+    "match": "J03WN1",
+    "steps": 200,
+    "batch": 8,
+    "input_window": 250,
+    "retained_loss_frames": 200,
+    "initial_training_seconds": 5.274636250047479,
+    "initial_loss": 1.0954444408416748,
+    "final_loss": 0.5672032833099365
+  },
+  {
+    "match": "J03WOH",
+    "steps": 200,
+    "batch": 8,
+    "input_window": 250,
+    "retained_loss_frames": 200,
+    "initial_training_seconds": 5.6108759170165285,
+    "initial_loss": 1.0604740381240845,
+    "final_loss": 0.44903919100761414
+  },
+  {
+    "match": "J03WOY",
+    "steps": 200,
+    "batch": 8,
+    "input_window": 250,
+    "retained_loss_frames": 200,
+    "initial_training_seconds": 5.434842167014722,
+    "initial_loss": 1.073900818824768,
+    "final_loss": 0.6627549529075623
+  },
+  {
+    "match": "J03WPY",
+    "steps": 200,
+    "batch": 8,
+    "input_window": 250,
+    "retained_loss_frames": 200,
+    "initial_training_seconds": 5.6619533750345,
+    "initial_loss": 1.1015806198120117,
+    "final_loss": 1.293253779411316
+  }
+]
