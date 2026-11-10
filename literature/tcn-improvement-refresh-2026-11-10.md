@@ -1,0 +1,45 @@
+# TCN improvement refresh — November 10, 2026
+
+## Question, scope and decision
+
+Which published ideas justify one feasible change to the existing team-pooled trajectory TCN, given possession-spell/boundary errors? Read project journal/state/findings, previous benchmark audit and current model source; searched primary literature for permutation-invariant interaction encoding and boundary-sensitive temporal action segmentation. Public papers/author repositories only. No private arrays, match observations, target labels or sealed assets read; no experiment executed. This is a targeted technology review, not a systematic review or evidence of a new measured project gain.
+
+**Decision:** if the current-parent audit confirms wrong-team/contested-control errors, prefer one explicit masked player–ball relation bundle with the current TCN, budget and decoder held fixed. Do not simultaneously add attention, longer context and new losses. If errors instead show predominantly fragmented spells with otherwise correct ownership, a boundary-sensitive learning change is a separate candidate. Current eligible parent remains the gap-augmented fixed blend under the unchanged robustness gate; best-clean standalone TCN is not automatically the selection parent. No literature permits forecasting .7/.8 spellF1.
+
+## Evidence by mechanism
+
+### Football-specific temporal/set aggregation — moderate relevance, weak score transportability
+
+[Borghesi et al., 2023, ESWA](https://doi.org/10.1016/j.eswa.2023.119780), [institutional paper](https://iris.polito.it/retrieve/d9aa6bfd-b26e-44cd-bf9e-6004e676211a/1-s2.0-S0957417423002816-main.pdf): independent temporal object embeddings plus permutation-invariant sum/self-attention/convolution aggregation. Prior full-text audit records a confidential 35-match source, main 8-match selection with low live-ball missingness, 4/2/2 match split and sampled windows, plus 20-match extension. Three-state formulation is close, but ball interpolation and accuracy metrics differ from full-match raw-gap spellF1. Supports testing interactions, not a transferable effect size. Code/weights licence and public checkpoint remain unverified; do not treat open-access article as permission to reuse unavailable artifacts.
+
+[PathCRF, KDD2026 primary paper](https://arxiv.org/html/2602.12080v1): seven Sportec matches, 5/1/1 split, known-live input segments. Directed player-pair edge embeddings feed emissions and dynamic structured transitions. Event F1 .7569 versus .6534 independent edge classification is evidence that relational and sequential constraints help that event task. It is not H/A/D possession-spellF1; a single test match, different supervision and known-play restriction limit transfer. Existing public checkpoint overlap issues remain. Borrow the interaction principle, not pretrained weights or its score as an expected gain. The study does not isolate a player–ball relative feature as the causal improvement.
+
+### Set interactions and pooling — strong mathematical fit, indirect task evidence
+
+[Lee et al., ICML2019 Set Transformer](https://proceedings.mlr.press/v97/lee19d.html): attention-based encoders/decoders explicitly model interactions in an unordered set. Experiments span synthetic set functions, few-shot classification and 3D point-cloud recognition; there are no soccer possession-spell tests. The paper motivates an order-invariant alternative to pooling, but neither task sample sizes nor reported generic scores establish a football effect estimate. [Author code](https://github.com/juho-lee/set_transformer), [actual root licence](https://raw.githubusercontent.com/juho-lee/set_transformer/master/LICENSE), checked November10: MIT. No code downloaded or adopted here.
+
+A full Set Transformer adds pairwise computation and extra parameters. Relative observation channels in a shared object encoder are the smaller first intervention; attention pooling can be a later separate hypothesis if uniform averaging still loses local control evidence.
+
+### Boundary-sensitive action segmentation — credible cross-domain mechanism, conditional applicability
+
+[MS-TCN, CVPR2019 primary paper](https://arxiv.org/html/1903.01945v2): dilated multi-stage temporal convolutions with classification and smoothing losses, tested on 50Salads, GTEA and Breakfast. The ablations support refinement/smoothing against over-segmentation on those daily-activity datasets. Those labels, background conventions and F1 thresholds differ from H/A/D interval matching; no independent football test exists in the paper. More smoothing is not justified if our major error is missed brief possessions or over-merged handovers. **Licence caution:** [official source licence](https://raw.githubusercontent.com/yabufarha/ms-tcn/master/LICENSE) is MIT plus Commons Clause, including a restriction on selling the software; it is not plain permissive MIT. A scratch implementation of an independently described method avoids silently importing that source licence.
+
+[ASRF, Ishikawa et al. primary paper](https://arxiv.org/html/2007.06866v1): separate action and boundary branches refine frame predictions. Evaluation uses 50Salads (50 videos/25 people), GTEA (28 videos/4 people) and Breakfast (>77h/52 people); 5-fold evaluation for Salads and 4-fold for others. Authors demonstrate segmental-F1 gains, but also show a failure where segment-level reassignment selects the wrong class even with good boundaries. This supports a boundary-specific diagnostic, not indiscriminate smoothing. No numeric gain is transferred here; no code licence checked because no adoption is recommended.
+
+[ASFormer, BMVC2021 paper](https://arxiv.org/abs/2110.08568) combines local temporal priors and attention/refinement. It remains cross-domain evidence rather than a better off-the-shelf possession model. [Author licence](https://raw.githubusercontent.com/ChinaYi/ASFormer/main/LICENSE), verified November10: MIT. A full architecture replacement would confound interaction/boundary questions and is not the preferred near-term trial.
+
+## What the current code leaves unresolved
+
+Current object Conv1d sees absolute XY, velocities and visibility, then masked mean pooling separately for home, away and ball. The ball embedding is pooled independently; there is no explicit per-player relative ball XY/motion before pooling. Nonlinear layers can learn some relationships later, so this is not proof the information is mathematically absent. However, compressing players before expressing local relations plausibly makes control identification harder. This is an implementation-based inference, not an ablation result.
+
+The effective receptive field is 17 frames, roughly .68s at25Hz; the 250-frame input window is not a 10-second model receptive field. Extending dilation/context could help handovers, but must be a separate change with halo/half contracts, and will not reveal a ball absent for arbitrarily long periods.
+
+## One-change proposal, conditional on the audit
+
+Append player–ball relative XY and relative velocity, plus separate position-pair and velocity-pair validity flags, to the shared object encoder. Require both objects observed for relative XY; velocity additionally requires consecutive support inside the same half. Set unsupported values to zero only behind explicit validity masks. Never turn missing ball into a fabricated confident relation; original player channels remain available during gaps. Ball/padding slots should not create false self-control features. Shared weights and masked team pooling preserve player-order invariance. Recompute or derive relations from each condition independently, including raw training gaps; no target labels or identity shortcuts.
+
+Hold all other neural, augmentation, blend, CatBoost, decoder and fold/seed/budget settings to the current best eligible parent. Increasing first-layer channels inevitably changes its parameter count; disclose this, rather than claiming an equal-parameter isolation. Do not bundle attention weights or a boundary head into this representation trial. Register source/input hashes/protocol before execution; user runs any hours-long fit. Keep the original quality gate and stopped-track history. Clean-environment/integration validation remains outstanding and cannot be replaced by further development gains.
+
+## Confidence, contradictions and next evidence
+
+High confidence in metric incompatibility, permutation-invariance requirements, receptive-field calculation and verified licence texts. Moderate confidence that explicit relational representation is a relevant mechanism. Low confidence in direction or magnitude of held-out improvement: prior whole-pitch features, temporal-control bundle and short-budget models failed, while later training/augmentation/blending improved different objectives. Five reused development matches introduce selection optimism. No reviewed primary study resolves this project's full-match missing-ball regime or competitive ceiling. Current-parent boundary/error slices are therefore more decision-relevant than another generic model list.

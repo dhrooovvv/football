@@ -204,3 +204,7 @@ November10approvedTCNtraining-ball-gaptrialpreparednotrun: experiments/tcn-gap-2
 
 ## November10 gapaugmentedblend qualityPASS
 Mean .592502clean/.428386corrupted vs .602554/.397037parent. CleanALL5decline/corruptedALL5improve;3/5pairedwins, medianprimary+.020149, medianmacro+.017984.41tests/10exactrepeatfit-reload-batchCSVcasespass; independentgateverified. Newleadingdevelopmentcandidateonly; production/releaseverificationpending, sealeduntouched/targetunknown. Evidence experiments/tcn-gap-2026-11-10/report.md.
+
+
+## November 10 — boundary audit and interaction hypothesis
+Cached 40-case audit: leading gap blend short-spell recall .138 clean/.100 corrupted at IoU .5; observed team-control errors remain substantial. These are descriptive reused-development diagnostics, not causal headroom. Audit: experiments/tcn-boundary-audit-2026-11-10/report.md. Online/agent refresh supports one explicit player–ball relative-XY + validity-mask intervention (+72 weights); attention, relative velocity, larger context and loss changes excluded. 45 short contracts pass. New long experiment registered under experiments/tcn-interaction-2026-11-10/; no dataset training started, user command docs/run-tcn-interaction.md. Current gate/augmented-blend parent/production/sealed restrictions unchanged; release verification remains pending.

@@ -347,3 +347,20 @@ gap_augmentation_result_audit:
   repeatability_cases_passed: 10
   production_changed: false
   clean_environment_verified: false
+
+tcn_boundary_audit:
+  status: completed_40_cached_cases
+  protocol_commit: a12f193
+  report: experiments/tcn-boundary-audit-2026-11-10/report.md
+  new_model_inference: false
+tcn_interaction_trial:
+  status: preregistered_not_training_executed
+  protocol: experiments/tcn-interaction-2026-11-10/protocol.md
+  command_document: docs/run-tcn-interaction.md
+  parent: gap_augmented_catboost_tcn_50_50
+  change: masked_relative_xy_and_pair_valid
+  additional_parameters: 72
+  training_steps: 20000
+  tests_passed: 45
+  user_executes_long_run: true
+  production_changed: false
