@@ -212,3 +212,6 @@ Cached 40-case audit: leading gap blend short-spell recall .138 clean/.100 corru
 
 
 November10: 74-page consolidated market/model/research dossier and editable Markdown saved in output/pdf/. Includes24historicalresearchnotes, scoretradeoffs/platformlimitations and pendinginteractionstatus; no new experiment. Visual/textQAcomplete.
+
+
+November10interactiontrial finished/rejected: .579542clean/.413382corrupted;2/5pairedwins, primarymedian−.009586.45tests/10repeatabilitycasespass; independentgateverified. Previousgapblendretained, no productionchange. See experiments/tcn-interaction-2026-11-10/report.md.

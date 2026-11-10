@@ -354,7 +354,7 @@ tcn_boundary_audit:
   report: experiments/tcn-boundary-audit-2026-11-10/report.md
   new_model_inference: false
 tcn_interaction_trial:
-  status: preregistered_not_training_executed
+  status: completed_rejected_bounded_trial_closed
   protocol: experiments/tcn-interaction-2026-11-10/protocol.md
   command_document: docs/run-tcn-interaction.md
   parent: gap_augmented_catboost_tcn_50_50
@@ -376,3 +376,11 @@ research_dossier:
   model_experiment_executed: false
   externally_published: false
   pdf_sha256: 9cc97b309fc0816897bb59266efe3ee1cc9276800f528c4fdfaf8a60840b5fca
+
+interaction_result_audit:
+  mean_clean_spellF1: 0.5795423925849669
+  mean_corrupted_spellF1: 0.41338185001770456
+  primary_median_delta: -0.009586107315560477
+  matches_improved: 2
+  independently_recomputed: true
+  production_changed: false
