@@ -79,7 +79,7 @@ workspace:
   findings: findings.md
   technical_document: docs/technical-report.md
   next_step_plan: docs/metric-improvement-plan-2026-11-11.md
-next_action: Prepare feasibility and exact protocol for planned masked-pretraining route plus matched-budget control; all execution user-owned.
+next_action: User runs scripts/run_tcn_pretrain.py --run; audit both fixed arms and retain only full-gate improvements.
 
 open_model_audit:
   date: '2026-11-08'
@@ -896,3 +896,36 @@ consolidated_improvement_plan:
   stopped_tracks_reopened: false
   current_run_artifacts_unchanged: 17
   new_training_or_tests_executed: false
+
+masked_pretraining_trial:
+  date: '2026-11-11'
+  status: prepared_registered_awaiting_user_execution
+  protocol: experiments/tcn-pretrain-2026-11-11/protocol.md
+  commands: docs/run-tcn-pretrain.md
+  runner: scripts/run_tcn_pretrain.py
+  review: docs/tcn-pretrain-design-review-2026-11-11.md
+  amendment: one_geometry_learning_route_plus_staged_training_budget_control
+  control: 20000_supervised_then_reset_then_20000_supervised
+  candidate: 20000_masked_geometry_then_reset_then_20000_supervised
+  both_reset_Adam_and_supervised_sampler: true
+  initial_parent: gap_trained_short_context_tcn_rotation_50_50_penalty16
+  pretraining_folds: PFF48_plus_IDSSE4_excluding_held_out_even_unlabelled
+  geometry_labels_loaded: false
+  pretext_targets: clean_observed_ball_XY_hidden_in_cached_training_gap_view
+  pretext_head_parameters: 66
+  retained_class_parameters: 9635
+  receptive_field: 17
+  corruption_features_from_raw_masking: true
+  total_updates_per_pipeline: 40000
+  maximum_fit_pipelines: 20
+  matched_updates: true
+  exact_compute_match_claimed: false
+  supplied_contracts: 54
+  tests_executed: false
+  all_execution_by_user: true
+  verified_compact_manifests: 53
+  verified_compact_members: 371
+  automatic_followup: false
+  protected_data_used: false
+  production_changed: false
+  target_accuracy: unknown
