@@ -79,7 +79,7 @@ workspace:
   findings: findings.md
   technical_document: docs/technical-report.md
   next_step_plan: docs/next-steps-2026-11-07.md
-next_action: User runs scripts/run_tcn_boundary.py --run; audit saved results against rotation winner before any further change.
+next_action: Retain rotation winner; assess feasibility and budget for one final masked-pretraining comparison before qualification.
 
 open_model_audit:
   date: '2026-11-08'
@@ -790,7 +790,7 @@ higher_upside_research_refresh:
 
 boundary_objective_trial:
   date: '2026-11-11'
-  status: prepared_preregistered_awaiting_user_execution
+  status: completed_rejected
   amendment: one_fixed_training_objective_only
   stopped_tracks_reopened: false
   parent: gap_trained_short_context_tcn_rotation_50_50_penalty16
@@ -800,7 +800,7 @@ boundary_objective_trial:
   boundary_head: training_only_32_to_1
   training_updates: 20000
   folds: five_original_IDSSE_LOMO
-  tests_executed: false
+  tests_executed: true
   all_execution_by_user: true
   automatic_followup: false
   production_changed: false
@@ -816,7 +816,7 @@ boundary_objective_trial:
 
 plateau_reassessment:
   date: '2026-11-11'
-  status: research_complete_pending_boundary_result
+  status: research_complete_boundary_rejected
   measured_ceiling: false
   research_reports:
     - docs/metric-plateau-review-2026-11-11.md
@@ -827,6 +827,34 @@ plateau_reassessment:
   extra_compute_control_required: true
   recommendation: pending_boundary_plus_at_most_one_conditional_route_with_compute_control
   boundary_user_contracts_recorded_pass: 54
-  boundary_quality_result_available_at_inspection: false
+  boundary_quality_result_available_at_inspection: true
   stopped_tracks_reopened: false
   new_model_execution_by_assistant: false
+
+boundary_result_audit:
+  date: '2026-11-11'
+  status: rejected_fixed_objective_closed
+  report: experiments/tcn-boundary-2026-11-11/result-review.md
+  quality_eligible: false
+  clean_spellF1: 0.5830634000940568
+  corrupted_spellF1: 0.4643552530572997
+  clean_macroF1: 0.9134433012401353
+  corrupted_macroF1: 0.832788402048072
+  primary_median_delta: -0.01776192974893054
+  paired_median_spell_delta: -0.012318298343367728
+  paired_median_macro_delta: -0.0046931768916936845
+  matches_improved: 1
+  recorded_tests_passed: 54
+  recorded_repeatability_cases: 10
+  registered_hashes_verified: 185
+  compact_member_hashes_verified: 35
+  checkpoint_hashes_verified: 10
+  candidate_csv_hashes_verified: 30
+  parent_csv_hashes_verified: 10
+  fold_stage_seconds: 4969.53336349997
+  retained_candidate: gap_trained_short_context_tcn_rotation_50_50_penalty16
+  objective_consecutive_failures: 1
+  automatic_objective_rescue: false
+  new_tests_or_model_execution_by_assistant: false
+  production_changed: false
+  target_accuracy: unknown

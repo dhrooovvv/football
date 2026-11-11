@@ -1,0 +1,115 @@
+{
+  "date": "2026-11-11",
+  "status": "completed_rejected",
+  "means": {
+    "clean": {
+      "parent": {
+        "spellF1": 0.6021546224883432,
+        "macroF1": 0.9193697771323411
+      },
+      "candidate": {
+        "spellF1": 0.5830634000940568,
+        "macroF1": 0.9134433012401353
+      }
+    },
+    "targetlike": {
+      "parent": {
+        "spellF1": 0.4776818840872061,
+        "macroF1": 0.8386106928884299
+      },
+      "candidate": {
+        "spellF1": 0.4643552530572997,
+        "macroF1": 0.832788402048072
+      }
+    }
+  },
+  "primary_median_delta": -0.01776192974893054,
+  "paired_median_spell_delta": -0.012318298343367728,
+  "paired_median_macro_delta": -0.0046931768916936845,
+  "paired_matches_improved": 1,
+  "primary_deltas": {
+    "J03WMX": 0.004930664397772733,
+    "J03WN1": -0.02734268441585508,
+    "J03WOH": -0.03155231632738548,
+    "J03WOY": 0.00509311094486653,
+    "J03WPY": -0.01776192974893054
+  },
+  "paired_spell_deltas": {
+    "J03WMX": 0.0027616460369793705,
+    "J03WN1": -0.030661481126807555,
+    "J03WOH": -0.03044642524103125,
+    "J03WOY": -0.012318298343367728,
+    "J03WPY": -0.010380074886254587
+  },
+  "paired_macro_deltas": {
+    "J03WMX": -0.0046931768916936845,
+    "J03WN1": -0.018162266367337532,
+    "J03WOH": -0.012962497302730025,
+    "J03WOY": 0.007505727168917842,
+    "J03WPY": -0.0010597034385659843
+  },
+  "quality_eligible": false,
+  "existing_gate": false,
+  "recorded_tests_passed": 54,
+  "recorded_repeatability_cases": 10,
+  "registered_hashes_verified": {
+    "code": 133,
+    "data": 47,
+    "prepared_manifests": 5
+  },
+  "compact_member_hashes_verified": 35,
+  "checkpoint_hashes_verified": 10,
+  "candidate_csv_hashes_verified": 30,
+  "parent_csv_hashes_verified": 10,
+  "fold_stage_seconds": 4969.53336349997,
+  "errors": {
+    "clean": {
+      "parent": {
+        "n_missed": 1119,
+        "n_spurious": 386,
+        "dead_live_wrong_frames": 2362,
+        "late_boundaries": 474,
+        "early_boundaries": 557,
+        "short_spells": 732,
+        "short_recalled": 125,
+        "short_recall": 0.17076502732240437
+      },
+      "candidate": {
+        "n_missed": 1138,
+        "n_spurious": 404,
+        "dead_live_wrong_frames": 1799,
+        "late_boundaries": 470,
+        "early_boundaries": 518,
+        "short_spells": 732,
+        "short_recalled": 122,
+        "short_recall": 0.16666666666666666
+      }
+    },
+    "targetlike": {
+      "parent": {
+        "n_missed": 1379,
+        "n_spurious": 616,
+        "dead_live_wrong_frames": 51589,
+        "late_boundaries": 421,
+        "early_boundaries": 449,
+        "short_spells": 732,
+        "short_recalled": 92,
+        "short_recall": 0.12568306010928962
+      },
+      "candidate": {
+        "n_missed": 1399,
+        "n_spurious": 638,
+        "dead_live_wrong_frames": 50072,
+        "late_boundaries": 460,
+        "early_boundaries": 398,
+        "short_spells": 732,
+        "short_recalled": 81,
+        "short_recall": 0.11065573770491803
+      }
+    }
+  },
+  "new_tests_or_model_execution_by_assistant": false,
+  "production_changed": false,
+  "target_accuracy": "unknown",
+  "retained_candidate": "gap_trained_short_context_tcn_rotation_50_50_penalty16"
+}
