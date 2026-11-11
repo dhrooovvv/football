@@ -1,0 +1,70 @@
+{
+  "means": {
+    "parent": {
+      "clean": {
+        "spellF1": 0.5925021056601485,
+        "macroF1": 0.9195883165114103
+      },
+      "targetlike": {
+        "spellF1": 0.4283855855925492,
+        "macroF1": 0.7686851822344695
+      }
+    },
+    "candidate": {
+      "clean": {
+        "spellF1": 0.5120049574326828,
+        "macroF1": 0.8971921302077364
+      },
+      "targetlike": {
+        "spellF1": 0.3708753548147914,
+        "macroF1": 0.7407603901901
+      }
+    },
+    "standalone_tcn": {
+      "clean": {
+        "spellF1": 0.48662842828415986,
+        "macroF1": 0.8837941511276945
+      },
+      "targetlike": {
+        "spellF1": 0.3971024364660962,
+        "macroF1": 0.8111179636781243
+      }
+    }
+  },
+  "primary_median": -0.06547526547526561,
+  "paired_spell_median": -0.06549326768315822,
+  "paired_macro_median": -0.023642649241717162,
+  "paired_wins": 0,
+  "coverage": {
+    "J03WMX": {
+      "idsse": 79546,
+      "pff": 80454
+    },
+    "J03WN1": {
+      "idsse": 79546,
+      "pff": 80454
+    },
+    "J03WOH": {
+      "idsse": 79546,
+      "pff": 80454
+    },
+    "J03WOY": {
+      "idsse": 79546,
+      "pff": 80454
+    },
+    "J03WPY": {
+      "idsse": 79546,
+      "pff": 80454
+    }
+  },
+  "recorded_tests": 53,
+  "recorded_repeatability_cases": 10,
+  "csv_hashes_verified": 30,
+  "code_hashes_verified": 42,
+  "prepared_manifest_hashes_verified": 53,
+  "fold_stage_seconds": 5466.209001125942,
+  "independently_recomputed": true,
+  "data_expansion_failure_count": 3,
+  "data_expansion_track_stopped": true,
+  "new_tests_training_inference": false
+}

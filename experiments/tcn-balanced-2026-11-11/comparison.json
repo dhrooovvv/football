@@ -1,0 +1,107 @@
+{
+  "descriptive_only_vs_uniform": [
+    {
+      "match": "J03WMX",
+      "condition": "clean",
+      "spell_delta_vs_uniform": -4.2192654907791116e-05,
+      "macro_delta_vs_uniform": 0.0013395846662075384
+    },
+    {
+      "match": "J03WMX",
+      "condition": "targetlike",
+      "spell_delta_vs_uniform": -0.006197841009427718,
+      "macro_delta_vs_uniform": -0.003936040230123394
+    },
+    {
+      "match": "J03WN1",
+      "condition": "clean",
+      "spell_delta_vs_uniform": -0.047328943198225115,
+      "macro_delta_vs_uniform": -0.030134235970999956
+    },
+    {
+      "match": "J03WN1",
+      "condition": "targetlike",
+      "spell_delta_vs_uniform": -0.0621634355977414,
+      "macro_delta_vs_uniform": -0.04222705195912235
+    },
+    {
+      "match": "J03WOH",
+      "condition": "clean",
+      "spell_delta_vs_uniform": 0.005322620438601877,
+      "macro_delta_vs_uniform": 0.008065168994997096
+    },
+    {
+      "match": "J03WOH",
+      "condition": "targetlike",
+      "spell_delta_vs_uniform": 0.018756781547479173,
+      "macro_delta_vs_uniform": 0.03575123097306143
+    },
+    {
+      "match": "J03WOY",
+      "condition": "clean",
+      "spell_delta_vs_uniform": -0.004280121792083591,
+      "macro_delta_vs_uniform": 0.008826152393230036
+    },
+    {
+      "match": "J03WOY",
+      "condition": "targetlike",
+      "spell_delta_vs_uniform": 0.014736145388789978,
+      "macro_delta_vs_uniform": 0.034401637663332596
+    },
+    {
+      "match": "J03WPY",
+      "condition": "clean",
+      "spell_delta_vs_uniform": 0.0035427423981639894,
+      "macro_delta_vs_uniform": 0.008496465837486533
+    },
+    {
+      "match": "J03WPY",
+      "condition": "targetlike",
+      "spell_delta_vs_uniform": 0.004451510333863262,
+      "macro_delta_vs_uniform": 0.010219363288130334
+    }
+  ],
+  "coverage": {
+    "J03WMX": {
+      "sampled_windows": {
+        "idsse": 79546,
+        "pff": 80454
+      },
+      "pff_fraction": 0.5028375
+    },
+    "J03WN1": {
+      "sampled_windows": {
+        "idsse": 79546,
+        "pff": 80454
+      },
+      "pff_fraction": 0.5028375
+    },
+    "J03WOH": {
+      "sampled_windows": {
+        "idsse": 79546,
+        "pff": 80454
+      },
+      "pff_fraction": 0.5028375
+    },
+    "J03WOY": {
+      "sampled_windows": {
+        "idsse": 79546,
+        "pff": 80454
+      },
+      "pff_fraction": 0.5028375
+    },
+    "J03WPY": {
+      "sampled_windows": {
+        "idsse": 79546,
+        "pff": 80454
+      },
+      "pff_fraction": 0.5028375
+    }
+  },
+  "quality_eligible": false,
+  "promotion_reference": "retained_gap_augmented_50_50_blend_penalty16",
+  "consecutive_data_expansion_failures": 3,
+  "data_expansion_track_stopped": true,
+  "automatic_ratio_search": false,
+  "production_changed": false
+}

@@ -234,3 +234,6 @@ User authorized improvement research/preparation with all execution left to them
 
 
 November11 datasetrefresh: documentationonly/no downloads. SkillCornerstrongestconditionallead, continuousdead/unknowncoverageunverified; SoccerTrackv2/SoccerNet/Alfheim auxiliaryratherthandirectH/A/Dsources. No newlyadmittedmatches, no model/splitchange. Sources literature/additional-datasets-2026-11-11.md; priorNovember7auditremainsrelevant.
+
+
+November11balanced-providerresult: complete/rejected. Meanblendspell .512005clean/.370875corrupted vs retained .592502/.428386;0/5pairedwins, primarymedian−.065475, medianmacro−.023643. Actualproviderdraws79,546IDSSE/80,454PFFperfold confirmbalancing; it didnotrescueexpansion. Independentlyverifiedgate/53recordedtests/10repeatabilitycases/30CSVhashes/42codehashes/53preparedmanifests. No newtests/training/inference; no target/sealedaccess. Third data-expansionfailure stops track, no ratio/adaptationrescue. Keep retainedcandidate/production; separatecontextproposalnotyetregistered. Fullreport experiments/tcn-balanced-2026-11-11/result-review.md. Targetaccuracyunknown.

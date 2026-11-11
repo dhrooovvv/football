@@ -31,11 +31,12 @@ promotion:
   stop_track_after_consecutive_failures: 3
 tracks:
   more_data:
-    status: fixed_balanced_provider_followup_registered_user_run_pending
-    consecutive_failures: 2
+    status: stopped_three_consecutive_expansion_failures
+    consecutive_failures: 3
     report: experiments/tcn-expanded-2026-11-10/result-review.md
     failures_preserved: [catboost_unweighted_expansion, tcn_unweighted_expansion]
-    stop_on_next_failure: true
+    stop_on_next_failure: false
+    stopped: true
   decoder:
     status: stopped_three_consecutive_failures
     consecutive_failures: 3
@@ -78,7 +79,7 @@ workspace:
   findings: findings.md
   technical_document: docs/technical-report.md
   next_step_plan: docs/next-steps-2026-11-07.md
-next_action: User runs balanced-provider checks then five-fold trial; review results before any further experiment or final fit.
+next_action: Data-expansion track stopped after third rejection; retain prior candidate. Separate context proposal needs its own registration before user execution.
 
 open_model_audit:
   date: '2026-11-08'
@@ -474,7 +475,7 @@ improvement_strategy_2026_11_11:
   production_changed: false
 
 balanced_provider_tcn:
-  status: registered_code_prepared_not_executed_or_tested
+  status: completed_rejected_data_expansion_track_stopped
   protocol: experiments/tcn-balanced-2026-11-11/protocol.md
   inputs: experiments/tcn-balanced-2026-11-11/inputs.json
   runner: scripts/run_tcn_balanced.py
@@ -493,7 +494,8 @@ balanced_provider_tcn:
   failure_stops_data_expansion_track: true
   automatic_ratio_search: false
   new_regression_tests_provided: 8
-  tests_executed: false
+  tests_executed: true
+  tests_executed_by: user
   prepared_case_manifest_hashes_pinned: 53
   final_fit_automatic: false
   final_fit_requires_recomputed_complete_passing_gate: true
@@ -508,3 +510,25 @@ additional_dataset_refresh:
   downloaded_data: false
   new_matches_admitted: 0
   experiment_or_split_changed: false
+
+balanced_provider_result_audit:
+  date: "2026-11-11"
+  report: experiments/tcn-balanced-2026-11-11/result-review.md
+  independently_recomputed: true
+  mean_clean_spellF1: 0.5120049574326828
+  mean_corrupted_spellF1: 0.3708753548147914
+  standalone_clean_spellF1: 0.48662842828415986
+  standalone_corrupted_spellF1: 0.3971024364660962
+  paired_matches_improved: 0
+  primary_median_delta: -0.06547526547526561
+  paired_macro_median_delta: -0.023642649241717162
+  recorded_tests_passed: 53
+  recorded_repeatability_cases: 10
+  csv_hashes_verified: 30
+  code_hashes_verified: 42
+  prepared_manifest_hashes_verified: 53
+  pff_sample_fraction: 0.5028375
+  consecutive_expansion_failures: 3
+  expansion_track_stopped: true
+  production_changed: false
+  new_training_or_inference_by_assistant: false
