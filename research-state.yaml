@@ -79,7 +79,7 @@ workspace:
   findings: findings.md
   technical_document: docs/technical-report.md
   next_step_plan: docs/next-steps-2026-11-07.md
-next_action: Data-expansion track stopped after third rejection; retain prior candidate. Separate context proposal needs its own registration before user execution.
+next_action: User runs fixed longer-context checks then five-fold trial; data-expansion track remains stopped.
 
 open_model_audit:
   date: '2026-11-08'
@@ -532,3 +532,41 @@ balanced_provider_result_audit:
   expansion_track_stopped: true
   production_changed: false
   new_training_or_inference_by_assistant: false
+
+longer_context_tcn:
+  date: "2026-11-11"
+  status: registered_source_prepared_not_executed_or_tested
+  user_authorized: true
+  user_executes_all_checks_and_training: true
+  protocol: experiments/tcn-context-2026-11-11/protocol.md
+  runner: scripts/run_tcn_context.py
+  commands: docs/run-tcn-context.md
+  design_review: docs/tcn-context-design-review-2026-11-11.md
+  static_review: docs/tcn-context-static-review-2026-11-11.md
+  training_source: original_IDSSE_only
+  training_matches_per_fold: 4
+  evaluation_matches: 5
+  parent: retained_gap_trained_catboost_tcn_50_50_penalty16
+  temporal_dilations: [1, 4, 12, 36, 108]
+  encoded_receptive_field: 325
+  encoded_radius: 162
+  input_halo: 163
+  input_frames: 526
+  loss_frames: 200
+  preserved_parent_anchor_frames: 250
+  preserved_parent_anchor_halo: 25
+  exact_parent_training_core_support_preserved: true
+  half_clipping: real_half_only_replicated_edges
+  candidate_parameters: 15843
+  parent_parameters: 9635
+  training_updates: 20000
+  data_expansion_track_reopened: false
+  warm_start: false
+  new_regression_contracts_provided: 10
+  tests_executed: false
+  model_execution_by_assistant: false
+  final_fit_or_export_automatic: false
+  context_track_prior_failures: 0
+  previous_other_track_failures_preserved: true
+  quality_gain: unknown
+  production_changed: false

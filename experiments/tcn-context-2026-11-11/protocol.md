@@ -1,0 +1,37 @@
+# Dense longer-context TCN — fixed confirmatory trial
+
+November11,2026. User explicitly approves the next context experiment after data expansion failed. ALL execution—including small tests—is user-run. Commit this protocol/source/input fingerprints before any run. No PFF data or stopped-track rescue. Independent design and implementation reviews accompany this registration.
+
+## Parent, intervention and hypothesis
+
+Parent is the retained IDSSE-only, gap-trainedTCN/frozenCatBoost50/50/penalty16 blend: mean officialspellF1 .592502clean/.428386target-like corrupted on the five development matches. Candidate changes the temporal architecture and input context required by it ONLY. It is trained from scratch. Source policy, features, original anchor draws/loss labels, raw-ball corruption views, update budget, seeds, optimizer, blend, decoder, scorer and gate stay fixed. No checkpoint from all53 or another fold, PFF, new labels/datasets, class weighting, calibration, smoothing, boundary loss, attention, augmentation or decoder changes.
+
+Hypothesis: longer observed player/ball context around missing-ball intervals can improve spell continuity/control under the frozen corruption. It may instead worsen brief possessions or fail to optimize; masks/gap age are not replaced with invented ball locations. No gain or winning score is forecast. Context cannot establish unobserved events without sufficient evidence.
+
+## Exact fixed architecture and support
+
+Unchanged521input representation:64slots×8 plus9core. Original sharedobjectConv1d(5,8,k3,padding1), ReLU, maskedhome/away/ballmean pooling and9core concatenation (33channels). Temporal stack: k3convolutions at dilations **1,4,12,36,108**, first33->32 thenfour32->32; ReLU aftereach. Final32->3k1 head. No normalization/dropout/residual/multi-stage refinement. Five temporal layers replace three; **15,843 parameters versus9,635 parent (+6,208)**. This estimates the complete longer-context/depth/capacity intervention; it does not isolate receptive field from extra depth/parameters.
+
+Objectradius1 plus temporal radii1+4+12+36+108 yields **radius162**, dense support[-162,162],325encoded samples. Adjacent intervals touch/overlap at each dilation, so no structural support holes. At25Hz this spans12.96seconds between endpoints (13seconds by sample-duration count), ±6.48s. Precomputed velocity additionally uses one preceding raw frame. Gap age still summarizes longer past history. No claim of unlimited context.
+
+UseHALO163,CORE200,inputWINDOW526. Inference core positions tile each REALhalf exactlyonce; replicate input rows outside each half when constructing context. No label-dependent reset or context crossing halves. A whole-half reference must first apply the same replicated-edge extension beforeforward; comparing to unpaddedzero-boundaryforward would be invalid. Require chunk/reference consistency within a fixed1e-6 probability tolerance on synthetic inputs, and exact decodedCSV bytes across inference repeats/reload/batch1versus4 on development data.
+
+## Matched training examples and fixed budget
+
+Reuse ONLY the five existing IDSSE compact cases under data/tcn-expanded; pinned manifests link them to originalclean/independenttraining-gap arrays, with exact reconstruction already checked by the earlier preparation. User rehashes the five manifests/arrays before training. Do not prepare/reconstruct new raw data or inspect any PFFcase, targetgame or sealedcase. Preserve the original fiveLOMO split: train onfour, evaluate the other fullmatch.
+
+Critically, sample ORIGINAL valid250-framewindow anchors in the same order and using the same windowRNG draws as the retained parent. Within each originalknown-label250window startinga, keep central labels[a+25,a+225) exactly. Fetch candidate context around that same200framecore: indices[a+25−163,a+225+163), clipped to its containingREALhalf. Unknown labels may occur in surrounding context; they are never loss targets, never used to truncate context or alter sampling. Do not require526known-labelframes: that would change training support and censor brief/edge segments. All original250anchorlabels remain known by originalpolicy; the implementation also validates the200losslabels.
+
+Scratchseed20261106, originalwindowRNG seed20261106, independentviewRNG seed20261106+424242; traininggapview probability.5. Exactly20,000updates×batch8×200retainedlossframes =32millionloss-framepresentations per fit, including repeats. Adam.001,clip1, float32inputs, originalfeatureconstants, CPU1/interOp1, deterministic algorithms, MKLDNNoff. No early stopping, validation checkpoint choice, LR/depth/context search, addedupdates or warmstart. Longer input/architecture changes compute, not supervised positions per update.
+
+## Execution, outputs and decision
+
+Userfirst runs production/originalTCN/gap/compact/newcontext contracts. Supplied tests cover dense field/parametercount, parentanchor/core alignment, realhalfclipping, unknowncontext exclusion fromloss, replicatedwhole-half/chunk equality, half isolation, reload/batch and interrupted/repeated synthetic fitting, and savedresultintegrity. Tests are provided, **not executed during preparation**; synthetic performance never supports quality claims.
+
+Two independent complete20kfits per fold must match weights, losses and coverage exactly. Checkpoints every1000updates atomically store optimizer, RNGs, losses, counts, architecture/crop/parentanchoridentity and registration. Reload probabilities exact; initial/reload/batch4prediction CSV hashes identical. Existing CSV outputs and completed folds require correct registration, membership/conditions and hashes on resume; allfivefolds and gate arithmetic are verified after completion. Locks prevent concurrent input preparation/writes. Preserve errors/artifacts; no bypass or automatic retry with different settings.
+
+Report per-match clean/target-like corrupted officialspellF1 andmacroF1; originalerror taxonomy, short-spell recall and missing-ball dead/livequality; record sourcewindowcount, coverage and timing. StandaloneTCN is descriptiveonly. Selection is the fixedblend versus retainedparent, under existing gate: positive median pairedmean(clean,corrupted) spell delta; majority(>=3/5)pairedwins; medianpairedmacro delta>=−.01; median target-like corruptedspell gain>=+.01; required tests/repeatability pass. No score-based exclusions or change to scorer. Five reusedmatches imply selection optimism; no independent quality confirmation until originalsealedstep.
+
+--run ends afterfivefoldcomparison; no automaticall5finalfit, targetexport or production switch. A numericalpass is provisional pending clean/freshclone inference/training reproduction as applicable, targetslotcontinuity, officialCSVvalidation and byte proofs. Targetaccuracyunknown. Failure closes this fixedcontexttrial; no automaticnewfield/depth/budgetvariant. Start context-trackcounter0 for this distinct intervention, preserving all prior sequence/feature failures and the stopped data-expansioncounter3. Stop any track atthreeconsecutivefailures; no relabelling of sourceadaptation as context.
+
+New research starts blocked at beginningNovember16. ReserveNovember14–15 for releasechecks; no action afterNovember17. No externalpublication/submission. Runtime estimate is unmeasured and may exceed the originalrun substantially; all usercommands and outputs documented in docs/run-tcn-context.md.

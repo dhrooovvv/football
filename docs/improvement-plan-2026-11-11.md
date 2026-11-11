@@ -43,3 +43,6 @@ Freeze configuration before opening sealed data. Apply previously written interp
 - literature/tcn-transfer-context-refresh-2026-11-11.md — primary-source research with contrary evidence and task limitations.
 - experiments/tcn-expanded-2026-11-10/result-review.md — completed measured expansion failure.
 - ball.md — append-only decisions and historical protocols/gates.
+
+
+November11status: fixedbalancedtrial rejected; dataexpansiontrack STOP atthreefailures. User approvedStep2. Exactlongercontextregistration andusercommands are now experiments/tcn-context-2026-11-11/protocol.md and docs/run-tcn-context.md. No tests/training executed duringpreparation; parent remainsoriginalIDSSEgapblend. Release/freeze reserves unchanged.
