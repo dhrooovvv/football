@@ -1,0 +1,9 @@
+{
+  "date": "2026-11-12",
+  "scope": "All commits reachable from all local refs at the recorded HEAD; every unique blob read locally. No blob contents emitted.",
+  "head": "1f77c7ac0dff09ba37e6b495dc4a20fd3357cc07",
+  "commits_scanned": 154,
+  "unique_blobs_scanned": 1084,
+  "findings": [],
+  "limitations": "Asset signatures/path heuristics flag potential assets, not confirmed confidentiality. Narrative aggregates are allowed. Does not certify arbitrary encodings, embedded PDF/image data, external remotes, reflog-only/dangling objects or untracked files. No history rewrite or external push performed."
+}

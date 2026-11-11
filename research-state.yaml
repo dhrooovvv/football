@@ -296,13 +296,13 @@ tcn_long_run:
   production_changed: false
 
 best_development_candidate:
-  selected: gap_trained_short_context_tcn_rotation_50_50_penalty16
+  selected: staged40k_supervised_TCN_rotation_penalty16
   status: quality_eligible_not_production_promoted
-  mean_clean_spellF1: 0.6021546224883432
-  mean_corrupted_spellF1: 0.4776818840872061
-  primary_median_delta: 0.014850014850014803
-  matches_improved: 3
-  tests_passed: 46
+  mean_clean_spellF1: 0.6328708454621595
+  mean_corrupted_spellF1: 0.49754997776865695
+  primary_median_delta: 0.026049299698361117
+  matches_improved: 5
+  tests_passed: 54
   repeatability_cases_passed: 10
   clean_environment_verified: false
   target_integration_verified: false
@@ -984,3 +984,17 @@ development_goals:
   basis: engineering_goals_not_forecast_or_winning_threshold
   promotion_gate_changed: false
   additional_unregistered_search_authorized: false
+
+winner_delivery_preparation:
+  date: '2026-11-12'
+  specification: docs/winner-delivery-qualification-2026-11-12.md
+  status: specification_prepared_runtime_pending
+  existing_exporter_compatible: false
+  final_fit_five_match_entrypoint_exists: false
+  neural_target_csv_generated: false
+  history_asset_scan: docs/history-assets-2026-11-12.json
+  history_commits_scanned: 154
+  history_unique_blobs_scanned: 1084
+  history_signature_findings: 0
+  history_scope: reachable_local_refs_at_recorded_HEAD_only
+  external_push_performed: false
