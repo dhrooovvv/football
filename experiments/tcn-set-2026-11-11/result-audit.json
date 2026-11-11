@@ -1,0 +1,42 @@
+{
+  "independently_recomputed": true,
+  "quality_eligible": false,
+  "means": {
+    "parent": {
+      "clean": {
+        "spellF1": 0.5977070893397277,
+        "macroF1": 0.9170887370481092
+      },
+      "targetlike": {
+        "spellF1": 0.4631391701663609,
+        "macroF1": 0.825775930738968
+      }
+    },
+    "candidate": {
+      "clean": {
+        "spellF1": 0.5022562015537437,
+        "macroF1": 0.8917615859882659
+      },
+      "targetlike": {
+        "spellF1": 0.36128471654336564,
+        "macroF1": 0.7526939052337392
+      }
+    }
+  },
+  "primary_median_delta": -0.10895865361275181,
+  "paired_spell_median_delta": -0.10880012919765114,
+  "paired_macro_median_delta": -0.04451667166579765,
+  "matches_improved": 0,
+  "registered_hashes_verified": 158,
+  "compact_members_verified": 35,
+  "checkpoint_hashes_verified": 10,
+  "candidate_csv_hashes_verified": 30,
+  "parent_metrics_and_hashes_verified": 10,
+  "recorded_tests_passed": 49,
+  "recorded_repeatability_cases": 10,
+  "fold_stage_seconds": 1660.8266511259717,
+  "representation_consecutive_failures": 3,
+  "representation_line_stopped": true,
+  "production_changed": false,
+  "new_model_or_test_execution_by_assistant": false
+}

@@ -79,7 +79,7 @@ workspace:
   findings: findings.md
   technical_document: docs/technical-report.md
   next_step_plan: docs/next-steps-2026-11-07.md
-next_action: User runs approved frame-set TCN training comparison with integrated checks; review gate before final fit and release.
+next_action: Retain standalone gap TCN; representation line stopped; consider one separately registered inference-only symmetry comparison and prepare winner release qualification.
 
 open_model_audit:
   date: '2026-11-08'
@@ -662,7 +662,7 @@ slot_compatibility_audit:
 
 frame_set_tcn:
   date: '2026-11-11'
-  status: approved_prepared_not_executed
+  status: completed_rejected_representation_line_stopped
   protocol: experiments/tcn-set-2026-11-11/protocol.md
   runner: scripts/run_tcn_set.py
   commands: docs/run-tcn-set.md
@@ -690,10 +690,40 @@ frame_set_tcn:
   integrated_existing_contracts: 41
   new_synthetic_contracts: 8
   all_execution_by_user: true
-  tests_executed: false
+  tests_executed: true
+  tests_executed_by: user
+  recorded_contracts_passed: 49
   slot_diagnostic_prerequisite: false
   prior_representation_failures_conservatively_counted: 2
   failure_stops_representation_line: true
   automatic_final_fit_or_export: false
   production_changed: false
   target_accuracy: unknown
+
+frame_set_result_audit:
+  date: '2026-11-11'
+  report: experiments/tcn-set-2026-11-11/result-review.md
+  independently_recomputed: true
+  quality_eligible: false
+  clean_spellF1: 0.5022562015537437
+  corrupted_spellF1: 0.36128471654336564
+  clean_macroF1: 0.8917615859882659
+  corrupted_macroF1: 0.7526939052337392
+  primary_median_delta: -0.10895865361275181
+  paired_median_spell_delta: -0.10880012919765114
+  paired_median_macro_delta: -0.04451667166579765
+  paired_matches_improved: 0
+  recorded_tests_passed: 49
+  recorded_repeatability_cases: 10
+  registered_hashes_verified: 158
+  compact_member_hashes_verified: 35
+  checkpoint_hashes_verified: 10
+  candidate_csv_hashes_verified: 30
+  parent_references_verified: 10
+  fold_stage_seconds: 1660.8266511259717
+  representation_consecutive_failures: 3
+  representation_line_stopped: true
+  retained_candidate: gap_trained_standalone_short_context_tcn_penalty16
+  target_identity_risk_resolved: false
+  new_tests_or_model_execution_by_assistant: false
+  production_changed: false
