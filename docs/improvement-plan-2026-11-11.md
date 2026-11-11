@@ -49,3 +49,5 @@ November11status: fixedbalancedtrial rejected; dataexpansiontrack STOP atthreefa
 
 
 November11 audited update: fixed standalone gapTCN comparison passes full gate (.597707clean/.463139corrupted,4/5pairedwins, medianprimary+.040271). New retained candidate is standalone gap-trained short-contextTCN+penalty16. Balanced expansion and longer context remain rejected. Next prepare candidate-specific finalfit/release qualification and resolve target slot continuity; user executes all checks. No automatic further training or reopening stopped tracks.
+
+November11 next-step amendment: threeagent reviews expose a documented serving mismatch (targetslot identities swap; externalTCN uses same-slot motion/history). Before further symmetry/training selection, userruns ONE external-only fourarm temporal-slot diagnostic, registered experiments/tcn-slot-audit-2026-11-11/. Controls distinguish fixedordering and rederivedvelocity from dynamicchurn. This is not a candidate or accuracyforecast. Detaileddecision docs/next-step-decision-2026-11-11.md; alltests/userexecution remain reserved. Noautomatic repair, stoppedtracks unchanged, release/freeze reserves retained.

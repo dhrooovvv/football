@@ -79,7 +79,7 @@ workspace:
   findings: findings.md
   technical_document: docs/technical-report.md
   next_step_plan: docs/next-steps-2026-11-07.md
-next_action: Register final gap-trained standalone TCN fit and release qualification; resolve target slot continuity; user executes all checks.
+next_action: User runs registered external temporal-slot diagnostic; review controls and stress before next candidate or final fit/release.
 
 open_model_audit:
   date: '2026-11-08'
@@ -632,3 +632,30 @@ standalone_gap_result_audit:
   fold_stage_seconds: 65.58286483207485
   production_changed: false
   new_tests_or_model_execution_by_assistant: false
+
+slot_compatibility_audit:
+  date: '2026-11-11'
+  status: prepared_registered_not_executed
+  documented_target_identity_swaps: true
+  documented_source: official_DATA_99_101_and_OVERVIEW_90_93
+  target_metric_impact: unknown
+  plan: docs/next-step-decision-2026-11-11.md
+  protocol: experiments/tcn-slot-audit-2026-11-11/protocol.md
+  runner: scripts/audit_tcn_slots.py
+  commands: docs/run-tcn-slot-audit.md
+  arms: [parent, static, rederived_identity, dynamic]
+  match_condition_arm_cells: 40
+  seed_base: 20261111
+  dynamic_seed_offset: 100000
+  diagnostic_only: true
+  quality_selection_performed: false
+  new_synthetic_contracts_provided: 5
+  tests_executed: false
+  user_runs_all_checks_and_inference: true
+  no_real_match_retraining: true
+  target_raw_inputs_used: false
+  target_public_labels_used: false
+  protected_matches_used: false
+  production_changed: false
+  symmetry_trial: deferred_not_registered
+  budget_increase: not_registered
