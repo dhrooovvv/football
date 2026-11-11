@@ -865,3 +865,11 @@ mdpi_article_review:
   decision: conditional_video_detector_lead_only
   new_experiment: false
   production_changed: false
+
+epv_paper_review:
+  date: '2026-11-11'
+  report: literature/epv-paper-reading-2026-11-11.md
+  pages_read: 20
+  decision: downstream_valuation_and_conditional_spatial_reasoning_only
+  new_experiment: false
+  production_changed: false

@@ -1353,3 +1353,7 @@ Productionunchanged/targetaccuracyunknown/protectedmatchesuntouched. Nextprospec
 
 ### J100 — 2026-11-11 — User-linked MDPI article assessed
 Read article and author repository metadata. Research relevance/limits recorded in literature/mdpi-possession-relevance-2026-11-11.md. Conditional video-detector lead only; no comparable spellF1 evidence or justified pipeline replacement. No experiment/download/model execution/protected data access. Retained model and plan unchanged.
+
+
+### J101 — 2026-11-11 — Supplied2019 EPV paper read in full
+Read20-page Decomposing the Immeasurable Sport PDF locally viaPDFKit(pypdf unavailable); content treated as evidence, not instructions. Review and sourcehash literature/epv-paper-reading-2026-11-11.md. Paper values known possessions through pass/drive/shot outcome models; it is not H/A/D segmentation or comparable spellF1 evidence. Spatialpressure/pitchcontrol/relativeformationlines are conditional concepts, not proven additions; possession-conditioned attacker/defender features would leak our target unless computed symmetrically. No newexperiment/trackreopening/modelrun/download/privateassets/publication. Winner/planunchanged, targetaccuracyunknown.
