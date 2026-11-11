@@ -79,7 +79,7 @@ workspace:
   findings: findings.md
   technical_document: docs/technical-report.md
   next_step_plan: docs/next-steps-2026-11-07.md
-next_action: User runs fixed longer-context checks then five-fold trial; data-expansion track remains stopped.
+next_action: Retain original candidate after context rejection; standalone/blend comparison needs separate preregistration before user-run inference.
 
 open_model_audit:
   date: '2026-11-08'
@@ -535,7 +535,7 @@ balanced_provider_result_audit:
 
 longer_context_tcn:
   date: "2026-11-11"
-  status: registered_source_prepared_not_executed_or_tested
+  status: completed_rejected_fixed_trial_closed
   user_authorized: true
   user_executes_all_checks_and_training: true
   protocol: experiments/tcn-context-2026-11-11/protocol.md
@@ -563,10 +563,34 @@ longer_context_tcn:
   data_expansion_track_reopened: false
   warm_start: false
   new_regression_contracts_provided: 10
-  tests_executed: false
+  tests_executed: true
+  tests_executed_by: user
   model_execution_by_assistant: false
   final_fit_or_export_automatic: false
   context_track_prior_failures: 0
   previous_other_track_failures_preserved: true
-  quality_gain: unknown
+  quality_gain: rejected
+  context_track_consecutive_failures: 1
   production_changed: false
+
+longer_context_result_audit:
+  date: "2026-11-11"
+  report: experiments/tcn-context-2026-11-11/result-review.md
+  independently_recomputed: true
+  blend_clean_spellF1: 0.5799045630517617
+  blend_corrupted_spellF1: 0.42862289462822445
+  standalone_clean_spellF1: 0.5709951443629959
+  standalone_corrupted_spellF1: 0.43227530503347805
+  standalone_selection_eligible: false
+  primary_median_delta: -0.01425641025641039
+  paired_median_spell_delta: -0.006220028962669405
+  paired_median_macro_delta: -0.0004455566088279461
+  paired_matches_improved: 2
+  recorded_contract_tests_passed: 55
+  recorded_repeatability_cases: 10
+  csv_hashes_verified: 30
+  code_hashes_verified: 43
+  prepared_manifest_hashes_verified: 5
+  fold_stage_seconds: 10817.813175125979
+  production_changed: false
+  new_training_or_inference_by_assistant: false

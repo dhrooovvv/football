@@ -1,0 +1,9 @@
+{
+  "quality_eligible": false,
+  "parent": "retained_IDSSE_gap_blend_penalty16",
+  "architecture": "dense_context_325",
+  "data_expansion_track_remains_stopped": true,
+  "production_changed": false,
+  "clean_environment_verified": false,
+  "automatic_followup": false
+}
