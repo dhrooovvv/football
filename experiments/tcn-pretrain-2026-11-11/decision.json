@@ -1,0 +1,10 @@
+{
+  "retained_development_candidate": "control40k_reset",
+  "control_quality_eligible": true,
+  "pretrain_quality_eligible": false,
+  "pretrain_parent": "control40k_reset",
+  "production_changed": false,
+  "automatic_followup": false,
+  "clean_environment_verified": false,
+  "target_accuracy": "unknown"
+}

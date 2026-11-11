@@ -79,7 +79,7 @@ workspace:
   findings: findings.md
   technical_document: docs/technical-report.md
   next_step_plan: docs/metric-improvement-plan-2026-11-11.md
-next_action: User runs scripts/run_tcn_pretrain.py --run; audit both fixed arms and retain only full-gate improvements.
+next_action: Qualify audited staged40k supervised rotation TCN; prepare correct final-fit/export and serving checks; finite improvement comparison closed.
 
 open_model_audit:
   date: '2026-11-08'
@@ -899,7 +899,7 @@ consolidated_improvement_plan:
 
 masked_pretraining_trial:
   date: '2026-11-11'
-  status: prepared_registered_awaiting_user_execution
+  status: completed_control_promoted_pretraining_rejected
   protocol: experiments/tcn-pretrain-2026-11-11/protocol.md
   commands: docs/run-tcn-pretrain.md
   runner: scripts/run_tcn_pretrain.py
@@ -921,7 +921,7 @@ masked_pretraining_trial:
   matched_updates: true
   exact_compute_match_claimed: false
   supplied_contracts: 54
-  tests_executed: false
+  tests_executed: true
   all_execution_by_user: true
   verified_compact_manifests: 53
   verified_compact_members: 371
@@ -946,3 +946,41 @@ comparable_benchmark_search:
   running_protocol_changed: false
   new_experiment: false
   target_accuracy: unknown
+
+pretraining_route_result_audit:
+  date: '2026-11-12'
+  report: experiments/tcn-pretrain-2026-11-11/result-review.md
+  retained_candidate: staged40k_supervised_TCN_rotation_penalty16
+  clean_spellF1: 0.6328708454621595
+  corrupted_spellF1: 0.49754997776865695
+  clean_macroF1: 0.9258995454065417
+  corrupted_macroF1: 0.8481428233999456
+  control_primary_median_delta: 0.026049299698361117
+  control_paired_median_spell_delta: 0.025578340760806118
+  control_paired_median_macro_delta: 0.008763574194285306
+  control_matches_improved: 5
+  control_quality_eligible: true
+  pretrain_quality_eligible: false
+  pretrain_clean_spellF1: 0.5336318276676146
+  pretrain_corrupted_spellF1: 0.4432984386341326
+  pretrain_primary_median_delta: -0.06459672174359005
+  pretrain_matches_improved: 0
+  registered_hashes_verified: 249
+  compact_member_hashes_verified: 371
+  checkpoint_hashes_verified: 20
+  candidate_csv_hashes_verified: 60
+  parent_csv_hashes_verified: 20
+  recorded_contracts_passed: 54
+  recorded_repeatability_cases: 20
+  total_fold_stage_seconds: 20722.10842141707
+  finite_improvement_comparison_closed: true
+  production_changed: false
+  target_accuracy: unknown
+
+development_goals:
+  date: '2026-11-12'
+  next_targetlike_spellF1_milestone: 0.55
+  stretch_targetlike_spellF1: 0.60
+  basis: engineering_goals_not_forecast_or_winning_threshold
+  promotion_gate_changed: false
+  additional_unregistered_search_authorized: false

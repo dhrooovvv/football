@@ -1,0 +1,151 @@
+{
+  "date": "2026-11-12",
+  "arms": {
+    "control": {
+      "parent": "rotation20k",
+      "means": {
+        "clean": {
+          "spellF1": 0.6328708454621595,
+          "macroF1": 0.9258995454065417
+        },
+        "targetlike": {
+          "spellF1": 0.49754997776865695,
+          "macroF1": 0.8481428233999456
+        }
+      },
+      "quality_eligible": true,
+      "primary_median_delta": 0.026049299698361117,
+      "paired_median_spell_delta": 0.025578340760806118,
+      "paired_median_macro_delta": 0.008763574194285306,
+      "matches_improved": 5,
+      "primary_deltas": {
+        "J03WMX": 0.026258831739016553,
+        "J03WN1": 0.03184469410326568,
+        "J03WOH": 0.005265445004714486,
+        "J03WOY": 0.009922197861896409,
+        "J03WPY": 0.026049299698361117
+      },
+      "paired_spell_deltas": {
+        "J03WMX": 0.025578340760806118,
+        "J03WN1": 0.031630807024900176,
+        "J03WOH": 0.009893163762635715,
+        "J03WOY": 0.010276962710736859,
+        "J03WPY": 0.04908151737908928
+      },
+      "paired_macro_deltas": {
+        "J03WMX": 0.0053209420446492794,
+        "J03WN1": 0.013045373676700667,
+        "J03WOH": 0.008763574194285306,
+        "J03WOY": 0.0016579119241857398,
+        "J03WPY": 0.011366945124469785
+      },
+      "errors": {
+        "clean": {
+          "n_missed": 1044,
+          "n_spurious": 373,
+          "dead_live_wrong_frames": 1866,
+          "late_boundaries": 470,
+          "early_boundaries": 525,
+          "short_spells": 732,
+          "short_recalled": 150,
+          "short_recall": 0.20491803278688525
+        },
+        "targetlike": {
+          "n_missed": 1312,
+          "n_spurious": 645,
+          "dead_live_wrong_frames": 46568,
+          "late_boundaries": 447,
+          "early_boundaries": 432,
+          "short_spells": 732,
+          "short_recalled": 104,
+          "short_recall": 0.14207650273224043
+        }
+      }
+    },
+    "pretrain": {
+      "parent": "control40k_reset",
+      "means": {
+        "clean": {
+          "spellF1": 0.5336318276676146,
+          "macroF1": 0.9034829317063897
+        },
+        "targetlike": {
+          "spellF1": 0.4432984386341326,
+          "macroF1": 0.846279085624276
+        }
+      },
+      "quality_eligible": false,
+      "primary_median_delta": -0.06459672174359005,
+      "paired_median_spell_delta": -0.07915714481460889,
+      "paired_median_macro_delta": -0.007931129107907497,
+      "matches_improved": 0,
+      "primary_deltas": {
+        "J03WMX": -0.01794089041057384,
+        "J03WN1": -0.06459672174359005,
+        "J03WOH": -0.030242627846211345,
+        "J03WOY": -0.09363082077051926,
+        "J03WPY": -0.06484663490172721
+      },
+      "paired_spell_deltas": {
+        "J03WMX": -0.030428381750091105,
+        "J03WN1": -0.08083831448765005,
+        "J03WOH": -0.07041502742362094,
+        "J03WOY": -0.12288752384670237,
+        "J03WPY": -0.07915714481460889
+      },
+      "paired_macro_deltas": {
+        "J03WMX": -0.004984958299497189,
+        "J03WN1": -0.01986951609638532,
+        "J03WOH": -0.0064440458738562745,
+        "J03WOY": -0.021471229311907702,
+        "J03WPY": -0.007931129107907497
+      },
+      "errors": {
+        "clean": {
+          "n_missed": 1280,
+          "n_spurious": 434,
+          "dead_live_wrong_frames": 3091,
+          "late_boundaries": 401,
+          "early_boundaries": 494,
+          "short_spells": 732,
+          "short_recalled": 81,
+          "short_recall": 0.11065573770491803
+        },
+        "targetlike": {
+          "n_missed": 1433,
+          "n_spurious": 699,
+          "dead_live_wrong_frames": 38112,
+          "late_boundaries": 453,
+          "early_boundaries": 418,
+          "short_spells": 732,
+          "short_recalled": 63,
+          "short_recall": 0.0860655737704918
+        }
+      }
+    }
+  },
+  "registered_hashes_verified": {
+    "code": 145,
+    "data": 51,
+    "prepared_manifests": 53
+  },
+  "compact_member_hashes_verified": 371,
+  "checkpoint_hashes_verified": 20,
+  "candidate_csv_hashes_verified": 60,
+  "parent_csv_hashes_verified": 20,
+  "recorded_tests_passed": 54,
+  "recorded_repeatability_cases": 20,
+  "fold_stage_seconds": {
+    "control": 10039.032310416107,
+    "pretrain": 10683.076111000963
+  },
+  "total_fold_stage_seconds": 20722.10842141707,
+  "updates_matched": true,
+  "exact_compute_matched": false,
+  "retained_candidate": "staged40k_supervised_TCN_rotation_penalty16",
+  "source_membership_control": "IDSSE4_per_fold_only",
+  "no_new_model_or_test_execution_by_assistant": true,
+  "production_changed": false,
+  "target_accuracy": "unknown",
+  "quality_track_closed": true
+}
