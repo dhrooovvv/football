@@ -26,3 +26,5 @@ PFF expansion stopped afterthree failures, larger context/relativeXY fixed trial
 4. Reserve November14–15 for qualification. Freeze November16, then the existing single sealed evaluation and interpretation rule; no tuning from sealed/public scores or external submission.
 
 Command and exact interpretation: docs/run-tcn-slot-audit.md and experiments/tcn-slot-audit-2026-11-11/protocol.md. All running remains with the user. Target accuracy unknown.
+
+Approved user amendment after this review: user requested a substantive model experiment and approved identity-robust frame-setTCN training. Proceed directly with integrated correctness checks; the separate slotdiagnostic remains unexecuted/deferred. Current executable plan is experiments/tcn-set-2026-11-11/protocol.md and docs/run-tcn-set.md; this supersedes the diagnostic-first sequence above without changing history, evidence restrictions, promotion gate or freeze. No claim that the diagnostic ran or demonstrated target harm.

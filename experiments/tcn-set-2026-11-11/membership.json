@@ -1,0 +1,49 @@
+{
+  "development": [
+    "J03WMX",
+    "J03WN1",
+    "J03WOH",
+    "J03WOY",
+    "J03WPY"
+  ],
+  "folds": {
+    "J03WMX": [
+      "J03WN1",
+      "J03WOH",
+      "J03WOY",
+      "J03WPY"
+    ],
+    "J03WN1": [
+      "J03WMX",
+      "J03WOH",
+      "J03WOY",
+      "J03WPY"
+    ],
+    "J03WOH": [
+      "J03WMX",
+      "J03WN1",
+      "J03WOY",
+      "J03WPY"
+    ],
+    "J03WOY": [
+      "J03WMX",
+      "J03WN1",
+      "J03WOH",
+      "J03WPY"
+    ],
+    "J03WPY": [
+      "J03WMX",
+      "J03WN1",
+      "J03WOH",
+      "J03WOY"
+    ]
+  },
+  "provider": "idsse",
+  "training_directory_prefix": "data/tcn-expanded/idsse-",
+  "sealed_excluded": [
+    "J03WQQ",
+    "J03WR9"
+  ],
+  "pff_all_excluded": true,
+  "final_fit_enabled": false
+}

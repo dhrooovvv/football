@@ -79,7 +79,7 @@ workspace:
   findings: findings.md
   technical_document: docs/technical-report.md
   next_step_plan: docs/next-steps-2026-11-07.md
-next_action: User runs registered external temporal-slot diagnostic; review controls and stress before next candidate or final fit/release.
+next_action: User runs approved frame-set TCN training comparison with integrated checks; review gate before final fit and release.
 
 open_model_audit:
   date: '2026-11-08'
@@ -635,7 +635,7 @@ standalone_gap_result_audit:
 
 slot_compatibility_audit:
   date: '2026-11-11'
-  status: prepared_registered_not_executed
+  status: deferred_unexecuted_user_approved_direct_model_trial
   documented_target_identity_swaps: true
   documented_source: official_DATA_99_101_and_OVERVIEW_90_93
   target_metric_impact: unknown
@@ -659,3 +659,41 @@ slot_compatibility_audit:
   production_changed: false
   symmetry_trial: deferred_not_registered
   budget_increase: not_registered
+
+frame_set_tcn:
+  date: '2026-11-11'
+  status: approved_prepared_not_executed
+  protocol: experiments/tcn-set-2026-11-11/protocol.md
+  runner: scripts/run_tcn_set.py
+  commands: docs/run-tcn-set.md
+  review: docs/tcn-set-design-review-2026-11-11.md
+  parent: gap_trained_standalone_short_context_tcn_penalty16
+  intervention: pointwise_XY_visibility_set_encoder_before_temporal_TCN
+  stored_object_velocities_consumed: false
+  object_temporal_convolution: false
+  core_ball_speed_retained: true
+  parameters: 9539
+  encoded_receptive_field: 15
+  input_schema_width: 521
+  training_updates: 20000
+  batch: 8
+  original_training_anchors_preserved: true
+  input_window: 250
+  halo: 25
+  loss_frames: 200
+  training_source: five_IDSSE_development_only_LOMO_four_per_fit
+  seed: 20261106
+  training_gap_seed_base: 20261206
+  frozen_evaluation_seed_base: 20261106
+  decoder_penalty: 16
+  standalone: true
+  integrated_existing_contracts: 41
+  new_synthetic_contracts: 8
+  all_execution_by_user: true
+  tests_executed: false
+  slot_diagnostic_prerequisite: false
+  prior_representation_failures_conservatively_counted: 2
+  failure_stops_representation_line: true
+  automatic_final_fit_or_export: false
+  production_changed: false
+  target_accuracy: unknown
