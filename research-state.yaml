@@ -594,3 +594,20 @@ longer_context_result_audit:
   fold_stage_seconds: 10817.813175125979
   production_changed: false
   new_training_or_inference_by_assistant: false
+
+standalone_gap_tcn:
+  date: '2026-11-11'
+  status: prepared_not_executed
+  protocol: experiments/tcn-standalone-2026-11-11/protocol.md
+  runner: scripts/run_tcn_standalone.py
+  commands: docs/run-tcn-standalone.md
+  parent: retained_short_context_gap_trained_50_50_blend_penalty16
+  intervention: tcn_probability_weight_0_5_to_1
+  retraining: false
+  existing_fold_checkpoints: models/tcn-gap
+  user_executes_all_checks_and_inference: true
+  tests_executed: false
+  parent_csv_reconstruction_required: true
+  minimum_median_corrupted_spell_gain: 0.01
+  production_changed: false
+  target_accuracy: unknown

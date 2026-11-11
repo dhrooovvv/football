@@ -1,0 +1,5 @@
+# Standalone comparison static review
+
+November11. Independent reviewer inspected the runner, protocol and lock structure without executing tests, importing model modules, compiling code or loading datasets. No blocking defect identified. Parent reconstruction, five fixed folds, full-half decoding, unchanged promotion gate and repeat CSV requirements are present. No dataset-training path is invoked. Existing synthetic gap contracts include tiny synthetic training checks; the experiment itself reuses weights.
+
+Checkpoint ancestry relies on archived original protocol/source and repeated-fit evidence, supplemented by exact parent reconstruction. This is disclosed rather than inferred from filenames. Runtime remains unverified. Root review confirmed prepared clean/corrupted inputs include labels and blocks and match original ten prepared fingerprints;39 overlapping old registration fingerprints also agree.152 file fingerprints registered. No inference or test success is claimed. Results must be reviewed separately after the user runs the command.
