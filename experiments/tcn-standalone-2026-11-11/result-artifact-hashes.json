@@ -1,0 +1,15 @@
+{
+  "experiments/tcn-standalone-2026-11-11/checks.txt": "544e8a6173f107166feed72cf506b69b2e0c06d97c69860d8a2c357df2cc7cbc",
+  "experiments/tcn-standalone-2026-11-11/cost.json": "3bfffa04606a58fb8eb9ff48748acc0caca9e652f6764f94dbd23a49ead4a6e2",
+  "experiments/tcn-standalone-2026-11-11/determinism.json": "1d457f2e549dcb6ba3a8fa05feb1a203138ecd340b0679c5f68460b9cf0596a4",
+  "experiments/tcn-standalone-2026-11-11/gate.json": "3657c808c078c93e167edcdcbba779189797a3050809d05f64400ec124c90616",
+  "experiments/tcn-standalone-2026-11-11/inputs.json": "aa4b6a8441709a2241e1b93bd2c473a1a0818ce05ea84295b34892be9907bdd3",
+  "experiments/tcn-standalone-2026-11-11/parent.json": "178a8582091e7cd8b7e4163341823b3a9f6253b2fffc2ee49bdfccd6bec7a966",
+  "experiments/tcn-standalone-2026-11-11/protocol.md": "8db24145b224b244695f83ae142e12e8c58302167f81acd96f2c0805151e6752",
+  "experiments/tcn-standalone-2026-11-11/report.md": "b368416e3307d690c12a24199e5f5a3726eef0825e9a8ce054dec726a1e5ce5e",
+  "experiments/tcn-standalone-2026-11-11/requirements.txt": "2bc87d3beb3cab59b97984c78a367bd6a5d9609d935cedc321805ddaaaa2e886",
+  "experiments/tcn-standalone-2026-11-11/result-audit.json": "dbbf7740cea6e57c31fd542595ce1ec91fde595b62a49d8c1479386a062f9e9f",
+  "experiments/tcn-standalone-2026-11-11/result-review.md": "0b8c5960b0dc6003c0ff8e793483744be63e7d4c623091f0017b0a5dffaba3e2",
+  "experiments/tcn-standalone-2026-11-11/results.json": "bc12ff1a74aba355169b67b4cb461bee486184b133709d5079bf78252e619278",
+  "experiments/tcn-standalone-2026-11-11/started.json": "ac9921249d2695efd22a90b7cdb7f019d6bc296f36b997a501cc9374acd36c6e"
+}

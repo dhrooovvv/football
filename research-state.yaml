@@ -79,7 +79,7 @@ workspace:
   findings: findings.md
   technical_document: docs/technical-report.md
   next_step_plan: docs/next-steps-2026-11-07.md
-next_action: Retain original candidate after context rejection; standalone/blend comparison needs separate preregistration before user-run inference.
+next_action: Register final gap-trained standalone TCN fit and release qualification; resolve target slot continuity; user executes all checks.
 
 open_model_audit:
   date: '2026-11-08'
@@ -296,17 +296,17 @@ tcn_long_run:
   production_changed: false
 
 best_development_candidate:
-  selected: gap_augmented_catboost_tcn_50_50
+  selected: gap_trained_standalone_short_context_tcn_penalty16
   status: quality_eligible_not_production_promoted
-  mean_clean_spellF1: 0.5925021056601485
-  mean_corrupted_spellF1: 0.4283855855925492
-  primary_median_delta: 0.020148972553111322
-  matches_improved: 3
+  mean_clean_spellF1: 0.5977070893397277
+  mean_corrupted_spellF1: 0.4631391701663609
+  primary_median_delta: 0.040270870807321946
+  matches_improved: 4
   tests_passed: 41
   repeatability_cases_passed: 10
   clean_environment_verified: false
   target_integration_verified: false
-  next_action: preregister_clean_reproduction_and_adapter_integration
+  next_action: preregister_final_fit_clean_reproduction_and_adapter_integration
   production_changed: false
 
 fixed_blend_result:
@@ -597,7 +597,7 @@ longer_context_result_audit:
 
 standalone_gap_tcn:
   date: '2026-11-11'
-  status: prepared_not_executed
+  status: completed_quality_eligible_verification_pending
   protocol: experiments/tcn-standalone-2026-11-11/protocol.md
   runner: scripts/run_tcn_standalone.py
   commands: docs/run-tcn-standalone.md
@@ -606,8 +606,29 @@ standalone_gap_tcn:
   retraining: false
   existing_fold_checkpoints: models/tcn-gap
   user_executes_all_checks_and_inference: true
-  tests_executed: false
+  tests_executed: true
+  tests_executed_by: user
   parent_csv_reconstruction_required: true
   minimum_median_corrupted_spell_gain: 0.01
   production_changed: false
   target_accuracy: unknown
+
+standalone_gap_result_audit:
+  date: '2026-11-11'
+  report: experiments/tcn-standalone-2026-11-11/result-review.md
+  independently_recomputed: true
+  quality_eligible: true
+  clean_spellF1: 0.5977070893397277
+  corrupted_spellF1: 0.4631391701663609
+  primary_median_delta: 0.040270870807321946
+  paired_median_spell_delta: 0.03491013059682724
+  paired_median_macro_delta: 0.018038404131152264
+  paired_matches_improved: 4
+  recorded_tests_passed: 41
+  repeatability_cases: 10
+  registered_hashes_verified: 152
+  candidate_csv_hashes_verified: 30
+  parent_csv_hashes_verified: 10
+  fold_stage_seconds: 65.58286483207485
+  production_changed: false
+  new_tests_or_model_execution_by_assistant: false

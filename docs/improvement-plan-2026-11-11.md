@@ -46,3 +46,6 @@ Freeze configuration before opening sealed data. Apply previously written interp
 
 
 November11status: fixedbalancedtrial rejected; dataexpansiontrack STOP atthreefailures. User approvedStep2. Exactlongercontextregistration andusercommands are now experiments/tcn-context-2026-11-11/protocol.md and docs/run-tcn-context.md. No tests/training executed duringpreparation; parent remainsoriginalIDSSEgapblend. Release/freeze reserves unchanged.
+
+
+November11 audited update: fixed standalone gapTCN comparison passes full gate (.597707clean/.463139corrupted,4/5pairedwins, medianprimary+.040271). New retained candidate is standalone gap-trained short-contextTCN+penalty16. Balanced expansion and longer context remain rejected. Next prepare candidate-specific finalfit/release qualification and resolve target slot continuity; user executes all checks. No automatic further training or reopening stopped tracks.
