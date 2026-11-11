@@ -79,7 +79,7 @@ workspace:
   findings: findings.md
   technical_document: docs/technical-report.md
   next_step_plan: docs/next-steps-2026-11-07.md
-next_action: Retain audited rotation ensemble; qualify winner; review bounded boundary-objective or seed-ensemble proposal before any new run.
+next_action: User runs scripts/run_tcn_boundary.py --run; audit saved results against rotation winner before any further change.
 
 open_model_audit:
   date: '2026-11-08'
@@ -787,3 +787,29 @@ higher_upside_research_refresh:
   new_experiment_executed: false
   stopped_tracks_reopened: false
   target_accuracy: unknown
+
+boundary_objective_trial:
+  date: '2026-11-11'
+  status: prepared_preregistered_awaiting_user_execution
+  amendment: one_fixed_training_objective_only
+  stopped_tracks_reopened: false
+  parent: gap_trained_short_context_tcn_rotation_50_50_penalty16
+  boundary_loss_weight: 0.1
+  boundary_target: exact_adjacent_HAD_transition
+  boundary_balance: equal_present_class_means_per_minibatch
+  boundary_head: training_only_32_to_1
+  training_updates: 20000
+  folds: five_original_IDSSE_LOMO
+  tests_executed: false
+  all_execution_by_user: true
+  automatic_followup: false
+  production_changed: false
+  target_accuracy: unknown
+  protocol: experiments/tcn-boundary-2026-11-11/protocol.md
+  runner: scripts/run_tcn_boundary.py
+  commands: docs/run-tcn-boundary.md
+  review: docs/tcn-boundary-design-review-2026-11-11.md
+  supplied_contracts: 54
+  registered_source_files: 133
+  registered_input_files: 47
+  registered_compact_manifests: 5
