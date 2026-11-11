@@ -998,3 +998,13 @@ winner_delivery_preparation:
   history_signature_findings: 0
   history_scope: reachable_local_refs_at_recorded_HEAD_only
   external_push_performed: false
+
+post_40k_decision:
+  date: '2026-11-12'
+  report: docs/next-decision-2026-11-12.md
+  primary_next: qualify_actual_winner_slot_contract_final_fit_and_export
+  conditional_future_hypothesis: fixed_second_seed_ensemble_only_after_explicit_budget_extension
+  new_quality_experiment_registered: false
+  failed_pretext_reopened: false
+  additional_updates_gain_assumed: false
+  target_accuracy: unknown
