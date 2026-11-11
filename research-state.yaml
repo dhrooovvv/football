@@ -813,3 +813,20 @@ boundary_objective_trial:
   registered_source_files: 133
   registered_input_files: 47
   registered_compact_manifests: 5
+
+plateau_reassessment:
+  date: '2026-11-11'
+  status: research_complete_pending_boundary_result
+  measured_ceiling: false
+  research_reports:
+    - docs/metric-plateau-review-2026-11-11.md
+    - docs/error-strategy-reassessment-2026-11-11.md
+    - literature/training-methods-reassessment-2026-11-11.md
+  prospective_route: masked_geometry_pretraining_then_IDSSE_finetuning
+  route_registered: false
+  extra_compute_control_required: true
+  recommendation: pending_boundary_plus_at_most_one_conditional_route_with_compute_control
+  boundary_user_contracts_recorded_pass: 54
+  boundary_quality_result_available_at_inspection: false
+  stopped_tracks_reopened: false
+  new_model_execution_by_assistant: false
