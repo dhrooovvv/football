@@ -78,8 +78,8 @@ workspace:
   primary_memory: ball.md
   findings: findings.md
   technical_document: docs/technical-report.md
-  next_step_plan: docs/next-steps-2026-11-07.md
-next_action: Retain rotation winner; assess feasibility and budget for one final masked-pretraining comparison before qualification.
+  next_step_plan: docs/metric-improvement-plan-2026-11-11.md
+next_action: Prepare feasibility and exact protocol for planned masked-pretraining route plus matched-budget control; all execution user-owned.
 
 open_model_audit:
   date: '2026-11-08'
@@ -881,3 +881,18 @@ tcn_paper_metric_comparison:
   paper_defined_current_accuracies_logged: false
   cross_dataset_rank_claim: false
   new_experiment: false
+
+consolidated_improvement_plan:
+  date: '2026-11-11'
+  document: docs/metric-improvement-plan-2026-11-11.md
+  status: plan_only_not_experiment_registration
+  selected_route: masked_geometry_pretraining_then_IDSSE_finetuning
+  proposed_pretraining_updates: 20000
+  proposed_finetuning_updates: 20000
+  proposed_scratch_control_updates: 40000
+  proposed_budget_amendment_locked: false
+  maximum_fit_pipelines_with_repeats: 20
+  quality_work_finish_before: '2026-11-14'
+  stopped_tracks_reopened: false
+  current_run_artifacts_unchanged: 17
+  new_training_or_tests_executed: false
