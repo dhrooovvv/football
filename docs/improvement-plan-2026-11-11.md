@@ -56,3 +56,5 @@ November11 userapproved amendment after asking for modelimprovement: proceed dir
 
 
 November11 audited outcome: frame-setTCN rejected (.502256/.361285,0/5wins, primarymedian−.108959). Thirdconservativerepresentationfailure STOP; noarchitecture/velocity/widthrescue. KeepstandalonegapTCN .597707/.463139. A fixedinference-onlysymmetrycomparison is a separatepossiblemethod requiringnewregistration; noneauthorized/executedbythisresultaudit. Prioritize actualwinner qualification and unresolvedservingrisk withinfreezeplan.
+
+November11 nextfixedmethodregistered: inference-only180pitchrotationensemble onretainedstandaloneTCN, equalweights/unchanged16/fullgate. Command docs/run-tcn-rotation.md. This doesnot reopen stoppedarchitecture/source/decodertracks; failureclosesthisfixedtransformcomparison withoutautomaticweights/reflectionrescue. No newtraining. Actualwinnerreleasequalification/targetservingrisk remainoutstanding; freezeunchanged.

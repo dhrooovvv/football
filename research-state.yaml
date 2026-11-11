@@ -79,7 +79,7 @@ workspace:
   findings: findings.md
   technical_document: docs/technical-report.md
   next_step_plan: docs/next-steps-2026-11-07.md
-next_action: Retain standalone gap TCN; representation line stopped; consider one separately registered inference-only symmetry comparison and prepare winner release qualification.
+next_action: User runs fixed inference-only pitch rotation ensemble; audit gate; qualify actual winner for release.
 
 open_model_audit:
   date: '2026-11-08'
@@ -727,3 +727,24 @@ frame_set_result_audit:
   target_identity_risk_resolved: false
   new_tests_or_model_execution_by_assistant: false
   production_changed: false
+
+rotation_ensemble:
+  date: '2026-11-11'
+  status: prepared_not_executed
+  protocol: experiments/tcn-rotation-2026-11-11/protocol.md
+  runner: scripts/run_tcn_rotation.py
+  commands: docs/run-tcn-rotation.md
+  parent: gap_trained_standalone_short_context_tcn_penalty16
+  views: [identity, pitch_rotation_180]
+  probability_weights: [0.5, 0.5]
+  decoder_penalty: 16
+  retraining: false
+  architecture_changed: false
+  catboost_used: false
+  class_order: [H, A, D]
+  team_swap: false
+  tests_executed: false
+  integrated_contracts_provided: 46
+  user_runs_all_checks_and_inference: true
+  production_changed: false
+  target_accuracy: unknown
