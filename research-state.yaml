@@ -929,3 +929,20 @@ masked_pretraining_trial:
   protected_data_used: false
   production_changed: false
   target_accuracy: unknown
+
+comparable_benchmark_search:
+  date: '2026-11-11'
+  report: literature/comparable-benchmark-search-2026-11-11.md
+  public_source_research_complete: true
+  agent_reports_complete: false
+  agent_limit: service_usage_limit
+  official_same_metric_target_floor: 0.2433
+  real_match_external_sota_rank_verified: false
+  winning_or_top20_threshold_verified: false
+  same_scorer_synthetic_lead: PossessionLab
+  same_match_smooth50_clean_spellF1: 0.2961446515389464
+  same_match_smooth50_corrupted_spellF1: 0.19664486685095156
+  social_coverage: public_indexed_Reddit_X_LinkedIn_not_exhaustive
+  running_protocol_changed: false
+  new_experiment: false
+  target_accuracy: unknown

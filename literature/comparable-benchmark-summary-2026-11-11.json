@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-11",
+  "same_external_matches": {
+    "clean": {
+      "smooth50_spellF1": 0.2961446515389464,
+      "retained_spellF1": 0.6021546224883432,
+      "retained_macroF1": 0.9193697771323411
+    },
+    "targetlike": {
+      "smooth50_spellF1": 0.19664486685095156,
+      "retained_spellF1": 0.4776818840872061,
+      "retained_macroF1": 0.8386106928884299
+    }
+  },
+  "official_target_smooth50_spellF1": 0.2433,
+  "official_target_compared_to_external_mean": false,
+  "same_scorer_synthetic_lead": "PossessionLab",
+  "synthetic_stationary_live_hierarchy_spellF1": 0.851,
+  "comparable_external_sota_verified": false,
+  "verified_top20_cutoff": null,
+  "agents_completed": false,
+  "agent_usage_limit_reached": true,
+  "new_model_execution": false
+}
