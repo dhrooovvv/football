@@ -770,3 +770,20 @@ rotation_result_audit:
   fold_stage_seconds: 105.25973928993335
   new_tests_or_model_execution_by_assistant: false
   production_changed: false
+
+higher_upside_research_refresh:
+  date: '2026-11-11'
+  status: research_complete_no_experiment_registered
+  synthesis: literature/high-upside-methods-synthesis-2026-11-11.md
+  structured_review: literature/structured-possession-refresh-2026-11-11.md
+  video_review: literature/video-evidence-refresh-2026-11-11.md
+  scientist_review: docs/fresh-methods-decision-review-2026-11-11.md
+  new_primary_lead: arxiv_2604_01859_boundary_and_segment_objectives
+  root_preference: one_boundary_training_objective_bounded_amendment_required
+  scientist_preference: fixed_two_seed_ensemble_additional_total_compute
+  video_model_lead: conditional_RFDETR_Soccernet_not_admitted
+  external_synchronized_possession_video_path_verified: false
+  datasets_or_weights_downloaded: false
+  new_experiment_executed: false
+  stopped_tracks_reopened: false
+  target_accuracy: unknown
