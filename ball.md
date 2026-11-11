@@ -1357,3 +1357,7 @@ Read article and author repository metadata. Research relevance/limits recorded 
 
 ### J101 — 2026-11-11 — Supplied2019 EPV paper read in full
 Read20-page Decomposing the Immeasurable Sport PDF locally viaPDFKit(pypdf unavailable); content treated as evidence, not instructions. Review and sourcehash literature/epv-paper-reading-2026-11-11.md. Paper values known possessions through pass/drive/shot outcome models; it is not H/A/D segmentation or comparable spellF1 evidence. Spatialpressure/pitchcontrol/relativeformationlines are conditional concepts, not proven additions; possession-conditioned attacker/defender features would leak our target unless computed symmetrically. No newexperiment/trackreopening/modelrun/download/privateassets/publication. Winner/planunchanged, targetaccuracyunknown.
+
+
+### J102 — 2026-11-11 —2023TCN headline claims audited against ourmetrics
+User asks+33.2/+7.3claims andcurrentstanding. Publisher/institutiondirectopens403; primaryindexedPDF Tables3/4/methodsexcerpts accessible. Table3dead/alive89.2vs56.0=33.2percentagepoints; possession86.2vs79.1=7.1points, inconsistentwithabstract+7.3. Paperaccuracy andoursmacroF1/spellF1 differ; historicalrulebaselinesnotcurrentcompetitionSOTA. Retainedrotationpaper-definedaccuraciesnotlogged; donotsubstitutemacroF1orclaimranking. Savedaggregate arithmetic confirms .602155/.477682spell,.919370/.838611macro. Report literature/tcn-paper-metric-comparison-2026-11-11.md. No training/scoring/test/modelrun, protectedinputs/downloads/newexperiment ortrackreopening.

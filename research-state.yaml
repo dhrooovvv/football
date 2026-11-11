@@ -873,3 +873,11 @@ epv_paper_review:
   decision: downstream_valuation_and_conditional_spatial_reasoning_only
   new_experiment: false
   production_changed: false
+
+tcn_paper_metric_comparison:
+  date: '2026-11-11'
+  report: literature/tcn-paper-metric-comparison-2026-11-11.md
+  headline_possession_gain_discrepancy: abstract_7_3_vs_table_7_1_percentage_points
+  paper_defined_current_accuracies_logged: false
+  cross_dataset_rank_claim: false
+  new_experiment: false
