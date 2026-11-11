@@ -1349,3 +1349,7 @@ Short-spell recall atIoU.5 worsens125/732→122/732clean and92/732→81/732corru
 Verified185registeredhashes(133source,47input/reference,5compactmanifests),35compactmembers,10checkpoints,30candidateCSVs,10parentCSVs; committedsource/protocol match. Fivefoldmembership/20kbudget/coverage/losscomponentdigests agree. Userlogs54contracts pass; savedrecords exactrepeatfits and10bothviewreload/batchCSVcases pass. Nofailurefile. Foldstagessum4969.533363seconds/82.83minutes, nottotalwalltime/RAM. Assistantdidnotrun tests/imports/compilation/model/scorer/training or load arrays/checkpoints. Evidence experiments/tcn-boundary-2026-11-11/{result-audit.json,result-review.md,result-artifact-hashes.json} and evaluation/report.md/results.json; resultcommitseparatefrom preregistratione51cec3.
 
 Productionunchanged/targetaccuracyunknown/protectedmatchesuntouched. Nextprospectiveroute maskedgeometrypretraining→IDSSEfinetuning requires feasibility/budgetcontrol and separateprotocol, notautomaticallystarted. Existingfiniteplan atmostONEconditionalfurtherroutethenqualification; Nov14–15qualification/Nov16freeze retained. No downloads/push/submission.
+
+
+### J100 — 2026-11-11 — User-linked MDPI article assessed
+Read article and author repository metadata. Research relevance/limits recorded in literature/mdpi-possession-relevance-2026-11-11.md. Conditional video-detector lead only; no comparable spellF1 evidence or justified pipeline replacement. No experiment/download/model execution/protected data access. Retained model and plan unchanged.

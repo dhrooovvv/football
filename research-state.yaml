@@ -858,3 +858,10 @@ boundary_result_audit:
   new_tests_or_model_execution_by_assistant: false
   production_changed: false
   target_accuracy: unknown
+
+mdpi_article_review:
+  date: '2026-11-11'
+  report: literature/mdpi-possession-relevance-2026-11-11.md
+  decision: conditional_video_detector_lead_only
+  new_experiment: false
+  production_changed: false
