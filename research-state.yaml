@@ -79,7 +79,7 @@ workspace:
   findings: findings.md
   technical_document: docs/technical-report.md
   next_step_plan: docs/next-steps-2026-11-07.md
-next_action: User runs fixed inference-only pitch rotation ensemble; audit gate; qualify actual winner for release.
+next_action: Retain audited rotation ensemble; qualify winner; review bounded boundary-objective or seed-ensemble proposal before any new run.
 
 open_model_audit:
   date: '2026-11-08'
@@ -296,17 +296,17 @@ tcn_long_run:
   production_changed: false
 
 best_development_candidate:
-  selected: gap_trained_standalone_short_context_tcn_penalty16
+  selected: gap_trained_short_context_tcn_rotation_50_50_penalty16
   status: quality_eligible_not_production_promoted
-  mean_clean_spellF1: 0.5977070893397277
-  mean_corrupted_spellF1: 0.4631391701663609
-  primary_median_delta: 0.040270870807321946
-  matches_improved: 4
-  tests_passed: 41
+  mean_clean_spellF1: 0.6021546224883432
+  mean_corrupted_spellF1: 0.4776818840872061
+  primary_median_delta: 0.014850014850014803
+  matches_improved: 3
+  tests_passed: 46
   repeatability_cases_passed: 10
   clean_environment_verified: false
   target_integration_verified: false
-  next_action: preregister_final_fit_clean_reproduction_and_adapter_integration
+  next_action: preregister_actual_winner_final_fit_and_release_qualification
   production_changed: false
 
 fixed_blend_result:
@@ -730,7 +730,7 @@ frame_set_result_audit:
 
 rotation_ensemble:
   date: '2026-11-11'
-  status: prepared_not_executed
+  status: completed_quality_eligible_verification_pending
   protocol: experiments/tcn-rotation-2026-11-11/protocol.md
   runner: scripts/run_tcn_rotation.py
   commands: docs/run-tcn-rotation.md
@@ -743,8 +743,30 @@ rotation_ensemble:
   catboost_used: false
   class_order: [H, A, D]
   team_swap: false
-  tests_executed: false
+  tests_executed: true
+  tests_executed_by: user
   integrated_contracts_provided: 46
   user_runs_all_checks_and_inference: true
   production_changed: false
   target_accuracy: unknown
+
+rotation_result_audit:
+  date: '2026-11-11'
+  report: experiments/tcn-rotation-2026-11-11/result-review.md
+  independently_recomputed: true
+  quality_eligible: true
+  clean_spellF1: 0.6021546224883432
+  corrupted_spellF1: 0.4776818840872061
+  primary_median_delta: 0.014850014850014803
+  paired_spell_median_delta: 0.016578383107167527
+  paired_macro_median_delta: 0.00586390879040799
+  matches_improved: 3
+  registered_hashes_verified: 158
+  candidate_csv_hashes_verified: 30
+  parent_csv_hashes_verified: 10
+  checkpoint_hashes_verified: 5
+  recorded_tests_passed: 46
+  recorded_repeatability_cases: 10
+  fold_stage_seconds: 105.25973928993335
+  new_tests_or_model_execution_by_assistant: false
+  production_changed: false

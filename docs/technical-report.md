@@ -263,3 +263,8 @@ The identity-robust pointwise encoder lowered mean spellF1 to .502256clean/.3612
 ## November 11: fixed two-view rotation ensemble pending
 
 Registered one inference-only probability average of original and180degree rotated input, using retainedgapTCN checkpoints and uniform16decode. Negate centeredobjectXY/velocity forplayers ANDball; preserveH/Aroles/outputorder/core9. Samefivefolds/tenfrozenconditions; parentreconstruction andbothviewreload/exactensembleCSV required. No learnertraining, CatBoost, geometry/weightsearch or protecteddata. Fullgate unchangedagainst .597707/.463139. Source/protocol experiments/tcn-rotation-2026-11-11/, command docs/run-tcn-rotation.md.46contracts supplied but unexecuted; quality/runtimeunknown. Extra neuralforwardviews increaseinferencecost anddo not resolve temporalidentityrisk. No productionpromotion; targetaccuracyunknown.
+
+
+## November11: rotation ensemble passes development gate
+
+Equal original/180rotation probability averaging raises mean spellF1 to .602155clean/.477682corrupted, macro .919370/.838611. Median corruptedgain+.014850, pairedspell+.016578,3/5wins and pairedmacro+.005864 pass allcriteria. J03WOH/J03WPYpairedregressions disclosed.46recordedcontracts/10bothviewreload/batchcases,158sourceinput/30candidateCSV/10parentCSV/5modelhashes verified byread-onlyaudit; no newmodel/scorer execution. Evidence experiments/tcn-rotation-2026-11-11/result-review.md. Neweligibleleader, notproductionpromotion. Extra2neuralviews and targetslotidentityrisk remain; targetaccuracyunknown. Winner-specificfinalfit/export/validator/cleanenvironment/freshclone/sealedsteps outstanding.
