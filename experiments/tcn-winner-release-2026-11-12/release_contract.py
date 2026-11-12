@@ -99,7 +99,7 @@ def registration(training=False):
     require(set(locked['prepared_manifests']) == {
         f'data/tcn-expanded/{key}/manifest.json' for key in KEYS}, 'Exactly five compact manifests required')
     require(set(locked['target_assets']) == set(TARGET_ASSETS), 'Unexpected target asset set')
-    groups = ('code', 'parent_evidence', 'prepared_manifests') if training else ('code', 'target_assets', 'reference')
+    groups = ('code', 'parent_evidence', 'prepared_manifests', 'reference') if training else ('code', 'target_assets', 'reference')
     for group in groups:
         for name, digest in locked[group].items():
             path = Path(name)

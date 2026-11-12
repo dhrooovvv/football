@@ -1493,3 +1493,7 @@ User reports another error. Existing last-failure timestamp12:23:40IST predates 
 
 ### J115 — 2026-11-12 — Pasted traceback confirmed registration guard; clarified exact missing-path diagnostics
 User pasted generic Incomplete release source lock traceback. Static inspection of current corrected checkout finds all21 mandatory paths present, so this traceback alone cannot establish a fresh failure after correction. Updated guard to list missing source paths, preserving validation. Updated protocol/source fingerprints and verified all191registered file hashes without importing project modules or running tests/training. Commit before retry; if failure persists new message identifies actual mismatch. Model recipe unchanged.
+
+
+### J116 — 2026-11-12 — Reference classification failure corrected; broader static prerequisite audit
+Fresh saved/pasted error identifies organizer possession_metrics.py requiring committed-byte equality despite reference/ intentionally untracked. This was a registration classification error introduced in preparation. Moved all ten untracked organizer sources from code to hash-only reference, retaining exact digests; both fitting and export now verify all reference hashes. No organizer content added to Git and scorer unchanged. Preserved failure record separately. Model/splits/seeds/budget/decoder/risk review unchanged; tests/training had not begun. Root audits remaining registration prerequisites by source/metadata/byte inspection only, no project imports/tests/model execution; user retry follows correction commit.

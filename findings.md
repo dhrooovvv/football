@@ -334,3 +334,5 @@ November12 final-fit first attempt stopped before tests/training due omitted con
 November12reportedretryerror: savedfailure predates correction; no fresh log. Need actual terminal output to diagnose. No further patch or run justified from stale evidence.
 
 November12registrationdiagnostic: current checkout contains all21required sources; guard now names missing paths on failure. Updated source/protocol fingerprints committed before user retry; no training or tests executed.
+
+November12secondregistrationfailure: organizer reference files incorrectly required Git tracking. Reclassified all10 into hash-only references, retained digests and verify them during fit/export. No scorer change/publication/model change. Both failure records preserved; user execution still required.
