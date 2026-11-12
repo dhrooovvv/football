@@ -64,7 +64,7 @@
     "experiments/tcn-winner-release-2026-11-12/dependency-license-metadata.json": "b3a6d6e0e73d2f886d4ced607924faca1dd981c7c40fa160369528d42a952697",
     "experiments/tcn-winner-release-2026-11-12/environment-lock.txt": "c00437adcbce68c04d10c9f4706d72a546a99f711b94a87f190326ea4cdbd48a",
     "experiments/tcn-winner-release-2026-11-12/environment-snapshot.json": "429a9d08b0cf5b796467d743c0e1994e087148ddc497456dcc26f9a65d51ce7f",
-    "experiments/tcn-winner-release-2026-11-12/protocol.md": "115dd1e9be198a8f78cf88fab5c480374183a146315dcd79cffaf19591460f07",
+    "experiments/tcn-winner-release-2026-11-12/protocol.md": "64c8f66067cb28c6bf361aa218efd6d924cfbd5ed70c9af27a2a5fc42fcf42ca",
     "experiments/tcn-winner-release-2026-11-12/release_contract.py": "a9b20fd3d70c31a682127b8cc0bf2fbe3788d609bb341e1836e86ad5a5468214",
     "experiments/tcn-winner-release-2026-11-12/requirements.txt": "2c1353e49f41b4f5eea07697d7d86b531fefc6d316f5c720abcacd3bec92663b",
     "experiments/tcn-winner-release-2026-11-12/tests/test_winner_release.py": "5f88d5d0c282868f1ba6300be70c76c58742968ddb18ae2af23ac3fed30c7997",

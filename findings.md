@@ -333,4 +333,4 @@ November12 final-fit first attempt stopped before tests/training due omitted con
 
 November12reportedretryerror: savedfailure predates correction; no fresh log. Need actual terminal output to diagnose. No further patch or run justified from stale evidence.
 
-November12registrationdiagnostic: current checkout contains all20required sources; guard now names missing paths on failure. Updated source/protocol fingerprints committed before user retry; no training or tests executed.
+November12registrationdiagnostic: current checkout contains all21required sources; guard now names missing paths on failure. Updated source/protocol fingerprints committed before user retry; no training or tests executed.

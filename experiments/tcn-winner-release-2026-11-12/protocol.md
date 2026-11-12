@@ -32,4 +32,4 @@ Private outputs `models/tcn-winner-release/{first,repeat}/progress.pt`, `manifes
 
 The first user attempt stopped before contracts or training: configs/competition.json was omitted from the source lock although the runtime guard requires it. Add its unchanged byte hash; preserve the guard and every model/training/data rule. No model or partial training checkpoint was created by this failure. Commit this correction before retry.
 
-November12 diagnostic clarification: report exact missing source paths on registration failure. No guard is weakened and no model, training, membership or evaluation setting changes. All20 required source paths are present in the corrected registration. Commit updated source hashes before retry.
+November12 diagnostic clarification: report exact missing source paths on registration failure. No guard is weakened and no model, training, membership or evaluation setting changes. All21 required source paths are present in the corrected registration. Commit updated source hashes before retry.
