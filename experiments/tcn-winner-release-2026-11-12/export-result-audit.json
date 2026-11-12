@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-12",
+  "official_validator_pass_recorded": true,
+  "three_csv_byte_hashes_verified": true,
+  "both_view_reload_probability_equality_recorded": true,
+  "model_and_manifest_hashes_verified": true,
+  "csv_sha256": "e3d8f54841b7f4422438fa9512740664c7f432959b7e74970d61b4c66ff0c24b",
+  "target_accuracy": "unknown",
+  "production_changed": false,
+  "assistant_model_or_scorer_execution": false
+}

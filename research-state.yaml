@@ -991,7 +991,7 @@ winner_delivery_preparation:
   status: implemented_preregistered_user_run_pending
   existing_exporter_compatible: false
   final_fit_five_match_entrypoint_exists: true
-  neural_target_csv_generated: false
+  neural_target_csv_generated: true
   history_asset_scan: docs/history-assets-2026-11-12.json
   history_commits_scanned: 154
   history_unique_blobs_scanned: 1084
@@ -1104,5 +1104,15 @@ final_five_artifact_result:
   fit_count: 2
   recorded_elapsed_seconds: 1971.3009282910498
   new_quality_score: false
+  target_accuracy: unknown
+  production_changed: false
+
+winner_export_result:
+  date: '2026-11-12'
+  status: local_format_and_repeatability_verified
+  audit: experiments/tcn-winner-release-2026-11-12/export-result-audit.json
+  csv_sha256: e3d8f54841b7f4422438fa9512740664c7f432959b7e74970d61b4c66ff0c24b
+  clean_environment_verified: false
+  fresh_clone_verified: false
   target_accuracy: unknown
   production_changed: false
