@@ -42,7 +42,7 @@
     "experiments/tcn-interaction-2026-11-10/interaction_training.py": "ccbdef4582f9ac740299ddfb216c465416c0b33993adb3eccb6b7ec1506991e7",
     "experiments/tcn-interaction-2026-11-10/tests/test_interaction.py": "27c41313a30341bcc8fea85c1d4b690b1ca8337b5df574761aba3e2a9c03ee8e",
     "experiments/tcn-parallel-2026-11-12/membership.json": "881f25d0367f9211eb85b85b7be86f98d39f4dc49e8e065fb6c382d57e7255fe",
-    "experiments/tcn-parallel-2026-11-12/parallel_contract.py": "db6d1f3bfa149b86de96548ca1c9f09e714d1647f675e9eba2919232a216a41b",
+    "experiments/tcn-parallel-2026-11-12/parallel_contract.py": "34c3721c53110b7f2643510d31235b9fca626e16a91c1d72de24aecbb3f81b72",
     "experiments/tcn-parallel-2026-11-12/parallel_model.py": "c5932f69eb5e8e53b1d200840ad359e2483a6106d8e5cf33367e25bb4698851e",
     "experiments/tcn-parallel-2026-11-12/parallel_training.py": "af293a6a75815635b0d43027dc7c57ef11966e984cc6e33a32870b544e909a75",
     "experiments/tcn-parallel-2026-11-12/protocol.md": "7d4f4c95b6e66a809491a7fb561fdc2abf725d92841c1a80ccb17c83c09cefd8",
