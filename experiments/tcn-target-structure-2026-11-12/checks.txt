@@ -1,0 +1,11 @@
+test_duplicate_and_close_pairs_are_descriptive_counts (test_structure.Structure.test_duplicate_and_close_pairs_are_descriptive_counts) ... ok
+test_gaps_and_half_boundaries_never_create_motion_pairs (test_structure.Structure.test_gaps_and_half_boundaries_never_create_motion_pairs) ... ok
+test_output_has_no_rows_identifiers_or_geometry_sequences (test_structure.Structure.test_output_has_no_rows_identifiers_or_geometry_sequences) ... ok
+test_permutation_changes_slot_motion_but_not_set_geometry (test_structure.Structure.test_permutation_changes_slot_motion_but_not_set_geometry) ... ok
+test_stable_geometry_and_chunk_invariance (test_structure.Structure.test_stable_geometry_and_chunk_invariance) ... ok
+test_strict_visibility_and_block_contract (test_structure.Structure.test_strict_visibility_and_block_contract) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.012s
+
+OK

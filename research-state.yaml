@@ -79,7 +79,7 @@ workspace:
   findings: findings.md
   technical_document: docs/technical-report.md
   next_step_plan: docs/metric-improvement-plan-2026-11-11.md
-next_action: User runs preregistered label-free target/external structure audit, then review before final fitting; finite quality search remains closed.
+next_action: User runs already-preregistered exact-five staged40k final fit with acknowledged slot risk; review repeatability before export. Finite quality search remains closed.
 
 open_model_audit:
   date: '2026-11-08'
@@ -306,7 +306,7 @@ best_development_candidate:
   repeatability_cases_passed: 10
   clean_environment_verified: false
   target_integration_verified: false
-  next_action: label_free_target_input_structure_then_review_final_fit_and_export
+  next_action: user_registered_final_five_fit_then_review_before_export
   production_changed: false
 
 fixed_blend_result:
@@ -1035,11 +1035,15 @@ winner_delivery_preparation:
   dynamic_stress_corrupted_mean_spellF1: 0.04666717843275601
   dynamic_stress_is_target_accuracy_estimate: false
   actual_target_slot_continuity_measured: false
-  final_fit_waits_for_input_structure_review: true
+  final_fit_waits_for_input_structure_review: false
+  target_input_structure_aggregates_verified: true
+  target_input_review_supports_final_artifact_fit: true
+  identity_correctness_verified: false
+  release_ready: false
 
 target_structure_qualification:
   date: '2026-11-12'
-  status: preregistered_user_run_pending
+  status: completed_audited_final_artifact_fit_recommended
   protocol: experiments/tcn-target-structure-2026-11-12/protocol.md
   command: scripts/audit_tcn_target_structure.py --run
   source_review: docs/tcn-target-structure-review-2026-11-12.md
@@ -1052,9 +1056,18 @@ target_structure_qualification:
   tracked_registered_files_commit_verified: 20
   prepared_geometry_members_byte_verified: 15
   target_rows_read_into_context: false
-  aggregation_executed: false
+  aggregation_executed: true
   contracts_supplied: 6
-  contracts_executed: false
+  contracts_executed: true
+  user_logged_contracts_passed: 6
+  result_summary: experiments/tcn-target-structure-2026-11-12/result-summary.json
+  detailed_results_remain_private: true
+  execution_commit: f9da058
+  recorded_total_seconds: 27.60692474996904
+  typical_adjacent_motion_within_external_mean_range: true
+  fragmentation_and_coverage_shift_remain: true
+  identity_correctness_verified: false
+  model_or_production_selected_from_target_metrics: false
   model_or_scoring_required: false
   labels_required: false
   protected_matches_used: false
