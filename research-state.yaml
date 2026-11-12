@@ -79,7 +79,7 @@ workspace:
   findings: findings.md
   technical_document: docs/technical-report.md
   next_step_plan: docs/metric-improvement-plan-2026-11-11.md
-next_action: User runs registered current-winner slot diagnostic, then review before five-match final fit and private export; finite quality search remains closed.
+next_action: Slot stress audited; prepare label-free target/external input-structure diagnostic before final-fit review; finite quality search remains closed.
 
 open_model_audit:
   date: '2026-11-08'
@@ -306,7 +306,7 @@ best_development_candidate:
   repeatability_cases_passed: 10
   clean_environment_verified: false
   target_integration_verified: false
-  next_action: user_slot_diagnostic_then_review_final_fit_and_export
+  next_action: label_free_target_input_structure_then_review_final_fit_and_export
   production_changed: false
 
 fixed_blend_result:
@@ -1018,7 +1018,7 @@ winner_delivery_preparation:
   diagnostic_new_contracts_supplied: 9
   release_new_contracts_supplied: 7
   source_review_blockers_remaining: 0
-  slot_diagnostic_executed: false
+  slot_diagnostic_executed: true
   final_fit_executed: false
   new_contract_tests_executed: false
   frozen_model_clean_environment_verified: false
@@ -1026,6 +1026,16 @@ winner_delivery_preparation:
   full_training_clean_environment_verified: false
   human_diagnostic_review_required_before_fit: true
   existing_lomo_guard_unchanged: true
+  slot_diagnostic_audit: experiments/tcn-winner-slot-audit-2026-11-12/result-audit.json
+  slot_diagnostic_parent_reproductions_verified: 10
+  slot_diagnostic_repeatability_cases_verified: 40
+  slot_diagnostic_user_recorded_contracts_passed: 63
+  static_and_rederived_controls_changed_labels: 0
+  dynamic_stress_clean_mean_spellF1: 0.05285813957456749
+  dynamic_stress_corrupted_mean_spellF1: 0.04666717843275601
+  dynamic_stress_is_target_accuracy_estimate: false
+  actual_target_slot_continuity_measured: false
+  final_fit_waits_for_input_structure_review: true
 
 post_40k_decision:
   date: '2026-11-12'
