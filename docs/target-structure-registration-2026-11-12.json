@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-12",
+  "scope": "Static file-byte and public external metadata provenance only; no target rows, arrays, checkpoints or model modules loaded into context",
+  "registration_path": "experiments/tcn-target-structure-2026-11-12/inputs.json",
+  "inputs_sha256": "7e51ca9227ac09d4b5face9bf780ee8aa79b09220507a2392c67bc04fb79ef98",
+  "group_counts": {
+    "code": 14,
+    "data": 22,
+    "evidence": 5
+  },
+  "prepared_geometry_members_byte_verified": 15,
+  "target_asset_hashes_agree_with_prior_release_registration": true,
+  "tests_executed": false,
+  "model_inference_executed": false,
+  "target_geometry_aggregation_executed": false,
+  "protocol_commit": "pending local registration commit",
+  "target_accuracy": "unknown"
+}

@@ -79,7 +79,7 @@ workspace:
   findings: findings.md
   technical_document: docs/technical-report.md
   next_step_plan: docs/metric-improvement-plan-2026-11-11.md
-next_action: Slot stress audited; prepare label-free target/external input-structure diagnostic before final-fit review; finite quality search remains closed.
+next_action: User runs preregistered label-free target/external structure audit, then review before final fitting; finite quality search remains closed.
 
 open_model_audit:
   date: '2026-11-08'
@@ -1036,6 +1036,29 @@ winner_delivery_preparation:
   dynamic_stress_is_target_accuracy_estimate: false
   actual_target_slot_continuity_measured: false
   final_fit_waits_for_input_structure_review: true
+
+target_structure_qualification:
+  date: '2026-11-12'
+  status: preregistered_user_run_pending
+  protocol: experiments/tcn-target-structure-2026-11-12/protocol.md
+  command: scripts/audit_tcn_target_structure.py --run
+  source_review: docs/tcn-target-structure-review-2026-11-12.md
+  registration_report: docs/target-structure-registration-2026-11-12.json
+  source_fingerprints: 14
+  geometry_data_fingerprints: 22
+  stress_evidence_fingerprints: 5
+  prepared_geometry_members_byte_verified: 15
+  target_rows_read_into_context: false
+  aggregation_executed: false
+  contracts_supplied: 6
+  contracts_executed: false
+  model_or_scoring_required: false
+  labels_required: false
+  protected_matches_used: false
+  quality_gate_or_stop_counts_changed: false
+  automatic_identity_repair: false
+  output: data/competition/tcn-target-structure
+  target_accuracy: unknown
 
 post_40k_decision:
   date: '2026-11-12'
