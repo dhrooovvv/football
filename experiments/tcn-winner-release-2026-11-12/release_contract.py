@@ -86,7 +86,9 @@ def registration(training=False):
                  'scripts/prepare_tcn.py', 'src/possession/core.py', 'src/possession/features.py',
                  'src/possession/inputs.py', 'src/possession/decode.py',
                  'configs/competition.json', 'experiments/core-development/split.json')
-    require(all(name in locked['code'] for name in mandatory), 'Incomplete release source lock')
+    missing_sources = [name for name in mandatory if name not in locked['code']]
+    require(not missing_sources,
+            'Incomplete release source lock; missing paths: ' + ', '.join(missing_sources))
     parent_root = 'experiments/tcn-pretrain-2026-11-11/'
     require(all(parent_root + name in locked['parent_evidence'] for name in (
         'evaluation/control/gate.json', 'evaluation/control/results.json',

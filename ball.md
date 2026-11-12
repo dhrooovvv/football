@@ -1489,3 +1489,7 @@ User reports error. Private failure record says Incomplete release source lock. 
 
 ### J114 — 2026-11-12 — Reported retry error has no fresh saved failure
 User reports another error. Existing last-failure timestamp12:23:40IST predates correction commit e6e561d at12:48:49IST; no release checks log exists. Static source inspection finds all required source paths present in corrected registration. Cannot identify a new error from the old failure record. Request actual terminal output before further changes or retry. No project execution, training, recipe change or repeated blocked run.
+
+
+### J115 — 2026-11-12 — Pasted traceback confirmed registration guard; clarified exact missing-path diagnostics
+User pasted generic Incomplete release source lock traceback. Static inspection of current corrected checkout finds all20 mandatory paths present, so this traceback alone cannot establish a fresh failure after correction. Updated guard to list missing source paths, preserving validation. Updated protocol/source fingerprints and verified all191registered file hashes without importing project modules or running tests/training. Commit before retry; if failure persists new message identifies actual mismatch. Model recipe unchanged.
