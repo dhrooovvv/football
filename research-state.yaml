@@ -79,7 +79,7 @@ workspace:
   findings: findings.md
   technical_document: docs/technical-report.md
   next_step_plan: docs/metric-improvement-plan-2026-11-11.md
-next_action: User runs already-preregistered exact-five staged40k final fit with acknowledged slot risk; review repeatability before export. Finite quality search remains closed.
+next_action: User runs registered private winner exporter; review validator and identical CSV evidence before clean-environment/clone reproduction.
 
 open_model_audit:
   date: '2026-11-08'
@@ -306,7 +306,7 @@ best_development_candidate:
   repeatability_cases_passed: 10
   clean_environment_verified: false
   target_integration_verified: false
-  next_action: user_registered_final_five_fit_then_review_before_export
+  next_action: user_private_export_then_review_and_reproduction
   production_changed: false
 
 fixed_blend_result:
@@ -1019,8 +1019,8 @@ winner_delivery_preparation:
   release_new_contracts_supplied: 7
   source_review_blockers_remaining: 0
   slot_diagnostic_executed: true
-  final_fit_executed: false
-  new_contract_tests_executed: false
+  final_fit_executed: true
+  new_contract_tests_executed: true
   frozen_model_clean_environment_verified: false
   frozen_model_fresh_clone_verified: false
   full_training_clean_environment_verified: false
@@ -1092,3 +1092,17 @@ final_fit_registration_correction:
   failure_before_tests_and_training: true
   recipe_changed: false
   status: reference_classification_corrected_full_static_review_complete_user_retry_pending
+
+final_five_artifact_result:
+  date: '2026-11-12'
+  status: completed_audited_export_pending
+  manifest: models/tcn-winner-release/manifest.json
+  audit: experiments/tcn-winner-release-2026-11-12/final-fit-result-audit.json
+  recorded_repeated_training_exact: true
+  user_logged_contracts_passed: 61
+  steps_per_fit: 40000
+  fit_count: 2
+  recorded_elapsed_seconds: 1971.3009282910498
+  new_quality_score: false
+  target_accuracy: unknown
+  production_changed: false

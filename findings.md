@@ -336,3 +336,5 @@ November12reportedretryerror: savedfailure predates correction; no fresh log. Ne
 November12registrationdiagnostic: current checkout contains all21required sources; guard now names missing paths on failure. Updated source/protocol fingerprints committed before user retry; no training or tests executed.
 
 November12secondregistrationfailure: organizer reference files incorrectly required Git tracking. Reclassified all10 into hash-only references, retained digests and verify them during fit/export. No scorer change/publication/model change. Both failure records preserved; user execution still required.
+
+November12 final-five artifact fit completed: two40kreset fits,61loggedcontracts pass, exact repeated state/optimizer/RNG/loss/sampling equality and reload recorded. Root verifies190fingerprints/158committedsources/35members/two checkpoint hashes/lossdigest via metadata+bytes only. Recorded32m51 elapsed, no newqualityscore. Privateexport is next; targetaccuracy unknown, productionunchanged, sealedNov16. Audit experiments/tcn-winner-release-2026-11-12/final-fit-result-audit.json.
