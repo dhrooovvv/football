@@ -1163,3 +1163,15 @@ bounded_parallel_extension:
   sealed_opened: false
   production_changed: false
   target_accuracy: unknown
+
+cross_sport_benchmark_review_2026_11_13:
+  status: completed_public_source_scoping_review
+  report: literature/cross-sport-segment-benchmarks-2026-11-13.md
+  exact_real_match_metric_comparator_verified: false
+  related_methods: [VIFSS_FACT, SoccerNet2026_PAVE, T_GAN]
+  numerical_cross_task_ranking_valid: false
+  new_experiment_registered: false
+  tests_or_models_executed: false
+  production_changed: false
+  next: finish_registered_attention_and_ordered_comparison
+  target_accuracy: unknown
