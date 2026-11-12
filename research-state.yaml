@@ -1008,7 +1008,7 @@ winner_delivery_preparation:
   reproduction_instructions: docs/run-tcn-winner-reproduction.md
   full_environment_distribution_pins: 29
   slot_registration_file_count: 211
-  release_registration_file_count: 190
+  release_registration_file_count: 191
   prepared_compact_members_byte_verified: 35
   inherited_source_fingerprints_unchanged: 145
   registration_report: docs/tcn-winner-registration-2026-11-12.json
@@ -1085,3 +1085,10 @@ post_40k_decision:
   failed_pretext_reopened: false
   additional_updates_gain_assumed: false
   target_accuracy: unknown
+
+final_fit_registration_correction:
+  date: '2026-11-12'
+  cause: missing_required_config_fingerprint
+  failure_before_tests_and_training: true
+  recipe_changed: false
+  status: corrected_user_retry_pending

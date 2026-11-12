@@ -27,3 +27,7 @@ Full training repeat in the original environment and frozen-model inference in a
 `inputs.json` groups: committed code/protocol/environment/test fingerprints; archived parent eligibility/results/evidence; exactly five compact manifests with all member hashes; hash-only target ATD/teams assets; hash-only official validator/reference files. Fit verifies training members without using target; frozen export verifies source/reference/target hashes without requiring ancestral fold models or loading training arrays. Dependency metadata documents declared licences, not an independent legal clearance or wheel-byte lock.
 
 Private outputs `models/tcn-winner-release/{first,repeat}/progress.pt`, `manifest.json`, `losses.json`; export candidate CSVs and provenance in a fresh requested directory. Keep productionCatBoost16 unchanged, target accuracy unknown. Record failure evidence as well as successful results. Estimated final two-fit cost ~30–60minutes from prior control training; unmeasured all-five wall time/IO may differ. Export six full-view inference passes is additional work; do not claim measured duration before user execution.
+
+## Registration correction — November12
+
+The first user attempt stopped before contracts or training: configs/competition.json was omitted from the source lock although the runtime guard requires it. Add its unchanged byte hash; preserve the guard and every model/training/data rule. No model or partial training checkpoint was created by this failure. Commit this correction before retry.
