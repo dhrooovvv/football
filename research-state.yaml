@@ -79,7 +79,7 @@ workspace:
   findings: findings.md
   technical_document: docs/technical-report.md
   next_step_plan: docs/metric-improvement-plan-2026-11-11.md
-next_action: User runs registered private winner exporter; review validator and identical CSV evidence before clean-environment/clone reproduction.
+next_action: User runs preregistered attention and seed-ensemble arms in separate terminals; finalize only after both complete, then review ordered gates.
 
 open_model_audit:
   date: '2026-11-08'
@@ -1121,4 +1121,40 @@ paper_error_mechanism_review:
   date: '2026-11-12'
   report: docs/papers-to-spell-improvements-2026-11-12.md
   new_experiment_registered: false
+  target_accuracy: unknown
+
+bounded_parallel_extension:
+  date: '2026-11-12'
+  status: preregistered_user_execution_pending
+  user_approved_two_independent_candidates: true
+  representation_stop_history_preserved: true
+  representation_exception: one_masked_attention_trial_only
+  parent: staged40k_supervised_TCN_rotation_penalty16
+  arms: [attention, ensemble]
+  initialization_seeds: {attention: 20261106, ensemble: 20261107}
+  window_seed: 20261106
+  view_seed: 20685348
+  steps_per_fit: 40000
+  new_fit_count: 20
+  total_new_updates: 800000
+  threads_per_job: 1
+  concurrent_jobs: 2
+  custom_ram_cap: false
+  attention_runtime_measured: false
+  models_parameters: {attention: 9917, ensemble: 9701}
+  promotion_order: [attention, ensemble]
+  full_existing_promotion_gate_preserved: true
+  combined_attention_seed_variant_authorized: false
+  prior_stopped_tracks_reset: false
+  protocol: experiments/tcn-parallel-2026-11-12/protocol.md
+  commands: docs/run-tcn-parallel.md
+  source_review: docs/tcn-parallel-review-2026-11-12.md
+  registration_report: docs/tcn-parallel-registration-2026-11-12.json
+  registration_file_count: 228
+  new_contracts_supplied: 14
+  expected_contracts_per_arm: 68
+  tests_executed_by_assistant: false
+  training_executed_by_assistant: false
+  sealed_opened: false
+  production_changed: false
   target_accuracy: unknown
