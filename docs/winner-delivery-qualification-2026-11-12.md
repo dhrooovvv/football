@@ -29,3 +29,7 @@ Prepared November12,2026. This is an implementation specification/checklist, not
 The reachablehistoryassetcheckpreparedalongside thisaudit reports path/commitonly in docs/history-assets-2026-11-12.json. It doesnot certify arbitraryencoded/embeddedderivatives oruntrackedfiles. No externalpublication/submission orhistoryrewrite authorized by thisdocument.
 
 Working development milestone .55targetlike spellF1 andstretch.60 areaspirations, notnewpromotioncriteria orpermissionforserialexperiments. Finiteimprovementcomparisonclosed; qualificationisnext. ReserveNov14–15releasework/Nov16freeze; noactionafterNov17. No newtrainingorvalidationcommand is supplied until exactprotocol/source/inputsarecommitted.
+
+## November12 implementation update
+
+The current-winner diagnostic, explicit five-match final-fit entrypoint, standalone rotation/16 exporter, seven release contracts and reproduction instructions are now implemented and registered for user execution. The diagnostic supplies nine new checks alongside the54 existing contracts. Independent source review found no blocking defect; this is not runtime proof. Commands are in docs/run-tcn-winner-slot-audit.md, docs/run-tcn-winner-release.md and docs/run-tcn-winner-reproduction.md. Run the diagnostic first, then review before fitting. Final model, new target CSV, clean-environment/clone results and sealed evaluation are still pending. Full training reproduction remains a separate unexecuted claim. No production promotion occurred.

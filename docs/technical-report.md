@@ -308,3 +308,25 @@ Audited20cells: newbesteligibledevelopmentrecipe is40kIDSSEsupervisedTCN withAda
 Fixed20kgeometrypretrain+20kIDSSEfine-tune gives.533631828/.443298439spell, failsall5againstcontrol, primarymedian−.064596722. Reject/closeroutewithoutautomaticrescue. Extra-updatesandresetcoupled; notprooflongertrainingalonecausedgainorallpretrainingfails. Verified249registration+371member+20checkpoint+60candidateCSV+20parentreferencehashes;54recordedcontracts/20repeatabilitycasespass. RootauditsavedJSON/hashbytesonly,no newtests/model/scorerrunsorarrayloading. Recordedstages5h45m22notfullwalltime/RAM. Source experiments/tcn-pretrain-2026-11-11/result-review.md/result-audit.json andperarmreports. Productionunchanged/targetunknown/sealeduntouched. Finiteimprovementcomparisoncomplete; actualwinnerreleasequalificationpending. Goals.55robust/.60stretchareaspirationsnotgateorforecast.
 
 November12releasepreparation: specification docs/winner-delivery-qualification-2026-11-12.md identifies pendingexplicitfive-matchfinalfitandcorrect40k-resetrotationexporter. No runtimequalification/targetCSVyet. Reachablehistoryasset-signaturescan atHEAD1f77c7a covered154commits/1084blobs with0findings; limitationsandpath/commit-onlyreport docs/history-assets-2026-11-12.json. No externalpush/historyrewrite.
+
+## November 12 — Winning-recipe qualification implementation
+
+The best eligible development recipe remains the original motion TCN trained for20k supervised updates, reset Adam and supervised window/view RNGs, then20k more updates; equal original/180-degree probability averaging and decoder16. Mean spellF1 .632870845clean/.497549978target-like corrupted is evidence from the five reused development matches, not target accuracy or independent sealed validation. Production remains CatBoost16.
+
+New registered entrypoints are `scripts/audit_tcn_winner_slots.py`, `scripts/fit_tcn_winner.py` and `scripts/export_tcn_winner.py`. Their protocols are under experiments/tcn-winner-slot-audit-2026-11-12/ and experiments/tcn-winner-release-2026-11-12/. No legacy locked experiment source or official scorer was changed. The old53-match CatBoost-blend exporter cannot export this winner.
+
+Run the external-only diagnostic first and review its parent reconstruction, numerical controls and identity sensitivity. Only afterward use the explicit five-IDSSE final fit: no PFF or protected matches, no target training, exact two-fit repeatability and source/input binding. All-five fitting produces the release artifact and supplies no held-out quality score. Exact recipe and source review are documented in docs/tcn-winner-qualification-review-2026-11-12.md. The final artifact does not yet exist.
+
+After a reviewed successful fit, the regeneration command is:
+
+```sh
+PYTHONPATH=src:scripts data/gru-env/bin/python scripts/export_tcn_winner.py \
+  --manifest models/tcn-winner-release/manifest.json \
+  --output data/competition/tcn-winner-local --acknowledge-slot-risk
+```
+
+This command has not run. It validates the official format, class/core order, frame index andX handling; requires original/rotation reload probabilities and first/reload/batch4 CSV bytes to agree; and records hashes plus label-free prediction aggregates privately. It performs no target scoring or automatic production promotion. Current final-model/target-output hashes are pending execution.
+
+Installed Python3.13.15/Darwin/arm64 metadata and all29 distribution versions are recorded in the release environment snapshot/lock. Declared licence fields and installed licence-file hashes appear in dependency-license-metadata.json; this supplements the earlier dependency/source citations and is not an independent legal clearance. No new external training data, pretrained weights or model licence is introduced. Version pins do not lock binary wheel bytes or every OS/numerical-library detail.
+
+User-run instructions separate the original-environment repeated fit from frozen-model inference in a fresh pinned environment/fresh local clone. The latter reuses authorized private inputs and checkpoints; it does not establish a raw-data or full-training rebuild. Both fresh-environment claims remain unverified. Tests/imports/compilation/training/inference/scoring have not been executed by the assistant; docs/tcn-winner-verification-status-2026-11-12.md records these limits. The temporal slot-identity assumption remains unresolved even if format and byte checks pass. Once-only sealed evaluation remains November16; poor results trigger investigation, never tuning. Target-match accuracy is unknown.

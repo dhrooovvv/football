@@ -79,7 +79,7 @@ workspace:
   findings: findings.md
   technical_document: docs/technical-report.md
   next_step_plan: docs/metric-improvement-plan-2026-11-11.md
-next_action: Qualify audited staged40k supervised rotation TCN; prepare correct final-fit/export and serving checks; finite improvement comparison closed.
+next_action: User runs registered current-winner slot diagnostic, then review before five-match final fit and private export; finite quality search remains closed.
 
 open_model_audit:
   date: '2026-11-08'
@@ -306,7 +306,7 @@ best_development_candidate:
   repeatability_cases_passed: 10
   clean_environment_verified: false
   target_integration_verified: false
-  next_action: preregister_actual_winner_final_fit_and_release_qualification
+  next_action: user_slot_diagnostic_then_review_final_fit_and_export
   production_changed: false
 
 fixed_blend_result:
@@ -988,9 +988,9 @@ development_goals:
 winner_delivery_preparation:
   date: '2026-11-12'
   specification: docs/winner-delivery-qualification-2026-11-12.md
-  status: specification_prepared_runtime_pending
+  status: implemented_preregistered_user_run_pending
   existing_exporter_compatible: false
-  final_fit_five_match_entrypoint_exists: false
+  final_fit_five_match_entrypoint_exists: true
   neural_target_csv_generated: false
   history_asset_scan: docs/history-assets-2026-11-12.json
   history_commits_scanned: 154
@@ -998,6 +998,31 @@ winner_delivery_preparation:
   history_signature_findings: 0
   history_scope: reachable_local_refs_at_recorded_HEAD_only
   external_push_performed: false
+  slot_diagnostic_protocol: experiments/tcn-winner-slot-audit-2026-11-12/protocol.md
+  slot_diagnostic_command: scripts/audit_tcn_winner_slots.py --run
+  final_fit_command: scripts/fit_tcn_winner.py --run --acknowledge-slot-risk
+  exporter: scripts/export_tcn_winner.py
+  release_protocol: experiments/tcn-winner-release-2026-11-12/protocol.md
+  source_review: docs/tcn-winner-qualification-review-2026-11-12.md
+  verification_status: docs/tcn-winner-verification-status-2026-11-12.md
+  reproduction_instructions: docs/run-tcn-winner-reproduction.md
+  full_environment_distribution_pins: 29
+  slot_registration_file_count: 211
+  release_registration_file_count: 190
+  prepared_compact_members_byte_verified: 35
+  inherited_source_fingerprints_unchanged: 145
+  registration_report: docs/tcn-winner-registration-2026-11-12.json
+  diagnostic_new_contracts_supplied: 9
+  release_new_contracts_supplied: 7
+  source_review_blockers_remaining: 0
+  slot_diagnostic_executed: false
+  final_fit_executed: false
+  new_contract_tests_executed: false
+  frozen_model_clean_environment_verified: false
+  frozen_model_fresh_clone_verified: false
+  full_training_clean_environment_verified: false
+  human_diagnostic_review_required_before_fit: true
+  existing_lomo_guard_unchanged: true
 
 post_40k_decision:
   date: '2026-11-12'
