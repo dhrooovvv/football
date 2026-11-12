@@ -1116,3 +1116,9 @@ winner_export_result:
   fresh_clone_verified: false
   target_accuracy: unknown
   production_changed: false
+
+paper_error_mechanism_review:
+  date: '2026-11-12'
+  report: docs/papers-to-spell-improvements-2026-11-12.md
+  new_experiment_registered: false
+  target_accuracy: unknown
