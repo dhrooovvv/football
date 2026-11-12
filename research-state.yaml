@@ -1091,4 +1091,4 @@ final_fit_registration_correction:
   cause: missing_required_config_fingerprint
   failure_before_tests_and_training: true
   recipe_changed: false
-  status: reference_classification_corrected_static_prerequisite_review_pending
+  status: reference_classification_corrected_full_static_review_complete_user_retry_pending
