@@ -15,7 +15,7 @@
   "new_contracts_supplied": 14,
   "expected_checks_per_arm": 68,
   "new_contracts_executed": false,
-  "protocol_commit": "pending local preregistration",
+  "protocol_commit": "13034e0fbfc7008e811bbd5e230e63a9334c0bbd",
   "hardware_inventory": {
     "ram_bytes": 19327352832,
     "physical_cores": 11,
@@ -28,5 +28,12 @@
   "attention_runtime_measured": false,
   "user_execution_only": true,
   "quality_budget_extension": "two fixed candidates, no automatic combination/sweep",
-  "target_accuracy": "unknown"
+  "target_accuracy": "unknown",
+  "post_commit_code_file_fingerprints_verified": 151,
+  "registration_committed_bytes_verified": true,
+  "all_required_parent_paths_present": 50,
+  "installed_distribution_metadata_matches": 29,
+  "membership_static_review_passed": true,
+  "reference_code_classification_disjoint": true,
+  "project_runtime_execution": false
 }

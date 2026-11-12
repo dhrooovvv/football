@@ -1151,6 +1151,11 @@ bounded_parallel_extension:
   source_review: docs/tcn-parallel-review-2026-11-12.md
   registration_report: docs/tcn-parallel-registration-2026-11-12.json
   registration_file_count: 228
+  protocol_registration_commit: 13034e0
+  committed_source_file_fingerprints_verified: 151
+  mandatory_source_paths_present: 21
+  mandatory_parent_paths_present: 50
+  installed_distribution_metadata_versions_verified: 29
   new_contracts_supplied: 14
   expected_contracts_per_arm: 68
   tests_executed_by_assistant: false
