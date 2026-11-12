@@ -1012,6 +1012,9 @@ winner_delivery_preparation:
   prepared_compact_members_byte_verified: 35
   inherited_source_fingerprints_unchanged: 145
   registration_report: docs/tcn-winner-registration-2026-11-12.json
+  protocol_registration_commit: 1c544b7
+  unique_registered_files_byte_verified: 239
+  tracked_registered_files_commit_verified: 169
   diagnostic_new_contracts_supplied: 9
   release_new_contracts_supplied: 7
   source_review_blockers_remaining: 0

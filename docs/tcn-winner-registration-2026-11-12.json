@@ -22,8 +22,11 @@
   "tests_executed": false,
   "project_modules_imported": false,
   "array_checkpoint_or_target_rows_loaded_into_context": false,
-  "commit_binding": "must be verified against local commit before command handoff",
+  "commit_binding": "verified against the recorded local registration commit; later journal-only commits do not change fingerprints",
   "runtime_verification": "not performed",
   "production_changed": false,
-  "target_accuracy": "unknown"
+  "target_accuracy": "unknown",
+  "protocol_registration_commit": "1c544b78874d8b40e3e0e3f0ef5de547e6816a70",
+  "unique_registered_files_byte_verified": 239,
+  "tracked_registered_files_commit_verified": 169
 }
