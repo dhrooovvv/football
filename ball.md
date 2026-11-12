@@ -1485,3 +1485,7 @@ Private evidence data/competition/tcn-target-structure/{result-audit.json,result
 
 ### J113 — 2026-11-12 — Final-fit registration failure corrected before training
 User reports error. Private failure record says Incomplete release source lock. Source inspection identifies missing configs/competition.json fingerprint; source guard correctly refused before contracts/training. Preserved failure in experiments/tcn-winner-release-2026-11-12/registration-failure-2026-11-12.json. Added unchanged config byte hash and protocol correction, rehashed registration and inspected required source paths without importing/executing project modules. All191release fingerprints agree. Model, seeds, budget, membership, decoder, promotion and freeze rules unchanged. No tests/training run by assistant; user retry after correction commit. Prior audit checked supplied hashes but failed to detect omitted required membership; this was a registration preparation error.
+
+
+### J114 — 2026-11-12 — Reported retry error has no fresh saved failure
+User reports another error. Existing last-failure timestamp12:23:40IST predates correction commit e6e561d at12:48:49IST; no release checks log exists. Static source inspection finds all required source paths present in corrected registration. Cannot identify a new error from the old failure record. Request actual terminal output before further changes or retry. No project execution, training, recipe change or repeated blocked run.
