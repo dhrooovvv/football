@@ -13,6 +13,9 @@
   "tests_executed": false,
   "model_inference_executed": false,
   "target_geometry_aggregation_executed": false,
-  "protocol_commit": "pending local registration commit",
-  "target_accuracy": "unknown"
+  "protocol_commit": "7636faa3bbf6a9942509e89b98e0122c2d3c33b7",
+  "target_accuracy": "unknown",
+  "post_commit_unique_files_byte_verified": 42,
+  "tracked_registered_files_commit_verified": 20,
+  "assistant_project_execution": false
 }

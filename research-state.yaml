@@ -1047,6 +1047,9 @@ target_structure_qualification:
   source_fingerprints: 14
   geometry_data_fingerprints: 22
   stress_evidence_fingerprints: 5
+  protocol_registration_commit: 7636faa
+  registered_files_plus_lock_byte_verified: 42
+  tracked_registered_files_commit_verified: 20
   prepared_geometry_members_byte_verified: 15
   target_rows_read_into_context: false
   aggregation_executed: false
