@@ -1651,3 +1651,7 @@ Registration inheritsapprovedsource/data/environmentpins and bindscommittedrevie
 Bselectedunderagreedmediangateonly;Aremainshighercorruptedmean(.513496vsB.509836),bothpreserved,productionandoldprivateexportsunchanged. FinalallfivefitwilladdNOindependentqualityscore. Laterprivateexport/officialvalidator/repeatCSV/cleanenvironment/freshclone andonce-onlysealedNov16remainpending. Oldoriginalfinalfit/exportcommandsnotvalidforthisnewrecipe.13newcontractssuppliedUNEXECUTED;nostaticreviewclaimofruntimecertification. Rootperformsmetadata/bytehashpreparationonly; no tests/imports/compile/models/scorer/arrays/rows executed/read. Commitprotocol/source/inputs beforeuserexecution;resultsseparate. Noautofollow-upexperiments,push/publication/submission.
 
 J127 finalfitprotocolcommitted 149f21e:383registrationentries(295inherited+10newcode+78newevidence) bytechecked,11newcommittedsource/inputpathsverified;13newcontracts/104expectedremainUNEXECUTED. registration-preparation.json recordshashes. Usermayrunnewfitcommand;nooldreleasefilechanges.
+
+
+### J128 — 2026-11-13 — Reported final run completion lacks saved evidence
+User saysdone; read-onlyinspection finds no models/tcn-final-b directory/manifest/memberproofs and no newexperiment evaluation/failureoutputs. Cannotverify finalfitcompletion or inferfailurecause. No tests/imports/models/scoring/rerun; request actualterminalcommand/output before retry. ExistingA/Bresults andsource/protocolunchanged; noexport orproductionchange.

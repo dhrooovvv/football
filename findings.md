@@ -361,3 +361,5 @@ November13 TrialA accepted:91usercontracts/exactrepeat/inferenceproofs,295pins/3
 November13 B qualifiesv2 median+.001962/paired+.004976/3wins/macro+.002403, butcorruptedmean declinesA .513496→B .509836;clean .645261→.650385. Aremainshighercorruptedmean;Bprovisionalselectedbyagreedgate,preserveboth. Shortrecall124→133/732butcorruptmissed/spurious/deadliveworse.295pins/443uniquehashes/91loggedcontracts;nouserruntime rerunbyassistant. Two-trialroundcomplete;nextfinalartifactrecipe+deliveryqualification,nofurtherexperiments.
 
 November13 approved finalBartifact preparation: exactfive permittedIDSSE,twoseedsx2repeatfits,unchangedshort_mix/segmentloss40krecipe. Newrunner scripts/fit_tcn_final_b.py and docs/run-tcn-final-b.md;13newcontracts UNEXECUTED,104expectedwithinherited. Separatelockedidentity/source/evidence/storage accounting;nofinalfit/inference/exportrun. Bmediangatechoice/Ahighercorruptmeanpreserved;productionunchanged,targetunknown.
+
+November13 reportedfinalcompletionunverified: expectedfinalBmodel/manifest/evaluationoutputabsent. Needactualterminaloutput; do notinfertrainingcompleted orautomaticallyrerun.

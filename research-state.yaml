@@ -1275,3 +1275,9 @@ final_trial_b_artifact_2026_11_13:
   production_changed: false
   sealed_opened: false
   target_accuracy: unknown
+
+final_b_completion_check_2026_11_13:
+  status: expected_artifacts_absent_need_terminal_output
+  completion_verified: false
+  rerun_started: false
+  production_changed: false
