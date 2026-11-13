@@ -1655,3 +1655,12 @@ J127 finalfitprotocolcommitted 149f21e:383registrationentries(295inherited+10new
 
 ### J128 — 2026-11-13 — Reported final run completion lacks saved evidence
 User saysdone; read-onlyinspection finds no models/tcn-final-b directory/manifest/memberproofs and no newexperiment evaluation/failureoutputs. Cannotverify finalfitcompletion or inferfailurecause. No tests/imports/models/scoring/rerun; request actualterminalcommand/output before retry. ExistingA/Bresults andsource/protocolunchanged; noexport orproductionchange.
+
+
+### J129 — 2026-11-13 — Final Trial-B two-member artifact completed and audited
+
+AfterclarificationpreviouscommandwasTrialB,usernowcompletesactualfinalrunner. Bothseedmembers20261106/7each40kwithrepeatfit=4fits exactlyfivepermittedIDSSE. Saved104contractspass,exactfulltrainingrepeatandactualinmemory/reloadedstateproofs recorded. Rootindependentlyverifies383registeredentries,177committedsourceinputfiles,392uniquebytehashes including4checkpoint+2proof+checks. No modeldeserialization/projectimports/tests/compile/inference/scorer/rows byroot. Audit experiments/tcn-final-b-2026-11-13/final-fit-result-audit.json; review final-fit-review.md.
+
+ManifestSHA c57c55fe77c2808efbf3e72cf51df801d869a399221202ec8136eb414cf14d2f. Seed20261106firstSHA6c35dc2cb9fc461f95ede834b05eaadc8e3ea2254a594791feadad6c3ed8970b;seed20261107firstSHA7291480ab86fdbfb2c83f61abbdbd609fd40a8323601dee3d33c8278096062e6. Bothpairedfitelapsed~2200.658s(~36m41s);sum4401.317snotconcurrentwall. Privateweights/manifestremainlocal. HistoricalabsentoutputcheckJ128resolvedbynewactualrunnerexecution,nofailurepatchneeded.
+
+All-fiveartifactfitaddsNOnewqualityscore. Bdevelopment .650384708clean/.509835640corrupt unchanged;A .513496193highercorruptmean preserved. Productionandoldexportsunchanged,targetunknown,sealeduntouched. Nextpreparemanifest-awaretwo-memberprivateexport/validator/repeatCSVcommand;noneimplemented/runinthisaudit. Cleanenv/freshclone/once-onlysealedNov16 remain. No newexperiments/downloads/push/publication/submission. Userownsallruntime.

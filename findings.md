@@ -363,3 +363,5 @@ November13 B qualifiesv2 median+.001962/paired+.004976/3wins/macro+.002403, butc
 November13 approved finalBartifact preparation: exactfive permittedIDSSE,twoseedsx2repeatfits,unchangedshort_mix/segmentloss40krecipe. Newrunner scripts/fit_tcn_final_b.py and docs/run-tcn-final-b.md;13newcontracts UNEXECUTED,104expectedwithinherited. Separatelockedidentity/source/evidence/storage accounting;nofinalfit/inference/exportrun. Bmediangatechoice/Ahighercorruptmeanpreserved;productionunchanged,targetunknown.
 
 November13 reportedfinalcompletionunverified: expectedfinalBmodel/manifest/evaluationoutputabsent. Needactualterminaloutput; do notinfertrainingcompleted orautomaticallyrerun.
+
+November13 finalBensembleactualfitcomplete:2seedsx2exactfits/104loggedcontracts/reloadproofs,383pins/177committedsourceinputs/392bytehashesaudited. ManifestSHA c57c55fe77c2808efbf3e72cf51df801d869a399221202ec8136eb414cf14d2f;~36m41sperseedpair,nonewqualityscore. Neednewmanifest-awareexportcommand,officialvalidator/CSV/cleanenv/sealeddeliverychecks;productionunchanged,targetunknown. J128absentevidenceresolved.

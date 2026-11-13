@@ -391,3 +391,8 @@ B completes20fits and91loggedcontracts,exactrepeat/reloadbatchproofs; rootbyte/m
 ## November 13 — Final selected B ensemble preparation
 
 Userauthorizesexactfive-development-matchfinalfitofB,twoseeds/twoexactrepeats=4fits160kupdates. Newrunner scripts/fit_tcn_final_b.py,protocol experiments/tcn-final-b-2026-11-13/protocol.md,command docs/run-tcn-final-b.md. CopiedtraininglooppreservesBsampler/loss/optimizer/RNG/budget;finalidentityrejectssealed/PFF/fourmatchinputs. Finalmanifestwillbindbothmembers/repeatproofs,environment/recipe/source/datahashes;noneproducedyet.13newcontracts/104expectedtotal UNEXECUTED;independentstaticreviewonly. No newdependencies/licences/downloads. Combinedartifact2GiB/12GiBfloor inherited,CPUone-threadtwoworkers. Nofinalqualityscore,targetunknown,productionunchanged;A highercorruptmean preserved. Finalexport/officialvalidator/byteproofs/cleanenv/freshclone/once-onlysealedfreezeNov16stillpending.
+
+
+## November 13 — Final Trial-B ensemble fit completed
+
+Actual finalrunner finishes2membersx2exactfits/104loggedcontracts withstate-reloadproofs onexactfivepermittedmatches. Rootaudit383pins/177committedsourceinputs/392uniquehashes,withoutloadingmodels/rows orrunningtests/inference. PrivatefinalmanifestSHA c57c55fe77c2808efbf3e72cf51df801d869a399221202ec8136eb414cf14d2f;details experiments/tcn-final-b-2026-11-13/final-fit-result-audit.json andfinal-fit-review.md. No newqualityscore;development B65.04%clean/50.98%corrupt,A51.35%corrupt remains highermean. Newensembleprivateexportcommandstillneedsimplementation;officialvalidator/twoCSV/cleanenv/freshclone/once-onlysealedfreezeNov16pending. Production/oldexportsunchanged,targetunknown.

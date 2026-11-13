@@ -1258,7 +1258,7 @@ trial_b_review_2026_11_13:
   target_accuracy: unknown
 
 final_trial_b_artifact_2026_11_13:
-  status: prepared_preregistered_runtime_unexecuted
+  status: final_fit_complete_audited_export_pending
   protocol: experiments/tcn-final-b-2026-11-13/protocol.md
   commands: docs/run-tcn-final-b.md
   manifest_path: models/tcn-final-b/manifest.json
@@ -1270,7 +1270,7 @@ final_trial_b_artifact_2026_11_13:
   supplied_new_contracts: 13
   expected_contracts_total: 104
   quality_evaluation_performed: false
-  user_runtime_pending: true
+  user_runtime_pending: false
   export_prepared: false
   production_changed: false
   sealed_opened: false
@@ -1281,3 +1281,18 @@ final_b_completion_check_2026_11_13:
   completion_verified: false
   rerun_started: false
   production_changed: false
+
+final_b_fit_audit_2026_11_13:
+  status: complete_verified_saved_evidence
+  audit: experiments/tcn-final-b-2026-11-13/final-fit-result-audit.json
+  manifest_sha256: c57c55fe77c2808efbf3e72cf51df801d869a399221202ec8136eb414cf14d2f
+  user_logged_contracts: 104
+  fit_count: 4
+  unique_byte_hashes_verified: 392
+  previous_missing_artifact_check_resolved: true
+  new_quality_score: false
+  export_prepared: false
+  private_export_completed: false
+  assistant_runtime_execution: false
+  production_changed: false
+  target_accuracy: unknown

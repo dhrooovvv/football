@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-13",
+  "method": "stdlib metadata and byte hashes only; no project imports/tests/model/scoring/CSVrows",
+  "manifest_sha256": "c57c55fe77c2808efbf3e72cf51df801d869a399221202ec8136eb414cf14d2f",
+  "registered_fingerprints_verified": 383,
+  "committed_source_inputs_verified": 177,
+  "unique_files_byte_verified": 392,
+  "logged_contracts": 104,
+  "member_count": 2,
+  "fit_count": 4,
+  "fits_repeated_exact_recorded": true,
+  "state_reload_exact_recorded": true,
+  "sum_member_seconds": 4401.316526456969,
+  "member_seconds": {
+    "20261106": 2200.658103665919,
+    "20261107": 2200.65842279105
+  },
+  "quality_evaluation_performed": false,
+  "production_changed": false,
+  "private_export_completed": false,
+  "target_accuracy": "unknown"
+}
