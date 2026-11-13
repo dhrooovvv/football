@@ -26,7 +26,10 @@ production:
 promotion:
   paired_clean_corrupted_mean_spell: positive_median_and_majority_improve
   paired_macro_median_delta_minimum: -0.01
-  corrupted_spell_median_delta_minimum: 0.01
+  corrupted_spell_median_delta_rule: strictly_positive
+  version: positive_median_v2
+  previous_primary_minimum: 0.01
+  amendment_date: '2026-11-13'
   tests_required: true
   stop_track_after_consecutive_failures: 3
 tracks:
@@ -296,18 +299,21 @@ tcn_long_run:
   production_changed: false
 
 best_development_candidate:
-  selected: staged40k_supervised_TCN_rotation_penalty16
-  status: quality_eligible_not_production_promoted
-  mean_clean_spellF1: 0.6328708454621595
-  mean_corrupted_spellF1: 0.49754997776865695
-  primary_median_delta: 0.026049299698361117
-  matches_improved: 5
-  tests_passed: 54
+  selected: two_seed_original_motion_TCN_rotation_penalty16
+  status: provisional_quality_eligible_policy_v2_not_production_promoted
+  mean_clean_spellF1: 0.6338720058536451
+  mean_corrupted_spellF1: 0.506191098528019
+  primary_median_delta: 0.0077305666699864495
+  paired_median_spell_delta: 0.007742858518512086
+  paired_median_macro_delta: 0.002279352340523788
+  matches_improved: 3
+  tests_passed: 68
   repeatability_cases_passed: 10
   clean_environment_verified: false
   target_integration_verified: false
-  next_action: user_private_export_then_review_and_reproduction
+  next_action: user_trial_a_after_committed_registration
   production_changed: false
+  target_accuracy: unknown
 
 fixed_blend_result:
   status: completed_quality_eligible_verification_pending
@@ -1191,4 +1197,28 @@ parallel_results_review_2026_11_13:
   automatic_followup: false
   sealed_opened: false
   production_changed: false
+  target_accuracy: unknown
+
+missed_possession_trials_2026_11_13:
+  status: implemented_preregistered_runtime_unexecuted
+  protocol: experiments/tcn-missed-2026-11-13/protocol.md
+  commands: docs/run-tcn-missed.md
+  policy: experiments/tcn-missed-2026-11-13/policy-v2.json
+  source_review: docs/tcn-missed-review-2026-11-13.md
+  trial_order: [a_short_spell_exposure, b_segment_soft_iou]
+  fits_per_trial: 20
+  total_updates_per_trial: 800000
+  seeds: [20261106, 20261107]
+  maximum_parallel_workers: 2
+  b_requires_committed_a_review: true
+  new_artifact_budget_bytes: 2147483648
+  minimum_free_bytes: 12884901888
+  downloads_authorized_for_these_trials: false
+  supplied_new_contracts: 23
+  new_contracts_executed: false
+  training_executed: false
+  sealed_opened: false
+  production_changed: false
+  automatic_followup_after_b: false
+  previous_failure_histories_preserved: true
   target_accuracy: unknown

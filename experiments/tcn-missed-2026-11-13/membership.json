@@ -1,0 +1,49 @@
+{
+  "development": [
+    "J03WMX",
+    "J03WN1",
+    "J03WOH",
+    "J03WOY",
+    "J03WPY"
+  ],
+  "supervised_folds": {
+    "J03WMX": [
+      "idsse-J03WN1",
+      "idsse-J03WOH",
+      "idsse-J03WOY",
+      "idsse-J03WPY"
+    ],
+    "J03WN1": [
+      "idsse-J03WMX",
+      "idsse-J03WOH",
+      "idsse-J03WOY",
+      "idsse-J03WPY"
+    ],
+    "J03WOH": [
+      "idsse-J03WMX",
+      "idsse-J03WN1",
+      "idsse-J03WOY",
+      "idsse-J03WPY"
+    ],
+    "J03WOY": [
+      "idsse-J03WMX",
+      "idsse-J03WN1",
+      "idsse-J03WOH",
+      "idsse-J03WPY"
+    ],
+    "J03WPY": [
+      "idsse-J03WMX",
+      "idsse-J03WN1",
+      "idsse-J03WOH",
+      "idsse-J03WOY"
+    ]
+  },
+  "sealed_excluded": [
+    "J03WQQ",
+    "J03WR9"
+  ],
+  "target_excluded": true,
+  "pff_excluded": true,
+  "held_out_excluded": true,
+  "final_fit_enabled": false
+}

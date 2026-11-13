@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-13",
+  "authorization": "User explicitly requested implementation of approved plan, removing only primary +.01 floor",
+  "retrospective": true,
+  "previous_reports_preserved": true,
+  "primary_rule": "median_targetlike_spellF1_delta > 0",
+  "all_other_rules_unchanged": true,
+  "legacy_results_sha256": "e0ec0f4f85155e96d967db1cabf2b01e9d63b3e426db316d69d3cb58815e13d1",
+  "ensemble_gate_v2": {
+    "quality_eligible": true,
+    "existing_gate": true,
+    "primary_median_delta": 0.0077305666699864495,
+    "paired_median_spell_delta": 0.007742858518512086,
+    "paired_median_macro_delta": 0.002279352340523788,
+    "matches_improved": 3,
+    "primary_deltas": {
+      "J03WMX": 0.0077305666699864495,
+      "J03WN1": -0.00975242257814074,
+      "J03WOH": 0.020429673344722232,
+      "J03WOY": 0.017126553483530205,
+      "J03WPY": 0.007671232876712453
+    },
+    "paired_spell_deltas": {
+      "J03WMX": 0.007742858518512086,
+      "J03WN1": -0.0035853784978359116,
+      "J03WOH": 0.021401959408779647,
+      "J03WOY": 0.008062650959537399,
+      "J03WPY": -0.009516387511874003
+    },
+    "paired_macro_deltas": {
+      "J03WMX": 0.003449289382424059,
+      "J03WN1": -0.001606487305318649,
+      "J03WOH": 0.0022623840010682628,
+      "J03WOY": 0.006463257912505238,
+      "J03WPY": 0.002279352340523788
+    },
+    "contracts_passed": true,
+    "repeated_training_exact": true,
+    "production_changed": false,
+    "sealed_opened": false,
+    "target_accuracy": "unknown",
+    "gate_version": "positive_median_v2"
+  },
+  "attention_remains_rejected": true,
+  "provisional_development_candidate": "two_seed_original_motion_TCN_rotation_penalty16",
+  "production_changed": false,
+  "independent_generalization_proven": false,
+  "target_accuracy": "unknown",
+  "baseline_means": {
+    "clean": {
+      "spellF1": 0.6338720058536451,
+      "macroF1": 0.9251719197609267
+    },
+    "targetlike": {
+      "spellF1": 0.506191098528019,
+      "macroF1": 0.8540095675780418
+    }
+  }
+}
