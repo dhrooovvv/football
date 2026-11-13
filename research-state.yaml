@@ -299,19 +299,18 @@ tcn_long_run:
   production_changed: false
 
 best_development_candidate:
-  selected: two_seed_original_motion_TCN_rotation_penalty16
+  selected: two_seed_short_mix_TCN_rotation_penalty16
   status: provisional_quality_eligible_policy_v2_not_production_promoted
-  mean_clean_spellF1: 0.6338720058536451
-  mean_corrupted_spellF1: 0.506191098528019
-  primary_median_delta: 0.0077305666699864495
-  paired_median_spell_delta: 0.007742858518512086
-  paired_median_macro_delta: 0.002279352340523788
+  mean_clean_spellF1: 0.645261040718281
+  mean_corrupted_spellF1: 0.5134961932122118
+  primary_median_delta: 0.011695374371911371
+  paired_median_spell_delta: 0.00530387320148118
+  paired_median_macro_delta: -0.009168188781474185
   matches_improved: 3
-  tests_passed: 68
-  repeatability_cases_passed: 10
+  tests_passed: 91
   clean_environment_verified: false
   target_integration_verified: false
-  next_action: user_trial_a_after_committed_registration
+  next_action: user_trial_b_after_committed_a_review
   production_changed: false
   target_accuracy: unknown
 
@@ -1229,4 +1228,17 @@ dataset_refresh_2026_11_13:
   downloaded_bytes: 0
   file_sizes_verified: false
   requires_label_and_provenance_audit: true
-  trial_a_review_pending: true
+  trial_a_review_pending: false
+
+trial_a_review_2026_11_13:
+  status: accepted_provisionally
+  audit: experiments/tcn-missed-2026-11-13/result-audit-a.json
+  binding: experiments/tcn-missed-2026-11-13/reviewed-a.json
+  sampler_for_b: short_mix
+  b_parent: a
+  macro_tradeoff: narrowly_passes_paired_median_guard_corrupted_mean_macro_declines
+  user_logged_contracts: 91
+  assistant_runtime_execution: false
+  production_changed: false
+  sealed_opened: false
+  target_accuracy: unknown

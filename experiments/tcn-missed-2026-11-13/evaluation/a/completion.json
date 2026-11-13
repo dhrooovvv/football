@@ -1,0 +1,30 @@
+{
+  "completed": true,
+  "trial": "a",
+  "registration": "ead80137a63fb95aa27c51939b57242a16781d2282c3975841d4673970b62ec7",
+  "trial_signature": "a0337b3689c01f59c708cd2212332a80629d7fba4c560a79d602ac594c9547ce",
+  "binding": {
+    "sampler": "short_mix",
+    "parent_trial": "baseline",
+    "parent_results_sha256": "e0ec0f4f85155e96d967db1cabf2b01e9d63b3e426db316d69d3cb58815e13d1"
+  },
+  "case_count": 10,
+  "contracts_passed": true,
+  "repeated_training_exact": true,
+  "results_sha256": "a2c98ca17794391d8803f03eab6d4056b46ab5aa1ddf3015bc49b8555824ae09",
+  "gate_sha256": "57ac2f8fe387107af302c43b73b400be10b63a6d4c34c0ce968a913d6b611897",
+  "fit_proofs": {
+    "experiments/tcn-missed-2026-11-13/evaluation/a/fits/J03WMX-20261106.json": "fd6de40c929c9aae09272c34d975f44b28aac1f8402fda926460a2fa7ea26e49",
+    "experiments/tcn-missed-2026-11-13/evaluation/a/fits/J03WMX-20261107.json": "a5e4c46c3ffcca18ebec81328e2ba52c3e218b672a1b809896693f4ebc86cb73",
+    "experiments/tcn-missed-2026-11-13/evaluation/a/fits/J03WN1-20261106.json": "07a6df532f36977c1f68867414068d0d4ecb38dc4025288acf4761a6aaa53f8e",
+    "experiments/tcn-missed-2026-11-13/evaluation/a/fits/J03WN1-20261107.json": "e0d511a5cd65be4c4aac477eb947d07cc70bf47a03b922c6473c79d7cf07e677",
+    "experiments/tcn-missed-2026-11-13/evaluation/a/fits/J03WOH-20261106.json": "f858ecf9e953761313985c415c4c12f64925e61abfc56f25b0a19d489c71eacf",
+    "experiments/tcn-missed-2026-11-13/evaluation/a/fits/J03WOH-20261107.json": "4402094f3c064c54861370515c5c51e3f930bed37d0e3176df1d55625ec514e1",
+    "experiments/tcn-missed-2026-11-13/evaluation/a/fits/J03WOY-20261106.json": "124f61854081eb557e4f6d50a2c6757afca1596de88391fb6449a35db5e30b3d",
+    "experiments/tcn-missed-2026-11-13/evaluation/a/fits/J03WOY-20261107.json": "21995831a371118d0649669763bc815b7e2b3d555433e2c63be38fddadd765c6",
+    "experiments/tcn-missed-2026-11-13/evaluation/a/fits/J03WPY-20261106.json": "f60cda0618c8f247c74036ba3b5afd9f61852d4d20a5fd722e109c6560e0489f",
+    "experiments/tcn-missed-2026-11-13/evaluation/a/fits/J03WPY-20261107.json": "c3a0278a195fcfe90926f889183775f82af540c8645d0838f98871581ac9232f"
+  },
+  "production_changed": false,
+  "target_accuracy": "unknown"
+}

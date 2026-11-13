@@ -1,0 +1,9 @@
+{
+  "registration": "ead80137a63fb95aa27c51939b57242a16781d2282c3975841d4673970b62ec7",
+  "reviewed": true,
+  "accepted": true,
+  "sampler": "short_mix",
+  "parent_trial": "a",
+  "parent_results_sha256": "a2c98ca17794391d8803f03eab6d4056b46ab5aa1ddf3015bc49b8555824ae09",
+  "a_completion_sha256": "dea771c2303c62fd760a4de6c446c647f0f34c95c372f64f85e12e8d22a584f7"
+}

@@ -1590,3 +1590,27 @@ J123 preregistration committed52dddb0. Byte-only postcommit audit verifies295reg
 
 ### J124 — 2026-11-13 — Dataset search for missed/short possessions
 Public-source bounded refresh, no downloads or experiments. SkillCorner open data remains strongest conditional extra-provider lead: broadcast tracking, possession information and phases; official repository https://github.com/SkillCorner/opendata and official phase tutorial https://skillcorner.github.io/opendata/notebooks/tutorials/02_Working_with_Game_Intelligence_and_Dynamic_Events/Part7_Pitch_Maps_Tracking_by_Phase_Tutorial/ . Need verify exhaustive H/A/D coverage, observed/extrapolated provenance and exact selected-file sizes before admission; missing phase/null possession cannot become D. No size or gain asserted. IDSSE already has directly relevant possession/alive labels (https://pmc.ncbi.nlm.nih.gov/articles/PMC11787359/); sealed two remain excluded. Existing PFF expansion failures do not justify repeating mixed-provider training. SoccerTrack v2 is an auxiliary GSR/action lead, not verified continuous H/A/D. 2020 Recognizing Events in Spatiotemporal Soccer Data describes ownership/alive labels but usable downloadable licence/size not verified here. No verified new ready-to-train short-spell dataset admitted. A result audit remains pending; do not alter A/B protocol or automatically download/train.
+
+
+### J125 — 2026-11-13 — Trial A complete, accepted with explicit macro tradeoff
+
+User reports run complete; root reviews saved aggregates/byte hashes only and independent reviewer checks arithmetic/errors. Audit result-audit-a.json and reviews result-review-a.md/result-review-a-scientist.md underexperiments/tcn-missed-2026-11-13.295registrationpins/166committedsourceinputfiles/369unique bytehashes pass;20checkpoint hashes, allpredictionCSV/reconstruction/result/loghashes verified. User log records91passingcontracts;10seed/foldproofs record20exact40kfits withbothviewreload/batchCSVproofs. No tests/imports/compile/models/scorer/CSVrows/arrays executed/deserialized byreviewers.
+
+Accept A provisionally: cleanmean spell .633872005854→.645261040718; corrupted .506191098528→.513496193212. Macro clean .925171919761→.924253357882;corrupted .854009567578→.843502464968. Primarymedian+.011695374372,pairedspellmedian+.005303873201,3/5pairedwins,pairedmacromedian-.009168188781 narrowlypasses-.01. Corruptedmeanmacro drop-.010507103 is not the prespecified pairedmedian statistic; do not suppress this tradeoff or changegate. CorruptspellWOY/WPY regress, pairedspellWOH/WPY regress.
+
+|Match|Setting|Parent spellF1|Candidate spellF1|Parent macroF1|Candidate macroF1|
+|---|---|---:|---:|---:|---:|
+|J03WMX|clean|0.597561|0.633636|0.934497|0.933942|
+|J03WMX|targetlike|0.483560|0.519396|0.878624|0.884808|
+|J03WN1|clean|0.573191|0.588800|0.898726|0.899015|
+|J03WN1|targetlike|0.428434|0.443977|0.808180|0.789555|
+|J03WOH|clean|0.708571|0.695979|0.937801|0.937759|
+|J03WOH|targetlike|0.540146|0.551841|0.859262|0.860079|
+|J03WOY|clean|0.648811|0.661614|0.922626|0.918457|
+|J03WOY|targetlike|0.516624|0.514429|0.839782|0.823786|
+|J03WPY|clean|0.641226|0.646277|0.932210|0.932094|
+|J03WPY|targetlike|0.562192|0.537838|0.884201|0.859285|
+
+IoU.5 corruptedmissed1308→1268,spurious564→647,shortrecalled100→124/732,dead/livewrong42828→50889. Cleanmissed1046→972,spurious346→463,short151→189/732,dead/live1719→2386. Recalledcounts inferredfromsavedratios. Short recovery improves, overprediction anddead/liveworsen; aggregate associationnotindependentproof. Sumseedfoldseconds20184.336(~5h36m),notconcurrentwall. Stage exposure/eligibility audited; noauxlossinA.
+
+reviewed-a.json recordsaccepted:true,sampler:short_mix,parent_trial:a withregistration ead80137a63fb95aa27c51939b57242a16781d2282c3975841d4673970b62ec7 andresultSHA a2c98ca17794391d8803f03eab6d4056b46ab5aa1ddf3015bc49b8555824ae09. Commitreview/resultsbeforeB. Bnowauthorizednext underexistingplan,retainsA sampler,changesonlyCE+.1segmentsoftIoU. Userexecutes;none startedbyassistant. Production/exportunchanged,targetunknown,sealeduntouched,freezeNov16preserved. StopafterB;nonewautofollowups.
