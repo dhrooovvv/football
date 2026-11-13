@@ -1543,3 +1543,29 @@ J120 preregistration finalized at13034e0: strict committed-byte equality verifie
 User requests research with skills into comparable metrics and leading technology, especially football. Bounded public-primary-source scoping review saved in literature/cross-sport-segment-benchmarks-2026-11-13.md. ECC market-research and literature-review workflows used; no social scraping engine, exhaustive-review or universal SOTA claim. VIFSS/FACT figure-skating segment-overlap F1 is a close metric family, with incompatible labels/exclusions/thresholds. SoccerNet2026 PAVE is a specific challenge winner using player attention, temporal modelling and diverse variants, but its F1 concerns event points with a confidence threshold and timing tolerance. Li/Link T-GAN football tracking segments tactical phases inside known possessions, using all-overlap IoU; ownership/episode assumptions prevent direct transfer. Sources and limitations in report.
 
 Decision: no external score establishes our ceiling, a winning threshold or an attainable .8. Relational representations and frame/segment reasoning are plausible mechanisms, not evidence of gain here. Finish registered attention/ordered comparisons first; no new protocol, source edit, test, inference, training, scorer run, asset read, model/data download, sealed access, publication or push. Research documents only. Existing best .632870845 clean/.497549978 corrupted remains reused-development evidence; production unchanged, target accuracy unknown. Freeze November16 and stopped tracks/gates unchanged.
+
+
+### J122 — 2026-11-13 — Both parallel experiments completed; neither promoted
+
+User reports attention complete and requests comparison of both arms. Saved completion/fold/result/log evidence agrees; stdlib-only root review verifies228registration entries,151committed sources,35compact members and378unique file hashes including checkpoints and CSVs without deserializing arrays/models or reading frame rows. Both user logs report68contracts passed; exact repeated fits and both-view reload/batch4 proofs recorded. Common registration d37699a46bffcd4e77afa2d32ce473d866b2dd0c5a69685e5f26252a7a8b8029; locked sources unchanged despite intervening docs HEAD. Audit/result review experiments/tcn-parallel-2026-11-12/result-review-2026-11-13.{json,md}. No assistant tests/imports/inference/scorer/training.
+
+Preregistered ordered aggregate comparison: attention fails against parent, therefore ensemble compares against parent and fails too. Attention mean clean/corrupt spell .631785195/.493400419 vs parent .632870845/.497549978; macro .924987520/.828407615 vs .925899545/.848142823. Corrupted median delta -.000205388, paired spell median+.004189586,3/5wins, paired macro median-.010357389: fails primary+.01 and macro>=-.01. Ensemble mean spell .633872006/.506191099, macro .925171920/.854009568; corrupted median+.007730567, paired spell+.007742859,3/5wins, macro+.002279352: earlier gate passes but primary+.01 fails. Do not promote by mean or relax gate post hoc. Original development winner retained, production unchanged. Official finalizer remains user-owned/unexecuted; this is independent saved-aggregate decision arithmetic.
+
+Per-match clean and target-like corrupted spellF1/macroF1 (same splits, seeds and budget):
+
+| Match | Setting | Parent spell / macro | Attention spell / macro | Ensemble spell / macro |
+|---|---|---:|---:|---:|
+| J03WMX | clean | 0.589806 / 0.932604 | 0.594921 / 0.929533 | 0.597561 / 0.934497 |
+| J03WMX | targetlike | 0.475829 / 0.873619 | 0.465049 / 0.848780 | 0.483560 / 0.878624 |
+| J03WN1 | clean | 0.570609 / 0.898676 | 0.584690 / 0.904283 | 0.573191 / 0.898726 |
+| J03WN1 | targetlike | 0.438186 / 0.811443 | 0.437981 / 0.785121 | 0.428434 / 0.808180 |
+| J03WOH | clean | 0.686197 / 0.937640 | 0.686364 / 0.935591 | 0.708571 / 0.937801 |
+| J03WOH | targetlike | 0.519716 / 0.854898 | 0.530191 / 0.848184 | 0.540146 / 0.859262 |
+| J03WOY | clean | 0.649812 / 0.923844 | 0.650310 / 0.926618 | 0.648811 / 0.922626 |
+| J03WOY | targetlike | 0.499497 / 0.825637 | 0.507379 / 0.816442 | 0.516624 / 0.839782 |
+| J03WPY | clean | 0.667930 / 0.936735 | 0.642641 / 0.928914 | 0.641226 / 0.932210 |
+| J03WPY | targetlike | 0.554521 / 0.875117 | 0.526402 / 0.843511 | 0.562192 / 0.884201 |
+
+Corrupted IoU.5 missed parent/attention/ensemble1312/1333/1308, spurious645/605/564, short recalled104/103/100 of732 inferred from saved recall ratios; dead/live wrong46568/63730/42828. Ensemble mainly reduces spurious spells and does not recover short-spell recall; attention worsens dead/live robustness. These are associations, not causal proofs or target metrics. Sum recorded fold times52967.832s attention (~14h43m) versus11241.303s ensemble (~3h07m), not total concurrent wall/peakRAM.
+
+Both fixed alternatives rejected; bounded exception exhausted, historical stops preserved, no automatic variants or combined model. Current eligible original40kTCN .632870845clean/.497549978corrupted unchanged. Further experiment needs separately authorized distinct error-targeted protocol; cleanenv/freshclone and once-only sealedNov16 remain. No sealed/publiclabel/target read, no source edits, new runs, publication, push or submission. Target accuracy unknown.
