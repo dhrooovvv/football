@@ -1256,3 +1256,22 @@ trial_b_review_2026_11_13:
   production_changed: false
   sealed_opened: false
   target_accuracy: unknown
+
+final_trial_b_artifact_2026_11_13:
+  status: prepared_preregistered_runtime_unexecuted
+  protocol: experiments/tcn-final-b-2026-11-13/protocol.md
+  commands: docs/run-tcn-final-b.md
+  manifest_path: models/tcn-final-b/manifest.json
+  training_membership: exactly_five_permitted_IDSSE_development_matches
+  initialization_seeds: [20261106, 20261107]
+  fits: 4
+  updates_per_fit: 40000
+  maximum_parallel_workers: 2
+  supplied_new_contracts: 13
+  expected_contracts_total: 104
+  quality_evaluation_performed: false
+  user_runtime_pending: true
+  export_prepared: false
+  production_changed: false
+  sealed_opened: false
+  target_accuracy: unknown

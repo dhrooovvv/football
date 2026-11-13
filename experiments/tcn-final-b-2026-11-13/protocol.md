@@ -1,0 +1,23 @@
+# Final Trial B two-seed ensemble — November 13, 2026
+
+User explicitly approves final artifact preparation after A/B review. This is NOT a new quality experiment and produces no new accuracy score. Trial B was selected by the unchanged positive-median v2 gate, despite lower corrupted mean(.509835640) than A(.513496193). Preserve A, production CatBoost and all earlier export/quality evidence. No training selection from target/public/sealed labels; no automatic production switch or external publication/submission. All tests/import checks/compilation/training/inference/scoring remain USER-RUN.
+
+## Exact membership and recipe
+
+Train from scratch on exactly ordered IDSSE J03WMX,J03WN1,J03WOH,J03WOY,J03WPY. No held-out field in final identity; all five permitted development matches are now training data. Exclude sealed J03WQQ/J03WR9, all PFF, target and any new provider. Immutable compact member hashes and original source/environment locks inherited from approved trials; no prepared data rebuilt/copied. B registration, accepted reviewed-b.json, reviewed-A binding, results,checks,fit proofs/checkpoint/CSV hashes are reverified before execution. Prior actual-target structure audit limitations remain; do not infer stable identities or targetaccuracy.
+
+Use two ORIGINAL9701parameter motion TCNs initialized with seeds20261106 and20261107. Perseed40k updates, batch8, Adam.001,clip1,float32:20k then resetAdam/window/view/sampler RNG then20k. Window250/halo25/core200,windowseed20261106,viewseed20685348,samplerseed20776257, gapviewprobability.5. Same WindowSampler short_mix: .5uniformvalidstarts/.5uniformeligibleH/Aspell<=50frames thenuniformcontainingstart. Same loss CE+.1 mean complete-H/AspellsoftIoU,eps1e-6,immediateadjacentsegment25frameflanks/coreclipping. Reuse locked objectives; new finaltrainer copies B optimization loop, altering only final identity/membership/API/import/log wording. No hyperparameter change, warmstart, extra steps,earlystop or checkpoint selection.
+
+Each seed trains twice exactly;4fits160koptimizerupdates total, two-memberensemble uses only firstfit of eachseed. Repeatfits verify weights/optimizer/allRNG/loss/component/exposure equality; timings excluded. Both finalmodels must match their in-memory and saved/reloaded state. Record coverage,eligibility,realizedsampling/gapviews,loss/component summaries/hashes and checkpoint hashes in member proofs. Finalmanifest binds both weights/repeatproofs, source/data/environment/selectedrecipe and expected inference: eachmemberequaloriginal/180probaverage, thenequalmemberprobaverage, unchangedhalfwiseViterbi16; classorder H/A/D,zeros/ones521scaler. No inference, CSV or score is produced by this fit command.
+
+## Execution, resume and disk
+
+CPU deterministic algorithms,MKLDNNoff, oneintra/inter/numerical thread perprocess; two independent seed workers default, --workers1 serializes identical work. Root configures no Torch; eachworkerconfigures once. All inherited andnewsynthetic contracts run beforefitting. Exactlysameidentityresume from every1000update atomic checkpoint. Master/seedlocks and sharedcompactreaderlock blockduplicates/preprocessingwriters; preservefailures andtimestamps. Interruptstopschildren. Repeatedcommandsverifycompleteproofs ratherthanoverwritecompletedartifact.
+
+Same data/tcn-missed/storage.lock protects oldmissedroots plusnewexperiment/data/modelsroots. Combined<=2GiB,12GiBfreefloor,64MiBatomicwritereserve; no automatic deletion. Streamedlogs are expectedsmall,notOSquota; unrelatedappwritesuncontrolled. No downloads,newdependencies,GPUmode or RAMcap. Checktrainingdate eachiteration andwrites; no new training on/afterNovember16 Asia/Kolkata. Deliveryexport/reproduction aftertraining has its own futurecommand; no datebypass authorizedhere.
+
+## Registration and handoff
+
+Commitnewprotocol/source/membership/inputhashes beforeexecution; resultscommitseparate. Log decisions/failures/manifests inball.md andstate/technicalreport. Userruns scripts/fit_tcn_final_b.py --run; outputs models/tcn-final-b/manifest.json andseed/proof.json; logsnewexperiment/evaluation/. Fourfits are onefifth the20fitTrialBwork; observedBsumseedfoldtime~5h52m suggests~70minsummedwork, notwalltimeguarantee. Report actualtiming; no scoregainforecast.
+
+Stopafterfinalfit; rootaudits savedproofs/bytes. Nextprepareprivateexport, officialvalidator, twoidenticalCSVruns+cleanenvironment/freshclone; once-onlysealedcandidate/baselines evaluation remains atNov16freeze with preregisteredbug/transfer interpretation, not tuning or selectingbetweenA/Bbysealedscore. Do not run oldfit/exportcommand ontheseweights: its recipe/manifest supportsdifferentmodel. No public-window score in this fit and no new sealed access. Targetaccuracyunknown.
