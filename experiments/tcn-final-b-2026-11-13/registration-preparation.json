@@ -1,0 +1,16 @@
+{
+  "preregistration_commit": "149f21ec848c61735cb0b963039f98f3cbb5ddb4",
+  "new_code_paths": 10,
+  "new_evidence_paths": 78,
+  "inherited_registered_entries": 295,
+  "total_registered_entries": 383,
+  "committed_new_source_inputs_verified": 11,
+  "protocol_sha256": "dace90098947889301b6d317dac676fbeb8a4e03f7cccdc1eb1e2145781b9961",
+  "inputs_sha256": "c9b837ceb08a45df1f9594e0d8594238265d8a232817d6826f45d0ddb09f58f8",
+  "new_contracts": 13,
+  "expected_total_contracts": 104,
+  "runtime_executed": false,
+  "tests_executed": false,
+  "models_executed": false,
+  "production_changed": false
+}
