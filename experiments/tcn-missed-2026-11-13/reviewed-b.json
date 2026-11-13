@@ -1,0 +1,12 @@
+{
+  "reviewed": true,
+  "accepted_under_registered_gate": true,
+  "selected_trial": "b",
+  "sampler": "short_mix",
+  "loss": "cross_entropy_plus_0.1_segment_soft_iou",
+  "higher_corrupted_mean_trial": "a",
+  "results_sha256": "edaf2779f22c9e5d2d5d0cc8ccdf9bb9c35932d77cdc51a24c9d32a1def98723",
+  "production_changed": false,
+  "authorized_experiment_round_complete": true,
+  "target_accuracy": "unknown"
+}

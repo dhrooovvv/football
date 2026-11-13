@@ -1614,3 +1614,27 @@ Accept A provisionally: cleanmean spell .633872005854→.645261040718; corrupted
 IoU.5 corruptedmissed1308→1268,spurious564→647,shortrecalled100→124/732,dead/livewrong42828→50889. Cleanmissed1046→972,spurious346→463,short151→189/732,dead/live1719→2386. Recalledcounts inferredfromsavedratios. Short recovery improves, overprediction anddead/liveworsen; aggregate associationnotindependentproof. Sumseedfoldseconds20184.336(~5h36m),notconcurrentwall. Stage exposure/eligibility audited; noauxlossinA.
 
 reviewed-a.json recordsaccepted:true,sampler:short_mix,parent_trial:a withregistration ead80137a63fb95aa27c51939b57242a16781d2282c3975841d4673970b62ec7 andresultSHA a2c98ca17794391d8803f03eab6d4056b46ab5aa1ddf3015bc49b8555824ae09. Commitreview/resultsbeforeB. Bnowauthorizednext underexistingplan,retainsA sampler,changesonlyCE+.1segmentsoftIoU. Userexecutes;none startedbyassistant. Production/exportunchanged,targetunknown,sealeduntouched,freezeNov16preserved. StopafterB;nonewautofollowups.
+
+
+### J126 — 2026-11-13 — Trial B qualifies by median gate; corrupted mean regresses
+
+UserreportsBcomplete. Rootmetadata/byteaudit verifies295registeredentries,167committedsource/input/reviewfiles,443uniquebytehashes; A+Bchecks/models/CSVhashproofsagree, no modelstate/rowsread. B20fits/exactrepeats/91loggedcontracts/reloadbatchproofs recorded; committedAreviewextendedBsignature validated, segmentloss/exposurepositive. Independent reviewer agrees arithmetic. No assistanttests/imports/compile/inference/scorer/training. Audit/reviews underexperiments/tcn-missed-2026-11-13/result-audit-b.json,result-review-b.md,result-review-b-scientist.md.
+
+ProvisionallyacceptB underunchangedv2: corruptedmedian+.001962250434,pairedspellmedian+.004976296270,3/5pairedwins,pairedmacromedian+.002403227041. Mean cleanspell .645261040718→.650384708246; corrupted .513496193212→.509835639664 DECLINES-.003660553548. Cleanmacro .924253357882→.926751542100;corrupt .843502464968→.837980557296. Threepositivecorruptmatches andlargerWMX/WOHregressions explainmedian/mean divergence. Do notcallB highestcorruptedmean. Aretainsbestmeancorrupted .513496193212;B selectedbyagreedgateonly,notindependentgeneralization. Preservebothartifacts; no production/exportchange.
+
+|Match|Setting|Parent spellF1|Candidate spellF1|Parent macroF1|Candidate macroF1|
+|---|---|---:|---:|---:|---:|
+|J03WMX|clean|0.633636|0.624036|0.933942|0.932480|
+|J03WMX|targetlike|0.519396|0.483486|0.884808|0.861490|
+|J03WN1|clean|0.588800|0.614756|0.899015|0.905193|
+|J03WN1|targetlike|0.443977|0.452398|0.789555|0.796590|
+|J03WOH|clean|0.695979|0.714674|0.937759|0.941679|
+|J03WOH|targetlike|0.551841|0.543099|0.860079|0.821960|
+|J03WOY|clean|0.661614|0.650614|0.918457|0.922153|
+|J03WOY|targetlike|0.514429|0.516391|0.823786|0.845931|
+|J03WPY|clean|0.646277|0.647843|0.932094|0.932253|
+|J03WPY|targetlike|0.537838|0.553804|0.859285|0.863932|
+
+IoU.5 cleanmissed972→953,spurious463→451,shortrecalled189→198/732,deadlive2386→2315. Corruptmissed1268→1278,spurious647→658,short124→133/732,deadlive50889→54752. Shortcountsinferredfromratios. Segmentobjectiveimprovesshort/cleanqualitybutnotbroadgaprobustness. Sumseedfold21140.793s(~5h52m),notconcurrentwall.
+
+Twoauthorizedtrialscomplete;stopqualityexperiments,nocoef/architecture/seedrescue. reviewed-b.json recordsgateacceptanceandhighermeanA. Nextprepareidenticalrecipefinaltwo-seedartifactrunner,notreuseoldoriginalfinalfitunchanged. Userownsallruntime. Finalcleanenv/freshclone/targetformat+byteproofsandonce-onlysealedNov16 remainpending. Preservefreeze,target/publiclabelprohibition,stoppedtracks. No downloads/publication/push/submission,targetaccuracyunknown.

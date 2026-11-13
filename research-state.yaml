@@ -299,18 +299,20 @@ tcn_long_run:
   production_changed: false
 
 best_development_candidate:
-  selected: two_seed_short_mix_TCN_rotation_penalty16
-  status: provisional_quality_eligible_policy_v2_not_production_promoted
-  mean_clean_spellF1: 0.645261040718281
-  mean_corrupted_spellF1: 0.5134961932122118
-  primary_median_delta: 0.011695374371911371
-  paired_median_spell_delta: 0.00530387320148118
-  paired_median_macro_delta: -0.009168188781474185
+  selected: two_seed_short_mix_segment_iou_TCN_rotation_penalty16
+  status: provisional_selected_by_median_gate_v2_not_production_promoted
+  mean_clean_spellF1: 0.6503847082458226
+  mean_corrupted_spellF1: 0.5098356396639198
+  primary_median_delta: 0.0019622504340451874
+  paired_median_spell_delta: 0.0049762962702910585
+  paired_median_macro_delta: 0.00240322704069329
   matches_improved: 3
   tests_passed: 91
   clean_environment_verified: false
   target_integration_verified: false
-  next_action: user_trial_b_after_committed_a_review
+  higher_corrupted_mean_candidate: trial_a
+  highest_corrupted_mean_this_round: 0.5134961932122118
+  next_action: prepare_identical_recipe_final_two_seed_fit_and_delivery_qualification
   production_changed: false
   target_accuracy: unknown
 
@@ -1238,6 +1240,18 @@ trial_a_review_2026_11_13:
   b_parent: a
   macro_tradeoff: narrowly_passes_paired_median_guard_corrupted_mean_macro_declines
   user_logged_contracts: 91
+  assistant_runtime_execution: false
+  production_changed: false
+  sealed_opened: false
+  target_accuracy: unknown
+
+trial_b_review_2026_11_13:
+  status: qualifies_registered_median_gate_but_corrupted_mean_regresses
+  audit: experiments/tcn-missed-2026-11-13/result-audit-b.json
+  review: experiments/tcn-missed-2026-11-13/reviewed-b.json
+  experiment_round_complete: true
+  automatic_further_experiments: false
+  preserve_trial_a: true
   assistant_runtime_execution: false
   production_changed: false
   sealed_opened: false

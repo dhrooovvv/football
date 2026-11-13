@@ -1,0 +1,31 @@
+{
+  "completed": true,
+  "trial": "b",
+  "registration": "ead80137a63fb95aa27c51939b57242a16781d2282c3975841d4673970b62ec7",
+  "trial_signature": "7cd6e62d8de5e40f96d3b25027a119bfdbde6d74661da7d74998a3ffd0e738d1",
+  "binding": {
+    "sampler": "short_mix",
+    "parent_trial": "a",
+    "parent_results_sha256": "a2c98ca17794391d8803f03eab6d4056b46ab5aa1ddf3015bc49b8555824ae09",
+    "reviewed_a_sha256": "0b7fd28106db2b30db88d45394841ca3f27f6ee2aeff1b729a70b587ebad6645"
+  },
+  "case_count": 10,
+  "contracts_passed": true,
+  "repeated_training_exact": true,
+  "results_sha256": "edaf2779f22c9e5d2d5d0cc8ccdf9bb9c35932d77cdc51a24c9d32a1def98723",
+  "gate_sha256": "6127930ad3f16f89248fd1dc9e2f053aad9b02e0192bfdc62a89f8cc0842d68d",
+  "fit_proofs": {
+    "experiments/tcn-missed-2026-11-13/evaluation/b/fits/J03WMX-20261106.json": "213d8112ad5d963959b0d6d7dc5ee5e40d1d950d0646083485b8f9f499f6658d",
+    "experiments/tcn-missed-2026-11-13/evaluation/b/fits/J03WMX-20261107.json": "079eabb4a1cf8b01a5d3f467796583fc6c3e64a747007d28009655016590db52",
+    "experiments/tcn-missed-2026-11-13/evaluation/b/fits/J03WN1-20261106.json": "018253ed28a143fbbdf3033286c03df6e03616872c07357f6541649d32b2526e",
+    "experiments/tcn-missed-2026-11-13/evaluation/b/fits/J03WN1-20261107.json": "76aa3e554429b047132975771ce54c039642ebc1d20b938da081f4b7e979fac0",
+    "experiments/tcn-missed-2026-11-13/evaluation/b/fits/J03WOH-20261106.json": "79639fe24f58e4bcd769dc441ad42500397d01b86cd73db558d55923f642c735",
+    "experiments/tcn-missed-2026-11-13/evaluation/b/fits/J03WOH-20261107.json": "64426ebcafe5a86f4a07d50fe9ae337281d4898ba86b17879770b30518408004",
+    "experiments/tcn-missed-2026-11-13/evaluation/b/fits/J03WOY-20261106.json": "7ca2d098dcd60465391ec35f5a78262cfa4ca7e95f267a22598a5b13a08af2e7",
+    "experiments/tcn-missed-2026-11-13/evaluation/b/fits/J03WOY-20261107.json": "ab29180a2b496ce4b50d0e7ab3f89bbc4d046e57af189e015a0fa220300df7e3",
+    "experiments/tcn-missed-2026-11-13/evaluation/b/fits/J03WPY-20261106.json": "39915fbc21fe92d217a0eae567260e88a77ec3ef0e698a439d46b20d38cfaa6a",
+    "experiments/tcn-missed-2026-11-13/evaluation/b/fits/J03WPY-20261107.json": "1e30d187bbb89c7a4c45630740f82cde9afaa5df2a95577776a19653802e82f7"
+  },
+  "production_changed": false,
+  "target_accuracy": "unknown"
+}
