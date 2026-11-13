@@ -1,0 +1,18 @@
+{
+  "preregistration_commit": "52dddb08dcd8a8228c7210e2eef3758b85251abb",
+  "date": "2026-11-13",
+  "new_locked_source_paths": 13,
+  "new_locked_evidence_paths": 54,
+  "inherited_locked_paths": 228,
+  "committed_source_and_input_files_verified": 166,
+  "registered_fingerprints_verified": 295,
+  "protocol_sha256": "48e6e733d3e4017294a23c16a2f25aaab0b9bb726d9afc2263378bae6c541526",
+  "inputs_sha256": "5b1316b4fa3ba0e2bbf63240cdc11dec1334adf11052052855685ee3217e95ae",
+  "new_contracts_supplied": 23,
+  "tests_executed": false,
+  "imports_or_compile_executed": false,
+  "models_or_scoring_executed": false,
+  "source_review": "docs/tcn-missed-review-2026-11-13.md",
+  "sealed_opened": false,
+  "production_changed": false
+}
