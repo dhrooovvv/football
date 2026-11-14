@@ -1,0 +1,12 @@
+{
+  "prepared_date": "2026-11-14",
+  "groups": {
+    "code": 7,
+    "evidence": 28
+  },
+  "protocol_sha256": "eb1ea2642ec6b7c696540b4f41676a98abf41da321249f8febfdb9a05f6a677d",
+  "inputs_sha256": "c067e59688168d4e9888b051aa513f4aa23b6a9283af42dcdd18b1866f7de25a",
+  "signature": "29208240388971139a4938b193ece745961b29930ad8f1407208f4c9a7d33914",
+  "parent_signature": "ead80137a63fb95aa27c51939b57242a16781d2282c3975841d4673970b62ec7",
+  "assistant_runtime_execution": false
+}

@@ -365,3 +365,6 @@ November13 approved finalBartifact preparation: exactfive permittedIDSSE,twoseed
 November13 reportedfinalcompletionunverified: expectedfinalBmodel/manifest/evaluationoutputabsent. Needactualterminaloutput; do notinfertrainingcompleted orautomaticallyrerun.
 
 November13 finalBensembleactualfitcomplete:2seedsx2exactfits/104loggedcontracts/reloadproofs,383pins/177committedsourceinputs/392bytehashesaudited. ManifestSHA c57c55fe77c2808efbf3e72cf51df801d869a399221202ec8136eb414cf14d2f;~36m41sperseedpair,nonewqualityscore. Neednewmanifest-awareexportcommand,officialvalidator/CSV/cleanenv/sealeddeliverychecks;productionunchanged,targetunknown. J128absentevidenceresolved.
+
+
+November14 frozen diagnostic and final-B exporter prepared: new scripts/diagnose_tcn_possessions.py and scripts/export_tcn_final_b.py, independently statically reviewed. Diagnostic reproduces archived five-match A/B OOF scores/CSV bytes before explaining missed spells, full-gap exposure and pre-decoder evidence; zero training, no model selection, at most one conditional proposal. Export preserves finaltwo-member recipe, official validator and freshload/batch CSV equality with separate private outputs. All runtime USER RUN and UNEXECUTED; no new quality result. Combined storage guard and freeze preserved. Cleanenv/freshclone and once-onlysealed remain pending;targetunknown. See ball.md J130.
