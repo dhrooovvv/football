@@ -1299,7 +1299,7 @@ final_b_fit_audit_2026_11_13:
 
 
 frozen_diagnostic_and_delivery_2026_11_14:
-  status: implemented_static_review_user_execution_pending
+  status: diagnostic_and_local_export_complete_audited
   diagnostic_runner: scripts/diagnose_tcn_possessions.py
   export_runner: scripts/export_tcn_final_b.py
   diagnostic_cells: 20
@@ -1309,9 +1309,32 @@ frozen_diagnostic_and_delivery_2026_11_14:
   reference: trial_a_unchanged
   new_experiment_authorized: false
   assistant_runtime_execution: false
-  official_validation_completed: false
+  official_validation_completed: true
   clean_environment_completed: false
   fresh_clone_completed: false
   sealed_opened: false
   production_changed: false
+  target_accuracy: unknown
+
+
+frozen_diagnostic_result_2026_11_14:
+  audit: experiments/tcn-diagnostic-2026-11-13/result-audit-2026-11-14.json
+  verified_registered_entries: 76
+  verified_unique_byte_hashes: 194
+  user_logged_checks: 25
+  archived_cells_reproduced: 20
+  leading_issue: long_ball_gaps_without_argmax_spell_match
+  leading_issue_matches: 5
+  corrupted_missed_spells_iou_05: 1278
+  long_gap_exclusive_missed: 535
+  clean_matches_lost_after_corruption: 359
+  lost_intersecting_over_10s_gap: 289
+  proposed_direction: longer_temporal_context
+  new_experiment_approved: false
+  local_export_completed: true
+  local_export_csv_sha256: 3dca80aa3b18a8c8e880b9f26cf1dc4f17a13018df18a2e4b39cf30f7da63463
+  clean_environment_completed: false
+  fresh_clone_completed: false
+  sealed_opened: false
+  assistant_runtime_execution: false
   target_accuracy: unknown

@@ -1,0 +1,20 @@
+{
+  "signature": "29208240388971139a4938b193ece745961b29930ad8f1407208f4c9a7d33914",
+  "completed": true,
+  "results_sha256": "60bbe0a629f9e423e707a9f54550abafef4633824ce91bb4171e2785f31533f7",
+  "report_sha256": "f4d20c66152eb36d9015205ec080d1206a98c2269224d32e2b3f0f56aed63722",
+  "units": {
+    "experiments/tcn-diagnostic-2026-11-13/evaluation/cases/a-J03WMX.json": "8cfe6e52d640ab2bfb5ba1dd64344723af108fe45c02b4ff2036cfbb3b0ac521",
+    "experiments/tcn-diagnostic-2026-11-13/evaluation/cases/a-J03WN1.json": "b3eaf9cedde4b1f3b7667a43ebc222df6058a4c433f5e4bd40031b1f998bec28",
+    "experiments/tcn-diagnostic-2026-11-13/evaluation/cases/a-J03WOH.json": "ea9522e2c1689b2cba8387bea9d5b9bfd4d5406fdebce4ed5fd78a2e1c166d7c",
+    "experiments/tcn-diagnostic-2026-11-13/evaluation/cases/a-J03WOY.json": "c6f58f6c4219b9ffaec077eb842a5bc514910cb430b711611d8c69aa1a17dcf9",
+    "experiments/tcn-diagnostic-2026-11-13/evaluation/cases/a-J03WPY.json": "4958132a7660401eec202ca0cfaf489bbe72c20d4780300a1bd3981e9a411a01",
+    "experiments/tcn-diagnostic-2026-11-13/evaluation/cases/b-J03WMX.json": "c77aa36d5b29c09586ddd2ce944e9f6e24dd5478c8db3a160a83bb05516506c5",
+    "experiments/tcn-diagnostic-2026-11-13/evaluation/cases/b-J03WN1.json": "5c733c7a52b9d52bd68319948e799f83ab391091f404cf738d45e14bcf165755",
+    "experiments/tcn-diagnostic-2026-11-13/evaluation/cases/b-J03WOH.json": "7de1dbe0d27769b9ce26f02ba84b00b5849b542cb750a3a67dc7a5e1c5269c04",
+    "experiments/tcn-diagnostic-2026-11-13/evaluation/cases/b-J03WOY.json": "a61f74581ed288a3aad3dc8d6d5e87fd94c1080a9760694a1e9570e3df3b5705",
+    "experiments/tcn-diagnostic-2026-11-13/evaluation/cases/b-J03WPY.json": "86d563696ed008c4d5e744138553682413299680f1eb60a06f08f2a6b9284baf"
+  },
+  "production_changed": false,
+  "training_performed": false
+}
