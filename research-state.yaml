@@ -1459,3 +1459,22 @@ skillcorner_download_2026_11_14:
   continuous_had_coverage_verified: false
   training_admitted: false
   current_training_protocol_changed: false
+
+graph_hybrid_preflight_2026_11_14:
+  status: correctness_passed_time_budget_ineligible
+  audit: experiments/tcn-hybrid-2026-11-14/graph-preflight-audit.json
+  user_logged_tests: 37
+  cache_arrays_verified: 50
+  zero_parent_csv_proofs: 10
+  unique_byte_hashes_verified: 211
+  worst_seconds_per_update: 0.15111185676505556
+  nominal_development_fit_hours: 16.790206307228395
+  conservative_total_hours: 36.35344243012713
+  remaining_hours_at_preflight: 27.220464301111114
+  observed_process_peak_rss_gib: 2.7962799072265625
+  full_run_eligible: false
+  quality_comparison_completed: false
+  quality_gate_failed: false
+  production_changed: false
+  sealed_opened: false
+  target_accuracy: unknown

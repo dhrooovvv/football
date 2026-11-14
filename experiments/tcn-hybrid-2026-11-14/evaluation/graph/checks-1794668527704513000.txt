@@ -1,0 +1,49 @@
+test_graph_requires_committed_review (test_contract.HybridContractTests.test_graph_requires_committed_review) ... ok
+test_macro_and_majority_guards_remain (test_contract.HybridContractTests.test_macro_and_majority_guards_remain) ... ok
+test_positive_gain_gate_and_exact_tie (test_contract.HybridContractTests.test_positive_gain_gate_and_exact_tie) ... ok
+test_projected_storage_counts_histories_csvs_and_final_fits (test_contract.HybridContractTests.test_projected_storage_counts_histories_csvs_and_final_fits) ... ok
+test_projection_rejects_invalid_measurements (test_contract.HybridContractTests.test_projection_rejects_invalid_measurements) ... ok
+test_reproduction_evidence_required (test_contract.HybridContractTests.test_reproduction_evidence_required) ... ok
+test_serial_final_work_not_divided_by_worker_count (test_contract.HybridContractTests.test_serial_final_work_not_divided_by_worker_count) ... ok
+test_temporal_binding_is_frozen_baseline (test_contract.HybridContractTests.test_temporal_binding_is_frozen_baseline) ... ok
+test_actual_partial_bin_centres_and_means (test_model.ModelTests.test_actual_partial_bin_centres_and_means) ... ok
+test_graph_missing_ball_and_neighbour_ties (test_model.ModelTests.test_graph_missing_ball_and_neighbour_ties) ... ok
+test_graph_pool_permutation_invariance_and_empty_teams (test_model.ModelTests.test_graph_pool_permutation_invariance_and_empty_teams) ... ok
+test_graph_predict_zero_head_and_half_isolation (test_model.ModelTests.test_graph_predict_zero_head_and_half_isolation) ... ok
+test_parameter_counts_and_zero_heads (test_model.ModelTests.test_parameter_counts_and_zero_heads) ... ok
+test_temporal_chunk_matches_replicated_whole_half (test_model.ModelTests.test_temporal_chunk_matches_replicated_whole_half) ... ok
+test_window_grid_is_half_anchored_and_unknown_independent (test_model.ModelTests.test_window_grid_is_half_anchored_and_unknown_independent) ... ok
+test_zero_correction_exact_parent_and_live_gradient (test_model.ModelTests.test_zero_correction_exact_parent_and_live_gradient) ... ok
+test_both_accepted_form_ordered_composite (test_release.ReleaseTests.test_both_accepted_form_ordered_composite) ... ok
+test_final_temporal_does_not_require_unrun_graph (test_release.ReleaseTests.test_final_temporal_does_not_require_unrun_graph) ... ok
+test_sealed_corruption_masks_raw_ball_before_features (test_release.ReleaseTests.test_sealed_corruption_masks_raw_ball_before_features) ... ok
+test_sealed_date_rejects_before_any_manifest_or_match_read (test_release.ReleaseTests.test_sealed_date_rejects_before_any_manifest_or_match_read) ... ok
+test_selection_includes_only_reviewed_accepted_stages (test_release.ReleaseTests.test_selection_includes_only_reviewed_accepted_stages) ... ok
+test_signature_changes_with_selected_review (test_release.ReleaseTests.test_signature_changes_with_selected_review) ... ok
+test_stage_inference_does_not_rotate_graph_twice (test_release.ReleaseTests.test_stage_inference_does_not_rotate_graph_twice) ... ok
+test_cache_membership_and_view_restrictions (test_runner.RunnerTests.test_cache_membership_and_view_restrictions) ... ok
+test_cache_paths_are_separate_by_fold_and_training_evaluation (test_runner.RunnerTests.test_cache_paths_are_separate_by_fold_and_training_evaluation) ... ok
+test_fit_proof_rejects_wrong_identity_before_checkpoint_load (test_runner.RunnerTests.test_fit_proof_rejects_wrong_identity_before_checkpoint_load) ... ok
+test_missing_preflight_blocks_full_run (test_runner.RunnerTests.test_missing_preflight_blocks_full_run) ... ok
+test_parent_result_bytes_must_match_binding (test_runner.RunnerTests.test_parent_result_bytes_must_match_binding) ... ok
+test_serializer_matches_official_zero_based_export (test_runner.RunnerTests.test_serializer_matches_official_zero_based_export) ... ok
+test_training_cache_rejects_held_out (test_runner.RunnerTests.test_training_cache_rejects_held_out) ... ok
+test_exact_repeat_and_resumed_training (test_training.TrainingTests.test_exact_repeat_and_resumed_training) ... temporal 20261106 J03WPY first 2 / 2
+temporal 20261106 J03WPY repeat 2 / 2
+temporal 20261106 J03WPY resume 1 / 2
+Resuming temporal 20261106 J03WPY 1
+temporal 20261106 J03WPY resume 2 / 2
+ok
+test_fold_final_and_probe_identities (test_training.TrainingTests.test_fold_final_and_probe_identities) ... ok
+test_heldout_case_cannot_enter_training (test_training.TrainingTests.test_heldout_case_cannot_enter_training) ... ok
+test_malformed_cache_probabilities_rejected (test_training.TrainingTests.test_malformed_cache_probabilities_rejected) ... ok
+test_parent_has_no_training_gradient (test_training.TrainingTests.test_parent_has_no_training_gradient) ... ok
+test_stage_boundary_resets_optimizer_and_sampling (test_training.TrainingTests.test_stage_boundary_resets_optimizer_and_sampling) ... temporal 20261106 J03WPY tmp0mzu12xa 2 / 4
+temporal 20261106 J03WPY tmp0mzu12xa 4 / 4
+ok
+test_unknown_labels_rejected_from_loss (test_training.TrainingTests.test_unknown_labels_rejected_from_loss) ... ok
+
+----------------------------------------------------------------------
+Ran 37 tests in 0.873s
+
+OK
