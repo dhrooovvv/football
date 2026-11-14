@@ -1433,3 +1433,14 @@ temporal_hybrid_result_2026_11_14:
   production_changed: false
   sealed_opened: false
   target_accuracy: unknown
+
+additional_data_search_2026_11_14:
+  candidate: SkillCorner_opendata
+  first_match_to_audit: 1886347
+  downloader: user
+  download_performed_by_assistant: false
+  native_fps: 10
+  continuous_had_coverage_verified: false
+  admitted_training_matches: 0
+  exact_download_size_verified: false
+  existing_training_protocol_changed: false
