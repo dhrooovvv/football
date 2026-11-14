@@ -434,3 +434,8 @@ Userexecutionrecords37passingcontracts,50fold/viewboundparentcaches and10zero-co
 ## November 14 — Temporal refinement comparison rejected
 
 The user completes20fits and37loggedcontracts. Rootverifies102registeredentries/169uniquehashesandgatearithmeticfromsavedaggregates. Clean/corruptedmeanspell .654253/.510676vsB.650385/.509836, butmedianprimary−.000728failspositive-medianrule. Pairedspellmedian+.003682,3wins,macromedian+.010331pass. Corruptedmissed1278→1157anddeadlive54752→35830improve,while spurious658→997increase. Fixedcandidateisrejected;graphstageusesfrozenB. Exactpermatchnumbersanddiagnosticsinexperiments/tcn-hybrid-2026-11-14/evaluation/temporal/results.json;review temporal-result-review.md. Noposthocgatechangeorautomatictemporalvariant. Targetaccuracyunknown.
+
+
+## November 14 — Additional provider download pending admission
+
+UserauthorizesoneSkillCorneropendatamatchdownload. Sourcecommit4340d274572876239c154c90bc507a9b3250a656,match1886347,tracking/metadata/events/phasesandREADME/licence,total94362152bytes. ReceiptandSHA256/Gitidentitychecks recordedinliterature/skillcorner-1886347-download-2026-11-14.json. Datasetfilesremainlocalignoredcandidateassets. RepositoryMITlicenceiscapturedwithsourceattribution. Native10Hz,continuousHADcoverageandobserved/extrapolatedprovenanceawaitadmissionaudit. Zero newtrainingmatches,no modelrunorprotocolchange.

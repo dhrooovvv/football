@@ -1444,3 +1444,18 @@ additional_data_search_2026_11_14:
   admitted_training_matches: 0
   exact_download_size_verified: false
   existing_training_protocol_changed: false
+
+skillcorner_download_2026_11_14:
+  status: completed_quarantined_pending_label_audit
+  authorized_downloader: assistant
+  match: 1886347
+  folder: data/external-candidates/skillcorner/1886347
+  source_commit: 4340d274572876239c154c90bc507a9b3250a656
+  receipt: literature/skillcorner-1886347-download-2026-11-14.json
+  files: 6
+  bytes: 94362152
+  payload_hashes_verified: true
+  git_blob_identity_verified: true
+  continuous_had_coverage_verified: false
+  training_admitted: false
+  current_training_protocol_changed: false

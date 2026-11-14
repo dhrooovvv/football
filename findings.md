@@ -392,3 +392,6 @@ November14temporalhybridreject:cleanmean.654253/corrupt.510676vsB.650385/.509836
 
 
 November14userwilldownloadadditionaldata. SkillCorner1886347officialmetadataverified;recommendfourtracking/metadata/event/phasefilesforonematchauditfirst.10Hz,possessionfields,visibilityprovenanceuseful,butexhaustiveHADcoverageunverified. No datasetdownloadortrainingadmission. ball.md J138.
+
+
+November14userre-authorizesassistantdownload: SkillCorner1886347fourmatchfiles+README/licencedownloadedandbyte/Gitverified,pinned4340d274572876239c154c90bc507a9b3250a656,total~90MiB. Folderdata/external-candidates/skillcorner/1886347,receiptliterature/skillcorner-1886347-download-2026-11-14.json. Zero trainingadmissionpendingcoverageaudit. ball.md J139.

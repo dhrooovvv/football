@@ -1,0 +1,60 @@
+{
+  "source": "https://github.com/SkillCorner/opendata",
+  "commit": "4340d274572876239c154c90bc507a9b3250a656",
+  "match": 1886347,
+  "files": [
+    {
+      "name": "1886347_match.json",
+      "bytes": 27541,
+      "sha256": "30c608e78663e9f490b3545479a3ce67b171f418c5133d5609cb249a2466abb2",
+      "url": "https://raw.githubusercontent.com/SkillCorner/opendata/4340d274572876239c154c90bc507a9b3250a656/data/matches/1886347/1886347_match.json",
+      "git_blob_sha": "10779035f95d26a30adf8330c351e4cc4d16a513",
+      "lfs_verified": false
+    },
+    {
+      "name": "1886347_tracking_extrapolated.jsonl",
+      "bytes": 89280839,
+      "sha256": "3577e2803da95390f8b2f85d47829eb55fbbfee6211c94adc65db0dc78e46b41",
+      "url": "https://media.githubusercontent.com/media/SkillCorner/opendata/4340d274572876239c154c90bc507a9b3250a656/data/matches/1886347/1886347_tracking_extrapolated.jsonl",
+      "git_blob_sha": "6c1d01ae3bafa28cf94e4b7a581fb3779effe4bd",
+      "lfs_verified": true
+    },
+    {
+      "name": "1886347_dynamic_events.csv",
+      "bytes": 4918599,
+      "sha256": "b21368b9b94eb8f83032fe14a2a8da88ab7eda048b4f8078c06d0e6955d12bfb",
+      "url": "https://raw.githubusercontent.com/SkillCorner/opendata/4340d274572876239c154c90bc507a9b3250a656/data/matches/1886347/1886347_dynamic_events.csv",
+      "git_blob_sha": "2be820a13e2cb00da1868cb84ece20dfa64179d6",
+      "lfs_verified": false
+    },
+    {
+      "name": "1886347_phases_of_play.csv",
+      "bytes": 121864,
+      "sha256": "d1c3066f7ed0598069d0d1b317bb30261eca3d7786fd9d540985f395e4c8aea9",
+      "url": "https://raw.githubusercontent.com/SkillCorner/opendata/4340d274572876239c154c90bc507a9b3250a656/data/matches/1886347/1886347_phases_of_play.csv",
+      "git_blob_sha": "2a37e6981af6f9b6e1f1878969927cd4234a549d",
+      "lfs_verified": false
+    },
+    {
+      "name": "README.md",
+      "bytes": 12212,
+      "sha256": "c09886c6359e5f7ff3bfd71a653510caf2f674d238ca79219aa1ec9ebe6f4428",
+      "url": "https://raw.githubusercontent.com/SkillCorner/opendata/4340d274572876239c154c90bc507a9b3250a656/README.md"
+    },
+    {
+      "name": "LICENSE",
+      "bytes": 1097,
+      "sha256": "3384cc66ffd008209759af5e6328677eabded72756fb1f56f4f82e68e9b3c6eb",
+      "url": "https://raw.githubusercontent.com/SkillCorner/opendata/4340d274572876239c154c90bc507a9b3250a656/LICENSE"
+    }
+  ],
+  "total_bytes": 94362152,
+  "downloaded_date": "2026-11-14",
+  "training_admitted": false,
+  "label_coverage_verified": false,
+  "free_bytes_after": 32956628992,
+  "local_folder": "data/external-candidates/skillcorner/1886347",
+  "manifest_sha256": "5692fd43ea3e4a22cf8fb2aca12e4f0e45cd6780174a625e644e55647e3e33fa",
+  "download_authorization": "User explicitly asked assistant to download after prior user-download preference",
+  "payload_git_identity_verified": true
+}
