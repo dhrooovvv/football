@@ -383,3 +383,6 @@ November14hybridresearchwithtwoagentsselectsfrozenB+coarsetemporalresidualrefine
 
 
 November14 approvedtwohybridplanimplemented: temporal6483andgraph9835correctionmodels, fixedparents/20fitsperstage; userpreflight37suppliedtestsUNEXECUTED,50boundparentarrays,64probeupdates/fold,RSS/time/storageprojection. StagegraphrequirescommittedTreview. Finalfit/export/cleanclone/sealedusercommandsprovided.102source/evidencepinsverified,nonewmodelqualityresult;allruntimeuserowned. Independentintegrationreviewinterruptedatagentlimit,rootfinishedstaticintegrationreview. ball.md J135, docs/run-tcn-hybrid.md and docs/run-tcn-hybrid-release.md.
+
+
+November14 temporalpreflightpassed37loggedchecks,50cachearrays/metadata and10zero-parentCSVproofs,210hashesverified. Measuredworst.02746s/update,nominal20fits2workers~3.05hbeforeeval;conservative6.77hincludesfinalfits/allowance. Singleprocesspeak3.04GiB,twojobestimate6.08GiB;artifactprojection.558GiB/free16.50GiB. Fulltemporalruneligiblebeforefreeze;noqualityscoreyet. See ball.md J136 and exp/tcn-hybrid-2026-11-14/preflight-temporal-audit.json.

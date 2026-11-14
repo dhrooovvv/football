@@ -1395,3 +1395,22 @@ sequential_hybrids_2026_11_14:
   production_changed: false
   sealed_opened: false
   target_accuracy: unknown
+
+temporal_hybrid_preflight_2026_11_14:
+  status: passed_reviewed_full_comparison_eligible
+  audit: experiments/tcn-hybrid-2026-11-14/preflight-temporal-audit.json
+  user_logged_tests: 37
+  cache_arrays_verified: 50
+  zero_parent_csv_proofs: 10
+  unique_byte_hashes_verified: 210
+  worst_seconds_per_update: 0.02746492251571908
+  nominal_parallel_development_fit_hours: 3.05165805730212
+  conservative_hours_including_final_fits: 6.768994076115632
+  observed_process_peak_rss_gib: 3.04071044921875
+  projected_two_process_rss_gib: 6.0814208984375
+  projected_artifacts_gib: 0.5580655178055167
+  new_quality_score: false
+  assistant_numerical_execution: false
+  full_comparison_completed: false
+  sealed_opened: false
+  target_accuracy: unknown
