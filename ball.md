@@ -1737,3 +1737,14 @@ User completes temporalpreflight. Savedlog records37passingcontracts. Rootbyte/m
 Measuredpreparation+5×64probeupdates288.410s(~4m48s). Worstperupdate.027464923s. Nominal20fullfitson2workers~3.05hbeforeevaluation/overheads. Existing1.5safetyfactorprojectionincluding20developmentfits,4serialfinalfitsandevaluationallowance6.769h(~6h46m). Atrootaudit29.47hremainbeforeNov16start;eligibleprojectiontrue. Thisisestimatefrom64updates/fold,notguaranteedthermal/parallelperformance.
 
 Measuredsingle-processpeakRSS3.041GiB;two-processprojection6.081GiB,notobservedconcurrentpeak. Projectedartifacttotal.558GiB;currentfree16.495GiBabove12floor. Fixedcache/source/view/foldbindingsandoriginalBparentarchivehashesagree. Probesproducednoqualityscore. Nextusercommandtemporal--run,20fits40kupdateseach. Stopforcompletedcomparisonreviewbeforegraph. Production/selectedBdevelopmentqualityunchanged,targetunknown,sealeduntouched. No source/model/gatechanges,push/publication/submission.
+
+
+### J137 — 2026-11-14 — Temporal hybrid complete, rejected; graph parent stays B
+
+User reportsfullruncomplete. Saved37contracts/20fits/exactrepeat/reloadbatchproofs;rootverifies102registrationentries,169uniquehashes including20weights/30CSVfiles and10fitproofs, recomputesgatefromaggregates. No numericalprojectexecution/modelarrayorCSVrowloadingbyroot. Audit temporal-result-audit.json/review temporal-result-review.md underhybridroot.
+
+Meanspell clean.650384708→.654253340,corrupt.509835640→.510676133. Macro clean.926751542→.925926367,corrupt.837980557→.858140052. Medianprimary−.000727617842fails>0;pairedspellmedian+.003682057208/3wins/macromedian+.010330971276pass. CorruptWMX/WOY/WPYregress,WN1/WOHimprove. Meanadvantagecannotoverrideprespecifiedmediangate.
+
+IoU.5cleanmissed953→822/spurious451→677;corruptmissed1278→1157/spurious658→997. Longgapexposedmisses621→564anddeadlivewrong54752→35830 improve, butextrasegmentslimitoofficialspellF1. Partialmechanismbenefitdoesnotqualifycandidate. Rejectfixedtemporalbranchwithoutautomaticrescue. reviewed-temporal.json acceptedfalseexactlymatchesrunnerreviewrecordandbindsallsource/results/weights.
+
+Commitreview/resultsseparatelybeforegraph. Nextusergraphpreflight,whichcorrectsfrozenBwithouttemporalbranch;actualcostmustfitbeforeNov16. Fullgraphrunnotstartedbyassistant. CurrentselectedB/finalCSV/productionunchanged,targetunknown,sealeduntouched. No publication/push/submission.

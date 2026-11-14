@@ -1414,3 +1414,22 @@ temporal_hybrid_preflight_2026_11_14:
   full_comparison_completed: false
   sealed_opened: false
   target_accuracy: unknown
+
+temporal_hybrid_result_2026_11_14:
+  status: rejected_primary_median_gate
+  audit: experiments/tcn-hybrid-2026-11-14/temporal-result-audit.json
+  review: experiments/tcn-hybrid-2026-11-14/reviewed-temporal.json
+  mean_clean_spell: 0.65425334021748
+  mean_corrupted_spell: 0.5106761328026992
+  primary_median_delta: -0.0007276178424548974
+  paired_median_spell_delta: 0.003682057208204359
+  paired_median_macro_delta: 0.010330971275829048
+  paired_matches_improved: 3
+  fit_count: 20
+  user_logged_tests: 37
+  graph_parent: trial_b
+  next_step: user_graph_preflight
+  assistant_numerical_execution: false
+  production_changed: false
+  sealed_opened: false
+  target_accuracy: unknown

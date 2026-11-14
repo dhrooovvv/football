@@ -429,3 +429,8 @@ Finalbranchfit/export/cleanenvironment/freshcloneandonce-onlysealedevaluationent
 ## November 14 — Temporal hybrid resource preflight passed
 
 Userexecutionrecords37passingcontracts,50fold/viewboundparentcaches and10zero-correctionparentCSVreproductions. Rootaudits102registeredentries/210hasheswithoutloadingmodels/arraysorperformingnumericalexecution. Worst64-updateprobeaverage.027464923s/update;20fitsontwoworkersnominal~3.05hbeforeevaluation/overheads. The fixedconservative6.77hbudgetincludes4serialfinalfits,evaluationallowanceand1.5safetyfactor,andfitsbeforefreezeatinspection. Single-processpeakRSS3.04GiB,two-processestimate6.08GiB;actualparallelpeaknotmeasured. Projectedartifacts.558GiB/free16.50GiB. Detailedpreflight-temporal-audit.jsonunderhybridexperiment. No newqualityscore;fullcomparisonuserexecutionpending,targetunknown.
+
+
+## November 14 — Temporal refinement comparison rejected
+
+The user completes20fits and37loggedcontracts. Rootverifies102registeredentries/169uniquehashesandgatearithmeticfromsavedaggregates. Clean/corruptedmeanspell .654253/.510676vsB.650385/.509836, butmedianprimary−.000728failspositive-medianrule. Pairedspellmedian+.003682,3wins,macromedian+.010331pass. Corruptedmissed1278→1157anddeadlive54752→35830improve,while spurious658→997increase. Fixedcandidateisrejected;graphstageusesfrozenB. Exactpermatchnumbersanddiagnosticsinexperiments/tcn-hybrid-2026-11-14/evaluation/temporal/results.json;review temporal-result-review.md. Noposthocgatechangeorautomatictemporalvariant. Targetaccuracyunknown.

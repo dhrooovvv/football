@@ -1,0 +1,40 @@
+{
+  "stage": "temporal",
+  "registration": "84fe61609ca580d27a1ab5c75b453f3c40c182bdda639161cbc12cd9f66f522f",
+  "review_completed": true,
+  "accepted": false,
+  "parent_binding": {
+    "stage": "temporal",
+    "registration": "84fe61609ca580d27a1ab5c75b453f3c40c182bdda639161cbc12cd9f66f522f",
+    "parent": "trial_b",
+    "parent_results_sha256": "edaf2779f22c9e5d2d5d0cc8ccdf9bb9c35932d77cdc51a24c9d32a1def98723",
+    "parent_review_sha256": "f696b9bc83d989a818e8ff24821fb3162b81ddd4777e69689f829eb0cd1968d3",
+    "temporal_selected": false
+  },
+  "completion_sha256": "ea226899038b3477863ad7c3fe45c40b302e96b73d746e1a079c47f233d6b667",
+  "results_sha256": "cd888d7e705b7fea10a091997c274f51bf9ba3a400b13a7e97e1d4c3dd72c889",
+  "gate_sha256": "bc925ff7ac0b09a36b9466bebc7585d1e4e0249dfc8a61813628feae873f9e95",
+  "checkpoint_hashes": {
+    "models/tcn-hybrid/temporal/J03WMX/20261106/first/progress.pt": "72b5f5462f09ef269f2acbf1384af41b80f09fc60071a830ae954d8a0be30c56",
+    "models/tcn-hybrid/temporal/J03WMX/20261106/repeat/progress.pt": "e2147786ac8bbb103059df849221a5efbef7e5d691cb5587b9b40e052c858694",
+    "models/tcn-hybrid/temporal/J03WMX/20261107/first/progress.pt": "bd9b48bda8f9bf162dc39218f476dc0a2b3e920755511689910b5e6d152d45f3",
+    "models/tcn-hybrid/temporal/J03WMX/20261107/repeat/progress.pt": "3ede23eb4ddabce88b050e76a43a9d2834dbc692e8de1c4ae1c82e666dfd48ae",
+    "models/tcn-hybrid/temporal/J03WN1/20261106/first/progress.pt": "7c201812cfcc95eb092a5d7b013df684aafab7e9acd6f529f29137141c545d60",
+    "models/tcn-hybrid/temporal/J03WN1/20261106/repeat/progress.pt": "119bfb5a38b35b3d44c4286673ea028ea70547e81b61f301b3b798a21b502ced",
+    "models/tcn-hybrid/temporal/J03WN1/20261107/first/progress.pt": "76c0dd614180bce256d368b4174869673422d16e0d0d2be063d594fca4ea1b92",
+    "models/tcn-hybrid/temporal/J03WN1/20261107/repeat/progress.pt": "ffc648faaaec398ee2a2d68cff1317ad41bcccb21d39c05c07cf822d435b37b7",
+    "models/tcn-hybrid/temporal/J03WOH/20261106/first/progress.pt": "acfd7d5210059a50293bb62b6816a0761311d04e3f93142ed0cfb873322c58cc",
+    "models/tcn-hybrid/temporal/J03WOH/20261106/repeat/progress.pt": "bf968db10862a761aa9683ef157b1159af5962cde013bca2f42687de245a8a4e",
+    "models/tcn-hybrid/temporal/J03WOH/20261107/first/progress.pt": "f0075fe1f6320a4d4995bceca4a7a2059d8768eab8c1a5d5c0f6f2eabeed91fd",
+    "models/tcn-hybrid/temporal/J03WOH/20261107/repeat/progress.pt": "ba68fa45814cd99705befdfc53690a1b5295713515be76d8aef532707519e26c",
+    "models/tcn-hybrid/temporal/J03WOY/20261106/first/progress.pt": "6d5f95aceeb21361c8d473675b267fc9fb26f58b3ce5da740214a5040be59d07",
+    "models/tcn-hybrid/temporal/J03WOY/20261106/repeat/progress.pt": "8bfe20c1c66a6f24d49deffed890b1520e56aee9c94eec34838de1d1f559576b",
+    "models/tcn-hybrid/temporal/J03WOY/20261107/first/progress.pt": "0c78ff445d0696179b89d80e319362f0cbe249ca41ee4eeddfb0cc9dcd9de08b",
+    "models/tcn-hybrid/temporal/J03WOY/20261107/repeat/progress.pt": "fdac860e52b39614fe1768ae8be79b212d31acc5b106c3f6941332c52a9fa725",
+    "models/tcn-hybrid/temporal/J03WPY/20261106/first/progress.pt": "26cfd332ec5ae3fc83e0d887105a9d367e31a7ed33059d20143347a5c66d25d8",
+    "models/tcn-hybrid/temporal/J03WPY/20261106/repeat/progress.pt": "7974def08622ae6936dcdbb045ba6bf46e7c7310bc577a2b297d4fb41ae468e6",
+    "models/tcn-hybrid/temporal/J03WPY/20261107/first/progress.pt": "b1aa303230693b0089d2190fa7dfd62cd53d7739ab329037637749514434cb5c",
+    "models/tcn-hybrid/temporal/J03WPY/20261107/repeat/progress.pt": "d2752cb5d27e2ce0306e8a46f1995e9774d6de15b1712bf4017ca1d9493cfbb4"
+  },
+  "instruction": "Review saved evidence and commit this record before a dependent stage or release."
+}

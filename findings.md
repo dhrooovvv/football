@@ -386,3 +386,6 @@ November14 approvedtwohybridplanimplemented: temporal6483andgraph9835correctionm
 
 
 November14 temporalpreflightpassed37loggedchecks,50cachearrays/metadata and10zero-parentCSVproofs,210hashesverified. Measuredworst.02746s/update,nominal20fits2workers~3.05hbeforeeval;conservative6.77hincludesfinalfits/allowance. Singleprocesspeak3.04GiB,twojobestimate6.08GiB;artifactprojection.558GiB/free16.50GiB. Fulltemporalruneligiblebeforefreeze;noqualityscoreyet. See ball.md J136 and exp/tcn-hybrid-2026-11-14/preflight-temporal-audit.json.
+
+
+November14temporalhybridreject:cleanmean.654253/corrupt.510676vsB.650385/.509836;medianprimary−.000728failsdespitemacrocorrupt.858140and3pairedwins. Missedcorrupt1278→1157andlonggap621→564improve,butspurious658→997increase.37loggedcontracts/20fitproofs/169hashesaudited. CommittedreviewacceptedfalsebindsgraphparentB. Nextgraphpreflightonly,nonewtemporalrescue. ball.md J137.

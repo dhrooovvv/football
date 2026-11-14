@@ -1,0 +1,481 @@
+[
+  {
+    "match": "J03WMX",
+    "per_iou": {
+      "0.3": {
+        "counts": {
+          "retained": 303,
+          "lost_after_corruption": 52,
+          "gained_after_corruption": 12,
+          "missed_in_both": 144
+        },
+        "lost_duration_gap": {
+          "2_to_10s/over_10s": 18,
+          "up_to_2s/fully_observed": 3,
+          "2_to_10s/2_to_10s": 3,
+          "up_to_2s/2_to_10s": 3,
+          "up_to_2s/over_10s": 17,
+          "2_to_10s/fully_observed": 4,
+          "over_10s/over_10s": 3,
+          "over_10s/fully_observed": 1
+        }
+      },
+      "0.4": {
+        "counts": {
+          "retained": 265,
+          "lost_after_corruption": 73,
+          "gained_after_corruption": 15,
+          "missed_in_both": 158
+        },
+        "lost_duration_gap": {
+          "2_to_10s/over_10s": 28,
+          "over_10s/over_10s": 5,
+          "up_to_2s/fully_observed": 5,
+          "2_to_10s/2_to_10s": 5,
+          "up_to_2s/2_to_10s": 3,
+          "up_to_2s/over_10s": 17,
+          "2_to_10s/fully_observed": 9,
+          "over_10s/fully_observed": 1
+        }
+      },
+      "0.5": {
+        "counts": {
+          "retained": 232,
+          "lost_after_corruption": 84,
+          "gained_after_corruption": 12,
+          "missed_in_both": 183
+        },
+        "lost_duration_gap": {
+          "2_to_10s/over_10s": 36,
+          "over_10s/over_10s": 8,
+          "2_to_10s/2_to_10s": 5,
+          "up_to_2s/2_to_10s": 3,
+          "up_to_2s/over_10s": 15,
+          "up_to_2s/fully_observed": 4,
+          "2_to_10s/fully_observed": 10,
+          "over_10s/fully_observed": 3
+        }
+      },
+      "0.6": {
+        "counts": {
+          "retained": 188,
+          "lost_after_corruption": 99,
+          "gained_after_corruption": 9,
+          "missed_in_both": 215
+        },
+        "lost_duration_gap": {
+          "2_to_10s/over_10s": 41,
+          "over_10s/over_10s": 14,
+          "2_to_10s/2_to_10s": 5,
+          "up_to_2s/2_to_10s": 4,
+          "2_to_10s/fully_observed": 10,
+          "up_to_2s/over_10s": 14,
+          "up_to_2s/fully_observed": 4,
+          "over_10s/2_to_10s": 3,
+          "over_10s/fully_observed": 4
+        }
+      },
+      "0.7": {
+        "counts": {
+          "retained": 146,
+          "lost_after_corruption": 99,
+          "gained_after_corruption": 8,
+          "missed_in_both": 258
+        },
+        "lost_duration_gap": {
+          "2_to_10s/over_10s": 39,
+          "over_10s/over_10s": 20,
+          "2_to_10s/2_to_10s": 3,
+          "over_10s/2_to_10s": 6,
+          "2_to_10s/fully_observed": 8,
+          "up_to_2s/over_10s": 13,
+          "up_to_2s/fully_observed": 3,
+          "over_10s/fully_observed": 5,
+          "up_to_2s/2_to_10s": 2
+        }
+      }
+    }
+  },
+  {
+    "match": "J03WN1",
+    "per_iou": {
+      "0.3": {
+        "counts": {
+          "retained": 283,
+          "lost_after_corruption": 81,
+          "gained_after_corruption": 11,
+          "missed_in_both": 125
+        },
+        "lost_duration_gap": {
+          "2_to_10s/over_10s": 36,
+          "2_to_10s/2_to_10s": 2,
+          "over_10s/over_10s": 9,
+          "up_to_2s/over_10s": 24,
+          "up_to_2s/2_to_10s": 4,
+          "up_to_2s/fully_observed": 4,
+          "2_to_10s/fully_observed": 2
+        }
+      },
+      "0.4": {
+        "counts": {
+          "retained": 254,
+          "lost_after_corruption": 90,
+          "gained_after_corruption": 12,
+          "missed_in_both": 144
+        },
+        "lost_duration_gap": {
+          "over_10s/2_to_10s": 1,
+          "2_to_10s/over_10s": 40,
+          "2_to_10s/2_to_10s": 3,
+          "over_10s/over_10s": 12,
+          "up_to_2s/over_10s": 25,
+          "up_to_2s/2_to_10s": 3,
+          "up_to_2s/fully_observed": 4,
+          "2_to_10s/fully_observed": 1,
+          "over_10s/fully_observed": 1
+        }
+      },
+      "0.5": {
+        "counts": {
+          "retained": 211,
+          "lost_after_corruption": 103,
+          "gained_after_corruption": 16,
+          "missed_in_both": 170
+        },
+        "lost_duration_gap": {
+          "2_to_10s/over_10s": 45,
+          "2_to_10s/fully_observed": 6,
+          "over_10s/2_to_10s": 1,
+          "over_10s/over_10s": 16,
+          "2_to_10s/2_to_10s": 4,
+          "up_to_2s/over_10s": 23,
+          "up_to_2s/2_to_10s": 3,
+          "up_to_2s/fully_observed": 4,
+          "over_10s/fully_observed": 1
+        }
+      },
+      "0.6": {
+        "counts": {
+          "retained": 185,
+          "lost_after_corruption": 98,
+          "gained_after_corruption": 14,
+          "missed_in_both": 203
+        },
+        "lost_duration_gap": {
+          "2_to_10s/fully_observed": 7,
+          "over_10s/2_to_10s": 1,
+          "2_to_10s/over_10s": 44,
+          "over_10s/over_10s": 15,
+          "2_to_10s/2_to_10s": 4,
+          "up_to_2s/over_10s": 20,
+          "up_to_2s/2_to_10s": 3,
+          "up_to_2s/fully_observed": 4
+        }
+      },
+      "0.7": {
+        "counts": {
+          "retained": 149,
+          "lost_after_corruption": 96,
+          "gained_after_corruption": 9,
+          "missed_in_both": 246
+        },
+        "lost_duration_gap": {
+          "2_to_10s/fully_observed": 9,
+          "over_10s/2_to_10s": 2,
+          "2_to_10s/over_10s": 45,
+          "2_to_10s/2_to_10s": 4,
+          "over_10s/over_10s": 13,
+          "up_to_2s/over_10s": 16,
+          "up_to_2s/2_to_10s": 2,
+          "up_to_2s/fully_observed": 5
+        }
+      }
+    }
+  },
+  {
+    "match": "J03WOH",
+    "per_iou": {
+      "0.3": {
+        "counts": {
+          "retained": 262,
+          "lost_after_corruption": 61,
+          "gained_after_corruption": 11,
+          "missed_in_both": 68
+        },
+        "lost_duration_gap": {
+          "up_to_2s/over_10s": 12,
+          "up_to_2s/fully_observed": 5,
+          "2_to_10s/over_10s": 36,
+          "up_to_2s/2_to_10s": 1,
+          "over_10s/2_to_10s": 1,
+          "2_to_10s/2_to_10s": 2,
+          "over_10s/over_10s": 2,
+          "2_to_10s/fully_observed": 1,
+          "over_10s/fully_observed": 1
+        }
+      },
+      "0.4": {
+        "counts": {
+          "retained": 241,
+          "lost_after_corruption": 65,
+          "gained_after_corruption": 14,
+          "missed_in_both": 82
+        },
+        "lost_duration_gap": {
+          "up_to_2s/over_10s": 13,
+          "up_to_2s/fully_observed": 2,
+          "over_10s/over_10s": 6,
+          "2_to_10s/over_10s": 38,
+          "up_to_2s/2_to_10s": 1,
+          "over_10s/2_to_10s": 1,
+          "2_to_10s/2_to_10s": 2,
+          "2_to_10s/fully_observed": 1,
+          "over_10s/fully_observed": 1
+        }
+      },
+      "0.5": {
+        "counts": {
+          "retained": 213,
+          "lost_after_corruption": 73,
+          "gained_after_corruption": 8,
+          "missed_in_both": 108
+        },
+        "lost_duration_gap": {
+          "up_to_2s/over_10s": 12,
+          "up_to_2s/fully_observed": 4,
+          "over_10s/over_10s": 7,
+          "2_to_10s/over_10s": 41,
+          "up_to_2s/2_to_10s": 2,
+          "over_10s/2_to_10s": 2,
+          "2_to_10s/2_to_10s": 2,
+          "2_to_10s/fully_observed": 1,
+          "over_10s/fully_observed": 2
+        }
+      },
+      "0.6": {
+        "counts": {
+          "retained": 179,
+          "lost_after_corruption": 78,
+          "gained_after_corruption": 11,
+          "missed_in_both": 134
+        },
+        "lost_duration_gap": {
+          "up_to_2s/over_10s": 10,
+          "up_to_2s/fully_observed": 4,
+          "over_10s/over_10s": 9,
+          "2_to_10s/over_10s": 41,
+          "over_10s/2_to_10s": 4,
+          "up_to_2s/2_to_10s": 3,
+          "2_to_10s/2_to_10s": 1,
+          "over_10s/fully_observed": 4,
+          "2_to_10s/fully_observed": 2
+        }
+      },
+      "0.7": {
+        "counts": {
+          "retained": 152,
+          "lost_after_corruption": 82,
+          "gained_after_corruption": 7,
+          "missed_in_both": 161
+        },
+        "lost_duration_gap": {
+          "up_to_2s/over_10s": 10,
+          "up_to_2s/fully_observed": 4,
+          "over_10s/over_10s": 12,
+          "2_to_10s/over_10s": 36,
+          "2_to_10s/2_to_10s": 3,
+          "over_10s/2_to_10s": 4,
+          "up_to_2s/2_to_10s": 3,
+          "2_to_10s/fully_observed": 6,
+          "over_10s/fully_observed": 4
+        }
+      }
+    }
+  },
+  {
+    "match": "J03WOY",
+    "per_iou": {
+      "0.3": {
+        "counts": {
+          "retained": 267,
+          "lost_after_corruption": 67,
+          "gained_after_corruption": 19,
+          "missed_in_both": 103
+        },
+        "lost_duration_gap": {
+          "2_to_10s/over_10s": 30,
+          "up_to_2s/over_10s": 19,
+          "up_to_2s/fully_observed": 7,
+          "2_to_10s/fully_observed": 4,
+          "2_to_10s/2_to_10s": 4,
+          "up_to_2s/2_to_10s": 3
+        }
+      },
+      "0.4": {
+        "counts": {
+          "retained": 235,
+          "lost_after_corruption": 76,
+          "gained_after_corruption": 16,
+          "missed_in_both": 129
+        },
+        "lost_duration_gap": {
+          "2_to_10s/over_10s": 34,
+          "up_to_2s/over_10s": 18,
+          "over_10s/over_10s": 1,
+          "2_to_10s/fully_observed": 7,
+          "up_to_2s/fully_observed": 6,
+          "2_to_10s/2_to_10s": 5,
+          "up_to_2s/2_to_10s": 4,
+          "over_10s/2_to_10s": 1
+        }
+      },
+      "0.5": {
+        "counts": {
+          "retained": 205,
+          "lost_after_corruption": 78,
+          "gained_after_corruption": 17,
+          "missed_in_both": 156
+        },
+        "lost_duration_gap": {
+          "2_to_10s/over_10s": 35,
+          "up_to_2s/over_10s": 17,
+          "over_10s/over_10s": 4,
+          "2_to_10s/fully_observed": 7,
+          "2_to_10s/2_to_10s": 6,
+          "up_to_2s/2_to_10s": 5,
+          "up_to_2s/fully_observed": 4
+        }
+      },
+      "0.6": {
+        "counts": {
+          "retained": 175,
+          "lost_after_corruption": 86,
+          "gained_after_corruption": 13,
+          "missed_in_both": 182
+        },
+        "lost_duration_gap": {
+          "2_to_10s/over_10s": 41,
+          "up_to_2s/over_10s": 14,
+          "up_to_2s/fully_observed": 6,
+          "over_10s/over_10s": 8,
+          "2_to_10s/fully_observed": 6,
+          "2_to_10s/2_to_10s": 6,
+          "up_to_2s/2_to_10s": 4,
+          "over_10s/2_to_10s": 1
+        }
+      },
+      "0.7": {
+        "counts": {
+          "retained": 141,
+          "lost_after_corruption": 89,
+          "gained_after_corruption": 14,
+          "missed_in_both": 212
+        },
+        "lost_duration_gap": {
+          "2_to_10s/over_10s": 42,
+          "up_to_2s/over_10s": 13,
+          "up_to_2s/fully_observed": 5,
+          "over_10s/over_10s": 9,
+          "2_to_10s/fully_observed": 7,
+          "2_to_10s/2_to_10s": 7,
+          "up_to_2s/2_to_10s": 4,
+          "over_10s/2_to_10s": 2
+        }
+      }
+    }
+  },
+  {
+    "match": "J03WPY",
+    "per_iou": {
+      "0.3": {
+        "counts": {
+          "retained": 252,
+          "lost_after_corruption": 48,
+          "gained_after_corruption": 16,
+          "missed_in_both": 105
+        },
+        "lost_duration_gap": {
+          "2_to_10s/over_10s": 27,
+          "up_to_2s/over_10s": 12,
+          "up_to_2s/fully_observed": 2,
+          "2_to_10s/2_to_10s": 2,
+          "over_10s/over_10s": 1,
+          "up_to_2s/2_to_10s": 2,
+          "2_to_10s/fully_observed": 2
+        }
+      },
+      "0.4": {
+        "counts": {
+          "retained": 230,
+          "lost_after_corruption": 56,
+          "gained_after_corruption": 15,
+          "missed_in_both": 120
+        },
+        "lost_duration_gap": {
+          "up_to_2s/over_10s": 10,
+          "over_10s/over_10s": 2,
+          "2_to_10s/over_10s": 32,
+          "2_to_10s/2_to_10s": 4,
+          "up_to_2s/fully_observed": 3,
+          "over_10s/2_to_10s": 1,
+          "2_to_10s/fully_observed": 3,
+          "up_to_2s/2_to_10s": 1
+        }
+      },
+      "0.5": {
+        "counts": {
+          "retained": 206,
+          "lost_after_corruption": 63,
+          "gained_after_corruption": 13,
+          "missed_in_both": 139
+        },
+        "lost_duration_gap": {
+          "over_10s/over_10s": 4,
+          "2_to_10s/over_10s": 34,
+          "up_to_2s/over_10s": 11,
+          "2_to_10s/2_to_10s": 3,
+          "up_to_2s/fully_observed": 4,
+          "2_to_10s/fully_observed": 4,
+          "over_10s/2_to_10s": 2,
+          "up_to_2s/2_to_10s": 1
+        }
+      },
+      "0.6": {
+        "counts": {
+          "retained": 181,
+          "lost_after_corruption": 68,
+          "gained_after_corruption": 8,
+          "missed_in_both": 164
+        },
+        "lost_duration_gap": {
+          "over_10s/over_10s": 6,
+          "up_to_2s/over_10s": 10,
+          "2_to_10s/over_10s": 37,
+          "2_to_10s/2_to_10s": 5,
+          "up_to_2s/fully_observed": 5,
+          "2_to_10s/fully_observed": 3,
+          "over_10s/fully_observed": 1,
+          "over_10s/2_to_10s": 1
+        }
+      },
+      "0.7": {
+        "counts": {
+          "retained": 152,
+          "lost_after_corruption": 65,
+          "gained_after_corruption": 5,
+          "missed_in_both": 199
+        },
+        "lost_duration_gap": {
+          "over_10s/over_10s": 10,
+          "up_to_2s/over_10s": 9,
+          "2_to_10s/over_10s": 30,
+          "2_to_10s/2_to_10s": 7,
+          "2_to_10s/fully_observed": 3,
+          "up_to_2s/fully_observed": 2,
+          "over_10s/fully_observed": 3,
+          "over_10s/2_to_10s": 1
+        }
+      }
+    }
+  }
+]
