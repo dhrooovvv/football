@@ -1338,3 +1338,10 @@ frozen_diagnostic_result_2026_11_14:
   sealed_opened: false
   assistant_runtime_execution: false
   target_accuracy: unknown
+
+gnn_claim_review_2026_11_14:
+  conclusion: no_verified_universal_gnn_superiority_on_our_metric
+  current_encoder: shared_object_encoder_masked_team_mean_pool
+  relation_model: conditional_future_hypothesis
+  next_proposed_direction: longer_temporal_context
+  experiment_started: false
