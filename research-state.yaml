@@ -1345,3 +1345,13 @@ gnn_claim_review_2026_11_14:
   relation_model: conditional_future_hypothesis
   next_proposed_direction: longer_temporal_context
   experiment_started: false
+
+hybrid_feasibility_2026_11_14:
+  proposal: docs/hybrid-next-proposal-2026-11-14.md
+  prior_13_second_context_failure_considered: true
+  recommended_direction: frozen_local_tcn_coarse_temporal_residual_refiner
+  protocol_registered: false
+  runtime_estimated: false
+  user_execution_started: false
+  new_quality_result: false
+  export_terminal_hash_confirmed: true
