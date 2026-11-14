@@ -1489,3 +1489,20 @@ mac_concurrency_proposal_2026_11_14:
   benchmark_executed: false
   numerical_threads_per_job: 1
   training_budget_change: false
+
+mac_concurrency_extension_2026_11_14:
+  status: implemented_registered_user_benchmark_pending
+  runner: scripts/run_tcn_hybrid_parallel.py
+  guide: docs/run-tcn-hybrid-parallel.md
+  benchmark_allocations: [2, 4]
+  numerical_threads_per_job: 1
+  task_count: 10
+  probe_steps_per_task_allocation: 64
+  parallel_final_fits_supported: true
+  new_supplied_tests_unexecuted: 4
+  source_fingerprints: 4
+  evidence_fingerprints: 8
+  independent_review_completed: false
+  benchmark_executed: false
+  model_training_budget_changed: false
+  target_accuracy: unknown
