@@ -377,3 +377,6 @@ November14 GNNclaimreview: currentTCNalreadysharedobjectencoder+maskedteamsetpoo
 
 
 November14 exportterminalconfirmsalreadyverifiedlocalCSVhash. Earlier13secondcontexttrialhadfailedandmustinformnextproposal. Proposedhybrid is frozenlocalTCN+smallcoarsetemporalresidualrefiner; exactprotocol/budget/approvalpending, no trainingstarted. GNN alone doesnotresolvetemporalsupport. docs/hybrid-next-proposal-2026-11-14.md and ball.md J133. Cleanenv/clonepending,targetunknown.
+
+
+November14hybridresearchwithtwoagentsselectsfrozenB+coarsetemporalresidualrefinerbeforeGNNreplacement. Exposure-adjustedgapmisses621/910(68.24%)vsobserved540/1134(47.62%);all5consistent. MS-TCN++supportsrefinementmechanism,prior13secondTCNfailurepreserved. Rootinputchoice3probs+mask/gapage,agentinputdisagreementdocumented. PathCRFbundledweightsunresolvedSportecmatchoverlaprisk,noadmission. Decision docs/hybrid-research-decision-2026-11-14.md,source literature/hybrid-primary-evidence-2026-11-14.md,independentassessment docs/hybrid-independent-assessment-2026-11-14.md. Implementationanduserpreflightpending,noruns/newmetrics.

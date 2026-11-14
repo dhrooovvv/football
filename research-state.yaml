@@ -1355,3 +1355,21 @@ hybrid_feasibility_2026_11_14:
   user_execution_started: false
   new_quality_result: false
   export_terminal_hash_confirmed: true
+
+hybrid_research_decision_2026_11_14:
+  status: research_complete_selected_candidate_implementation_pending
+  user_authorized_research: true
+  decision: docs/hybrid-research-decision-2026-11-14.md
+  primary_evidence: literature/hybrid-primary-evidence-2026-11-14.md
+  independent_assessment: docs/hybrid-independent-assessment-2026-11-14.md
+  candidate: frozen_tcn_temporal_residual_refiner
+  selected_input: three_parent_probabilities_ball_observation_mask_gap_age
+  additional_parent_fits: 0
+  proposed_refiner_fits: 20
+  nominal_refiner_parameters_unmeasured: 6483
+  protocol_registered: false
+  runner_implemented: false
+  runtime_measured: false
+  pretrained_weights_admitted: false
+  new_quality_result: false
+  target_accuracy: unknown

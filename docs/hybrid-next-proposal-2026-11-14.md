@@ -25,3 +25,8 @@ The latest diagnostic finds long-gap absence of an argmax spell match leading on
 ## Decision and qualification
 
 At most this one hybrid is proposed. Historical failed trials, the positive-median promotion rule, sealed exclusions and November 16 freeze remain in force. Prepare a source-committed protocol and resumable user runner only after the user approves this particular direction. Estimate runtime from a user-run bounded preflight before scheduling the full comparison. Training cost, memory and any spellF1 gain are currently unmeasured. Complete clean-environment/fresh-clone delivery qualification separately using the existing export guide. No new dataset is needed for this proposal.
+
+
+## November 14 research decision update
+
+The completed primary/independent research is recorded in hybrid-research-decision-2026-11-14.md. It supersedes the preliminary nine-core-plus-probability interface above with three probabilities and the existing observation-mask/gap-age controls. Both agents prefer temporal refinement before graph replacement but disagree over extra hidden inputs. The decision documents that uncertainty. Implementation and preregistration remain pending.
