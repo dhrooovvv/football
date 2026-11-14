@@ -1373,3 +1373,25 @@ hybrid_research_decision_2026_11_14:
   pretrained_weights_admitted: false
   new_quality_result: false
   target_accuracy: unknown
+
+sequential_hybrids_2026_11_14:
+  status: implemented_registered_user_preflight_pending
+  runner: scripts/run_tcn_hybrid.py
+  release_runner: scripts/release_tcn_hybrid.py
+  temporal_parameters_static: 6483
+  graph_parameters_static: 9835
+  supplied_tests_unexecuted: 37
+  source_fingerprints: 52
+  evidence_fingerprints: 50
+  maximum_development_fits: 40
+  maximum_final_fits: 8
+  parent_fits: 0
+  probe_updates_per_fold: 64
+  user_execution_started: false
+  runtime_measured: false
+  independent_integration_review_complete: false
+  root_static_integration_review_complete: true
+  assistant_runtime_execution: false
+  production_changed: false
+  sealed_opened: false
+  target_accuracy: unknown

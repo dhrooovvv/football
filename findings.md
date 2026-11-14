@@ -380,3 +380,6 @@ November14 exportterminalconfirmsalreadyverifiedlocalCSVhash. Earlier13secondcon
 
 
 November14hybridresearchwithtwoagentsselectsfrozenB+coarsetemporalresidualrefinerbeforeGNNreplacement. Exposure-adjustedgapmisses621/910(68.24%)vsobserved540/1134(47.62%);all5consistent. MS-TCN++supportsrefinementmechanism,prior13secondTCNfailurepreserved. Rootinputchoice3probs+mask/gapage,agentinputdisagreementdocumented. PathCRFbundledweightsunresolvedSportecmatchoverlaprisk,noadmission. Decision docs/hybrid-research-decision-2026-11-14.md,source literature/hybrid-primary-evidence-2026-11-14.md,independentassessment docs/hybrid-independent-assessment-2026-11-14.md. Implementationanduserpreflightpending,noruns/newmetrics.
+
+
+November14 approvedtwohybridplanimplemented: temporal6483andgraph9835correctionmodels, fixedparents/20fitsperstage; userpreflight37suppliedtestsUNEXECUTED,50boundparentarrays,64probeupdates/fold,RSS/time/storageprojection. StagegraphrequirescommittedTreview. Finalfit/export/cleanclone/sealedusercommandsprovided.102source/evidencepinsverified,nonewmodelqualityresult;allruntimeuserowned. Independentintegrationreviewinterruptedatagentlimit,rootfinishedstaticintegrationreview. ball.md J135, docs/run-tcn-hybrid.md and docs/run-tcn-hybrid-release.md.

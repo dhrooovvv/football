@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-14",
+  "groups": {
+    "code": 52,
+    "evidence": 50
+  },
+  "signature": "84fe61609ca580d27a1ab5c75b453f3c40c182bdda639161cbc12cd9f66f522f",
+  "protocol_sha256": "acaeba6cf05f805a6d79b21dd8a722e6c6ce64a30c56074ef4655a78b67b3f56",
+  "inputs_sha256": "43960da2148e8b729ba3636356ade1c7b4c95723cabfad61434022533f18e956",
+  "supplied_test_methods": 37,
+  "runtime_executed": false
+}
