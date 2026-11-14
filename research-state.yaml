@@ -1478,3 +1478,14 @@ graph_hybrid_preflight_2026_11_14:
   production_changed: false
   sealed_opened: false
   target_accuracy: unknown
+
+mac_concurrency_proposal_2026_11_14:
+  user_authorized_fuller_hardware_utilization: true
+  observed_cpu_cores: 11
+  observed_ram_gib: 18
+  current_scheduler_jobs: 2
+  proposed_benchmark_jobs: [2, 4]
+  scheduling_extension_implemented: false
+  benchmark_executed: false
+  numerical_threads_per_job: 1
+  training_budget_change: false
