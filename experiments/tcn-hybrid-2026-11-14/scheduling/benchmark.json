@@ -1,0 +1,58 @@
+{
+  "completed": true,
+  "remaining_seconds": 92985.693325,
+  "projected_to_finish": true,
+  "extension": "2c002233d8133d6d16c6a80fb9496552978e34d002cd0c3248ef8178450a42d7",
+  "stage_signature": "296f2af2f88dbba5a174c9e5682d284b0f42cf3235f1057b2b0cf55fcb87d580",
+  "timings": {
+    "2": {
+      "wall_seconds": 97.66828887502197,
+      "sampled_peak_sum_worker_rss_bytes": 2312142848,
+      "worst_seconds_per_update": 0.15017760090631782,
+      "measured_peak_worker_rss_bytes": 1159577600,
+      "estimated_sum_worker_rss_bytes": 2317975552
+    },
+    "4": {
+      "wall_seconds": 61.45754912495613,
+      "sampled_peak_sum_worker_rss_bytes": 3547643904,
+      "worst_seconds_per_update": 0.1655328072974953,
+      "measured_peak_worker_rss_bytes": 1159364608,
+      "estimated_sum_worker_rss_bytes": 4118544384
+    }
+  },
+  "selected_workers": 4,
+  "exact_states_losses_rng_equal": true,
+  "serial_reference_equal": true,
+  "csv_hashes": [
+    "6ba1250918e5bc1aa15b8f1c7077672962438ee69406df13feadd5b5284b8b08",
+    "6ba1250918e5bc1aa15b8f1c7077672962438ee69406df13feadd5b5284b8b08",
+    "6ba1250918e5bc1aa15b8f1c7077672962438ee69406df13feadd5b5284b8b08"
+  ],
+  "checks_path": "experiments/tcn-hybrid-2026-11-14/scheduling/checks.txt",
+  "checks_sha256": "37819abfb18e2802db6f9bb568cb558fa0124709696212951852e23bb81b8311",
+  "probe_checkpoints": {
+    "models/tcn-hybrid/scheduling/benchmark/2/J03WMX/20261106/progress.pt": "a485f96fb8523b8449b51f36be354e04d76f3985e5faeb6bc03d624ffefa25ba",
+    "models/tcn-hybrid/scheduling/benchmark/2/J03WMX/20261107/progress.pt": "7a754582310b05915c8c0a5f475c4e6ec990f45e9fe0bcadb9e73da6ef569a51",
+    "models/tcn-hybrid/scheduling/benchmark/2/J03WN1/20261106/progress.pt": "7dd89c80eca439edb6efd7a85368607b403418fc2eead031ea3ef41046521ef4",
+    "models/tcn-hybrid/scheduling/benchmark/2/J03WN1/20261107/progress.pt": "acc7a7e4a580639c80b455bdda6fd9e5c944c9cdb6a19af4bb13a7b6198691ac",
+    "models/tcn-hybrid/scheduling/benchmark/2/J03WOH/20261106/progress.pt": "c2b703c39dc9d8df6909a45ef50c63f43d2052ab4554f54644217b9ca980ce16",
+    "models/tcn-hybrid/scheduling/benchmark/2/J03WOH/20261107/progress.pt": "0ce835dc6f70fcca268f15208c0ed60aa9d2a8f8c0ec3f8f73fd0e178f8a4f25",
+    "models/tcn-hybrid/scheduling/benchmark/2/J03WOY/20261106/progress.pt": "9fb440a7ac3b5629a75377e3f47b0eeb43772e0c000044b6fec5e9c17d01680a",
+    "models/tcn-hybrid/scheduling/benchmark/2/J03WOY/20261107/progress.pt": "2e5fca296a8994e408d43b7872f25a0e7c4f3b155d74b4b20ffafebb4badc61f",
+    "models/tcn-hybrid/scheduling/benchmark/2/J03WPY/20261106/progress.pt": "8a23948b446958d648f60bdb61efa428e34088a630ef16a1f00542bc78337985",
+    "models/tcn-hybrid/scheduling/benchmark/2/J03WPY/20261107/progress.pt": "24f5d36fc651745873222c12116505db8a2eb6f56c1beee955225765eff01fb2",
+    "models/tcn-hybrid/scheduling/benchmark/4/J03WMX/20261106/progress.pt": "6939ce29947ffb5db3a6bf212e3f76742db2c4eecd06d1d7221368cc7eb7662e",
+    "models/tcn-hybrid/scheduling/benchmark/4/J03WMX/20261107/progress.pt": "6c9b7205f0bdae52d32bf4a2e0673c88711db1931591709b6508281624b55b99",
+    "models/tcn-hybrid/scheduling/benchmark/4/J03WN1/20261106/progress.pt": "840a2e09051dd2005a5998a32ddf38db44f06e4e506ed83371d4ae601574a4e1",
+    "models/tcn-hybrid/scheduling/benchmark/4/J03WN1/20261107/progress.pt": "72111106428aaf723e188cdaa5442c62f9adcf7920b36edbf65aba01e9c5cf4a",
+    "models/tcn-hybrid/scheduling/benchmark/4/J03WOH/20261106/progress.pt": "c404dd84db6d725e5c453b35050bbeb188ffcacc60415980d073a5f2a2aa5002",
+    "models/tcn-hybrid/scheduling/benchmark/4/J03WOH/20261107/progress.pt": "88766dbbb0328e43b82b57aa60e89bfd7c4a433ccbb76ce7541ecf3277afad44",
+    "models/tcn-hybrid/scheduling/benchmark/4/J03WOY/20261106/progress.pt": "8e8feacd0e5c51a5d317e78d5e8e4d0a0692420c099546e123608ff89f7e525d",
+    "models/tcn-hybrid/scheduling/benchmark/4/J03WOY/20261107/progress.pt": "e7f5aa94dbb0ff3f5603f659ae0b7a4c4c9fbe6c972f138f07a3d7ee7b9fd5d1",
+    "models/tcn-hybrid/scheduling/benchmark/4/J03WPY/20261106/progress.pt": "1dcebe45b7c6c159ea9ed2d67c367f1f3d7993916bc82590f8b43a4a231e1f24",
+    "models/tcn-hybrid/scheduling/benchmark/4/J03WPY/20261107/progress.pt": "c28b05f3105e0f2649efb4ffd7d901407493d17fa27f080b959b3e811f5309bf"
+  },
+  "projected_seconds": 73462.21213075903,
+  "final_fit_scheduling": "four_independent_first_repeat_fits",
+  "quality_scores_used": false
+}

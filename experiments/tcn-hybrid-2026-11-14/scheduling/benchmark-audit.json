@@ -1,0 +1,15 @@
+{
+  "benchmark_sha256": "ed6a0c8b79e707c3adcb8761d9c2d77eb8c02d63e88c0a50e675bbd491ef1e46",
+  "registered_entries_verified": 12,
+  "probe_checkpoint_hashes_verified": 20,
+  "user_logged_tests": 4,
+  "workers": 4,
+  "speedup": 1.5891992158106043,
+  "projected_total_hours": 20.406170036321953,
+  "remaining_hours": 25.264508190833336,
+  "eligible": true,
+  "sampled_sum_process_rss_gib": 3.3040008544921875,
+  "exact_equality_from_saved_user_proof": true,
+  "assistant_numerical_execution": false,
+  "new_quality_score": false
+}

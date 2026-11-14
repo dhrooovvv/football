@@ -404,3 +404,6 @@ November14Macinspection11cores/18GiB;currenttwo-seedworker scheduling leavesfold
 
 
 November14approvedschedulingextensionimplemented: fourfold/seedjobsandfourparallelfinalfits, unchangedmodel/budget/gate. New2vs4benchmarkrequiresexactstatesandserialreference+16384frameCSVidentitybeforeselectingthroughput. FournewtestsUNRUN,speedunmeasured. Source/evidence12pinsregistered,firstusercommand scripts/run_tcn_hybrid_parallel.py --benchmark. ball.md J142.
+
+
+November14fourjobbenchmarkpassed4checks/exactstateandserialreference/CSVidentity. Runtime97.67→61.46s(1.59xspeedup),sampledsumRSS3.30GiB. Revised20.41hconservativebudgetfitsremainingtime;parallelgraphfullruneligible. No qualityscore. ball.md J143.

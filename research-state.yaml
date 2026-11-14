@@ -1506,3 +1506,16 @@ mac_concurrency_extension_2026_11_14:
   benchmark_executed: false
   model_training_budget_changed: false
   target_accuracy: unknown
+
+mac_concurrency_benchmark_2026_11_14:
+  status: passed_four_jobs_selected_graph_run_eligible
+  audit: experiments/tcn-hybrid-2026-11-14/scheduling/benchmark-audit.json
+  workers: 4
+  user_logged_tests: 4
+  reproducibility_passed_recorded: true
+  benchmark_wall_two_jobs_seconds: 97.66828887502197
+  benchmark_wall_four_jobs_seconds: 61.45754912495613
+  conservative_total_hours: 20.406170036321953
+  full_graph_comparison_completed: false
+  assistant_numerical_execution: false
+  new_quality_score: false
