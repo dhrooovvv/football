@@ -1553,3 +1553,22 @@ submission_package_2026_11_15:
   official_validation_of_renamed_copy: pending_user_run
   sealed_evaluation: pending_at_freeze
   target_accuracy: unknown
+
+temporal_recovery_audit_2026_11_15:
+  status: preregistered_awaiting_user_run
+  protocol: experiments/temporal-recovery-audit-2026-11-15/protocol.md
+  runner: scripts/audit_temporal_recovery.py
+  registration: ddf1b7a987107693b3780cd3c3e18cf72a8563e167f1a38128887503cd0c15c9
+  source_fingerprints: 204
+  evidence_fingerprints: 163
+  supplied_tests_unexecuted: 8
+  purpose: recovered_versus_introduced_spurious_separability
+  candidate_rule_registered: false
+  numerical_execution: user_only
+  graph_training_trend: saved_checkpoint_diagnostic_only
+  graph_longer_training_registered: false
+  artifact_reservation_mib: 32
+  research_stops: '2026-11-16T00:00:00+05:30'
+  selected_candidate: trial_b_unchanged
+  sealed_opened: false
+  target_accuracy: unknown
