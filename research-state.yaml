@@ -1538,3 +1538,18 @@ graph_hybrid_result_2026_11_15:
   assistant_numerical_execution: false
   sealed_opened: false
   target_accuracy: unknown
+
+submission_package_2026_11_15:
+  status: local_draft_created_not_submitted
+  directory: submission-package-2026-11-15
+  selected_candidate: trial_b_two_seed_tcn
+  csv_sha256: 3dca80aa3b18a8c8e880b9f26cf1dc4f17a13018df18a2e4b39cf30f7da63463
+  required_deliverables: [possession_csv, public_reproducible_repository_url, technical_pdf_or_markdown]
+  registered_team_name: unconfirmed
+  match_assets_copied: false
+  public_repository_release_verified: false
+  clean_environment_and_clone_qualification: pending
+  portable_post_deadline_entry_point: pending
+  official_validation_of_renamed_copy: pending_user_run
+  sealed_evaluation: pending_at_freeze
+  target_accuracy: unknown
