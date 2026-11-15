@@ -1612,3 +1612,32 @@ temporal_recovery_audit_result_2026_11_15:
   selected_candidate: trial_b_unchanged
   assistant_numerical_execution: false
   target_accuracy: unknown
+
+graph_long_2026_11_15:
+  status: preregistered_awaiting_user_run
+  runner: scripts/run_graph_long.py
+  protocol: experiments/graph-long-2026-11-15/protocol.md
+  registration: 6445985c4e325bb38396c12ef8fcc863bd8e0548fcae54c26fdd37f6af007e49
+  frozen_parent: trial_b_two_seed_tcn
+  trained_component: graph_correction_only
+  original_cumulative_steps: 40000
+  new_cumulative_steps: 50000
+  extra_steps_per_fit: 10000
+  continuation_fits_with_repeats: 20
+  additional_updates: 200000
+  workers: 4
+  numerical_threads_per_worker: 1
+  source_fingerprints: 210
+  evidence_fingerprints: 216
+  new_supplied_tests_unexecuted: 6
+  original_contracts_rerun_before_training: 37
+  forecast_development_nominal_hours: 2.7588801216249217
+  conservative_hours_with_final_fitting_reserve: 8.086920334468536
+  freeze_unchanged: '2026-11-16T00:00:00+05:30'
+  artifact_reservation_mib: 512
+  automatic_final_fitting: false
+  new_final_release_path_implemented: false
+  temporal_confidence_filter_executed: false
+  assistant_numerical_execution: false
+  selected_candidate: trial_b_unchanged
+  target_accuracy: unknown
