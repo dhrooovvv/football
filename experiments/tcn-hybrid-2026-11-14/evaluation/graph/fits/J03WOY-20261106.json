@@ -1,0 +1,71 @@
+{
+  "stage": "graph",
+  "seed": 20261106,
+  "held_out": "J03WOY",
+  "signature": "296f2af2f88dbba5a174c9e5682d284b0f42cf3235f1057b2b0cf55fcb87d580",
+  "binding": {
+    "stage": "graph",
+    "registration": "84fe61609ca580d27a1ab5c75b453f3c40c182bdda639161cbc12cd9f66f522f",
+    "parent": "trial_b",
+    "parent_results_sha256": "edaf2779f22c9e5d2d5d0cc8ccdf9bb9c35932d77cdc51a24c9d32a1def98723",
+    "parent_review_sha256": "f696b9bc83d989a818e8ff24821fb3162b81ddd4777e69689f829eb0cd1968d3",
+    "temporal_selected": false,
+    "review_sha256": "332cf6a6055ddcfdd85e2dd3b204ed83aea70031f0aec910b3ba1df5dedd752d"
+  },
+  "training_matches": [
+    "idsse-J03WMX",
+    "idsse-J03WN1",
+    "idsse-J03WOH",
+    "idsse-J03WPY"
+  ],
+  "steps": 40000,
+  "exact_repeat": true,
+  "checks_path": "experiments/tcn-hybrid-2026-11-14/evaluation/graph/checks-1794668527704513000.txt",
+  "checks_sha256": "099ecf20dc9c541d5a4d9f75bb7360ad4abec6fc94c64f520cbcc0e7b998f6c2",
+  "checkpoint_hashes": {
+    "models/tcn-hybrid/graph/J03WOY/20261106/first/progress.pt": "068bd1dade484e3d4341bdb6d6251d2e121900e91c691eb303ab017ae0728013",
+    "models/tcn-hybrid/graph/J03WOY/20261106/repeat/progress.pt": "235290db26d2c8efd6d7f34c39d3a5408a57ad10b89af42f1537c7b469cb6ee3"
+  },
+  "seconds": 12174.53369808395,
+  "training_loss_sha256": "415bd3a7e599719b5e7d79b3edd3e23fa3e3ac79e1b0c1e3444eb003499e1beb",
+  "component_loss_sha256": "f9b3fd9aebb94aaa0c495309aab42ee1175d4f4e7d0faae708f89409d18101d2",
+  "coverage": {
+    "stage1": {
+      "idsse-J03WMX": 46194,
+      "idsse-J03WN1": 42757,
+      "idsse-J03WOH": 33973,
+      "idsse-J03WPY": 37076
+    },
+    "stage2": {
+      "idsse-J03WMX": 46194,
+      "idsse-J03WN1": 42757,
+      "idsse-J03WOH": 33973,
+      "idsse-J03WPY": 37076
+    }
+  },
+  "supervised_views": {
+    "stage1": {
+      "clean": 79820,
+      "gap": 80180
+    },
+    "stage2": {
+      "clean": 79820,
+      "gap": 80180
+    }
+  },
+  "exposure": {
+    "stage1": {
+      "uniform_windows": 80049,
+      "short_windows": 79951,
+      "complete_short_presentations": 159138,
+      "loss_segments": 199397
+    },
+    "stage2": {
+      "uniform_windows": 80049,
+      "short_windows": 79951,
+      "complete_short_presentations": 159138,
+      "loss_segments": 199397
+    }
+  },
+  "scheduling_extension": "2c002233d8133d6d16c6a80fb9496552978e34d002cd0c3248ef8178450a42d7"
+}

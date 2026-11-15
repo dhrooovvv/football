@@ -407,3 +407,6 @@ November14approvedschedulingextensionimplemented: fourfold/seedjobsandfourparall
 
 
 November14fourjobbenchmarkpassed4checks/exactstateandserialreference/CSVidentity. Runtime97.67→61.46s(1.59xspeedup),sampledsumRSS3.30GiB. Revised20.41hconservativebudgetfitsremainingtime;parallelgraphfullruneligible. No qualityscore. ball.md J143.
+
+
+November15graphcomparisonrejected:mean.647364clean/.508415corruptvsB.650385/.509836;primarymedian+.002031passesbutpairedmedian−.003345/only1of5winsfail. Missedcorrupt1278→1276/spurious658→699.114pins/180hashesaudited,20fitsrecordexactrepeats/CSVproofs. Bothhybridsclosed,retainalreadyfittedB,noadditionalbranchtraining. Nextdeliveryreproductionandsealedfreeze. ball.md J144.

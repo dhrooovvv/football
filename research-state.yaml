@@ -1519,3 +1519,22 @@ mac_concurrency_benchmark_2026_11_14:
   full_graph_comparison_completed: false
   assistant_numerical_execution: false
   new_quality_score: false
+
+graph_hybrid_result_2026_11_15:
+  status: rejected_paired_spell_and_majority_gate
+  audit: experiments/tcn-hybrid-2026-11-14/graph-result-audit.json
+  review: experiments/tcn-hybrid-2026-11-14/reviewed-graph.json
+  mean_clean_spell: 0.6473635337374103
+  mean_corrupted_spell: 0.508414678519287
+  primary_median_delta: 0.0020310028472003694
+  paired_median_spell_delta: -0.003345496308826079
+  paired_matches_improved: 1
+  fit_count: 20
+  workers: 4
+  both_hybrid_trials_closed: true
+  selected_candidate: trial_b
+  additional_final_branch_fits_required: 0
+  next_step: clean_environment_and_fresh_clone_qualification
+  assistant_numerical_execution: false
+  sealed_opened: false
+  target_accuracy: unknown
