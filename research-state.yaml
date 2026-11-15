@@ -1588,3 +1588,27 @@ temporal_recovery_audit_fix01_2026_11_15:
   failed_evidence_commit: 0874a1d
   scientific_protocol_changed: false
   selected_candidate: trial_b_unchanged
+
+temporal_recovery_audit_result_2026_11_15:
+  status: completed_diagnostic_only
+  audit: experiments/temporal-recovery-audit-2026-11-15/result-audit.json
+  review: experiments/temporal-recovery-audit-2026-11-15/result-review.md
+  user_tests_passed: 10
+  archived_cells_reproduced: 10
+  source_fingerprints_verified: 206
+  evidence_fingerprints_verified: 165
+  recovered_clean: 219
+  introduced_spurious_clean: 321
+  recovered_corrupted: 212
+  introduced_spurious_corrupted: 570
+  mean_corrupted_temporal_margin_auc: 0.6983806336874675
+  temporal_margin_auc_positive_matches: 5
+  graph_late_training_loss_declines: 20
+  graph_heldout_learning_curve_available: false
+  next_proposal: one_fixed_temporal_margin_filter
+  proposed_margin_threshold: 0.5
+  proposed_rule_executed: false
+  proposed_rule_requires_separate_protocol_and_approval: true
+  selected_candidate: trial_b_unchanged
+  assistant_numerical_execution: false
+  target_accuracy: unknown
