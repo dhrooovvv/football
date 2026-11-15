@@ -22,6 +22,17 @@ class RecoveryContracts(unittest.TestCase):
         self.assertIsNone(recovery.auc([], [1]))
         self.assertIsNone(recovery.auc([1], []))
 
+    def test_string_and_numeric_label_equivalence(self):
+        strings = np.array(['H', 'A', 'D', 'X'])
+        codes = np.arange(4, dtype=np.int64)
+        np.testing.assert_array_equal(recovery.label_codes(strings, official), codes)
+        np.testing.assert_array_equal(recovery.label_codes(codes, official), codes)
+
+    def test_invalid_numeric_labels_rejected(self):
+        for values in ([-1], [4], [[0, 1]], ['0']):
+            with self.assertRaises(ValueError):
+                recovery.label_codes(values, official)
+
     def records(self, y, before, after, blocks=None):
         y, before, after = map(lambda v: np.array(v, dtype=np.int8), (y, before, after))
         parent, temporal = np.eye(3)[before], np.eye(3)[after]

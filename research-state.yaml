@@ -1572,3 +1572,19 @@ temporal_recovery_audit_2026_11_15:
   selected_candidate: trial_b_unchanged
   sealed_opened: false
   target_accuracy: unknown
+
+temporal_recovery_audit_fix01_2026_11_15:
+  status: corrected_awaiting_user_retry
+  initial_user_tests: 8
+  initial_passed: 3
+  initial_errors: 5
+  cause: numeric_internal_codes_passed_to_official_string_label_converter
+  inference_started: false
+  current_tests: 10
+  corrected_tests_executed: false
+  registration: 91a4395fe91ef2b55a0022af1c7b4d3c6e444c6c1e531d550aec20ccce34f9ec
+  source_fingerprints: 206
+  evidence_fingerprints: 165
+  failed_evidence_commit: 0874a1d
+  scientific_protocol_changed: false
+  selected_candidate: trial_b_unchanged

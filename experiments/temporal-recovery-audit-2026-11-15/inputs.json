@@ -8,7 +8,7 @@
     "docs/run-tcn-missed.md": "ff963bdb123f733e7e42b839a2f32f05b5b7054a0d29fe6a515880f42c7a6650",
     "docs/run-tcn-parallel.md": "3c2a0ae135b9462230ca1d2423f64d52ee18c574ae25625da5fb207a31a4e72b",
     "docs/run-tcn-pretrain.md": "735046a9ad65bf7cc55601409e052f3cab3ebbe0b2b8e065726dd9488d9fd3ba",
-    "docs/run-temporal-recovery-audit.md": "bc233b5fb48a20f3ab387ef27fbb5d03add86d5f9f68f7e6d709ed81f4eda684",
+    "docs/run-temporal-recovery-audit.md": "ea78940df9869c9e1df7154df3abc780d8ca031551b6ed42f14b99a051999ba7",
     "docs/tcn-boundary-design-review-2026-11-11.md": "447d5f237e130a1ae34145f197fffa9e5197cee25adfce5e94f2b14dcbd841e4",
     "docs/tcn-missed-review-2026-11-13.md": "54148842932ce76894cbb75567f8aed0663d26f7e83904b1cd116e90a2a2dae7",
     "docs/tcn-parallel-review-2026-11-12.md": "972fdc16f3c180024ecc9e033f5a81e2b43870f9a8882d551fb53b9f55f7697d",
@@ -116,9 +116,9 @@
     "experiments/tcn-winner-release-2026-11-12/inputs.json": "fef5eab4e882c7aafa4ba8181db85617518cb8fd359cdcee3a114441fb488571",
     "experiments/tcn-winner-slot-audit-2026-11-12/winner_contract.py": "dc47b4584287eaff3663240f8cf4e42f4302f9399c1e05445fce0fcfd014e760",
     "experiments/temporal-recovery-audit-2026-11-15/membership.json": "bdd78ad225404a0cd5f6e8458051de477a9574df04a0e95b0c15833e49a69485",
-    "experiments/temporal-recovery-audit-2026-11-15/protocol.md": "2d4a447c5cbe63bcfd6086b0991bdfa0eff091dc94fdb81f47195201dd222191",
-    "experiments/temporal-recovery-audit-2026-11-15/recovery.py": "756cb37fb5132097942f9256ef1f8da3443726bf12fcda99db15e7bf33cc8432",
-    "experiments/temporal-recovery-audit-2026-11-15/tests/test_recovery.py": "a114489f4d612b5194adcb23f61635eecaf3a4c770e12fe5e8ee9ce29b82417a",
+    "experiments/temporal-recovery-audit-2026-11-15/protocol.md": "80297e382a5622a992410e346550b9fb218c6a81306f9ea02a4475bc0627e644",
+    "experiments/temporal-recovery-audit-2026-11-15/recovery.py": "5c4d54859c6bb2817cc6fbe1543d091b99d1cc3314cd6a0224b70a09cede1c62",
+    "experiments/temporal-recovery-audit-2026-11-15/tests/test_recovery.py": "14ebce0646b0f80ddf90b8ff59d56a323e06ef4699a358d10bdd45ea0e86b08b",
     "experiments/whole-pitch/rejected_whole_pitch.py": "84272024993f6de94501a5a2f4cfd8ac057276d816964d772284fd000e6163cc",
     "experiments/whole-pitch/test_rejected_whole_pitch.py": "56cd99cc298c471b594a05089fa8c5fb7ed037e4b5f3e5c61cf3f60258b54a8f",
     "scripts/audit_control_context.py": "38ea2544ebfb2de940108c492f4903ac22cd7fe9922f9c4793015c204c635061",
@@ -126,7 +126,7 @@
     "scripts/audit_pff_coverage.py": "6225bcc12a75dacc0a52ed9bffe432311c57b9517ac153794d93e795f3242c50",
     "scripts/audit_tcn_boundaries.py": "e44379cf28a3881c1d9e500873299cd24f46c3a8d746af99f5fb11f4f5292a09",
     "scripts/audit_tcn_slots.py": "a2d031c308d46877b3fe70edb496ccc34ce14b5ab2381794926a9c3328f31ab0",
-    "scripts/audit_temporal_recovery.py": "3057d04516f1d6be656b891132db9e35c6fdd2c946644c6aa82af4d529095f2d",
+    "scripts/audit_temporal_recovery.py": "5a0eb6670fc1f6833e00719f367b178b1b5c17d3ab44b58f6e4fc9b95aafe408",
     "scripts/benchmark_tcn_core_sweep.py": "d489e8fb5a03e8ddf227e889c5cc024d6a1544105d156561363bdc333b30f1c8",
     "scripts/benchmark_tcn_cores.py": "aa14d6df72cd086fc878fe162be5c679bd6c0cdd890e00fd455d2d0721704208",
     "scripts/check_tcn_learning.py": "4d569074f26aeea8de7421859418c327079cb99614b259ff37c02c2c383a133d",
@@ -203,7 +203,9 @@
     "tests/test_inputs.py": "999e2e937503994d8576c5b70b7d6e27b50a75dbc1e0a612b4477b06333e2c36",
     "tests/test_pff.py": "7801799ef041178a5d21593c54e88811edea360f2e6c5772f0cb92e74db9f9ca",
     "tests/test_tabicl_medium.py": "3d818850d123fc9b207fd60b0d9a3a86e0741aebb027b370b8c00b96a9120151",
-    "tests/test_tabicl_small.py": "8b3c038ec572baed021bb2f6c72d4734f92ca328e7855d11ab4978bb197bd9f3"
+    "tests/test_tabicl_small.py": "8b3c038ec572baed021bb2f6c72d4734f92ca328e7855d11ab4978bb197bd9f3",
+    "experiments/temporal-recovery-audit-2026-11-15/revisions/fix-01.md": "af36bab27c6b9f03eacc98df4e62acd903fae67fa169f759d3544aa7796e412d",
+    "experiments/temporal-recovery-audit-2026-11-15/revisions/v1-inputs.json": "4d6d0a2969c241494f68980305c1bc60d231783e883c80ac78314f5ebd81fc55"
   },
   "evidence": {
     "data/tcn-hybrid/graph/predictions/J03WMX-clean-batch4.csv": "0a034ce09e02f6ea347b4a04861d233325d1ea217e63368e43db19343f87363c",
@@ -368,6 +370,8 @@
     "models/tcn-hybrid/temporal/J03WPY/20261106/first/progress.pt": "26cfd332ec5ae3fc83e0d887105a9d367e31a7ed33059d20143347a5c66d25d8",
     "models/tcn-hybrid/temporal/J03WPY/20261106/repeat/progress.pt": "7974def08622ae6936dcdbb045ba6bf46e7c7310bc577a2b297d4fb41ae468e6",
     "models/tcn-hybrid/temporal/J03WPY/20261107/first/progress.pt": "b1aa303230693b0089d2190fa7dfd62cd53d7739ab329037637749514434cb5c",
-    "models/tcn-hybrid/temporal/J03WPY/20261107/repeat/progress.pt": "d2752cb5d27e2ce0306e8a46f1995e9774d6de15b1712bf4017ca1d9493cfbb4"
+    "models/tcn-hybrid/temporal/J03WPY/20261107/repeat/progress.pt": "d2752cb5d27e2ce0306e8a46f1995e9774d6de15b1712bf4017ca1d9493cfbb4",
+    "experiments/temporal-recovery-audit-2026-11-15/evaluation/checks.txt": "c3af45aa309e13997ede4ae3986336df11996d6a49e494e858c2be4717f33900",
+    "experiments/temporal-recovery-audit-2026-11-15/failures/1794722286627391000.json": "9138a2db064a33ee87752e225457c7799af60f99a218b78a6791877322f91a83"
   }
 }

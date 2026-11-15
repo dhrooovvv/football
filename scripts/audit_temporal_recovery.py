@@ -77,16 +77,19 @@ def main():
         fcntl.flock(guard, fcntl.LOCK_EX | fcntl.LOCK_NB)
         require(not (directory/'results.json').exists(), 'Completed diagnostic exists; review it')
         check_storage(reserve=32*1024**2)
-        log = directory/'checks.txt'
-        require(not log.exists() or (directory/'checks-status.json').exists(),
-                'Interrupted checks require review; preserve log')
         if not (directory/'checks-status.json').exists():
+            log = directory/f'checks-{time.time_ns()}.txt'
             with log.open('w') as stream:
                 outcome = subprocess.run([sys.executable, '-m', 'unittest', 'discover',
                     '-s', str(ROOT/'tests'), '-v'], stdout=stream, stderr=subprocess.STDOUT)
             require(outcome.returncode == 0, 'Diagnostic checks failed; preserve log')
-            write(directory/'checks-status.json', dict(passed=True, sha256=sha(log)))
-        require(load(directory/'checks-status.json') == dict(passed=True, sha256=sha(log)),
+            write(directory/'checks-status.json',
+                  dict(passed=True, signature=signature, path=str(log), sha256=sha(log)))
+        checks = load(directory/'checks-status.json')
+        log = Path(checks['path'])
+        require(log.parent == directory and log.name.startswith('checks-') and log.suffix == '.txt',
+                'Unsafe checks log path')
+        require(checks == dict(passed=True, signature=signature, path=str(log), sha256=sha(log)),
                 'Checks log changed')
         d = hybrid.dependencies()
         import recovery

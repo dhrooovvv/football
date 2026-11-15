@@ -4,6 +4,18 @@ import numpy as np
 SIGNALS = ('parent_team_margin', 'temporal_team_margin', 'member_agreement')
 
 
+def label_codes(values, official):
+    """Accept validated internal codes or the official string-label interface."""
+    array = np.asarray(values)
+    if array.ndim != 1:
+        raise ValueError('Labels must be a one-dimensional sequence')
+    if np.issubdtype(array.dtype, np.integer):
+        if np.any((array < 0) | (array > 3)):
+            raise ValueError('Internal label codes must be0..3')
+        return array.astype(np.int8, copy=False)
+    return official.label_codes(array)
+
+
 def auc(positive, negative):
     """Mann–Whitney probability, ties worth one half; no threshold fitting."""
     if not positive or not negative:
@@ -32,7 +44,7 @@ def summarize(records):
 
 def spell_records(y, before, after, parent, temporal, members, missing, blocks, official, diagnostic):
     """Full original spells, split at halves and unknown supervision, official greedy IoU .5."""
-    y, before, after = map(official.label_codes, (y, before, after))
+    y, before, after = (label_codes(value, official) for value in (y, before, after))
     if parent.shape != (len(y), 3) or temporal.shape != parent.shape or len(members) != 2:
         raise ValueError('Wrong frozen two-member probability schema')
     runs = diagnostic.valid_runs(y, blocks, official)

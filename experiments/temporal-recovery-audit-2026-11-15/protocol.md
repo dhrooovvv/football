@@ -31,3 +31,7 @@ Per-match completed units have content hashes and can resume; preserve failures 
 ## Next decision
 
 Stop for review. At most one later rule may be proposed from this diagnostic, with explicit limitations and a new committed protocol. No graph training extension is automatically opened. Delivery qualification and sealed evaluation remain separate from development improvement.
+
+## Correctness amendment01 — before retry
+
+See revisions/fix-01.md. The initial user-run eight-test check failed five numeric-code adapter cases before inference. Fix accepts validated internal0..3 codes while retaining official H/A/D/X parsing; two new contracts bring the suite to ten. Preserve old locks/logs and all scientific choices. Each retry uses a unique check log; a success status binds current registration. No test, inference or scoring executed by the assistant.
