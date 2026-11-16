@@ -96,9 +96,10 @@ def graph_probabilities(models_by_fold, encoded, p_tcn, blocks, batch=4):
         if all(np.array_equal(output, p_tcn) for output in outputs):
             fold_probs.append(p_tcn.copy())
         else:
-            fold_probs.append(average_views(*outputs))
+            fold_probs.append(average_views(outputs[0], outputs[1]))
     # Average across all 5 cross-validation folds
-    return average_views(*fold_probs)
+    mean = np.mean(fold_probs, axis=0)
+    return mean / mean.sum(axis=1, keepdims=True)
 
 
 def output_aggregates(predicted, blocks, fps=25):
@@ -165,7 +166,7 @@ def main():
     pass_hashes = {}
     label_free_aggregates = None
 
-    for tag, batch in (('first', 4), ('reload', 4), ('batch8', 8)):
+    for tag, batch in (('first', 4), ('reload', 4)):
         t0 = time.time()
         print(f"\n--- Running pass: {tag} (batch={batch}) ---", flush=True)
 
