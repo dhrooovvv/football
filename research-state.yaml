@@ -1641,3 +1641,65 @@ graph_long_2026_11_15:
   assistant_numerical_execution: false
   selected_candidate: trial_b_unchanged
   target_accuracy: unknown
+
+
+tcn_graph_ensemble_2026_11_16:
+  status: completed
+  protocol: experiments/tcn-graph-ensemble/protocol.md
+  preregistration_commit: 7961ce7
+  results_commit: 5f7fd3f
+  weights:
+    tcn: 0.5
+    graph50k: 0.5
+  models_evaluated:
+    tcn_parent: trial_b_two_seed_tcn
+    graph50k_refiner: graph_long_2026_11_15
+  matches_evaluated: 5
+  conditions_evaluated:
+    - clean
+    - targetlike
+  metrics:
+    clean_spellF1_mean:
+      tcn: 0.6503847082458226
+      graph50k: 0.6488745271104096
+      ensemble: 0.6594324113391725
+    clean_spellF1_median:
+      tcn: 0.647843137254902
+      graph50k: 0.651400730816078
+      ensemble: 0.6604651162790698
+    targetlike_spellF1_mean:
+      tcn: 0.5098356396639198
+      graph50k: 0.518200029652202
+      ensemble: 0.5224309485803629
+    targetlike_spellF1_median:
+      tcn: 0.5163913595933927
+      graph50k: 0.5190416141235813
+      ensemble: 0.5175257731958762
+    clean_macroF1_mean:
+      tcn: 0.9267515420995585
+      graph50k: 0.9257878140269643
+      ensemble: 0.929070365524171
+    targetlike_macroF1_mean:
+      tcn: 0.8379805572957197
+      graph50k: 0.8454721041748037
+      ensemble: 0.8480716072255128
+  gate_vs_tcn:
+    gate_version: v2
+    quality_eligible: true
+    primary_median_delta: 0.014097190696888806
+    paired_median_spell_delta: 0.008890706763457157
+    paired_median_macro_delta: 0.004554592898901255
+    matches_improved: 5
+    repeatability_exact: true
+  gate_vs_graph50k:
+    gate_version: v2
+    quality_eligible: false
+    primary_median_delta: -0.00151584092770507
+    paired_median_spell_delta: 0.004337772392553174
+    paired_median_macro_delta: 0.002211344340481869
+    matches_improved: 4
+    repeatability_exact: true
+  repeatability_csv_bytes_identical: true
+  automatic_promotion: false
+  selected_candidate: trial_b_unchanged
+  target_accuracy: unknown

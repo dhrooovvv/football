@@ -1855,3 +1855,41 @@ Fourone-threadjobs reuse verifiedoldbenchmark/caches. Direct--run performs sourc
 Remainingfreezeattimechoice~12h; originalworstpairedrate.161084s/update gives50kextra-dev2.68hnominal, conservative7.88hincludingfreshfinal4×50kfitsoneparallelwave/1.5margin/1800soverhead. Usinglargerfourjobbenchmarkrate.165533gives2.76hnominaldev/8.09hwholeforecast.60k12.58hand80k21.98h(originalrate)exceedconservativefreeze-timebudget,so50kchosenbyfeasibilityratherthanmetrics. SameNov16startfreeze; runtimeadmissionrechecksremainingtaskwavesandreservesfinalfitwork. Runtimeunmeasuredforthisrunner. Projected3–4hdev/scoringisestimate,notguarantee. Final50krelease/exportpathstillrequiresseparateimplementation/approval/executionifqualifies; no candidate withoutfinalqualificationbeforefreeze.
 
 Newartifact512MiBreservationincludespreviousunaccountedrecoveryaudit/privatepackagecopies; enforcecombined2GiB/12GiBfloor,noassetdeletion. Source210/evidence216fingerprints, registration6445985c4e325bb38396c12ef8fcc863bd8e0548fcae54c26fdd37f6af007e49. Includesall30compactarrays,10preparedviews,50training/evalparentcacheprovenance,original20graphcheckpoints/proofsandbenchmark. Protocol/source/membershipcommittedbeforeexecution. SelectedB/CSVstillunchanged,targetaccuracyunknown,noexternalaction.
+
+
+### J151 — 2026-11-16 — Bounded frozen 50/50 probability ensemble preregistered
+
+Preregistered exactly one bounded experiment evaluating an unweighted 50/50 probability average of retained Trial B TCN and graph50k (from `experiments/graph-long-2026-11-15`). No retraining, fine-tuning, or hyperparameter/mixing search.
+Audit confirmed all ten OOF parent probability arrays exist at `data/tcn-hybrid/graph/parents/<held_out>/evaluation/<held_out>-<condition>.npy`, all 20 graph50k checkpoints exist at `models/graph-long-2026-11-15/<held_out>/<seed>/first/progress.pt`, and all five development matches share identical frame indexing, shapes `(N, 3)`, normalization, and block bounds.
+Committed `experiments/tcn-graph-ensemble/protocol.md` to Git prior to evaluation (commit `7961ce7`). Frozen Viterbi decoder (penalty 16) and official reference scorer preserved unchanged. Sealed matches `J03WQQ` and `J03WR9` untouched; target labels unviewed.
+
+### J152 — 2026-11-16 — Frozen 50/50 TCN-Graph ensemble evaluated; quality-eligible vs TCN, ineligible vs Graph50k
+
+Evaluation executed across all five development matches under clean and targetlike corruption conditions. Repeated inference confirmed 10/10 prediction CSVs byte-identical across independent reloaded passes. Results committed as `5f7fd3f`.
+
+Exact spellF1 results:
+- Clean mean: TCN 0.650385, Graph50k 0.648875, Ensemble 0.659432 (Δ vs TCN +0.009048, Δ vs G50k +0.010558).
+- Clean median: TCN 0.647843, Graph50k 0.651401, Ensemble 0.660465.
+- Targetlike mean: TCN 0.509836, Graph50k 0.518200, Ensemble 0.522431 (Δ vs TCN +0.012595, Δ vs G50k +0.004231).
+- Targetlike median: TCN 0.516391, Graph50k 0.519042, Ensemble 0.517526.
+Exact macroF1 results:
+- Clean mean: TCN 0.926752, Graph50k 0.925788, Ensemble 0.929070.
+- Targetlike mean: TCN 0.837981, Graph50k 0.845472, Ensemble 0.848072.
+
+Per-match paired spellF1 deltas vs Trial B TCN:
+- J03WMX: +0.008891 (clean +0.003684, targetlike +0.014097)
+- J03WN1: +0.016397 (clean +0.010015, targetlike +0.022780)
+- J03WOH: +0.006561 (clean -0.004234, targetlike +0.017357)
+- J03WOY: +0.005493 (clean +0.009851, targetlike +0.001134)
+- J03WPY: +0.016766 (clean +0.025923, targetlike +0.007609)
+Gate v2 vs TCN: Primary corrupted median delta +0.014097 > 0, paired spell median delta +0.008891 > 0, paired macro median delta +0.004555 >= -0.01, 5/5 matches improved (100%), repeatability exact. Gate vs TCN: PASS (Eligible).
+
+Per-match paired spellF1 deltas vs Graph50k:
+- J03WMX: +0.021509 (clean +0.027721, targetlike +0.015298)
+- J03WN1: -0.017753 (clean -0.018767, targetlike -0.016740)
+- J03WOH: +0.004338 (clean +0.013718, targetlike -0.005043)
+- J03WOY: +0.003774 (clean +0.009064, targetlike -0.001516)
+- J03WPY: +0.025104 (clean +0.021053, targetlike +0.029155)
+Gate v2 vs Graph50k: Primary corrupted median delta -0.001516 <= 0 (FAIL), paired spell median delta +0.004338 > 0, paired macro median delta +0.002211 >= -0.01, 4/5 matches improved, repeatability exact. Gate vs Graph50k: FAIL (Ineligible).
+
+Decision: Per preregistered constraints and explicit instruction, no automatic promotion. Trial B remains selected production model. Next step: await user direction on whether to promote 50/50 ensemble over Trial B based on 5/5 dev match paired wins and +0.0090 clean / +0.0126 corrupted mean spellF1 gain.
