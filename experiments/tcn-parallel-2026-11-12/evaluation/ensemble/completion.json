@@ -1,0 +1,19 @@
+{
+  "completed": true,
+  "arm": "ensemble",
+  "registration": "d37699a46bffcd4e77afa2d32ce473d866b2dd0c5a69685e5f26252a7a8b8029",
+  "contracts_passed": true,
+  "repeated_training_exact": true,
+  "case_count": 10,
+  "results_sha256": "e0ec0f4f85155e96d967db1cabf2b01e9d63b3e426db316d69d3cb58815e13d1",
+  "fold_hashes": {
+    "J03WMX": "d49b580b8336f758f9e5cb64cac263321d323fa16040a3fec8368a9e44e2e621",
+    "J03WN1": "83a6bc59cfa6ed8cac31e8c4971eb895ad441bbb132105d154dde9a943de7f1e",
+    "J03WOH": "6c352d9b0d8ad17a4cd30a0a4e8bd72264a2770139b3840e8fb3e89df4224bcb",
+    "J03WOY": "e7f44169a5b492ce3d2d7eb925b9524ee2c5c73b4043f78e6ae9dcbe1ed7507f",
+    "J03WPY": "f0fb57d5502f51a37d3da1b31b2ec8f5fc93f76b75ff00fe294724d5992dc205"
+  },
+  "code_commit": "9465024233de4f92db44b37f138e6c32da40f54d",
+  "production_changed": false,
+  "target_accuracy": "unknown"
+}

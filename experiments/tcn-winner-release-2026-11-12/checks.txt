@@ -1,0 +1,199 @@
+
+tests
+test_missing_support_and_half_isolation (test_control_context.ControlContract.test_missing_support_and_half_isolation) ... ok
+test_team_swap_and_no_current_row (test_control_context.ControlContract.test_team_swap_and_no_current_row) ... ok
+test_external_mapping_and_gaps (test_core.CoreContracts.test_external_mapping_and_gaps) ... ok
+test_features_and_masks (test_core.CoreContracts.test_features_and_masks) ... ok
+test_gate (test_core.CoreContracts.test_gate) ... ok
+test_probability_order_serialization_and_export (test_core.ModelSmoke.test_probability_order_serialization_and_export) ... ok
+test_mean_speed_excludes_missing_and_resets (test_core.SpeedContract.test_mean_speed_excludes_missing_and_resets) ... ok
+test_ambiguous_flicker (test_decode.ConfirmatoryContracts.test_ambiguous_flicker) ... ok
+test_half_isolation (test_decode.ConfirmatoryContracts.test_half_isolation) ... ok
+test_invalid_emissions (test_decode.ConfirmatoryContracts.test_invalid_emissions) ... ok
+test_repeatability_and_team_swap (test_decode.ConfirmatoryContracts.test_repeatability_and_team_swap) ... ok
+test_short_supported_possession (test_decode.ConfirmatoryContracts.test_short_supported_possession) ... ok
+test_stoppage_and_restart (test_decode.ConfirmatoryContracts.test_stoppage_and_restart) ... ok
+test_empty_zero_and_bad_cost (test_decode.ExploratoryContracts.test_empty_zero_and_bad_cost) ... ok
+test_small_sequence_against_exhaustive_oracle (test_decode.ExploratoryContracts.test_small_sequence_against_exhaustive_oracle) ... ok
+test_uncovered_frames_and_invalid_blocks (test_decode.ExploratoryContracts.test_uncovered_frames_and_invalid_blocks) ... ok
+test_nested_zip (test_inputs.ExploratoryInputContracts.test_nested_zip) ... ok
+test_partial_player_and_valid_velocity (test_inputs.ExploratoryInputContracts.test_partial_player_and_valid_velocity) ... ok
+test_archive_safety_and_provenance (test_inputs.InputContracts.test_archive_safety_and_provenance) ... ok
+test_atd_valid_and_invalid (test_inputs.InputContracts.test_atd_valid_and_invalid) ... ok
+test_export_and_integration (test_inputs.InputContracts.test_export_and_integration) ... ok
+test_features (test_inputs.InputContracts.test_features) ... ok
+test_homography (test_inputs.InputContracts.test_homography) ... ok
+test_metadata_explicit_names (test_inputs.InputContracts.test_metadata_explicit_names) ... ok
+test_tags (test_inputs.InputContracts.test_tags) ... ok
+test_clock_contract (test_pff.PFFContracts.test_clock_contract) ... ok
+test_event_duplicates_conflicts_and_clock (test_pff.PFFContracts.test_event_duplicates_conflicts_and_clock) ... ok
+test_missing_gap_no_interpolation_or_future_label (test_pff.PFFContracts.test_missing_gap_no_interpolation_or_future_label) ... ok
+test_observation_consensus (test_pff.PFFContracts.test_observation_consensus) ... ok
+test_unknown_clears_stale_owner_and_repeat_resampling (test_pff.PFFContracts.test_unknown_clears_stale_owner_and_repeat_resampling) ... ok
+test_loader_never_uses_smoothed_or_estimated_ball (test_pff.RawPFFContract.test_loader_never_uses_smoothed_or_estimated_ball) ... ok
+test_evaluation_timeline_is_not_sampled (test_tabicl_medium.MediumContextContracts.test_evaluation_timeline_is_not_sampled) ... ok
+test_reproducible_sample_excludes_heldout_and_unknown (test_tabicl_medium.MediumContextContracts.test_reproducible_sample_excludes_heldout_and_unknown) ... ok
+test_evaluation_timeline_is_not_sampled (test_tabicl_small.SmallContextContracts.test_evaluation_timeline_is_not_sampled) ... ok
+test_reproducible_sample_excludes_heldout_and_unknown (test_tabicl_small.SmallContextContracts.test_reproducible_sample_excludes_heldout_and_unknown) ... ok
+
+----------------------------------------------------------------------
+Ran 35 tests in 0.198s
+
+OK
+
+experiments/tcn-2026-11-10/tests
+test_adapter_masks_and_velocity_resets (test_tcn_candidate.TCNContracts.test_adapter_masks_and_velocity_resets) ... ok
+test_player_permutation_equivariance_and_repeat (test_tcn_candidate.TCNContracts.test_player_permutation_equivariance_and_repeat) ... ok
+test_prediction_coverage_and_half_isolation (test_tcn_candidate.TCNContracts.test_prediction_coverage_and_half_isolation) ... ok
+test_two_step_synthetic_training_repeatability (test_tcn_candidate.TCNContracts.test_two_step_synthetic_training_repeatability) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.786s
+
+OK
+
+experiments/tcn-gap-2026-11-10/tests
+test_mask_copy_seed_and_half_bounds (test_gap_training.GapTests.test_mask_copy_seed_and_half_bounds) ... ok
+test_repeatable_augmented_train_and_separate_view (test_gap_training.GapTests.test_repeatable_augmented_train_and_separate_view) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.627s
+
+OK
+
+experiments/tcn-rotation-2026-11-11/tests
+test_equal_average_is_group_invariant_without_column_swap (test_rotation.Rotation.test_equal_average_is_group_invariant_without_column_swap) ... ok
+test_involution_dtype_and_no_input_mutation (test_rotation.Rotation.test_involution_dtype_and_no_input_mutation) ... ok
+test_malformed_inputs_and_probabilities_fail (test_rotation.Rotation.test_malformed_inputs_and_probabilities_fail) ... ok
+test_only_centered_geometry_and_velocity_change (test_rotation.Rotation.test_only_centered_geometry_and_velocity_change) ... ok
+test_raw_synthetic_tracking_encoding_agrees (test_rotation.Rotation.test_raw_synthetic_tracking_encoding_agrees) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.485s
+
+OK
+
+experiments/tcn-pretrain-2026-11-11/tests
+test_control_and_pretraining_stage_reset_and_supervised_rng_match (test_pretrain_model.PretrainingContracts.test_control_and_pretraining_stage_reset_and_supervised_rng_match) ... control control: update 1/6 stage1 loss 1.101963
+control control: update 2/6 stage1 loss 1.101333
+control control: update 3/6 stage1 loss 1.100986
+control control: update 4/6 stage2 loss 1.100520
+control control: update 5/6 stage2 loss 1.099995
+control control: update 6/6 stage2 loss 1.099714
+pretrain pretrain: update 1/6 stage1 loss 0.013479
+pretrain pretrain: update 2/6 stage1 loss 0.012651
+pretrain pretrain: update 3/6 stage1 loss 0.011749
+pretrain pretrain: update 4/6 stage2 loss 1.101969
+pretrain pretrain: update 5/6 stage2 loss 1.101313
+pretrain pretrain: update 6/6 stage2 loss 1.100994
+ok
+test_fold_membership_rejects_held_out_and_protected_sources (test_pretrain_model.PretrainingContracts.test_fold_membership_rejects_held_out_and_protected_sources) ... ok
+test_geometry_reader_never_opens_labels (test_pretrain_model.PretrainingContracts.test_geometry_reader_never_opens_labels) ... ok
+test_geometry_windows_are_half_local_and_observation_only (test_pretrain_model.PretrainingContracts.test_geometry_windows_are_half_local_and_observation_only) ... ok
+test_mask_targets_exclude_natural_gaps_and_do_not_leak_into_input (test_pretrain_model.PretrainingContracts.test_mask_targets_exclude_natural_gaps_and_do_not_leak_into_input) ... ok
+test_original_initialization_and_inference_path_preserved (test_pretrain_model.PretrainingContracts.test_original_initialization_and_inference_path_preserved) ... ok
+test_reconstruction_loss_masks_invalid_and_reaches_shared_encoder (test_pretrain_model.PretrainingContracts.test_reconstruction_loss_masks_invalid_and_reaches_shared_encoder) ... ok
+test_repeat_and_resume_at_stage_boundary_and_mid_second_stage (test_pretrain_model.PretrainingContracts.test_repeat_and_resume_at_stage_boundary_and_mid_second_stage) ... pretrain reference: update 1/6 stage1 loss 0.013479
+pretrain reference: update 2/6 stage1 loss 0.012651
+pretrain reference: update 3/6 stage1 loss 0.011749
+pretrain reference: update 4/6 stage2 loss 1.101969
+pretrain reference: update 5/6 stage2 loss 1.101313
+pretrain reference: update 6/6 stage2 loss 1.100994
+pretrain repeat: update 1/6 stage1 loss 0.013479
+pretrain repeat: update 2/6 stage1 loss 0.012651
+pretrain repeat: update 3/6 stage1 loss 0.011749
+pretrain repeat: update 4/6 stage2 loss 1.101969
+pretrain repeat: update 5/6 stage2 loss 1.101313
+pretrain repeat: update 6/6 stage2 loss 1.100994
+pretrain resumed-3: update 1/6 stage1 loss 0.013479
+pretrain resumed-3: update 2/6 stage1 loss 0.012651
+Resuming pretrain /var/folders/ky/xlzf2wp51f7gl7lp9_089_y80000gn/T/tmp6ziennfk/resumed-3 at update 3
+pretrain resumed-3: update 4/6 stage2 loss 1.101969
+pretrain resumed-3: update 5/6 stage2 loss 1.101313
+pretrain resumed-3: update 6/6 stage2 loss 1.100994
+pretrain resumed-4: update 1/6 stage1 loss 0.013479
+pretrain resumed-4: update 2/6 stage1 loss 0.012651
+pretrain resumed-4: update 3/6 stage1 loss 0.011749
+Resuming pretrain /var/folders/ky/xlzf2wp51f7gl7lp9_089_y80000gn/T/tmp6ziennfk/resumed-4 at update 4
+pretrain resumed-4: update 5/6 stage2 loss 1.101313
+pretrain resumed-4: update 6/6 stage2 loss 1.100994
+ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 1.708s
+
+OK
+
+experiments/tcn-winner-release-2026-11-12/tests
+test_aggregates_do_not_join_across_halves (test_winner_release.MembershipContracts.test_aggregates_do_not_join_across_halves) ... ok
+test_exact_five_only (test_winner_release.MembershipContracts.test_exact_five_only) ... ok
+test_identity_locks_winning_recipe (test_winner_release.MembershipContracts.test_identity_locks_winning_recipe) ... ok
+test_provider_not_inferred_from_key (test_winner_release.MembershipContracts.test_provider_not_inferred_from_key) ... ok
+test_exact_tensor_equality_and_unequal_nested_state (test_winner_release.SavedContracts.test_exact_tensor_equality_and_unequal_nested_state) ... ok
+test_interrupted_resume_on_both_sides_of_optimizer_reset (test_winner_release.SavedContracts.test_interrupted_resume_on_both_sides_of_optimizer_reset) ... Final fit complete: 1/20
+Final fit complete: 2/20
+Final fit complete: 3/20
+Final fit complete: 4/20
+Final fit complete: 5/20
+Final fit complete: 6/20
+Final fit complete: 7/20
+Final fit complete: 8/20
+Final fit complete: 9/20
+Final fit complete: 10/20
+Final fit complete: 11/20
+Final fit complete: 12/20
+Final fit complete: 13/20
+Final fit complete: 14/20
+Final fit complete: 15/20
+Final fit complete: 16/20
+Final fit complete: 17/20
+Final fit complete: 18/20
+Final fit complete: 19/20
+Final fit complete: 20/20
+Final fit 10: 1/20
+Final fit 10: 2/20
+Final fit 10: 3/20
+Final fit 10: 4/20
+Final fit 10: 5/20
+Final fit 10: 6/20
+Final fit 10: 7/20
+Final fit 10: 8/20
+Final fit 10: 9/20
+Resuming final fit at update 10
+Final fit 10: 11/20
+Final fit 10: 12/20
+Final fit 10: 13/20
+Final fit 10: 14/20
+Final fit 10: 15/20
+Final fit 10: 16/20
+Final fit 10: 17/20
+Final fit 10: 18/20
+Final fit 10: 19/20
+Final fit 10: 20/20
+Final fit 11: 1/20
+Final fit 11: 2/20
+Final fit 11: 3/20
+Final fit 11: 4/20
+Final fit 11: 5/20
+Final fit 11: 6/20
+Final fit 11: 7/20
+Final fit 11: 8/20
+Final fit 11: 9/20
+Final fit 11: 10/20
+Resuming final fit at update 11
+Final fit 11: 12/20
+Final fit 11: 13/20
+Final fit 11: 14/20
+Final fit 11: 15/20
+Final fit 11: 16/20
+Final fit 11: 17/20
+Final fit 11: 18/20
+Final fit 11: 19/20
+Final fit 11: 20/20
+ok
+test_resume_rejects_changed_identity_or_counts (test_winner_release.SavedContracts.test_resume_rejects_changed_identity_or_counts) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.924s
+
+OK

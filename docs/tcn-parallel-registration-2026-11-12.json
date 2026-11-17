@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-12",
+  "method": "Source text, saved external JSON and file-byte hashing only; no project imports/tests/compilation/models/scorer execution or arrays/checkpoint deserialization",
+  "group_counts": {
+    "code": 151,
+    "reference": 10,
+    "data": 10,
+    "prepared_manifests": 5,
+    "parent_evidence": 52
+  },
+  "mandatory_code_entries_present": 21,
+  "original_source_fingerprints_preserved": 145,
+  "prepared_members_byte_verified": 35,
+  "evaluation_cases_match_frozen_parent": 10,
+  "new_contracts_supplied": 14,
+  "expected_checks_per_arm": 68,
+  "new_contracts_executed": false,
+  "protocol_commit": "13034e0fbfc7008e811bbd5e230e63a9334c0bbd",
+  "hardware_inventory": {
+    "ram_bytes": 19327352832,
+    "physical_cores": 11,
+    "performance_cores": 5,
+    "efficiency_cores": 6
+  },
+  "nominal_training_threads_per_arm": 1,
+  "concurrent_arms": 2,
+  "peak_ram_measured": false,
+  "attention_runtime_measured": false,
+  "user_execution_only": true,
+  "quality_budget_extension": "two fixed candidates, no automatic combination/sweep",
+  "target_accuracy": "unknown",
+  "post_commit_code_file_fingerprints_verified": 151,
+  "registration_committed_bytes_verified": true,
+  "all_required_parent_paths_present": 50,
+  "installed_distribution_metadata_matches": 29,
+  "membership_static_review_passed": true,
+  "reference_code_classification_disjoint": true,
+  "project_runtime_execution": false
+}

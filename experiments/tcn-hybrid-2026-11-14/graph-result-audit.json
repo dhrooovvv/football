@@ -1,0 +1,84 @@
+{
+  "date": "2026-11-15",
+  "registered_entries_verified": 114,
+  "unique_byte_hashes_verified": 180,
+  "fit_count": 20,
+  "workers": 4,
+  "checks_evidence": {
+    "experiments/tcn-hybrid-2026-11-14/evaluation/graph/checks-1794668527704513000.txt": "099ecf20dc9c541d5a4d9f75bb7360ad4abec6fc94c64f520cbcc0e7b998f6c2"
+  },
+  "gate_recomputed": true,
+  "accepted": false,
+  "summary": {
+    "clean": {
+      "parent": {
+        "spellF1": 0.6503847082458226,
+        "macroF1": 0.9267515420995585
+      },
+      "candidate": {
+        "spellF1": 0.6473635337374103,
+        "macroF1": 0.9260764556821319
+      },
+      "candidate_missed": 955,
+      "candidate_spurious": 484,
+      "long_gap_missed": 0,
+      "dead_live_wrong": 2270
+    },
+    "targetlike": {
+      "parent": {
+        "spellF1": 0.5098356396639198,
+        "macroF1": 0.8379805572957197
+      },
+      "candidate": {
+        "spellF1": 0.508414678519287,
+        "macroF1": 0.8404473927685635
+      },
+      "candidate_missed": 1276,
+      "candidate_spurious": 699,
+      "long_gap_missed": 616,
+      "dead_live_wrong": 52104
+    }
+  },
+  "gate": {
+    "gate_version": "positive_median_v2",
+    "quality_eligible": false,
+    "existing_gate": false,
+    "primary_median_delta": 0.0020310028472003694,
+    "paired_median_spell_delta": -0.003345496308826079,
+    "paired_median_macro_delta": -0.0019186440684226813,
+    "matches_improved": 1,
+    "primary_deltas": {
+      "J03WMX": 0.0020310028472003694,
+      "J03WN1": 0.010928079500193089,
+      "J03WOH": 0.014663646212942028,
+      "J03WOY": -0.01461018910993217,
+      "J03WPY": -0.020117345173567114
+    },
+    "paired_spell_deltas": {
+      "J03WMX": -0.003345496308826079,
+      "J03WN1": 0.006644618739983121,
+      "J03WOH": -0.0024641498087106806,
+      "J03WOY": -0.007371835246706704,
+      "J03WPY": -0.004568476508352237
+    },
+    "paired_macro_deltas": {
+      "J03WMX": -0.003989643697355216,
+      "J03WN1": 0.007330593254058049,
+      "J03WOH": 0.005381058306400455,
+      "J03WOY": -0.0019186440684226813,
+      "J03WPY": -0.0023239911561374615
+    },
+    "contracts_passed": true,
+    "repeated_training_exact": true,
+    "production_changed": false,
+    "sealed_opened": false,
+    "target_accuracy": "unknown"
+  },
+  "sum_task_fit_seconds": 123757.97085216781,
+  "task_sum_is_not_wall_time": true,
+  "final_branch_fits_required": 0,
+  "selected": "trial_b",
+  "assistant_numerical_execution": false,
+  "sealed_opened": false,
+  "target_accuracy": "unknown"
+}

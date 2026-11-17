@@ -1,0 +1,15 @@
+{
+  "method": "Static source, file-byte, public/prepared metadata and installed distribution metadata inspection; no project-module imports, tests, numerical model execution or training",
+  "required_code_paths_present": 21,
+  "all_code_paths_git_tracked": true,
+  "code_and_reference_groups_disjoint": true,
+  "file_fingerprints_verified": 190,
+  "prepared_members_byte_verified": 35,
+  "environment_distribution_metadata_matches": 29,
+  "original_split_and_exact_five_membership_match": true,
+  "archived_control_gate_matches": true,
+  "reviewed_diagnostic_completion_signature_and_hashes_match": true,
+  "full_runtime_tests_executed": false,
+  "runtime_training_executed": false,
+  "commit_byte_verification": "158 project-code files and registration match commit 8742b63"
+}

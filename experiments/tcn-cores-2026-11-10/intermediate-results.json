@@ -1,0 +1,47 @@
+[
+  {
+    "threads": 1,
+    "seconds": [
+      1.6078675410244614,
+      1.4607191249961033
+    ],
+    "within_mode_weights_exact": true,
+    "synthetic_only": true
+  },
+  {
+    "threads": 2,
+    "seconds": [
+      1.1716742090065964,
+      1.123749583028257
+    ],
+    "within_mode_weights_exact": true,
+    "synthetic_only": true
+  },
+  {
+    "threads": 4,
+    "seconds": [
+      1.189714666979853,
+      1.1693103750003502
+    ],
+    "within_mode_weights_exact": true,
+    "synthetic_only": true
+  },
+  {
+    "threads": 6,
+    "seconds": [
+      1.6301383749814704,
+      1.5978465409716591
+    ],
+    "within_mode_weights_exact": true,
+    "synthetic_only": true
+  },
+  {
+    "threads": 11,
+    "seconds": [
+      2.303027625021059,
+      2.311893166974187
+    ],
+    "within_mode_weights_exact": true,
+    "synthetic_only": true
+  }
+]

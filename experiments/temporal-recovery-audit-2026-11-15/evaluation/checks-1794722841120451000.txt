@@ -1,0 +1,15 @@
+test_auc_absent_class (test_recovery.RecoveryContracts.test_auc_absent_class) ... ok
+test_auc_ties_and_direction (test_recovery.RecoveryContracts.test_auc_ties_and_direction) ... ok
+test_empty_spells_no_invented_separability (test_recovery.RecoveryContracts.test_empty_spells_no_invented_separability) ... ok
+test_introduced_and_persistent_spurious (test_recovery.RecoveryContracts.test_introduced_and_persistent_spurious) ... ok
+test_invalid_numeric_labels_rejected (test_recovery.RecoveryContracts.test_invalid_numeric_labels_rejected) ... ok
+test_loss_stages_not_conflated (test_recovery.RecoveryContracts.test_loss_stages_not_conflated) ... ok
+test_preserved_truth_is_not_new_recovery (test_recovery.RecoveryContracts.test_preserved_truth_is_not_new_recovery) ... ok
+test_recovered_complete_spell (test_recovery.RecoveryContracts.test_recovered_complete_spell) ... ok
+test_string_and_numeric_label_equivalence (test_recovery.RecoveryContracts.test_string_and_numeric_label_equivalence) ... ok
+test_unknown_and_half_boundaries (test_recovery.RecoveryContracts.test_unknown_and_half_boundaries) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.009s
+
+OK

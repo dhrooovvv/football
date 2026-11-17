@@ -1,0 +1,36 @@
+{
+  "completed": true,
+  "stage": "graph",
+  "signature": "296f2af2f88dbba5a174c9e5682d284b0f42cf3235f1057b2b0cf55fcb87d580",
+  "binding": {
+    "stage": "graph",
+    "registration": "84fe61609ca580d27a1ab5c75b453f3c40c182bdda639161cbc12cd9f66f522f",
+    "parent": "trial_b",
+    "parent_results_sha256": "edaf2779f22c9e5d2d5d0cc8ccdf9bb9c35932d77cdc51a24c9d32a1def98723",
+    "parent_review_sha256": "f696b9bc83d989a818e8ff24821fb3162b81ddd4777e69689f829eb0cd1968d3",
+    "temporal_selected": false,
+    "review_sha256": "332cf6a6055ddcfdd85e2dd3b204ed83aea70031f0aec910b3ba1df5dedd752d"
+  },
+  "results_sha256": "341463288e0da0fdc5c82644a42bc4219e6127d0ea5eee17e8aacbd2a527d276",
+  "gate_sha256": "34d7cbd12446bc380f2db6dc86fb43cf631235a1fce326305631a87541a10e4d",
+  "paired_sha256": "b0b9b42f7777b5172dc685e05779b203ca7a94f6bb3a5b7891425fe55991efdd",
+  "report_sha256": "723f3004039a689304989475b44591ea10495887e6422b500622f7f05c5835af",
+  "fit_proofs": {
+    "experiments/tcn-hybrid-2026-11-14/evaluation/graph/fits/J03WMX-20261106.json": "c162a56a0c86d4706a1cfce58f0719baab582e25a883993dc592ad923cfc379c",
+    "experiments/tcn-hybrid-2026-11-14/evaluation/graph/fits/J03WMX-20261107.json": "5f98153252c7615811a9f56df5c7c00897fc7252393dbc7a678ab08188c547f3",
+    "experiments/tcn-hybrid-2026-11-14/evaluation/graph/fits/J03WN1-20261106.json": "772e3438a3642d83875b13e0e2f72f78824da0dd2272dc89b51e37db41d5cea3",
+    "experiments/tcn-hybrid-2026-11-14/evaluation/graph/fits/J03WN1-20261107.json": "2c18d67076fd4b24f5c3a7e89385e4e04337cc3f0dfd869a1c73680b685a359d",
+    "experiments/tcn-hybrid-2026-11-14/evaluation/graph/fits/J03WOH-20261106.json": "7ee004c32f3aa06c11fe4c08a483cd6f05b89a4aa844b8f94e96eaf5d2b585d4",
+    "experiments/tcn-hybrid-2026-11-14/evaluation/graph/fits/J03WOH-20261107.json": "588e5de7f6b0fa58cee5b357d5d048b9bf5ca8ce8d9d4b95c23866b23c28b852",
+    "experiments/tcn-hybrid-2026-11-14/evaluation/graph/fits/J03WOY-20261106.json": "5ed911217d6d85168b9cced7a85b825a47fad0f02fbcac4f49b1201f6e48345f",
+    "experiments/tcn-hybrid-2026-11-14/evaluation/graph/fits/J03WOY-20261107.json": "4fed8068775493e021f01803c593dce5962dc6d048d3e112ad00a9ab106916d7",
+    "experiments/tcn-hybrid-2026-11-14/evaluation/graph/fits/J03WPY-20261106.json": "c9a3f15af6f778b47ad4341e4cb9bcbeff042ec7a3fb075d84e2e5830e1da5fa",
+    "experiments/tcn-hybrid-2026-11-14/evaluation/graph/fits/J03WPY-20261107.json": "4a445b0ad8b607147e1c30a8168801251955a1ab91dddb748f78b0da7dcfc83b"
+  },
+  "case_count": 10,
+  "contracts_passed": true,
+  "repeated_training_exact": true,
+  "production_changed": false,
+  "sealed_opened": false,
+  "target_accuracy": "unknown"
+}

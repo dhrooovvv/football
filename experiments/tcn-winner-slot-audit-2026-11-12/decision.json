@@ -1,0 +1,23 @@
+{
+  "completed": true,
+  "diagnostic_only": true,
+  "quality_selection_performed": false,
+  "model_promoted": false,
+  "winner": "control40k_reset_rotation_penalty16",
+  "parent_reproduced": true,
+  "repeatability_passed": true,
+  "training_executed": false,
+  "production_changed": false,
+  "target_accuracy": "unknown",
+  "tests_pass": true,
+  "repeatability_cases": 40,
+  "parent_reconstruction_cases": 10,
+  "inputs_sha256": "40d4d92b334d2a76792efb7899c7883dcce4c06115d4384a910cbd2ab9eeb56c",
+  "registration": "8ace1940e7a42a324575a0e5cb7914df0a1813b36b49369e23d8d276e8c7f690",
+  "results_sha256": "90759e750d5b9638eb8c9e62ad1c75bd07b4b3cb3c3c50ba9fc6c4b8c6003081",
+  "controls_sha256": "ce5ab7af3e79da092664fd9811c0bccabac000d4c272ed06a8ceaebb1721893b",
+  "determinism_sha256": "23c9bc14e9d4a6e21e66c817d7d440be9f5c653bab1dd04db2d0bfa685217db2",
+  "git_commit": "8e1a6f177397e8590de68d5546a71b3242fd7d5f",
+  "static_controls_within_tolerance": true,
+  "interpretation_requires_control_review": true
+}

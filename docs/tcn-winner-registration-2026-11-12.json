@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-12",
+  "method": "standard-library file-byte hashing and saved manifest JSON only; no project modules imported or executed",
+  "slot_registration": {
+    "path": "experiments/tcn-winner-slot-audit-2026-11-12/inputs.json",
+    "sha256": "40d4d92b334d2a76792efb7899c7883dcce4c06115d4384a910cbd2ab9eeb56c",
+    "file_count": 211
+  },
+  "release_registration": {
+    "path": "experiments/tcn-winner-release-2026-11-12/inputs.json",
+    "sha256": "99525b6247940a835e2940cd51d0ab8ac1a1bbaf7dbcc9519f2b52af67e63e77",
+    "group_counts": {
+      "code": 167,
+      "parent_evidence": 12,
+      "prepared_manifests": 5,
+      "target_assets": 2,
+      "reference": 4
+    }
+  },
+  "inherited_source_files_unchanged": 145,
+  "prepared_compact_members_verified": 35,
+  "tests_executed": false,
+  "project_modules_imported": false,
+  "array_checkpoint_or_target_rows_loaded_into_context": false,
+  "commit_binding": "verified against the recorded local registration commit; later journal-only commits do not change fingerprints",
+  "runtime_verification": "not performed",
+  "production_changed": false,
+  "target_accuracy": "unknown",
+  "protocol_registration_commit": "1c544b78874d8b40e3e0e3f0ef5de547e6816a70",
+  "unique_registered_files_byte_verified": 239,
+  "tracked_registered_files_commit_verified": 169
+}

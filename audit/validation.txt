@@ -1,0 +1,55 @@
+OK    baseline_raw.csv
+      199319 rows, frame 0..199318
+
+      label counts
+        H    63964   32.1%
+        A    49524   24.8%
+        D    85831   43.1%
+        X        0    0.0%
+
+      reports 2265 possessions of mean 2.0 s
+
+Valid. Note this checks the format only -- it says nothing about whether the labels are right.
+Score it against the public ground truth with run_evaluation.py.
+
+OK    baseline_smooth125.csv
+      199319 rows, frame 0..199318
+
+      label counts
+        H    82758   41.5%
+        A    62124   31.2%
+        D    54437   27.3%
+        X        0    0.0%
+
+      reports 430 possessions of mean 13.5 s
+
+Valid. Note this checks the format only -- it says nothing about whether the labels are right.
+Score it against the public ground truth with run_evaluation.py.
+
+OK    baseline_smooth25.csv
+      199319 rows, frame 0..199318
+
+      label counts
+        H    69446   34.8%
+        A    51303   25.7%
+        D    78570   39.4%
+        X        0    0.0%
+
+      reports 851 possessions of mean 5.7 s
+
+Valid. Note this checks the format only -- it says nothing about whether the labels are right.
+Score it against the public ground truth with run_evaluation.py.
+
+OK    baseline_smooth50.csv
+      199319 rows, frame 0..199318
+
+      label counts
+        H    72957   36.6%
+        A    54842   27.5%
+        D    71520   35.9%
+        X        0    0.0%
+
+      reports 669 possessions of mean 7.6 s
+
+Valid. Note this checks the format only -- it says nothing about whether the labels are right.
+Score it against the public ground truth with run_evaluation.py.

@@ -1,0 +1,41 @@
+{
+  "code": [
+    "experiments/tcn-diagnostic-2026-11-13/diagnostics.py",
+    "experiments/tcn-diagnostic-2026-11-13/diagnostic_contract.py",
+    "experiments/tcn-diagnostic-2026-11-13/protocol.md",
+    "experiments/tcn-diagnostic-2026-11-13/tests/test_diagnostics.py",
+    "experiments/tcn-diagnostic-2026-11-13/tests/test_runner.py",
+    "scripts/diagnose_tcn_possessions.py",
+    "docs/run-tcn-diagnostic.md"
+  ],
+  "evidence": [
+    "experiments/tcn-missed-2026-11-13/reviewed-a.json",
+    "experiments/tcn-missed-2026-11-13/reviewed-b.json",
+    "experiments/tcn-missed-2026-11-13/evaluation/a/results.json",
+    "experiments/tcn-missed-2026-11-13/evaluation/a/completion.json",
+    "experiments/tcn-missed-2026-11-13/evaluation/a/gate-v2.json",
+    "experiments/tcn-missed-2026-11-13/evaluation/a/fits/J03WMX-20261106.json",
+    "experiments/tcn-missed-2026-11-13/evaluation/a/fits/J03WMX-20261107.json",
+    "experiments/tcn-missed-2026-11-13/evaluation/a/fits/J03WN1-20261106.json",
+    "experiments/tcn-missed-2026-11-13/evaluation/a/fits/J03WN1-20261107.json",
+    "experiments/tcn-missed-2026-11-13/evaluation/a/fits/J03WOH-20261106.json",
+    "experiments/tcn-missed-2026-11-13/evaluation/a/fits/J03WOH-20261107.json",
+    "experiments/tcn-missed-2026-11-13/evaluation/a/fits/J03WOY-20261106.json",
+    "experiments/tcn-missed-2026-11-13/evaluation/a/fits/J03WOY-20261107.json",
+    "experiments/tcn-missed-2026-11-13/evaluation/a/fits/J03WPY-20261106.json",
+    "experiments/tcn-missed-2026-11-13/evaluation/a/fits/J03WPY-20261107.json",
+    "experiments/tcn-missed-2026-11-13/evaluation/b/results.json",
+    "experiments/tcn-missed-2026-11-13/evaluation/b/completion.json",
+    "experiments/tcn-missed-2026-11-13/evaluation/b/gate-v2.json",
+    "experiments/tcn-missed-2026-11-13/evaluation/b/fits/J03WMX-20261106.json",
+    "experiments/tcn-missed-2026-11-13/evaluation/b/fits/J03WMX-20261107.json",
+    "experiments/tcn-missed-2026-11-13/evaluation/b/fits/J03WN1-20261106.json",
+    "experiments/tcn-missed-2026-11-13/evaluation/b/fits/J03WN1-20261107.json",
+    "experiments/tcn-missed-2026-11-13/evaluation/b/fits/J03WOH-20261106.json",
+    "experiments/tcn-missed-2026-11-13/evaluation/b/fits/J03WOH-20261107.json",
+    "experiments/tcn-missed-2026-11-13/evaluation/b/fits/J03WOY-20261106.json",
+    "experiments/tcn-missed-2026-11-13/evaluation/b/fits/J03WOY-20261107.json",
+    "experiments/tcn-missed-2026-11-13/evaluation/b/fits/J03WPY-20261106.json",
+    "experiments/tcn-missed-2026-11-13/evaluation/b/fits/J03WPY-20261107.json"
+  ]
+}

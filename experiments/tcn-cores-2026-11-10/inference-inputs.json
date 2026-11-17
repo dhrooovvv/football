@@ -1,0 +1,10 @@
+{
+  "scripts/probe_tcn_two_core.py": "79787697b39acf534284bed7187d25d088d01cebe066a476213809a8572dbdbd",
+  "experiments/tcn-interaction-2026-11-10/interaction_model.py": "5cf015099f91b4f8511575e2f919e78d7a4390c8dffb87580057692847e8505f",
+  "experiments/tcn-interaction-2026-11-10/interaction_training.py": "ccbdef4582f9ac740299ddfb216c465416c0b33993adb3eccb6b7ec1506991e7",
+  "experiments/tcn-2026-11-10/tcn_candidate.py": "42decde35540780d928568b6bd577e7c9cb8bad314e6424924cf9bb04e462891",
+  "src/possession/decode.py": "c987dd44e17c9e35650a4a4c9c59d62b5dde2f02c06a83e6a71bf2345da13710",
+  "models/tcn-gap/J03WMX.pt": "e4bcf3eb6d70896a460c5e2c5b7daf877aa62cbac218b45c581fba692decf58e",
+  "data/tcn-prepared/J03WMX-clean.npz": "9630f6a027a6b4e6fe19a0a619cc70f915d3eabd16e9d1ad61bdd539d10ec029",
+  "data/diagnostics-review/J03WMX-clean-probs.npz": "0d2291805410acc97a443d0f16d9020dbf05b853b41f133fc3cb1f9088e53eed"
+}

@@ -1,0 +1,6 @@
+{
+  "error_type": "RuntimeError",
+  "message": "Diagnostic checks failed; preserve log",
+  "training_performed": false,
+  "production_changed": false
+}

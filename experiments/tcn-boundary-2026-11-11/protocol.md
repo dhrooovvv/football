@@ -1,0 +1,39 @@
+# Fixed boundary-supervision training objective
+
+Registered November 11, 2026. The user approved the proposed boundary-objective step after the research synthesis. This is a bounded, single-experiment amendment for a training objective on the successful original encoder. It does not reopen the stopped representation, data-expansion or decoder tracks, erase their failures, or authorize a coefficient/width/architecture search. All tests, imports, compilation, inference, scoring and training are USER-RUN. Commit this protocol, source, membership and fingerprints before execution; results are committed separately.
+
+## Parent and hypothesis
+
+Parent is the retained original gap-trained short TCN with equal probability averaging of identity and 180-degree pitch rotation, then uniform Viterbi penalty 16: mean spellF1 0.6021546224883432 clean and 0.4776818840872061 target-like corrupted. Production remains CatBoost16. Target accuracy is unknown. Hypothesis: an auxiliary boundary objective may make shared features more sensitive to possession changes, helping missed short spells/boundaries. It cannot reconstruct missing information or guarantee an improvement. Prior evidence is action segmentation on other datasets, not this official possession metric; this is not a reproduction of the paper's full two-loss method.
+
+## One locked intervention
+
+Keep the ORIGINAL motion encoder, nine core features, object temporal convolution, pooled features and original temporal class network. Add one training-only Conv1d(32,1,kernel_size=1) boundary head on the last 32-channel temporal hidden representation. Construct the original network before this head, preserving initialization of all original weights under the parent seed. Inference discards boundary logits; class logits and original prediction API remain unchanged. The boundary head adds 33 training parameters; class network remains 9,635 parameters and encoded receptive field 17. This is one auxiliary training objective, not an inference refinement or decoder change.
+
+For each central training frame t, boundary target b[t]=1 exactly when y[t] differs from y[t-1], considering H/A/D transitions in both directions. No boundary dilation, tolerance band or future labels. A target is valid only when both labels are H/A/D and frames belong to the same real half. The first frame of a crop without its true predecessor is invalid; central-frame training begins after halo25, so its predecessor is available. Never create boundaries at X, half boundaries or artificial crop edges. Use only the existing central200 loss frames.
+
+Loss = original mean 3-class cross entropy + 0.1 * balanced boundary BCE. Balanced boundary BCE is the average of the positive-class mean BCE and negative-class mean BCE over valid positions in the entire minibatch when both exist; if only one class exists, use that class's mean; if no valid targets exist, use differentiable zero. This is a fixed imbalance treatment, not a searched class weight. No change to main cross entropy, class priors, softmax temperature, gap policy or decoder. Lock coefficient 0.1, exact one-frame targets and no additional segment/smoothing loss. Combined minibatch loss and separate class/boundary components are logged as training losses, never validation or selection evidence.
+
+## Data and training
+
+Same original order J03WMX,J03WN1,J03WOH,J03WOY,J03WPY. Five leave-one-match-out folds; each trains from scratch on the other four IDSSE matches. No PFF, sealed J03WQQ/J03WR9, target, public labels or new datasets. Reuse five compact IDSSE cases under data/tcn-expanded/idsse-<ID> (directory name does not authorize PFF). Verify manifests and every compact member before training. Prepared training gaps were applied to raw ball positions before features; no new corruption is added. Training gap seeds20261206+i differ from evaluation20261106+i.
+
+Exactly the same known250-frame anchor support and draw ordering, central200 frames/halo25, 20,000 updates, batch8, Adam lr.001, clipnorm1, float32, seed20261106, independent gap-view RNG seed20261106+424242, probability .5. No rotation during training. The same rotation policy is applied at inference to both parent and candidate. CPU threads1/interop1, deterministic Torch, MKLDNNoff; no custom RAM cap. Two independently initialized complete fits per fold must reproduce all state tensors, combined loss histories and sample coverage exactly. Two repeat fits are a reproducibility check, not a seed ensemble or additional selected model. This remains 32 million central-frame presentations per fit and ten total fits; no early stopping, checkpoint selection or extra updates.
+
+Checkpoint every1000 updates and at end stores optimizer, Torch/window/view RNGs, membership, schema, objective identity, losses, coverage and registration signature. Identical-source/config resumption only; no reuse of all-five/all53 checkpoints. Completed-fold caches require checkpoint/CSV/source hashes, exact membership and ten full evaluation cells overall.
+
+## Evaluation and gate
+
+Use the ten original frozen clean/target-like arrays and unchanged official scorer. Parent rotation CSVs and archived results must reconstruct identical metrics; their frozen byte hashes are registered. Candidate inference uses identity and full-pitch180 rotation with unchanged H/A/D roles/classes/core, probability average .5/.5 and normalization, then unchanged decode16; X outside blocks. Require exact probabilities after reload in BOTH views and identical exported CSV bytes for initial/reload/batch4 on all ten cases. Boundary head is never used by inference or decoder.
+
+Report per match clean and corrupted spellF1/macroF1, existing missed/spurious spells, short-spell recall, boundary-shift summaries and missing-ball dead/live quality, plus sampling, loss, timing and hashes. Do not aggregate away regressions.
+
+Keep only if ALL criteria pass against the current rotation parent: median per-match mean(clean,corrupted) spellF1 delta >0; at least3/5 paired match improvements; median paired macroF1 delta >=-.01; median target-like corrupted spellF1 delta >=+.01; required contracts and repeatability pass. Means alone cannot promote. This is development eligibility pending release checks, not production replacement. Five reused matches and overlapping training folds limit generalization; no statistical independence or target-score claim.
+
+If it fails, reject this fixed objective; no coefficient, target width, loss reweighting, segment consistency or boundary-decoder rescue. All historical stop counts remain. This bounded objective trial authorizes no automatic follow-up. Successful or failed results stop for review.
+
+## User execution and outputs
+
+One --run command executes existing production/TCN/gap/rotation contracts and new boundary contracts, then five folds with two fits each. Tests are supplied, NOT run by the assistant; synthetic tests are correctness evidence only. Script scripts/run_tcn_boundary.py. Outputs experiments/tcn-boundary-2026-11-11/evaluation/, resumable checkpoints models/tcn-boundary/evaluation/, private predictions data/tcn-boundary/predictions/. Source/input lock schema is code/data/prepared_manifests. No final all-five fit, target CSV, protected evaluation, external publication or submission.
+
+Reserve November14–15 for final retained-model fit/export/official-validator/clean-environment/fresh-clone qualification. Freeze November16; starts or fold progression on/after November16 are blocked. No research after November17. Actual runtime is unmeasured. Original short gap-TCN initial fits took about449–456seconds each, so ten full fits imply about75minutes before inference and checks. Plan roughly1.5–2hours, with thermal/input conditions potentially changing this. This retains the original encoder, adds a small loss/head and two-view inference; the faster rejected set model is not the runtime anchor. User owns all execution.

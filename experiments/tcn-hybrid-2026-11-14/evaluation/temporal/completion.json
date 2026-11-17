@@ -1,0 +1,35 @@
+{
+  "completed": true,
+  "stage": "temporal",
+  "signature": "92761a847af3683e2887365175dfce75c1336690acd4e78b188008cd8ada5ca0",
+  "binding": {
+    "stage": "temporal",
+    "registration": "84fe61609ca580d27a1ab5c75b453f3c40c182bdda639161cbc12cd9f66f522f",
+    "parent": "trial_b",
+    "parent_results_sha256": "edaf2779f22c9e5d2d5d0cc8ccdf9bb9c35932d77cdc51a24c9d32a1def98723",
+    "parent_review_sha256": "f696b9bc83d989a818e8ff24821fb3162b81ddd4777e69689f829eb0cd1968d3",
+    "temporal_selected": false
+  },
+  "results_sha256": "cd888d7e705b7fea10a091997c274f51bf9ba3a400b13a7e97e1d4c3dd72c889",
+  "gate_sha256": "bc925ff7ac0b09a36b9466bebc7585d1e4e0249dfc8a61813628feae873f9e95",
+  "paired_sha256": "bb24db99eb21c2d4c077e092226cd78b533150e10277a00fee65dc0f3b604b5e",
+  "report_sha256": "4ee86561d74182f76ed4cd5e3028c7a7b8d08276dcc1fc1fd8aa7436fd3c0966",
+  "fit_proofs": {
+    "experiments/tcn-hybrid-2026-11-14/evaluation/temporal/fits/J03WMX-20261106.json": "3b2170045f477a30350e60845f47aca955c148ec2b4da8118a1c706fb41354d2",
+    "experiments/tcn-hybrid-2026-11-14/evaluation/temporal/fits/J03WMX-20261107.json": "02bfc65b4754bd34fd64574f223d94046a763c5b44a2b0753ffed5ef9e03e1cb",
+    "experiments/tcn-hybrid-2026-11-14/evaluation/temporal/fits/J03WN1-20261106.json": "493eca201a23cf66243838151a5858e77b3804ae4f1446010cb21b1d8bf4dd44",
+    "experiments/tcn-hybrid-2026-11-14/evaluation/temporal/fits/J03WN1-20261107.json": "a955bf7205e2b66909d754b8f4230acf5ecfdf2b56c78e2c70b0f7c545bcae75",
+    "experiments/tcn-hybrid-2026-11-14/evaluation/temporal/fits/J03WOH-20261106.json": "55c73ffd0855f0f40f69c2349b39c2e10361e9c42db6addd696a89d851b69988",
+    "experiments/tcn-hybrid-2026-11-14/evaluation/temporal/fits/J03WOH-20261107.json": "f78dce746c0390e3b2326e816ebf1dd8de3e751a2efff09594f5d8748b037dbc",
+    "experiments/tcn-hybrid-2026-11-14/evaluation/temporal/fits/J03WOY-20261106.json": "ac06132dda6b4615d4fb50df7964a8e4970c571d0491de569eec0d9e9709a299",
+    "experiments/tcn-hybrid-2026-11-14/evaluation/temporal/fits/J03WOY-20261107.json": "fac416947af41b4973288919e3af8b442ad2ba1be0a21360359d08ca584d161f",
+    "experiments/tcn-hybrid-2026-11-14/evaluation/temporal/fits/J03WPY-20261106.json": "c3bb34236cc9b0bd0dc573717a4c029eda8874d9b714f5bc68e03d244e6f700a",
+    "experiments/tcn-hybrid-2026-11-14/evaluation/temporal/fits/J03WPY-20261107.json": "f4c5f441240a8ffa0f4322562fe73b1180f47ba9c3182cfb04d908129401abe1"
+  },
+  "case_count": 10,
+  "contracts_passed": true,
+  "repeated_training_exact": true,
+  "production_changed": false,
+  "sealed_opened": false,
+  "target_accuracy": "unknown"
+}

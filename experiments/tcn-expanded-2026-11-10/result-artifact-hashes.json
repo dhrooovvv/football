@@ -1,0 +1,16 @@
+{
+  "experiments/tcn-expanded-2026-11-10/protocol.md": "573bc18b36222025dca7400d47e8d25fef75dbb86ca81b1b0b187dfb0f6de4d8",
+  "experiments/tcn-expanded-2026-11-10/inputs.json": "1fdc19412ce445a775af49fc1287ef2a27a1ad6f3465bafb3762ff5678fd748f",
+  "experiments/tcn-expanded-2026-11-10/membership.json": "ddba83eead041e2b6977f7c69275525a8c7ae77ea139c2657ab617094b893ef8",
+  "experiments/tcn-expanded-2026-11-10/checks.txt": "b64474cac9db68be58998d4b798829adf4210d98420701c4afc40c4e5921be57",
+  "experiments/tcn-expanded-2026-11-10/final-model.json": "d95bae332d2d8fc993ed309566b93b6c578d057560e0ad56ff2cee821ffafc38",
+  "models/tcn-expanded/final/tcn-53-matches.pt": "9e0a1e41e5c0994249fa5c833089aa8f3cad5a2139696f32b40e641a196d110d",
+  "experiments/tcn-expanded-2026-11-10/evaluation/J03WMX.json": "ca6a80672f053af2b44049b623066d403fc475dbc8be57d3809edd9c7d158835",
+  "experiments/tcn-expanded-2026-11-10/evaluation/J03WN1.json": "56a05046e0427835beb4efa4385454fe36016a834bc363a298528ca383e0be78",
+  "experiments/tcn-expanded-2026-11-10/evaluation/J03WOH.json": "2b0dec0a8eafbf1d1049e8404c492bdf67269af18f875d854ca528a577409398",
+  "experiments/tcn-expanded-2026-11-10/evaluation/J03WOY.json": "f74c066bf75bc1af987c9e31feb6a430d90fd42b3ed6481cf0306366459aa45b",
+  "experiments/tcn-expanded-2026-11-10/evaluation/J03WPY.json": "2617eaf727b705d7a4f8ca005a8db8fd36c823494c9fb9c7aa22dd3dffb1bcac",
+  "experiments/tcn-expanded-2026-11-10/evaluation/gate.json": "4880b4dfa36efe42a6e010173e97d637cc1592bca59772ab5d919cf8b00e1a9a",
+  "experiments/tcn-expanded-2026-11-10/evaluation/report.md": "a11dc3070ad9f1b5c39168540ecc518f058f212b7d1a63d89d6b55e3ddd00b0b",
+  "experiments/tcn-expanded-2026-11-10/evaluation/results.json": "4042053090141070f72841f0d024c88c9604bfb5e2faf880058dbfb5c0da6dec"
+}

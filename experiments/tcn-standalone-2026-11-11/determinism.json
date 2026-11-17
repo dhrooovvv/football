@@ -1,0 +1,152 @@
+[
+  {
+    "match": "J03WMX",
+    "condition": "clean",
+    "checkpoint_sha256": "e4bcf3eb6d70896a460c5e2c5b7daf877aa62cbac218b45c581fba692decf58e",
+    "parent_reconstructed_exact": true,
+    "parent_csv_sha256": "d0b7fb006c35352452f7a8755572021be56f048ac40283d9f5b280a38c7c052d",
+    "reload_probabilities_equal": true,
+    "csv_bytes_equal_reload_batch4": true,
+    "csv_paths": [
+      "data/tcn-standalone/J03WMX-clean-first.csv",
+      "data/tcn-standalone/J03WMX-clean-reload.csv",
+      "data/tcn-standalone/J03WMX-clean-batch4.csv"
+    ],
+    "csv_sha256": "4a68e1efebece9647042ffe19c615269cbff7452262af25d9985a4c63f4c1c82"
+  },
+  {
+    "match": "J03WMX",
+    "condition": "targetlike",
+    "checkpoint_sha256": "e4bcf3eb6d70896a460c5e2c5b7daf877aa62cbac218b45c581fba692decf58e",
+    "parent_reconstructed_exact": true,
+    "parent_csv_sha256": "86645cc180af49a7c437b7b91ae0e1de90a43eabce75ccf343259b2897a1dd61",
+    "reload_probabilities_equal": true,
+    "csv_bytes_equal_reload_batch4": true,
+    "csv_paths": [
+      "data/tcn-standalone/J03WMX-targetlike-first.csv",
+      "data/tcn-standalone/J03WMX-targetlike-reload.csv",
+      "data/tcn-standalone/J03WMX-targetlike-batch4.csv"
+    ],
+    "csv_sha256": "dbd45493e86d122d9286c7d48f7b05c77978b6a9975cce877a91536c15e414cb"
+  },
+  {
+    "match": "J03WN1",
+    "condition": "clean",
+    "checkpoint_sha256": "9e937cc453ded0313dc1c71696b14e96e6cc0f190e20eb0e6bbf9b8d8734891b",
+    "parent_reconstructed_exact": true,
+    "parent_csv_sha256": "4cc7637ebd041cb11add0bd09b1f89a7165f4f169f86a74c0ff39e7467ea5b63",
+    "reload_probabilities_equal": true,
+    "csv_bytes_equal_reload_batch4": true,
+    "csv_paths": [
+      "data/tcn-standalone/J03WN1-clean-first.csv",
+      "data/tcn-standalone/J03WN1-clean-reload.csv",
+      "data/tcn-standalone/J03WN1-clean-batch4.csv"
+    ],
+    "csv_sha256": "49c793fabe8072eb699f1c43f566541a9abee18caf03cc91bcac898e8f6bf43b"
+  },
+  {
+    "match": "J03WN1",
+    "condition": "targetlike",
+    "checkpoint_sha256": "9e937cc453ded0313dc1c71696b14e96e6cc0f190e20eb0e6bbf9b8d8734891b",
+    "parent_reconstructed_exact": true,
+    "parent_csv_sha256": "da937ed665c79c5d3539a6b558cd0d838f31205d7f37504e1de379440473ef11",
+    "reload_probabilities_equal": true,
+    "csv_bytes_equal_reload_batch4": true,
+    "csv_paths": [
+      "data/tcn-standalone/J03WN1-targetlike-first.csv",
+      "data/tcn-standalone/J03WN1-targetlike-reload.csv",
+      "data/tcn-standalone/J03WN1-targetlike-batch4.csv"
+    ],
+    "csv_sha256": "6796dd52e825e4a31711c41ef7d7e0fbdb60426726d85e1fab36992b199d852d"
+  },
+  {
+    "match": "J03WOH",
+    "condition": "clean",
+    "checkpoint_sha256": "b4055226cd001287c9bc5a5b237fd7084eb146e622f674e1a7cdceae2626b705",
+    "parent_reconstructed_exact": true,
+    "parent_csv_sha256": "1af7134ffbeff24bf9f92f27b95895be9c981a1f627cc93e3bb70501293db39a",
+    "reload_probabilities_equal": true,
+    "csv_bytes_equal_reload_batch4": true,
+    "csv_paths": [
+      "data/tcn-standalone/J03WOH-clean-first.csv",
+      "data/tcn-standalone/J03WOH-clean-reload.csv",
+      "data/tcn-standalone/J03WOH-clean-batch4.csv"
+    ],
+    "csv_sha256": "582752f23706592e5dea95a6c114ed7d5cb20f6e22c6feabaab59ead559bbfb8"
+  },
+  {
+    "match": "J03WOH",
+    "condition": "targetlike",
+    "checkpoint_sha256": "b4055226cd001287c9bc5a5b237fd7084eb146e622f674e1a7cdceae2626b705",
+    "parent_reconstructed_exact": true,
+    "parent_csv_sha256": "ec9f4f128cec48c2d7bdacd9aed1455721310af5abe2826d080f520b4b7f527e",
+    "reload_probabilities_equal": true,
+    "csv_bytes_equal_reload_batch4": true,
+    "csv_paths": [
+      "data/tcn-standalone/J03WOH-targetlike-first.csv",
+      "data/tcn-standalone/J03WOH-targetlike-reload.csv",
+      "data/tcn-standalone/J03WOH-targetlike-batch4.csv"
+    ],
+    "csv_sha256": "7638676fae5faad4c2f05be03513bc5ad12e5eab13477794400396a8b124e050"
+  },
+  {
+    "match": "J03WOY",
+    "condition": "clean",
+    "checkpoint_sha256": "5918b5d3013464041f054266aff9d08a1ae1b7986d32761a3723bf09fe8549e7",
+    "parent_reconstructed_exact": true,
+    "parent_csv_sha256": "b601aa1ce6f4c8bb1e8bc8159c80d3db76dadc90607c865dc28013dbdb0b74a9",
+    "reload_probabilities_equal": true,
+    "csv_bytes_equal_reload_batch4": true,
+    "csv_paths": [
+      "data/tcn-standalone/J03WOY-clean-first.csv",
+      "data/tcn-standalone/J03WOY-clean-reload.csv",
+      "data/tcn-standalone/J03WOY-clean-batch4.csv"
+    ],
+    "csv_sha256": "909ea7511ab6c1fc7f5bc4cd99bcb66cb1ee665922ea0da9b66e058f7778b458"
+  },
+  {
+    "match": "J03WOY",
+    "condition": "targetlike",
+    "checkpoint_sha256": "5918b5d3013464041f054266aff9d08a1ae1b7986d32761a3723bf09fe8549e7",
+    "parent_reconstructed_exact": true,
+    "parent_csv_sha256": "9cd6610dd717230e7f77e36e1f27babe3f5ccec63160c90c0a99973d59b42647",
+    "reload_probabilities_equal": true,
+    "csv_bytes_equal_reload_batch4": true,
+    "csv_paths": [
+      "data/tcn-standalone/J03WOY-targetlike-first.csv",
+      "data/tcn-standalone/J03WOY-targetlike-reload.csv",
+      "data/tcn-standalone/J03WOY-targetlike-batch4.csv"
+    ],
+    "csv_sha256": "4427d45f3d3738a762bae6f450a6128b8c95a387db5f6d03eae806e1e2602b2c"
+  },
+  {
+    "match": "J03WPY",
+    "condition": "clean",
+    "checkpoint_sha256": "00e3303ead9e3cba5a4127d1720e545a877e93dd49e6a86a73e6b99dcae66af3",
+    "parent_reconstructed_exact": true,
+    "parent_csv_sha256": "a4c72a7790d026a12b579b44df87fda5c835d26ef540002307e07225aed31a10",
+    "reload_probabilities_equal": true,
+    "csv_bytes_equal_reload_batch4": true,
+    "csv_paths": [
+      "data/tcn-standalone/J03WPY-clean-first.csv",
+      "data/tcn-standalone/J03WPY-clean-reload.csv",
+      "data/tcn-standalone/J03WPY-clean-batch4.csv"
+    ],
+    "csv_sha256": "f77fc1b26e963482847510cd4344f580ed9cc2a6f80b52ed3005bd11191216f6"
+  },
+  {
+    "match": "J03WPY",
+    "condition": "targetlike",
+    "checkpoint_sha256": "00e3303ead9e3cba5a4127d1720e545a877e93dd49e6a86a73e6b99dcae66af3",
+    "parent_reconstructed_exact": true,
+    "parent_csv_sha256": "097ed18f71bfaad1de9749c7af726bf822fddf35afd8bdebf9a1d21056e274cc",
+    "reload_probabilities_equal": true,
+    "csv_bytes_equal_reload_batch4": true,
+    "csv_paths": [
+      "data/tcn-standalone/J03WPY-targetlike-first.csv",
+      "data/tcn-standalone/J03WPY-targetlike-reload.csv",
+      "data/tcn-standalone/J03WPY-targetlike-batch4.csv"
+    ],
+    "csv_sha256": "1fa2c0ef2f3ecbc31df2c77a9096bddfb3a2d193aeded19199b14654b279fcdd"
+  }
+]

@@ -1,0 +1,449 @@
+{
+  "registration": "d37699a46bffcd4e77afa2d32ce473d866b2dd0c5a69685e5f26252a7a8b8029",
+  "arm": "attention",
+  "match": "J03WPY",
+  "architecture": "original_motion_tcn_masked_team_self_attention_v1",
+  "parameters": 9917,
+  "training_matches": [
+    "idsse-J03WMX",
+    "idsse-J03WN1",
+    "idsse-J03WOH",
+    "idsse-J03WOY"
+  ],
+  "training_steps": 40000,
+  "repeated_training_exact": true,
+  "parent_reconstructed": true,
+  "contracts_passed": true,
+  "checks_path": "experiments/tcn-parallel-2026-11-12/evaluation/attention/checks.txt",
+  "checks_sha256": "44e9b27a33159791bf123523906c867faa29c67e98d32db588e9a2f89ded8f3e",
+  "checkpoint_hashes": {
+    "models/tcn-parallel/attention/J03WPY/first/progress.pt": "45cb1017231ea11a5a386389504991184602d9c51290425f076296231c90a034",
+    "models/tcn-parallel/attention/J03WPY/repeat/progress.pt": "46e2dadf04e56d824a21a0329142447dee6fcdc37d411e2020151e50e7cd7e44"
+  },
+  "coverage": {
+    "stage1": {
+      "idsse-J03WMX": 41096,
+      "idsse-J03WN1": 39986,
+      "idsse-J03WOH": 38394,
+      "idsse-J03WOY": 40524
+    },
+    "stage2": {
+      "idsse-J03WMX": 41096,
+      "idsse-J03WN1": 39986,
+      "idsse-J03WOH": 38394,
+      "idsse-J03WOY": 40524
+    }
+  },
+  "supervised_views": {
+    "stage1": {
+      "clean": 79820,
+      "gap": 80180
+    },
+    "stage2": {
+      "clean": 79820,
+      "gap": 80180
+    }
+  },
+  "training_loss_sha256": "ddfd2c53c83a41ddbb0f759ee37f6fb61b206d251c925737b9d8282e2f8ed9e5",
+  "rows": [
+    {
+      "match": "J03WPY",
+      "condition": "clean",
+      "parent": {
+        "spellF1": 0.6679296346414073,
+        "macroF1": 0.9367346221548765,
+        "errors": {
+          "short_spells": 124,
+          "short_spell_recall_iou_05": 0.20967741935483872,
+          "dead_live_wrong_frames": 267,
+          "late_boundaries": 89,
+          "early_boundaries": 128,
+          "matched_boundary_median_frames": 0.0,
+          "boundary_pairs_within_2s": 328,
+          "precision": 0.7767295597484277,
+          "recall": 0.5866983372921615,
+          "f1": 0.668470906630582,
+          "n_matched": 247,
+          "n_spurious": 71,
+          "n_missed": 174,
+          "boundary_shift_quantiles_frames": [
+            -47.0,
+            -11.0,
+            0.0,
+            10.900000000000034,
+            46.92000000000007,
+            49.0
+          ]
+        },
+        "oracle_repair_spellF1_gain": {
+          "dead_live": -0.012183267402305686,
+          "wrong_team": 0.32099851612419916
+        },
+        "spell_per_iou": {
+          "0.3": {
+            "precision": 0.8773584905660378,
+            "recall": 0.66270783847981,
+            "f1": 0.7550744248985115,
+            "n_matched": 279,
+            "n_spurious": 39,
+            "n_missed": 142
+          },
+          "0.4": {
+            "precision": 0.8364779874213837,
+            "recall": 0.6318289786223278,
+            "f1": 0.7198917456021652,
+            "n_matched": 266,
+            "n_spurious": 52,
+            "n_missed": 155
+          },
+          "0.5": {
+            "precision": 0.7767295597484277,
+            "recall": 0.5866983372921615,
+            "f1": 0.668470906630582,
+            "n_matched": 247,
+            "n_spurious": 71,
+            "n_missed": 174
+          },
+          "0.6": {
+            "precision": 0.7169811320754716,
+            "recall": 0.5415676959619953,
+            "f1": 0.6170500676589987,
+            "n_matched": 228,
+            "n_spurious": 90,
+            "n_missed": 193
+          },
+          "0.7": {
+            "precision": 0.6729559748427673,
+            "recall": 0.5083135391923991,
+            "f1": 0.5791610284167794,
+            "n_matched": 214,
+            "n_spurious": 104,
+            "n_missed": 207
+          }
+        },
+        "true_spell_count": 421,
+        "predicted_spell_count": 318
+      },
+      "candidate": {
+        "spellF1": 0.6426409903713893,
+        "macroF1": 0.9289136181861739,
+        "errors": {
+          "short_spells": 124,
+          "short_spell_recall_iou_05": 0.22580645161290322,
+          "dead_live_wrong_frames": 545,
+          "late_boundaries": 96,
+          "early_boundaries": 106,
+          "matched_boundary_median_frames": 0.0,
+          "boundary_pairs_within_2s": 311,
+          "precision": 0.7973856209150327,
+          "recall": 0.5795724465558195,
+          "f1": 0.6712517193947731,
+          "n_matched": 244,
+          "n_spurious": 62,
+          "n_missed": 177,
+          "boundary_shift_quantiles_frames": [
+            -48.0,
+            -12.0,
+            0.0,
+            20.0,
+            47.0,
+            50.0
+          ]
+        },
+        "oracle_repair_spellF1_gain": {
+          "dead_live": -0.014449501009687227,
+          "wrong_team": 0.3406727581597505
+        },
+        "spell_per_iou": {
+          "0.3": {
+            "precision": 0.869281045751634,
+            "recall": 0.6318289786223278,
+            "f1": 0.7317744154057771,
+            "n_matched": 266,
+            "n_spurious": 40,
+            "n_missed": 155
+          },
+          "0.4": {
+            "precision": 0.8300653594771242,
+            "recall": 0.6033254156769596,
+            "f1": 0.6987620357634113,
+            "n_matched": 254,
+            "n_spurious": 52,
+            "n_missed": 167
+          },
+          "0.5": {
+            "precision": 0.7973856209150327,
+            "recall": 0.5795724465558195,
+            "f1": 0.6712517193947731,
+            "n_matched": 244,
+            "n_spurious": 62,
+            "n_missed": 177
+          },
+          "0.6": {
+            "precision": 0.6895424836601307,
+            "recall": 0.501187648456057,
+            "f1": 0.5804676753782669,
+            "n_matched": 211,
+            "n_spurious": 95,
+            "n_missed": 210
+          },
+          "0.7": {
+            "precision": 0.630718954248366,
+            "recall": 0.4584323040380047,
+            "f1": 0.530949105914718,
+            "n_matched": 193,
+            "n_spurious": 113,
+            "n_missed": 228
+          }
+        },
+        "true_spell_count": 421,
+        "predicted_spell_count": 306
+      },
+      "parent_csv_sha256": "c13bb5eafe914352de8451ad6fcd40a1314fd047967c6d984dbb4a9680003b1a",
+      "parent_reconstruction_path": "data/tcn-parallel/attention/predictions/J03WPY-clean-parent-reconstruction.csv",
+      "parent_missing_ball": {
+        "frames": 0,
+        "true_D": 0,
+        "true_live": 0,
+        "TP_D": 0,
+        "FP_D": 0,
+        "FN_D": 0,
+        "TN_D": 0,
+        "D_f1": null,
+        "live_f1": null,
+        "D_precision": null,
+        "D_recall": null,
+        "live_recall": null,
+        "predicted_D_share": null
+      },
+      "candidate_missing_ball": {
+        "frames": 0,
+        "true_D": 0,
+        "true_live": 0,
+        "TP_D": 0,
+        "FP_D": 0,
+        "FN_D": 0,
+        "TN_D": 0,
+        "D_f1": null,
+        "live_f1": null,
+        "D_precision": null,
+        "D_recall": null,
+        "live_recall": null,
+        "predicted_D_share": null
+      },
+      "csv_paths": [
+        "data/tcn-parallel/attention/predictions/J03WPY-clean-first.csv",
+        "data/tcn-parallel/attention/predictions/J03WPY-clean-reload.csv",
+        "data/tcn-parallel/attention/predictions/J03WPY-clean-batch4.csv"
+      ],
+      "csv_sha256": "ba99bb39cefa7dada0244f935ace941a0af48af48fa8e96a74c0408d6b714675",
+      "reload_probabilities_equal_both_views": true,
+      "csv_bytes_equal_reload_batch4": true
+    },
+    {
+      "match": "J03WPY",
+      "condition": "targetlike",
+      "parent": {
+        "spellF1": 0.5545205479452054,
+        "macroF1": 0.8751170135558812,
+        "errors": {
+          "short_spells": 124,
+          "short_spell_recall_iou_05": 0.13709677419354838,
+          "dead_live_wrong_frames": 6854,
+          "late_boundaries": 83,
+          "early_boundaries": 99,
+          "matched_boundary_median_frames": 0.0,
+          "boundary_pairs_within_2s": 259,
+          "precision": 0.6666666666666666,
+          "recall": 0.48931116389548696,
+          "f1": 0.5643835616438356,
+          "n_matched": 206,
+          "n_spurious": 103,
+          "n_missed": 215,
+          "boundary_shift_quantiles_frames": [
+            -48.0,
+            -17.2,
+            0.0,
+            26.200000000000017,
+            49.0,
+            50.0
+          ]
+        },
+        "oracle_repair_spellF1_gain": {
+          "dead_live": 0.04921278538812779,
+          "wrong_team": 0.36307204464738707
+        },
+        "spell_per_iou": {
+          "0.3": {
+            "precision": 0.7831715210355987,
+            "recall": 0.5748218527315915,
+            "f1": 0.6630136986301371,
+            "n_matched": 242,
+            "n_spurious": 67,
+            "n_missed": 179
+          },
+          "0.4": {
+            "precision": 0.7411003236245954,
+            "recall": 0.5439429928741093,
+            "f1": 0.6273972602739726,
+            "n_matched": 229,
+            "n_spurious": 80,
+            "n_missed": 192
+          },
+          "0.5": {
+            "precision": 0.6666666666666666,
+            "recall": 0.48931116389548696,
+            "f1": 0.5643835616438356,
+            "n_matched": 206,
+            "n_spurious": 103,
+            "n_missed": 215
+          },
+          "0.6": {
+            "precision": 0.5728155339805825,
+            "recall": 0.42042755344418054,
+            "f1": 0.4849315068493151,
+            "n_matched": 177,
+            "n_spurious": 132,
+            "n_missed": 244
+          },
+          "0.7": {
+            "precision": 0.511326860841424,
+            "recall": 0.3752969121140142,
+            "f1": 0.4328767123287671,
+            "n_matched": 158,
+            "n_spurious": 151,
+            "n_missed": 263
+          }
+        },
+        "true_spell_count": 421,
+        "predicted_spell_count": 309
+      },
+      "candidate": {
+        "spellF1": 0.5264021887824898,
+        "macroF1": 0.8435106557838846,
+        "errors": {
+          "short_spells": 124,
+          "short_spell_recall_iou_05": 0.13709677419354838,
+          "dead_live_wrong_frames": 11513,
+          "late_boundaries": 88,
+          "early_boundaries": 79,
+          "matched_boundary_median_frames": 0.0,
+          "boundary_pairs_within_2s": 237,
+          "precision": 0.635483870967742,
+          "recall": 0.4679334916864608,
+          "f1": 0.5389876880984952,
+          "n_matched": 197,
+          "n_spurious": 113,
+          "n_missed": 224,
+          "boundary_shift_quantiles_frames": [
+            -46.0,
+            -14.799999999999997,
+            0.0,
+            27.400000000000006,
+            47.0,
+            50.0
+          ]
+        },
+        "oracle_repair_spellF1_gain": {
+          "dead_live": 0.10375654137624035,
+          "wrong_team": 0.3285631691851776
+        },
+        "spell_per_iou": {
+          "0.3": {
+            "precision": 0.7580645161290323,
+            "recall": 0.5581947743467933,
+            "f1": 0.642954856361149,
+            "n_matched": 235,
+            "n_spurious": 75,
+            "n_missed": 186
+          },
+          "0.4": {
+            "precision": 0.7096774193548387,
+            "recall": 0.5225653206650831,
+            "f1": 0.6019151846785226,
+            "n_matched": 220,
+            "n_spurious": 90,
+            "n_missed": 201
+          },
+          "0.5": {
+            "precision": 0.635483870967742,
+            "recall": 0.4679334916864608,
+            "f1": 0.5389876880984952,
+            "n_matched": 197,
+            "n_spurious": 113,
+            "n_missed": 224
+          },
+          "0.6": {
+            "precision": 0.5451612903225806,
+            "recall": 0.4014251781472684,
+            "f1": 0.46238030095759236,
+            "n_matched": 169,
+            "n_spurious": 141,
+            "n_missed": 252
+          },
+          "0.7": {
+            "precision": 0.45483870967741935,
+            "recall": 0.334916864608076,
+            "f1": 0.3857729138166895,
+            "n_matched": 141,
+            "n_spurious": 169,
+            "n_missed": 280
+          }
+        },
+        "true_spell_count": 421,
+        "predicted_spell_count": 310
+      },
+      "parent_csv_sha256": "18873e2545aa5a40006660164f7be1c59c301406c426e594a0df1c26569f01ab",
+      "parent_reconstruction_path": "data/tcn-parallel/attention/predictions/J03WPY-targetlike-parent-reconstruction.csv",
+      "parent_missing_ball": {
+        "frames": 52490,
+        "true_D": 24754,
+        "true_live": 27736,
+        "TP_D": 19361,
+        "FP_D": 1308,
+        "FN_D": 5393,
+        "TN_D": 26428,
+        "D_f1": 0.8524756180789468,
+        "live_f1": 0.8874859378410598,
+        "D_precision": 0.9367168222942571,
+        "D_recall": 0.7821362204088228,
+        "live_recall": 0.9528410729737525,
+        "predicted_D_share": 0.39377024195084775
+      },
+      "candidate_missing_ball": {
+        "frames": 52490,
+        "true_D": 24754,
+        "true_live": 27736,
+        "TP_D": 17248,
+        "FP_D": 3543,
+        "FN_D": 7506,
+        "TN_D": 24193,
+        "D_f1": 0.7574047645186079,
+        "live_f1": 0.8140994363590477,
+        "D_precision": 0.8295897263238902,
+        "D_recall": 0.6967762785812394,
+        "live_recall": 0.8722598788578021,
+        "predicted_D_share": 0.39609449418936943
+      },
+      "csv_paths": [
+        "data/tcn-parallel/attention/predictions/J03WPY-targetlike-first.csv",
+        "data/tcn-parallel/attention/predictions/J03WPY-targetlike-reload.csv",
+        "data/tcn-parallel/attention/predictions/J03WPY-targetlike-batch4.csv"
+      ],
+      "csv_sha256": "c2b60966094161cf7d5eb9015890ec4dbaf23e3a7084b54171d5f7f5e249c4f4",
+      "reload_probabilities_equal_both_views": true,
+      "csv_bytes_equal_reload_batch4": true
+    }
+  ],
+  "training_stage_seconds": {
+    "first": {
+      "stage1": 2649.3455507055623,
+      "stage2": 2648.2403814832214
+    },
+    "repeat": {
+      "stage1": 2645.955024236231,
+      "stage2": 2650.250285907765
+    }
+  },
+  "seconds": 10673.53939529194
+}

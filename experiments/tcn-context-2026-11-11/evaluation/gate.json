@@ -1,0 +1,33 @@
+{
+  "quality_eligible": false,
+  "primary_median_delta": -0.01425641025641039,
+  "primary_deltas": {
+    "J03WMX": 0.05588830894726332,
+    "J03WN1": -0.02130849613811897,
+    "J03WOH": -0.01425641025641039,
+    "J03WOY": -0.04281146946796782,
+    "J03WPY": 0.023674612093610103
+  },
+  "paired_spell_deltas": {
+    "J03WMX": 0.01799739296509245,
+    "J03WN1": -0.02474287379182666,
+    "J03WOH": -0.006220028962669377,
+    "J03WOY": -0.029724356863565116,
+    "J03WPY": 0.011789282721189842
+  },
+  "paired_macro_deltas": {
+    "J03WMX": 0.018025869907852154,
+    "J03WN1": -0.0004455566088279461,
+    "J03WOH": -0.019028048524044716,
+    "J03WOY": -0.007441420908844365,
+    "J03WPY": 0.013822147639096394
+  },
+  "matches_improved": 2,
+  "production_changed": false,
+  "sealed_opened": false,
+  "pff_holdout_opened": false,
+  "contract_checks_passed": true,
+  "repeated_training_exact": true,
+  "csv_repeatability_cases": 10,
+  "clean_environment_verified": false
+}

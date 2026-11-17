@@ -1,0 +1,19 @@
+test_clean_corrupt_same_truth_and_identity_guard (test_diagnostics.DiagnosticTests.test_clean_corrupt_same_truth_and_identity_guard) ... ok
+test_decoder_removed_evidence_is_distinct_from_absent (test_diagnostics.DiagnosticTests.test_decoder_removed_evidence_is_distinct_from_absent) ... ok
+test_empty_spells_and_invalid_probability (test_diagnostics.DiagnosticTests.test_empty_spells_and_invalid_probability) ... ok
+test_exclusive_partition_and_all_thresholds (test_diagnostics.DiagnosticTests.test_exclusive_partition_and_all_thresholds) ... ok
+test_fully_observed_long_spell_is_not_long_gap (test_diagnostics.DiagnosticTests.test_fully_observed_long_spell_is_not_long_gap) ... ok
+test_gap_uses_whole_burst_not_spell_intersection (test_diagnostics.DiagnosticTests.test_gap_uses_whole_burst_not_spell_intersection) ... ok
+test_gaps_clip_half_and_unknown (test_diagnostics.DiagnosticTests.test_gaps_clip_half_and_unknown) ... ok
+test_half_and_unknown_boundaries_preserve_spells (test_diagnostics.DiagnosticTests.test_half_and_unknown_boundaries_preserve_spells) ... ok
+test_merge_fragment_and_boundary_flags_overlap (test_diagnostics.DiagnosticTests.test_merge_fragment_and_boundary_flags_overlap) ... ok
+test_recommendation_is_conditional_and_requires_consistency (test_diagnostics.DiagnosticTests.test_recommendation_is_conditional_and_requires_consistency) ... ok
+test_tie_matching_agrees_with_official (test_diagnostics.DiagnosticTests.test_tie_matching_agrees_with_official) ... ok
+test_absent_cache_and_archive_hash_fail_closed (test_runner.RunnerTests.test_absent_cache_and_archive_hash_fail_closed) ... ok
+test_cache_requires_signature_content_and_checks (test_runner.RunnerTests.test_cache_requires_signature_content_and_checks) ... ok
+test_csv_digest_matches_export_contract (test_runner.RunnerTests.test_csv_digest_matches_export_contract) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.008s
+
+OK

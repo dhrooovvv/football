@@ -1,0 +1,8 @@
+{
+  "quality_eligible": false,
+  "parent": "gap_trained_short_context_tcn_rotation_50_50_penalty16",
+  "architecture": "original_motion_tcn_training_boundary_head_v1",
+  "production_changed": false,
+  "clean_environment_verified": false,
+  "automatic_followup": false
+}

@@ -1,0 +1,7 @@
+{
+  "quality_eligible": true,
+  "parent": "gap_trained_standalone_short_context_tcn_penalty16",
+  "method": "equal_identity_and_180degree_rotation_probability_average",
+  "production_changed": false,
+  "automatic_followup": false
+}

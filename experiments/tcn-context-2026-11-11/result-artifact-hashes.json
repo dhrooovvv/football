@@ -1,0 +1,13 @@
+{
+  "experiments/tcn-context-2026-11-11/checks.txt": "a2c081bcda076d0a709016b1939f59de0643daa95f55c27ce3952cafc8b13730",
+  "experiments/tcn-context-2026-11-11/decision.json": "ba995348d912b18d9b473f4c19e3c6ea32465f954207b835ab27d502dd36ea2f",
+  "experiments/tcn-context-2026-11-11/result-audit.json": "26cad5cc4dc7b7d6f7736e3e48d71d2998df1a4ea05eb56a01fc061d9ee6009a",
+  "experiments/tcn-context-2026-11-11/evaluation/J03WMX.json": "36b50d53a454f96b1ef51207c6fd873ee96abf20059c9ca282130a01fc8e6fad",
+  "experiments/tcn-context-2026-11-11/evaluation/J03WN1.json": "16cd653e17a387f62b78341a137d0b14ee103e07c520e7bd19482649fdb29e3f",
+  "experiments/tcn-context-2026-11-11/evaluation/J03WOH.json": "eacd4399bce87dcb2cf5b5f5e99c7703c94c5a38f5d377b5a222c1f075dc69de",
+  "experiments/tcn-context-2026-11-11/evaluation/J03WOY.json": "49ecc4226db561b44c30bbbfe0fe6f8d3d70554be0b4a8ef1747ce33b6206c40",
+  "experiments/tcn-context-2026-11-11/evaluation/J03WPY.json": "4b1c3cbe94de775ca22e5231e104c1a40bbbabf8b0e9a02feda9cf125b67c262",
+  "experiments/tcn-context-2026-11-11/evaluation/gate.json": "a8f59e8df42c798cfb8c0d9ac681d85742367c8bc5ef9527a62cf82789b84c42",
+  "experiments/tcn-context-2026-11-11/evaluation/report.md": "3ce015b03de6ca59267f9a6ae8123b927c76963a02c73bc46ba642f26a73dd4d",
+  "experiments/tcn-context-2026-11-11/evaluation/results.json": "ee7b083e9545139c0e2e82529de50f57ecba853e66e1d93e094510a30ad13983"
+}

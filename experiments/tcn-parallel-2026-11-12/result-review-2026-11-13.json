@@ -1,0 +1,418 @@
+{
+  "date": "2026-11-13",
+  "method": "stdlib metadata arithmetic and byte hashing only; no project imports, tests, inference or scoring",
+  "registration": "d37699a46bffcd4e77afa2d32ce473d866b2dd0c5a69685e5f26252a7a8b8029",
+  "arms": {
+    "attention": {
+      "completion_sha256": "bbc01ba122286908f5be89bba763f601dc9e4149c9bc07fca8e45cc117e6eef6",
+      "results_sha256": "31ce4bb90d2ac0e5df689ae172a8cd854fec87bc7d53c3beec20bcdfe469b769",
+      "contracts_log_sha256": "44e9b27a33159791bf123523906c867faa29c67e98d32db588e9a2f89ded8f3e",
+      "gate": {
+        "quality_eligible": false,
+        "existing_gate": false,
+        "primary_median_delta": -0.00020538828713040358,
+        "paired_median_spell_delta": 0.0041895857172233875,
+        "paired_median_macro_delta": -0.01035738860447144,
+        "matches_improved": 3,
+        "primary_deltas": {
+          "J03WMX": -0.010780840196935482,
+          "J03WN1": -0.00020538828713040358,
+          "J03WOH": 0.010475145969771948,
+          "J03WOY": 0.007881647422864901,
+          "J03WPY": -0.028118359162715656
+        },
+        "paired_spell_deltas": {
+          "J03WMX": -0.002832631389718121,
+          "J03WN1": 0.006937725337570644,
+          "J03WOH": 0.005320799617408389,
+          "J03WOY": 0.0041895857172233875,
+          "J03WPY": -0.026703501716366818
+        },
+        "paired_macro_deltas": {
+          "J03WMX": -0.013955184489670036,
+          "J03WN1": -0.01035738860447144,
+          "J03WOH": -0.004381095726636586,
+          "J03WOY": -0.0032107349777044103,
+          "J03WPY": -0.019713680870349526
+        },
+        "contracts_passed": true,
+        "repeated_training_exact": true,
+        "production_changed": false,
+        "sealed_opened": false,
+        "target_accuracy": "unknown"
+      },
+      "summary": {
+        "clean": {
+          "parent": {
+            "mean_spellF1": 0.6328708454621595,
+            "mean_macroF1": 0.9258995454065417,
+            "missed_iou_05": 1044,
+            "spurious_iou_05": 373,
+            "short_spell_count": 732,
+            "short_recalled_estimate_from_saved_ratio": 150,
+            "dead_live_wrong_frames": 1866
+          },
+          "candidate": {
+            "mean_spellF1": 0.6317851953394356,
+            "mean_macroF1": 0.9249875202700254,
+            "missed_iou_05": 1043,
+            "spurious_iou_05": 351,
+            "short_spell_count": 732,
+            "short_recalled_estimate_from_saved_ratio": 159,
+            "dead_live_wrong_frames": 2288
+          }
+        },
+        "targetlike": {
+          "parent": {
+            "mean_spellF1": 0.49754997776865695,
+            "mean_macroF1": 0.8481428233999456,
+            "missed_iou_05": 1312,
+            "spurious_iou_05": 645,
+            "short_spell_count": 732,
+            "short_recalled_estimate_from_saved_ratio": 104,
+            "dead_live_wrong_frames": 46568
+          },
+          "candidate": {
+            "mean_spellF1": 0.493400418917828,
+            "mean_macroF1": 0.8284076146689291,
+            "missed_iou_05": 1333,
+            "spurious_iou_05": 605,
+            "short_spell_count": 732,
+            "short_recalled_estimate_from_saved_ratio": 103,
+            "dead_live_wrong_frames": 63730
+          }
+        }
+      },
+      "sum_fold_seconds": 52967.83152191597,
+      "per_match": [
+        {
+          "match": "J03WMX",
+          "clean": {
+            "parent": {
+              "spellF1": 0.5898058252427184,
+              "macroF1": 0.9326039709563511
+            },
+            "candidate": {
+              "spellF1": 0.5949214026602176,
+              "macroF1": 0.9295325523100427
+            }
+          },
+          "targetlike": {
+            "parent": {
+              "spellF1": 0.4758293838862559,
+              "macroF1": 0.8736191503573355
+            },
+            "candidate": {
+              "spellF1": 0.4650485436893204,
+              "macroF1": 0.8487802000243039
+            }
+          }
+        },
+        {
+          "match": "J03WN1",
+          "clean": {
+            "parent": {
+              "spellF1": 0.5706093189964159,
+              "macroF1": 0.8986756704011544
+            },
+            "candidate": {
+              "spellF1": 0.5846901579586877,
+              "macroF1": 0.9042829702077205
+            }
+          },
+          "targetlike": {
+            "parent": {
+              "spellF1": 0.43818615751789974,
+              "macroF1": 0.8114433207121855
+            },
+            "candidate": {
+              "spellF1": 0.43798076923076934,
+              "macroF1": 0.7851212436966765
+            }
+          }
+        },
+        {
+          "match": "J03WOH",
+          "clean": {
+            "parent": {
+              "spellF1": 0.6861971830985916,
+              "macroF1": 0.9376396304579133
+            },
+            "candidate": {
+              "spellF1": 0.6863636363636363,
+              "macroF1": 0.9355908004357585
+            }
+          },
+          "targetlike": {
+            "parent": {
+              "spellF1": 0.5197163120567376,
+              "macroF1": 0.8548977843953889
+            },
+            "candidate": {
+              "spellF1": 0.5301914580265096,
+              "macroF1": 0.8481844229642705
+            }
+          }
+        },
+        {
+          "match": "J03WOY",
+          "clean": {
+            "parent": {
+              "spellF1": 0.6498122653316646,
+              "macroF1": 0.9238438330624135
+            },
+            "candidate": {
+              "spellF1": 0.6503097893432466,
+              "macroF1": 0.9266176602104315
+            }
+          },
+          "targetlike": {
+            "parent": {
+              "spellF1": 0.4994974874371859,
+              "macroF1": 0.8256368479789371
+            },
+            "candidate": {
+              "spellF1": 0.5073791348600508,
+              "macroF1": 0.8164415508755102
+            }
+          }
+        },
+        {
+          "match": "J03WPY",
+          "clean": {
+            "parent": {
+              "spellF1": 0.6679296346414073,
+              "macroF1": 0.9367346221548765
+            },
+            "candidate": {
+              "spellF1": 0.6426409903713893,
+              "macroF1": 0.9289136181861739
+            }
+          },
+          "targetlike": {
+            "parent": {
+              "spellF1": 0.5545205479452054,
+              "macroF1": 0.8751170135558812
+            },
+            "candidate": {
+              "spellF1": 0.5264021887824898,
+              "macroF1": 0.8435106557838846
+            }
+          }
+        }
+      ]
+    },
+    "ensemble": {
+      "completion_sha256": "df27f68e4c2b686b1fc66dc53ac75090e62536459c2c2ceeee000145472e8cb0",
+      "results_sha256": "e0ec0f4f85155e96d967db1cabf2b01e9d63b3e426db316d69d3cb58815e13d1",
+      "contracts_log_sha256": "99338b62ad78d05fe0002ac64031a2bc3c2dfe26b29876924d42563ecd8333eb",
+      "gate": {
+        "quality_eligible": false,
+        "existing_gate": true,
+        "primary_median_delta": 0.0077305666699864495,
+        "paired_median_spell_delta": 0.007742858518512086,
+        "paired_median_macro_delta": 0.002279352340523788,
+        "matches_improved": 3,
+        "primary_deltas": {
+          "J03WMX": 0.0077305666699864495,
+          "J03WN1": -0.00975242257814074,
+          "J03WOH": 0.020429673344722232,
+          "J03WOY": 0.017126553483530205,
+          "J03WPY": 0.007671232876712453
+        },
+        "paired_spell_deltas": {
+          "J03WMX": 0.007742858518512086,
+          "J03WN1": -0.0035853784978359116,
+          "J03WOH": 0.021401959408779647,
+          "J03WOY": 0.008062650959537399,
+          "J03WPY": -0.009516387511874003
+        },
+        "paired_macro_deltas": {
+          "J03WMX": 0.003449289382424059,
+          "J03WN1": -0.001606487305318649,
+          "J03WOH": 0.0022623840010682628,
+          "J03WOY": 0.006463257912505238,
+          "J03WPY": 0.002279352340523788
+        },
+        "contracts_passed": true,
+        "repeated_training_exact": true,
+        "production_changed": false,
+        "sealed_opened": false,
+        "target_accuracy": "unknown"
+      },
+      "summary": {
+        "clean": {
+          "parent": {
+            "mean_spellF1": 0.6328708454621595,
+            "mean_macroF1": 0.9258995454065417,
+            "missed_iou_05": 1044,
+            "spurious_iou_05": 373,
+            "short_spell_count": 732,
+            "short_recalled_estimate_from_saved_ratio": 150,
+            "dead_live_wrong_frames": 1866
+          },
+          "candidate": {
+            "mean_spellF1": 0.6338720058536451,
+            "mean_macroF1": 0.9251719197609267,
+            "missed_iou_05": 1046,
+            "spurious_iou_05": 346,
+            "short_spell_count": 732,
+            "short_recalled_estimate_from_saved_ratio": 151,
+            "dead_live_wrong_frames": 1719
+          }
+        },
+        "targetlike": {
+          "parent": {
+            "mean_spellF1": 0.49754997776865695,
+            "mean_macroF1": 0.8481428233999456,
+            "missed_iou_05": 1312,
+            "spurious_iou_05": 645,
+            "short_spell_count": 732,
+            "short_recalled_estimate_from_saved_ratio": 104,
+            "dead_live_wrong_frames": 46568
+          },
+          "candidate": {
+            "mean_spellF1": 0.506191098528019,
+            "mean_macroF1": 0.8540095675780418,
+            "missed_iou_05": 1308,
+            "spurious_iou_05": 564,
+            "short_spell_count": 732,
+            "short_recalled_estimate_from_saved_ratio": 100,
+            "dead_live_wrong_frames": 42828
+          }
+        }
+      },
+      "sum_fold_seconds": 11241.303087748936,
+      "per_match": [
+        {
+          "match": "J03WMX",
+          "clean": {
+            "parent": {
+              "spellF1": 0.5898058252427184,
+              "macroF1": 0.9326039709563511
+            },
+            "candidate": {
+              "spellF1": 0.5975609756097561,
+              "macroF1": 0.9344974006772194
+            }
+          },
+          "targetlike": {
+            "parent": {
+              "spellF1": 0.4758293838862559,
+              "macroF1": 0.8736191503573355
+            },
+            "candidate": {
+              "spellF1": 0.48355995055624235,
+              "macroF1": 0.8786242994013153
+            }
+          }
+        },
+        {
+          "match": "J03WN1",
+          "clean": {
+            "parent": {
+              "spellF1": 0.5706093189964159,
+              "macroF1": 0.8986756704011544
+            },
+            "candidate": {
+              "spellF1": 0.573190984578885,
+              "macroF1": 0.8987263988824984
+            }
+          },
+          "targetlike": {
+            "parent": {
+              "spellF1": 0.43818615751789974,
+              "macroF1": 0.8114433207121855
+            },
+            "candidate": {
+              "spellF1": 0.428433734939759,
+              "macroF1": 0.8081796176202042
+            }
+          }
+        },
+        {
+          "match": "J03WOH",
+          "clean": {
+            "parent": {
+              "spellF1": 0.6861971830985916,
+              "macroF1": 0.9376396304579133
+            },
+            "candidate": {
+              "spellF1": 0.7085714285714285,
+              "macroF1": 0.9378005973513757
+            }
+          },
+          "targetlike": {
+            "parent": {
+              "spellF1": 0.5197163120567376,
+              "macroF1": 0.8548977843953889
+            },
+            "candidate": {
+              "spellF1": 0.5401459854014599,
+              "macroF1": 0.8592615855040632
+            }
+          }
+        },
+        {
+          "match": "J03WOY",
+          "clean": {
+            "parent": {
+              "spellF1": 0.6498122653316646,
+              "macroF1": 0.9238438330624135
+            },
+            "candidate": {
+              "spellF1": 0.6488110137672091,
+              "macroF1": 0.9226255852735438
+            }
+          },
+          "targetlike": {
+            "parent": {
+              "spellF1": 0.4994974874371859,
+              "macroF1": 0.8256368479789371
+            },
+            "candidate": {
+              "spellF1": 0.5166240409207161,
+              "macroF1": 0.8397816115928173
+            }
+          }
+        },
+        {
+          "match": "J03WPY",
+          "clean": {
+            "parent": {
+              "spellF1": 0.6679296346414073,
+              "macroF1": 0.9367346221548765
+            },
+            "candidate": {
+              "spellF1": 0.641225626740947,
+              "macroF1": 0.9322096166199962
+            }
+          },
+          "targetlike": {
+            "parent": {
+              "spellF1": 0.5545205479452054,
+              "macroF1": 0.8751170135558812
+            },
+            "candidate": {
+              "spellF1": 0.5621917808219179,
+              "macroF1": 0.8842007237718089
+            }
+          }
+        }
+      ]
+    }
+  },
+  "registration_files_verified": 228,
+  "unique_files_byte_verified": 378,
+  "committed_source_entries_verified": 151,
+  "ordered_review": {
+    "attention_qualifies": false,
+    "ensemble_comparator": "parent",
+    "ensemble_qualifies": false,
+    "retained": "staged40k_original_motion_TCN_rotation_penalty16",
+    "official_finalize_command_executed": false
+  },
+  "production_changed": false,
+  "target_accuracy": "unknown",
+  "sealed_opened": false
+}

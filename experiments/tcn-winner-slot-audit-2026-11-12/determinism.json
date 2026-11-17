@@ -1,0 +1,522 @@
+[
+  {
+    "match": "J03WMX",
+    "condition": "clean",
+    "variant": "parent",
+    "reload_probabilities_equal": true,
+    "csv_bytes_equal_reload_batch4": true,
+    "csv_sha256": "37d9cab67cd890955360b04b70684fbe61148775d7596a92d2f1cebf9cdb43ee",
+    "csv_paths": [
+      "data/tcn-winner-slot-audit/J03WMX-clean-parent-first.csv",
+      "data/tcn-winner-slot-audit/J03WMX-clean-parent-reload.csv",
+      "data/tcn-winner-slot-audit/J03WMX-clean-parent-batch4.csv"
+    ]
+  },
+  {
+    "match": "J03WMX",
+    "condition": "clean",
+    "variant": "static",
+    "reload_probabilities_equal": true,
+    "csv_bytes_equal_reload_batch4": true,
+    "csv_sha256": "37d9cab67cd890955360b04b70684fbe61148775d7596a92d2f1cebf9cdb43ee",
+    "csv_paths": [
+      "data/tcn-winner-slot-audit/J03WMX-clean-static-first.csv",
+      "data/tcn-winner-slot-audit/J03WMX-clean-static-reload.csv",
+      "data/tcn-winner-slot-audit/J03WMX-clean-static-batch4.csv"
+    ]
+  },
+  {
+    "match": "J03WMX",
+    "condition": "clean",
+    "variant": "rederived_identity",
+    "reload_probabilities_equal": true,
+    "csv_bytes_equal_reload_batch4": true,
+    "csv_sha256": "37d9cab67cd890955360b04b70684fbe61148775d7596a92d2f1cebf9cdb43ee",
+    "csv_paths": [
+      "data/tcn-winner-slot-audit/J03WMX-clean-rederived_identity-first.csv",
+      "data/tcn-winner-slot-audit/J03WMX-clean-rederived_identity-reload.csv",
+      "data/tcn-winner-slot-audit/J03WMX-clean-rederived_identity-batch4.csv"
+    ]
+  },
+  {
+    "match": "J03WMX",
+    "condition": "clean",
+    "variant": "dynamic",
+    "reload_probabilities_equal": true,
+    "csv_bytes_equal_reload_batch4": true,
+    "csv_sha256": "deb4ab42b20b9f88ef38a46fc2b3521f0cf4ca34ecd4801ea7c4715a1b894762",
+    "csv_paths": [
+      "data/tcn-winner-slot-audit/J03WMX-clean-dynamic-first.csv",
+      "data/tcn-winner-slot-audit/J03WMX-clean-dynamic-reload.csv",
+      "data/tcn-winner-slot-audit/J03WMX-clean-dynamic-batch4.csv"
+    ]
+  },
+  {
+    "match": "J03WMX",
+    "condition": "targetlike",
+    "variant": "parent",
+    "reload_probabilities_equal": true,
+    "csv_bytes_equal_reload_batch4": true,
+    "csv_sha256": "fcf01f7b41385f8da3ee8ef55c56e4b58dd91b5f046ad07ab43e498908750804",
+    "csv_paths": [
+      "data/tcn-winner-slot-audit/J03WMX-targetlike-parent-first.csv",
+      "data/tcn-winner-slot-audit/J03WMX-targetlike-parent-reload.csv",
+      "data/tcn-winner-slot-audit/J03WMX-targetlike-parent-batch4.csv"
+    ]
+  },
+  {
+    "match": "J03WMX",
+    "condition": "targetlike",
+    "variant": "static",
+    "reload_probabilities_equal": true,
+    "csv_bytes_equal_reload_batch4": true,
+    "csv_sha256": "fcf01f7b41385f8da3ee8ef55c56e4b58dd91b5f046ad07ab43e498908750804",
+    "csv_paths": [
+      "data/tcn-winner-slot-audit/J03WMX-targetlike-static-first.csv",
+      "data/tcn-winner-slot-audit/J03WMX-targetlike-static-reload.csv",
+      "data/tcn-winner-slot-audit/J03WMX-targetlike-static-batch4.csv"
+    ]
+  },
+  {
+    "match": "J03WMX",
+    "condition": "targetlike",
+    "variant": "rederived_identity",
+    "reload_probabilities_equal": true,
+    "csv_bytes_equal_reload_batch4": true,
+    "csv_sha256": "fcf01f7b41385f8da3ee8ef55c56e4b58dd91b5f046ad07ab43e498908750804",
+    "csv_paths": [
+      "data/tcn-winner-slot-audit/J03WMX-targetlike-rederived_identity-first.csv",
+      "data/tcn-winner-slot-audit/J03WMX-targetlike-rederived_identity-reload.csv",
+      "data/tcn-winner-slot-audit/J03WMX-targetlike-rederived_identity-batch4.csv"
+    ]
+  },
+  {
+    "match": "J03WMX",
+    "condition": "targetlike",
+    "variant": "dynamic",
+    "reload_probabilities_equal": true,
+    "csv_bytes_equal_reload_batch4": true,
+    "csv_sha256": "9c9f23aae42d3cd661fb1e1f44ed6755fff8a5e7c7691c6869292e8cc4c73580",
+    "csv_paths": [
+      "data/tcn-winner-slot-audit/J03WMX-targetlike-dynamic-first.csv",
+      "data/tcn-winner-slot-audit/J03WMX-targetlike-dynamic-reload.csv",
+      "data/tcn-winner-slot-audit/J03WMX-targetlike-dynamic-batch4.csv"
+    ]
+  },
+  {
+    "match": "J03WN1",
+    "condition": "clean",
+    "variant": "parent",
+    "reload_probabilities_equal": true,
+    "csv_bytes_equal_reload_batch4": true,
+    "csv_sha256": "839ccc8d8215d54e9405aed84a5950104da4a2d2cc2d69588060984d1de29099",
+    "csv_paths": [
+      "data/tcn-winner-slot-audit/J03WN1-clean-parent-first.csv",
+      "data/tcn-winner-slot-audit/J03WN1-clean-parent-reload.csv",
+      "data/tcn-winner-slot-audit/J03WN1-clean-parent-batch4.csv"
+    ]
+  },
+  {
+    "match": "J03WN1",
+    "condition": "clean",
+    "variant": "static",
+    "reload_probabilities_equal": true,
+    "csv_bytes_equal_reload_batch4": true,
+    "csv_sha256": "839ccc8d8215d54e9405aed84a5950104da4a2d2cc2d69588060984d1de29099",
+    "csv_paths": [
+      "data/tcn-winner-slot-audit/J03WN1-clean-static-first.csv",
+      "data/tcn-winner-slot-audit/J03WN1-clean-static-reload.csv",
+      "data/tcn-winner-slot-audit/J03WN1-clean-static-batch4.csv"
+    ]
+  },
+  {
+    "match": "J03WN1",
+    "condition": "clean",
+    "variant": "rederived_identity",
+    "reload_probabilities_equal": true,
+    "csv_bytes_equal_reload_batch4": true,
+    "csv_sha256": "839ccc8d8215d54e9405aed84a5950104da4a2d2cc2d69588060984d1de29099",
+    "csv_paths": [
+      "data/tcn-winner-slot-audit/J03WN1-clean-rederived_identity-first.csv",
+      "data/tcn-winner-slot-audit/J03WN1-clean-rederived_identity-reload.csv",
+      "data/tcn-winner-slot-audit/J03WN1-clean-rederived_identity-batch4.csv"
+    ]
+  },
+  {
+    "match": "J03WN1",
+    "condition": "clean",
+    "variant": "dynamic",
+    "reload_probabilities_equal": true,
+    "csv_bytes_equal_reload_batch4": true,
+    "csv_sha256": "c584dc2214f5c37a4af05b00aa65a382788aac35e1d0568742d6b9cd8c0db7d6",
+    "csv_paths": [
+      "data/tcn-winner-slot-audit/J03WN1-clean-dynamic-first.csv",
+      "data/tcn-winner-slot-audit/J03WN1-clean-dynamic-reload.csv",
+      "data/tcn-winner-slot-audit/J03WN1-clean-dynamic-batch4.csv"
+    ]
+  },
+  {
+    "match": "J03WN1",
+    "condition": "targetlike",
+    "variant": "parent",
+    "reload_probabilities_equal": true,
+    "csv_bytes_equal_reload_batch4": true,
+    "csv_sha256": "10dd80ebf5f50dfe1b272ef9a5c85e3be7c45be34814f439f52ed51780d85b14",
+    "csv_paths": [
+      "data/tcn-winner-slot-audit/J03WN1-targetlike-parent-first.csv",
+      "data/tcn-winner-slot-audit/J03WN1-targetlike-parent-reload.csv",
+      "data/tcn-winner-slot-audit/J03WN1-targetlike-parent-batch4.csv"
+    ]
+  },
+  {
+    "match": "J03WN1",
+    "condition": "targetlike",
+    "variant": "static",
+    "reload_probabilities_equal": true,
+    "csv_bytes_equal_reload_batch4": true,
+    "csv_sha256": "10dd80ebf5f50dfe1b272ef9a5c85e3be7c45be34814f439f52ed51780d85b14",
+    "csv_paths": [
+      "data/tcn-winner-slot-audit/J03WN1-targetlike-static-first.csv",
+      "data/tcn-winner-slot-audit/J03WN1-targetlike-static-reload.csv",
+      "data/tcn-winner-slot-audit/J03WN1-targetlike-static-batch4.csv"
+    ]
+  },
+  {
+    "match": "J03WN1",
+    "condition": "targetlike",
+    "variant": "rederived_identity",
+    "reload_probabilities_equal": true,
+    "csv_bytes_equal_reload_batch4": true,
+    "csv_sha256": "10dd80ebf5f50dfe1b272ef9a5c85e3be7c45be34814f439f52ed51780d85b14",
+    "csv_paths": [
+      "data/tcn-winner-slot-audit/J03WN1-targetlike-rederived_identity-first.csv",
+      "data/tcn-winner-slot-audit/J03WN1-targetlike-rederived_identity-reload.csv",
+      "data/tcn-winner-slot-audit/J03WN1-targetlike-rederived_identity-batch4.csv"
+    ]
+  },
+  {
+    "match": "J03WN1",
+    "condition": "targetlike",
+    "variant": "dynamic",
+    "reload_probabilities_equal": true,
+    "csv_bytes_equal_reload_batch4": true,
+    "csv_sha256": "8c9bda5250dc286fbedf88597edd9ef59ad18063efe0bb2f852a4001e438bbe2",
+    "csv_paths": [
+      "data/tcn-winner-slot-audit/J03WN1-targetlike-dynamic-first.csv",
+      "data/tcn-winner-slot-audit/J03WN1-targetlike-dynamic-reload.csv",
+      "data/tcn-winner-slot-audit/J03WN1-targetlike-dynamic-batch4.csv"
+    ]
+  },
+  {
+    "match": "J03WOH",
+    "condition": "clean",
+    "variant": "parent",
+    "reload_probabilities_equal": true,
+    "csv_bytes_equal_reload_batch4": true,
+    "csv_sha256": "19027d11f9bbaaae3b653b421cbd1c6384a548d2bdf2cfcda813b85cf499c0b1",
+    "csv_paths": [
+      "data/tcn-winner-slot-audit/J03WOH-clean-parent-first.csv",
+      "data/tcn-winner-slot-audit/J03WOH-clean-parent-reload.csv",
+      "data/tcn-winner-slot-audit/J03WOH-clean-parent-batch4.csv"
+    ]
+  },
+  {
+    "match": "J03WOH",
+    "condition": "clean",
+    "variant": "static",
+    "reload_probabilities_equal": true,
+    "csv_bytes_equal_reload_batch4": true,
+    "csv_sha256": "19027d11f9bbaaae3b653b421cbd1c6384a548d2bdf2cfcda813b85cf499c0b1",
+    "csv_paths": [
+      "data/tcn-winner-slot-audit/J03WOH-clean-static-first.csv",
+      "data/tcn-winner-slot-audit/J03WOH-clean-static-reload.csv",
+      "data/tcn-winner-slot-audit/J03WOH-clean-static-batch4.csv"
+    ]
+  },
+  {
+    "match": "J03WOH",
+    "condition": "clean",
+    "variant": "rederived_identity",
+    "reload_probabilities_equal": true,
+    "csv_bytes_equal_reload_batch4": true,
+    "csv_sha256": "19027d11f9bbaaae3b653b421cbd1c6384a548d2bdf2cfcda813b85cf499c0b1",
+    "csv_paths": [
+      "data/tcn-winner-slot-audit/J03WOH-clean-rederived_identity-first.csv",
+      "data/tcn-winner-slot-audit/J03WOH-clean-rederived_identity-reload.csv",
+      "data/tcn-winner-slot-audit/J03WOH-clean-rederived_identity-batch4.csv"
+    ]
+  },
+  {
+    "match": "J03WOH",
+    "condition": "clean",
+    "variant": "dynamic",
+    "reload_probabilities_equal": true,
+    "csv_bytes_equal_reload_batch4": true,
+    "csv_sha256": "7a9b4381475e518228cf605dfa0470f443740ecb77ad7f4f6edd3d5f48a3d5df",
+    "csv_paths": [
+      "data/tcn-winner-slot-audit/J03WOH-clean-dynamic-first.csv",
+      "data/tcn-winner-slot-audit/J03WOH-clean-dynamic-reload.csv",
+      "data/tcn-winner-slot-audit/J03WOH-clean-dynamic-batch4.csv"
+    ]
+  },
+  {
+    "match": "J03WOH",
+    "condition": "targetlike",
+    "variant": "parent",
+    "reload_probabilities_equal": true,
+    "csv_bytes_equal_reload_batch4": true,
+    "csv_sha256": "c4a3203a62ba10334127bf3c4e8e6e5ab2e87194b9782f05911d8859861eb48f",
+    "csv_paths": [
+      "data/tcn-winner-slot-audit/J03WOH-targetlike-parent-first.csv",
+      "data/tcn-winner-slot-audit/J03WOH-targetlike-parent-reload.csv",
+      "data/tcn-winner-slot-audit/J03WOH-targetlike-parent-batch4.csv"
+    ]
+  },
+  {
+    "match": "J03WOH",
+    "condition": "targetlike",
+    "variant": "static",
+    "reload_probabilities_equal": true,
+    "csv_bytes_equal_reload_batch4": true,
+    "csv_sha256": "c4a3203a62ba10334127bf3c4e8e6e5ab2e87194b9782f05911d8859861eb48f",
+    "csv_paths": [
+      "data/tcn-winner-slot-audit/J03WOH-targetlike-static-first.csv",
+      "data/tcn-winner-slot-audit/J03WOH-targetlike-static-reload.csv",
+      "data/tcn-winner-slot-audit/J03WOH-targetlike-static-batch4.csv"
+    ]
+  },
+  {
+    "match": "J03WOH",
+    "condition": "targetlike",
+    "variant": "rederived_identity",
+    "reload_probabilities_equal": true,
+    "csv_bytes_equal_reload_batch4": true,
+    "csv_sha256": "c4a3203a62ba10334127bf3c4e8e6e5ab2e87194b9782f05911d8859861eb48f",
+    "csv_paths": [
+      "data/tcn-winner-slot-audit/J03WOH-targetlike-rederived_identity-first.csv",
+      "data/tcn-winner-slot-audit/J03WOH-targetlike-rederived_identity-reload.csv",
+      "data/tcn-winner-slot-audit/J03WOH-targetlike-rederived_identity-batch4.csv"
+    ]
+  },
+  {
+    "match": "J03WOH",
+    "condition": "targetlike",
+    "variant": "dynamic",
+    "reload_probabilities_equal": true,
+    "csv_bytes_equal_reload_batch4": true,
+    "csv_sha256": "cd6e79d7dbddf27f173417ae06d4651c653d310565a0a026509cfb6ce98e94e8",
+    "csv_paths": [
+      "data/tcn-winner-slot-audit/J03WOH-targetlike-dynamic-first.csv",
+      "data/tcn-winner-slot-audit/J03WOH-targetlike-dynamic-reload.csv",
+      "data/tcn-winner-slot-audit/J03WOH-targetlike-dynamic-batch4.csv"
+    ]
+  },
+  {
+    "match": "J03WOY",
+    "condition": "clean",
+    "variant": "parent",
+    "reload_probabilities_equal": true,
+    "csv_bytes_equal_reload_batch4": true,
+    "csv_sha256": "7702e16f48c0876bce552fd6ce3d5bd1bccce64cb00f2fec03856cb38eee9a67",
+    "csv_paths": [
+      "data/tcn-winner-slot-audit/J03WOY-clean-parent-first.csv",
+      "data/tcn-winner-slot-audit/J03WOY-clean-parent-reload.csv",
+      "data/tcn-winner-slot-audit/J03WOY-clean-parent-batch4.csv"
+    ]
+  },
+  {
+    "match": "J03WOY",
+    "condition": "clean",
+    "variant": "static",
+    "reload_probabilities_equal": true,
+    "csv_bytes_equal_reload_batch4": true,
+    "csv_sha256": "7702e16f48c0876bce552fd6ce3d5bd1bccce64cb00f2fec03856cb38eee9a67",
+    "csv_paths": [
+      "data/tcn-winner-slot-audit/J03WOY-clean-static-first.csv",
+      "data/tcn-winner-slot-audit/J03WOY-clean-static-reload.csv",
+      "data/tcn-winner-slot-audit/J03WOY-clean-static-batch4.csv"
+    ]
+  },
+  {
+    "match": "J03WOY",
+    "condition": "clean",
+    "variant": "rederived_identity",
+    "reload_probabilities_equal": true,
+    "csv_bytes_equal_reload_batch4": true,
+    "csv_sha256": "7702e16f48c0876bce552fd6ce3d5bd1bccce64cb00f2fec03856cb38eee9a67",
+    "csv_paths": [
+      "data/tcn-winner-slot-audit/J03WOY-clean-rederived_identity-first.csv",
+      "data/tcn-winner-slot-audit/J03WOY-clean-rederived_identity-reload.csv",
+      "data/tcn-winner-slot-audit/J03WOY-clean-rederived_identity-batch4.csv"
+    ]
+  },
+  {
+    "match": "J03WOY",
+    "condition": "clean",
+    "variant": "dynamic",
+    "reload_probabilities_equal": true,
+    "csv_bytes_equal_reload_batch4": true,
+    "csv_sha256": "2164eab04aaa5938310fe24ab3626a6378fee14fd2e258ad0b066279225d063c",
+    "csv_paths": [
+      "data/tcn-winner-slot-audit/J03WOY-clean-dynamic-first.csv",
+      "data/tcn-winner-slot-audit/J03WOY-clean-dynamic-reload.csv",
+      "data/tcn-winner-slot-audit/J03WOY-clean-dynamic-batch4.csv"
+    ]
+  },
+  {
+    "match": "J03WOY",
+    "condition": "targetlike",
+    "variant": "parent",
+    "reload_probabilities_equal": true,
+    "csv_bytes_equal_reload_batch4": true,
+    "csv_sha256": "6a794c55cc2e5b1eec4bf673f5a44832b9686402762160d107ed1bfe5baa8a3c",
+    "csv_paths": [
+      "data/tcn-winner-slot-audit/J03WOY-targetlike-parent-first.csv",
+      "data/tcn-winner-slot-audit/J03WOY-targetlike-parent-reload.csv",
+      "data/tcn-winner-slot-audit/J03WOY-targetlike-parent-batch4.csv"
+    ]
+  },
+  {
+    "match": "J03WOY",
+    "condition": "targetlike",
+    "variant": "static",
+    "reload_probabilities_equal": true,
+    "csv_bytes_equal_reload_batch4": true,
+    "csv_sha256": "6a794c55cc2e5b1eec4bf673f5a44832b9686402762160d107ed1bfe5baa8a3c",
+    "csv_paths": [
+      "data/tcn-winner-slot-audit/J03WOY-targetlike-static-first.csv",
+      "data/tcn-winner-slot-audit/J03WOY-targetlike-static-reload.csv",
+      "data/tcn-winner-slot-audit/J03WOY-targetlike-static-batch4.csv"
+    ]
+  },
+  {
+    "match": "J03WOY",
+    "condition": "targetlike",
+    "variant": "rederived_identity",
+    "reload_probabilities_equal": true,
+    "csv_bytes_equal_reload_batch4": true,
+    "csv_sha256": "6a794c55cc2e5b1eec4bf673f5a44832b9686402762160d107ed1bfe5baa8a3c",
+    "csv_paths": [
+      "data/tcn-winner-slot-audit/J03WOY-targetlike-rederived_identity-first.csv",
+      "data/tcn-winner-slot-audit/J03WOY-targetlike-rederived_identity-reload.csv",
+      "data/tcn-winner-slot-audit/J03WOY-targetlike-rederived_identity-batch4.csv"
+    ]
+  },
+  {
+    "match": "J03WOY",
+    "condition": "targetlike",
+    "variant": "dynamic",
+    "reload_probabilities_equal": true,
+    "csv_bytes_equal_reload_batch4": true,
+    "csv_sha256": "11dc76b785f154f26b0a2b08191204f9b60235df62abafa98d33bc2e3fb9a3e5",
+    "csv_paths": [
+      "data/tcn-winner-slot-audit/J03WOY-targetlike-dynamic-first.csv",
+      "data/tcn-winner-slot-audit/J03WOY-targetlike-dynamic-reload.csv",
+      "data/tcn-winner-slot-audit/J03WOY-targetlike-dynamic-batch4.csv"
+    ]
+  },
+  {
+    "match": "J03WPY",
+    "condition": "clean",
+    "variant": "parent",
+    "reload_probabilities_equal": true,
+    "csv_bytes_equal_reload_batch4": true,
+    "csv_sha256": "c13bb5eafe914352de8451ad6fcd40a1314fd047967c6d984dbb4a9680003b1a",
+    "csv_paths": [
+      "data/tcn-winner-slot-audit/J03WPY-clean-parent-first.csv",
+      "data/tcn-winner-slot-audit/J03WPY-clean-parent-reload.csv",
+      "data/tcn-winner-slot-audit/J03WPY-clean-parent-batch4.csv"
+    ]
+  },
+  {
+    "match": "J03WPY",
+    "condition": "clean",
+    "variant": "static",
+    "reload_probabilities_equal": true,
+    "csv_bytes_equal_reload_batch4": true,
+    "csv_sha256": "c13bb5eafe914352de8451ad6fcd40a1314fd047967c6d984dbb4a9680003b1a",
+    "csv_paths": [
+      "data/tcn-winner-slot-audit/J03WPY-clean-static-first.csv",
+      "data/tcn-winner-slot-audit/J03WPY-clean-static-reload.csv",
+      "data/tcn-winner-slot-audit/J03WPY-clean-static-batch4.csv"
+    ]
+  },
+  {
+    "match": "J03WPY",
+    "condition": "clean",
+    "variant": "rederived_identity",
+    "reload_probabilities_equal": true,
+    "csv_bytes_equal_reload_batch4": true,
+    "csv_sha256": "c13bb5eafe914352de8451ad6fcd40a1314fd047967c6d984dbb4a9680003b1a",
+    "csv_paths": [
+      "data/tcn-winner-slot-audit/J03WPY-clean-rederived_identity-first.csv",
+      "data/tcn-winner-slot-audit/J03WPY-clean-rederived_identity-reload.csv",
+      "data/tcn-winner-slot-audit/J03WPY-clean-rederived_identity-batch4.csv"
+    ]
+  },
+  {
+    "match": "J03WPY",
+    "condition": "clean",
+    "variant": "dynamic",
+    "reload_probabilities_equal": true,
+    "csv_bytes_equal_reload_batch4": true,
+    "csv_sha256": "75479dc4f1784fa478500d24906edfd0e5544bb6c8231af73f030ec60004a7c3",
+    "csv_paths": [
+      "data/tcn-winner-slot-audit/J03WPY-clean-dynamic-first.csv",
+      "data/tcn-winner-slot-audit/J03WPY-clean-dynamic-reload.csv",
+      "data/tcn-winner-slot-audit/J03WPY-clean-dynamic-batch4.csv"
+    ]
+  },
+  {
+    "match": "J03WPY",
+    "condition": "targetlike",
+    "variant": "parent",
+    "reload_probabilities_equal": true,
+    "csv_bytes_equal_reload_batch4": true,
+    "csv_sha256": "18873e2545aa5a40006660164f7be1c59c301406c426e594a0df1c26569f01ab",
+    "csv_paths": [
+      "data/tcn-winner-slot-audit/J03WPY-targetlike-parent-first.csv",
+      "data/tcn-winner-slot-audit/J03WPY-targetlike-parent-reload.csv",
+      "data/tcn-winner-slot-audit/J03WPY-targetlike-parent-batch4.csv"
+    ]
+  },
+  {
+    "match": "J03WPY",
+    "condition": "targetlike",
+    "variant": "static",
+    "reload_probabilities_equal": true,
+    "csv_bytes_equal_reload_batch4": true,
+    "csv_sha256": "18873e2545aa5a40006660164f7be1c59c301406c426e594a0df1c26569f01ab",
+    "csv_paths": [
+      "data/tcn-winner-slot-audit/J03WPY-targetlike-static-first.csv",
+      "data/tcn-winner-slot-audit/J03WPY-targetlike-static-reload.csv",
+      "data/tcn-winner-slot-audit/J03WPY-targetlike-static-batch4.csv"
+    ]
+  },
+  {
+    "match": "J03WPY",
+    "condition": "targetlike",
+    "variant": "rederived_identity",
+    "reload_probabilities_equal": true,
+    "csv_bytes_equal_reload_batch4": true,
+    "csv_sha256": "18873e2545aa5a40006660164f7be1c59c301406c426e594a0df1c26569f01ab",
+    "csv_paths": [
+      "data/tcn-winner-slot-audit/J03WPY-targetlike-rederived_identity-first.csv",
+      "data/tcn-winner-slot-audit/J03WPY-targetlike-rederived_identity-reload.csv",
+      "data/tcn-winner-slot-audit/J03WPY-targetlike-rederived_identity-batch4.csv"
+    ]
+  },
+  {
+    "match": "J03WPY",
+    "condition": "targetlike",
+    "variant": "dynamic",
+    "reload_probabilities_equal": true,
+    "csv_bytes_equal_reload_batch4": true,
+    "csv_sha256": "9f80edb269d867ce39767621276742db91daf1d1e4e769268fd4ab0b4be46867",
+    "csv_paths": [
+      "data/tcn-winner-slot-audit/J03WPY-targetlike-dynamic-first.csv",
+      "data/tcn-winner-slot-audit/J03WPY-targetlike-dynamic-reload.csv",
+      "data/tcn-winner-slot-audit/J03WPY-targetlike-dynamic-batch4.csv"
+    ]
+  }
+]

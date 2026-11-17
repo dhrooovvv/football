@@ -1,0 +1,254 @@
+{
+  "registration": "2ed83062535cbb8b4c230d5872461f00b5956e97ee7eb8b54ae97c5564010e63",
+  "architecture": "pointwise_xy_visibility8_team_mean_temporal_d1_2_4_v1",
+  "training_matches": [
+    "idsse-J03WMX",
+    "idsse-J03WN1",
+    "idsse-J03WOY",
+    "idsse-J03WPY"
+  ],
+  "training_steps": 20000,
+  "repeated_training_exact": true,
+  "coverage": {
+    "idsse-J03WMX": {
+      "clean": 20217,
+      "gap": 20284
+    },
+    "idsse-J03WN1": {
+      "clean": 19643,
+      "gap": 19652
+    },
+    "idsse-J03WOY": {
+      "clean": 19587,
+      "gap": 19719
+    },
+    "idsse-J03WPY": {
+      "clean": 20373,
+      "gap": 20525
+    }
+  },
+  "available_window_starts": {
+    "idsse-J03WMX": 145469,
+    "idsse-J03WN1": 141063,
+    "idsse-J03WOY": 142038,
+    "idsse-J03WPY": 145713
+  },
+  "training_loss_sha256": "9863f8e7b41449153ec7937e1dcd4ad3b500196ec9d629d2ae3705f2799343f1",
+  "checkpoint_hashes": {
+    "models/tcn-set/evaluation/J03WOH/first/progress.pt": "745fa7f7fd12ef6bdb4035f78b3fbaa80d269505b9086b1848e72e4ff7bdda90",
+    "models/tcn-set/evaluation/J03WOH/repeat/progress.pt": "745fa7f7fd12ef6bdb4035f78b3fbaa80d269505b9086b1848e72e4ff7bdda90"
+  },
+  "rows": [
+    {
+      "match": "J03WOH",
+      "condition": "clean",
+      "parent": {
+        "spellF1": 0.681994459833795,
+        "macroF1": 0.9310132812144257,
+        "errors": {
+          "short_spells": 111,
+          "short_spell_recall_iou_05": 0.32432432432432434,
+          "dead_live_wrong_frames": 478,
+          "late_boundaries": 106,
+          "early_boundaries": 108,
+          "matched_boundary_median_frames": 0.0,
+          "boundary_pairs_within_2s": 328,
+          "precision": 0.7875,
+          "recall": 0.6268656716417911,
+          "f1": 0.6980609418282548,
+          "n_matched": 252,
+          "n_spurious": 68,
+          "n_missed": 150,
+          "boundary_shift_quantiles_frames": [
+            -47.0,
+            -10.299999999999997,
+            0.0,
+            14.300000000000011,
+            45.92000000000007,
+            48.0
+          ]
+        },
+        "oracle_repair_spellF1_gain": {
+          "dead_live": -0.005196630797159929,
+          "wrong_team": 0.2959467166367932
+        }
+      },
+      "candidate": {
+        "spellF1": 0.5733528550512444,
+        "macroF1": 0.911420609841059,
+        "errors": {
+          "short_spells": 111,
+          "short_spell_recall_iou_05": 0.15315315315315314,
+          "dead_live_wrong_frames": 489,
+          "late_boundaries": 84,
+          "early_boundaries": 109,
+          "matched_boundary_median_frames": 0.0,
+          "boundary_pairs_within_2s": 290,
+          "precision": 0.7188612099644128,
+          "recall": 0.5024875621890548,
+          "f1": 0.5915080527086384,
+          "n_matched": 202,
+          "n_spurious": 79,
+          "n_missed": 200,
+          "boundary_shift_quantiles_frames": [
+            -50.0,
+            -21.0,
+            0.0,
+            21.0,
+            42.33000000000004,
+            50.0
+          ]
+        },
+        "oracle_repair_spellF1_gain": {
+          "dead_live": -0.003395773506179922,
+          "wrong_team": 0.40198292028453075
+        }
+      },
+      "parent_missing_ball": {
+        "frames": 0,
+        "true_D": 0,
+        "true_live": 0,
+        "TP_D": 0,
+        "FP_D": 0,
+        "FN_D": 0,
+        "TN_D": 0,
+        "D_f1": null,
+        "live_f1": null,
+        "D_precision": null,
+        "D_recall": null,
+        "live_recall": null,
+        "predicted_D_share": null
+      },
+      "candidate_missing_ball": {
+        "frames": 0,
+        "true_D": 0,
+        "true_live": 0,
+        "TP_D": 0,
+        "FP_D": 0,
+        "FN_D": 0,
+        "TN_D": 0,
+        "D_f1": null,
+        "live_f1": null,
+        "D_precision": null,
+        "D_recall": null,
+        "live_recall": null,
+        "predicted_D_share": null
+      },
+      "parent_csv_sha256": "582752f23706592e5dea95a6c114ed7d5cb20f6e22c6feabaab59ead559bbfb8",
+      "csv_sha256": "dc415b41362044559e952a97d487d3236c2ab7978e842d3325c7fb24360c9dea",
+      "csv_paths": [
+        "data/tcn-set/predictions/J03WOH-clean-first.csv",
+        "data/tcn-set/predictions/J03WOH-clean-reload.csv",
+        "data/tcn-set/predictions/J03WOH-clean-batch4.csv"
+      ],
+      "reload_probabilities_equal": true,
+      "csv_bytes_equal_reload_batch4": true
+    },
+    {
+      "match": "J03WOH",
+      "condition": "targetlike",
+      "parent": {
+        "spellF1": 0.517193947730399,
+        "macroF1": 0.8218294049248785,
+        "errors": {
+          "short_spells": 111,
+          "short_spell_recall_iou_05": 0.24324324324324326,
+          "dead_live_wrong_frames": 14386,
+          "late_boundaries": 92,
+          "early_boundaries": 82,
+          "matched_boundary_median_frames": 0.0,
+          "boundary_pairs_within_2s": 233,
+          "precision": 0.5692307692307692,
+          "recall": 0.4601990049751244,
+          "f1": 0.5089408528198075,
+          "n_matched": 185,
+          "n_spurious": 140,
+          "n_missed": 217,
+          "boundary_shift_quantiles_frames": [
+            -49.0,
+            -15.799999999999997,
+            0.0,
+            25.80000000000001,
+            47.0,
+            48.0
+          ]
+        },
+        "oracle_repair_spellF1_gain": {
+          "dead_live": 0.12366052489977464,
+          "wrong_team": 0.3070340807731641
+        }
+      },
+      "candidate": {
+        "spellF1": 0.40823529411764714,
+        "macroF1": 0.75238873296665,
+        "errors": {
+          "short_spells": 111,
+          "short_spell_recall_iou_05": 0.08108108108108109,
+          "dead_live_wrong_frames": 23618,
+          "late_boundaries": 65,
+          "early_boundaries": 69,
+          "matched_boundary_median_frames": 0.0,
+          "boundary_pairs_within_2s": 188,
+          "precision": 0.49640287769784175,
+          "recall": 0.34328358208955223,
+          "f1": 0.40588235294117647,
+          "n_matched": 138,
+          "n_spurious": 140,
+          "n_missed": 264,
+          "boundary_shift_quantiles_frames": [
+            -50.0,
+            -26.6,
+            0.0,
+            28.0,
+            47.25999999999999,
+            50.0
+          ]
+        },
+        "oracle_repair_spellF1_gain": {
+          "dead_live": 0.2534269042737738,
+          "wrong_team": 0.334043186895011
+        }
+      },
+      "parent_missing_ball": {
+        "frames": 65199,
+        "true_D": 31205,
+        "true_live": 33994,
+        "TP_D": 21693,
+        "FP_D": 4514,
+        "FN_D": 9512,
+        "TN_D": 29480,
+        "D_f1": 0.7556956733783878,
+        "live_f1": 0.8078261584413449,
+        "D_precision": 0.8277559430686457,
+        "D_recall": 0.6951770549591412,
+        "live_recall": 0.8672118609166324,
+        "predicted_D_share": 0.401954017699658
+      },
+      "candidate_missing_ball": {
+        "frames": 65199,
+        "true_D": 31205,
+        "true_live": 33994,
+        "TP_D": 19310,
+        "FP_D": 11394,
+        "FN_D": 11895,
+        "TN_D": 22600,
+        "D_f1": 0.6238188308646562,
+        "live_f1": 0.6599599935756106,
+        "D_precision": 0.6289082855653987,
+        "D_recall": 0.6188110879666721,
+        "live_recall": 0.6648232040948403,
+        "predicted_D_share": 0.47092746821270265
+      },
+      "parent_csv_sha256": "7638676fae5faad4c2f05be03513bc5ad12e5eab13477794400396a8b124e050",
+      "csv_sha256": "6a16d54940d2d77d6799614a1cb46d5510acce66ec18b3efc65cc688f7aa52bf",
+      "csv_paths": [
+        "data/tcn-set/predictions/J03WOH-targetlike-first.csv",
+        "data/tcn-set/predictions/J03WOH-targetlike-reload.csv",
+        "data/tcn-set/predictions/J03WOH-targetlike-batch4.csv"
+      ],
+      "reload_probabilities_equal": true,
+      "csv_bytes_equal_reload_batch4": true
+    }
+  ],
+  "seconds": 328.9640447499696
+}

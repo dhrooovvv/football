@@ -1,0 +1,73 @@
+{
+  "not_alternate_selection": true,
+  "comparisons": {
+    "rotation_reference": {
+      "quality_eligible": false,
+      "existing_gate": false,
+      "primary_median_delta": -0.032752027640324366,
+      "primary_deltas": {
+        "J03WMX": 0.008317941328442713,
+        "J03WN1": -0.032752027640324366,
+        "J03WOH": -0.02497718284149686,
+        "J03WOY": -0.08370862290862285,
+        "J03WPY": -0.03879733520336609
+      },
+      "paired_spell_deltas": {
+        "J03WMX": -0.004850040989284987,
+        "J03WN1": -0.04920750746274988,
+        "J03WOH": -0.06052186366098522,
+        "J03WOY": -0.11261056113596551,
+        "J03WPY": -0.030075627435519614
+      },
+      "paired_macro_deltas": {
+        "J03WMX": 0.00033598374515209084,
+        "J03WN1": -0.006824142419684653,
+        "J03WOH": 0.002319528320429032,
+        "J03WOY": -0.019813317387721963,
+        "J03WPY": 0.0034358160165622875
+      },
+      "matches_improved": 0,
+      "contract_checks_passed": true,
+      "repeated_training_exact": true,
+      "csv_repeatability_cases": 10,
+      "clean_environment_verified": false,
+      "production_changed": false,
+      "sealed_opened": false,
+      "pff_holdout_opened": false
+    },
+    "control_reference": {
+      "quality_eligible": false,
+      "existing_gate": false,
+      "primary_median_delta": -0.06459672174359005,
+      "primary_deltas": {
+        "J03WMX": -0.01794089041057384,
+        "J03WN1": -0.06459672174359005,
+        "J03WOH": -0.030242627846211345,
+        "J03WOY": -0.09363082077051926,
+        "J03WPY": -0.06484663490172721
+      },
+      "paired_spell_deltas": {
+        "J03WMX": -0.030428381750091105,
+        "J03WN1": -0.08083831448765005,
+        "J03WOH": -0.07041502742362094,
+        "J03WOY": -0.12288752384670237,
+        "J03WPY": -0.07915714481460889
+      },
+      "paired_macro_deltas": {
+        "J03WMX": -0.004984958299497189,
+        "J03WN1": -0.01986951609638532,
+        "J03WOH": -0.0064440458738562745,
+        "J03WOY": -0.021471229311907702,
+        "J03WPY": -0.007931129107907497
+      },
+      "matches_improved": 0,
+      "contract_checks_passed": true,
+      "repeated_training_exact": true,
+      "csv_repeatability_cases": 10,
+      "clean_environment_verified": false,
+      "production_changed": false,
+      "sealed_opened": false,
+      "pff_holdout_opened": false
+    }
+  }
+}

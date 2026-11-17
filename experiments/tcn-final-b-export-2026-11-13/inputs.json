@@ -1,0 +1,51 @@
+{
+  "code": {
+    "configs/competition.json": "252091ff6779e8bf809399cbdb844ceefa673125574c6ea52f3ae8b5a27f017c",
+    "docs/run-tcn-final-b-export.md": "dab4d63947df8df89355796850320eaaf3e8413631d7b4870c5c61ba646b6f07",
+    "experiments/core-development/split.json": "c3ecb1a94f95d12bfc502c92b1eff59911faf88d488289144753c4ce492a7960",
+    "experiments/tcn-2026-11-10/tcn_candidate.py": "42decde35540780d928568b6bd577e7c9cb8bad314e6424924cf9bb04e462891",
+    "experiments/tcn-expanded-2026-11-10/expanded_data.py": "8961e0ae0ed9c5c0d7cef8dd170a818cc578ba71097f4dd7d606995ce704dfd8",
+    "experiments/tcn-final-b-2026-11-13/final-fit-result-audit.json": "3806e5d519c6f524ca5b2f165a341a4d9e9c5a5910addd93393ef96f7d26dcc3",
+    "experiments/tcn-final-b-2026-11-13/final_training.py": "919c2b2da10ad6371500c807ba7ef01a84f7f0d3e0ece1f113e4443fd8c6bb77",
+    "experiments/tcn-final-b-2026-11-13/inputs.json": "c9b837ceb08a45df1f9594e0d8594238265d8a232817d6826f45d0ddb09f58f8",
+    "experiments/tcn-final-b-2026-11-13/membership.json": "acdcf1d535fcdd6e24da6ccbcc46f04bd32992f8339259a41a92959e69043483",
+    "experiments/tcn-final-b-2026-11-13/protocol.md": "dace90098947889301b6d317dac676fbeb8a4e03f7cccdc1eb1e2145781b9961",
+    "experiments/tcn-final-b-export-2026-11-13/export_contract.py": "67f57d1bb028248d8412226e2fc4d4819bf729e5e6cd90a61c73ee4bf8666cd1",
+    "experiments/tcn-final-b-export-2026-11-13/protocol.md": "d484ec7d7eb76ebd682d601894ebe32edf1b5d3a1157f90b17804bcfc9e1b0b0",
+    "experiments/tcn-final-b-export-2026-11-13/tests/test_export.py": "9a86fe2f3005ff994b7141a9e4e263be0cd4c95f9d14eb793b59a4927e94f8f9",
+    "experiments/tcn-missed-2026-11-13/objectives.py": "c17e411cb0c553bcd9bb6f6c13bf25f99d7bdf40b6c8e91446ce96849aceaa7c",
+    "experiments/tcn-missed-2026-11-13/reviewed-b.json": "f696b9bc83d989a818e8ff24821fb3162b81ddd4777e69689f829eb0cd1968d3",
+    "experiments/tcn-parallel-2026-11-12/parallel_model.py": "c5932f69eb5e8e53b1d200840ad359e2483a6106d8e5cf33367e25bb4698851e",
+    "experiments/tcn-parallel-2026-11-12/parallel_training.py": "af293a6a75815635b0d43027dc7c57ef11966e984cc6e33a32870b544e909a75",
+    "experiments/tcn-pretrain-2026-11-11/pretrain_model.py": "3ae6eb6b4e21464c825509ab223bdbdffb92175b385ba7d53c6264023a1fd829",
+    "experiments/tcn-rotation-2026-11-11/rotation.py": "14457c8789c0a229cdbeb2f0c46d6dc0b092570491b7dfce0e4ce208dc84e52b",
+    "experiments/tcn-winner-release-2026-11-12/environment-lock.txt": "c00437adcbce68c04d10c9f4706d72a546a99f711b94a87f190326ea4cdbd48a",
+    "experiments/tcn-winner-release-2026-11-12/environment-snapshot.json": "429a9d08b0cf5b796467d743c0e1994e087148ddc497456dcc26f9a65d51ce7f",
+    "experiments/tcn-winner-release-2026-11-12/inputs.json": "fef5eab4e882c7aafa4ba8181db85617518cb8fd359cdcee3a114441fb488571",
+    "scripts/export_tcn_final_b.py": "3b92b9720d57966e373ac56f37f9d503b593975f9760c22d90e965948159c684",
+    "scripts/prepare_tcn.py": "b1bba941c77faabe87a9e998b60e223b6c67766fab0800bd05c07c09596bf2ec",
+    "src/possession/__init__.py": "62ccc2a3937b3d4dee39ea16f71498eb2a8f85dee8329b62888bc2e2489657c5",
+    "src/possession/core.py": "b0f54209e00a595a6d7943c83ab3578481f044f15ddacbf26bad74ab32ac8693",
+    "src/possession/decode.py": "c987dd44e17c9e35650a4a4c9c59d62b5dde2f02c06a83e6a71bf2345da13710",
+    "src/possession/external.py": "83eda686589cda1e6080cc37d45494eaae8a43f2fff54278efefb86da02ce01b",
+    "src/possession/features.py": "efa351988c150316f47b15ffa09dc20174962702e074f404a29a24650f3d3500",
+    "src/possession/inputs.py": "8db3bf7aa820c7dcc04e44af4543b82d8448c59988218073bff9ea485b4c164a"
+  },
+  "evidence": {
+    "experiments/tcn-final-b-2026-11-13/evaluation/checks-1794590507945953000.txt": "6bc75e3c528af092925e72443c1dccae547ea43ebca97504775564321009f651",
+    "models/tcn-final-b/20261106/first/progress.pt": "6c35dc2cb9fc461f95ede834b05eaadc8e3ea2254a594791feadad6c3ed8970b",
+    "models/tcn-final-b/20261106/proof.json": "a121a313fe95f135f7be3c9169899d9b4b6e95776c848fb6882b8d9253e14281",
+    "models/tcn-final-b/20261106/repeat/progress.pt": "734d7cd1132ee48338c0a41eeab9cf420dcce075fe3f6046eb1858e9c5dbd59a",
+    "models/tcn-final-b/20261107/first/progress.pt": "7291480ab86fdbfb2c83f61abbdbd609fd40a8323601dee3d33c8278096062e6",
+    "models/tcn-final-b/20261107/proof.json": "4b00a86d38f9c334befff3dc76949986c93d767e271d6af32809246b70c855be",
+    "models/tcn-final-b/20261107/repeat/progress.pt": "0f95a00da9c7af498c9dd04ad027a2b910619e6b19b037fe9b98a55917630ec4",
+    "models/tcn-final-b/manifest.json": "c57c55fe77c2808efbf3e72cf51df801d869a399221202ec8136eb414cf14d2f"
+  },
+  "target_assets": {
+    "data/competition/tactical/BAR-ATH_tactical_atd.txt": "f130e350d2bfdf734b7e32f072931fccc6d015c1e837d082064875fe0a700431",
+    "data/competition/tactical/BAR-ATH_tactical_atd.xml": "327e35e32e46a647389b88f883d4f9a2ab931e3e6148aef2fcf8f22b1e93c43a"
+  },
+  "reference": {
+    "reference/more-than-a-hack-2027-main/evaluation/possession_metrics.py": "341bad48904b489d6e875397b27687f5d6a4d22a397f3dc8af3a00d48f16874d"
+  }
+}

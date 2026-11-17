@@ -1,0 +1,159 @@
+{
+  "completed": true,
+  "stage": "temporal",
+  "signature": "92761a847af3683e2887365175dfce75c1336690acd4e78b188008cd8ada5ca0",
+  "binding": {
+    "stage": "temporal",
+    "registration": "84fe61609ca580d27a1ab5c75b453f3c40c182bdda639161cbc12cd9f66f522f",
+    "parent": "trial_b",
+    "parent_results_sha256": "edaf2779f22c9e5d2d5d0cc8ccdf9bb9c35932d77cdc51a24c9d32a1def98723",
+    "parent_review_sha256": "f696b9bc83d989a818e8ff24821fb3162b81ddd4777e69689f829eb0cd1968d3",
+    "temporal_selected": false
+  },
+  "checks_path": "experiments/tcn-hybrid-2026-11-14/evaluation/temporal/checks-1794658635442962000.txt",
+  "checks_sha256": "5dc614e63d5fd528ef4079d1f0e801c9867bea8425464b22ad7e2d126adeabbf",
+  "probe_steps_per_fold": 64,
+  "seconds_per_update_by_fold": {
+    "J03WMX": 0.02625687760883011,
+    "J03WN1": 0.025597790374376928,
+    "J03WOH": 0.025550141281200922,
+    "J03WOY": 0.02746492251571908,
+    "J03WPY": 0.026409691407025093
+  },
+  "maximum_seconds_per_update": 0.02746492251571908,
+  "preparation_and_probe_seconds": 288.4097246249439,
+  "peak_process_rss_bytes": 3264937984,
+  "projected_parallel_peak_rss_bytes": 6529875968,
+  "projection": {
+    "remaining_seconds": 108472.020712,
+    "projected_seconds": 24368.378674016276,
+    "safety_factor": 1.5,
+    "projected_to_finish": true,
+    "workers": 2,
+    "included_final_branches": 1,
+    "estimate_not_guarantee": true
+  },
+  "caches": {
+    "data/tcn-hybrid/temporal/parents/J03WMX/training/J03WN1-clean.npy": "a8ac465d2be975319721c3d2da97584ced93dacd63dc5c9738ffeb58309b0cf7",
+    "data/tcn-hybrid/temporal/parents/J03WMX/training/J03WN1-gap.npy": "189321be97e2de11cb512d885991d11c29378c229de7fcd7deb39a3193dc1b30",
+    "data/tcn-hybrid/temporal/parents/J03WMX/training/J03WOH-clean.npy": "c1e9e502ee023736ebdd0a9254f543a0ac6f5b383a5f2933879b252ef3fa883b",
+    "data/tcn-hybrid/temporal/parents/J03WMX/training/J03WOH-gap.npy": "8779fe8379e05666d13979e66f2016386270386d4022d1da1ccce29b02b53530",
+    "data/tcn-hybrid/temporal/parents/J03WMX/training/J03WOY-clean.npy": "37de36baa9c645868f8a8ce2f9e6e8655a075b28be8b412d0ff0cceaf96110cf",
+    "data/tcn-hybrid/temporal/parents/J03WMX/training/J03WOY-gap.npy": "95b7a8391730f37648422158805dbbb8a7a9fad9953874e48ae035ff9a225bd3",
+    "data/tcn-hybrid/temporal/parents/J03WMX/training/J03WPY-clean.npy": "7a1a31fab51566735bacbe960a3ccb890da444a4bb8f2b2212998b34f05fdf5a",
+    "data/tcn-hybrid/temporal/parents/J03WMX/training/J03WPY-gap.npy": "d105a25483e657e0fe830db64640d902e16b36f3460654363e087379a021166d",
+    "data/tcn-hybrid/temporal/parents/J03WMX/evaluation/J03WMX-clean.npy": "ae1edb3ac003f735c9ccc44383bb53f3fa6b24b04bf9b5b76d89dce69f037861",
+    "data/tcn-hybrid/temporal/parents/J03WMX/evaluation/J03WMX-targetlike.npy": "b765994555f4904f5918217592be7f8022b59d3523741bfb90ca0c1bcb7ed330",
+    "data/tcn-hybrid/temporal/parents/J03WN1/training/J03WMX-clean.npy": "f25f94dbfb2df060a2caf67f607f4ff26386c7f33351645037c564d117e06182",
+    "data/tcn-hybrid/temporal/parents/J03WN1/training/J03WMX-gap.npy": "ee16c823cfbfc9294f663dcc7e8c3d2fd1852cf58388a6dce9f14b16d0cbf730",
+    "data/tcn-hybrid/temporal/parents/J03WN1/training/J03WOH-clean.npy": "498ab4e758011e53c99d0b93f1667e242d1db95f557385aa69180cafc5f7f55e",
+    "data/tcn-hybrid/temporal/parents/J03WN1/training/J03WOH-gap.npy": "c24b302a078159ea225355b45ef4f8696a54d1ead0aa2585cfae9cc9f2b2124d",
+    "data/tcn-hybrid/temporal/parents/J03WN1/training/J03WOY-clean.npy": "1926ae36393a8a72784f69386feb8fb76d6bd4c2eeffc129fe90039c9e37ee4f",
+    "data/tcn-hybrid/temporal/parents/J03WN1/training/J03WOY-gap.npy": "bc6842e195fc5126072c500b7c467017be0bbfc1fa674541012d9f10ff38fe72",
+    "data/tcn-hybrid/temporal/parents/J03WN1/training/J03WPY-clean.npy": "9b4076947b06e8dbf69511e7f2c204e8577522f4eb4394da9a0aeadd763dcee7",
+    "data/tcn-hybrid/temporal/parents/J03WN1/training/J03WPY-gap.npy": "edc371e951830260cad8ffcb8601268b453af396e4e55afbe5f6a153ca09d4e6",
+    "data/tcn-hybrid/temporal/parents/J03WN1/evaluation/J03WN1-clean.npy": "25f5682fb0645cb2a579989fde5ebc73435a9d881bdfbf0ff4e9068c46511f7b",
+    "data/tcn-hybrid/temporal/parents/J03WN1/evaluation/J03WN1-targetlike.npy": "686af8e0a927ec82c225a3b15a533c0b94da5adde595e93d564391ac6ef7e183",
+    "data/tcn-hybrid/temporal/parents/J03WOH/training/J03WMX-clean.npy": "c49cda29c953c32efccd6827214b566fa9e8be03abe469be9ecdc7c08b8dd3c8",
+    "data/tcn-hybrid/temporal/parents/J03WOH/training/J03WMX-gap.npy": "e92a7f35eb22a0db3aac0b195b558621c04999156549ea6acbb6b56409109245",
+    "data/tcn-hybrid/temporal/parents/J03WOH/training/J03WN1-clean.npy": "21f7f2e8c610936c50f65368143dfa31d6300f983a6049a37386b32e4c329e24",
+    "data/tcn-hybrid/temporal/parents/J03WOH/training/J03WN1-gap.npy": "fcb4d51820e1809e88938d382ef9c7cba60fc0638df5313b691417b537ada9ed",
+    "data/tcn-hybrid/temporal/parents/J03WOH/training/J03WOY-clean.npy": "101c37610a23488772ffb5e68441a949e13c8ad25bb0c811f9a2c43e1ab3a9eb",
+    "data/tcn-hybrid/temporal/parents/J03WOH/training/J03WOY-gap.npy": "0f1c68bf4c1c30fbf39d479478658da5b2c9b2c9cf276097ad9494659e01efa4",
+    "data/tcn-hybrid/temporal/parents/J03WOH/training/J03WPY-clean.npy": "b471f7e5cd71f66d9e2b3ca3cba05502c28e9ec6a0c6e265ad46e33da6d25bf8",
+    "data/tcn-hybrid/temporal/parents/J03WOH/training/J03WPY-gap.npy": "01fb32e5168f0aaa0250b015ef6e68fe50b51f3eaca74f60728da9574fec4bfd",
+    "data/tcn-hybrid/temporal/parents/J03WOH/evaluation/J03WOH-clean.npy": "e44c613e587fff9d05de9dc60a623a0318190dadd403eedf365e039fccd29f27",
+    "data/tcn-hybrid/temporal/parents/J03WOH/evaluation/J03WOH-targetlike.npy": "ca2097961353f04af0de9a73334611c19a7da32ef60f846292b82db3c9e08fe4",
+    "data/tcn-hybrid/temporal/parents/J03WOY/training/J03WMX-clean.npy": "5dc65b12c035347ac23bca28a7679e673bea1bd0d87fcf69be114b120c4d5a99",
+    "data/tcn-hybrid/temporal/parents/J03WOY/training/J03WMX-gap.npy": "42733267b9e63598671d04dfa32bd9c071cdda3e50bdf07afb8bdc8b0bc16cb6",
+    "data/tcn-hybrid/temporal/parents/J03WOY/training/J03WN1-clean.npy": "91c9082aa65323a6bba032fd1b4369f3e31b24b6cbcbc53f37b6d8b21149607c",
+    "data/tcn-hybrid/temporal/parents/J03WOY/training/J03WN1-gap.npy": "3aad1523bddacd7f40449306282be8d84939388e91ea7800da1227e6de3ea556",
+    "data/tcn-hybrid/temporal/parents/J03WOY/training/J03WOH-clean.npy": "5fa04f5c6f02a43b792c0c752e56e441dda2e14a7cbcd1da41c608d65853d86b",
+    "data/tcn-hybrid/temporal/parents/J03WOY/training/J03WOH-gap.npy": "221b57156be004d3d7ce26c64d8e8016d95e819fd1b0bcaa7f3d28e734d82dd4",
+    "data/tcn-hybrid/temporal/parents/J03WOY/training/J03WPY-clean.npy": "828a0cddf92537ed8f4e43a6a65b04fc4655476f8681f1497c53b77e9bc64ad0",
+    "data/tcn-hybrid/temporal/parents/J03WOY/training/J03WPY-gap.npy": "3eddcadf5d3f71c6b21129e80f270cbc268c0a77b5303727f4b1cd1bc8fb7696",
+    "data/tcn-hybrid/temporal/parents/J03WOY/evaluation/J03WOY-clean.npy": "c0a1f5a2c21c4b80f38c72e09f4e1a719cc886fdc9db3d14c096f87b622b8eb2",
+    "data/tcn-hybrid/temporal/parents/J03WOY/evaluation/J03WOY-targetlike.npy": "04b62e74710bbb0e1ce551f6d4d0d76ea0c2799d1dfcf9ee37a293aada421c75",
+    "data/tcn-hybrid/temporal/parents/J03WPY/training/J03WMX-clean.npy": "cef4b3ec9d5f7c3139133eeb8c2aef68be17ea036574f3e408e4c70921e9f60b",
+    "data/tcn-hybrid/temporal/parents/J03WPY/training/J03WMX-gap.npy": "f2d9aabdc487d2a047eea81343b8cd6d08169c64e1e24ba92d604d5ef7900df8",
+    "data/tcn-hybrid/temporal/parents/J03WPY/training/J03WN1-clean.npy": "29f2072874c9c63c234687d9c23bce1faf1501b703e86444d603cde9dacd5a6e",
+    "data/tcn-hybrid/temporal/parents/J03WPY/training/J03WN1-gap.npy": "483ede12aedefbfa683ba768cf09426bf501e07277534198478bf83100ae05d3",
+    "data/tcn-hybrid/temporal/parents/J03WPY/training/J03WOH-clean.npy": "2cfe27939cfb9cdc68d0f32a65572924a4c4e7a0a4f06cf7398d47648b4461cc",
+    "data/tcn-hybrid/temporal/parents/J03WPY/training/J03WOH-gap.npy": "22a43e30ea4279dd2419a77ebf23c40214984269edc9f779cb48f283e1dffc06",
+    "data/tcn-hybrid/temporal/parents/J03WPY/training/J03WOY-clean.npy": "2fad89a59801af5ec270e61ed2a922b89730b23314e6155cfd13848a682f2b83",
+    "data/tcn-hybrid/temporal/parents/J03WPY/training/J03WOY-gap.npy": "2950eabf65ee0dcad63b512cffe7d6ae78807dbb29d7dd29815665425a6f9c0a",
+    "data/tcn-hybrid/temporal/parents/J03WPY/evaluation/J03WPY-clean.npy": "7a4d5c352aecc0dc44739485a84573f8a2ff77eecc88b79f6744edeafb1e090f",
+    "data/tcn-hybrid/temporal/parents/J03WPY/evaluation/J03WPY-targetlike.npy": "8349ff9134adbf586a1ce907fa8736f00f48a37bc8b9d563dd79bca1887fb8fd"
+  },
+  "zero_correction_proofs": [
+    {
+      "match": "J03WMX",
+      "condition": "clean",
+      "csv_sha256": "25d5420166ebd9483c1b2dc4d06be5a898cd11397392c130646e21fa1bb6b0b0"
+    },
+    {
+      "match": "J03WMX",
+      "condition": "targetlike",
+      "csv_sha256": "e9d0548d8aa0b55e7d17b2315eb5ea056d80c083d6fe0ca18a34a2fb8166c7b9"
+    },
+    {
+      "match": "J03WN1",
+      "condition": "clean",
+      "csv_sha256": "2f2f9731c12f3ae3fcb9e686bdc598ba967e5a8bd71970c3d697a6648ff62ac2"
+    },
+    {
+      "match": "J03WN1",
+      "condition": "targetlike",
+      "csv_sha256": "8c8e6b8d0982b81689fad970855e5f3b47b0cb7371bee2922f0d1163dfdedd69"
+    },
+    {
+      "match": "J03WOH",
+      "condition": "clean",
+      "csv_sha256": "846a0e7c93dcda6c9a92598a3dc015522bb8277427fb0cda758e709152ee9124"
+    },
+    {
+      "match": "J03WOH",
+      "condition": "targetlike",
+      "csv_sha256": "4ea2297ee8ec4dfa46a51c556085859f323f40f8007eac6b385703c8c7e73220"
+    },
+    {
+      "match": "J03WOY",
+      "condition": "clean",
+      "csv_sha256": "4e77c81eb8c2f39b30c7f1c3d461cbdbecbd2a5e101ddc7eeb656a9122f4d8ff"
+    },
+    {
+      "match": "J03WOY",
+      "condition": "targetlike",
+      "csv_sha256": "42466b428fc743fc829e1369c4add19c1244fa6222b3b4ee51cd64b998175e11"
+    },
+    {
+      "match": "J03WPY",
+      "condition": "clean",
+      "csv_sha256": "fe985a5aae4b9322710a58e93d3305974b475b78470035f270d017dd2134cafc"
+    },
+    {
+      "match": "J03WPY",
+      "condition": "targetlike",
+      "csv_sha256": "337190fc1c1a43242758f138ed48c60ff783cbd24673b7e40adfbc6e29274196"
+    }
+  ],
+  "storage": {
+    "artifact_bytes": 329743271,
+    "free_bytes": 17688109056
+  },
+  "artifact_projection": {
+    "measured_artifact_bytes": 329743271,
+    "projected_additional_bytes": 269475016,
+    "projected_total_bytes": 599218287,
+    "projected_free_bytes": 17418634040,
+    "within_budget": true,
+    "checkpoint_bound_bytes_per_fit": 8388608,
+    "estimate_not_guarantee": true
+  },
+  "evaluation_frames": 1426978,
+  "preparation_work_is_measured": true,
+  "complete_comparison_work_is_estimated": true,
+  "no_probe_quality_scores": true,
+  "production_changed": false,
+  "target_accuracy": "unknown"
+}

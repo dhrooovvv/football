@@ -1,0 +1,47 @@
+{
+  "date": "2026-11-14",
+  "registered_entries_verified": 76,
+  "unique_byte_hashes_verified": 194,
+  "source_committed": true,
+  "diagnostic_signature": "29208240388971139a4938b193ece745961b29930ad8f1407208f4c9a7d33914",
+  "diagnostic_cells": 20,
+  "diagnostic_units": 10,
+  "checks_logs": {
+    "experiments/tcn-diagnostic-2026-11-13/evaluation/checks-1794634701516928000.txt": [
+      14
+    ],
+    "data/competition/tcn-final-b-exports/checks-1794635107936237000.txt": [
+      11
+    ]
+  },
+  "archive_metrics_reproduced_saved_evidence": true,
+  "new_quality_score": false,
+  "trial_b_corruption_pairing_iou_05": {
+    "retained": 978,
+    "lost_after_corruption": 359,
+    "gained_after_corruption": 34,
+    "missed_in_both": 919
+  },
+  "lost_intersecting_over10s_gap": 289,
+  "decoder_removed_matches": 265,
+  "decoder_added_matches": 172,
+  "exclusive_ranking": {
+    "decoder_removed_support": 265,
+    "long_gap_without_argmax_match": 535,
+    "observed_wrong_team": 250,
+    "dead_live_confusion": 38,
+    "merged": 110,
+    "fragmented": 5,
+    "boundary_misalignment": 44,
+    "other": 31
+  },
+  "long_gap_leads_matches": 5,
+  "conditional_proposal": "temporal context spanning long gaps",
+  "private_export_csv_sha256": "3dca80aa3b18a8c8e880b9f26cf1dc4f17a13018df18a2e4b39cf30f7da63463",
+  "private_export_validator_and_three_equal_csvs_saved_evidence": true,
+  "assistant_project_runtime": false,
+  "clean_environment_completed": false,
+  "fresh_clone_completed": false,
+  "sealed_opened": false,
+  "target_accuracy": "unknown"
+}

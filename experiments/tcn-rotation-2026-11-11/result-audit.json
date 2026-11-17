@@ -1,0 +1,63 @@
+{
+  "independently_recomputed": true,
+  "quality_eligible": true,
+  "means": {
+    "candidate": {
+      "clean": {
+        "spellF1": 0.6021546224883432,
+        "macroF1": 0.9193697771323411
+      },
+      "targetlike": {
+        "spellF1": 0.4776818840872061,
+        "macroF1": 0.8386106928884299
+      }
+    },
+    "parent": {
+      "clean": {
+        "spellF1": 0.5977070893397277,
+        "macroF1": 0.9170887370481092
+      },
+      "targetlike": {
+        "spellF1": 0.4631391701663609,
+        "macroF1": 0.825775930738968
+      }
+    }
+  },
+  "primary_median_delta": 0.014850014850014803,
+  "paired_spell_median_delta": 0.016578383107167527,
+  "paired_macro_median_delta": 0.00586390879040799,
+  "matches_improved": 3,
+  "primary_deltas": {
+    "J03WMX": 0.024717093765058817,
+    "J03WN1": 0.028797603765511215,
+    "J03WOH": -0.002743080678375809,
+    "J03WOY": 0.014850014850014803,
+    "J03WPY": 0.007091937902016787
+  },
+  "paired_spell_deltas": {
+    "J03WMX": 0.020852962674421938,
+    "J03WN1": 0.023600111744513874,
+    "J03WOH": -0.006530619967068052,
+    "J03WOY": 0.016578383107167527,
+    "J03WPY": -0.007025219885383738
+  },
+  "paired_macro_deltas": {
+    "J03WMX": 0.013000655268594619,
+    "J03WN1": 0.005779590408577118,
+    "J03WOH": 0.011083790162713658,
+    "J03WOY": 0.00586390879040799,
+    "J03WPY": 0.002061560953941166
+  },
+  "registered_file_hashes_verified": 158,
+  "original_evaluation_hashes_verified": 10,
+  "candidate_csv_hashes_verified": 30,
+  "parent_csv_hashes_verified": 10,
+  "checkpoint_hashes_verified": 5,
+  "recorded_tests_passed": 46,
+  "repeatability_cases": 10,
+  "fold_stage_seconds": 105.25973928993335,
+  "new_tests_or_model_execution_by_assistant": false,
+  "production_changed": false,
+  "target_accuracy": "unknown",
+  "clean_environment_verified": false
+}

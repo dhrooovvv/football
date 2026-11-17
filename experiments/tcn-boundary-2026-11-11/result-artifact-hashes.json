@@ -1,0 +1,19 @@
+{
+  "experiments/tcn-boundary-2026-11-11/checks.txt": "768e14e5c76b9efea9ea5805a3fef0f5ee59ef954b164946280f736cc10f73a4",
+  "experiments/tcn-boundary-2026-11-11/decision.json": "6ec23699579c52cb01a007ec3a5fa2e5f92b54f81c968f60eccecb3da91f069c",
+  "experiments/tcn-boundary-2026-11-11/result-audit.json": "5da032bff8e6aff45caedb148ce920f1826469e9c05feabb49e78c04f0aa4326",
+  "experiments/tcn-boundary-2026-11-11/result-review.md": "e722c75a69e0031aeecad23d157afeb61debdfc97346069679170b47e901532b",
+  "experiments/tcn-boundary-2026-11-11/evaluation/J03WMX-losses.json": "db95faeae6beb990379b9e8952ddf1cad92ccf4a7b54338765b11a736746e062",
+  "experiments/tcn-boundary-2026-11-11/evaluation/J03WMX.json": "ff47aef4e40a26dc6d4b92828d4beb673fa2d17559fc577db75df93049ae609e",
+  "experiments/tcn-boundary-2026-11-11/evaluation/J03WN1-losses.json": "ea4bbdfcbd55c68f02abc6f56abe65f8ebc34aae1750d32e464baee7ae2809c9",
+  "experiments/tcn-boundary-2026-11-11/evaluation/J03WN1.json": "cdce88a43fffb4d019aa8d593e46d4fb368c5792b5bbd5958184dfb2bcbc4e3c",
+  "experiments/tcn-boundary-2026-11-11/evaluation/J03WOH-losses.json": "439b9b0b6809eb5469e97816799eb2d242ac0e8f8166a1f0071ecc5e32fa7bde",
+  "experiments/tcn-boundary-2026-11-11/evaluation/J03WOH.json": "6300ed89e8dd85b71f783d60be3ff7c6f6d1db389daab2cfea8e0afd4e8ac5a5",
+  "experiments/tcn-boundary-2026-11-11/evaluation/J03WOY-losses.json": "3936f3595e81ee16b8aa91e829e97613bf025fe6b05ee9dd9136f9da1e3ba158",
+  "experiments/tcn-boundary-2026-11-11/evaluation/J03WOY.json": "5f4de9493cf12cf8dc6f7edeee0fa3dac0d8af56be48a46c0e8ada006f7e7182",
+  "experiments/tcn-boundary-2026-11-11/evaluation/J03WPY-losses.json": "ec0b3cbc2d9108185d1b465eefb02e174899fb844b6a01e1d3773e623a857473",
+  "experiments/tcn-boundary-2026-11-11/evaluation/J03WPY.json": "62e32b5136c6b9f4228a011db335f340e0b0cacfcd053f05089e315a04ace9b1",
+  "experiments/tcn-boundary-2026-11-11/evaluation/gate.json": "6eb2aa5ebf7013717dc55148b243bce569089198d4b891f2aeeecd1086c48ca6",
+  "experiments/tcn-boundary-2026-11-11/evaluation/report.md": "b335333539fbbcc86bfd1098f2a8f533f69fb637232ef235be5f1a000edf3847",
+  "experiments/tcn-boundary-2026-11-11/evaluation/results.json": "f9fbeae9a3e1fecf84cccad4581d9828fb6c20713a2c90d76ed3706ddb659c9d"
+}

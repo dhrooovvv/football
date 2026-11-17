@@ -1,0 +1,35 @@
+{
+  "gate_version": "positive_median_v2",
+  "quality_eligible": true,
+  "existing_gate": true,
+  "primary_median_delta": 0.0026502545301886338,
+  "paired_median_spell_delta": 0.0017183673660080556,
+  "paired_median_macro_delta": -0.001050865410236801,
+  "matches_improved": 3,
+  "primary_deltas": {
+    "J03WMX": -0.0012005242463957178,
+    "J03WN1": 0.03951919830368833,
+    "J03WOH": 0.022399304663887953,
+    "J03WOY": 0.0026502545301886338,
+    "J03WPY": -0.021546283309958003
+  },
+  "paired_spell_deltas": {
+    "J03WMX": -0.01261840271276704,
+    "J03WN1": 0.03415032706616539,
+    "J03WOH": 0.0022233515479098687,
+    "J03WOY": 0.0017183673660080556,
+    "J03WPY": -0.008338121135143206
+  },
+  "paired_macro_deltas": {
+    "J03WMX": -0.006249632347814615,
+    "J03WN1": 0.014218382105753213,
+    "J03WOH": 0.01359504044000226,
+    "J03WOY": -0.001050865410236801,
+    "J03WPY": -0.004193377771479767
+  },
+  "contracts_passed": true,
+  "repeated_training_exact": true,
+  "production_changed": false,
+  "sealed_opened": false,
+  "target_accuracy": "unknown"
+}

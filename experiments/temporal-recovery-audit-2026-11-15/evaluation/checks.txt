@@ -1,0 +1,109 @@
+test_auc_absent_class (test_recovery.RecoveryContracts.test_auc_absent_class) ... ok
+test_auc_ties_and_direction (test_recovery.RecoveryContracts.test_auc_ties_and_direction) ... ok
+test_empty_spells_no_invented_separability (test_recovery.RecoveryContracts.test_empty_spells_no_invented_separability) ... ERROR
+test_introduced_and_persistent_spurious (test_recovery.RecoveryContracts.test_introduced_and_persistent_spurious) ... ERROR
+test_loss_stages_not_conflated (test_recovery.RecoveryContracts.test_loss_stages_not_conflated) ... ok
+test_preserved_truth_is_not_new_recovery (test_recovery.RecoveryContracts.test_preserved_truth_is_not_new_recovery) ... ERROR
+test_recovered_complete_spell (test_recovery.RecoveryContracts.test_recovered_complete_spell) ... ERROR
+test_unknown_and_half_boundaries (test_recovery.RecoveryContracts.test_unknown_and_half_boundaries) ... ERROR
+
+======================================================================
+ERROR: test_empty_spells_no_invented_separability (test_recovery.RecoveryContracts.test_empty_spells_no_invented_separability)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/dhruv/Desktop/backend projects/barcelona-track/experiments/temporal-recovery-audit-2026-11-15/tests/test_recovery.py", line 61, in test_empty_spells_no_invented_separability
+    rows = self.records([2]*12, [2]*12, [2]*12)
+  File "/Users/dhruv/Desktop/backend projects/barcelona-track/experiments/temporal-recovery-audit-2026-11-15/tests/test_recovery.py", line 28, in records
+    return recovery.spell_records(y, before, after, parent, temporal, [temporal, temporal],
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        np.zeros(len(y), bool), blocks or [[0, len(y)]], official, diagnostics)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhruv/Desktop/backend projects/barcelona-track/experiments/temporal-recovery-audit-2026-11-15/recovery.py", line 35, in spell_records
+    y, before, after = map(official.label_codes, (y, before, after))
+    ^^^^^^^^^^^^^^^^
+  File "/Users/dhruv/Desktop/backend projects/barcelona-track/reference/more-than-a-hack-2027-main/evaluation/possession_metrics.py", line 135, in label_codes
+    raise ValueError("labels outside {}: {}".format(
+        list(LABELS), sorted(set(values[codes < 0]))))
+ValueError: labels outside ['H', 'A', 'D', 'X']: ['2']
+
+======================================================================
+ERROR: test_introduced_and_persistent_spurious (test_recovery.RecoveryContracts.test_introduced_and_persistent_spurious)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/dhruv/Desktop/backend projects/barcelona-track/experiments/temporal-recovery-audit-2026-11-15/tests/test_recovery.py", line 39, in test_introduced_and_persistent_spurious
+    rows = self.records([2]*12, [2]*6+[1]*6, [0]*6+[1]*6)
+  File "/Users/dhruv/Desktop/backend projects/barcelona-track/experiments/temporal-recovery-audit-2026-11-15/tests/test_recovery.py", line 28, in records
+    return recovery.spell_records(y, before, after, parent, temporal, [temporal, temporal],
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        np.zeros(len(y), bool), blocks or [[0, len(y)]], official, diagnostics)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhruv/Desktop/backend projects/barcelona-track/experiments/temporal-recovery-audit-2026-11-15/recovery.py", line 35, in spell_records
+    y, before, after = map(official.label_codes, (y, before, after))
+    ^^^^^^^^^^^^^^^^
+  File "/Users/dhruv/Desktop/backend projects/barcelona-track/reference/more-than-a-hack-2027-main/evaluation/possession_metrics.py", line 135, in label_codes
+    raise ValueError("labels outside {}: {}".format(
+        list(LABELS), sorted(set(values[codes < 0]))))
+ValueError: labels outside ['H', 'A', 'D', 'X']: ['2']
+
+======================================================================
+ERROR: test_preserved_truth_is_not_new_recovery (test_recovery.RecoveryContracts.test_preserved_truth_is_not_new_recovery)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/dhruv/Desktop/backend projects/barcelona-track/experiments/temporal-recovery-audit-2026-11-15/tests/test_recovery.py", line 49, in test_preserved_truth_is_not_new_recovery
+    rows = self.records([0]*12, [0]*12, [0]*12)
+  File "/Users/dhruv/Desktop/backend projects/barcelona-track/experiments/temporal-recovery-audit-2026-11-15/tests/test_recovery.py", line 28, in records
+    return recovery.spell_records(y, before, after, parent, temporal, [temporal, temporal],
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        np.zeros(len(y), bool), blocks or [[0, len(y)]], official, diagnostics)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhruv/Desktop/backend projects/barcelona-track/experiments/temporal-recovery-audit-2026-11-15/recovery.py", line 35, in spell_records
+    y, before, after = map(official.label_codes, (y, before, after))
+    ^^^^^^^^^^^^^^^^
+  File "/Users/dhruv/Desktop/backend projects/barcelona-track/reference/more-than-a-hack-2027-main/evaluation/possession_metrics.py", line 135, in label_codes
+    raise ValueError("labels outside {}: {}".format(
+        list(LABELS), sorted(set(values[codes < 0]))))
+ValueError: labels outside ['H', 'A', 'D', 'X']: ['0']
+
+======================================================================
+ERROR: test_recovered_complete_spell (test_recovery.RecoveryContracts.test_recovered_complete_spell)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/dhruv/Desktop/backend projects/barcelona-track/experiments/temporal-recovery-audit-2026-11-15/tests/test_recovery.py", line 32, in test_recovered_complete_spell
+    rows = self.records([0]*6+[2]*6, [2]*12, [0]*6+[2]*6)
+  File "/Users/dhruv/Desktop/backend projects/barcelona-track/experiments/temporal-recovery-audit-2026-11-15/tests/test_recovery.py", line 28, in records
+    return recovery.spell_records(y, before, after, parent, temporal, [temporal, temporal],
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        np.zeros(len(y), bool), blocks or [[0, len(y)]], official, diagnostics)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhruv/Desktop/backend projects/barcelona-track/experiments/temporal-recovery-audit-2026-11-15/recovery.py", line 35, in spell_records
+    y, before, after = map(official.label_codes, (y, before, after))
+    ^^^^^^^^^^^^^^^^
+  File "/Users/dhruv/Desktop/backend projects/barcelona-track/reference/more-than-a-hack-2027-main/evaluation/possession_metrics.py", line 135, in label_codes
+    raise ValueError("labels outside {}: {}".format(
+        list(LABELS), sorted(set(values[codes < 0]))))
+ValueError: labels outside ['H', 'A', 'D', 'X']: ['0', '2']
+
+======================================================================
+ERROR: test_unknown_and_half_boundaries (test_recovery.RecoveryContracts.test_unknown_and_half_boundaries)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/dhruv/Desktop/backend projects/barcelona-track/experiments/temporal-recovery-audit-2026-11-15/tests/test_recovery.py", line 43, in test_unknown_and_half_boundaries
+    rows = self.records([0]*3+[3]*2+[0]*3+[1]*4,
+        [2]*12, [0]*8+[1]*4, [[0, 8], [8, 12]])
+  File "/Users/dhruv/Desktop/backend projects/barcelona-track/experiments/temporal-recovery-audit-2026-11-15/tests/test_recovery.py", line 28, in records
+    return recovery.spell_records(y, before, after, parent, temporal, [temporal, temporal],
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        np.zeros(len(y), bool), blocks or [[0, len(y)]], official, diagnostics)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhruv/Desktop/backend projects/barcelona-track/experiments/temporal-recovery-audit-2026-11-15/recovery.py", line 35, in spell_records
+    y, before, after = map(official.label_codes, (y, before, after))
+    ^^^^^^^^^^^^^^^^
+  File "/Users/dhruv/Desktop/backend projects/barcelona-track/reference/more-than-a-hack-2027-main/evaluation/possession_metrics.py", line 135, in label_codes
+    raise ValueError("labels outside {}: {}".format(
+        list(LABELS), sorted(set(values[codes < 0]))))
+ValueError: labels outside ['H', 'A', 'D', 'X']: ['0', '1', '3']
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.005s
+
+FAILED (errors=5)

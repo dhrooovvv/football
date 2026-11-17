@@ -1,0 +1,8 @@
+{
+  "purpose": "final_five_trial_b",
+  "training_matches": ["idsse-J03WMX", "idsse-J03WN1", "idsse-J03WOH", "idsse-J03WOY", "idsse-J03WPY"],
+  "sealed_excluded": ["J03WQQ", "J03WR9"],
+  "pff_excluded": true,
+  "target_excluded": true,
+  "quality_evaluation_performed": false
+}

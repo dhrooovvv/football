@@ -1,0 +1,69 @@
+{
+  "stage": "temporal",
+  "seed": 20261107,
+  "held_out": "J03WN1",
+  "signature": "92761a847af3683e2887365175dfce75c1336690acd4e78b188008cd8ada5ca0",
+  "binding": {
+    "stage": "temporal",
+    "registration": "84fe61609ca580d27a1ab5c75b453f3c40c182bdda639161cbc12cd9f66f522f",
+    "parent": "trial_b",
+    "parent_results_sha256": "edaf2779f22c9e5d2d5d0cc8ccdf9bb9c35932d77cdc51a24c9d32a1def98723",
+    "parent_review_sha256": "f696b9bc83d989a818e8ff24821fb3162b81ddd4777e69689f829eb0cd1968d3",
+    "temporal_selected": false
+  },
+  "training_matches": [
+    "idsse-J03WMX",
+    "idsse-J03WOH",
+    "idsse-J03WOY",
+    "idsse-J03WPY"
+  ],
+  "steps": 40000,
+  "exact_repeat": true,
+  "checks_path": "experiments/tcn-hybrid-2026-11-14/evaluation/temporal/checks-1794661338484144000.txt",
+  "checks_sha256": "7b3a55680e3529d4d78c53314bfc93dac3f5f5877a6f8c72a3cefd4cf4549f61",
+  "checkpoint_hashes": {
+    "models/tcn-hybrid/temporal/J03WN1/20261107/first/progress.pt": "76c0dd614180bce256d368b4174869673422d16e0d0d2be063d594fca4ea1b92",
+    "models/tcn-hybrid/temporal/J03WN1/20261107/repeat/progress.pt": "ffc648faaaec398ee2a2d68cff1317ad41bcccb21d39c05c07cf822d435b37b7"
+  },
+  "seconds": 301.57573695795145,
+  "training_loss_sha256": "8b9219e9a6182c72014d5e713e1baac4f65deac0a2dc2bade09919fca87959ca",
+  "component_loss_sha256": "876263038d48cd82b93f2a2ab862c19f4aea105924d3125aaba7e9e51d7b7f34",
+  "coverage": {
+    "stage1": {
+      "idsse-J03WMX": 48061,
+      "idsse-J03WOH": 35046,
+      "idsse-J03WOY": 38580,
+      "idsse-J03WPY": 38313
+    },
+    "stage2": {
+      "idsse-J03WMX": 48061,
+      "idsse-J03WOH": 35046,
+      "idsse-J03WOY": 38580,
+      "idsse-J03WPY": 38313
+    }
+  },
+  "supervised_views": {
+    "stage1": {
+      "clean": 79820,
+      "gap": 80180
+    },
+    "stage2": {
+      "clean": 79820,
+      "gap": 80180
+    }
+  },
+  "exposure": {
+    "stage1": {
+      "uniform_windows": 80049,
+      "short_windows": 79951,
+      "complete_short_presentations": 152487,
+      "loss_segments": 192660
+    },
+    "stage2": {
+      "uniform_windows": 80049,
+      "short_windows": 79951,
+      "complete_short_presentations": 152487,
+      "loss_segments": 192660
+    }
+  }
+}

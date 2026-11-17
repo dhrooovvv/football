@@ -1,0 +1,94 @@
+{
+  "schema": "frozen_50_50_tcn_graph50k_ensemble_v1",
+  "promotion_date": "2026-11-16T12:35:00+05:30",
+  "status": "promoted_production_baseline",
+  "weights": {
+    "tcn": 0.5,
+    "graph50k": 0.5
+  },
+  "tcn_parent": {
+    "manifest": "models/tcn-final-b/manifest.json",
+    "manifest_sha256": "c57c55fe77c2808efbf3e72cf51df801d869a399221202ec8136eb414cf14d2f",
+    "members": {
+      "20261106": {
+        "path": "models/tcn-final-b/20261106/first/progress.pt",
+        "sha256": "6c35dc2cb9fc461f95ede834b05eaadc8e3ea2254a594791feadad6c3ed8970b"
+      },
+      "20261107": {
+        "path": "models/tcn-final-b/20261107/first/progress.pt",
+        "sha256": "7291480ab86fdbfb2c83f61abbdbd609fd40a8323601dee3d33c8278096062e6"
+      }
+    }
+  },
+  "graph50k_refiner": {
+    "source_experiment": "experiments/graph-long-2026-11-15",
+    "folds": {
+      "J03WMX": {
+        "20261106": {
+          "path": "models/graph-long-2026-11-15/J03WMX/20261106/first/progress.pt",
+          "sha256": "1c2b103e84b4c5a1582e297f651002ab460e3087c6c0a095efd9cbb29822c847"
+        },
+        "20261107": {
+          "path": "models/graph-long-2026-11-15/J03WMX/20261107/first/progress.pt",
+          "sha256": "94d122aa0d29d3e156c7fcd7bd6f778248b3e3da9c0d3c30831ddcbfe31341cc"
+        }
+      },
+      "J03WN1": {
+        "20261106": {
+          "path": "models/graph-long-2026-11-15/J03WN1/20261106/first/progress.pt",
+          "sha256": "2689b1a7b4cbac8a035ed48edc942b2e3c82c7a47c022c9c35dde2841949155e"
+        },
+        "20261107": {
+          "path": "models/graph-long-2026-11-15/J03WN1/20261107/first/progress.pt",
+          "sha256": "08a0b8d4ded9004e7bbff15b6a628e7fcfb597446c4f85c77eb469c8e47d879e"
+        }
+      },
+      "J03WOH": {
+        "20261106": {
+          "path": "models/graph-long-2026-11-15/J03WOH/20261106/first/progress.pt",
+          "sha256": "e590d2e15e8eb5d27305bff7eebabd2a04a915b9a2acc1ab5adf6f754dbd1848"
+        },
+        "20261107": {
+          "path": "models/graph-long-2026-11-15/J03WOH/20261107/first/progress.pt",
+          "sha256": "caf225e8c92894c61bee4e4472070ae322903a7cb92bbe1e992f04c42338c0c0"
+        }
+      },
+      "J03WOY": {
+        "20261106": {
+          "path": "models/graph-long-2026-11-15/J03WOY/20261106/first/progress.pt",
+          "sha256": "75c172663acb3902f41c9526d67b9ba9308cefc691c848ce12236f1a92154fdd"
+        },
+        "20261107": {
+          "path": "models/graph-long-2026-11-15/J03WOY/20261107/first/progress.pt",
+          "sha256": "eb0e6e883ec5917bb61d31341426f4e486eee64b857f6cd20beff79c67bf5bf7"
+        }
+      },
+      "J03WPY": {
+        "20261106": {
+          "path": "models/graph-long-2026-11-15/J03WPY/20261106/first/progress.pt",
+          "sha256": "30d9a1d6b2b7ccc2b3689e4e8fea2eeefa7ddfd5ef8236d946e427da87d01994"
+        },
+        "20261107": {
+          "path": "models/graph-long-2026-11-15/J03WPY/20261107/first/progress.pt",
+          "sha256": "a867346904fe7e0e1ccf1f8994493b6829b739b58181c8b63becdc84de2983d3"
+        }
+      }
+    }
+  },
+  "decoder": {
+    "switching_penalty": 16,
+    "class_order": [
+      "H",
+      "A",
+      "D"
+    ]
+  },
+  "verified_metrics": {
+    "clean_mean_spellF1": 0.659432,
+    "targetlike_mean_spellF1": 0.522431,
+    "clean_mean_macroF1": 0.92907,
+    "targetlike_mean_macroF1": 0.848072,
+    "gate_v2_status": "PASS",
+    "matches_improved": "5/5"
+  }
+}

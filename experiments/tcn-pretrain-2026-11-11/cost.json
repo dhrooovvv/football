@@ -1,0 +1,33 @@
+{
+  "fold_stage_seconds": {
+    "control": 10039.032310416107,
+    "pretrain": 10683.076111000963
+  },
+  "training_stage_seconds": {
+    "control": {
+      "first": {
+        "stage1": 2477.8963176232646,
+        "stage2": 2472.679656405584
+      },
+      "repeat": {
+        "stage1": 2481.981539927481,
+        "stage2": 2508.812632036628
+      }
+    },
+    "pretrain": {
+      "first": {
+        "stage1": 2736.807163431484,
+        "stage2": 2490.8464200466406
+      },
+      "repeat": {
+        "stage1": 2674.1129776946036,
+        "stage2": 2470.8595971687464
+      }
+    }
+  },
+  "total_updates_per_fit": 40000,
+  "maximum_fit_pipelines": 20,
+  "updates_matched": true,
+  "exact_compute_matched": false,
+  "note": "Walltime includes repeated fits and inference; pretext/supervised update costs differ."
+}

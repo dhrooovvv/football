@@ -1,0 +1,112 @@
+{
+  "date": "2026-11-12",
+  "scope": "Saved external aggregates, logged checks and file-byte fingerprints only; no tests/model/scorer execution or array/checkpoint/CSV-row loading",
+  "registration": "8ace1940e7a42a324575a0e5cb7914df0a1813b36b49369e23d8d276e8c7f690",
+  "protocol_registration_commit": "1c544b7",
+  "user_execution_commit": "8e1a6f177397e8590de68d5546a71b3242fd7d5f",
+  "registered_fingerprints_verified": 211,
+  "registered_tracked_files_bound_to_execution_commit": 151,
+  "result_cells": 40,
+  "user_recorded_contracts_passed": 63,
+  "parent_reconstructions_byte_and_aggregate_verified": 10,
+  "recorded_reload_probability_cases": 40,
+  "csv_repeatability_cases_byte_verified": 40,
+  "new_private_csv_hashes_verified": 120,
+  "archived_parent_csv_hashes_verified": 30,
+  "checkpoints_byte_hash_verified": 10,
+  "all_static_numerical_controls_passed": true,
+  "max_static_probability_difference": 6.654774645786787e-07,
+  "max_rederived_probability_difference": 8.183709959364016e-06,
+  "all_static_and_rederived_csv_labels_unchanged": true,
+  "summary": {
+    "clean": {
+      "parent": {
+        "mean_spellF1": 0.6328708454621595,
+        "mean_macroF1": 0.9258995454065417,
+        "changed_labels": 0,
+        "dead_live_wrong_frames": 1866,
+        "missed_spells": 1044,
+        "spurious_spells": 373
+      },
+      "static": {
+        "mean_spellF1": 0.6328708454621595,
+        "mean_macroF1": 0.9258995454065417,
+        "changed_labels": 0,
+        "dead_live_wrong_frames": 1866,
+        "missed_spells": 1044,
+        "spurious_spells": 373
+      },
+      "rederived_identity": {
+        "mean_spellF1": 0.6328708454621595,
+        "mean_macroF1": 0.9258995454065417,
+        "changed_labels": 0,
+        "dead_live_wrong_frames": 1866,
+        "missed_spells": 1044,
+        "spurious_spells": 373
+      },
+      "dynamic": {
+        "mean_spellF1": 0.05285813957456749,
+        "mean_macroF1": 0.36946367018561915,
+        "changed_labels": 372006,
+        "dead_live_wrong_frames": 222958,
+        "missed_spells": 2143,
+        "spurious_spells": 3469
+      },
+      "dynamic_effect": {
+        "median_spellF1_delta": -0.5866288216332772,
+        "matches_declining": 5,
+        "relative_mean_spellF1_loss": 0.9164787887551253
+      }
+    },
+    "targetlike": {
+      "parent": {
+        "mean_spellF1": 0.49754997776865695,
+        "mean_macroF1": 0.8481428233999456,
+        "changed_labels": 0,
+        "dead_live_wrong_frames": 46568,
+        "missed_spells": 1312,
+        "spurious_spells": 645
+      },
+      "static": {
+        "mean_spellF1": 0.49754997776865695,
+        "mean_macroF1": 0.8481428233999456,
+        "changed_labels": 0,
+        "dead_live_wrong_frames": 46568,
+        "missed_spells": 1312,
+        "spurious_spells": 645
+      },
+      "rederived_identity": {
+        "mean_spellF1": 0.49754997776865695,
+        "mean_macroF1": 0.8481428233999456,
+        "changed_labels": 0,
+        "dead_live_wrong_frames": 46568,
+        "missed_spells": 1312,
+        "spurious_spells": 645
+      },
+      "dynamic": {
+        "mean_spellF1": 0.04666717843275601,
+        "mean_macroF1": 0.31970497665399933,
+        "changed_labels": 402305,
+        "dead_live_wrong_frames": 268982,
+        "missed_spells": 2166,
+        "spurious_spells": 3138
+      },
+      "dynamic_effect": {
+        "median_spellF1_delta": -0.47339895215090094,
+        "matches_declining": 5,
+        "relative_mean_spellF1_loss": 0.9062060486023082
+      }
+    }
+  },
+  "recorded_fold_seconds": 381.2926243750844,
+  "cost_limit": "Excludes initial checks and unrecorded overhead; no peak-RAM measurement",
+  "interpretation": "Strong sensitivity to fixed extreme synthetic dynamic churn; actual target damage unmeasured",
+  "decision": "Retain development winner; final fitting waits for actual label-free input-structure investigation",
+  "new_quality_experiment": false,
+  "promotion_gate_or_stop_counts_changed": false,
+  "model_promoted": false,
+  "target_accuracy": "unknown",
+  "sealed_opened": false,
+  "target_assets_read_into_context": false,
+  "assistant_project_execution": false
+}

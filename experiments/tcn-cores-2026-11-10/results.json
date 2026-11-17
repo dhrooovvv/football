@@ -1,0 +1,20 @@
+[
+  {
+    "threads": 1,
+    "seconds": [
+      1.6853779589873739,
+      1.4190264590433799
+    ],
+    "within_mode_weights_exact": true,
+    "synthetic_only": true
+  },
+  {
+    "threads": 11,
+    "seconds": [
+      2.339127290993929,
+      2.2476072079734877
+    ],
+    "within_mode_weights_exact": true,
+    "synthetic_only": true
+  }
+]

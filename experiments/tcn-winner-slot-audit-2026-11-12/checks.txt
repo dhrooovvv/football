@@ -1,0 +1,72 @@
+
+tests
+----------------------------------------------------------------------
+Ran 35 tests in 0.200s
+
+OK
+
+experiments/tcn-2026-11-10/tests
+----------------------------------------------------------------------
+Ran 4 tests in 0.681s
+
+OK
+
+experiments/tcn-gap-2026-11-10/tests
+----------------------------------------------------------------------
+Ran 2 tests in 0.507s
+
+OK
+
+experiments/tcn-rotation-2026-11-11/tests
+----------------------------------------------------------------------
+Ran 5 tests in 0.445s
+
+OK
+
+experiments/tcn-pretrain-2026-11-11/tests
+control control: update 1/6 stage1 loss 1.101963
+control control: update 2/6 stage1 loss 1.101333
+control control: update 3/6 stage1 loss 1.100986
+control control: update 4/6 stage2 loss 1.100520
+control control: update 5/6 stage2 loss 1.099995
+control control: update 6/6 stage2 loss 1.099714
+pretrain pretrain: update 1/6 stage1 loss 0.013479
+pretrain pretrain: update 2/6 stage1 loss 0.012651
+pretrain pretrain: update 3/6 stage1 loss 0.011749
+pretrain pretrain: update 4/6 stage2 loss 1.101969
+pretrain pretrain: update 5/6 stage2 loss 1.101313
+pretrain pretrain: update 6/6 stage2 loss 1.100994
+pretrain reference: update 1/6 stage1 loss 0.013479
+pretrain reference: update 2/6 stage1 loss 0.012651
+pretrain reference: update 3/6 stage1 loss 0.011749
+pretrain reference: update 4/6 stage2 loss 1.101969
+pretrain reference: update 5/6 stage2 loss 1.101313
+pretrain reference: update 6/6 stage2 loss 1.100994
+pretrain repeat: update 1/6 stage1 loss 0.013479
+pretrain repeat: update 2/6 stage1 loss 0.012651
+pretrain repeat: update 3/6 stage1 loss 0.011749
+pretrain repeat: update 4/6 stage2 loss 1.101969
+pretrain repeat: update 5/6 stage2 loss 1.101313
+pretrain repeat: update 6/6 stage2 loss 1.100994
+pretrain resumed-3: update 1/6 stage1 loss 0.013479
+pretrain resumed-3: update 2/6 stage1 loss 0.012651
+Resuming pretrain /var/folders/ky/xlzf2wp51f7gl7lp9_089_y80000gn/T/tmpl77ry4pa/resumed-3 at update 3
+pretrain resumed-3: update 4/6 stage2 loss 1.101969
+pretrain resumed-3: update 5/6 stage2 loss 1.101313
+pretrain resumed-3: update 6/6 stage2 loss 1.100994
+pretrain resumed-4: update 1/6 stage1 loss 0.013479
+pretrain resumed-4: update 2/6 stage1 loss 0.012651
+pretrain resumed-4: update 3/6 stage1 loss 0.011749
+Resuming pretrain /var/folders/ky/xlzf2wp51f7gl7lp9_089_y80000gn/T/tmpl77ry4pa/resumed-4 at update 4
+pretrain resumed-4: update 5/6 stage2 loss 1.101313
+pretrain resumed-4: update 6/6 stage2 loss 1.100994
+----------------------------------------------------------------------
+Ran 8 tests in 1.676s
+
+OK
+
+experiments/tcn-winner-slot-audit-2026-11-12/tests
+----------------------------------------------------------------------
+Ran 9 tests in 0.105s
+
+OK

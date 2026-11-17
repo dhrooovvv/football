@@ -1,0 +1,18 @@
+{
+  "code": {
+    "scripts/run_tcn_hybrid_parallel.py": "d8967eaa63ec321c96e7d21dc007f06e4f3082340f6ae78c1255ddd2a42d8614",
+    "experiments/tcn-hybrid-2026-11-14/scheduling/protocol.md": "fc61624bfa0987adbf74be29e13f80dc02bc9363a06a1585a354f69c0ae5f6b7",
+    "experiments/tcn-hybrid-2026-11-14/scheduling/tests/test_scheduling.py": "bc8b1930b82420ac234e52e0d733b1fc159b00ee552ac847233da3b7861bf316",
+    "docs/run-tcn-hybrid-parallel.md": "af82eb1356b302cb1702dfd4d46f8ad6a06ab7d4030069e162347482c62aaf07"
+  },
+  "evidence": {
+    "experiments/tcn-hybrid-2026-11-14/inputs.json": "43960da2148e8b729ba3636356ade1c7b4c95723cabfad61434022533f18e956",
+    "experiments/tcn-hybrid-2026-11-14/preflight/graph/report.json": "699c0c4d364833c9d8e39740e18b6ebd788542a1416f4a61ee0758f6aec5ff3b",
+    "experiments/tcn-hybrid-2026-11-14/reviewed-temporal.json": "332cf6a6055ddcfdd85e2dd3b204ed83aea70031f0aec910b3ba1df5dedd752d",
+    "models/tcn-hybrid/graph/preflight/J03WOH/1794669047289928000/progress.pt": "0da5e34790d14a00cb9203fca1c72db3cd49f8b46a15ad214f1084028ef48d59",
+    "models/tcn-hybrid/graph/preflight/J03WMX/1794668702162533000/progress.pt": "61ee087e72d16678044677827dafc54f5b8da8c3481506cfafe82cb21bbd519a",
+    "models/tcn-hybrid/graph/preflight/J03WOY/1794669220490272000/progress.pt": "0326b6a64f70f02e49d52192432b258d83a3ed2076f89671d8770ec1c2d4536e",
+    "models/tcn-hybrid/graph/preflight/J03WPY/1794669397058201000/progress.pt": "fb10650da3abcca4f04a4eb58fbe9e10ef6dfbde1c6f08b88a87201cb7ab3633",
+    "models/tcn-hybrid/graph/preflight/J03WN1/1794668874489813000/progress.pt": "e1b45f380dbfa9f8fa2d8f01be7f55154bb36e445704cf1d240bc6ec16756c6c"
+  }
+}

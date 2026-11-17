@@ -1,0 +1,18 @@
+{
+  "experiments/tcn-rotation-2026-11-11/checks.txt": "0ed64d1799b2a6af13e1bc68b85cf00917ab3611c953159774137f521082eb8e",
+  "experiments/tcn-rotation-2026-11-11/cost.json": "905b7c1d37a1db9dca48355f975602e7392a2d5ace6edabdff4a458d21aaea0e",
+  "experiments/tcn-rotation-2026-11-11/decision.json": "1ff595da379c49d2883b11799e8b7e144614d98923fc9918496d58d08a168973",
+  "experiments/tcn-rotation-2026-11-11/determinism.json": "2b862c56eb873ab0269806578e21406f5748e467af67519acb65489c82587cf5",
+  "experiments/tcn-rotation-2026-11-11/gate.json": "3aa42d7615130de644904be37f4ccd1f6aa71797ea2be904808b2374ec69a11a",
+  "experiments/tcn-rotation-2026-11-11/inputs.json": "1bee596a042ea3382433784e984bcc646b21c4f425fea9a2464ddb3c37413c23",
+  "experiments/tcn-rotation-2026-11-11/parent.json": "bc12ff1a74aba355169b67b4cb461bee486184b133709d5079bf78252e619278",
+  "experiments/tcn-rotation-2026-11-11/protocol.md": "ba415573a174b0d7349573e9acf4ab8ca99b917ecb0b80703f189b535fde02b8",
+  "experiments/tcn-rotation-2026-11-11/report.md": "9d0ac0593afd8b29f6b226f2253f81e1542e73535469f12012daa76d10e6b11d",
+  "experiments/tcn-rotation-2026-11-11/requirements.txt": "2bc87d3beb3cab59b97984c78a367bd6a5d9609d935cedc321805ddaaaa2e886",
+  "experiments/tcn-rotation-2026-11-11/result-audit.json": "e33916727d9f9a5c1aa1c0c9745351eef47828804d1950bee89837e7914b4304",
+  "experiments/tcn-rotation-2026-11-11/result-review.md": "624d3d10d82641043ae9371ee2fa9ee23b9716749f877b309874faab29547b8a",
+  "experiments/tcn-rotation-2026-11-11/results.json": "9c8e418d82fb52bf0b025110741b2084786040f07ac02a0258aaa041f8d4d88b",
+  "experiments/tcn-rotation-2026-11-11/rotation.py": "14457c8789c0a229cdbeb2f0c46d6dc0b092570491b7dfce0e4ce208dc84e52b",
+  "experiments/tcn-rotation-2026-11-11/started.json": "291f054874a2ad2aa329579d66d657f224cdd3e9d834c378383b95dc08dcf3e4",
+  "experiments/tcn-rotation-2026-11-11/tests/test_rotation.py": "b82dc1511d5a21e7d29e3df70debbb42bc13bd7bcf6636b92191ec7a15a6c67a"
+}

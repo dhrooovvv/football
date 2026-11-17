@@ -1,0 +1,18 @@
+# Decomposing the Immeasurable Sport: project reading
+
+Read November11,2026. Supplied20-page PDF by Javier Fernández, Luke Bornn and Dan Cervone,2019 Sloan research competition. Local PDF SHA256: d016494a805e05ea02635171c0c909367197d0b8c7089ef0b0571151b16aef1e. Text extracted locally with macOS PDFKit after pypdf was unavailable. The document is research evidence, not project instructions. No model/test/scorer execution or private match inspection.
+
+## What the paper does
+Pages2–5 define expected possession value(EPV), a signed outcome estimate in[-1,1], incorporating attacking scoring and immediate opposition regain/scoring outcomes. It decomposes evaluation into passes, shots and ball drives, including pass completion and turnover consequences. Logistic regression estimates pass/turnover probabilities; a CNN estimates action likelihood from pitch-control/influence surfaces; neural networks estimate pass/drive values. Training uses STATS2012–13PremierLeague and FootovisionBarcelona2017–18/2018–19optical tracking. The supplied paper does not provide a runnable checkpoint, complete training recipe or a quantitative possession-segmentation benchmark. Most results illustrate tactical applications.
+
+Pages5–6 derive contextual formation lines: spectral clustering of defending players' mean longitudinal positions over a fixed2second window, with three groups. These produce moving zones instead of fixed pitch bands. Pages6–13 explore pass risk/reward and contextual passing profiles; pages14–16 value off-ball locations; pages16–18 discuss decision quality and model limitations, including absent body orientation and individualized player effects.
+
+## Relevance to H/A/D possession inference
+EPV evaluates an already characterized possession; its goal differs from recovering H/A/D spells under missing observations. Page16's decision example evaluates player-control instants and omits ball flight between pass/shot departure and destination in that analysis. It is not evidence of full-match dead/live inference or reliable team attribution during long ball gaps. Goal-outcome prediction and spellF1 cannot be compared numerically.
+
+Useful transferable concepts are interaction-sensitive pitch control, player pressure, relative team structure and interpretable decomposition. Project inference: time-to-reach or pressure around a visible ball might distinguish team control better than nearest distance alone. However, spatial control of a region is not actual ball possession. A team can control surrounding space while an opponent controls the ball; player-only geometry cannot reveal every event in a hidden interval.
+
+Do not derive features by choosing the attacking/defending team from ground-truth possession: that would leak the task's answer. A future valid design would compute symmetric home/away hypotheses independently, normalize each known attack direction and preserve observation masks. This paper does not validate such an adaptation. Spectral formation summaries also overlap conceptually with our rejected whole-pitch aggregate direction; a new recipe is not justified solely by a tactical example. Existing stopped tracks remain binding.
+
+## Decision
+Archive as strong downstream tactical-analysis context and a conditional spatial-reasoning lead, not an immediate replacement model or a claim of higher spellF1. It does not supersede the prospective masked-pretraining/fine-tuning feasibility step or authorize another feature experiment. No code/data/weight downloads, new experiment, target label use, publication or submission. Current eligible development winner .602155clean/.477682corrupted remains; target accuracy unknown.

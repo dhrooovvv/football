@@ -26,14 +26,20 @@ production:
 promotion:
   paired_clean_corrupted_mean_spell: positive_median_and_majority_improve
   paired_macro_median_delta_minimum: -0.01
-  corrupted_spell_median_delta_minimum: 0.01
+  corrupted_spell_median_delta_rule: strictly_positive
+  version: positive_median_v2
+  previous_primary_minimum: 0.01
+  amendment_date: '2026-11-13'
   tests_required: true
   stop_track_after_consecutive_failures: 3
 tracks:
   more_data:
-    status: completed_candidate_rejected_transfer_measured
-    consecutive_failures: 1
-    report: experiments/pff-evaluation/report.md
+    status: stopped_three_consecutive_expansion_failures
+    consecutive_failures: 3
+    report: experiments/tcn-expanded-2026-11-10/result-review.md
+    failures_preserved: [catboost_unweighted_expansion, tcn_unweighted_expansion]
+    stop_on_next_failure: false
+    stopped: true
   decoder:
     status: stopped_three_consecutive_failures
     consecutive_failures: 3
@@ -75,8 +81,8 @@ workspace:
   primary_memory: ball.md
   findings: findings.md
   technical_document: docs/technical-report.md
-  next_step_plan: docs/next-steps-2026-11-07.md
-next_action: Wait for explicit user instruction; experiments stopped.
+  next_step_plan: docs/metric-improvement-plan-2026-11-11.md
+next_action: User runs preregistered attention and seed-ensemble arms in separate terminals; finalize only after both complete, then review ordered gates.
 
 open_model_audit:
   date: '2026-11-08'
@@ -259,7 +265,7 @@ competitor_practice_review:
 
 execution_policy_update:
   date: "2026-11-10"
-  all_tests_run_by_user: false
+  all_tests_run_by_user: true
   hours_long_runs_by_user: true
   assistant_may_prepare_commands_and_review_results: true
 learning_diagnostic:
@@ -293,18 +299,22 @@ tcn_long_run:
   production_changed: false
 
 best_development_candidate:
-  selected: gap_augmented_catboost_tcn_50_50
-  status: quality_eligible_not_production_promoted
-  mean_clean_spellF1: 0.5925021056601485
-  mean_corrupted_spellF1: 0.4283855855925492
-  primary_median_delta: 0.020148972553111322
+  selected: two_seed_short_mix_segment_iou_TCN_rotation_penalty16
+  status: provisional_selected_by_median_gate_v2_not_production_promoted
+  mean_clean_spellF1: 0.6503847082458226
+  mean_corrupted_spellF1: 0.5098356396639198
+  primary_median_delta: 0.0019622504340451874
+  paired_median_spell_delta: 0.0049762962702910585
+  paired_median_macro_delta: 0.00240322704069329
   matches_improved: 3
-  tests_passed: 41
-  repeatability_cases_passed: 10
+  tests_passed: 91
   clean_environment_verified: false
   target_integration_verified: false
-  next_action: preregister_clean_reproduction_and_adapter_integration
+  higher_corrupted_mean_candidate: trial_a
+  highest_corrupted_mean_this_round: 0.5134961932122118
+  next_action: prepare_identical_recipe_final_two_seed_fit_and_delivery_qualification
   production_changed: false
+  target_accuracy: unknown
 
 fixed_blend_result:
   status: completed_quality_eligible_verification_pending
@@ -354,7 +364,7 @@ tcn_boundary_audit:
   report: experiments/tcn-boundary-audit-2026-11-10/report.md
   new_model_inference: false
 tcn_interaction_trial:
-  status: preregistered_not_training_executed
+  status: completed_rejected_bounded_trial_closed
   protocol: experiments/tcn-interaction-2026-11-10/protocol.md
   command_document: docs/run-tcn-interaction.md
   parent: gap_augmented_catboost_tcn_50_50
@@ -364,3 +374,1363 @@ tcn_interaction_trial:
   tests_passed: 45
   user_executes_long_run: true
   production_changed: false
+
+research_dossier:
+  snapshot_date: "2026-11-10"
+  pdf: output/pdf/ball-possession-research-dossier.pdf
+  markdown: output/pdf/ball-possession-research-dossier.md
+  source_inventory: output/pdf/ball-possession-research-sources.json
+  pages: 74
+  archived_research_notes: 24
+  visual_review_completed: true
+  model_experiment_executed: false
+  externally_published: false
+  pdf_sha256: 9cc97b309fc0816897bb59266efe3ee1cc9276800f528c4fdfaf8a60840b5fca
+
+interaction_result_audit:
+  mean_clean_spellF1: 0.5795423925849669
+  mean_corrupted_spellF1: 0.41338185001770456
+  primary_median_delta: -0.009586107315560477
+  matches_improved: 2
+  independently_recomputed: true
+  production_changed: false
+
+blend_switch_8:
+  status: registered_user_run_pending
+  user_runs_all_tests: true
+  parent_penalty: 16
+  candidate_penalty: 8
+
+expanded_tcn_training:
+  status: completed_rejected_bounded_trial_closed
+  user_scope_decision: expand_training_preserve_some_test_matches
+  training_eligible_matches: 53
+  idsse_development_matches: 5
+  pff_training_matches: 48
+  matches_per_development_fit: 52
+  final_fit_matches: 53
+  sealed_idsse_preserved: 2
+  pff_transfer_holdout_preserved: 16
+  training_steps: 20000
+  sampling: uniform_known_window_starts
+  source_balancing_added: false
+  user_executes_all_checks_and_training: true
+  checkpoint_interval_updates: 1000
+  compact_storage_lossless_contract: passed_user_run_preparation
+  new_regression_checks_provided: 4
+  protocol: experiments/tcn-expanded-2026-11-10/protocol.md
+  membership: experiments/tcn-expanded-2026-11-10/membership.json
+  commands: docs/run-tcn-expanded.md
+  final_model_path: models/tcn-expanded/final/tcn-53-matches.pt
+  production_changed: false
+
+neural_export_verification:
+  date: "2026-11-11"
+  status: prepared_registered_not_executed_or_tested
+  protocol: experiments/neural-export-2026-11-11/protocol.md
+  commands: docs/run-neural-export.md
+  runner: scripts/export_neural_candidate.py
+  checkpoint_source: expanded_final_53_match_fit
+  frozen_catboost_retrained: false
+  blend_weights: [0.5, 0.5]
+  penalty: 16
+  user_executes_all_checks: true
+  official_validator_executed: false
+  csv_byte_reproduction_verified: false
+  clean_environment_verified: false
+  fresh_clone_verified: false
+  clean_training_reproduced: false
+  target_temporal_slot_continuity_verified: false
+  target_accuracy: unknown
+  production_changed: false
+
+expanded_tcn_result_audit:
+  date: "2026-11-11"
+  report: experiments/tcn-expanded-2026-11-10/result-review.md
+  independently_recomputed: true
+  mean_clean_spellF1: 0.520562136394373
+  mean_corrupted_spellF1: 0.3769587226821987
+  standalone_clean_spellF1: 0.49092192012107255
+  standalone_corrupted_spellF1: 0.37169222335284935
+  primary_median_delta: -0.05909837156675679
+  paired_median_spell_delta: -0.0702869019012172
+  paired_median_macro_delta: -0.029278184264613927
+  paired_matches_improved: 0
+  recorded_contract_tests_passed: 45
+  recorded_repeatability_cases_passed: 10
+  registered_code_hashes_verified: 32
+  final_53_model_sha256: 9e0a1e41e5c0994249fa5c833089aa8f3cad5a2139696f32b40e641a196d110d
+  final_model_research_only: true
+  final_model_hash_verified: true
+  clean_environment_verified: false
+  retained_candidate: gap_augmented_catboost_tcn_50_50
+  production_changed: false
+  new_training_or_inference_by_assistant: false
+  automatic_sampler_or_budget_rescue: false
+
+improvement_strategy_2026_11_11:
+  user_authorized_preparation: true
+  all_tests_training_inference_by_user: true
+  independent_reviews: [data_scientist, scientific_literature_researcher, reviewer]
+  plan: docs/improvement-plan-2026-11-11.md
+  research: literature/tcn-transfer-context-refresh-2026-11-11.md
+  no_confirmed_expansion_implementation_bug_found: true
+  final_53_checkpoint_invalid_for_development_initialization: true
+  future_context_trial: conditional_separate_preregistration_required
+  adaptation_trial: deferred_if_expansion_track_stops
+  new_experiment_executed: false
+  production_changed: false
+
+balanced_provider_tcn:
+  status: completed_rejected_data_expansion_track_stopped
+  protocol: experiments/tcn-balanced-2026-11-11/protocol.md
+  inputs: experiments/tcn-balanced-2026-11-11/inputs.json
+  runner: scripts/run_tcn_balanced.py
+  commands: docs/run-tcn-balanced.md
+  idsse_probability: 0.5
+  pff_probability: 0.5
+  within_provider_sampling: uniform_valid_known_window_starts
+  provider_seed: 20392419
+  training_steps_per_fit: 20000
+  initialization: scratch
+  warm_start_from_final53: forbidden
+  matches_per_development_fit: 52
+  promotion_parent: retained_gap_augmented_50_50_blend_penalty16
+  failed_uniform_reference: descriptive_only
+  data_expansion_failures_before_trial: 2
+  failure_stops_data_expansion_track: true
+  automatic_ratio_search: false
+  new_regression_tests_provided: 8
+  tests_executed: true
+  tests_executed_by: user
+  prepared_case_manifest_hashes_pinned: 53
+  final_fit_automatic: false
+  final_fit_requires_recomputed_complete_passing_gate: true
+  target_accuracy: unknown
+  production_changed: false
+
+additional_dataset_refresh:
+  date: "2026-11-11"
+  scope: official_public_documentation_only
+  report: literature/additional-datasets-2026-11-11.md
+  strongest_conditional_lead: SkillCorner
+  downloaded_data: false
+  new_matches_admitted: 0
+  experiment_or_split_changed: false
+
+balanced_provider_result_audit:
+  date: "2026-11-11"
+  report: experiments/tcn-balanced-2026-11-11/result-review.md
+  independently_recomputed: true
+  mean_clean_spellF1: 0.5120049574326828
+  mean_corrupted_spellF1: 0.3708753548147914
+  standalone_clean_spellF1: 0.48662842828415986
+  standalone_corrupted_spellF1: 0.3971024364660962
+  paired_matches_improved: 0
+  primary_median_delta: -0.06547526547526561
+  paired_macro_median_delta: -0.023642649241717162
+  recorded_tests_passed: 53
+  recorded_repeatability_cases: 10
+  csv_hashes_verified: 30
+  code_hashes_verified: 42
+  prepared_manifest_hashes_verified: 53
+  pff_sample_fraction: 0.5028375
+  consecutive_expansion_failures: 3
+  expansion_track_stopped: true
+  production_changed: false
+  new_training_or_inference_by_assistant: false
+
+longer_context_tcn:
+  date: "2026-11-11"
+  status: completed_rejected_fixed_trial_closed
+  user_authorized: true
+  user_executes_all_checks_and_training: true
+  protocol: experiments/tcn-context-2026-11-11/protocol.md
+  runner: scripts/run_tcn_context.py
+  commands: docs/run-tcn-context.md
+  design_review: docs/tcn-context-design-review-2026-11-11.md
+  static_review: docs/tcn-context-static-review-2026-11-11.md
+  training_source: original_IDSSE_only
+  training_matches_per_fold: 4
+  evaluation_matches: 5
+  parent: retained_gap_trained_catboost_tcn_50_50_penalty16
+  temporal_dilations: [1, 4, 12, 36, 108]
+  encoded_receptive_field: 325
+  encoded_radius: 162
+  input_halo: 163
+  input_frames: 526
+  loss_frames: 200
+  preserved_parent_anchor_frames: 250
+  preserved_parent_anchor_halo: 25
+  exact_parent_training_core_support_preserved: true
+  half_clipping: real_half_only_replicated_edges
+  candidate_parameters: 15843
+  parent_parameters: 9635
+  training_updates: 20000
+  data_expansion_track_reopened: false
+  warm_start: false
+  new_regression_contracts_provided: 10
+  tests_executed: true
+  tests_executed_by: user
+  model_execution_by_assistant: false
+  final_fit_or_export_automatic: false
+  context_track_prior_failures: 0
+  previous_other_track_failures_preserved: true
+  quality_gain: rejected
+  context_track_consecutive_failures: 1
+  production_changed: false
+
+longer_context_result_audit:
+  date: "2026-11-11"
+  report: experiments/tcn-context-2026-11-11/result-review.md
+  independently_recomputed: true
+  blend_clean_spellF1: 0.5799045630517617
+  blend_corrupted_spellF1: 0.42862289462822445
+  standalone_clean_spellF1: 0.5709951443629959
+  standalone_corrupted_spellF1: 0.43227530503347805
+  standalone_selection_eligible: false
+  primary_median_delta: -0.01425641025641039
+  paired_median_spell_delta: -0.006220028962669405
+  paired_median_macro_delta: -0.0004455566088279461
+  paired_matches_improved: 2
+  recorded_contract_tests_passed: 55
+  recorded_repeatability_cases: 10
+  csv_hashes_verified: 30
+  code_hashes_verified: 43
+  prepared_manifest_hashes_verified: 5
+  fold_stage_seconds: 10817.813175125979
+  production_changed: false
+  new_training_or_inference_by_assistant: false
+
+standalone_gap_tcn:
+  date: '2026-11-11'
+  status: completed_quality_eligible_verification_pending
+  protocol: experiments/tcn-standalone-2026-11-11/protocol.md
+  runner: scripts/run_tcn_standalone.py
+  commands: docs/run-tcn-standalone.md
+  parent: retained_short_context_gap_trained_50_50_blend_penalty16
+  intervention: tcn_probability_weight_0_5_to_1
+  retraining: false
+  existing_fold_checkpoints: models/tcn-gap
+  user_executes_all_checks_and_inference: true
+  tests_executed: true
+  tests_executed_by: user
+  parent_csv_reconstruction_required: true
+  minimum_median_corrupted_spell_gain: 0.01
+  production_changed: false
+  target_accuracy: unknown
+
+standalone_gap_result_audit:
+  date: '2026-11-11'
+  report: experiments/tcn-standalone-2026-11-11/result-review.md
+  independently_recomputed: true
+  quality_eligible: true
+  clean_spellF1: 0.5977070893397277
+  corrupted_spellF1: 0.4631391701663609
+  primary_median_delta: 0.040270870807321946
+  paired_median_spell_delta: 0.03491013059682724
+  paired_median_macro_delta: 0.018038404131152264
+  paired_matches_improved: 4
+  recorded_tests_passed: 41
+  repeatability_cases: 10
+  registered_hashes_verified: 152
+  candidate_csv_hashes_verified: 30
+  parent_csv_hashes_verified: 10
+  fold_stage_seconds: 65.58286483207485
+  production_changed: false
+  new_tests_or_model_execution_by_assistant: false
+
+slot_compatibility_audit:
+  date: '2026-11-11'
+  status: deferred_unexecuted_user_approved_direct_model_trial
+  documented_target_identity_swaps: true
+  documented_source: official_DATA_99_101_and_OVERVIEW_90_93
+  target_metric_impact: unknown
+  plan: docs/next-step-decision-2026-11-11.md
+  protocol: experiments/tcn-slot-audit-2026-11-11/protocol.md
+  runner: scripts/audit_tcn_slots.py
+  commands: docs/run-tcn-slot-audit.md
+  arms: [parent, static, rederived_identity, dynamic]
+  match_condition_arm_cells: 40
+  seed_base: 20261111
+  dynamic_seed_offset: 100000
+  diagnostic_only: true
+  quality_selection_performed: false
+  new_synthetic_contracts_provided: 5
+  tests_executed: false
+  user_runs_all_checks_and_inference: true
+  no_real_match_retraining: true
+  target_raw_inputs_used: false
+  target_public_labels_used: false
+  protected_matches_used: false
+  production_changed: false
+  symmetry_trial: deferred_not_registered
+  budget_increase: not_registered
+
+frame_set_tcn:
+  date: '2026-11-11'
+  status: completed_rejected_representation_line_stopped
+  protocol: experiments/tcn-set-2026-11-11/protocol.md
+  runner: scripts/run_tcn_set.py
+  commands: docs/run-tcn-set.md
+  review: docs/tcn-set-design-review-2026-11-11.md
+  parent: gap_trained_standalone_short_context_tcn_penalty16
+  intervention: pointwise_XY_visibility_set_encoder_before_temporal_TCN
+  stored_object_velocities_consumed: false
+  object_temporal_convolution: false
+  core_ball_speed_retained: true
+  parameters: 9539
+  encoded_receptive_field: 15
+  input_schema_width: 521
+  training_updates: 20000
+  batch: 8
+  original_training_anchors_preserved: true
+  input_window: 250
+  halo: 25
+  loss_frames: 200
+  training_source: five_IDSSE_development_only_LOMO_four_per_fit
+  seed: 20261106
+  training_gap_seed_base: 20261206
+  frozen_evaluation_seed_base: 20261106
+  decoder_penalty: 16
+  standalone: true
+  integrated_existing_contracts: 41
+  new_synthetic_contracts: 8
+  all_execution_by_user: true
+  tests_executed: true
+  tests_executed_by: user
+  recorded_contracts_passed: 49
+  slot_diagnostic_prerequisite: false
+  prior_representation_failures_conservatively_counted: 2
+  failure_stops_representation_line: true
+  automatic_final_fit_or_export: false
+  production_changed: false
+  target_accuracy: unknown
+
+frame_set_result_audit:
+  date: '2026-11-11'
+  report: experiments/tcn-set-2026-11-11/result-review.md
+  independently_recomputed: true
+  quality_eligible: false
+  clean_spellF1: 0.5022562015537437
+  corrupted_spellF1: 0.36128471654336564
+  clean_macroF1: 0.8917615859882659
+  corrupted_macroF1: 0.7526939052337392
+  primary_median_delta: -0.10895865361275181
+  paired_median_spell_delta: -0.10880012919765114
+  paired_median_macro_delta: -0.04451667166579765
+  paired_matches_improved: 0
+  recorded_tests_passed: 49
+  recorded_repeatability_cases: 10
+  registered_hashes_verified: 158
+  compact_member_hashes_verified: 35
+  checkpoint_hashes_verified: 10
+  candidate_csv_hashes_verified: 30
+  parent_references_verified: 10
+  fold_stage_seconds: 1660.8266511259717
+  representation_consecutive_failures: 3
+  representation_line_stopped: true
+  retained_candidate: gap_trained_standalone_short_context_tcn_penalty16
+  target_identity_risk_resolved: false
+  new_tests_or_model_execution_by_assistant: false
+  production_changed: false
+
+rotation_ensemble:
+  date: '2026-11-11'
+  status: completed_quality_eligible_verification_pending
+  protocol: experiments/tcn-rotation-2026-11-11/protocol.md
+  runner: scripts/run_tcn_rotation.py
+  commands: docs/run-tcn-rotation.md
+  parent: gap_trained_standalone_short_context_tcn_penalty16
+  views: [identity, pitch_rotation_180]
+  probability_weights: [0.5, 0.5]
+  decoder_penalty: 16
+  retraining: false
+  architecture_changed: false
+  catboost_used: false
+  class_order: [H, A, D]
+  team_swap: false
+  tests_executed: true
+  tests_executed_by: user
+  integrated_contracts_provided: 46
+  user_runs_all_checks_and_inference: true
+  production_changed: false
+  target_accuracy: unknown
+
+rotation_result_audit:
+  date: '2026-11-11'
+  report: experiments/tcn-rotation-2026-11-11/result-review.md
+  independently_recomputed: true
+  quality_eligible: true
+  clean_spellF1: 0.6021546224883432
+  corrupted_spellF1: 0.4776818840872061
+  primary_median_delta: 0.014850014850014803
+  paired_spell_median_delta: 0.016578383107167527
+  paired_macro_median_delta: 0.00586390879040799
+  matches_improved: 3
+  registered_hashes_verified: 158
+  candidate_csv_hashes_verified: 30
+  parent_csv_hashes_verified: 10
+  checkpoint_hashes_verified: 5
+  recorded_tests_passed: 46
+  recorded_repeatability_cases: 10
+  fold_stage_seconds: 105.25973928993335
+  new_tests_or_model_execution_by_assistant: false
+  production_changed: false
+
+higher_upside_research_refresh:
+  date: '2026-11-11'
+  status: research_complete_no_experiment_registered
+  synthesis: literature/high-upside-methods-synthesis-2026-11-11.md
+  structured_review: literature/structured-possession-refresh-2026-11-11.md
+  video_review: literature/video-evidence-refresh-2026-11-11.md
+  scientist_review: docs/fresh-methods-decision-review-2026-11-11.md
+  new_primary_lead: arxiv_2604_01859_boundary_and_segment_objectives
+  root_preference: one_boundary_training_objective_bounded_amendment_required
+  scientist_preference: fixed_two_seed_ensemble_additional_total_compute
+  video_model_lead: conditional_RFDETR_Soccernet_not_admitted
+  external_synchronized_possession_video_path_verified: false
+  datasets_or_weights_downloaded: false
+  new_experiment_executed: false
+  stopped_tracks_reopened: false
+  target_accuracy: unknown
+
+boundary_objective_trial:
+  date: '2026-11-11'
+  status: completed_rejected
+  amendment: one_fixed_training_objective_only
+  stopped_tracks_reopened: false
+  parent: gap_trained_short_context_tcn_rotation_50_50_penalty16
+  boundary_loss_weight: 0.1
+  boundary_target: exact_adjacent_HAD_transition
+  boundary_balance: equal_present_class_means_per_minibatch
+  boundary_head: training_only_32_to_1
+  training_updates: 20000
+  folds: five_original_IDSSE_LOMO
+  tests_executed: true
+  all_execution_by_user: true
+  automatic_followup: false
+  production_changed: false
+  target_accuracy: unknown
+  protocol: experiments/tcn-boundary-2026-11-11/protocol.md
+  runner: scripts/run_tcn_boundary.py
+  commands: docs/run-tcn-boundary.md
+  review: docs/tcn-boundary-design-review-2026-11-11.md
+  supplied_contracts: 54
+  registered_source_files: 133
+  registered_input_files: 47
+  registered_compact_manifests: 5
+
+plateau_reassessment:
+  date: '2026-11-11'
+  status: research_complete_boundary_rejected
+  measured_ceiling: false
+  research_reports:
+    - docs/metric-plateau-review-2026-11-11.md
+    - docs/error-strategy-reassessment-2026-11-11.md
+    - literature/training-methods-reassessment-2026-11-11.md
+  prospective_route: masked_geometry_pretraining_then_IDSSE_finetuning
+  route_registered: false
+  extra_compute_control_required: true
+  recommendation: pending_boundary_plus_at_most_one_conditional_route_with_compute_control
+  boundary_user_contracts_recorded_pass: 54
+  boundary_quality_result_available_at_inspection: true
+  stopped_tracks_reopened: false
+  new_model_execution_by_assistant: false
+
+boundary_result_audit:
+  date: '2026-11-11'
+  status: rejected_fixed_objective_closed
+  report: experiments/tcn-boundary-2026-11-11/result-review.md
+  quality_eligible: false
+  clean_spellF1: 0.5830634000940568
+  corrupted_spellF1: 0.4643552530572997
+  clean_macroF1: 0.9134433012401353
+  corrupted_macroF1: 0.832788402048072
+  primary_median_delta: -0.01776192974893054
+  paired_median_spell_delta: -0.012318298343367728
+  paired_median_macro_delta: -0.0046931768916936845
+  matches_improved: 1
+  recorded_tests_passed: 54
+  recorded_repeatability_cases: 10
+  registered_hashes_verified: 185
+  compact_member_hashes_verified: 35
+  checkpoint_hashes_verified: 10
+  candidate_csv_hashes_verified: 30
+  parent_csv_hashes_verified: 10
+  fold_stage_seconds: 4969.53336349997
+  retained_candidate: gap_trained_short_context_tcn_rotation_50_50_penalty16
+  objective_consecutive_failures: 1
+  automatic_objective_rescue: false
+  new_tests_or_model_execution_by_assistant: false
+  production_changed: false
+  target_accuracy: unknown
+
+mdpi_article_review:
+  date: '2026-11-11'
+  report: literature/mdpi-possession-relevance-2026-11-11.md
+  decision: conditional_video_detector_lead_only
+  new_experiment: false
+  production_changed: false
+
+epv_paper_review:
+  date: '2026-11-11'
+  report: literature/epv-paper-reading-2026-11-11.md
+  pages_read: 20
+  decision: downstream_valuation_and_conditional_spatial_reasoning_only
+  new_experiment: false
+  production_changed: false
+
+tcn_paper_metric_comparison:
+  date: '2026-11-11'
+  report: literature/tcn-paper-metric-comparison-2026-11-11.md
+  headline_possession_gain_discrepancy: abstract_7_3_vs_table_7_1_percentage_points
+  paper_defined_current_accuracies_logged: false
+  cross_dataset_rank_claim: false
+  new_experiment: false
+
+consolidated_improvement_plan:
+  date: '2026-11-11'
+  document: docs/metric-improvement-plan-2026-11-11.md
+  status: plan_only_not_experiment_registration
+  selected_route: masked_geometry_pretraining_then_IDSSE_finetuning
+  proposed_pretraining_updates: 20000
+  proposed_finetuning_updates: 20000
+  proposed_scratch_control_updates: 40000
+  proposed_budget_amendment_locked: false
+  maximum_fit_pipelines_with_repeats: 20
+  quality_work_finish_before: '2026-11-14'
+  stopped_tracks_reopened: false
+  current_run_artifacts_unchanged: 17
+  new_training_or_tests_executed: false
+
+masked_pretraining_trial:
+  date: '2026-11-11'
+  status: completed_control_promoted_pretraining_rejected
+  protocol: experiments/tcn-pretrain-2026-11-11/protocol.md
+  commands: docs/run-tcn-pretrain.md
+  runner: scripts/run_tcn_pretrain.py
+  review: docs/tcn-pretrain-design-review-2026-11-11.md
+  amendment: one_geometry_learning_route_plus_staged_training_budget_control
+  control: 20000_supervised_then_reset_then_20000_supervised
+  candidate: 20000_masked_geometry_then_reset_then_20000_supervised
+  both_reset_Adam_and_supervised_sampler: true
+  initial_parent: gap_trained_short_context_tcn_rotation_50_50_penalty16
+  pretraining_folds: PFF48_plus_IDSSE4_excluding_held_out_even_unlabelled
+  geometry_labels_loaded: false
+  pretext_targets: clean_observed_ball_XY_hidden_in_cached_training_gap_view
+  pretext_head_parameters: 66
+  retained_class_parameters: 9635
+  receptive_field: 17
+  corruption_features_from_raw_masking: true
+  total_updates_per_pipeline: 40000
+  maximum_fit_pipelines: 20
+  matched_updates: true
+  exact_compute_match_claimed: false
+  supplied_contracts: 54
+  tests_executed: true
+  all_execution_by_user: true
+  verified_compact_manifests: 53
+  verified_compact_members: 371
+  automatic_followup: false
+  protected_data_used: false
+  production_changed: false
+  target_accuracy: unknown
+
+comparable_benchmark_search:
+  date: '2026-11-11'
+  report: literature/comparable-benchmark-search-2026-11-11.md
+  public_source_research_complete: true
+  agent_reports_complete: false
+  agent_limit: service_usage_limit
+  official_same_metric_target_floor: 0.2433
+  real_match_external_sota_rank_verified: false
+  winning_or_top20_threshold_verified: false
+  same_scorer_synthetic_lead: PossessionLab
+  same_match_smooth50_clean_spellF1: 0.2961446515389464
+  same_match_smooth50_corrupted_spellF1: 0.19664486685095156
+  social_coverage: public_indexed_Reddit_X_LinkedIn_not_exhaustive
+  running_protocol_changed: false
+  new_experiment: false
+  target_accuracy: unknown
+
+pretraining_route_result_audit:
+  date: '2026-11-12'
+  report: experiments/tcn-pretrain-2026-11-11/result-review.md
+  retained_candidate: staged40k_supervised_TCN_rotation_penalty16
+  clean_spellF1: 0.6328708454621595
+  corrupted_spellF1: 0.49754997776865695
+  clean_macroF1: 0.9258995454065417
+  corrupted_macroF1: 0.8481428233999456
+  control_primary_median_delta: 0.026049299698361117
+  control_paired_median_spell_delta: 0.025578340760806118
+  control_paired_median_macro_delta: 0.008763574194285306
+  control_matches_improved: 5
+  control_quality_eligible: true
+  pretrain_quality_eligible: false
+  pretrain_clean_spellF1: 0.5336318276676146
+  pretrain_corrupted_spellF1: 0.4432984386341326
+  pretrain_primary_median_delta: -0.06459672174359005
+  pretrain_matches_improved: 0
+  registered_hashes_verified: 249
+  compact_member_hashes_verified: 371
+  checkpoint_hashes_verified: 20
+  candidate_csv_hashes_verified: 60
+  parent_csv_hashes_verified: 20
+  recorded_contracts_passed: 54
+  recorded_repeatability_cases: 20
+  total_fold_stage_seconds: 20722.10842141707
+  finite_improvement_comparison_closed: true
+  production_changed: false
+  target_accuracy: unknown
+
+development_goals:
+  date: '2026-11-12'
+  next_targetlike_spellF1_milestone: 0.55
+  stretch_targetlike_spellF1: 0.60
+  basis: engineering_goals_not_forecast_or_winning_threshold
+  promotion_gate_changed: false
+  additional_unregistered_search_authorized: false
+
+winner_delivery_preparation:
+  date: '2026-11-12'
+  specification: docs/winner-delivery-qualification-2026-11-12.md
+  status: implemented_preregistered_user_run_pending
+  existing_exporter_compatible: false
+  final_fit_five_match_entrypoint_exists: true
+  neural_target_csv_generated: true
+  history_asset_scan: docs/history-assets-2026-11-12.json
+  history_commits_scanned: 154
+  history_unique_blobs_scanned: 1084
+  history_signature_findings: 0
+  history_scope: reachable_local_refs_at_recorded_HEAD_only
+  external_push_performed: false
+  slot_diagnostic_protocol: experiments/tcn-winner-slot-audit-2026-11-12/protocol.md
+  slot_diagnostic_command: scripts/audit_tcn_winner_slots.py --run
+  final_fit_command: scripts/fit_tcn_winner.py --run --acknowledge-slot-risk
+  exporter: scripts/export_tcn_winner.py
+  release_protocol: experiments/tcn-winner-release-2026-11-12/protocol.md
+  source_review: docs/tcn-winner-qualification-review-2026-11-12.md
+  verification_status: docs/tcn-winner-verification-status-2026-11-12.md
+  reproduction_instructions: docs/run-tcn-winner-reproduction.md
+  full_environment_distribution_pins: 29
+  slot_registration_file_count: 211
+  release_registration_file_count: 190
+  prepared_compact_members_byte_verified: 35
+  inherited_source_fingerprints_unchanged: 145
+  registration_report: docs/tcn-winner-registration-2026-11-12.json
+  protocol_registration_commit: 1c544b7
+  unique_registered_files_byte_verified: 239
+  tracked_registered_files_commit_verified: 169
+  diagnostic_new_contracts_supplied: 9
+  release_new_contracts_supplied: 7
+  source_review_blockers_remaining: 0
+  slot_diagnostic_executed: true
+  final_fit_executed: true
+  new_contract_tests_executed: true
+  frozen_model_clean_environment_verified: false
+  frozen_model_fresh_clone_verified: false
+  full_training_clean_environment_verified: false
+  human_diagnostic_review_required_before_fit: true
+  existing_lomo_guard_unchanged: true
+  slot_diagnostic_audit: experiments/tcn-winner-slot-audit-2026-11-12/result-audit.json
+  slot_diagnostic_parent_reproductions_verified: 10
+  slot_diagnostic_repeatability_cases_verified: 40
+  slot_diagnostic_user_recorded_contracts_passed: 63
+  static_and_rederived_controls_changed_labels: 0
+  dynamic_stress_clean_mean_spellF1: 0.05285813957456749
+  dynamic_stress_corrupted_mean_spellF1: 0.04666717843275601
+  dynamic_stress_is_target_accuracy_estimate: false
+  actual_target_slot_continuity_measured: false
+  final_fit_waits_for_input_structure_review: false
+  target_input_structure_aggregates_verified: true
+  target_input_review_supports_final_artifact_fit: true
+  identity_correctness_verified: false
+  release_ready: false
+
+target_structure_qualification:
+  date: '2026-11-12'
+  status: completed_audited_final_artifact_fit_recommended
+  protocol: experiments/tcn-target-structure-2026-11-12/protocol.md
+  command: scripts/audit_tcn_target_structure.py --run
+  source_review: docs/tcn-target-structure-review-2026-11-12.md
+  registration_report: docs/target-structure-registration-2026-11-12.json
+  source_fingerprints: 14
+  geometry_data_fingerprints: 22
+  stress_evidence_fingerprints: 5
+  protocol_registration_commit: 7636faa
+  registered_files_plus_lock_byte_verified: 42
+  tracked_registered_files_commit_verified: 20
+  prepared_geometry_members_byte_verified: 15
+  target_rows_read_into_context: false
+  aggregation_executed: true
+  contracts_supplied: 6
+  contracts_executed: true
+  user_logged_contracts_passed: 6
+  result_summary: experiments/tcn-target-structure-2026-11-12/result-summary.json
+  detailed_results_remain_private: true
+  execution_commit: f9da058
+  recorded_total_seconds: 27.60692474996904
+  typical_adjacent_motion_within_external_mean_range: true
+  fragmentation_and_coverage_shift_remain: true
+  identity_correctness_verified: false
+  model_or_production_selected_from_target_metrics: false
+  model_or_scoring_required: false
+  labels_required: false
+  protected_matches_used: false
+  quality_gate_or_stop_counts_changed: false
+  automatic_identity_repair: false
+  output: data/competition/tcn-target-structure
+  target_accuracy: unknown
+
+post_40k_decision:
+  date: '2026-11-12'
+  report: docs/next-decision-2026-11-12.md
+  primary_next: qualify_actual_winner_slot_contract_final_fit_and_export
+  conditional_future_hypothesis: fixed_second_seed_ensemble_only_after_explicit_budget_extension
+  new_quality_experiment_registered: false
+  failed_pretext_reopened: false
+  additional_updates_gain_assumed: false
+  target_accuracy: unknown
+
+final_fit_registration_correction:
+  date: '2026-11-12'
+  cause: missing_required_config_fingerprint
+  failure_before_tests_and_training: true
+  recipe_changed: false
+  status: reference_classification_corrected_full_static_review_complete_user_retry_pending
+
+final_five_artifact_result:
+  date: '2026-11-12'
+  status: completed_audited_export_pending
+  manifest: models/tcn-winner-release/manifest.json
+  audit: experiments/tcn-winner-release-2026-11-12/final-fit-result-audit.json
+  recorded_repeated_training_exact: true
+  user_logged_contracts_passed: 61
+  steps_per_fit: 40000
+  fit_count: 2
+  recorded_elapsed_seconds: 1971.3009282910498
+  new_quality_score: false
+  target_accuracy: unknown
+  production_changed: false
+
+winner_export_result:
+  date: '2026-11-12'
+  status: local_format_and_repeatability_verified
+  audit: experiments/tcn-winner-release-2026-11-12/export-result-audit.json
+  csv_sha256: e3d8f54841b7f4422438fa9512740664c7f432959b7e74970d61b4c66ff0c24b
+  clean_environment_verified: false
+  fresh_clone_verified: false
+  target_accuracy: unknown
+  production_changed: false
+
+paper_error_mechanism_review:
+  date: '2026-11-12'
+  report: docs/papers-to-spell-improvements-2026-11-12.md
+  new_experiment_registered: false
+  target_accuracy: unknown
+
+bounded_parallel_extension:
+  date: '2026-11-12'
+  status: preregistered_user_execution_pending
+  user_approved_two_independent_candidates: true
+  representation_stop_history_preserved: true
+  representation_exception: one_masked_attention_trial_only
+  parent: staged40k_supervised_TCN_rotation_penalty16
+  arms: [attention, ensemble]
+  initialization_seeds: {attention: 20261106, ensemble: 20261107}
+  window_seed: 20261106
+  view_seed: 20685348
+  steps_per_fit: 40000
+  new_fit_count: 20
+  total_new_updates: 800000
+  threads_per_job: 1
+  concurrent_jobs: 2
+  custom_ram_cap: false
+  attention_runtime_measured: false
+  models_parameters: {attention: 9917, ensemble: 9701}
+  promotion_order: [attention, ensemble]
+  full_existing_promotion_gate_preserved: true
+  combined_attention_seed_variant_authorized: false
+  prior_stopped_tracks_reset: false
+  protocol: experiments/tcn-parallel-2026-11-12/protocol.md
+  commands: docs/run-tcn-parallel.md
+  source_review: docs/tcn-parallel-review-2026-11-12.md
+  registration_report: docs/tcn-parallel-registration-2026-11-12.json
+  registration_file_count: 228
+  protocol_registration_commit: 13034e0
+  committed_source_file_fingerprints_verified: 151
+  mandatory_source_paths_present: 21
+  mandatory_parent_paths_present: 50
+  installed_distribution_metadata_versions_verified: 29
+  new_contracts_supplied: 14
+  expected_contracts_per_arm: 68
+  tests_executed_by_assistant: false
+  training_executed_by_assistant: false
+  sealed_opened: false
+  production_changed: false
+  target_accuracy: unknown
+
+cross_sport_benchmark_review_2026_11_13:
+  status: completed_public_source_scoping_review
+  report: literature/cross-sport-segment-benchmarks-2026-11-13.md
+  exact_real_match_metric_comparator_verified: false
+  related_methods: [VIFSS_FACT, SoccerNet2026_PAVE, T_GAN]
+  numerical_cross_task_ranking_valid: false
+  new_experiment_registered: false
+  tests_or_models_executed: false
+  production_changed: false
+  next: finish_registered_attention_and_ordered_comparison
+  target_accuracy: unknown
+
+parallel_results_review_2026_11_13:
+  status: both_complete_reviewed_neither_promoted
+  audit: experiments/tcn-parallel-2026-11-12/result-review-2026-11-13.json
+  report: experiments/tcn-parallel-2026-11-12/result-review-2026-11-13.md
+  unique_byte_hashes_verified: 378
+  user_contracts_passed_each_arm: 68
+  attention: {clean_spellF1: 0.6317851953394356, corrupted_spellF1: 0.493400418917828, primary_median_delta: -0.00020538828713040358, promoted: false}
+  ensemble: {clean_spellF1: 0.6338720058536451, corrupted_spellF1: 0.506191098528019, primary_median_delta: 0.0077305666699864495, promoted: false}
+  retained: staged40k_original_motion_TCN_rotation_penalty16
+  official_finalize_executed: false
+  assistant_tests_or_models_executed: false
+  bounded_two_arm_exception: exhausted
+  automatic_followup: false
+  sealed_opened: false
+  production_changed: false
+  target_accuracy: unknown
+
+missed_possession_trials_2026_11_13:
+  status: implemented_preregistered_runtime_unexecuted
+  protocol: experiments/tcn-missed-2026-11-13/protocol.md
+  commands: docs/run-tcn-missed.md
+  policy: experiments/tcn-missed-2026-11-13/policy-v2.json
+  source_review: docs/tcn-missed-review-2026-11-13.md
+  trial_order: [a_short_spell_exposure, b_segment_soft_iou]
+  fits_per_trial: 20
+  total_updates_per_trial: 800000
+  seeds: [20261106, 20261107]
+  maximum_parallel_workers: 2
+  b_requires_committed_a_review: true
+  new_artifact_budget_bytes: 2147483648
+  minimum_free_bytes: 12884901888
+  downloads_authorized_for_these_trials: false
+  supplied_new_contracts: 23
+  new_contracts_executed: false
+  training_executed: false
+  sealed_opened: false
+  production_changed: false
+  automatic_followup_after_b: false
+  previous_failure_histories_preserved: true
+  target_accuracy: unknown
+
+dataset_refresh_2026_11_13:
+  lead: SkillCorner_open_data_conditional
+  newly_admitted_matches: 0
+  downloaded_bytes: 0
+  file_sizes_verified: false
+  requires_label_and_provenance_audit: true
+  trial_a_review_pending: false
+
+trial_a_review_2026_11_13:
+  status: accepted_provisionally
+  audit: experiments/tcn-missed-2026-11-13/result-audit-a.json
+  binding: experiments/tcn-missed-2026-11-13/reviewed-a.json
+  sampler_for_b: short_mix
+  b_parent: a
+  macro_tradeoff: narrowly_passes_paired_median_guard_corrupted_mean_macro_declines
+  user_logged_contracts: 91
+  assistant_runtime_execution: false
+  production_changed: false
+  sealed_opened: false
+  target_accuracy: unknown
+
+trial_b_review_2026_11_13:
+  status: qualifies_registered_median_gate_but_corrupted_mean_regresses
+  audit: experiments/tcn-missed-2026-11-13/result-audit-b.json
+  review: experiments/tcn-missed-2026-11-13/reviewed-b.json
+  experiment_round_complete: true
+  automatic_further_experiments: false
+  preserve_trial_a: true
+  assistant_runtime_execution: false
+  production_changed: false
+  sealed_opened: false
+  target_accuracy: unknown
+
+final_trial_b_artifact_2026_11_13:
+  status: final_fit_complete_audited_export_pending
+  protocol: experiments/tcn-final-b-2026-11-13/protocol.md
+  commands: docs/run-tcn-final-b.md
+  manifest_path: models/tcn-final-b/manifest.json
+  training_membership: exactly_five_permitted_IDSSE_development_matches
+  initialization_seeds: [20261106, 20261107]
+  fits: 4
+  updates_per_fit: 40000
+  maximum_parallel_workers: 2
+  supplied_new_contracts: 13
+  expected_contracts_total: 104
+  quality_evaluation_performed: false
+  user_runtime_pending: false
+  export_prepared: true
+  production_changed: false
+  sealed_opened: false
+  target_accuracy: unknown
+
+final_b_completion_check_2026_11_13:
+  status: expected_artifacts_absent_need_terminal_output
+  completion_verified: false
+  rerun_started: false
+  production_changed: false
+
+final_b_fit_audit_2026_11_13:
+  status: complete_verified_saved_evidence
+  audit: experiments/tcn-final-b-2026-11-13/final-fit-result-audit.json
+  manifest_sha256: c57c55fe77c2808efbf3e72cf51df801d869a399221202ec8136eb414cf14d2f
+  user_logged_contracts: 104
+  fit_count: 4
+  unique_byte_hashes_verified: 392
+  previous_missing_artifact_check_resolved: true
+  new_quality_score: false
+  export_prepared: true
+  private_export_completed: false
+  assistant_runtime_execution: false
+  production_changed: false
+  target_accuracy: unknown
+
+
+frozen_diagnostic_and_delivery_2026_11_14:
+  status: diagnostic_and_local_export_complete_audited
+  diagnostic_runner: scripts/diagnose_tcn_possessions.py
+  export_runner: scripts/export_tcn_final_b.py
+  diagnostic_cells: 20
+  diagnostic_model_view_passes: 80
+  training_fits: 0
+  selected_candidate: trial_b_unchanged
+  reference: trial_a_unchanged
+  new_experiment_authorized: false
+  assistant_runtime_execution: false
+  official_validation_completed: true
+  clean_environment_completed: false
+  fresh_clone_completed: false
+  sealed_opened: false
+  production_changed: false
+  target_accuracy: unknown
+
+
+frozen_diagnostic_result_2026_11_14:
+  audit: experiments/tcn-diagnostic-2026-11-13/result-audit-2026-11-14.json
+  verified_registered_entries: 76
+  verified_unique_byte_hashes: 194
+  user_logged_checks: 25
+  archived_cells_reproduced: 20
+  leading_issue: long_ball_gaps_without_argmax_spell_match
+  leading_issue_matches: 5
+  corrupted_missed_spells_iou_05: 1278
+  long_gap_exclusive_missed: 535
+  clean_matches_lost_after_corruption: 359
+  lost_intersecting_over_10s_gap: 289
+  proposed_direction: longer_temporal_context
+  new_experiment_approved: false
+  local_export_completed: true
+  local_export_csv_sha256: 3dca80aa3b18a8c8e880b9f26cf1dc4f17a13018df18a2e4b39cf30f7da63463
+  clean_environment_completed: false
+  fresh_clone_completed: false
+  sealed_opened: false
+  assistant_runtime_execution: false
+  target_accuracy: unknown
+
+gnn_claim_review_2026_11_14:
+  conclusion: no_verified_universal_gnn_superiority_on_our_metric
+  current_encoder: shared_object_encoder_masked_team_mean_pool
+  relation_model: conditional_future_hypothesis
+  next_proposed_direction: longer_temporal_context
+  experiment_started: false
+
+hybrid_feasibility_2026_11_14:
+  proposal: docs/hybrid-next-proposal-2026-11-14.md
+  prior_13_second_context_failure_considered: true
+  recommended_direction: frozen_local_tcn_coarse_temporal_residual_refiner
+  protocol_registered: false
+  runtime_estimated: false
+  user_execution_started: false
+  new_quality_result: false
+  export_terminal_hash_confirmed: true
+
+hybrid_research_decision_2026_11_14:
+  status: research_complete_selected_candidate_implementation_pending
+  user_authorized_research: true
+  decision: docs/hybrid-research-decision-2026-11-14.md
+  primary_evidence: literature/hybrid-primary-evidence-2026-11-14.md
+  independent_assessment: docs/hybrid-independent-assessment-2026-11-14.md
+  candidate: frozen_tcn_temporal_residual_refiner
+  selected_input: three_parent_probabilities_ball_observation_mask_gap_age
+  additional_parent_fits: 0
+  proposed_refiner_fits: 20
+  nominal_refiner_parameters_unmeasured: 6483
+  protocol_registered: false
+  runner_implemented: false
+  runtime_measured: false
+  pretrained_weights_admitted: false
+  new_quality_result: false
+  target_accuracy: unknown
+
+sequential_hybrids_2026_11_14:
+  status: implemented_registered_user_preflight_pending
+  runner: scripts/run_tcn_hybrid.py
+  release_runner: scripts/release_tcn_hybrid.py
+  temporal_parameters_static: 6483
+  graph_parameters_static: 9835
+  supplied_tests_unexecuted: 37
+  source_fingerprints: 52
+  evidence_fingerprints: 50
+  maximum_development_fits: 40
+  maximum_final_fits: 8
+  parent_fits: 0
+  probe_updates_per_fold: 64
+  user_execution_started: false
+  runtime_measured: false
+  independent_integration_review_complete: false
+  root_static_integration_review_complete: true
+  assistant_runtime_execution: false
+  production_changed: false
+  sealed_opened: false
+  target_accuracy: unknown
+
+temporal_hybrid_preflight_2026_11_14:
+  status: passed_reviewed_full_comparison_eligible
+  audit: experiments/tcn-hybrid-2026-11-14/preflight-temporal-audit.json
+  user_logged_tests: 37
+  cache_arrays_verified: 50
+  zero_parent_csv_proofs: 10
+  unique_byte_hashes_verified: 210
+  worst_seconds_per_update: 0.02746492251571908
+  nominal_parallel_development_fit_hours: 3.05165805730212
+  conservative_hours_including_final_fits: 6.768994076115632
+  observed_process_peak_rss_gib: 3.04071044921875
+  projected_two_process_rss_gib: 6.0814208984375
+  projected_artifacts_gib: 0.5580655178055167
+  new_quality_score: false
+  assistant_numerical_execution: false
+  full_comparison_completed: false
+  sealed_opened: false
+  target_accuracy: unknown
+
+temporal_hybrid_result_2026_11_14:
+  status: rejected_primary_median_gate
+  audit: experiments/tcn-hybrid-2026-11-14/temporal-result-audit.json
+  review: experiments/tcn-hybrid-2026-11-14/reviewed-temporal.json
+  mean_clean_spell: 0.65425334021748
+  mean_corrupted_spell: 0.5106761328026992
+  primary_median_delta: -0.0007276178424548974
+  paired_median_spell_delta: 0.003682057208204359
+  paired_median_macro_delta: 0.010330971275829048
+  paired_matches_improved: 3
+  fit_count: 20
+  user_logged_tests: 37
+  graph_parent: trial_b
+  next_step: user_graph_preflight
+  assistant_numerical_execution: false
+  production_changed: false
+  sealed_opened: false
+  target_accuracy: unknown
+
+additional_data_search_2026_11_14:
+  candidate: SkillCorner_opendata
+  first_match_to_audit: 1886347
+  downloader: user
+  download_performed_by_assistant: false
+  native_fps: 10
+  continuous_had_coverage_verified: false
+  admitted_training_matches: 0
+  exact_download_size_verified: false
+  existing_training_protocol_changed: false
+
+skillcorner_download_2026_11_14:
+  status: completed_quarantined_pending_label_audit
+  authorized_downloader: assistant
+  match: 1886347
+  folder: data/external-candidates/skillcorner/1886347
+  source_commit: 4340d274572876239c154c90bc507a9b3250a656
+  receipt: literature/skillcorner-1886347-download-2026-11-14.json
+  files: 6
+  bytes: 94362152
+  payload_hashes_verified: true
+  git_blob_identity_verified: true
+  continuous_had_coverage_verified: false
+  training_admitted: false
+  current_training_protocol_changed: false
+
+graph_hybrid_preflight_2026_11_14:
+  status: correctness_passed_time_budget_ineligible
+  audit: experiments/tcn-hybrid-2026-11-14/graph-preflight-audit.json
+  user_logged_tests: 37
+  cache_arrays_verified: 50
+  zero_parent_csv_proofs: 10
+  unique_byte_hashes_verified: 211
+  worst_seconds_per_update: 0.15111185676505556
+  nominal_development_fit_hours: 16.790206307228395
+  conservative_total_hours: 36.35344243012713
+  remaining_hours_at_preflight: 27.220464301111114
+  observed_process_peak_rss_gib: 2.7962799072265625
+  full_run_eligible: false
+  quality_comparison_completed: false
+  quality_gate_failed: false
+  production_changed: false
+  sealed_opened: false
+  target_accuracy: unknown
+
+mac_concurrency_proposal_2026_11_14:
+  user_authorized_fuller_hardware_utilization: true
+  observed_cpu_cores: 11
+  observed_ram_gib: 18
+  current_scheduler_jobs: 2
+  proposed_benchmark_jobs: [2, 4]
+  scheduling_extension_implemented: false
+  benchmark_executed: false
+  numerical_threads_per_job: 1
+  training_budget_change: false
+
+mac_concurrency_extension_2026_11_14:
+  status: implemented_registered_user_benchmark_pending
+  runner: scripts/run_tcn_hybrid_parallel.py
+  guide: docs/run-tcn-hybrid-parallel.md
+  benchmark_allocations: [2, 4]
+  numerical_threads_per_job: 1
+  task_count: 10
+  probe_steps_per_task_allocation: 64
+  parallel_final_fits_supported: true
+  new_supplied_tests_unexecuted: 4
+  source_fingerprints: 4
+  evidence_fingerprints: 8
+  independent_review_completed: false
+  benchmark_executed: false
+  model_training_budget_changed: false
+  target_accuracy: unknown
+
+mac_concurrency_benchmark_2026_11_14:
+  status: passed_four_jobs_selected_graph_run_eligible
+  audit: experiments/tcn-hybrid-2026-11-14/scheduling/benchmark-audit.json
+  workers: 4
+  user_logged_tests: 4
+  reproducibility_passed_recorded: true
+  benchmark_wall_two_jobs_seconds: 97.66828887502197
+  benchmark_wall_four_jobs_seconds: 61.45754912495613
+  conservative_total_hours: 20.406170036321953
+  full_graph_comparison_completed: false
+  assistant_numerical_execution: false
+  new_quality_score: false
+
+graph_hybrid_result_2026_11_15:
+  status: rejected_paired_spell_and_majority_gate
+  audit: experiments/tcn-hybrid-2026-11-14/graph-result-audit.json
+  review: experiments/tcn-hybrid-2026-11-14/reviewed-graph.json
+  mean_clean_spell: 0.6473635337374103
+  mean_corrupted_spell: 0.508414678519287
+  primary_median_delta: 0.0020310028472003694
+  paired_median_spell_delta: -0.003345496308826079
+  paired_matches_improved: 1
+  fit_count: 20
+  workers: 4
+  both_hybrid_trials_closed: true
+  selected_candidate: trial_b
+  additional_final_branch_fits_required: 0
+  next_step: clean_environment_and_fresh_clone_qualification
+  assistant_numerical_execution: false
+  sealed_opened: false
+  target_accuracy: unknown
+
+submission_package_2026_11_15:
+  status: local_draft_created_not_submitted
+  directory: submission-package-2026-11-15
+  selected_candidate: trial_b_two_seed_tcn
+  csv_sha256: 3dca80aa3b18a8c8e880b9f26cf1dc4f17a13018df18a2e4b39cf30f7da63463
+  required_deliverables: [possession_csv, public_reproducible_repository_url, technical_pdf_or_markdown]
+  registered_team_name: unconfirmed
+  match_assets_copied: false
+  public_repository_release_verified: false
+  clean_environment_and_clone_qualification: pending
+  portable_post_deadline_entry_point: pending
+  official_validation_of_renamed_copy: pending_user_run
+  sealed_evaluation: pending_at_freeze
+  target_accuracy: unknown
+
+temporal_recovery_audit_2026_11_15:
+  status: preregistered_awaiting_user_run
+  protocol: experiments/temporal-recovery-audit-2026-11-15/protocol.md
+  runner: scripts/audit_temporal_recovery.py
+  registration: ddf1b7a987107693b3780cd3c3e18cf72a8563e167f1a38128887503cd0c15c9
+  source_fingerprints: 204
+  evidence_fingerprints: 163
+  supplied_tests_unexecuted: 8
+  purpose: recovered_versus_introduced_spurious_separability
+  candidate_rule_registered: false
+  numerical_execution: user_only
+  graph_training_trend: saved_checkpoint_diagnostic_only
+  graph_longer_training_registered: false
+  artifact_reservation_mib: 32
+  research_stops: '2026-11-16T00:00:00+05:30'
+  selected_candidate: trial_b_unchanged
+  sealed_opened: false
+  target_accuracy: unknown
+
+temporal_recovery_audit_fix01_2026_11_15:
+  status: corrected_awaiting_user_retry
+  initial_user_tests: 8
+  initial_passed: 3
+  initial_errors: 5
+  cause: numeric_internal_codes_passed_to_official_string_label_converter
+  inference_started: false
+  current_tests: 10
+  corrected_tests_executed: false
+  registration: 91a4395fe91ef2b55a0022af1c7b4d3c6e444c6c1e531d550aec20ccce34f9ec
+  source_fingerprints: 206
+  evidence_fingerprints: 165
+  failed_evidence_commit: 0874a1d
+  scientific_protocol_changed: false
+  selected_candidate: trial_b_unchanged
+
+temporal_recovery_audit_result_2026_11_15:
+  status: completed_diagnostic_only
+  audit: experiments/temporal-recovery-audit-2026-11-15/result-audit.json
+  review: experiments/temporal-recovery-audit-2026-11-15/result-review.md
+  user_tests_passed: 10
+  archived_cells_reproduced: 10
+  source_fingerprints_verified: 206
+  evidence_fingerprints_verified: 165
+  recovered_clean: 219
+  introduced_spurious_clean: 321
+  recovered_corrupted: 212
+  introduced_spurious_corrupted: 570
+  mean_corrupted_temporal_margin_auc: 0.6983806336874675
+  temporal_margin_auc_positive_matches: 5
+  graph_late_training_loss_declines: 20
+  graph_heldout_learning_curve_available: false
+  next_proposal: one_fixed_temporal_margin_filter
+  proposed_margin_threshold: 0.5
+  proposed_rule_executed: false
+  proposed_rule_requires_separate_protocol_and_approval: true
+  selected_candidate: trial_b_unchanged
+  assistant_numerical_execution: false
+  target_accuracy: unknown
+
+graph_long_2026_11_15:
+  status: preregistered_awaiting_user_run
+  runner: scripts/run_graph_long.py
+  protocol: experiments/graph-long-2026-11-15/protocol.md
+  registration: 6445985c4e325bb38396c12ef8fcc863bd8e0548fcae54c26fdd37f6af007e49
+  frozen_parent: trial_b_two_seed_tcn
+  trained_component: graph_correction_only
+  original_cumulative_steps: 40000
+  new_cumulative_steps: 50000
+  extra_steps_per_fit: 10000
+  continuation_fits_with_repeats: 20
+  additional_updates: 200000
+  workers: 4
+  numerical_threads_per_worker: 1
+  source_fingerprints: 210
+  evidence_fingerprints: 216
+  new_supplied_tests_unexecuted: 6
+  original_contracts_rerun_before_training: 37
+  forecast_development_nominal_hours: 2.7588801216249217
+  conservative_hours_with_final_fitting_reserve: 8.086920334468536
+  freeze_unchanged: '2026-11-16T00:00:00+05:30'
+  artifact_reservation_mib: 512
+  automatic_final_fitting: false
+  new_final_release_path_implemented: false
+  temporal_confidence_filter_executed: false
+  assistant_numerical_execution: false
+  selected_candidate: trial_b_unchanged
+  target_accuracy: unknown
+
+
+tcn_graph_ensemble_2026_11_16:
+  status: completed
+  protocol: experiments/tcn-graph-ensemble/protocol.md
+  preregistration_commit: 7961ce7
+  results_commit: 5f7fd3f
+  weights:
+    tcn: 0.5
+    graph50k: 0.5
+  models_evaluated:
+    tcn_parent: trial_b_two_seed_tcn
+    graph50k_refiner: graph_long_2026_11_15
+  matches_evaluated: 5
+  conditions_evaluated:
+    - clean
+    - targetlike
+  metrics:
+    clean_spellF1_mean:
+      tcn: 0.6503847082458226
+      graph50k: 0.6488745271104096
+      ensemble: 0.6594324113391725
+    clean_spellF1_median:
+      tcn: 0.647843137254902
+      graph50k: 0.651400730816078
+      ensemble: 0.6604651162790698
+    targetlike_spellF1_mean:
+      tcn: 0.5098356396639198
+      graph50k: 0.518200029652202
+      ensemble: 0.5224309485803629
+    targetlike_spellF1_median:
+      tcn: 0.5163913595933927
+      graph50k: 0.5190416141235813
+      ensemble: 0.5175257731958762
+    clean_macroF1_mean:
+      tcn: 0.9267515420995585
+      graph50k: 0.9257878140269643
+      ensemble: 0.929070365524171
+    targetlike_macroF1_mean:
+      tcn: 0.8379805572957197
+      graph50k: 0.8454721041748037
+      ensemble: 0.8480716072255128
+  gate_vs_tcn:
+    gate_version: v2
+    quality_eligible: true
+    primary_median_delta: 0.014097190696888806
+    paired_median_spell_delta: 0.008890706763457157
+    paired_median_macro_delta: 0.004554592898901255
+    matches_improved: 5
+    repeatability_exact: true
+  gate_vs_graph50k:
+    gate_version: v2
+    quality_eligible: false
+    primary_median_delta: -0.00151584092770507
+    paired_median_spell_delta: 0.004337772392553174
+    paired_median_macro_delta: 0.002211344340481869
+    matches_improved: 4
+    repeatability_exact: true
+  repeatability_csv_bytes_identical: true
+  automatic_promotion: false
+  promotion_authorized_by_user: true
+  promotion_date: '2026-11-16T13:45:00+05:30'
+  promotion_commit: b60ad1e
+  selected_candidate: frozen_50_50_tcn_graph50k_ensemble
+  target_accuracy: unknown
+
+production_ensemble_export_2026_11_16:
+  status: completed
+  script: scripts/export_ensemble.py
+  manifest: experiments/tcn-graph-ensemble/manifest.json
+  manifest_sha256: 9988c098bb3fc767187714728c0ce5e5ac7cb7d488c96cd9754e45856bd25f94
+  target_game: BAR-ATH
+  target_frames: 199319
+  graded_frames: 158857
+  ungraded_frames: 40462
+  csv_sha256: 5c59ed3004dc6be208ebeecbea46855acb1bacf511d1ec934079f53c121c2751
+  repeated_passes_byte_identical: true
+  passes_verified:
+    - first
+    - reload
+  official_validation_passed: true
+  rollback_candidate: trial_b_tcn
+  rollback_csv_sha256: 3dca80aa3b18a8c8e880b9f26cf1dc4f17a13018df18a2e4b39cf30f7da63463
+  submission_package_csv: submission-package-2026-11-15/upload/TEAM_NAME.csv
+  submission_package_report: submission-package-2026-11-15/upload/TEAM_NAME.md
+  sealed_matches:
+    J03WQQ: raw_assets_missing_on_disk_blocked
+    J03WR9: raw_assets_missing_on_disk_blocked
+  pending:
+    - user_confirmation_of_registered_team_name
+    - upload_file_renaming_to_exact_team_name
+    - public_repo_content_and_url_verification
+    - form_submission_before_november_17

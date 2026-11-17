@@ -1,0 +1,32 @@
+{
+  "duplicate_ids_1_2_2_4_accepted": true,
+  "smoothing_single_home_among_missing": [
+    "H",
+    "H",
+    "H",
+    "H",
+    "H"
+  ],
+  "partial_nan_first_player_overrides_valid_away": [
+    0
+  ],
+  "frame_zero_writes_last_output": [
+    -1,
+    -1,
+    0
+  ],
+  "reordered_homography_loads_without_error": true,
+  "extra_csv_column_accepted": true,
+  "constant_home_synthetic_spellF1": 0.6666666666666666,
+  "abstention_fill": [
+    0,
+    0,
+    0,
+    1,
+    1
+  ],
+  "all_abstain_retained": [
+    3,
+    3
+  ]
+}

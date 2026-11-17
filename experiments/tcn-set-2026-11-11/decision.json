@@ -1,0 +1,8 @@
+{
+  "quality_eligible": false,
+  "parent": "gap_trained_standalone_short_context_tcn_penalty16",
+  "architecture": "pointwise_xy_visibility8_team_mean_temporal_d1_2_4_v1",
+  "production_changed": false,
+  "clean_environment_verified": false,
+  "automatic_followup": false
+}

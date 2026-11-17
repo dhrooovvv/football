@@ -1,0 +1,13 @@
+{
+  "experiments/tcn-balanced-2026-11-11/checks.txt": "696fe1da3b761be952a7aadf934c9852e768752e0711b16f22b06a8af07fbec0",
+  "experiments/tcn-balanced-2026-11-11/comparison.json": "759c43ec185813e7f34391cfe2b3cb92c41eaf0f5c664a3850b8d70618091fab",
+  "experiments/tcn-balanced-2026-11-11/result-audit.json": "47f63a544ad678ac138f094577f70210fa371f101377efe4b380d4623225f1b9",
+  "experiments/tcn-balanced-2026-11-11/evaluation/J03WMX.json": "b37bf16dfd614f61e173b26e8f6b939330d7e4cf7f6dfb0c46d5e2bf795dd442",
+  "experiments/tcn-balanced-2026-11-11/evaluation/J03WN1.json": "3030950d901bd66dbf5779a23a528dda6b93f226a43f47ebbe0be94bbb63e4b5",
+  "experiments/tcn-balanced-2026-11-11/evaluation/J03WOH.json": "e65e4fe5669047418631bf22b3ef4d749d1b852930c108fb5ad41732188669d4",
+  "experiments/tcn-balanced-2026-11-11/evaluation/J03WOY.json": "63c290166f658bed10d5907fdc798bf99a92ece8abeb5275eccec107c73b84a7",
+  "experiments/tcn-balanced-2026-11-11/evaluation/J03WPY.json": "0527d1204ca27eb543473621a950067c1d779defa4eb0f410401a5245d8f618a",
+  "experiments/tcn-balanced-2026-11-11/evaluation/gate.json": "6f5008f2488b3ca3505b74259ff8c340e78081e9174223d75518fce8992e5762",
+  "experiments/tcn-balanced-2026-11-11/evaluation/report.md": "434d8e22bdc4543ae20beadbceaa971d1622589d9e9ec23df9cec58e38fef7a5",
+  "experiments/tcn-balanced-2026-11-11/evaluation/results.json": "7f6d332b4e191d034251930dd2c2266189d758bd8ecb6920f009c530fcdfee1b"
+}

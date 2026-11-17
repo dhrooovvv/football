@@ -1,0 +1,83 @@
+
+tests
+test_missing_support_and_half_isolation (test_control_context.ControlContract.test_missing_support_and_half_isolation) ... ok
+test_team_swap_and_no_current_row (test_control_context.ControlContract.test_team_swap_and_no_current_row) ... ok
+test_external_mapping_and_gaps (test_core.CoreContracts.test_external_mapping_and_gaps) ... ok
+test_features_and_masks (test_core.CoreContracts.test_features_and_masks) ... ok
+test_gate (test_core.CoreContracts.test_gate) ... ok
+test_probability_order_serialization_and_export (test_core.ModelSmoke.test_probability_order_serialization_and_export) ... ok
+test_mean_speed_excludes_missing_and_resets (test_core.SpeedContract.test_mean_speed_excludes_missing_and_resets) ... ok
+test_ambiguous_flicker (test_decode.ConfirmatoryContracts.test_ambiguous_flicker) ... ok
+test_half_isolation (test_decode.ConfirmatoryContracts.test_half_isolation) ... ok
+test_invalid_emissions (test_decode.ConfirmatoryContracts.test_invalid_emissions) ... ok
+test_repeatability_and_team_swap (test_decode.ConfirmatoryContracts.test_repeatability_and_team_swap) ... ok
+test_short_supported_possession (test_decode.ConfirmatoryContracts.test_short_supported_possession) ... ok
+test_stoppage_and_restart (test_decode.ConfirmatoryContracts.test_stoppage_and_restart) ... ok
+test_empty_zero_and_bad_cost (test_decode.ExploratoryContracts.test_empty_zero_and_bad_cost) ... ok
+test_small_sequence_against_exhaustive_oracle (test_decode.ExploratoryContracts.test_small_sequence_against_exhaustive_oracle) ... ok
+test_uncovered_frames_and_invalid_blocks (test_decode.ExploratoryContracts.test_uncovered_frames_and_invalid_blocks) ... ok
+test_nested_zip (test_inputs.ExploratoryInputContracts.test_nested_zip) ... ok
+test_partial_player_and_valid_velocity (test_inputs.ExploratoryInputContracts.test_partial_player_and_valid_velocity) ... ok
+test_archive_safety_and_provenance (test_inputs.InputContracts.test_archive_safety_and_provenance) ... ok
+test_atd_valid_and_invalid (test_inputs.InputContracts.test_atd_valid_and_invalid) ... ok
+test_export_and_integration (test_inputs.InputContracts.test_export_and_integration) ... ok
+test_features (test_inputs.InputContracts.test_features) ... ok
+test_homography (test_inputs.InputContracts.test_homography) ... ok
+test_metadata_explicit_names (test_inputs.InputContracts.test_metadata_explicit_names) ... ok
+test_tags (test_inputs.InputContracts.test_tags) ... ok
+test_clock_contract (test_pff.PFFContracts.test_clock_contract) ... ok
+test_event_duplicates_conflicts_and_clock (test_pff.PFFContracts.test_event_duplicates_conflicts_and_clock) ... ok
+test_missing_gap_no_interpolation_or_future_label (test_pff.PFFContracts.test_missing_gap_no_interpolation_or_future_label) ... ok
+test_observation_consensus (test_pff.PFFContracts.test_observation_consensus) ... ok
+test_unknown_clears_stale_owner_and_repeat_resampling (test_pff.PFFContracts.test_unknown_clears_stale_owner_and_repeat_resampling) ... ok
+test_loader_never_uses_smoothed_or_estimated_ball (test_pff.RawPFFContract.test_loader_never_uses_smoothed_or_estimated_ball) ... ok
+test_evaluation_timeline_is_not_sampled (test_tabicl_medium.MediumContextContracts.test_evaluation_timeline_is_not_sampled) ... ok
+test_reproducible_sample_excludes_heldout_and_unknown (test_tabicl_medium.MediumContextContracts.test_reproducible_sample_excludes_heldout_and_unknown) ... ok
+test_evaluation_timeline_is_not_sampled (test_tabicl_small.SmallContextContracts.test_evaluation_timeline_is_not_sampled) ... ok
+test_reproducible_sample_excludes_heldout_and_unknown (test_tabicl_small.SmallContextContracts.test_reproducible_sample_excludes_heldout_and_unknown) ... ok
+
+----------------------------------------------------------------------
+Ran 35 tests in 0.188s
+
+OK
+
+experiments/tcn-2026-11-10/tests
+test_adapter_masks_and_velocity_resets (test_tcn_candidate.TCNContracts.test_adapter_masks_and_velocity_resets) ... ok
+test_player_permutation_equivariance_and_repeat (test_tcn_candidate.TCNContracts.test_player_permutation_equivariance_and_repeat) ... ok
+test_prediction_coverage_and_half_isolation (test_tcn_candidate.TCNContracts.test_prediction_coverage_and_half_isolation) ... ok
+test_two_step_synthetic_training_repeatability (test_tcn_candidate.TCNContracts.test_two_step_synthetic_training_repeatability) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.874s
+
+OK
+
+experiments/tcn-gap-2026-11-10/tests
+test_mask_copy_seed_and_half_bounds (test_gap_training.GapTests.test_mask_copy_seed_and_half_bounds) ... ok
+test_repeatable_augmented_train_and_separate_view (test_gap_training.GapTests.test_repeatable_augmented_train_and_separate_view) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.544s
+
+OK
+
+experiments/tcn-set-2026-11-11/tests
+test_capacity_schema_and_temporal_field (test_set_model.SetContracts.test_capacity_schema_and_temporal_field) ... ok
+test_half_clipped_chunks_match_extended_whole_half (test_set_model.SetContracts.test_half_clipped_chunks_match_extended_whole_half) ... ok
+test_independent_framewise_same_team_permutations (test_set_model.SetContracts.test_independent_framewise_same_team_permutations) ... ok
+test_masked_and_unassigned_coordinates_do_not_reach_pool (test_set_model.SetContracts.test_masked_and_unassigned_coordinates_do_not_reach_pool) ... ok
+test_parent_window_and_central_label_support (test_set_model.SetContracts.test_parent_window_and_central_label_support) ... ok
+test_reload_batch_and_uncovered_frame_contracts (test_set_model.SetContracts.test_reload_batch_and_uncovered_frame_contracts) ... ok
+test_repeat_fit_and_interruption_restore_exact_state (test_set_model.SetContracts.test_repeat_fit_and_interruption_restore_exact_state) ... reference: update 2/4, minibatch loss 1.10087
+reference: update 4/4, minibatch loss 1.09697
+repeat: update 2/4, minibatch loss 1.10087
+repeat: update 4/4, minibatch loss 1.09697
+Resuming /var/folders/ky/xlzf2wp51f7gl7lp9_089_y80000gn/T/tmpecg4azrj/resumed at update 2
+resumed: update 4/4, minibatch loss 1.09697
+ok
+test_stored_object_velocity_is_completely_ignored (test_set_model.SetContracts.test_stored_object_velocity_is_completely_ignored) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.547s
+
+OK

@@ -10,3 +10,6 @@ models/
 *.mov
 *.npz
 *.parquet
+
+# Private local submission package (contains prediction CSV and checkpoints).
+submission-package-*/
