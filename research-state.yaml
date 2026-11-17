@@ -1701,5 +1701,36 @@ tcn_graph_ensemble_2026_11_16:
     repeatability_exact: true
   repeatability_csv_bytes_identical: true
   automatic_promotion: false
-  selected_candidate: trial_b_unchanged
+  promotion_authorized_by_user: true
+  promotion_date: '2026-11-16T13:45:00+05:30'
+  promotion_commit: b60ad1e
+  selected_candidate: frozen_50_50_tcn_graph50k_ensemble
   target_accuracy: unknown
+
+production_ensemble_export_2026_11_16:
+  status: completed
+  script: scripts/export_ensemble.py
+  manifest: experiments/tcn-graph-ensemble/manifest.json
+  manifest_sha256: 9988c098bb3fc767187714728c0ce5e5ac7cb7d488c96cd9754e45856bd25f94
+  target_game: BAR-ATH
+  target_frames: 199319
+  graded_frames: 158857
+  ungraded_frames: 40462
+  csv_sha256: 5c59ed3004dc6be208ebeecbea46855acb1bacf511d1ec934079f53c121c2751
+  repeated_passes_byte_identical: true
+  passes_verified:
+    - first
+    - reload
+  official_validation_passed: true
+  rollback_candidate: trial_b_tcn
+  rollback_csv_sha256: 3dca80aa3b18a8c8e880b9f26cf1dc4f17a13018df18a2e4b39cf30f7da63463
+  submission_package_csv: submission-package-2026-11-15/upload/TEAM_NAME.csv
+  submission_package_report: submission-package-2026-11-15/upload/TEAM_NAME.md
+  sealed_matches:
+    J03WQQ: raw_assets_missing_on_disk_blocked
+    J03WR9: raw_assets_missing_on_disk_blocked
+  pending:
+    - user_confirmation_of_registered_team_name
+    - upload_file_renaming_to_exact_team_name
+    - public_repo_content_and_url_verification
+    - form_submission_before_november_17

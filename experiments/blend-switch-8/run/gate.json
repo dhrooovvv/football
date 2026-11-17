@@ -1,0 +1,12 @@
+{
+  "quality_eligible": false,
+  "primary_median_delta": 0.007421491179840423,
+  "primary_deltas": {
+    "J03WMX": 0.03352510408932874,
+    "J03WN1": 0.02316056542225442,
+    "J03WOH": 0.006117858749437599,
+    "J03WOY": 0.007421491179840423,
+    "J03WPY": -0.004357275283639828
+  },
+  "production_changed": false
+}

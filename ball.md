@@ -1893,3 +1893,12 @@ Per-match paired spellF1 deltas vs Graph50k:
 Gate v2 vs Graph50k: Primary corrupted median delta -0.001516 <= 0 (FAIL), paired spell median delta +0.004338 > 0, paired macro median delta +0.002211 >= -0.01, 4/5 matches improved, repeatability exact. Gate vs Graph50k: FAIL (Ineligible).
 
 Decision: Per preregistered constraints and explicit instruction, no automatic promotion. Trial B remains selected production model. Next step: await user direction on whether to promote 50/50 ensemble over Trial B based on 5/5 dev match paired wins and +0.0090 clean / +0.0126 corrupted mean spellF1 gain.
+
+
+### J153 — 2026-11-16 — Frozen 50/50 TCN-Graph ensemble promoted to production; target predictions exported
+
+User authorizes formal promotion of the frozen 50/50 probability ensemble (Trial-B TCN + Graph50k) over the retained Trial-B TCN baseline. Architecture, weights, decoder (switching penalty 16), feature schema (521-dim), class order (H, A, D), and 50/50 mixing frozen and registered in experiments/tcn-graph-ensemble/manifest.json (commit b60ad1e).
+Trial B candidate CSV preserved for rollback at submission-package-2026-11-15/upload/TEAM_NAME_trial_b_rollback.csv (SHA256 3dca80aa3b18a8c8e880b9f26cf1dc4f17a13018df18a2e4b39cf30f7da63463).
+Sealed evaluation status: Raw XML/tracking data for sealed matches J03WQQ and J03WR9 are not present in workspace or data/external/; sealed evaluation is blocked and left untouched per protocol. No model tuning or alteration from sealed matches.
+Target export: Implemented scripts/export_ensemble.py. Executed over all 199,319 frames of BAR-ATH tactical data. Two independent passes (first and reload) verified byte-identical CSV predictions, SHA256 5c59ed3004dc6be208ebeecbea46855acb1bacf511d1ec934079f53c121c2751. Official format validator (possession_metrics.validate_submission) passed. Label-free valid frame counts: 158,857 graded frames (40.4% H, 29.7% A, 29.9% D, 566 spells, mean spell 11.23s), 40,462 ungraded frames outside blocks (all X).
+Packaging: Target CSV copied to submission-package-2026-11-15/upload/TEAM_NAME.csv; technical document updated at submission-package-2026-11-15/upload/TEAM_NAME.md; package-status.json and README.md updated. No Git commands executed following user instruction. Next: user confirms team name, renames upload files, and submits via official form before Nov 17 deadline.

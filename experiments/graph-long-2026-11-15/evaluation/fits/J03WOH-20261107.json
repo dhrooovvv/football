@@ -1,0 +1,25 @@
+{
+  "signature": "6445985c4e325bb38396c12ef8fcc863bd8e0548fcae54c26fdd37f6af007e49",
+  "match": "J03WOH",
+  "seed": 20261107,
+  "steps": 50000,
+  "exact_repeat": true,
+  "training_matches": [
+    "idsse-J03WMX",
+    "idsse-J03WN1",
+    "idsse-J03WOY",
+    "idsse-J03WPY"
+  ],
+  "source_checkpoints": {
+    "models/tcn-hybrid/graph/J03WOH/20261107/first/progress.pt": "13df63cd1ccef7317d7462df7b44508aa561f4f1cab12356900c3a9251574ff5",
+    "models/tcn-hybrid/graph/J03WOH/20261107/repeat/progress.pt": "45c5f9c0aa2fbd8afd3f2f515174e80c8cc28639859c2e5ed7d6dd428259254e"
+  },
+  "checkpoint_hashes": {
+    "models/graph-long-2026-11-15/J03WOH/20261107/first/progress.pt": "caf225e8c92894c61bee4e4472070ae322903a7cb92bbe1e992f04c42338c0c0",
+    "models/graph-long-2026-11-15/J03WOH/20261107/repeat/progress.pt": "06801e458fc60e404c7fd160cf000e22f45d473bb7407a34830a1a4783d4590c"
+  },
+  "checks_path": "experiments/graph-long-2026-11-15/checks-1794724229389973000.txt",
+  "checks_sha256": "69b1748f995de622eadcf612ed2915ed21c2d69d92c372fe5626b84cca6bddc2",
+  "continuation_seconds": 3143.16929804103,
+  "loss_sha256": "5e894e3e510c2b3b7f5a2d109edd2c52584cbebf215c05e3b299fe6668c3c8bd"
+}

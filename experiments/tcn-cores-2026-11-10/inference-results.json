@@ -1,0 +1,22 @@
+{
+  "cases": [
+    {
+      "threads": 1,
+      "seconds_two_predictions": 0.4712966660154052,
+      "within_mode_probabilities_exact": true,
+      "csv_sha256": "53a05c119f3b154a645b374734c781bdee2498f51d2ba17f0425d08bcccaeb4a",
+      "max_probability_delta_vs_one_thread": 0.0
+    },
+    {
+      "threads": 2,
+      "seconds_two_predictions": 0.5747626250376925,
+      "within_mode_probabilities_exact": true,
+      "csv_sha256": "53a05c119f3b154a645b374734c781bdee2498f51d2ba17f0425d08bcccaeb4a",
+      "max_probability_delta_vs_one_thread": 0.0
+    }
+  ],
+  "cross_thread_csv_equal": true,
+  "trained_parent_lifted_zero_extra_weights": true,
+  "actual_candidate_weights_tested": false,
+  "no_quality_scores": true
+}

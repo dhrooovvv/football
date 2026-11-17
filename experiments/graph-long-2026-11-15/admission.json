@@ -1,0 +1,10 @@
+{
+  "signature": "6445985c4e325bb38396c12ef8fcc863bd8e0548fcae54c26fdd37f6af007e49",
+  "seconds_per_update": 0.1655328072974953,
+  "projected_total_with_final_reserve_seconds": 29112.913204086726,
+  "remaining_seconds": 43170.735496,
+  "workers": 4,
+  "cumulative_steps": 50000,
+  "extra_steps_per_fit": 10000,
+  "forecast_is_not_runtime_guarantee": true
+}

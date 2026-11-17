@@ -48,7 +48,6 @@ def sha(path):
 
 
 def load_tcn_members(manifest):
-    tcn_code.configure()
     members = []
     for seed in (20261106, 20261107):
         entry = manifest['tcn_parent']['members'][str(seed)]
@@ -130,6 +129,7 @@ def output_aggregates(predicted, blocks, fps=25):
 
 def main():
     print("=== Generating Final Target Predictions for Promoted 50/50 Ensemble ===", flush=True)
+    tcn_code.configure()
     manifest_path = PROJECT / 'experiments/tcn-graph-ensemble/manifest.json'
     assert manifest_path.exists(), "Manifest missing!"
     with open(manifest_path) as f:
